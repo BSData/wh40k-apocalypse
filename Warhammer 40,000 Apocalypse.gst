@@ -4,7 +4,7 @@
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse"/>
   </publications>
   <costTypes>
-    <costType id="1466-da3f-0d27-dace" name="pts" defaultCostLimit="-1.0"/>
+    <costType id="1466-da3f-0d27-dace" name=" PL" defaultCostLimit="-1.0"/>
   </costTypes>
   <profileTypes>
     <profileType id="758b-2459-9a46-721a" name="Unit">
@@ -34,7 +34,29 @@
       </characteristicTypes>
     </profileType>
   </profileTypes>
+  <categoryEntries>
+    <categoryEntry id="4182-4f4b-94dc-40d9" name="Troops" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="9b66-7ce1-9e7e-58ed" name="Heavy Support" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="3945-9603-5902-58c0" name="Fast Attack" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="08d9-07e5-2b35-57b0" name="HQ" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="8f90-47d8-c075-cbb2" name="Elites" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="4ba9-66c8-d53f-061d" name="Lord of War" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="551a-ed52-fd35-9078" name="Flyer" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="2d6e-c03a-7a58-74ce" name="Light Infantry" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+  </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Gotta Have One!" hidden="false"/>
   </forceEntries>
+  <sharedProfiles>
+    <profile id="e5e7-bd6d-fdb7-b022" name="Terror Troops" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
+      </characteristics>
+    </profile>
+    <profile id="8fc3-5045-3aa5-00ce" name="Deep Strike" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>
