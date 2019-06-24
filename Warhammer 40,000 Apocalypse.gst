@@ -56,6 +56,10 @@
     <categoryEntry id="e2ad-0813-395c-442a" name="Fortification" hidden="false"/>
     <categoryEntry id="bef0-3698-6fb6-9b5c" name="Titanic" hidden="false"/>
     <categoryEntry id="c90f-bf61-bd98-4089" name="Deep Strike" hidden="false"/>
+    <categoryEntry id="e30a-8f35-5fe6-534d" name="Faction: Imperium" hidden="false"/>
+    <categoryEntry id="841f-fc30-da92-90cf" name="Faction: Chaos" hidden="false"/>
+    <categoryEntry id="ce0a-bb90-8dd4-f52d" name="Faction: Aeldari" hidden="false"/>
+    <categoryEntry id="20b7-cc09-763a-ab83" name="Faction: Tyranids" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Gotta Have One!" hidden="false">
