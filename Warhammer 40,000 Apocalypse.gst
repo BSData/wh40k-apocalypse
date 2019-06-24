@@ -60,6 +60,9 @@
     <categoryEntry id="841f-fc30-da92-90cf" name="Faction: Chaos" hidden="false"/>
     <categoryEntry id="ce0a-bb90-8dd4-f52d" name="Faction: Aeldari" hidden="false"/>
     <categoryEntry id="20b7-cc09-763a-ab83" name="Faction: Tyranids" hidden="false"/>
+    <categoryEntry id="9030-584a-81ae-9e31" name="Super-heavy" hidden="false"/>
+    <categoryEntry id="6f18-a45e-43de-b8b8" name="Transport" hidden="false"/>
+    <categoryEntry id="7453-e809-a313-a332" name="Warlord" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Gotta Have One!" hidden="false">
