@@ -110,6 +110,9 @@
     <rule id="cdb8-7e4f-3d44-fc92" name="Siege Weapon" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>TODO</description>
     </rule>
+    <rule id="2315-eb7a-ff97-9084" name="Apocalyptic Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>If a wound roll for an attack made with a weapon with this ability is successful, place four blast markers next to the target unit instead of one.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="e5e7-bd6d-fdb7-b022" name="Terror Troops" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
