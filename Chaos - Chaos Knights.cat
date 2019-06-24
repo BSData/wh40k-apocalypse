@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="16a6-8f74-bc7b-7933" name="Chaos - Chaos Knights" revision="1" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="21a9-75bf-0619-e801" name="Faction: Chaos Knights" hidden="false"/>
+    <categoryEntry id="b868-0761-072e-7456" name="Faction: &lt;Questor Traitoris&gt;" hidden="false"/>
+    <categoryEntry id="0efa-fa9f-5660-9fdc" name="Knight Despoiler" hidden="false"/>
+    <categoryEntry id="6ed9-8554-ecc4-4590" name="Knight Tyrant" hidden="false"/>
+    <categoryEntry id="0fc9-abe9-7537-40fb" name="War Dog" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="ebb0-3b9f-9896-0c08" name="War Dog Squadron" hidden="false" collective="false" targetId="8887-d3ef-4835-7bb5" type="selectionEntry"/>
+    <entryLink id="6900-d6e5-1813-96ae" name="Knight Tyrant" hidden="false" collective="false" targetId="9f63-edf1-0c98-c9c4" type="selectionEntry"/>
+    <entryLink id="bd3f-f277-21fa-f79a" name="Knight Despoiler" hidden="false" collective="false" targetId="b733-e10f-2997-264e" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="395b-0487-1ba7-906c" name="War Dog" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="3618-540a-06ff-be08" name="War Dog" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1bf2-d539-a3a1-594c" name="Vehicle Squadron" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f"> Each Lord of War slot in a Detachment allows you to take up to three of this unit in your army, instead of one. Each unit taken for a single Lord of War slot must be placed at the same time and within 6&quot; of each other unit taken for the same slot the first time they are set up.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cfec-49ec-5d24-1da6" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="01d8-8c00-df67-3c49" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="11fe-d526-5b03-879a" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="138d-beb5-e807-591f" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="79c4-3fe8-bcb4-585f" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="9475-ceda-d2c9-5df3" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="94a0-f15f-1139-9999" name="War Dog" hidden="false" targetId="0fc9-abe9-7537-40fb" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="352a-3ec1-3a43-42c8" name="Armoured Feet" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79dc-c947-53f0-e88a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba37-987c-b1fc-8479" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2997-2e21-47e2-665d" name="Arm Weapons" hidden="false" collective="false" defaultSelectionEntryId="29ea-37a4-2985-0398">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db0-5484-bdd3-35ee" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d707-0dc5-4140-d519" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="29ea-37a4-2985-0398" name="Two Wardog Autocannons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="b127-22c3-c78c-d612" name="War Dog Autocannon" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5db-3b10-7469-304e" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9952-af3c-1bf6-4012" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="4259-bcf9-6ab8-7edf" name="War Dog Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a0d8-a799-f9ef-4f86" name="Thermal Spear and Reaper Chain-cleaver" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="141a-1221-18b4-e867" name="Thermal Spear" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed54-709b-a2c8-6762" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e26-c630-998e-ae41" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="1ec4-f1f4-0991-a94e" name="Thermal Spear" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="cec7-1c0f-fbfc-e9b2" name="Reaper Chain-cleaver" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e4f-872b-d39a-e677" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e3a-6095-c368-bbce" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="28d6-694c-5a52-0cdc" name="Reaper Chain-cleaver" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d7f0-b3e0-a7f1-b555" name="Carapace Weapon" hidden="false" collective="false" defaultSelectionEntryId="ce0a-6fc7-65f2-187c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f0-f287-bf86-2c64" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3507-4fbc-d6ef-a897" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ce0a-6fc7-65f2-187c" name="Heavy Stubber" hidden="false" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry"/>
+            <entryLink id="f1e3-5d63-24ec-3eaf" name="Meltagun" hidden="false" collective="false" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f63-edf1-0c98-c9c4" name="Knight Tyrant" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="7f28-4ae9-0be9-7d4c" name="Knight Tyrant" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="db04-81e2-b9c9-3740" name="Dual Plasma Core Explosion" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit is destroyed, roll two D12 instead of one D12 to determine if it explodes, and it does so on any result of a 10+. When this unit explodes, place one blast marker next to every unit (excluding SUPER HEAVY units) that is within 12&quot; of this unit instead of 6&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b4ad-9d50-4e71-f961" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="fb69-c51b-fba9-e37e" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="30b3-db4d-ad29-0a12" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="47a0-021c-2288-d3af" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="21b4-7a66-a89b-4d6a" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="af77-c14d-91ed-37da" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="6065-5554-d0bd-826f" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="414d-9165-afdb-478c" name="Knight Tyrant" hidden="false" targetId="6ed9-8554-ecc4-4590" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d213-33c4-f9b0-4321" name="Arm Weapons" hidden="false" collective="false" defaultSelectionEntryId="5e86-9047-0015-452a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd14-598d-45e6-9fc8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf8-e52c-1278-1bfd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5e86-9047-0015-452a" name="Volcano Lance and Plasma Decimator" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="110b-3039-9fb7-328f" name="Plasma Decimator" hidden="false" collective="false" targetId="5ab4-0b89-894b-245c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc1-eed8-0395-8a80" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca48-61d9-fe66-04ba" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="d600-67e6-5989-29bc" name="Volcano Lance" hidden="false" collective="false" targetId="80d2-7711-2931-864c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dc1-4de4-64bf-fdd9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36e9-b1ad-a823-1bc3" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cd2a-3816-267c-b7bf" name="Conflagration Cannon and Thundercoil Harpoon" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="4df5-4e7d-42f8-3f72" name="Conflagration Cannon" hidden="false" collective="false" targetId="23ef-6a0a-0e36-1816" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7261-0dd1-20ef-39c1" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b0b-2076-55fb-b2f8" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="fa2c-cdab-baaf-62a9" name="Thundercoil Harpoon" hidden="false" collective="false" targetId="93c8-2916-4f63-cb47" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9a2-36aa-1bc9-99e3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30a1-f3b1-0c41-d0de" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f12b-a9ce-f4aa-6d2d" name="Carapace Weapons" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cd3-ece2-144b-df9d" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf22-9582-b203-b140" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2f2b-04cf-ce57-8b6e" name="Twin Siegebreaker Cannon" hidden="false" collective="false" targetId="b2c9-1549-7a82-cda6" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="4384-5e5b-3f00-c5f4" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4384-5e5b-3f00-c5f4" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="857b-4a80-4705-6c90" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f91b-c512-b671-9a1c" name="Two Shieldbreaker Missiles" hidden="false" collective="false" targetId="37b2-6da9-7cb2-f04d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b93-5ad1-4379-ae7c" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3720-8a34-f476-1174" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="68e0-a17d-0fe3-f97c" name="Titanic Feet" hidden="false" collective="false" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="704c-3d9c-c416-e3c3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21e9-7719-21c7-5b77" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0209-0ba7-d593-ce12" name="Twin Meltagun" hidden="false" collective="false" targetId="f802-b5d6-9147-26ec" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d639-7e49-73b2-5f14" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f5-a513-c8aa-3a1d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b733-e10f-2997-264e" name="Knight Despoiler" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="680b-677e-43fb-8fdf" name="Knight Despoiler" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="e2a3-fade-c12d-860b" value="2+">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="b733-e10f-2997-264e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96e0-f293-162c-33e1" type="equalTo"/>
+                    <condition field="selections" scope="b733-e10f-2997-264e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3172-e033-60cf-b815" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e3d1-2510-5525-181f" name="Engine of Destruction" hidden="true" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="b733-e10f-2997-264e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3172-e033-60cf-b815" type="equalTo"/>
+                    <condition field="selections" scope="b733-e10f-2997-264e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96e0-f293-162c-33e1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is equipped with 1 Reaper Chainsword and 1 Thunderstrike Gauntlet, change its Weapon Skill characteristic to 2+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="88d5-6c83-49b8-91ac" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="d4e9-c07d-5377-6760" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="9ebc-d13c-5fb0-6b21" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="77d3-63bc-eada-9209" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="08fd-30ef-de83-ae2f" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="dd40-9db3-3a10-c91a" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="9cc2-e459-1198-b177" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="cb6b-6ecc-9c52-a9f9" name="Knight Despoiler" hidden="false" targetId="0efa-fa9f-5660-9fdc" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9ad5-b9ae-00b4-3018" name="Point Defence" hidden="false" collective="false" defaultSelectionEntryId="0168-b6d0-2321-c8b3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1ee-e0be-43cf-327c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4355-328f-0699-0389" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0168-b6d0-2321-c8b3" name="Heavy Stubber" hidden="false" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry"/>
+            <entryLink id="fab3-2e79-8ebb-e489" name="Meltagun" hidden="false" collective="false" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="24fc-6391-c91f-c01f" name="Carapace Weapon" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c37b-11cd-64c6-1843" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e8fd-c206-6dfd-fe1c" name="Ironstorm Missile Pod" hidden="false" collective="false" targetId="0529-702c-4138-7704" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="309b-24c6-a892-1d65" name="Stormspear Missile Pod" hidden="false" collective="false" targetId="a126-736f-33b7-b330" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b83b-4aaa-3afa-6f7a" name="Twin Icarus Autocannon" hidden="false" collective="false" targetId="9823-be43-0811-5a0e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f070-506c-e09f-468b" name="Arm 1" hidden="false" collective="false" defaultSelectionEntryId="1c59-050f-dec1-b0b6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4641-9dd5-ced8-e95d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d9-9562-f08b-dd21" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2a7d-f181-fe4f-3286" name="Avenger Gatling Cannon and Heavy Flamer" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="5081-84d6-fc74-25da" name="Avenger Gatling Cannon" hidden="false" collective="false" targetId="231b-fa42-759b-9a38" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="366e-03b0-c7b8-7ac4" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f27c-1d37-4411-f3c9" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="7d4a-9fc6-a4e6-79e7" name="Heavy Flamer" hidden="false" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f61-5edc-9e94-b005" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7d2-8fd7-1cbc-77a0" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0adf-a1f1-171e-c284" name="Rapid-fire Battle Cannon and Heavy Stubber" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="4a06-60cd-93a6-b959" name="Rapid-fire Battle Cannon" hidden="false" collective="false" targetId="2970-406d-4256-769d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c368-84b9-e0ce-f8c9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5c7-b871-14e5-c064" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="c644-6ec8-8dcd-6ace" name="Heavy Stubber" hidden="false" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b9a-d928-f793-e7ef" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f9-6c5a-effc-6092" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="1c59-050f-dec1-b0b6" name="Thunderstrike Gauntlet" hidden="false" collective="false" targetId="96e0-f293-162c-33e1" type="selectionEntry"/>
+            <entryLink id="8f0c-8c8e-1c0b-9c98" name="Thermal Cannon" hidden="false" collective="false" targetId="868b-fc8a-951c-d2e5" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="656c-be20-cfa6-6ef4" name="Arm 2" hidden="false" collective="false" defaultSelectionEntryId="cf11-3bb7-9643-b240">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8a3-04b9-3042-8431" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0c9-7fd8-c71a-f675" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a976-4994-9f1a-fc69" name="Avenger Gatling Cannon and Heavy Flamer" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="0c9b-bbd6-7b9f-abe3" name="Avenger Gatling Cannon" hidden="false" collective="false" targetId="231b-fa42-759b-9a38" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e56-888c-30cd-e55f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28c3-23dd-418c-1f14" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="e7ee-631f-4bca-7d81" name="Heavy Flamer" hidden="false" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="083c-91f0-766a-c829" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4f-a704-9694-ac41" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="15cb-65f1-8170-0009" name="Rapid-fire Battle Cannon and Heavy Stubber" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="8dc2-b0ee-7489-7973" name="Rapid-fire Battle Cannon" hidden="false" collective="false" targetId="2970-406d-4256-769d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a10d-cf3f-77b9-6d03" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41dd-193a-78a8-9761" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="0588-13a8-d70a-d8d1" name="Heavy Stubber" hidden="false" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b2c-2ff1-72ac-d5f6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b3-ef5c-a70d-1967" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="d6fe-3bfe-2c12-0d7e" name="Thermal Cannon" hidden="false" collective="false" targetId="868b-fc8a-951c-d2e5" type="selectionEntry"/>
+            <entryLink id="cf11-3bb7-9643-b240" name="Reaper Chainsword" hidden="false" collective="false" targetId="3172-e033-60cf-b815" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="119f-59e8-8737-0d76" name="Titanic Feet" hidden="false" collective="false" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="41d1-c3a8-e095-39de" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="b733-e10f-2997-264e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3172-e033-60cf-b815" type="equalTo"/>
+                    <condition field="selections" scope="b733-e10f-2997-264e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96e0-f293-162c-33e1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="3687-c81b-1ef3-61de" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="b733-e10f-2997-264e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3172-e033-60cf-b815" type="equalTo"/>
+                    <condition field="selections" scope="b733-e10f-2997-264e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96e0-f293-162c-33e1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41d1-c3a8-e095-39de" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3687-c81b-1ef3-61de" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="24.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8887-d3ef-4835-7bb5" name="War Dog Squadron" hidden="false" collective="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="901a-e631-820c-666f" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5ce5-6095-e977-0ef4" name="War Dog" hidden="false" collective="false" targetId="395b-0487-1ba7-906c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="141e-ec39-5969-fa20" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d2a-e714-73be-67e8" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="2ca8-4ad0-640e-d52e" name="Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>
+  </catalogueLinks>
+</catalogue>
