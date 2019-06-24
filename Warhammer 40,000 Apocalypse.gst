@@ -64,6 +64,9 @@
     <categoryEntry id="6f18-a45e-43de-b8b8" name="Transport" hidden="false"/>
     <categoryEntry id="7453-e809-a313-a332" name="Warlord" hidden="false"/>
     <categoryEntry id="bad3-1204-2d12-3c3d" name="Aircraft" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="8951-2d88-3b2b-4de4" name="Building" hidden="false"/>
+    <categoryEntry id="ef15-faf4-a4a1-33f5" name="Beasts" hidden="false"/>
+    <categoryEntry id="351c-b6fa-4d4f-70f3" name="Cavalry" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Gotta Have One!" hidden="false">
