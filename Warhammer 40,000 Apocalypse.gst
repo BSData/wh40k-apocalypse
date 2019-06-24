@@ -35,14 +35,14 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="4182-4f4b-94dc-40d9" name="Troops" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="9b66-7ce1-9e7e-58ed" name="Heavy Support" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="3945-9603-5902-58c0" name="Fast Attack" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="08d9-07e5-2b35-57b0" name="HQ" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="8f90-47d8-c075-cbb2" name="Elites" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="4ba9-66c8-d53f-061d" name="Lord of War" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="551a-ed52-fd35-9078" name="Flyer" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="2d6e-c03a-7a58-74ce" name="Infantry" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="4182-4f4b-94dc-40d9" name="Troops" hidden="false"/>
+    <categoryEntry id="9b66-7ce1-9e7e-58ed" name="Heavy Support" hidden="false"/>
+    <categoryEntry id="3945-9603-5902-58c0" name="Fast Attack" hidden="false"/>
+    <categoryEntry id="08d9-07e5-2b35-57b0" name="HQ" hidden="false"/>
+    <categoryEntry id="8f90-47d8-c075-cbb2" name="Elites" hidden="false"/>
+    <categoryEntry id="4ba9-66c8-d53f-061d" name="Lord of War" hidden="false"/>
+    <categoryEntry id="551a-ed52-fd35-9078" name="Flyer" hidden="false"/>
+    <categoryEntry id="2d6e-c03a-7a58-74ce" name="Infantry" hidden="false"/>
     <categoryEntry id="7eb1-73ba-2de4-ca9b" name="Light" hidden="false"/>
     <categoryEntry id="4de4-bea8-4f0e-7f9c" name="Psyker" hidden="false"/>
     <categoryEntry id="4b9a-33b1-3b42-e3f8" name="Character" hidden="false"/>
@@ -54,6 +54,8 @@
     <categoryEntry id="65b5-f311-b8c4-3721" name="Swarm" hidden="false"/>
     <categoryEntry id="2a11-9193-1a80-f0c6" name="Dedicated Transport" hidden="false"/>
     <categoryEntry id="e2ad-0813-395c-442a" name="Fortification" hidden="false"/>
+    <categoryEntry id="bef0-3698-6fb6-9b5c" name="Titanic" hidden="false"/>
+    <categoryEntry id="c90f-bf61-bd98-4089" name="Deep Strike" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Gotta Have One!" hidden="false">
@@ -96,6 +98,9 @@
       <description>TODO</description>
     </rule>
     <rule id="822c-cc23-b4b1-bcb2" name="One Use Only" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="cdb8-7e4f-3d44-fc92" name="Siege Weapon" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>TODO</description>
     </rule>
   </sharedRules>
