@@ -42,11 +42,63 @@
     <categoryEntry id="8f90-47d8-c075-cbb2" name="Elites" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="4ba9-66c8-d53f-061d" name="Lord of War" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="551a-ed52-fd35-9078" name="Flyer" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="2d6e-c03a-7a58-74ce" name="Light Infantry" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="2d6e-c03a-7a58-74ce" name="Infantry" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="7eb1-73ba-2de4-ca9b" name="Light" hidden="false"/>
+    <categoryEntry id="4de4-bea8-4f0e-7f9c" name="Psyker" hidden="false"/>
+    <categoryEntry id="4b9a-33b1-3b42-e3f8" name="Character" hidden="false"/>
+    <categoryEntry id="c8b5-9ad5-d8df-45f2" name="Biker" hidden="false"/>
+    <categoryEntry id="25c7-3353-2028-72b2" name="Heavy" hidden="false"/>
+    <categoryEntry id="5aeb-0fa6-9427-2144" name="Vehicle" hidden="false"/>
+    <categoryEntry id="3bbd-6bb7-b214-6dca" name="Monster" hidden="false"/>
+    <categoryEntry id="b408-d848-fa84-cfb9" name="Fly" hidden="false"/>
+    <categoryEntry id="65b5-f311-b8c4-3721" name="Swarm" hidden="false"/>
+    <categoryEntry id="2a11-9193-1a80-f0c6" name="Dedicated Transport" hidden="false"/>
+    <categoryEntry id="e2ad-0813-395c-442a" name="Fortification" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="8ba0-7df9-3f27-d4b1" name="Gotta Have One!" hidden="false"/>
+    <forceEntry id="8ba0-7df9-3f27-d4b1" name="Gotta Have One!" hidden="false">
+      <categoryLinks>
+        <categoryLink id="9849-b450-329f-a162" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+        <categoryLink id="2b8d-76eb-6c31-9b11" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="false"/>
+        <categoryLink id="532d-fd40-6285-cb6c" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="false"/>
+        <categoryLink id="808a-f9b9-5661-5dff" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
+        <categoryLink id="ae71-e0f7-8508-0b26" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="a10d-a7ad-0747-d5d1" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="false"/>
+        <categoryLink id="dea4-cd6d-29a7-8c8d" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false"/>
+        <categoryLink id="7cf6-82f2-2c8c-0076" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false"/>
+        <categoryLink id="3413-84f1-405d-3a74" name="Fortification" hidden="false" targetId="e2ad-0813-395c-442a" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
+  <sharedRules>
+    <rule id="7296-134e-970b-4790" name="Barrage" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="aac2-cf46-7dc3-ac07" name="Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="8ce8-6dd3-c0a8-35ad" name="Witchfire" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="f3a7-fc0c-a9e3-d382" name="Inferno" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="48b8-058a-9085-0e80" name="Anti-air" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="5b2f-f499-bdcd-e45d" name="Rapid Fire" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="9988-c2ea-2f30-09c1" name="Supercharge" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="d452-1a22-2e0c-7a9e" name="Sniper" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+    <rule id="822c-cc23-b4b1-bcb2" name="One Use Only" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>TODO</description>
+    </rule>
+  </sharedRules>
   <sharedProfiles>
     <profile id="e5e7-bd6d-fdb7-b022" name="Terror Troops" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
