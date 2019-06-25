@@ -49,12 +49,14 @@
     <categoryEntry id="72d8-09c3-4dac-ec0c" name="Chaos Hell Blade" hidden="false"/>
     <categoryEntry id="71df-d8f2-c583-908e" name="Faction: Eyrine Cults" hidden="false"/>
     <categoryEntry id="5330-421f-34a7-7f1b" name="Chaos Hell Talon" hidden="false"/>
-    <categoryEntry id="fd1c-dea3-4dd4-cdb6" name="New CategoryEntry" hidden="false"/>
     <categoryEntry id="aa77-6757-e20b-2b9f" name="Chaos Storm Eagle Assault Gunship" hidden="false"/>
     <categoryEntry id="8f95-8d2b-b892-9810" name="Chaos Fire Raptor Assault Gunship" hidden="false"/>
     <categoryEntry id="353c-1737-07db-1ba8" name="Chaos Thunderhawk Assault Gunship" hidden="false"/>
     <categoryEntry id="8e4c-8ecd-0b3e-b321" name="Chaos Sokar Pattern Stormbird Gunship" hidden="false"/>
     <categoryEntry id="36c2-034c-b905-6d2a" name="Chaos Xiphon Interceptor" hidden="false"/>
+    <categoryEntry id="5c54-8b43-52eb-6259" name="Sorcerer" hidden="false"/>
+    <categoryEntry id="24bd-5192-53cb-efe8" name="Terminator" hidden="false"/>
+    <categoryEntry id="2f53-570e-fcef-604b" name="Chaos Lord" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e7d3-3095-e373-d4b3" name="Blood Slaughterer of Khorne" hidden="false" collective="false" type="unit">
@@ -3404,7 +3406,155 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3ca7-9758-48ff-235b" name="Helbrute" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="ca80-a5b9-0185-eb65" name="Helbrute" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4a26-23f1-d5a5-2706" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="0586-5519-e6ca-9e36" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="b830-3957-523c-177a" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="9b95-e05a-a104-3f3c" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="376d-7a4f-d640-8eae" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="0081-5433-de84-c885" name="Helbrute" hidden="false" targetId="4bd7-6e03-a56b-7edb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="be7a-c3ca-9f5b-d4d1" name="Helbrute Weapons" hidden="false" collective="false" targetId="90e6-f66f-ee82-6b1c" type="selectionEntryGroup"/>
+        <entryLink id="02fe-a4b9-31c6-90f3" name="Heavy Flamer" hidden="false" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="b7fb-bdab-5e2e-bc71" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3ca7-9758-48ff-235b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b196-0fd9-1865-7859" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7fb-bdab-5e2e-bc71" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="90e6-f66f-ee82-6b1c" name="Helbrute Weapons" hidden="false" collective="false">
+      <modifiers>
+        <modifier type="set" field="name" value="Weapons"/>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d05d-3522-bed2-52bb" type="min"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="142d-1d71-9e26-a3fc" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b196-0fd9-1865-7859" name="Helbrute Fist" hidden="false" collective="false" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="7612-f237-9dff-bfea" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1a6-3003-e64a-3e19" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7612-f237-9dff-bfea" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="8604-1a7a-ea4e-06ef" name="Helbrute Fist" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="69a3-032b-5628-b763" name="Helbrute Hammer" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e68-1575-f920-b7c6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7287-6673-a27c-b685" name="Helbrute Hammer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="2864-0db2-e48a-9318" name="Power Scourge" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0260-0d3b-86c5-23c5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e4f9-afa1-21fb-8081" name="Power Scourge" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8491-f32d-12da-d582" name="Missile Launcher and Armoured Feet" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07cf-f78c-981c-e42f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8434-950c-5b9e-c5fb" name="Armoured Feet" hidden="false" collective="false" targetId="3627-6f4b-6f82-b078" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f3b-c6b5-3065-6163" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73de-ebc0-a197-a959" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0aa5-a039-adaa-31e7" name="Multi-melta" hidden="false" collective="false" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b7b3-14b6-9fdf-90d0" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7b3-14b6-9fdf-90d0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fae-5654-6dd3-f499" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b2d7-e212-83bc-6d97" name="Reaper Autocannon" hidden="false" collective="false" targetId="4335-f054-c6ae-0368" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86e1-80e2-9c13-8e12" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="22f4-2cd0-26f0-c9af" name="Twin Heavy Bolter" hidden="false" collective="false" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de1e-ae42-eaf3-523f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8f91-b406-70a9-0429" name="Twin Lascannon" hidden="false" collective="false" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3df3-b773-c92f-2f87" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="3fae-f59b-a76c-6bd2" name="Infernal Regeneration" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
