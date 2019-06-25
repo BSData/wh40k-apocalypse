@@ -67,6 +67,7 @@
     <categoryEntry id="8951-2d88-3b2b-4de4" name="Building" hidden="false"/>
     <categoryEntry id="ef15-faf4-a4a1-33f5" name="Beasts" hidden="false"/>
     <categoryEntry id="351c-b6fa-4d4f-70f3" name="Cavalry" hidden="false"/>
+    <categoryEntry id="5f52-c8e5-1f2f-5161" name="Dreadnought" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Gotta Have One!" hidden="false">
@@ -75,7 +76,7 @@
         <categoryLink id="2b8d-76eb-6c31-9b11" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="false"/>
         <categoryLink id="532d-fd40-6285-cb6c" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="false"/>
         <categoryLink id="808a-f9b9-5661-5dff" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
-        <categoryLink id="ae71-e0f7-8508-0b26" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="ae71-e0f7-8508-0b26" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
         <categoryLink id="a10d-a7ad-0747-d5d1" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="false"/>
         <categoryLink id="dea4-cd6d-29a7-8c8d" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false"/>
         <categoryLink id="7cf6-82f2-2c8c-0076" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false"/>
@@ -127,6 +128,16 @@
     <profile id="8fc3-5045-3aa5-00ce" name="Deep Strike" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
+      </characteristics>
+    </profile>
+    <profile id="a219-d9fd-9c8c-10c2" name="Ignore Damage (6+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="958c-7037-989a-6da0" name="Ignore Damage (5+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
