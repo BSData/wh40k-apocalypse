@@ -60,7 +60,6 @@
     <categoryEntry id="2a11-9193-1a80-f0c6" name="Dedicated Transport" hidden="false"/>
     <categoryEntry id="e2ad-0813-395c-442a" name="Fortification" hidden="false"/>
     <categoryEntry id="bef0-3698-6fb6-9b5c" name="Titanic" hidden="false"/>
-    <categoryEntry id="c90f-bf61-bd98-4089" name="Deep Strike" hidden="false"/>
     <categoryEntry id="e30a-8f35-5fe6-534d" name="Faction: Imperium" hidden="false"/>
     <categoryEntry id="841f-fc30-da92-90cf" name="Faction: Chaos" hidden="false"/>
     <categoryEntry id="ce0a-bb90-8dd4-f52d" name="Faction: Aeldari" hidden="false"/>
@@ -127,12 +126,12 @@
   <sharedProfiles>
     <profile id="e5e7-bd6d-fdb7-b022" name="Terror Troops" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
       </characteristics>
     </profile>
     <profile id="8fc3-5045-3aa5-00ce" name="Deep Strike" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
       </characteristics>
     </profile>
     <profile id="a219-d9fd-9c8c-10c2" name="Ignore Damage (6+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -141,6 +140,16 @@
       </characteristics>
     </profile>
     <profile id="958c-7037-989a-6da0" name="Ignore Damage (5+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f07d-6c22-ac83-604c" name="Infiltrators" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b133-8e04-3e7b-9fd6" name="Stealth" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
       </characteristics>
