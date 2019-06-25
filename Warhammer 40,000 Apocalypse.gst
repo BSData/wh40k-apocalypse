@@ -154,5 +154,10 @@
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
       </characteristics>
     </profile>
+    <profile id="a828-c8a3-c4ed-f34b" name="Supersonic" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
