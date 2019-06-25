@@ -33,6 +33,11 @@
         <characteristicType id="4493-9fa3-8c30-866f" name="Description"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="5dca-db35-b3d1-ce65" name="Transport">
+      <characteristicTypes>
+        <characteristicType id="6948-e9fe-7eb0-b8be" name="Capacity"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="4182-4f4b-94dc-40d9" name="Troops" hidden="false"/>
