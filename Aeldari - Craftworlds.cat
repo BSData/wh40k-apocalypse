@@ -1,5 +1,365 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9ba1-c994-4719-e3ac" name="Aeldari - Craftworlds" revision="2" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9ba1-c994-4719-e3ac" name="Aeldari - Craftworlds" revision="3" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="280a-43bb-426c-aa7c" name="Asuryani Datasheets PDF"/>
+  </publications>
+  <categoryEntries>
+    <categoryEntry id="426a-d6ae-7bf1-76e7" name="Faction: Warhost" hidden="false"/>
+    <categoryEntry id="0ca1-5137-598c-3f5b" name="Faction: Ulthwe" hidden="false"/>
+    <categoryEntry id="ce0b-343c-1fec-2a6c" name="Eldrad Ulthran" hidden="false"/>
+    <categoryEntry id="9a3e-a774-54d2-90b3" name="Farseer" hidden="false"/>
+    <categoryEntry id="c595-6cad-4e25-eb78" name="Faction: &lt;Craftworld&gt;" hidden="false"/>
+    <categoryEntry id="84a5-2e68-7574-450c" name="Warlock" hidden="false"/>
+    <categoryEntry id="30ea-ec04-7774-0e0e" name="Warlock Conclave" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="8785-9bd8-6adf-940c" name="Eldrad Ulthran" hidden="false" collective="false" targetId="e4e5-fffd-9435-163e" type="selectionEntry"/>
+    <entryLink id="ad58-d937-78d5-f77d" name="Farseer" hidden="false" collective="false" targetId="737f-18b5-b48f-fce1" type="selectionEntry"/>
+    <entryLink id="fb43-e677-c360-c531" name="Farseer Skyrunner" hidden="false" collective="false" targetId="efe5-d944-de03-32d6" type="selectionEntry"/>
+    <entryLink id="231e-b2a1-1888-44f0" name="Warlock Conclave" hidden="false" collective="false" targetId="37c4-8933-9b90-4f89" type="selectionEntry"/>
+    <entryLink id="0f1e-2d8d-0388-9946" name="Warlock Skyrunner Conclave" hidden="false" collective="false" targetId="aedf-3fd7-2326-f58c" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="e4e5-fffd-9435-163e" name="Eldrad Ulthran" publicationId="280a-43bb-426c-aa7c" page="1" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="2090-8b5e-5942-74a0" name="Staff of Ulthamar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="588f-8a63-9ae8-b8d1" name="Executioner" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="41cb-9e3a-991e-2d01" name="Eldrad Ulthran" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0272-1e55-d307-146c" name="Runes of the Farseer" hidden="false" targetId="c3bd-4dd9-ae75-f56d" type="profile"/>
+        <infoLink id="0f8c-57e5-2651-183c" name="Witchfire" hidden="false" targetId="8ce8-6dd3-c0a8-35ad" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a50d-f572-64db-288c" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="eaf4-64d9-2853-07e0" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="20d0-9c5d-6bb8-c4eb" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="b0ed-01e5-55c7-ddee" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="ec52-2d45-bb8d-3575" name="Eldrad Ulthran" hidden="false" targetId="ce0b-343c-1fec-2a6c" primary="false"/>
+        <categoryLink id="b1b3-3eb7-5ee1-991e" name="Faction: Ulthwe" hidden="false" targetId="0ca1-5137-598c-3f5b" primary="false"/>
+        <categoryLink id="a75d-7e84-3fb5-a946" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="1007-de29-65e2-dd2a" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="5142-4047-f246-8340" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="2fb2-36be-7938-4f9e" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="053d-b06b-ef00-78ab" name="Farseer" hidden="false" targetId="9a3e-a774-54d2-90b3" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="737f-18b5-b48f-fce1" name="Farseer" publicationId="280a-43bb-426c-aa7c" page="2" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="d076-ca99-6d01-8a76" name="Farseer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f896-22c4-6065-c7db" name="Witchblade" hidden="false" targetId="7a7f-f5ba-ede0-73b2" type="profile"/>
+        <infoLink id="8fa6-d81e-2f57-2bb3" name="Runes of the Farseer" hidden="false" targetId="c3bd-4dd9-ae75-f56d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1d76-90f3-6111-a2de" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="7b16-1d7e-81f2-4ba9" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="b62a-9927-0ac2-d1fc" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="ab22-140f-f354-54bb" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="f335-e24c-1627-906b" name="Farseer" hidden="false" targetId="9a3e-a774-54d2-90b3" primary="false"/>
+        <categoryLink id="2479-4c3b-884a-7d13" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="9fe9-c1eb-b4f4-86a0" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="642f-e619-0ae9-7b17" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4dca-7700-6fc4-ab71" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="ceb6-117e-94c2-210f" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="efe5-d944-de03-32d6" name="Farseer Skyrunner" publicationId="280a-43bb-426c-aa7c" page="2" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="33c4-848a-dd26-3753" name="Farseer Skyrunner" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3486-5405-f42a-438c" name="Witchblade" hidden="false" targetId="7a7f-f5ba-ede0-73b2" type="profile"/>
+        <infoLink id="6884-5944-bd94-bec1" name="Runes of the Farseer" hidden="false" targetId="c3bd-4dd9-ae75-f56d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6bce-1d08-4a33-9254" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
+        <categoryLink id="3714-0665-9fd4-2e2a" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="31ec-f0ee-5f41-b330" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="8dbb-ecb8-330d-7db5" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="adc2-64ea-0468-e86b" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="a2a8-b4c5-7be8-d2bd" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="7ead-5b50-aa2e-3535" name="Farseer" hidden="false" targetId="9a3e-a774-54d2-90b3" primary="false"/>
+        <categoryLink id="7e77-51d4-43e7-ac08" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="b015-098a-4ba6-0eaa" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="2f02-dc83-9926-4c16" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="1886-bf7d-e17b-33e0" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="37c4-8933-9b90-4f89" name="Warlock Conclave" publicationId="280a-43bb-426c-aa7c" page="3" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="c7de-83b4-8027-1b3c" name="Destructor" hidden="false" targetId="7ef9-27b2-5b32-a3e1" type="profile"/>
+        <infoLink id="d32f-098f-6475-aaf3" name="Witchblades &amp; Singing Spears" hidden="false" targetId="e6bf-f329-4f12-5fc7" type="profile"/>
+        <infoLink id="0288-ea86-1fb2-8648" name="Conclave of Power" hidden="false" targetId="c35d-9645-6070-0198" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f8db-4bc2-bd56-0a73" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="ab0c-02bb-0fc6-e0c7" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="62b8-58c4-eaea-86d8" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="d4bf-f46d-1f75-76d5" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="c6b0-ab1d-9cb2-d290" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="d889-6566-f914-f4a4" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="7189-2d8b-2de2-2991" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="47b4-47d2-8b41-880d" name="Warlock" hidden="false" targetId="84a5-2e68-7574-450c" primary="false"/>
+        <categoryLink id="01a1-b083-5388-2705" name="Warlock Conclave" hidden="false" targetId="30ea-ec04-7774-0e0e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="babd-9151-d6cd-bcdb" name="Number of Models" hidden="false" collective="false" defaultSelectionEntryId="fff9-d860-3569-334f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0e8-fd5c-f2e7-673e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a03d-32a6-518c-4164" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fff9-d860-3569-334f" name="01 Model" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="5001-f04e-2b09-aae3" name="Warlock Conclave (1 Model)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="c8b8-daa3-7d4b-d67e" name="05 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="90c7-cac1-2115-7be3" name="Warlock Conclave (5 Models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d8a5-1355-2bd5-9ae4" name="10 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="7979-72db-bdb7-f0d0" name="Warlock Conclave (10 Models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aedf-3fd7-2326-f58c" name="Warlock Skyrunner Conclave" publicationId="280a-43bb-426c-aa7c" page="3" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="8e88-1d01-1976-d88d" name="Twin Shuriken Catapults" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2cc1-4409-e3cc-feea" name="Destructor" hidden="false" targetId="7ef9-27b2-5b32-a3e1" type="profile"/>
+        <infoLink id="07aa-b88e-ab52-6f5a" name="Witchblades &amp; Singing Spears" hidden="false" targetId="e6bf-f329-4f12-5fc7" type="profile"/>
+        <infoLink id="a3c8-9d43-f720-e6a5" name="Conclave of Power" hidden="false" targetId="c35d-9645-6070-0198" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cd48-df84-a2be-14b9" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="6802-7e8c-4d74-dcf0" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="6315-3857-7a2e-0c34" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="0390-caac-8db0-d969" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="3385-7476-d1d0-75a4" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="51e0-8c6a-04ee-8905" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="b397-0c00-419d-5fd7" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="6d0f-57ce-6a57-37e8" name="Warlock" hidden="false" targetId="84a5-2e68-7574-450c" primary="false"/>
+        <categoryLink id="d33b-43d5-2d25-a0b5" name="Warlock Conclave" hidden="false" targetId="30ea-ec04-7774-0e0e" primary="false"/>
+        <categoryLink id="4983-05f3-3cfc-e3bd" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
+        <categoryLink id="0afe-8cff-35a5-550b" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="22f3-9f65-e906-63cd" name="Number of Models" hidden="false" collective="false" defaultSelectionEntryId="764f-c3d8-0ed7-01a2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55dd-0ac1-0755-69e7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5e8-ef54-902f-8cb0" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="764f-c3d8-0ed7-01a2" name="01 Model" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="f23a-d3ba-65f9-d89c" name="Warlock Skyrunner Conclave (1 Model)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="ba72-4ef2-038d-cfa8" name="05 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="4b56-0ac8-c48f-9d25" name="Warlock Skyrunner Conclave (5 Models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="42e4-fe60-b8d3-9bc5" name="10 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="c7fb-4c99-964e-76b2" name="Warlock Skyrunner Conclave (10 Models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="7a7f-f5ba-ede0-73b2" name="Witchblade" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7ef9-27b2-5b32-a3e1" name="Destructor" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e6bf-f329-4f12-5fc7" name="Witchblades &amp; Singing Spears" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c35d-9645-6070-0198" name="Conclave of Power" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit contains 5 or more models, add 2 to wound rolls for attacks made by this unit. If this unit contains 10 models, add 4 to wound rolls for attacks made by this unit instead</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="1893-2069-9681-e8e3" name="AeldariWeapons" targetId="4b51-905f-01f3-083f" type="catalogue"/>
   </catalogueLinks>
