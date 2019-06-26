@@ -83,6 +83,7 @@
     <entryLink id="b836-8ac0-2b6c-941a" name="Kroot Hounds" hidden="false" collective="false" targetId="bb8e-db81-b1a4-f268" type="selectionEntry"/>
     <entryLink id="3e69-d070-a816-d983" name="TX7 Hammerhead Gunship" hidden="false" collective="false" targetId="964d-0b30-009f-2095" type="selectionEntry"/>
     <entryLink id="2cca-3e84-67f5-48e8" name="TX78 Sky Ray Gunship" hidden="false" collective="false" targetId="b7d9-434a-7b7b-f1d8" type="selectionEntry"/>
+    <entryLink id="8526-bf4e-b632-d3ed" name="MV71 Sniper Drones" hidden="false" collective="false" targetId="fb9d-ca4a-6d1e-2350" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -3349,6 +3350,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="fb9d-ca4a-6d1e-2350" name="MV71 Sniper Drones" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="7a62-a3e0-ead1-0f82" name="Stealth" hidden="false" targetId="b133-8e04-3e7b-9fd6" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="43bf-b3fc-daa4-8d8c" name="Drone" hidden="false" targetId="97d8-f94f-74c4-3881" primary="false"/>
         <categoryLink id="ef90-a8aa-762c-6e5c" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
@@ -3358,6 +3362,117 @@
         <categoryLink id="0fb3-9aba-ed81-647a" name="Faction: &lt;Sept&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
         <categoryLink id="750b-37b1-0eff-60e3" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="929d-94a1-d9b8-6a8c" name="Longshot Pulse Rifles" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c1-379a-ff08-a113" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6919-2103-fca2-bbfe" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cf06-c7c7-0335-825b" name="Longshot Pulse Rifles" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="ad12-4e13-101d-70e7" name="Sniper" hidden="false" targetId="d452-1a22-2e0c-7a9e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d3b8-cb71-9497-df1a" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01e9-8d33-6de6-b4f2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0740-9765-0ba6-4339" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3756-1ead-2361-5994" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4f0a-0ab6-8ed6-fa8e" name="Models" hidden="false" collective="false" defaultSelectionEntryId="cc30-88cf-76a4-fdf7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcb1-f3f1-a2b3-bdf2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4531-e019-a932-9f0e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1acb-72ec-afe1-6f33" name="9 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="1fc8-55f1-5cba-97e3" name="MV71 Sniper Drones (9 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cc30-88cf-76a4-fdf7" name="3 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2a60-31fc-a4b7-60c3" name="MV71 Sniper Drones (3 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5503-0b43-c3d8-ece5" name="6 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="7847-99ec-8ac0-a4af" name="MV71 Sniper Drones (6 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
