@@ -84,6 +84,8 @@
     <entryLink id="3e69-d070-a816-d983" name="TX7 Hammerhead Gunship" hidden="false" collective="false" targetId="964d-0b30-009f-2095" type="selectionEntry"/>
     <entryLink id="2cca-3e84-67f5-48e8" name="TX78 Sky Ray Gunship" hidden="false" collective="false" targetId="b7d9-434a-7b7b-f1d8" type="selectionEntry"/>
     <entryLink id="8526-bf4e-b632-d3ed" name="MV71 Sniper Drones" hidden="false" collective="false" targetId="fb9d-ca4a-6d1e-2350" type="selectionEntry"/>
+    <entryLink id="a863-40ca-82c0-1874" name="TY7 Devilfish" hidden="false" collective="false" targetId="2e13-e0a8-d776-6c07" type="selectionEntry"/>
+    <entryLink id="3225-61b2-599e-067d" name="AX3 Razorshark Strike Fighter" hidden="false" collective="false" targetId="9d79-1092-249d-7f8a" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -3431,7 +3433,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cc30-88cf-76a4-fdf7" name="3 Models" hidden="false" collective="false" type="upgrade">
@@ -3467,17 +3469,35 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="2e13-e0a8-d776-6c07" name="TY7 Devilfish" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="fe25-4c8f-afec-7762" name="TY7 Devilfish" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7f20-901e-fea9-0fd9" name="TY7 Devilfish" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 &lt;Sept&gt; Infantry or Drone models. It cannot transport Battlesuits.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a13e-18a4-c14a-f4bf" name="Hover" hidden="false" targetId="9d57-7d9d-1bbb-9845" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="d14c-7c88-e607-993b" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
         <categoryLink id="97d1-a1a2-a17c-39e8" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
@@ -3488,11 +3508,82 @@
         <categoryLink id="9b1f-1af6-e291-00f0" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
         <categoryLink id="2831-3295-1ea6-c012" name="TY7 Devilfish" hidden="false" targetId="7951-c030-bfbd-48da" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8dc1-8803-8648-2d3f" name="Armoured Hull" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0355-df63-aa4c-252d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="738c-219d-a6ce-a95e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a0ba-5048-14d9-d3ec" name="Armoured Hull" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="33be-5e21-ac99-3cbe" name="Burst Cannon" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8db5-bd07-6236-f329" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8fc-5a2b-0dd7-fb60" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6dcf-b001-03e2-08e1" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6645-4768-5780-e631" name="Sponson Weapon" hidden="false" collective="false" defaultSelectionEntryId="be2f-09d4-1d0e-95d9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b953-93c7-dd99-8fce" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e5f-15a4-a26e-ec95" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="be2f-09d4-1d0e-95d9" name="2 Pulse Carbines" hidden="false" collective="false" type="upgrade">
+              <infoLinks>
+                <infoLink id="dfc4-40d0-3354-1444" name="Pulse Carbine" hidden="false" targetId="d21d-dac9-9750-3132" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0e3c-417b-1925-1c1e" name="Smart Missile Systems" hidden="false" collective="false" type="upgrade">
+              <infoLinks>
+                <infoLink id="4e35-f1ba-9300-3945" name="Smart Missile Systems" hidden="false" targetId="5de3-527e-6d5e-ee8f" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9d79-1092-249d-7f8a" name="AX3 Razorshark Strike Fighter" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="5294-bd97-e60c-a4a0" name="AX3 Razorshark Strike Fighter" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20-50&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4bd3-f2a0-8b25-000d" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="3f75-7ad5-0a5e-1e93" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
         <categoryLink id="a0b2-0b9c-e7a0-73d6" name="AX3 Razorshark Strike Fighter" hidden="false" targetId="5063-7671-8d82-aec4" primary="false"/>
@@ -3503,6 +3594,71 @@
         <categoryLink id="82a9-a0fa-1726-357d" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="3bc2-82ae-174a-87fe" name="Faction: &lt;Sept&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e2cf-fbc3-b77b-aa6c" name="Armoured Hull" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="411d-ab70-503d-8680" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afb8-d242-3b5b-56e9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="91c2-f19d-d181-0e9f" name="Armoured Hull" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="01c5-8d09-19a4-64a3" name="Quad Ion Turret" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32ad-3072-8178-dfb5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f49-8ba2-41eb-f9f1" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b878-9159-649e-b54e" name="Quad Ion Turret" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air, Supercharge</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4e3d-0a2a-2f70-b94c" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
+            <infoLink id="bfe8-d480-dfef-43a5" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5d3b-1664-22c7-511d" name="Sponson Weapon" hidden="false" collective="false" defaultSelectionEntryId="a427-f6b2-bb23-d8ff">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3c1-817f-c571-0c05" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f89c-4d0a-0429-f397" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a427-f6b2-bb23-d8ff" name="Burst Cannon" hidden="false" collective="false" type="upgrade">
+              <infoLinks>
+                <infoLink id="645b-4193-00a2-b735" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="61e5-99ea-7789-0472" name="Missile Pod" hidden="false" collective="false" type="upgrade">
+              <infoLinks>
+                <infoLink id="83c9-0649-3300-7c78" name="Missile Pod" hidden="false" targetId="e5db-08f5-e1d6-fc6b" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
