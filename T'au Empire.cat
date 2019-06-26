@@ -286,7 +286,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="9044-4216-a621-0d1a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e32-b52d-4fb6-9a61" type="equalTo"/>
-                    <condition field="selections" scope="9044-4216-a621-0d1a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b66e-e021-f008-c39f" type="equalTo"/>
+                    <condition field="selections" scope="9044-4216-a621-0d1a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -296,7 +296,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="9044-4216-a621-0d1a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e32-b52d-4fb6-9a61" type="equalTo"/>
-                    <condition field="selections" scope="9044-4216-a621-0d1a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b66e-e021-f008-c39f" type="equalTo"/>
+                    <condition field="selections" scope="9044-4216-a621-0d1a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -601,37 +601,11 @@
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ed-e9d2-1d72-ac7f" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="b66e-e021-f008-c39f" name="Shield Drone" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c209-e040-ccb1-72a2" type="max"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry id="30ad-fd74-42be-6364" name="Gun Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ee-d9c5-0381-d9c8" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4699-1114-5b37-56a1" name="Gun Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made with ranged weapons by this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry id="38f1-ac90-785d-dfec" name="Marker Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7b1-b110-4b73-345b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a266-8540-5a5e-cf03" name="Marker Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made with ranged weapons by this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink id="819a-31b7-d3c1-5329" name="Marker Drone" hidden="false" collective="false" targetId="5494-c173-ce18-d106" type="selectionEntry"/>
+            <entryLink id="0806-7cff-3c2d-a5af" name="Gun Drone" hidden="false" collective="false" targetId="fc45-6ff1-407e-3515" type="selectionEntry"/>
+            <entryLink id="1b67-e2b6-5e4e-f9b9" name="Shield Drone" hidden="false" collective="false" targetId="904a-178c-f29c-e404" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -1108,6 +1082,43 @@
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="20.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="fc45-6ff1-407e-3515" name="Gun Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d99-a95a-7c17-e15a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4da5-289b-ca7c-662d" name="Gun Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made with ranged weapons by this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5494-c173-ce18-d106" name="Marker Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ac3-2be2-31ee-2df6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9db1-0ed5-0bc4-3882" name="Marker Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made with ranged weapons by this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="904a-178c-f29c-e404" name="Shield Drone" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d871-a17c-d9f8-9ecc" type="max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry id="5a65-5c41-ead0-78ab" name="Guardian Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96a4-988f-0713-f14f" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d9f1-5c7d-1c22-19ec" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
