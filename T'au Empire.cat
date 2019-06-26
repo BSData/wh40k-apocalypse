@@ -71,6 +71,7 @@
     <entryLink id="4b7d-e22b-6520-68d5" name="Strike Team" hidden="false" collective="false" targetId="248a-af9d-cd8e-f3f8" type="selectionEntry"/>
     <entryLink id="4b05-6423-9be9-30ad" name="Kroot Carnivores" hidden="false" collective="false" targetId="1552-d7b8-2ff8-938c" type="selectionEntry"/>
     <entryLink id="7f0c-c990-dd21-54d2" name="Kroot Shaper" hidden="false" collective="false" targetId="ceb6-a16f-b5af-ee1e" type="selectionEntry"/>
+    <entryLink id="3705-17c2-0ee5-ea5b" name="Krootox Riders" hidden="false" collective="false" targetId="d505-d441-b527-9315" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -1555,9 +1556,111 @@
         <categoryLink id="7777-3a9c-cfc7-1bfc" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
         <categoryLink id="f5b2-4da8-c18c-71dd" name="Krootox Riders" hidden="false" targetId="4ea8-7b64-9ccb-592a" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
-      </costs>
+      <selectionEntries>
+        <selectionEntry id="c90c-8569-0281-7c05" name="Kroot Guns" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb02-9cab-3acf-e48b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e3f-7b6f-eb25-5d2c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="0386-256a-927d-f361" name="Kroot Guns" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c030-5244-9a84-73ff" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="8101-6bf8-0bee-44c0" name="Krootox Fists" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82fc-abaa-d71b-b8d1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4500-4099-985f-b1ee" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ed9e-2bc6-7529-3ec2" name="Krootox Fists" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="106f-9141-8f19-2f01" name="Models" hidden="false" collective="false" defaultSelectionEntryId="5666-d1f1-b9fb-0883">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17a9-3852-e2f5-2b8a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf2e-e419-81eb-ac1a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5666-d1f1-b9fb-0883" name="1 Model" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="1614-d348-a4c7-0ba0" name="Krootox Riders (1 model)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bc24-ed5d-8247-a5e5" name="2 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="5438-84b3-2671-710c" name="Krootox Riders (2 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ad1e-2459-f846-743f" name="3 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="f3ad-ff3f-bbfd-1984" name="Krootox Riders (3 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="b582-714f-c28e-6f6a" name="XV25 Stealth Battlesuits" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <categoryLinks>
