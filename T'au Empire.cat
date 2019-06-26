@@ -67,6 +67,7 @@
     <entryLink id="b643-609b-3661-f73f" name="Aun&apos;Shi" hidden="false" collective="false" targetId="b763-de60-1c55-d78d" type="selectionEntry"/>
     <entryLink id="6c2b-f477-bdf4-f44b" name="Aun&apos;Va" hidden="false" collective="false" targetId="4369-6680-249a-223b" type="selectionEntry"/>
     <entryLink id="3a81-e1d4-e3f3-9def" name="Longstrike" hidden="false" collective="false" targetId="c0db-3dcb-9e77-bead" type="selectionEntry"/>
+    <entryLink id="91dc-0b7d-de6e-c39f" name="Breacher Team" hidden="false" collective="false" targetId="8fdd-e4ec-3053-84b3" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -1094,6 +1095,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8fdd-e4ec-3053-84b3" name="Breacher Team" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+          <conditions>
+            <condition field="selections" scope="8fdd-e4ec-3053-84b3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3a8-78b7-b323-a21c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9121-503f-d5b8-ac15" name="Breacher Team" hidden="false" targetId="a620-d290-7923-43fd" primary="false"/>
         <categoryLink id="34f7-52c5-9fa1-7187" name="Faction: &lt;Sept&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
@@ -1102,9 +1110,121 @@
         <categoryLink id="73d3-8aeb-edbe-cdbe" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="3f09-1d1e-d6ed-5653" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
       </categoryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
-      </costs>
+      <selectionEntries>
+        <selectionEntry id="33a1-e090-5af2-74f5" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8864-ae00-411d-2b23" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="617f-8498-d2fe-145a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1615-7814-17a9-c817" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0827-b988-7848-b1b7" name="Pulse Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18a3-01b2-1060-251c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9159-46eb-a99f-113d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ace8-f888-f1f2-53e6" name="Pulse Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">15&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d3a8-78b7-b323-a21c" name="Drones (Power Rating +1) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be26-a31e-87de-3cc3" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f9a4-c1d4-8cb2-06b5" name="Marker Drone" hidden="false" collective="false" targetId="5494-c173-ce18-d106" type="selectionEntry"/>
+            <entryLink id="560d-2679-2f65-ab1e" name="Gun Drone" hidden="false" collective="false" targetId="fc45-6ff1-407e-3515" type="selectionEntry"/>
+            <entryLink id="f34a-00df-09a3-7aef" name="Shield Drone" hidden="false" collective="false" targetId="904a-178c-f29c-e404" type="selectionEntry"/>
+            <entryLink id="5cb0-5e8b-23e9-b87f" name="Guardian Drone" hidden="false" collective="false" targetId="5a65-5c41-ead0-78ab" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e180-1b83-a355-e772" name="Models" hidden="false" collective="false" defaultSelectionEntryId="d32c-5674-6bd4-c214">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="368a-8448-db92-53a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="657a-a99b-d535-107e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1eac-3f3d-b3d6-5915" name="10 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="5770-7d8b-3ab7-498c" name="Breacher Team (10 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="7+">
+                      <conditions>
+                        <condition field="selections" scope="8fdd-e4ec-3053-84b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d32c-5674-6bd4-c214" name="5 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="017d-36c4-a168-7c7a" name="Breacher Team (5 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="7+">
+                      <conditions>
+                        <condition field="selections" scope="8fdd-e4ec-3053-84b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="248a-af9d-cd8e-f3f8" name="Strike Team" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <categoryLinks>
