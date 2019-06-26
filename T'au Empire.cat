@@ -90,6 +90,7 @@
     <entryLink id="47e2-ab93-2d4e-189f" name="Tidewall Shieldline (slot)" hidden="false" collective="false" targetId="ca0d-9690-4244-bacc" type="selectionEntry"/>
     <entryLink id="2024-ca92-8630-70ae" name="Tidewall Droneport" hidden="false" collective="false" targetId="5f9b-0297-c7bc-7e6c" type="selectionEntry"/>
     <entryLink id="b1f2-6169-2db3-6c31" name="Tidewall Gunrig" hidden="false" collective="false" targetId="5a84-5836-00a2-7bdd" type="selectionEntry"/>
+    <entryLink id="b516-d97b-21fe-6791" name="KV128 Stormsurge" hidden="false" collective="false" targetId="4dee-a775-0380-6b96" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -3982,6 +3983,24 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4dee-a775-0380-6b96" name="KV128 Stormsurge" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="ebb1-1969-b057-e933" name="KV128 Stormsurge" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1af0-da4a-18e6-6792" name="Stabilising Anchors" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made with ranged weapons by this unit if it did not make a Move action this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="64e7-57aa-d536-2abf" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="aacd-3969-f1a7-9a14" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
@@ -3991,6 +4010,172 @@
         <categoryLink id="fd94-8298-2f69-b997" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
         <categoryLink id="61cc-2adb-f0e9-707e" name="KV128 Stormsurge" hidden="false" targetId="5ba9-9309-9f65-e31f" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ce77-20c6-422b-d007" name="Cluster Rocket System" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1372-b7d7-9841-15d3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35c1-70af-2c32-1826" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e130-78e6-c108-ece9" name="Cluster Rocket System" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">8</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8673-2bd5-23ec-8697" name="Destroyer Missile" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa58-eab7-97c6-81a9" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9723-fb51-4a6e-2509" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a8e1-2dd2-8bc9-285f" name="Destroyer Missile" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer, One Use Only</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4939-7e36-c0dd-b312" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+            <infoLink id="737f-d297-8c67-9404" name="One Use Only" hidden="false" targetId="822c-cc23-b4b1-bcb2" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="a80e-5677-35ee-ebf1" name="Crushing Feet" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f092-a2af-bbae-caee" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fffb-c108-2069-460a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2100-cc7c-b3d6-2099" name="Crushing Feet" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="b5bf-d82e-c7c1-77a8" name="Smart Missile Systems" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf6e-f611-8d54-14f3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4851-6d94-317f-8903" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="069e-99b5-ccf9-41c7" name="Smart Missile Systems" hidden="false" targetId="5de3-527e-6d5e-ee8f" type="infoGroup"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fa59-6422-4341-fac6" name="Primary Weapon" hidden="false" collective="false" defaultSelectionEntryId="1ca8-1467-5d76-34aa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6601-bc49-cddc-fcb7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d2f-3840-b04c-0399" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1ca8-1467-5d76-34aa" name="Pulse Blastcannon" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2892-44f0-133a-b5ae" name="Pulse Blastcannon" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="a3c3-d121-8f55-9d9a" name="Pulse Driver Cannon" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="0295-b60b-2a52-9026" name="Pulse Driver Cannon" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="974d-6395-49c6-cc0f" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c873-f7ca-b42e-ee99" name="Secondary Weapon" hidden="false" collective="false" defaultSelectionEntryId="1f6f-87a9-43d8-b403">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dfc-2b2c-8bd0-3074" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2267-ae41-c9aa-e777" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="374d-8fb0-44b1-1c64" name="Airbursting Fragmentation Projectors" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="3ef6-6daf-9f06-8f97" name="Airbursting Fragmentation Projectors" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="3135-0ab9-2c08-ad29" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1f6f-87a9-43d8-b403" name="Flamers" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="abc1-76a0-7460-9516" name="Flamer" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="85e8-f3cf-4100-1c03" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="feaf-e606-f024-32b7" name="2 Burst Cannons" hidden="false" collective="false" type="upgrade">
+              <infoLinks>
+                <infoLink id="185d-6be7-18c2-0ec1" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="20.0"/>
       </costs>
