@@ -73,6 +73,7 @@
     <entryLink id="7f0c-c990-dd21-54d2" name="Kroot Shaper" hidden="false" collective="false" targetId="ceb6-a16f-b5af-ee1e" type="selectionEntry"/>
     <entryLink id="3705-17c2-0ee5-ea5b" name="Krootox Riders" hidden="false" collective="false" targetId="d505-d441-b527-9315" type="selectionEntry"/>
     <entryLink id="fdf5-9156-0df2-1482" name="XV25 Stealth Battlesuits" hidden="false" collective="false" targetId="b582-714f-c28e-6f6a" type="selectionEntry"/>
+    <entryLink id="d1cc-c2c2-157f-b93f" name="Firesight Marksman" hidden="false" collective="false" targetId="665b-3ca2-f381-67b6" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -1829,6 +1830,27 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="665b-3ca2-f381-67b6" name="Firesight Marksman" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="ed2d-a357-6f43-d10a" name="Firesight Marksman" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3fdb-e342-046a-3562" name="Drone Uplink" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with ranged weapons by &lt;Sept&gt; MV71 Sniper Drones whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="098c-f882-d0e2-1ffa" name="Stealth" hidden="false" targetId="b133-8e04-3e7b-9fd6" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="afeb-9ff4-b54e-d1dd" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="4a74-8e38-d97f-5ae9" name="Faction: &lt;Sept&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
@@ -1838,6 +1860,29 @@
         <categoryLink id="0288-3425-7dc2-30bc" name="Firesight Marksman" hidden="false" targetId="b120-fa97-63af-c2b4" primary="false"/>
         <categoryLink id="312c-eeea-fc29-37db" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8cb3-3dd3-c20c-e7f8" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e931-0c11-56cc-f533" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f13-034a-df22-cd4e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f61b-8437-dae3-80e7" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
