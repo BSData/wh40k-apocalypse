@@ -72,6 +72,7 @@
     <entryLink id="4b05-6423-9be9-30ad" name="Kroot Carnivores" hidden="false" collective="false" targetId="1552-d7b8-2ff8-938c" type="selectionEntry"/>
     <entryLink id="7f0c-c990-dd21-54d2" name="Kroot Shaper" hidden="false" collective="false" targetId="ceb6-a16f-b5af-ee1e" type="selectionEntry"/>
     <entryLink id="3705-17c2-0ee5-ea5b" name="Krootox Riders" hidden="false" collective="false" targetId="d505-d441-b527-9315" type="selectionEntry"/>
+    <entryLink id="fdf5-9156-0df2-1482" name="XV25 Stealth Battlesuits" hidden="false" collective="false" targetId="b582-714f-c28e-6f6a" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -1663,6 +1664,17 @@
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="b582-714f-c28e-6f6a" name="XV25 Stealth Battlesuits" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+          <conditions>
+            <condition field="selections" scope="b582-714f-c28e-6f6a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24e4-6786-15b6-811b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="b817-3343-c893-2ba2" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="profile"/>
+        <infoLink id="f91a-adb4-7320-1cf3" name="Stealth" hidden="false" targetId="b133-8e04-3e7b-9fd6" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="9b38-b166-2d49-73c1" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="639f-6544-1999-0428" name="Faction: &lt;Sept&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
@@ -1674,9 +1686,117 @@
         <categoryLink id="21fb-999f-e4dd-64db" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="4e76-0b44-756d-2a24" name="XV25 Stealth Battlesuits" hidden="false" targetId="3013-36d5-0ea1-06be" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
-      </costs>
+      <selectionEntries>
+        <selectionEntry id="6b53-9092-830a-1155" name="Burst Cannons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="946e-baa3-6f34-cda8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="204a-0899-12eb-1d10" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ef25-c660-4162-813b" name="Burst Cannons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6af5-6539-386d-3852" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de2e-2d27-1feb-61f7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99bb-93f3-25ff-cd15" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="67ec-bf25-999d-2f43" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4bce-f4b8-d049-ff5c" name="Models" hidden="false" collective="false" defaultSelectionEntryId="a63c-b99c-509e-56ff">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6868-9b49-4b93-d46e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8e9-bf51-a76e-de91" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a63c-b99c-509e-56ff" name="3 Models" hidden="false" collective="false" type="model">
+              <profiles>
+                <profile id="e3b3-e439-c77a-a0f1" name="XV25 Stealth Battlesuits (3 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+                      <conditions>
+                        <condition field="selections" scope="b582-714f-c28e-6f6a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f88c-fc70-3d9d-8d1f" name="6 Models" hidden="false" collective="false" type="model">
+              <profiles>
+                <profile id="6e92-0745-0ff9-8870" name="XV25 Stealth Battlesuits (6 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+                      <conditions>
+                        <condition field="selections" scope="b582-714f-c28e-6f6a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="24e4-6786-15b6-811b" name="Drones (Power Rating +1) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af4e-5172-4512-6dfa" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8ccd-02fc-8109-1b9e" name="Marker Drone" hidden="false" collective="false" targetId="5494-c173-ce18-d106" type="selectionEntry"/>
+            <entryLink id="13ef-bae9-6bbc-9f14" name="Gun Drone" hidden="false" collective="false" targetId="fc45-6ff1-407e-3515" type="selectionEntry"/>
+            <entryLink id="3a2e-7158-73b8-3e97" name="Shield Drone" hidden="false" collective="false" targetId="904a-178c-f29c-e404" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="fa7a-9ba1-fcc4-b47f" name="XV8 Crisis Battlesuits" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <categoryLinks>
