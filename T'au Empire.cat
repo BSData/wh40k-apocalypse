@@ -57,6 +57,7 @@
   </categoryEntries>
   <entryLinks>
     <entryLink id="1b3c-ffd5-59f4-28b7" name="Commander Shadowsun" hidden="false" collective="false" targetId="ccb7-9961-bfa0-718f" type="selectionEntry"/>
+    <entryLink id="60c5-e844-b67e-53a6" name="Commander Farsight" hidden="false" collective="false" targetId="9b32-1123-1cf0-6714" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -125,6 +126,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9036-3219-4ac3-cd6c" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -143,6 +147,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ee08-4c5b-8605-576d" name="Command-link Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -173,6 +180,22 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9b32-1123-1cf0-6714" name="Commander Farsight" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1687-934a-01d1-5bbd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c4db-a918-357d-6fce" name="Commander Farsight" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="3f2b-ffe2-d403-4a9e" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="24fb-9f7d-0d8c-ed53" name="Faction: Farsight Enclaves" hidden="false" targetId="d6bc-c960-d9be-925a" primary="false"/>
@@ -185,6 +208,44 @@
         <categoryLink id="17fd-2b01-93ba-87b1" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
         <categoryLink id="9cc0-2b1c-99a4-9700" name="Farsight" hidden="false" targetId="97ee-28ed-a428-0145" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7f9f-7c63-9b4e-a6d4" name="High-intensity Plasma Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9568-4d3a-b94a-22a2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45d7-7d80-0f31-d63c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4166-4f5e-e13d-95cf" name="High-intensity Plasma Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy </characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8088-e843-3ed0-9b37" name="The Dawn Blade" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c25d-62f9-f19c-189c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f69-d046-4369-270e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="36ec-cbcb-b776-f0ba" name="The Dawn Blade" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
       </costs>
