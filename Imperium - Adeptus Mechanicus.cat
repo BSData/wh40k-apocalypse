@@ -49,6 +49,7 @@
     <entryLink id="b4d1-da95-c270-8499" name="Kastelan Robots" hidden="false" collective="false" targetId="0663-388f-384d-2c41" type="selectionEntry"/>
     <entryLink id="ae3b-899a-d7a7-1229" name="Onager Dunecrawler" hidden="false" collective="false" targetId="de14-64d1-3c05-640b" type="selectionEntry"/>
     <entryLink id="df38-b8f4-abe7-5b58" name="Skorpius Disintegrator" hidden="false" collective="false" targetId="1dd1-6a73-648b-44c0" type="selectionEntry"/>
+    <entryLink id="99ee-0a84-1f74-b610" name="Skorpius Dunerider" hidden="false" collective="false" targetId="b9f8-cc27-f18a-0096" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ff60-0474-2266-31ca" name="Belisarius Cawl" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
@@ -233,7 +234,15 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
           </characteristics>
         </profile>
+        <profile id="8e06-72b6-93ca-c7f7" name="Lord of the Machine Cult" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly &lt;Forge World&gt; units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="3fee-ee77-08ff-91f4" name="Master of Machines" hidden="false" targetId="b6e5-0a65-9d35-96c2" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="a515-685b-881f-e4ad" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="9cfe-3138-7474-5a0d" name="Dominus" hidden="false" targetId="2d8f-9d33-fdad-1c71" primary="false"/>
@@ -586,7 +595,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27c1-e162-50d3-5523" type="equalTo"/>
+                <condition field="selections" scope="ed49-d92e-14f5-7b01" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
@@ -792,7 +801,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition scope="6aa3-adee-8e30-760f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+                <condition field="selections" scope="6aa3-adee-8e30-760f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
@@ -1987,7 +1996,7 @@
       <modifiers>
         <modifier type="set" field="1466-da3f-0d27-dace" value="14.0">
           <conditions>
-            <condition field="selections" scope="0663-388f-384d-2c41" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c1e0-1e71-fbcd-062d" type="equalTo"/>
+            <condition field="selections" scope="0663-388f-384d-2c41" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9368-0d95-c183-7434" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="1466-da3f-0d27-dace" value="21.0">
@@ -2238,6 +2247,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6d2b-597e-20dd-d087" name="Icarus Array" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2255,6 +2267,9 @@
               <infoLinks>
                 <infoLink id="358e-a6b4-af23-225c" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8265-cdca-fa6b-7082" name="Twin Heavy Phophor Blaster" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2269,6 +2284,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="857a-b350-5846-0889" name="Neutron Laser &amp; Cognis Heavy Stubber" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2286,6 +2304,9 @@
               <infoLinks>
                 <infoLink id="3190-b9ac-4b83-da97" name="Cognis Heavy Stubber" hidden="false" targetId="ebd8-a1b9-ead4-9fe7" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2322,6 +2343,9 @@
       <infoLinks>
         <infoLink id="560f-38bc-395f-bf3c" name="Cognis Heavy Stubber" hidden="false" targetId="ebd8-a1b9-ead4-9fe7" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b9f8-cc27-f18a-0096" name="Skorpius Dunerider" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
@@ -2373,6 +2397,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2427,6 +2454,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2449,6 +2479,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="90f7-9770-eefc-7907" name="Belleros Energy Cannon" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2466,6 +2499,9 @@
               <infoLinks>
                 <infoLink id="91eb-809d-6f13-b5b7" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2500,6 +2536,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
