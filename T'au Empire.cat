@@ -70,6 +70,7 @@
     <entryLink id="91dc-0b7d-de6e-c39f" name="Breacher Team" hidden="false" collective="false" targetId="8fdd-e4ec-3053-84b3" type="selectionEntry"/>
     <entryLink id="4b7d-e22b-6520-68d5" name="Strike Team" hidden="false" collective="false" targetId="248a-af9d-cd8e-f3f8" type="selectionEntry"/>
     <entryLink id="4b05-6423-9be9-30ad" name="Kroot Carnivores" hidden="false" collective="false" targetId="1552-d7b8-2ff8-938c" type="selectionEntry"/>
+    <entryLink id="7f0c-c990-dd21-54d2" name="Kroot Shaper" hidden="false" collective="false" targetId="ceb6-a16f-b5af-ee1e" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -1489,6 +1490,29 @@
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="ceb6-a16f-b5af-ee1e" name="Kroot Shaper" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="bc88-0f28-e692-4168" name="Kroot Shaper" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d83-4a19-b356-6cec" name="Wisest of their Kind" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly Kroot units can use this unit’s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e27b-8bbb-fbe0-8fba" name="The Shaper Commands" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly Kroot units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="5b66-ffd3-a79c-fb6f" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="d40a-4a6e-0817-006d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
@@ -1498,6 +1522,26 @@
         <categoryLink id="ae53-16d0-7589-2ee7" name="Kroot Shaper" hidden="false" targetId="2f39-07ec-282d-5dc1" primary="false"/>
         <categoryLink id="ce6d-4540-750c-b9c5" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9eeb-841d-dbc4-3f28" name="Ritual Blade" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25ab-6ae8-0a57-ac87" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78f2-354b-63fe-3ea9" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ff82-1eac-a6dd-ee4e" name="Ritual Blade" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
