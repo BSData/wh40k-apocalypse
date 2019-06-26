@@ -91,6 +91,8 @@
     <entryLink id="2024-ca92-8630-70ae" name="Tidewall Droneport" hidden="false" collective="false" targetId="5f9b-0297-c7bc-7e6c" type="selectionEntry"/>
     <entryLink id="b1f2-6169-2db3-6c31" name="Tidewall Gunrig" hidden="false" collective="false" targetId="5a84-5836-00a2-7bdd" type="selectionEntry"/>
     <entryLink id="b516-d97b-21fe-6791" name="KV128 Stormsurge" hidden="false" collective="false" targetId="4dee-a775-0380-6b96" type="selectionEntry"/>
+    <entryLink id="946f-804d-f625-03e3" name="XV8 Crisis Battlesuits" hidden="false" collective="false" targetId="fa7a-9ba1-fcc4-b47f" type="selectionEntry"/>
+    <entryLink id="6109-b638-6b79-042f" name="XV8 Crisis Bodyguards" hidden="false" collective="false" targetId="3dca-5c02-78a2-bc20" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -1865,6 +1867,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="fa7a-9ba1-fcc4-b47f" name="XV8 Crisis Battlesuits" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="b123-68c1-cb1f-3d0a" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="dbba-d28a-d2fd-7dbc" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="d989-5cf6-4443-371c" name="Faction: &lt;Sept&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
@@ -1875,11 +1880,261 @@
         <categoryLink id="7648-1771-2618-a206" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="0afc-90b5-de91-eeda" name="XV8 Crisis Battlesuits" hidden="false" targetId="7b64-bf70-4709-bf19" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
-      </costs>
+      <selectionEntries>
+        <selectionEntry id="f3c7-0c11-c359-c487" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da47-64a3-f76e-4973" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca82-6c8f-cf55-0dee" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="00b0-5542-3170-6a45" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fbb7-e070-bf21-a8bd" name="Models" hidden="false" collective="false" defaultSelectionEntryId="310b-ba9f-0d4d-055f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2563-aab3-8693-3786" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4546-4478-75f1-27ea" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="310b-ba9f-0d4d-055f" name="3 Models" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0246-4794-4315-d83c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="0561-50bf-e61a-9fc0" name="XV8 Crisis Battlesuits (3 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+                      <conditions>
+                        <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a152-47bb-496b-1ce9" name="6 Models" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0246-4794-4315-d83c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b839-b5f9-e33d-4668" name="XV8 Crisis Battlesuits (6 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+                      <conditions>
+                        <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cdcf-cef0-7f7f-f383" name="9 Models" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0246-4794-4315-d83c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="5fe7-c53c-bc24-1fc0" name="XV8 Crisis Battlesuits (9 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+                      <conditions>
+                        <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="19.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0246-4794-4315-d83c" name="Drones (Power Rating +1/3m) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f4-916e-8bc8-8ddc" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5c75-7555-c48c-8235" name="Marker Drone" hidden="false" collective="false" targetId="5494-c173-ce18-d106" type="selectionEntry"/>
+            <entryLink id="e45d-dfdd-d824-c39f" name="Gun Drone" hidden="false" collective="false" targetId="fc45-6ff1-407e-3515" type="selectionEntry"/>
+            <entryLink id="b86e-68b7-4a28-52d0" name="Shield Drone" hidden="false" collective="false" targetId="904a-178c-f29c-e404" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ed6f-0c72-e110-c7b7" name="Weapons (1/3m)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" defaultSelectionEntryId="2962-b882-35eb-eb29">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a152-47bb-496b-1ce9" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="4f17-8d4b-f60d-4d66" value="2.0"/>
+                <modifier type="set" field="ffe9-4637-f3d5-cda9" value="2.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cdcf-cef0-7f7f-f383" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="4f17-8d4b-f60d-4d66" value="3.0"/>
+                <modifier type="set" field="ffe9-4637-f3d5-cda9" value="3.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="fa7a-9ba1-fcc4-b47f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="310b-ba9f-0d4d-055f" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ffe9-4637-f3d5-cda9" value="1.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f17-8d4b-f60d-4d66" type="min"/>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffe9-4637-f3d5-cda9" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0479-ef09-3435-46b8" name="3 Airbursting Fragmentation Projectors" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dcd-18bd-b392-b7b7" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="553f-d832-6112-64ab" name="Airbursting Fragmentation Projector" hidden="false" targetId="a0f6-4fcc-64b0-ab22" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="ffa7-eccd-322c-795c" name="3 Fusion Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7136-ce76-307a-6f80" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="268b-46af-124a-845f" name="Fusion Blaster" hidden="false" targetId="0f4e-ab4d-4ae5-3382" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="2962-b882-35eb-eb29" name="3 Missile Pods" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c743-7690-44d0-d90e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5aba-d6f4-1007-d3f9" name="Missile Pod" hidden="false" targetId="e5db-08f5-e1d6-fc6b" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="8ec1-f5ad-51dd-13bd" name="3 Burst Cannons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fec9-2e57-71c2-3812" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0ff7-4f00-0d4c-c7e7" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="98bc-ce5a-5460-9905" name="3 Cyclic Ion Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562a-f9de-7cb7-5d59" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="31a9-1233-0b00-a66e" name="Cyclic Ion Blaster" hidden="false" targetId="317b-ee9c-836d-c55d" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="110f-c09d-1b7d-fb68" name="3 Flamers" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e60f-b489-71ea-6aa4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3368-afb3-fe83-da51" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7deb-d74a-dce0-52d2" name="3 Plasma Rifles" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8808-f3dd-16a8-674b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a7d9-ee48-b922-93ff" name="Plasma Rifle" hidden="false" targetId="32bf-abd8-f77b-a925" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="3dca-5c02-78a2-bc20" name="XV8 Crisis Bodyguards" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="b526-555c-1332-4c31" name="Sworn Protectors" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, you can select one friendly &lt;Sept&gt; Character unit that has at least one blast marker next to it and is within 6&quot; of this unit. Remove up to D3 blast markers from that Character unit and place them next to this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c073-9b76-3c49-350d" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6228-dbb1-eda1-af43" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="ac93-167a-e76c-1c51" name="Faction: &lt;Sept&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
@@ -1890,9 +2145,249 @@
         <categoryLink id="bc97-51bd-9f0f-0985" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="6494-a2cf-698d-7bf3" name="XV8 Crisis Bodyguards" hidden="false" targetId="6732-8a2f-bfa8-7ef0" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
-      </costs>
+      <selectionEntries>
+        <selectionEntry id="371b-d18e-10f0-4eec" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b56-cfdf-0a5b-cdb0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3382-1abc-3fab-7cbf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b4ec-96d0-30bf-c77a" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a190-56de-2eed-1ee2" name="Drones (Power Rating +1/3m) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d9c-c491-eae1-f14f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a852-8490-6630-64a3" name="Marker Drone" hidden="false" collective="false" targetId="5494-c173-ce18-d106" type="selectionEntry"/>
+            <entryLink id="4f93-c792-3ad0-593f" name="Gun Drone" hidden="false" collective="false" targetId="fc45-6ff1-407e-3515" type="selectionEntry"/>
+            <entryLink id="21c4-cc5f-0fe8-7962" name="Shield Drone" hidden="false" collective="false" targetId="904a-178c-f29c-e404" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9661-9f35-5e48-f2a5" name="Models" hidden="false" collective="false" defaultSelectionEntryId="36e3-f0ee-31c7-838c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c4-5fbb-d816-7661" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f6f-ea36-3469-0e31" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="36e3-f0ee-31c7-838c" name="3 Models" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a190-56de-2eed-1ee2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="352d-ca47-16fe-a132" name="XV8 Crisis Bodyguards (3 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+                      <conditions>
+                        <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c794-44e4-2205-8ac4" name="6 Models" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a190-56de-2eed-1ee2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="261b-27a3-5570-26bc" name="XV8 Crisis Bodyguards (6 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+                      <conditions>
+                        <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7590-f5be-281b-018a" name="9 Models" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a190-56de-2eed-1ee2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1426-99cf-4d03-c9b1" name="XV8 Crisis Bodyguards (9 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+                      <conditions>
+                        <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="22.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="abf5-fce6-4ef9-b2d5" name="Weapons (1/3m)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" defaultSelectionEntryId="86b0-198d-58b6-34dc">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c794-44e4-2205-8ac4" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="af18-850d-22a9-ca5a" value="2.0"/>
+                <modifier type="set" field="f7d6-361a-2740-34fe" value="2.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7590-f5be-281b-018a" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="af18-850d-22a9-ca5a" value="3.0"/>
+                <modifier type="set" field="f7d6-361a-2740-34fe" value="3.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="3dca-5c02-78a2-bc20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36e3-f0ee-31c7-838c" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="af18-850d-22a9-ca5a" value="1.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7d6-361a-2740-34fe" type="min"/>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af18-850d-22a9-ca5a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cc7f-e351-a5fd-f1a5" name="3 Airbursting Fragmentation Projectors" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af43-f3f6-f6b7-f8a2" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f75a-9f47-e6de-6229" name="Airbursting Fragmentation Projector" hidden="false" targetId="a0f6-4fcc-64b0-ab22" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="b3f6-6e91-01ee-f623" name="3 Fusion Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c63-0f1e-ee14-8ffe" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="174d-5356-e979-069a" name="Fusion Blaster" hidden="false" targetId="0f4e-ab4d-4ae5-3382" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="86b0-198d-58b6-34dc" name="3 Missile Pods" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11cc-5bb5-3f67-9009" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3a32-604b-c72f-30ce" name="Missile Pod" hidden="false" targetId="e5db-08f5-e1d6-fc6b" type="infoGroup"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="c068-45a7-11c5-5a2e" name="3 Burst Cannons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ef5-8364-f0c2-7e28" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="eb26-3c75-8fbf-675c" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="98ef-75a8-034f-717b" name="3 Cyclic Ion Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75fc-3a12-3f80-c3fb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f693-0fc0-7bb0-03d5" name="Cyclic Ion Blaster" hidden="false" targetId="317b-ee9c-836d-c55d" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="30ec-a4b7-1cd0-5e0e" name="3 Flamers" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fd2-7da8-144d-9ddb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="af72-7e9b-3daa-f27a" name="Flamer" hidden="false" targetId="8ab4-d68e-4164-1448" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5638-188b-c0ab-5a9e" name="3 Plasma Rifles" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eab4-97ea-4742-6204" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="563b-bd4c-ee37-012a" name="Plasma Rifle" hidden="false" targetId="32bf-abd8-f77b-a925" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="665b-3ca2-f381-67b6" name="Firesight Marksman" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <profiles>
