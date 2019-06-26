@@ -62,6 +62,7 @@
     <entryLink id="60c5-e844-b67e-53a6" name="Commander Farsight" hidden="false" collective="false" targetId="9b32-1123-1cf0-6714" type="selectionEntry"/>
     <entryLink id="52ec-3506-4f0c-23e8" name="Commander" hidden="false" collective="false" targetId="9044-4216-a621-0d1a" type="selectionEntry"/>
     <entryLink id="fd6d-26bf-3748-0b7c" name="Ethereal" hidden="false" collective="false" targetId="8a85-cdb3-e89c-52ea" type="selectionEntry"/>
+    <entryLink id="6bef-2e4c-e1cb-53a5" name="Cadre Fireblade" hidden="false" collective="false" targetId="1675-2edd-b2c3-6ecd" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -660,6 +661,11 @@
                 <condition field="selections" scope="8a85-cdb3-e89c-52ea" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c93-751a-7871-e1f0" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="a56f-38ae-3917-aadc" value="9+">
+              <conditions>
+                <condition field="selections" scope="8a85-cdb3-e89c-52ea" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
@@ -750,6 +756,38 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1675-2edd-b2c3-6ecd" name="Cadre Fireblade" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+          <conditions>
+            <condition field="selections" scope="1675-2edd-b2c3-6ecd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a51-771b-2524-a131" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7c94-fbf6-faa9-8306" name="Cadre Fireblade" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="a56f-38ae-3917-aadc" value="7+">
+              <conditions>
+                <condition field="selections" scope="1675-2edd-b2c3-6ecd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22be-ae10-a954-77ee" name="Volley Fire" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Attacks characteristic of &lt;Sept&gt; units within 6&quot; of any friendly &lt;Sept&gt; Cadre Fireblades whilst they are making attacks with Pulse Carbines and Pulse Rifles that target a unit within half range of the weapon being used for that attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="c680-299f-255d-9dfd" name="Cadre Fireblade" hidden="false" targetId="ce4a-3042-cfc9-6629" primary="false"/>
         <categoryLink id="8b2f-da2e-259f-8fe7" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -759,6 +797,62 @@
         <categoryLink id="ed4b-58a4-a865-1aab" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="40c0-71c7-888e-da00" name="Faction: &lt;SEPT&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d364-2a07-30af-fbab" name="Pulse Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5fe-a177-94fb-265d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eefe-e541-fcb6-47fc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cb4b-4934-7004-66f5" name="Pulse Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b010-6a39-f757-f47d" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="af7d-24f9-7f41-2c97" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a50-f1bb-1161-64d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc4a-9fdd-55cc-06cf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ae48-5584-ef09-2f0a" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0a51-771b-2524-a131" name="Drones (Power Rating +1) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d953-f25b-9d8c-dbf9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c3d1-42a4-f2dd-9f10" name="Marker Drone" hidden="false" collective="false" targetId="5494-c173-ce18-d106" type="selectionEntry"/>
+            <entryLink id="2e44-531f-eea9-7ada" name="Gun Drone" hidden="false" collective="false" targetId="fc45-6ff1-407e-3515" type="selectionEntry"/>
+            <entryLink id="09aa-a72d-da75-20ab" name="Shield Drone" hidden="false" collective="false" targetId="904a-178c-f29c-e404" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
