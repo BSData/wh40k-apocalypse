@@ -76,6 +76,7 @@
     <entryLink id="d1cc-c2c2-157f-b93f" name="Firesight Marksman" hidden="false" collective="false" targetId="665b-3ca2-f381-67b6" type="selectionEntry"/>
     <entryLink id="573c-d206-d15f-e35a" name="XV95 Ghostkeel Battlesuit" hidden="false" collective="false" targetId="d40a-c9b4-107b-ef10" type="selectionEntry"/>
     <entryLink id="b010-5fa9-3601-4b34" name="XV104 Riptide Battlesuit" hidden="false" collective="false" targetId="56ec-7f9d-d440-bf7a" type="selectionEntry"/>
+    <entryLink id="5501-3a85-6586-4d42" name="Pathfinder Team" hidden="false" collective="false" targetId="de3d-8155-6a93-8ce0" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -2187,6 +2188,21 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="de3d-8155-6a93-8ce0" name="Pathfinder Team" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+          <conditions>
+            <condition field="selections" scope="de3d-8155-6a93-8ce0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="466c-88fb-9395-7eae" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+          <conditions>
+            <condition field="selections" scope="de3d-8155-6a93-8ce0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be30-c3a6-f9ab-cfb4" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="be66-e94c-d187-159e" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="085c-b103-f11a-9888" name="Faction: &lt;Sept&gt;" hidden="false" targetId="13b0-eb31-2aeb-6a2b" primary="false"/>
         <categoryLink id="71a4-9cca-611a-b0b4" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
@@ -2195,9 +2211,213 @@
         <categoryLink id="fab7-dfef-da9b-a31f" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
         <categoryLink id="950e-7335-dbd7-de3c" name="Pathfinder Team" hidden="false" targetId="989b-759a-3abe-1da7" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
-      </costs>
+      <selectionEntries>
+        <selectionEntry id="2f46-16d8-ac93-67be" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dc1-bbc2-e67b-e9a6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="273c-70de-6bd1-393b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7ba1-73a0-db18-c31c" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b570-0fd4-b9cb-85b9" name="Pulse Carbines" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21d8-aaff-0bdb-aa14" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8547-a97d-53d0-da68" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f43d-1a65-9bb2-e24d" name="Pulse Carbines" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">15&quot;18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d083-a117-6530-c5ca" name="Recon Drone" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e9-3f00-ae77-9837" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="72eb-3243-a2a9-7235" name="Recon Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has a Recon Drone, it does not suffer the penalty for attacks made with ranged weapons that target obscured targets.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4b2a-7836-a748-6173" name="Models" hidden="false" collective="false" defaultSelectionEntryId="ddb3-eeaf-57ea-2d1b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0f6-9702-e19c-b6cc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9352-3d5d-8c87-ceee" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="50d6-aac1-e5dd-d9a9" name="10 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="c9f4-64b6-9ee6-2c07" name="Pathfinder Team (10 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="7+">
+                      <conditions>
+                        <condition field="selections" scope="de3d-8155-6a93-8ce0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ddb3-eeaf-57ea-2d1b" name="5 Models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2ea0-1a6e-6c69-6287" name="Pathfinder Team (5 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="7+">
+                      <conditions>
+                        <condition field="selections" scope="de3d-8155-6a93-8ce0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="904a-178c-f29c-e404" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="466c-88fb-9395-7eae" name="Drones (Power Rating +1) (0-2)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3b9-beb2-9851-7c9d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ca53-3e2e-62e3-6d93" name="Marker Drone" hidden="false" collective="false" targetId="5494-c173-ce18-d106" type="selectionEntry"/>
+            <entryLink id="aad7-e871-4f3e-668a" name="Gun Drone" hidden="false" collective="false" targetId="fc45-6ff1-407e-3515" type="selectionEntry"/>
+            <entryLink id="0ff0-cc72-cb43-d2e9" name="Shield Drone" hidden="false" collective="false" targetId="904a-178c-f29c-e404" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fe5b-5046-93ed-cad1" name="Special Weapons (0-3)" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5203-76fb-ae5d-ccc1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a1a3-e96a-409e-4abb" name="Ion Rifle" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efdf-5d65-654e-4ee0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7252-791e-54d6-ce0d" name="Ion Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="cd9a-3361-a788-3dc6" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f5be-b552-f0cc-a2d3" name="Rail Rifle" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e47-2601-0889-b196" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e2a1-ff50-3db3-9cd7" name="Rail Rifle" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="be30-c3a6-f9ab-cfb4" name="Special Drones (Power Rating +1)" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false">
+          <selectionEntries>
+            <selectionEntry id="fe71-b5be-5bcc-695c" name="Grav-inhibitor Drone" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c700-6074-a333-87e0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8569-c022-96a3-37a1" name="Grav-inhibitor Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If an enemy unit starts a Move action within 3&quot; of any units accompanied by a Grav-inhibitor Drone, reduce its Movement characteristic by 2&quot; until that Move action is completed.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="b576-5702-7c4f-7540" name="Pulse Accelerator Drone" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b85-7ee7-c432-2c57" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d580-6910-2adf-ab4c" name="Pulse Accelerator Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has a Pulse Accelerator Drone, add 6&quot; to the range of its Pulse carbines.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="e1e7-a443-94a5-a0a1" name="TX4 Piranhas" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <categoryLinks>
