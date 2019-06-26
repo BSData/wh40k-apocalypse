@@ -63,6 +63,7 @@
     <entryLink id="52ec-3506-4f0c-23e8" name="Commander" hidden="false" collective="false" targetId="9044-4216-a621-0d1a" type="selectionEntry"/>
     <entryLink id="fd6d-26bf-3748-0b7c" name="Ethereal" hidden="false" collective="false" targetId="8a85-cdb3-e89c-52ea" type="selectionEntry"/>
     <entryLink id="6bef-2e4c-e1cb-53a5" name="Cadre Fireblade" hidden="false" collective="false" targetId="1675-2edd-b2c3-6ecd" type="selectionEntry"/>
+    <entryLink id="4fd9-01f6-fca6-0ee6" name="Darkstrider" hidden="false" collective="false" targetId="0be5-d2af-5555-9676" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -248,6 +249,9 @@
           <infoLinks>
             <infoLink id="7e0f-1ab6-e6d5-cdc8" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8088-e843-3ed0-9b37" name="The Dawn Blade" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -266,6 +270,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -440,6 +447,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6372-c914-9106-3ece" name="Airbursting Fragmentation Projector" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -708,6 +718,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6c93-751a-7871-e1f0" name="Hover Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -741,8 +754,14 @@
                   <infoLinks>
                     <infoLink id="dbe2-d1a6-82c0-1e41" name="Pulse Carbine" hidden="false" targetId="d8b2-7999-f018-d784" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -818,6 +837,9 @@
           <infoLinks>
             <infoLink id="b010-6a39-f757-f47d" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="af7d-24f9-7f41-2c97" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -858,6 +880,30 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0be5-d2af-5555-9676" name="Darkstrider" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="eb0c-c7c4-aeed-e37e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b80f-1a75-98d3-8b24" name="Darkstrider" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c808-c766-c1ff-a737" name="Structural Analyser" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per turn, after this unit makes a Shoot action, you can select one friendly Light T&apos;au Sept unit within 6&quot; of this unit. Add 1 to wound rolls for attacks made with ranged weapons by that unit that target a unit targeted by this unit this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a89c-0772-bfa8-fc72" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c580-a85d-a8b7-43d1" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="3bc4-7e94-9951-df70" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
@@ -867,6 +913,41 @@
         <categoryLink id="b294-46f3-b7f1-6770" name="Darkstrider" hidden="false" targetId="5451-86bf-4530-22a3" primary="false"/>
         <categoryLink id="3163-d8e7-404d-34ce" name="Faction: T&apos;au Sept" hidden="false" targetId="9810-74b4-8f85-fc9a" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ac83-29bd-ec28-73ed" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e15-5adf-6b4e-add7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84d1-afd7-6bbb-b010" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="53b4-beaf-c518-3b51" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e176-af5a-cbc6-04a3" name="Pulse Carbine" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4855-f643-53ca-c1b7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="402c-c74a-5db2-d442" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="efb4-3cae-8828-485b" name="Pulse Carbine" hidden="false" targetId="d8b2-7999-f018-d784" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
@@ -1280,6 +1361,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5494-c173-ce18-d106" name="Marker Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
       <constraints>
@@ -1292,11 +1376,17 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="904a-178c-f29c-e404" name="Shield Drone" hidden="false" collective="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d871-a17c-d9f8-9ecc" type="max"/>
       </constraints>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5a65-5c41-ead0-78ab" name="Guardian Drone" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
       <constraints>
@@ -1305,6 +1395,9 @@
       <infoLinks>
         <infoLink id="d9f1-5c7d-1c22-19ec" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
