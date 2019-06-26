@@ -64,6 +64,8 @@
     <entryLink id="fd6d-26bf-3748-0b7c" name="Ethereal" hidden="false" collective="false" targetId="8a85-cdb3-e89c-52ea" type="selectionEntry"/>
     <entryLink id="6bef-2e4c-e1cb-53a5" name="Cadre Fireblade" hidden="false" collective="false" targetId="1675-2edd-b2c3-6ecd" type="selectionEntry"/>
     <entryLink id="4fd9-01f6-fca6-0ee6" name="Darkstrider" hidden="false" collective="false" targetId="0be5-d2af-5555-9676" type="selectionEntry"/>
+    <entryLink id="b643-609b-3661-f73f" name="Aun&apos;Shi" hidden="false" collective="false" targetId="b763-de60-1c55-d78d" type="selectionEntry"/>
+    <entryLink id="6c2b-f477-bdf4-f44b" name="Aun&apos;Va" hidden="false" collective="false" targetId="4369-6680-249a-223b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
@@ -625,6 +627,35 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4369-6680-249a-223b" name="Aun&apos;Va" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="59c2-fbc5-b312-4114" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="38dc-f9ea-2dd6-7dd8" name="Aun&apos;Va (3 models)" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e07d-2f7d-fa9c-6c2f" name="Supreme Loyalty" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll Morale tests taken for T’au Empire units in this unit’s Detachment whilst this unit is on the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a9aa-c0f9-00d6-c00c" name="Paradox of Duality" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from wound rolls for attacks that target this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c5ae-3464-8643-0eab" name="Failure Is Not an Option" hidden="false" targetId="786b-87a7-09ef-d92c" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="208a-a90d-d9bb-196a" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
         <categoryLink id="5b0b-5e94-f88d-228e" name="Faction: T&apos;au Sept" hidden="false" targetId="9810-74b4-8f85-fc9a" primary="false"/>
@@ -636,11 +667,58 @@
         <categoryLink id="7961-d3e5-a3d2-0dad" name="Ethereal" hidden="false" targetId="2986-dbe1-0ca8-5a2c" primary="false"/>
         <categoryLink id="fda0-f835-fad8-c35b" name="Ethereal Guard" hidden="false" targetId="ef60-afbc-6e56-324b" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8434-1971-add6-6220" name="Honour Blades" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9954-0d40-fca4-4f93" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe54-8562-4c3a-2a67" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c86c-04e6-0e70-f5f6" name="Honour Blades" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b763-de60-1c55-d78d" name="Aun&apos;Shi" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="318b-2c2a-88d5-e3ca" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6a71-a2dd-452a-4614" name="Aun&apos;Shi" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa1e-f41d-74c9-ce28" name="Blademaster" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made with melee weapons by this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a9a5-c4d6-eb9e-6976" name="Failure Is Not an Option" hidden="false" targetId="786b-87a7-09ef-d92c" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="49fa-6bef-61ca-fb0b" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
         <categoryLink id="a582-26a2-3cdf-b3f0" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
@@ -651,6 +729,29 @@
         <categoryLink id="7368-ccec-7b4c-cf92" name="Faction: Vior&apos;la Sept" hidden="false" targetId="9cc3-8fbd-371a-e622" primary="false"/>
         <categoryLink id="c2bc-9392-720d-6cf7" name="Aun&apos;Shi" hidden="false" targetId="22a3-9554-3dd0-a261" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f0e7-fdec-d384-c165" name="Honour Blade" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4fe-7b19-ed32-36cd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b305-2e33-cc63-93e5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="87f5-51ba-e473-b446" name="Honour Blade" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
