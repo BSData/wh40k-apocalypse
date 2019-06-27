@@ -665,7 +665,7 @@
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c"/>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
@@ -1228,8 +1228,7 @@
         <profile id="5157-9197-0114-9ea1" name="Graviton Singularity Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">
-36&quot;</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">3+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
@@ -2491,6 +2490,28 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5853-cb10-ede1-3e7d" name="Sacristan Forgeshrine" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="fdd1-f6a5-6e4d-2196" name="Auto-Sacristan: Ritual of Reloading" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Weapons the selected unit is equipped with that have the One Use Only ability and have been used to make attacks this battle are considered not to have made those attacks for the purposes of the One Use Only ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="142c-3103-31a9-c5e9" name="Auto-Sacristan: Ritual of Refuelling" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 3&quot; to the selected unit’s Move characteristic until the end of the next turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4d95-c36e-24fc-c4bb" name="Auto-Sacristan" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, the player who set up this terrain feature can select one IMPERIAL KNIGHTS unit from their army within 1&quot; of this terrain feature and choose one of the following effects:</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7507-8dc8-ed5a-2a10" name="Auto-Sacristan: Ritual of Repairing" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Remove one damage marker from the selected unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="4709-1aa0-2fe1-7e1a" name="Faction: Imperial Knights" hidden="false" targetId="a6fe-fc09-5627-ff05" primary="false"/>
         <categoryLink id="868e-7a5d-04f0-05d3" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -2561,6 +2582,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="65b7-3523-b4ed-3632" name="One Twin Siegebreaker Cannon and Four Shieldbreaker Missiles" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
@@ -2577,6 +2601,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2b51-bf79-97a4-ab9d" name="Two Twin Siegebreaker Cannons and Two Shieldbreaker Missiles" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
@@ -2593,6 +2620,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
