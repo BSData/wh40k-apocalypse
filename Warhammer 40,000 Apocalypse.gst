@@ -72,6 +72,7 @@
     <categoryEntry id="ef15-faf4-a4a1-33f5" name="Beasts" hidden="false"/>
     <categoryEntry id="351c-b6fa-4d4f-70f3" name="Cavalry" hidden="false"/>
     <categoryEntry id="5f52-c8e5-1f2f-5161" name="Dreadnought" hidden="false"/>
+    <categoryEntry id="cdf9-175a-b31b-44a1" name="Jump Pack" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Not A Detachment (🎵Everybody Dance Now 🎵)" hidden="false">
