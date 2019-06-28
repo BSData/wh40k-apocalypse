@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="fdb6-9fc8-a607-b5ae" name="Library - Chaos Space Marines" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profileTypes>
+    <profileType id="4b4e-76cf-b61c-81df" name="Mutated Beyond Reason - D3">
+      <characteristicTypes>
+        <characteristicType id="608e-b66e-7f91-e844" name="Mutation"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
   <categoryEntries>
     <categoryEntry id="70d2-a4c3-e002-9bbe" name="Faction: Khorne" hidden="false"/>
     <categoryEntry id="880a-e8ec-2690-e97e" name="Faction: Nurgle" hidden="false"/>
@@ -63,6 +70,8 @@
     <categoryEntry id="761c-189e-ee84-8035" name="Vindicator" hidden="false"/>
     <categoryEntry id="fde7-b188-562b-8f39" name="Termite Assault Drill" hidden="false"/>
     <categoryEntry id="8268-df24-2881-5703" name="Baleflamer" hidden="false"/>
+    <categoryEntry id="a32e-2797-e7df-72bc" name="Chaos Cultists" hidden="false"/>
+    <categoryEntry id="1225-8d0a-a53e-e18f" name="Chaos Spawn" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e7d3-3095-e373-d4b3" name="Blood Slaughterer of Khorne" hidden="false" collective="false" type="unit">
@@ -2962,9 +2971,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
@@ -4065,6 +4074,305 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ccff-966b-bc9a-05c8" name="Chaos Cultists" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="2d25-cdfc-09ed-7fc4" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="02cc-2e6a-d119-bafd" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="9f16-b13b-87f5-45c6" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="6e66-4c15-167d-89b7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="a664-6f7d-b987-ade3" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="3414-d02b-a347-baa9" name="Chaos Cultists" hidden="false" targetId="a32e-2797-e7df-72bc" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e896-aeb5-e3dc-4b85" name="10 - 40 models" hidden="false" collective="false" defaultSelectionEntryId="01ae-7709-6634-b865">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="385b-e6e3-c699-64b8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="995c-e276-c23e-146c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="01ae-7709-6634-b865" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2702-4db4-3458-d3ca" name="Chaos Cultists (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e124-97cc-6c29-9fc8" name="20 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="d07c-aae9-e188-af1f" name="Chaos Cultists (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4135-87e0-8856-c4fa" name="30 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="69b2-b71f-2683-30a4" name="Chaos Cultists (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="536a-5e7f-deba-afe3" name="40 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="9c6e-6f09-dcc6-2adb" name="Chaos Cultists (40 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">8</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7618-68f1-dc4d-82f8" name="Weapons" hidden="false" collective="false" defaultSelectionEntryId="5f16-b194-fc63-eb71">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bedf-8f1c-f118-3460" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4258-c679-6f81-0b6e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5f16-b194-fc63-eb71" name="Autoguns and Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="94da-5311-5ccb-c6c0" name="Autoguns" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94fa-72ad-f8d0-54dd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6cf-ade1-9487-e23e" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="d945-5ba1-2b9d-e681" name="Autoguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="f539-c088-af33-83dd" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="b43c-3a6b-1df5-f736" name="Close Combat Weapons" hidden="false" collective="false" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01e0-0842-d1ec-aa06" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4848-0fc6-9ad0-1193" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="18d2-55d5-3f7a-3750" name="Autopistols and Brutal Assault Weapons" hidden="false" collective="false" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="013b-a727-ef63-23db" name="Autopistols" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a02-b7a0-9213-1b95" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba2-98f1-d5bf-aab9" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="0b74-4818-1a2f-b835" name="Autopistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="e8ca-2250-363f-1f71" name="Brutal Assault Weapons" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f545-775c-0436-9354" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="764d-0df8-366e-71af" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="29fd-42f2-5761-2432" name="Brutal Assault Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3f10-8634-02e3-9fa9" name="Heavy Stubber" hidden="false" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+            <modifier type="set" field="86d7-a0c9-784e-6811" value="2.0">
+              <conditions>
+                <condition field="selections" scope="ccff-966b-bc9a-05c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e124-97cc-6c29-9fc8" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="86d7-a0c9-784e-6811" value="3.0">
+              <conditions>
+                <condition field="selections" scope="ccff-966b-bc9a-05c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4135-87e0-8856-c4fa" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="86d7-a0c9-784e-6811" value="4.0">
+              <conditions>
+                <condition field="selections" scope="ccff-966b-bc9a-05c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="536a-5e7f-deba-afe3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d7-a0c9-784e-6811" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="ed66-68de-c8bb-af54" name="Chaos Spawn" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="1466-da3f-0d27-dace" value="4.0">
+          <conditions>
+            <condition field="selections" scope="ed66-68de-c8bb-af54" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a08f-c4a2-229e-a3d3" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="1466-da3f-0d27-dace" value="7.0">
+          <conditions>
+            <condition field="selections" scope="ed66-68de-c8bb-af54" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a08f-c4a2-229e-a3d3" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="1466-da3f-0d27-dace" value="9.0">
+          <conditions>
+            <condition field="selections" scope="ed66-68de-c8bb-af54" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a08f-c4a2-229e-a3d3" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="1466-da3f-0d27-dace" value="11.0">
+          <conditions>
+            <condition field="selections" scope="ed66-68de-c8bb-af54" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a08f-c4a2-229e-a3d3" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="5c10-aae7-a343-c3d6" name="Mutated Beyond Reason" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Fight action, before picking targets, roll one D3 on the table below to determine what mutation it gains until the end of that action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7873-8940-7a84-9154" name="1 - Razor Claws" hidden="false" typeId="4b4e-76cf-b61c-81df" typeName="Mutated Beyond Reason - D3">
+          <characteristics>
+            <characteristic name="Mutation" typeId="608e-b66e-7f91-e844">Add 1 to wound rolls for attacks made by this unit with melee weapons.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eb52-0613-3344-9bb4" name="2 - Grasping Pseudopods" hidden="false" typeId="4b4e-76cf-b61c-81df" typeName="Mutated Beyond Reason - D3">
+          <characteristics>
+            <characteristic name="Mutation" typeId="608e-b66e-7f91-e844">Add 1 to this unit’s Attacks characteristic.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="99d8-d4fc-7a1e-c963" name="3 - Toxic Haemorrhage" hidden="false" typeId="4b4e-76cf-b61c-81df" typeName="Mutated Beyond Reason - D3">
+          <characteristics>
+            <characteristic name="Mutation" typeId="608e-b66e-7f91-e844">Re-roll wound rolls of 1 for attacks made by this unit with melee weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ebd8-cfc4-4490-6ca1" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8ecf-6f3f-3ca6-b901" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="194d-c67a-abd6-ff36" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="2005-3c77-d2a0-d923" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="4762-c157-190c-b7b5" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="a88c-484e-09e0-965a" name="Beasts" hidden="false" targetId="ef15-faf4-a4a1-33f5" primary="false"/>
+        <categoryLink id="daa0-1174-0ad0-65d6" name="Chaos Spawn" hidden="false" targetId="1225-8d0a-a53e-e18f" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a08f-c4a2-229e-a3d3" name="Chaos Spawn" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb40-097f-9fe0-1010" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d352-a879-a7c9-15e4" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="9a8c-6977-b20b-1229" name="Chaos Spawn" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">-</characteristic>
+                <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry id="cd8b-cb88-b471-5985" name="Hideous Mutations" hidden="false" collective="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a45b-be0e-a1d3-5736" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1157-71b5-ef52-be35" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fa83-425d-ffa0-e85e" name="Hideous Mutations" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="90e6-f66f-ee82-6b1c" name="Helbrute Arm 1" hidden="false" collective="false" defaultSelectionEntryId="b196-0fd9-1865-7859">
@@ -4139,6 +4447,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73de-ebc0-a197-a959" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="d912-ed41-b4b4-99ef" name="Missile Launcher" hidden="false" collective="false" targetId="a524-9ae0-16b9-cd61" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
