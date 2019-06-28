@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fdb6-9fc8-a607-b5ae" name="Chaos - Chaos Space Marines" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fdb6-9fc8-a607-b5ae" name="Library - Chaos Space Marines" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="70d2-a4c3-e002-9bbe" name="Faction: Khorne" hidden="false"/>
     <categoryEntry id="880a-e8ec-2690-e97e" name="Faction: Nurgle" hidden="false"/>
@@ -3824,6 +3824,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
               <categoryLinks>
                 <categoryLink id="d172-a930-a438-bb82" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a9d3-e62e-9ffb-182c" name="Palanquin of Nurgle" hidden="false" collective="false" type="upgrade">
               <modifiers>
@@ -3923,6 +3926,144 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
       <infoLinks>
         <infoLink id="8f71-8937-d3a5-f8d9" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1dab-bb81-d853-d9ed" name="Sorcerer" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="4a1d-b9fb-b355-0b2a" name="Sorcerer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
+              <conditions>
+                <condition field="selections" scope="1dab-bb81-d853-d9ed" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4ce-9e34-70f0-5ae7" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="606d-344a-bc3d-9dce" value="14&quot;">
+              <conditions>
+                <condition field="selections" scope="1dab-bb81-d853-d9ed" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c140-bd30-4dbe-9907" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="1dab-bb81-d853-d9ed" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74b1-0580-fb9a-68b8" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
+                <modifier type="set" field="606d-344a-bc3d-9dce" value="5&quot;"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5f21-238a-e9c0-5591" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="f77e-9892-327b-a347" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="43fd-b825-5e71-82a9" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="50e2-2a06-8b70-a060" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="933e-a35a-5573-c106" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="ff50-e501-6b6b-61d0" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="ae5d-d3e0-0972-9306" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="b44b-595f-e164-09df" name="Sorcerer" hidden="false" targetId="5c54-8b43-52eb-6259" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ee50-973f-fe37-5e64" name="Wargear Options" hidden="false" collective="false" defaultSelectionEntryId="1256-52bd-b562-62d6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5898-dc9a-8004-b6aa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="223d-f06b-8511-b923" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1256-52bd-b562-62d6" name="*No Wargear*" hidden="false" collective="false" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="3da3-d8b6-ee97-278b" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="74b1-0580-fb9a-68b8" name="Palanquin of Nurgle" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4685-6098-8f1b-f9cb" type="notInstanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="1059-8248-b234-160a" name="Malefic Appendages" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="4430-0d3e-0b11-ed8c" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+                <categoryLink id="2ed4-8f13-4484-efce" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+                <categoryLink id="7bd2-91c8-f124-511d" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="19b8-289e-f218-1c02" name="Jump Pack" hidden="false" collective="false" targetId="c4ce-9e34-70f0-5ae7" type="selectionEntry"/>
+            <entryLink id="0408-b27b-1710-3f44" name="Terminator Armour" hidden="false" collective="false" targetId="1065-3188-3879-2055" type="selectionEntry"/>
+            <entryLink id="9b10-5b92-5491-4aa2" name="Bike" hidden="false" collective="false" targetId="c140-bd30-4dbe-9907" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4685-6098-8f1b-f9cb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e8ee-b8a7-8060-2c64" name="Force Weapon " hidden="false" collective="false" targetId="fb4c-7116-4f16-b27e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fb4c-7116-4f16-b27e" name="Force Weapon " hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3a6-4bb6-1e81-47eb" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a8c-29f1-65d7-ba45" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cc85-51d3-548c-8c57" name="Force Weapon " hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
