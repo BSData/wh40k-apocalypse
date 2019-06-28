@@ -8,6 +8,10 @@
     <categoryEntry id="b7be-d1cd-3ff0-d385" name="Warpsmith" hidden="false"/>
     <categoryEntry id="fed9-e44f-d266-6a5f" name="Chaos Hellwright" hidden="false"/>
     <categoryEntry id="4e38-6b46-3482-0d92" name="Chaos Hellwright on Dark Abeyant" hidden="false"/>
+    <categoryEntry id="8241-c346-74bc-63cc" name="Master of Executions" hidden="false"/>
+    <categoryEntry id="8be0-45aa-2b83-76ca" name="Lord Discordant" hidden="false"/>
+    <categoryEntry id="8750-7e83-4036-8f19" name="Helstalker" hidden="false"/>
+    <categoryEntry id="138e-e1e9-b3c2-0b96" name="Master of Possession" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5e3a-9e52-abb6-9692" name="Hellforged Mastodon" hidden="false" collective="false" targetId="033e-f9c8-c4b0-2f34" type="selectionEntry">
@@ -218,6 +222,22 @@
       </entryLinks>
     </entryLink>
     <entryLink id="33d0-9424-b644-dd6a" name="Sonic Dreadnought" hidden="false" collective="false" targetId="0bb5-c411-fce8-4b76" type="selectionEntry"/>
+    <entryLink id="ec79-4dd7-b600-4db6" name="Chaos Lord" hidden="false" collective="false" targetId="f8fa-3ec8-92bd-35de" type="selectionEntry">
+      <profiles>
+        <profile id="dc15-0ddf-ea75-eef4" name="Lord of Chaos" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly &lt;LEGION&gt; units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="07bf-51b0-682f-dba3" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
+        <entryLink id="a7c8-62b2-a43b-d147" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="67fa-8c2e-4b06-3bf3" name="Master of Executions" hidden="false" collective="false" targetId="c51c-abfe-ae51-585b" type="selectionEntry"/>
+    <entryLink id="0cbc-70c8-1411-ade6" name="Lord Discordant on Helstalker" hidden="false" collective="false" targetId="b28b-28bd-fd5c-ff7f" type="selectionEntry"/>
+    <entryLink id="f39c-6d0f-616f-852b" name="Master of Possession" hidden="false" collective="false" targetId="dcfd-ac95-21bd-1407" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4cdf-0f1f-0d39-5750" name="Zhufor the Impaler" hidden="false" collective="false" type="unit">
@@ -374,7 +394,8 @@
         <categoryLink id="5fd1-3418-8a7f-15d6" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="d060-ca0f-3573-d3c8" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="387e-d9e7-abad-a15b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="9389-7e64-f329-bd63" name="Chaos Hellwright on Dark Abeyant" hidden="false" targetId="4e38-6b46-3482-0d92" primary="false"/>
+        <categoryLink id="1ffd-d5dd-12fe-670f" name="Warpsmith" hidden="false" targetId="b7be-d1cd-3ff0-d385" primary="false"/>
+        <categoryLink id="b583-ee6b-6aec-ed99" name="Chaos Hellwright on Dark Abeyant" hidden="false" targetId="4e38-6b46-3482-0d92" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f1e7-9016-cfe0-3923" name=" Hellwright Weapons" hidden="false" collective="false" type="upgrade">
@@ -480,7 +501,8 @@
         <categoryLink id="8c27-5895-9ad0-a1cd" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="a60b-17af-1621-5aab" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="d47e-7961-7194-f4ab" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="a7b9-d8ce-9de6-b8a7" name="Chaos Hellwright" hidden="false" targetId="fed9-e44f-d266-6a5f" primary="false"/>
+        <categoryLink id="edaa-719a-e6b9-ac63" name="Warpsmith" hidden="false" targetId="b7be-d1cd-3ff0-d385" primary="false"/>
+        <categoryLink id="dd3e-c5a5-82b0-98d7" name="Chaos Hellwright" hidden="false" targetId="fed9-e44f-d266-6a5f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7e9b-be31-2a66-cdaa" name=" Hellwright Weapons" hidden="false" collective="false" type="upgrade">
@@ -525,6 +547,219 @@
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="c51c-abfe-ae51-585b" name="Master of Executions" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="f956-a0c4-c5e6-b670" name="Master of Executions" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bef5-96ee-9a0c-625b" name="Warp-sighted Butcher" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by this unit that target CHARACTER units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3659-704e-1d4d-1a11" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="1db0-d755-71d8-155d" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="ed13-28a9-6aaf-213e" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="0b01-66a7-3827-c4c9" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="e6e5-fc84-4548-1692" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="c651-ddc2-60c0-6aeb" name="Master of Executions" hidden="false" targetId="8241-c346-74bc-63cc" primary="false"/>
+        <categoryLink id="205e-dfd7-46e7-2d0a" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="aebe-6c39-80db-7159" name="Axe of Dismemberment" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="809a-7d3b-6c89-a0c5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b7b-0f56-a1b3-2bbc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2d1f-11db-e777-20cb" name="Axe of Dismemberment" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="241c-42aa-0e3e-4285" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
+        <entryLink id="ce6d-cbc1-cfd5-04a9" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b28b-28bd-fd5c-ff7f" name="Lord Discordant on Helstalker" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="67ed-1a18-f9fa-b2f8" name="Lord Discordant on Helstalker" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd8b-2d7e-bd94-10ce" name="Aura of Discord" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made by enemy VEHICLE units whilst they are within 6&quot; of any units from your army with this ability. In addition, add 1 to hit rolls for attacks made by &lt;LEGION&gt; DAEMON ENGINE units whilst they are within 6&quot; of any friendly &lt;LEGION&gt; units with this ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4e0c-7c97-f7ca-bb94" name="Infernal Regeneration" hidden="false" targetId="3fae-f59b-a76c-6bd2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2157-1cb4-380d-c980" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="ac4b-a34e-4ee4-b9cc" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="554c-bb35-e945-b0d7" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="6f1d-f2aa-4f83-512b" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="48f5-06e0-8db3-0968" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="4072-2807-fd6e-ce6d" name="Daemon Engine" hidden="false" targetId="206c-38ea-ac45-dae2" primary="false"/>
+        <categoryLink id="79dc-9923-847b-a8e9" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink id="bf93-adf6-7fb8-035e" name="Warpsmith" hidden="false" targetId="b7be-d1cd-3ff0-d385" primary="false"/>
+        <categoryLink id="f736-84ad-6666-6a00" name="Helstalker" hidden="false" targetId="8750-7e83-4036-8f19" primary="false"/>
+        <categoryLink id="6468-75fa-2b43-dfc1" name="Lord Discordant" hidden="false" targetId="8be0-45aa-2b83-76ca" primary="false"/>
+        <categoryLink id="1866-323c-42c7-96c2" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="44a8-0539-695a-b318" name="Impaler Chainglaive" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ce6-6ef6-9949-1fa2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fb2-d846-ff19-a1d0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="11e9-4718-279c-15ab" name="Impaler Chainglaive" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="378b-bf70-44e0-ffce" name="Helstalker&apos;s Bladed Limbs" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9cf-7ceb-8977-ea03" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bd3-e62d-b576-d578" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a4d1-eb41-adac-c506" name="Helstalker&apos;s Bladed Limbs" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a19a-316f-dc9c-8fa7" name="Weapon options" hidden="false" collective="false" defaultSelectionEntryId="ad46-d143-4e55-ef04">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a24-27e4-9a5a-a28a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c176-8211-1536-be3a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ad46-d143-4e55-ef04" name="Autocannon" hidden="false" collective="false" targetId="02f7-7194-f8cf-2299" type="selectionEntry"/>
+            <entryLink id="02fc-cb39-3138-782a" name="Baleflamer" hidden="false" collective="false" targetId="57e6-a330-44cd-642b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dfda-a583-beaa-231e" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
+        <entryLink id="7498-3c2c-8d94-a93f" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dcfd-ac95-21bd-1407" name="Master of Possession" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="d02d-94aa-c803-0920" name="Master of Possession" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcca-5200-859e-d126" name="Psychic Backlash" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When your opponent selects a unit within 12&quot; of any units from your army with this ability to manifest a psychic power, before its effects are resolved roll one D12; if the result is equal to or greater than the Leadership characteristic of the unit manifesting the power, place one blast marker next to it. You cannot use both this ability and the Perils of the Warp Command Asset in reaction to the same psychic power.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7be3-e970-f4f6-ffa4" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="121f-110f-98cc-03da" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="d6fd-3ca5-44c3-ffed" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="450f-7f66-c2bf-f82f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="405e-e8e4-2658-69f1" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="9d3c-34bd-005d-db69" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4378-d869-b0fe-7683" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bac5-d396-618b-c3c2" name="Force Weapon " hidden="false" collective="false" targetId="cf53-3347-c46e-58ec" type="selectionEntry"/>
+        <entryLink id="1e75-54e2-4438-a0be" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
+        <entryLink id="6086-1eb4-ce90-09e1" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf53-3347-c46e-58ec" name="Force Weapon " hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a61d-28f9-f051-1ac3" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deb5-6711-c349-fcf7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="17ba-f3dd-c9c5-6d7c" name="Force Weapon " hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
