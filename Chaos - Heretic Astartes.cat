@@ -46,6 +46,7 @@
     <categoryEntry id="5486-fc5d-21bd-a43e" name="Rogue Psyker" hidden="false"/>
     <categoryEntry id="d2c6-3140-6ac9-e613" name="Negavolt Cultists" hidden="false"/>
     <categoryEntry id="4f6a-680a-e993-b35d" name="Chaos Beastmen" hidden="false"/>
+    <categoryEntry id="62cf-a525-5eb0-30a3" name="Traitor Guardsmen" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5e3a-9e52-abb6-9692" name="Hellforged Mastodon" hidden="false" collective="false" targetId="033e-f9c8-c4b0-2f34" type="selectionEntry">
@@ -231,18 +232,8 @@
     </entryLink>
     <entryLink id="a499-7820-b1e8-9241" name="Zhufor the Impaler" hidden="false" collective="false" targetId="4cdf-0f1f-0d39-5750" type="selectionEntry"/>
     <entryLink id="88ed-b0f2-ec66-490f" name="Lord Arkos" hidden="false" collective="false" targetId="5feb-92ea-7846-e533" type="selectionEntry"/>
-    <entryLink id="bac0-fed8-ee01-e6ac" name="Chaos Hellwright on Dark Abeyant" hidden="false" collective="false" targetId="4e60-26b8-110a-7b4c" type="selectionEntry">
-      <entryLinks>
-        <entryLink id="1ba5-9870-d3f1-bd82" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
-        <entryLink id="f53f-78e9-6f0e-474b" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
-      </entryLinks>
-    </entryLink>
-    <entryLink id="2278-7a88-e630-d164" name="Chaos Hellwright" hidden="false" collective="false" targetId="2ba6-7d4e-f1d6-9db6" type="selectionEntry">
-      <entryLinks>
-        <entryLink id="d149-99a2-fceb-b071" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
-        <entryLink id="106b-58f3-fdfa-2186" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
-      </entryLinks>
-    </entryLink>
+    <entryLink id="bac0-fed8-ee01-e6ac" name="Chaos Hellwright on Dark Abeyant" hidden="false" collective="false" targetId="4e60-26b8-110a-7b4c" type="selectionEntry"/>
+    <entryLink id="2278-7a88-e630-d164" name="Chaos Hellwright" hidden="false" collective="false" targetId="2ba6-7d4e-f1d6-9db6" type="selectionEntry"/>
     <entryLink id="506c-189c-a691-c93e" name="Helbrute" hidden="false" collective="false" targetId="3ca7-9758-48ff-235b" type="selectionEntry">
       <entryLinks>
         <entryLink id="9996-9318-c1b3-28d9" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
@@ -391,7 +382,18 @@
     <entryLink id="0a7c-47e0-550e-b754" name="Chaos Lord on Daemonic Mount" hidden="false" collective="false" targetId="2ba9-3e73-c2ec-32fe" type="selectionEntry"/>
     <entryLink id="c159-149c-0f59-7fe8" name="Sorcerer on Daemonic Mount" hidden="false" collective="false" targetId="a578-17fd-5940-1c4c" type="selectionEntry"/>
     <entryLink id="5928-2b3a-3d1a-29d0" name="Obsidius Mallex" hidden="false" collective="false" targetId="3586-abbc-7a9e-ad55" type="selectionEntry"/>
-    <entryLink id="f2a7-fd0e-95e8-0eba" name="Rogue Psyker" hidden="false" collective="false" targetId="189b-8336-dcde-b488" type="selectionEntry"/>
+    <entryLink id="f2a7-fd0e-95e8-0eba" name="Rogue Psyker" hidden="false" collective="false" targetId="189b-8336-dcde-b488" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9299-ab5b-aef6-1e06" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="148c-ae06-d6df-bd91" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="8e5b-f878-55d8-b586" name="Negavolt Cultists" hidden="false" collective="false" targetId="fd17-86e4-1609-fe64" type="selectionEntry"/>
     <entryLink id="8f9e-a512-a453-94aa" name="Chaos Beastmen" hidden="false" collective="false" targetId="6d6c-a1eb-ffbb-3a88" type="selectionEntry">
       <modifiers>
@@ -406,6 +408,16 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="07f5-cdcb-5934-8d69" name="Chaos Beastmen" hidden="false" collective="false" targetId="6d6c-a1eb-ffbb-3a88" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9299-ab5b-aef6-1e06" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="bf85-ad5f-b318-00fb" name="Traitor Guardsmen" hidden="false" collective="false" targetId="9d64-9495-3147-ecdd" type="selectionEntry"/>
+    <entryLink id="1a36-d0de-0608-9af9" name="Rogue Psyker" hidden="false" collective="false" targetId="189b-8336-dcde-b488" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -653,8 +665,8 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="a991-3774-1e03-27b0" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
-        <entryLink id="9601-799f-6fb5-9b9e" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
+        <entryLink id="7d85-51c9-c92e-048b" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
+        <entryLink id="0fcd-1db8-cf3e-cd13" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
@@ -725,8 +737,8 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="ee3b-9a31-f1ac-09c2" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
-        <entryLink id="328b-97cf-196d-1fc8" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
+        <entryLink id="6c40-29db-2883-fa8d" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
+        <entryLink id="1e8a-602b-e372-830e" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
@@ -3830,6 +3842,9 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3837,8 +3852,23 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
       </costs>
     </selectionEntry>
     <selectionEntry id="189b-8336-dcde-b488" name="Rogue Psyker" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="bbba-0192-1ca6-553d" name="Rogue Psyker" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="76a0-6104-141f-cb39" name="Slaves to Mallex" hidden="false" targetId="84d5-b51e-79a6-0282" type="profile"/>
+      </infoLinks>
       <categoryLinks>
-        <categoryLink id="3a6e-7fa6-aba8-69ee" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
         <categoryLink id="8f23-03bf-8160-547e" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
         <categoryLink id="1421-ea6b-92aa-83ed" name="Faction: Servants of the Abyss" hidden="false" targetId="24b1-d03e-7c15-b914" primary="false"/>
         <categoryLink id="ed93-2319-1841-da05" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
@@ -3864,6 +3894,9 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3913,6 +3946,9 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3961,6 +3997,9 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4687-ca85-6a7d-9249" name="Brutal Assault Weapons" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -3979,10 +4018,76 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9d64-9495-3147-ecdd" name="Traitor Guardsmen" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="d9c5-3ad3-a07d-7df2" name="Traitor Guardsmen (7 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5fde-6d96-e55a-3160" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="8434-f717-9f82-1091" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="14d3-d2f5-b034-77e1" name="Faction: Servants of the Abyss" hidden="false" targetId="24b1-d03e-7c15-b914" primary="false"/>
+        <categoryLink id="71fe-9b92-ae87-7eba" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="0af8-3e00-afe6-dac2" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="69cc-4286-b229-3e07" name="Traitor Guardsmen" hidden="false" targetId="62cf-a525-5eb0-30a3" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e87e-df04-76d2-a81d" name="Las Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e19-8b5c-dcad-7d7f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="643f-1efa-b1aa-c982" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6928-4fba-8a26-5a37" name="Las Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="715f-10d8-f2cf-3f0a" name="Close Combat Weapons" hidden="false" collective="false" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aac-c6bd-76e2-0107" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7a4-a6e0-6f81-3f99" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="521d-c8db-f78e-9397" name="Flamer" hidden="false" collective="false" targetId="0367-a01f-0c7d-7b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="374c-d778-fe06-f3da" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbf8-0770-c301-9b31" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
