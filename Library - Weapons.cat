@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="eec6-f52a-81c4-5701" name="Weapons" revision="1" battleScribeVersion="2.02" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="eec6-f52a-81c4-5701" name="Library - Weapons" revision="1" battleScribeVersion="2.02" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="4b2d-6f39-3754-8981" name="Cypher" hidden="false"/>
+    <categoryEntry id="fbe6-07fa-0346-50fa" name="Faction: Fallen" hidden="false"/>
+  </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="aa7e-cb86-0ed9-1244" name="Meltagun" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -1950,6 +1954,222 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3121-2357-5afe-607e" name="Siege Shield" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="dd68-2b14-2a89-bf75" name="Siege Shield" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has a Siege Shield, it has a Save characteristic of 4+.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="164d-0e66-0c90-401a" name="Cypher" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c213-a558-fd09-9ed2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ecfe-6d0a-baab-79af" name="Cypher" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3c26-2f69-7a7d-967d" name="Lord Cypher" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by friendly FALLEN units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="362d-dc25-250e-8ef5" name="Blazing Weapons" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit can make a Shoot action in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a1ca-51df-92bb-ba59" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="1307-49fd-5ea6-d709" name="New CategoryLink" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="2a90-33d1-812c-782b" name="New CategoryLink" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="03d4-8f91-4b27-60a9" name="New CategoryLink" hidden="false" targetId="fbe6-07fa-0346-50fa" primary="false"/>
+        <categoryLink id="3030-0453-3e7e-336c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="a613-e76e-fb66-21ee" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="a0b4-2538-e896-d467" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="3688-961e-586b-7d79" name="Cypher" hidden="false" targetId="4b2d-6f39-3754-8981" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1a16-a14f-7ed6-4423" name="Cypher&apos;s Pistols" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d040-d91f-1698-26aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f48-59ab-7540-8489" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e9ca-5040-3c1f-7382" name="Cypher&apos;s Pistols (Ranged)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="89d2-fa2c-5da5-0146" name="Cypher&apos;s Pistols (Melee)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="16f6-8d70-c6b1-bc8c" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="52d2-d4af-cd26-b7e4" name="Fallen" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="df82-671f-9e03-35d8" name="Fallen Angels" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit with ranged weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5e3a-be09-8c23-1690" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="44f4-c2df-5448-8b59" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="064e-9bb1-8622-7b50" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="a497-df11-61b1-3107" name="Fallen" hidden="false" targetId="fbe6-07fa-0346-50fa" primary="false"/>
+        <categoryLink id="9e44-cac5-9482-ba4b" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="0648-640b-f2ca-f505" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="51d8-c3bc-2426-d5de" name="5 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="d840-437e-60e3-1298">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6528-7c72-5592-8ed9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a556-b828-8c63-52c2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d840-437e-60e3-1298" name="05 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="f5ad-97e1-c55f-6d9c" name="Fallen (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="242a-aee3-17f1-ba98" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="6968-20cc-4cd5-4a87" name="Fallen (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6335-f665-536b-e8a9" name="Weapons" hidden="false" collective="false" defaultSelectionEntryId="8609-9372-c0a9-3328">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dd0-3c26-6786-5441" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9238-3bce-558e-7a40" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8609-9372-c0a9-3328" name="Boltguns and Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="d1c2-babb-e24b-7922" name="Boltguns" hidden="false" collective="false" targetId="2d61-a814-63d8-0398" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b95-756a-ec0f-f6b8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14fc-7073-5b5a-e385" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="5fae-f9cb-f685-837e" name="Close Combat Weapons" hidden="false" collective="false" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3641-2c6c-82ae-9898" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6bb-a13f-cd4e-9ecb" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6b28-52ab-b84f-b289" name="Bolt pistols and Chainswords" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="1a90-c015-d9fc-5fa2" name="Bolt Pistols" hidden="false" collective="false" targetId="470f-196a-65be-f649" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c53e-e06a-6edd-4492" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f4a-3bab-c1ec-d2a2" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4486-baf9-726b-8075" name="Chainswords" hidden="false" collective="false" targetId="6d39-29c6-0022-b959" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d777-d1c8-b59a-6856" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca2d-8147-a899-90ff" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f18f-1552-3b67-73c6" name="Heavy Weapons" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaf4-1097-2415-c97d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="edec-8817-8898-3533" name="Autocannon" hidden="false" collective="false" targetId="02f7-7194-f8cf-2299" type="selectionEntry"/>
+            <entryLink id="99cd-bd94-4a91-ab55" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry"/>
+            <entryLink id="510e-3ef7-399e-ab8e" name="Lascannon" hidden="false" collective="false" targetId="dd55-a2c1-238b-569f" type="selectionEntry"/>
+            <entryLink id="258f-fcbb-edd0-8fdc" name="Missile Launcher" hidden="false" collective="false" targetId="a524-9ae0-16b9-cd61" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
