@@ -41,6 +41,11 @@
     <categoryEntry id="9bb1-cdc1-68ac-0e49" name="Noctilith Crown" hidden="false"/>
     <categoryEntry id="692a-580d-1467-b088" name="Lucius the Eternal" hidden="false"/>
     <categoryEntry id="a41d-5ddd-7496-a6cf" name="Kharn the Betrayer" hidden="false"/>
+    <categoryEntry id="24b1-d03e-7c15-b914" name="Faction: Servants of the Abyss" hidden="false"/>
+    <categoryEntry id="9299-ab5b-aef6-1e06" name="Obsidius Mallex" hidden="false"/>
+    <categoryEntry id="5486-fc5d-21bd-a43e" name="Rogue Psyker" hidden="false"/>
+    <categoryEntry id="d2c6-3140-6ac9-e613" name="Negavolt Cultists" hidden="false"/>
+    <categoryEntry id="4f6a-680a-e993-b35d" name="Chaos Beastmen" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5e3a-9e52-abb6-9692" name="Hellforged Mastodon" hidden="false" collective="false" targetId="033e-f9c8-c4b0-2f34" type="selectionEntry">
@@ -382,6 +387,32 @@
       <entryLinks>
         <entryLink id="f8c9-96fa-f4f6-71b1" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
       </entryLinks>
+    </entryLink>
+    <entryLink id="0a7c-47e0-550e-b754" name="Chaos Lord on Daemonic Mount" hidden="false" collective="false" targetId="2ba9-3e73-c2ec-32fe" type="selectionEntry"/>
+    <entryLink id="c159-149c-0f59-7fe8" name="Sorcerer on Daemonic Mount" hidden="false" collective="false" targetId="a578-17fd-5940-1c4c" type="selectionEntry"/>
+    <entryLink id="5928-2b3a-3d1a-29d0" name="Obsidius Mallex" hidden="false" collective="false" targetId="3586-abbc-7a9e-ad55" type="selectionEntry"/>
+    <entryLink id="f2a7-fd0e-95e8-0eba" name="Rogue Psyker" hidden="false" collective="false" targetId="189b-8336-dcde-b488" type="selectionEntry"/>
+    <entryLink id="8e5b-f878-55d8-b586" name="Negavolt Cultists" hidden="false" collective="false" targetId="fd17-86e4-1609-fe64" type="selectionEntry"/>
+    <entryLink id="8f9e-a512-a453-94aa" name="Chaos Beastmen" hidden="false" collective="false" targetId="6d6c-a1eb-ffbb-3a88" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9299-ab5b-aef6-1e06" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ce85-ffb0-ad5d-5829" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="07f5-cdcb-5934-8d69" name="Chaos Beastmen" hidden="false" collective="false" targetId="6d6c-a1eb-ffbb-3a88" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9299-ab5b-aef6-1e06" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -3480,6 +3511,480 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2ba9-3e73-c2ec-32fe" name="Chaos Lord on Daemonic Mount" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Chaos Lord on Juggernaught of Khorne">
+          <conditions>
+            <condition field="selections" scope="2ba9-3e73-c2ec-32fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf6e-5959-f139-0d15" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Chaos Lord on Disc of Tzeentch">
+          <conditions>
+            <condition field="selections" scope="2ba9-3e73-c2ec-32fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="679c-c14e-bc90-f57c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Chaos Lord on Steed of Slaanesh">
+          <conditions>
+            <condition field="selections" scope="2ba9-3e73-c2ec-32fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f95-487d-d568-4278" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Chaos Lord on Palanquin of Nurgle">
+          <conditions>
+            <condition field="selections" scope="2ba9-3e73-c2ec-32fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9f8-a19f-0422-abdf" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2491-796e-79b4-52c3" name="Lord of Chaos" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly &lt;LEGION&gt; units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="48ac-9104-e128-93a7" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="2da5-017b-ae68-7c30" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="45ca-1b1c-06da-d5d5" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="426e-dc67-ee4f-a20c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="1071-f0f9-3a8b-be9a" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="790a-e921-9028-a495" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="cc04-774f-c4cd-3241" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink id="c41c-a080-acbd-f7a5" name="Chaos Lord" hidden="false" targetId="2f53-570e-fcef-604b" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dc1a-e5ba-e688-6222" name="Mount" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d0e-735c-95f8-d84c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb98-22f6-e0ab-fbeb" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="679c-c14e-bc90-f57c" name="Disc of Tzeentch" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="8103-7e57-e4a6-03fa" name="Chaos Lord on Disc of Tzeentch" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="2232-7adf-5fe6-7647" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+                <categoryLink id="90e8-da6e-b6ff-fe06" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1f95-487d-d568-4278" name="Steed of Slaanesh" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="763f-3efc-7397-f3ac" name="Chaos Lord on Steed of Slaanesh" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">13&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="2148-716f-1ec4-3005" name="Steed of Slaanesh" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by a unit with a Steed of Slaanesh.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="906a-7c79-72db-cf0d" name="Faction: Slaanesh" hidden="false" targetId="efae-e219-8ca0-ec58" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e9f8-a19f-0422-abdf" name="Palanquin of Nurgle" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="acfd-5449-0848-32cf" name="Chaos Lord on Palanquin of Nurgle" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="851e-f948-5e08-c7c8" name="Malefic Appendages" hidden="false" targetId="147a-c73b-bbb6-9508" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="7972-f438-3999-8c71" name="Faction: Nurgle" hidden="false" targetId="880a-e8ec-2690-e97e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cf6e-5959-f139-0d15" name="Juggernaut of Khorne" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="6801-49de-9ec9-bb4e" name="Chaos Lord on Juggernaut of Khorne" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="4754-cd54-cb03-0f24" name="Faction: Khorne" hidden="false" targetId="70d2-a4c3-e002-9bbe" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="aa33-8e97-e1b2-f5f0" name="Helwrought Weapons" hidden="false" collective="false" targetId="928c-a316-0e0f-302c" type="selectionEntry"/>
+        <entryLink id="63d8-0f0e-ed70-b2c3" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a578-17fd-5940-1c4c" name="Sorcerer on Daemonic Mount" hidden="false" collective="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Sorcerer on Disc of Tzeentch">
+          <conditions>
+            <condition field="selections" scope="a578-17fd-5940-1c4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6684-bf3e-7236-d8d9" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Sorcerer on Steed of Slaanesh">
+          <conditions>
+            <condition field="selections" scope="a578-17fd-5940-1c4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a2a-3f62-d4c6-e738" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Sorcerer on Palanquin of Nurgle">
+          <conditions>
+            <condition field="selections" scope="a578-17fd-5940-1c4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e1e-05d7-7867-bce6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2440-4d1a-2474-69bd" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="3b98-ff77-c6ed-039a" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="a09e-3b35-6c50-e37f" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="a98f-a8cb-843c-01fe" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="f46c-7111-b0b7-3d96" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="931c-45b3-77ed-f58b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="42bc-531d-e1a7-0915" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink id="ca66-ebd2-b5bd-9100" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="1109-d895-51d8-51b0" name="Sorcerer" hidden="false" targetId="5c54-8b43-52eb-6259" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2563-d5ec-79fe-12ef" name="Mount" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95ba-70cd-66ba-abe3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c0-9130-572e-29f6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6684-bf3e-7236-d8d9" name="Disc of Tzeentch" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2d30-22f8-1789-7e97" name="Sorcerer on Disc of Tzeentch" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="35e0-b1a2-227d-8c5c" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+                <categoryLink id="e513-513a-a1f4-cf29" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7a2a-3f62-d4c6-e738" name="Steed of Slaanesh" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="4562-55dd-3b22-5bde" name="Sorcerer on Steed of Slaanesh" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">13&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="329d-6a6a-cabe-a215" name="Steed of Slaanesh" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by a unit with a Steed of Slaanesh.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="021b-47d5-35ad-2dad" name="Faction: Slaanesh" hidden="false" targetId="efae-e219-8ca0-ec58" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8e1e-05d7-7867-bce6" name="Palanquin of Nurgle" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="1f16-a206-dba8-93bb" name="Sorcerer on Palanquin of Nurgle" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="e1e6-20b3-67ae-ac2a" name="Malefic Appendages" hidden="false" targetId="147a-c73b-bbb6-9508" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="dd05-7efd-a985-db24" name="Faction: Nurgle" hidden="false" targetId="880a-e8ec-2690-e97e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="93bb-f1d8-5747-3033" name="Helwrought Weapons" hidden="false" collective="false" targetId="928c-a316-0e0f-302c" type="selectionEntry"/>
+        <entryLink id="9f75-cdd6-1cc2-c30e" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3586-abbc-7a9e-ad55" name="Obsidius Mallex" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="8d4f-55dd-e0d8-8b90" name="Obsidius Mallex" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4bef-184d-3685-11b7" name="Lord of Chaos" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly BLACK LEGION and friendly SERVANTS OF THE ABYSS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f0d6-05b9-3e78-dba0" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="72b3-bd7d-6f85-5d3b" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="6940-3e0e-d8e7-bbe7" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="54cc-05af-6d69-8199" name="Faction: Black Legion" hidden="false" targetId="2055-4ae4-d457-61cc" primary="false"/>
+        <categoryLink id="2223-ada3-5fa6-a3a8" name="Faction: Servants of the Abyss" hidden="false" targetId="24b1-d03e-7c15-b914" primary="false"/>
+        <categoryLink id="9f59-0e7c-bb0a-6d17" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="9493-1d25-355d-4d43" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="3e9f-c25b-456e-77d5" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="5888-ee22-de91-c66c" name="Chaos Lord" hidden="false" targetId="2f53-570e-fcef-604b" primary="false"/>
+        <categoryLink id="c09a-de89-eef7-964c" name="Obsidius Mallex" hidden="false" targetId="9299-ab5b-aef6-1e06" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="79df-b5d6-6812-3513" name="Thunder Hammer" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afb7-fe36-140e-5e98" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2df7-543f-6f04-50cf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1a70-3316-70d2-24b8" name="Thunder Hammer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="189b-8336-dcde-b488" name="Rogue Psyker" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="3a6e-7fa6-aba8-69ee" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="8f23-03bf-8160-547e" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="1421-ea6b-92aa-83ed" name="Faction: Servants of the Abyss" hidden="false" targetId="24b1-d03e-7c15-b914" primary="false"/>
+        <categoryLink id="ed93-2319-1841-da05" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="cbb3-7392-9fe8-cbfc" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="6626-733d-b235-0dfe" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="6e86-6c96-6ac8-e6cb" name="Rogue Psyker" hidden="false" targetId="5486-fc5d-21bd-a43e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8013-e48f-250f-4296" name="Chaos Stave" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e591-fef2-e000-7030" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bece-708f-57c9-2a92" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0092-6e48-c30c-d70b" name="Chaos Stave" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd17-86e4-1609-fe64" name="Negavolt Cultists" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="e119-251c-2df1-ff53" name="Negavolt Cultists (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2572-727e-1914-3564" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5a59-3547-67ce-a7e8" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="ac94-af2b-28b4-4d61" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="2077-3ebb-84e8-f66c" name="Faction: Servants of the Abyss" hidden="false" targetId="24b1-d03e-7c15-b914" primary="false"/>
+        <categoryLink id="b1e2-6ebd-56d3-d9bb" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="8a45-b9bd-e99a-180e" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="2a13-4494-be5a-5ed4" name="Negavolt Cultists" hidden="false" targetId="d2c6-3140-6ac9-e613" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d710-5589-2f62-1238" name="Electro-goads" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd70-1420-6efc-a1c6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="432a-4823-1099-1770" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bf1d-c759-bfce-dc23" name="Electro-goads" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d6c-a1eb-ffbb-3a88" name="Chaos Beastmen" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="58fb-2dfe-f069-88b9" name="Chaos Beastmen (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7e18-babf-c50a-d24a" name="Slaves to Mallex" hidden="false" targetId="84d5-b51e-79a6-0282" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="78b1-767f-298d-80a2" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="f44a-ecfe-42fd-6a20" name="Faction: Servants of the Abyss" hidden="false" targetId="24b1-d03e-7c15-b914" primary="false"/>
+        <categoryLink id="7316-4e47-d89d-e4e4" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="89c2-b34c-ff8c-028e" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="8a46-7257-c958-f39c" name="Chaos Beastmen" hidden="false" targetId="4f6a-680a-e993-b35d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="78f6-e867-183b-5014" name="Pistols" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c051-27a3-ffdc-001c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c8c-38db-7ef9-75e1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5e3e-eb40-f8a2-e129" name="Pistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="4687-ca85-6a7d-9249" name="Brutal Assault Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7db1-bfa3-6e9a-8726" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2336-8c68-d753-d314" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b4d6-c3c8-5430-d6c0" name="Brutal Assault Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="345d-9813-b00b-fb18" name="Legion" hidden="false" collective="false">
@@ -3694,6 +4199,11 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
     <profile id="5694-556a-78c5-7d07" name="Gift of the Hellforge" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of friendly HELLFORGED units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="84d5-b51e-79a6-0282" name="Slaves to Mallex" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit does not take up slots in a Detachment that contains OBSIDIUS MALLEX.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

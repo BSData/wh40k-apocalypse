@@ -3809,29 +3809,6 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
         <categoryLink id="08ee-a667-b836-16be" name="Chaos Lord" hidden="false" targetId="2f53-570e-fcef-604b" primary="false"/>
         <categoryLink id="01d2-77ac-83b2-58e6" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="e856-6902-27e0-ba7d" name="Helwrought Weapons" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7627-7bfa-ce82-e15a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5028-8caf-cc33-720e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="df97-cc0a-e8dc-8f69" name="Helwrought Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="de26-3c90-0b38-a0a5" name="Wargear Options" hidden="false" collective="false" defaultSelectionEntryId="213d-b503-ba2c-7987">
           <constraints>
@@ -3855,18 +3832,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
                   </conditions>
                 </modifier>
               </modifiers>
-              <profiles>
-                <profile id="3220-723f-bbab-ef44" name="Malefic Appendages" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="12dd-dfc3-5f85-841d" name="Malefic Appendages" hidden="false" targetId="147a-c73b-bbb6-9508" type="profile"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="5e4f-bd4b-8c78-9b80" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
                 <categoryLink id="6b2a-88ab-e6f5-3dc1" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
@@ -3892,6 +3860,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0a7d-9975-fe6c-41a7" name="Helwrought Weapons" hidden="false" collective="false" targetId="928c-a316-0e0f-302c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
@@ -5431,6 +5402,27 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="928c-a316-0e0f-302c" name="Helwrought Weapons" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d394-1d6c-f659-7be6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76fa-efcb-0a32-85b8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fbac-060a-0175-6b14" name="Helwrought Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="90e6-f66f-ee82-6b1c" name="Helbrute Arm 1" hidden="false" collective="false" defaultSelectionEntryId="b196-0fd9-1865-7859">
@@ -5674,6 +5666,16 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
         <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
         <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
         <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="147a-c73b-bbb6-9508" name="Malefic Appendages" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
