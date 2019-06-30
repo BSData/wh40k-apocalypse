@@ -362,5 +362,10 @@
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
       </characteristics>
     </profile>
+    <profile id="bf9d-2c1a-d513-4513" name="Immobile" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit is never Out of Command: an Out of Command marker is never placed next to it. When measuring distances to and from this unit, measure to and from the closest point of this unit.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
