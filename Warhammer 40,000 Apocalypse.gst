@@ -289,31 +289,31 @@
   </forceEntries>
   <sharedRules>
     <rule id="7296-134e-970b-4790" name="Barrage" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>Attacks made with this weapon can target units that are not visible to the firing unit.</description>
     </rule>
     <rule id="aac2-cf46-7dc3-ac07" name="Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>If a wound roll for an attack made with a weapon with this ability is successful, place two blast markers next to the target unit instead of one.</description>
     </rule>
     <rule id="8ce8-6dd3-c0a8-35ad" name="Witchfire" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>You can re-roll wound rolls for attacks made with this weapon that target units whose leadership characteristic is less than that of the firing unit.</description>
     </rule>
     <rule id="f3a7-fc0c-a9e3-d382" name="Inferno" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>Attacks made with this weapon automatically score a hit (no hit roll is made).</description>
     </rule>
     <rule id="48b8-058a-9085-0e80" name="Anti-air" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>Add 2 to hit rolls for attacks made with this weapon that target AIRCRAFT units.</description>
     </rule>
     <rule id="5b2f-f499-bdcd-e45d" name="Rapid Fire" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>Double the attacks characteristic of this weapon if the target is with in half of the weapon&apos;s range.</description>
     </rule>
     <rule id="9988-c2ea-2f30-09c1" name="Supercharge" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>Before a unit attacks with this weapon ,it can super charge it. If it does, then until the end of the turn add 1 to wound rolls for attacks made with this weapon, but each time you roll an unmodified hit roll of 1 for an attack with this weapon place one blast marker next to the firing unit.</description>
     </rule>
     <rule id="d452-1a22-2e0c-7a9e" name="Sniper" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>Add 2 to hit rolls made with this weapon that target CHARACTERS.</description>
     </rule>
     <rule id="822c-cc23-b4b1-bcb2" name="One Use Only" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>TODO</description>
+      <description>This weapon can be only used to make attacks once per battle.</description>
     </rule>
     <rule id="cdb8-7e4f-3d44-fc92" name="Siege Weapon" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>TODO</description>
@@ -321,46 +321,48 @@
     <rule id="2315-eb7a-ff97-9084" name="Apocalyptic Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>If a wound roll for an attack made with a weapon with this ability is successful, place four blast markers next to the target unit instead of one.</description>
     </rule>
+    <rule id="f07d-6c22-ac83-604c" name="Infiltrators" hidden="false">
+      <description>When this unit is set up on the battlefield, it can be set up anywhere that is wholly within 24&quot; of its Detachment&apos;s Commander, even if this is outside its deployment zone (it cannot be set up within the deployment zone of its controlling player&apos;s opponent or within 9&quot; of any enemy units, and can only be set up garrisoning a Defensible Terrain feature if that terrain feature is wholly within 24&quot; of its Detachment&apos;s Commander).
+
+Only place an Out of Command marker next to this unit if, at the start of the Orders phase, it is more than 24&quot; from its Detachment&apos;s Commander (this marker is removed if, at the end of any Move action, the unit is within 24&quot; of its Detachment&apos;s Commander).
+
+If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ are automatically successful, irrespective of this unit&apos;s Save characteristic.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="e5e7-bd6d-fdb7-b022" name="Terror Troops" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from the Leadership characteristic of units whilst they are within 6&quot; of any enemy units with this ability.</characteristic>
       </characteristics>
     </profile>
     <profile id="8fc3-5045-3aa5-00ce" name="Deep Strike" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">During deployment, this unit can be set up in Tactical Reserves instead of being set up on the battlefield. When this unit arrives as reinforcements, set it up anywhere on the battlefield that is more than 9&quot; from any enemy units. No more than half the total number of units in your army can be set up in Tactical Reserves, even if every unit in your army has this ability.</characteristic>
       </characteristics>
     </profile>
     <profile id="a219-d9fd-9c8c-10c2" name="Ignore Damage (6+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time you fail a saving throw for this unit, roll one D6. If the roll equals or exceeds the number in brackets, no damage marker is placed next to this unit. For example, if this unit has the &apos;Ignore Damage (5+)&apos; ability, a roll of 5 or more is required to prevent a damage marker being placed. If a unit has more than one Ignore Damage ability, it can only use one each time you fail a saving throw for that unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="958c-7037-989a-6da0" name="Ignore Damage (5+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="f07d-6c22-ac83-604c" name="Infiltrators" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-      <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time you fail a saving throw for this unit, roll one D6. If the roll equals or exceeds the number in brackets, no damage marker is placed next to this unit. For example, if this unit has the &apos;Ignore Damage (5+)&apos; ability, a roll of 5 or more is required to prevent a damage marker being placed. If a unit has more than one Ignore Damage ability, it can only use one each time you fail a saving throw for that unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="b133-8e04-3e7b-9fd6" name="Stealth" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with ranged weapons that target this unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="a828-c8a3-c4ed-f34b" name="Supersonic" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with ranged weapons that target this unit. Hit rolls for attacks made with melee weapons that target this unit automatically fail (no hit roll is made) unless the unit making the attack can FLY.</characteristic>
       </characteristics>
     </profile>
     <profile id="e66d-fc46-6a89-4318" name="Open-topped" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">TODO</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Units embarked aboard this unit can still make a Shoot action, measuring distances and visibilty from this unit, unless this unit is in base contact with an enemy unit. All negative modifiers that would apply to this unit were it to make a Shoot action also apply to units embarked aboard this unit when they make a Shoot action.</characteristic>
       </characteristics>
     </profile>
     <profile id="bf9d-2c1a-d513-4513" name="Immobile" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
