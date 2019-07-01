@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="a8f2-21f4-bd99-8f77" name="Chaos - Thousand Sons" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="1a83-f4ff-5858-dd84" name="Ahriman" hidden="false"/>
+    <categoryEntry id="33e7-8379-52f8-f634" name="Exalted Sorcerer" hidden="false"/>
+    <categoryEntry id="2a09-c2a3-f157-34df" name="Tzaangors" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
     <entryLink id="2fe9-a20f-6488-451f" name="Chaos Decimator" hidden="false" collective="false" targetId="9e88-67db-d4e3-fb01" type="selectionEntry">
       <categoryLinks>
@@ -169,7 +174,411 @@
         <categoryLink id="791e-9347-6f24-943b" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="a440-48c7-79a5-1875" name="Ahriman" hidden="false" collective="false" targetId="f783-3b8c-244e-2784" type="selectionEntry"/>
+    <entryLink id="016e-285e-f8c5-1432" name="Daemon Prince of Tzeentch" hidden="false" collective="false" targetId="3cf6-55a7-799a-93d8" type="selectionEntry"/>
+    <entryLink id="deb6-c04f-49af-798e" name="Exalted Sorcerer" hidden="false" collective="false" targetId="453b-b240-c01f-7392" type="selectionEntry"/>
+    <entryLink id="8ae0-c975-cd3c-185b" name="Sorcerer" hidden="false" collective="false" targetId="1dab-bb81-d853-d9ed" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a61d-578b-bacb-f2b6" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+        <categoryLink id="9bdf-e7f5-3511-eea8" name="Faction: Thousand Sons" hidden="false" targetId="2b4c-04cc-e8d8-5983" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9c63-c3cc-e82a-e3c0" name="Rubric Marines" hidden="false" collective="false" targetId="245e-1cea-9d5d-0e2a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8f2-21f4-bd99-8f77" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f157-30be-95da-8fc2" name="Rubric Marines" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is in a Detachment that contains only THOUSAND SONS units, its Battlefield Role is Troops instead of Elites.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="55d0-2305-0e2a-79ea" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="0ea8-de3e-525f-dcf0" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+        <categoryLink id="855e-2576-de29-7928" name="Faction: Thousand Sons" hidden="false" targetId="2b4c-04cc-e8d8-5983" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="34cc-9662-e00c-728b" name="Rubric Marines" hidden="false" collective="false" targetId="245e-1cea-9d5d-0e2a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8f2-21f4-bd99-8f77" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c296-91a0-58cc-ded0" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="a502-f316-03d3-423d" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+        <categoryLink id="3598-1cb2-5b82-3c1f" name="Faction: Thousand Sons" hidden="false" targetId="2b4c-04cc-e8d8-5983" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a8af-8f40-cf8b-f193" name="Tzaangors" hidden="false" collective="false" targetId="5473-bcb4-8298-52c6" type="selectionEntry"/>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="f783-3b8c-244e-2784" name="Ahriman" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3595-3b46-f594-9dc4" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9091-0d2c-7b7a-f5f0" name="Master Psyker" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, at the end of the Orders phase, you can look through your Command Asset deck and draw either one Thousand Sons Command Asset of your choice that is a psychic power, or the Deny the Witch or Adamantium Will card. Add the drawn card to your hand, then shuffle the Command Asset deck and place it face down.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b1ac-ae92-a94c-67d2" name="Ahriman" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
+              <conditions>
+                <condition field="selections" scope="f783-3b8c-244e-2784" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b93-bb56-2a2c-b264" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0da6-01ab-374f-2f63" name="Lord of the Thousand Sons" hidden="false" targetId="1a3c-f8af-32d9-38c3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2a9f-2c2c-d206-c77e" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="535c-5e4c-f3a2-b0b2" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+        <categoryLink id="6be6-6e5f-1fa8-eeaf" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="7297-15b7-ae50-ec8c" name="Faction: Thousand Sons" hidden="false" targetId="2b4c-04cc-e8d8-5983" primary="false"/>
+        <categoryLink id="cdea-8d4a-672e-f2c4" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="abb3-85fd-06ec-3ddd" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="b333-ba83-2536-3a04" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="91c1-15c7-2cfc-9392" name="Sorcerer" hidden="false" targetId="5c54-8b43-52eb-6259" primary="false"/>
+        <categoryLink id="1bc5-d3e0-4898-58aa" name="Ahriman" hidden="false" targetId="1a83-f4ff-5858-dd84" primary="false"/>
+        <categoryLink id="e013-e1b7-cf3b-eb87" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9d07-ec7f-ff51-1bf2" name="The Black Staff of Ahriman" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e628-2651-b870-0110" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a8-875f-08fe-39a0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ccd2-cff7-1ade-7922" name="The Black Staff of Ahriman" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="1260-0012-29bd-8fe8" name="Disc?" hidden="false" collective="false" targetId="d3cc-97db-b22c-02df" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3cf6-55a7-799a-93d8" name="Daemon Prince of Tzeentch" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="91b9-0b9f-9ce5-56af" name="Daemon Prince of Tzeentch" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
+              <conditions>
+                <condition field="selections" scope="3cf6-55a7-799a-93d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5e7-3826-3b10-0fa4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2926-5a20-3df3-efd6" name="Daemon Prince of Tzeentch" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly THOUSAND SONS and TZEENTCH DAEMON units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e366-5f7f-e1a7-7d04" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="4137-21c0-bfa3-6320" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="f6f3-6cea-e206-3138" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+        <categoryLink id="cfc1-04bf-858e-5c22" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="6562-a67b-b3e5-77df" name="Faction: Thousand Sons" hidden="false" targetId="2b4c-04cc-e8d8-5983" primary="false"/>
+        <categoryLink id="3512-3fed-3dad-10f8" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="f26c-f4b3-79a1-cf96" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="ce72-c0c5-fda5-ab7d" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="2ad7-6569-280c-1c64" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="6b89-f9c8-667d-faf5" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink id="c73b-8853-e265-e40c" name="Daemon Prince" hidden="false" targetId="b457-340c-c8e2-d60b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c5e7-3826-3b10-0fa4" name="Wings" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfc2-97e2-75eb-5233" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="22c8-548d-309f-c7f6" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="45b5-653f-a94f-81b4" name="Daemonic Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a56-108a-fe14-bfc7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77be-c2ce-6995-cd5b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5c4c-50f6-860d-38a3" name="Daemonic Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="453b-b240-c01f-7392" name="Exalted Sorcerer" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="0713-5466-24db-ffda" name="Exalted Sorcerer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
+              <conditions>
+                <condition field="selections" scope="453b-b240-c01f-7392" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b93-bb56-2a2c-b264" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b7d3-edac-0b02-5ce7" name="Lord of the Thousand Sons" hidden="false" targetId="1a3c-f8af-32d9-38c3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ff2d-00f0-838e-8a9c" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="34c9-d738-6762-3a25" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="139e-15d3-ff6f-06d1" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+        <categoryLink id="9168-64ad-fff0-8844" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="6451-beb4-38fc-7398" name="Faction: Thousand Sons" hidden="false" targetId="2b4c-04cc-e8d8-5983" primary="false"/>
+        <categoryLink id="de94-d0d8-08e0-1933" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="7c46-cc2f-e8e5-c655" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="153c-e3d4-7715-6042" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="cd27-714e-ce58-bd9c" name="Sorcerer" hidden="false" targetId="5c54-8b43-52eb-6259" primary="false"/>
+        <categoryLink id="e451-7856-b79b-5cf8" name="Exalted Sorcerer" hidden="false" targetId="33e7-8379-52f8-f634" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2932-2dd9-6e7d-a38d" name="Disc?" hidden="false" collective="false" targetId="d3cc-97db-b22c-02df" type="selectionEntryGroup"/>
+        <entryLink id="a591-74d7-f5b4-ef67" name="Force Weapon " hidden="false" collective="false" targetId="fb4c-7116-4f16-b27e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5473-bcb4-8298-52c6" name="Tzaangors" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="31ad-1ee6-1b2c-e55b" name="Relic Hunters" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made with melee weapons by this unit that target CHARACTER units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cce3-7ec3-7e93-a9c7" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="0fd3-2504-51ff-c928" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="f57a-e976-50ef-5d92" name="Faction: Tzeentch" hidden="false" targetId="3d04-d70d-4a1e-f3cc" primary="false"/>
+        <categoryLink id="c48d-54fb-3ed2-dd1d" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="671b-66e3-53ec-7957" name="Faction: Thousand Sons" hidden="false" targetId="2b4c-04cc-e8d8-5983" primary="false"/>
+        <categoryLink id="a8a1-ba88-ae1a-325d" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="bfa0-f134-a887-4c72" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="0e76-7b9b-d411-1a8e" name="Tzaangors" hidden="false" targetId="2a09-c2a3-f157-34df" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="89a5-e29a-71f5-e9b8" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1959-1ef1-66f7-5bd6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e5d-4587-5f60-19bc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4877-5047-6eff-faeb" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="bcb6-8ba0-0df8-ef3d" name="Autopistols" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdc7-e26c-e08f-a22d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4bc-10c4-ccba-8205" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0757-54bd-3acb-5df4" name="Autopistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a74b-160b-0d3c-f1d8" name="Models" hidden="false" collective="false" defaultSelectionEntryId="36ee-b72f-192d-d660">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67a1-6830-8431-1525" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa15-4ba1-60a0-20fb" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="36ee-b72f-192d-d660" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2975-2770-a754-25c6" name="Tzaangors (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4731-7d22-13a4-3774" name="20 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2b15-e41a-09ad-a249" name="Tzaangors (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c172-72f8-526d-f44e" name="30 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="4b57-44ef-8a82-abfa" name="Tzaangors (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="d3cc-97db-b22c-02df" name="Disc?" hidden="false" collective="false" defaultSelectionEntryId="15be-0c5c-cedc-1cd9">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1607-021f-b721-fac8" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eaf-ec7d-be9c-3660" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="15be-0c5c-cedc-1cd9" name="No Disc" hidden="false" collective="false" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="7aef-0d03-56b6-947d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7b93-bb56-2a2c-b264" name="Disc" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="96e7-580b-805a-4cda" name="Tzeentchian Blades" hidden="false" targetId="9be6-a2b0-4f2d-7787" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0263-a058-95b2-08ba" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+            <categoryLink id="6074-0879-a2e7-9f92" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+            <categoryLink id="5456-3daf-915d-00a4" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="1a3c-f8af-32d9-38c3" name="Lord of the Thousand Sons" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly THOUSAND SONS units whilst they are within 6&quot; of this unit.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="603f-b38c-e872-4870" name="Chaos - Chaos Space Marines" targetId="fdb6-9fc8-a607-b5ae" type="catalogue"/>
     <catalogueLink id="2958-e29d-870c-2808" name="Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>

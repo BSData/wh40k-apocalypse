@@ -3936,9 +3936,14 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
         <profile id="4a1d-b9fb-b355-0b2a" name="Sorcerer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <modifiers>
             <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
-              <conditions>
-                <condition field="selections" scope="1dab-bb81-d853-d9ed" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4ce-9e34-70f0-5ae7" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="1dab-bb81-d853-d9ed" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4ce-9e34-70f0-5ae7" type="equalTo"/>
+                    <condition field="selections" scope="1dab-bb81-d853-d9ed" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18ca-81b7-ab59-d9b0" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" field="606d-344a-bc3d-9dce" value="14&quot;">
               <conditions>
@@ -4030,6 +4035,26 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="18ca-81b7-ab59-d9b0" name="Disc of Tzeentch" hidden="false" collective="false" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8f2-21f4-bd99-8f77" type="notInstanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="a8ce-7459-e840-6d25" name="Tzeentchian Blades" hidden="false" targetId="9be6-a2b0-4f2d-7787" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="cbc7-fb35-6ace-eb0c" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+                <categoryLink id="1ccb-d0f4-3e26-f0d0" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+                <categoryLink id="00df-2f0e-f4c0-6206" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="19b8-289e-f218-1c02" name="Jump Pack" hidden="false" collective="false" targetId="c4ce-9e34-70f0-5ae7" type="selectionEntry"/>
@@ -4038,7 +4063,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4685-6098-8f1b-f9cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e5a-79b4-9478-4a63" type="notInstanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5885,6 +5910,16 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
       </characteristics>
     </profile>
     <profile id="147a-c73b-bbb6-9508" name="Malefic Appendages" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9be6-a2b0-4f2d-7787" name="Tzeentchian Blades" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
       <characteristics>
         <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
         <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
