@@ -83,6 +83,7 @@
     <categoryEntry id="0cd5-c931-27e9-110d" name="Plague Marines" hidden="false"/>
     <categoryEntry id="886e-1a90-19c0-9d5a" name="Rubric Marines" hidden="false"/>
     <categoryEntry id="b457-340c-c8e2-d60b" name="Daemon Prince" hidden="false"/>
+    <categoryEntry id="cf25-3f10-bb2b-9ea0" name="Possessed" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e7d3-3095-e373-d4b3" name="Blood Slaughterer of Khorne" hidden="false" collective="false" type="unit">
@@ -4296,11 +4297,6 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <condition field="selections" scope="ed66-68de-c8bb-af54" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a08f-c4a2-229e-a3d3" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="1466-da3f-0d27-dace" value="7.0">
-          <conditions>
-            <condition field="selections" scope="ed66-68de-c8bb-af54" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a08f-c4a2-229e-a3d3" type="atLeast"/>
-          </conditions>
-        </modifier>
         <modifier type="set" field="1466-da3f-0d27-dace" value="9.0">
           <conditions>
             <condition field="selections" scope="ed66-68de-c8bb-af54" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a08f-c4a2-229e-a3d3" type="atLeast"/>
@@ -4346,13 +4342,51 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
         <categoryLink id="daa0-1174-0ad0-65d6" name="Chaos Spawn" hidden="false" targetId="1225-8d0a-a53e-e18f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a08f-c4a2-229e-a3d3" name="Chaos Spawn" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a08f-c4a2-229e-a3d3" name="Chaos Spawn" hidden="false" collective="false" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb40-097f-9fe0-1010" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d352-a879-a7c9-15e4" type="min"/>
           </constraints>
           <profiles>
             <profile id="9a8c-6977-b20b-1229" name="Chaos Spawn" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="ed66-68de-c8bb-af54" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
+                    <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="ed66-68de-c8bb-af54" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
+                    <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="ed66-68de-c8bb-af54" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
+                    <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="ed66-68de-c8bb-af54" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="5"/>
+                    <modifier type="set" field="7c7f-f763-1f39-410c" value="5"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <characteristics>
                 <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
                 <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
@@ -5437,6 +5471,132 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5115-64ae-c958-a99f" name="Possessed" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="c166-92cd-ed90-0298" name="Writhing Tentacles" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time this unit fights with a melee weapon, roll one D3 for every 5 models this unit contains to determine the number of attacks it makes.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0bc7-f21c-4cfa-e418" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="2997-9399-d52f-6f13" name="New CategoryLink" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="0397-b3f7-2236-ad6c" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="8b23-faa3-55c4-4e7c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="570b-8817-8a5e-e88d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="d3c2-db6a-9514-24fe" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
+        <categoryLink id="c245-9320-f763-e445" name="Possessed" hidden="false" targetId="cf25-3f10-bb2b-9ea0" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0d9e-624e-c0b8-dc01" name="Horrifying Mutations" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bbb-d5b8-5607-3729" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2f1-9ae9-3f5e-8bc3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2653-7414-eac7-e8f2" name="Horrifying Mutations" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3671-48a5-e437-cee6" name="5 - 20 models" hidden="false" collective="false" defaultSelectionEntryId="e42f-cc11-f0c7-4491">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdde-9257-0aa9-3d57" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0e8-9d28-eee1-251b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e42f-cc11-f0c7-4491" name="05 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="91db-367d-4ab8-dda3" name="Possessed (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">D3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d447-61e1-06a3-67d5" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="7ec5-7b35-1a52-1668" name="Possessed (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2D3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3e8d-1bfb-c449-8b1d" name="15 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="9e7b-6219-0417-772d" name="Possessed (15 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3D3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9ce9-6f6b-5db5-ee70" name="20 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="a356-7990-51d7-5213" name="Possessed (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4D3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="21.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>

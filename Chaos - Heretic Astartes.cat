@@ -280,7 +280,6 @@
     <entryLink id="07c2-babc-3012-6330" name="Chosen" hidden="false" collective="false" targetId="5a68-84e4-6544-0681" type="selectionEntry"/>
     <entryLink id="d38f-ee29-c139-bc9e" name="Terminators" hidden="false" collective="false" targetId="df26-fe50-9f0f-2535" type="selectionEntry"/>
     <entryLink id="96a2-9146-1f8e-f303" name="Greater Possessed" hidden="false" collective="false" targetId="34b6-85e2-752a-3600" type="selectionEntry"/>
-    <entryLink id="1420-6004-b9aa-92ed" name="Possessed" hidden="false" collective="false" targetId="5ee6-8a7b-9c15-6945" type="selectionEntry"/>
     <entryLink id="9038-8361-058d-79f3" name="Mutilators" hidden="false" collective="false" targetId="02d7-241e-ea40-ac7b" type="selectionEntry"/>
     <entryLink id="cf12-eb66-a69c-08be" name="Chaos Space Marines" hidden="false" collective="false" targetId="5031-c476-9dc3-3f9c" type="selectionEntry"/>
     <entryLink id="52c1-cee0-36ca-b35c" name="Chaos Cultists" hidden="false" collective="false" targetId="ccff-966b-bc9a-05c8" type="selectionEntry">
@@ -424,6 +423,12 @@
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink id="9d11-1240-c1c2-e899" name="Possessed" hidden="false" collective="false" targetId="5115-64ae-c958-a99f" type="selectionEntry">
+      <entryLinks>
+        <entryLink id="a3ef-579b-891f-c1be" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
+        <entryLink id="a481-d171-4ede-dcb0" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -2168,136 +2173,6 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5ee6-8a7b-9c15-6945" name="Possessed" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="0397-a7d9-683e-88a3" name="Writhing Tentacles" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time this unit fights with a melee weapon, roll one D3 for every 5 models this unit contains to determine the number of attacks it makes.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="c1ff-8329-22e4-34a0" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
-        <categoryLink id="81c2-9ab5-963a-69a8" name="New CategoryLink" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="4cde-9c7a-3a6c-6c11" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
-        <categoryLink id="c81c-7741-7b8d-dfef" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="aed9-d05e-88fb-5cd1" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="78c6-631f-b13d-ed77" name="Daemon" hidden="false" targetId="8941-623f-a255-f440" primary="false"/>
-        <categoryLink id="c975-9496-fae3-8475" name="Possessed" hidden="false" targetId="848e-4d02-6c58-0844" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="f292-8d23-307e-5ae0" name="Horrifying Mutations" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1601-3450-24bc-2925" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="972d-a4af-8ce7-5dcd" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="cb51-36ce-7f01-aa03" name="Horrifying Mutations" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="d5f9-b33f-ce76-f5eb" name="5 - 20 models" hidden="false" collective="false" defaultSelectionEntryId="8c6c-b465-3d69-4588">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afca-45f5-bc11-dda0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dea4-d3ff-2fed-e869" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="8c6c-b465-3d69-4588" name="05 models" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="977d-975f-7e44-3328" name="Possessed (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">D3</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="817d-9e43-3025-a3e0" name="10 models" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="19f7-32b2-bfe9-b25a" name="Possessed (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2D3</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5aca-a061-0356-0934" name="15 models" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="77b9-2c98-f104-36ae" name="Possessed (15 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3D3</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c420-4a3f-5912-3849" name="20 models" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="78a7-b78b-584d-49ed" name="Possessed (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
-                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4D3</characteristic>
-                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
-                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
-                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="21.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="38f9-08f2-48d1-fe9a" name="Legion" hidden="false" collective="false" targetId="345d-9813-b00b-fb18" type="selectionEntryGroup"/>
-        <entryLink id="e306-0790-22f5-46ec" name="Mark of Chaos" hidden="false" collective="false" targetId="a31f-0d6e-6f6f-4b48" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
