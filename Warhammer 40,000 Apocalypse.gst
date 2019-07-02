@@ -75,10 +75,14 @@
     <categoryEntry id="cdf9-175a-b31b-44a1" name="Jump Pack" hidden="false"/>
     <categoryEntry id="9376-59f2-9b7f-cce3" name="Primarch" hidden="false"/>
     <categoryEntry id="dd2e-b7ed-76c8-a4d9" name="Commander" hidden="false"/>
+    <categoryEntry id="28b1-4853-5c6a-464b" name="List Configuration" hidden="false"/>
+    <categoryEntry id="877e-364e-61c2-6dd2" name="No Force Org Slot" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Not A Detachment (🎵Everybody Dance Now 🎵)" hidden="false">
       <categoryLinks>
+	    <categoryLink id="0c4b-95ce-3d27-a082" name="List Configuration" hidden="false" targetId="28b1-4853-5c6a-464b" primary="false"/>
+		<categoryLink id="4b92-5fb2-6920-56b8" name="No Force Org Slot" hidden="false" targetId="877e-364e-61c2-6dd2" primary="false"/>
         <categoryLink id="9849-b450-329f-a162" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
         <categoryLink id="2b8d-76eb-6c31-9b11" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="false"/>
         <categoryLink id="532d-fd40-6285-cb6c" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="false"/>
@@ -92,6 +96,8 @@
     </forceEntry>
     <forceEntry id="102b-272b-0d3c-2da0" name="Battalion Detachment" hidden="false">
       <categoryLinks>
+	    <categoryLink id="50f9-70e0-2ceb-7ad7" name="List Configuration" hidden="false" targetId="28b1-4853-5c6a-464b" primary="false"/>
+        <categoryLink id="9644-c808-dd1f-1772" name="No Force Org Slot" hidden="false" targetId="877e-364e-61c2-6dd2" primary="false"/>
         <categoryLink id="084a-a562-891b-a141" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9da-b39a-e7c3-0e97" type="max"/>
@@ -138,6 +144,8 @@
     </forceEntry>
     <forceEntry id="113d-50e8-996e-70c3" name="Spearhead Detachment" hidden="false">
       <categoryLinks>
+	    <categoryLink id="50f9-70e0-2ceb-7ad7" name="List Configuration" hidden="false" targetId="28b1-4853-5c6a-464b" primary="false"/>
+        <categoryLink id="9644-c808-dd1f-1772" name="No Force Org Slot" hidden="false" targetId="877e-364e-61c2-6dd2" primary="false"/>
         <categoryLink id="bc1f-ab21-8478-1b76" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="430a-139c-0716-0456" type="max"/>
@@ -184,6 +192,8 @@
     </forceEntry>
     <forceEntry id="06e1-90a4-1407-f38b" name="Vanguard Detachment" hidden="false">
       <categoryLinks>
+	    <categoryLink id="50f9-70e0-2ceb-7ad7" name="List Configuration" hidden="false" targetId="28b1-4853-5c6a-464b" primary="false"/>
+        <categoryLink id="9644-c808-dd1f-1772" name="No Force Org Slot" hidden="false" targetId="877e-364e-61c2-6dd2" primary="false"/>
         <categoryLink id="8b29-180b-02d1-0306" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14eb-abcb-23a1-5f9f" type="max"/>
@@ -233,6 +243,8 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2f0b-6129-dd5f-2e0f" type="max"/>
       </constraints>
       <categoryLinks>
+	    <categoryLink id="50f9-70e0-2ceb-7ad7" name="List Configuration" hidden="false" targetId="28b1-4853-5c6a-464b" primary="false"/>
+        <categoryLink id="9644-c808-dd1f-1772" name="No Force Org Slot" hidden="false" targetId="877e-364e-61c2-6dd2" primary="false"/>
         <categoryLink id="be57-d4d6-152c-2593" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false">
           <modifiers>
             <modifier type="increment" field="dee4-c13a-c494-1d16" value="1.0">
@@ -269,6 +281,8 @@
     </forceEntry>
     <forceEntry id="7657-ae85-fd30-3993" name="Super-heavy Detachment" hidden="false">
       <categoryLinks>
+	    <categoryLink id="50f9-70e0-2ceb-7ad7" name="List Configuration" hidden="false" targetId="28b1-4853-5c6a-464b" primary="false"/>
+        <categoryLink id="9644-c808-dd1f-1772" name="No Force Org Slot" hidden="false" targetId="877e-364e-61c2-6dd2" primary="false"/>
         <categoryLink id="a19e-1c8b-d07a-7cba" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aae8-b3df-327f-f864" type="min"/>
@@ -279,6 +293,8 @@
     </forceEntry>
     <forceEntry id="5642-ce25-4f9d-5cb3" name="Air Wing Detachment" hidden="false">
       <categoryLinks>
+	    <categoryLink id="50f9-70e0-2ceb-7ad7" name="List Configuration" hidden="false" targetId="28b1-4853-5c6a-464b" primary="false"/>
+        <categoryLink id="9644-c808-dd1f-1772" name="No Force Org Slot" hidden="false" targetId="877e-364e-61c2-6dd2" primary="false"/>
         <categoryLink id="bd48-1014-ae30-66a5" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b2a-fda7-1d00-7ac3" type="min"/>
@@ -313,8 +329,14 @@
           <categoryLinks>
             <categoryLink id="cd7a-8bfd-f092-1974" name="Warlord" hidden="false" targetId="7453-e809-a313-a332" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
