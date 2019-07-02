@@ -74,6 +74,7 @@
     <categoryEntry id="5f52-c8e5-1f2f-5161" name="Dreadnought" hidden="false"/>
     <categoryEntry id="cdf9-175a-b31b-44a1" name="Jump Pack" hidden="false"/>
     <categoryEntry id="9376-59f2-9b7f-cce3" name="Primarch" hidden="false"/>
+    <categoryEntry id="dd2e-b7ed-76c8-a4d9" name="Commander" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Not A Detachment (🎵Everybody Dance Now 🎵)" hidden="false">
@@ -287,6 +288,35 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="8950-1288-e36f-6423" name="Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="unit" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4016-e4d0-cd90-0d1b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b011-21f9-1f7d-69b8" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="975b-6d1e-f4da-375f" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="46da-e379-8073-569b" name="Warlord" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c5c2-85f1-66ab-b485" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8815-9391-9bab-be9f" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="cd7a-8bfd-f092-1974" name="Warlord" hidden="false" targetId="7453-e809-a313-a332" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedRules>
     <rule id="7296-134e-970b-4790" name="Barrage" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>Attacks made with this weapon can target units that are not visible to the firing unit.</description>
@@ -321,7 +351,7 @@
     <rule id="2315-eb7a-ff97-9084" name="Apocalyptic Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>If a wound roll for an attack made with a weapon with this ability is successful, place four blast markers next to the target unit instead of one.</description>
     </rule>
-    <rule id="f07d-6c22-ac83-604c" name="Infiltrators" hidden="false">
+    <rule id="f07d-6c22-ac83-604c" name="Infiltrators" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>When this unit is set up on the battlefield, it can be set up anywhere that is wholly within 24&quot; of its Detachment&apos;s Commander, even if this is outside its deployment zone (it cannot be set up within the deployment zone of its controlling player&apos;s opponent or within 9&quot; of any enemy units, and can only be set up garrisoning a Defensible Terrain feature if that terrain feature is wholly within 24&quot; of its Detachment&apos;s Commander).
 
 Only place an Out of Command marker next to this unit if, at the start of the Orders phase, it is more than 24&quot; from its Detachment&apos;s Commander (this marker is removed if, at the end of any Move action, the unit is within 24&quot; of its Detachment&apos;s Commander).
@@ -340,12 +370,12 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">During deployment, this unit can be set up in Tactical Reserves instead of being set up on the battlefield. When this unit arrives as reinforcements, set it up anywhere on the battlefield that is more than 9&quot; from any enemy units. No more than half the total number of units in your army can be set up in Tactical Reserves, even if every unit in your army has this ability.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a219-d9fd-9c8c-10c2" name="Ignore Damage (6+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+    <profile id="a219-d9fd-9c8c-10c2" name="Ignore Damage (6+)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time you fail a saving throw for this unit, roll one D6. If the roll equals or exceeds the number in brackets, no damage marker is placed next to this unit. For example, if this unit has the &apos;Ignore Damage (5+)&apos; ability, a roll of 5 or more is required to prevent a damage marker being placed. If a unit has more than one Ignore Damage ability, it can only use one each time you fail a saving throw for that unit.</characteristic>
       </characteristics>
     </profile>
-    <profile id="958c-7037-989a-6da0" name="Ignore Damage (5+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+    <profile id="958c-7037-989a-6da0" name="Ignore Damage (5+)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time you fail a saving throw for this unit, roll one D6. If the roll equals or exceeds the number in brackets, no damage marker is placed next to this unit. For example, if this unit has the &apos;Ignore Damage (5+)&apos; ability, a roll of 5 or more is required to prevent a damage marker being placed. If a unit has more than one Ignore Damage ability, it can only use one each time you fail a saving throw for that unit.</characteristic>
       </characteristics>
@@ -355,7 +385,7 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with ranged weapons that target this unit.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a828-c8a3-c4ed-f34b" name="Supersonic" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+    <profile id="a828-c8a3-c4ed-f34b" name="Supersonic" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with ranged weapons that target this unit. Hit rolls for attacks made with melee weapons that target this unit automatically fail (no hit roll is made) unless the unit making the attack can FLY.</characteristic>
       </characteristics>
@@ -365,7 +395,7 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Units embarked aboard this unit can still make a Shoot action, measuring distances and visibilty from this unit, unless this unit is in base contact with an enemy unit. All negative modifiers that would apply to this unit were it to make a Shoot action also apply to units embarked aboard this unit when they make a Shoot action.</characteristic>
       </characteristics>
     </profile>
-    <profile id="bf9d-2c1a-d513-4513" name="Immobile" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+    <profile id="bf9d-2c1a-d513-4513" name="Immobile" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit is never Out of Command: an Out of Command marker is never placed next to it. When measuring distances to and from this unit, measure to and from the closest point of this unit.</characteristic>
       </characteristics>
