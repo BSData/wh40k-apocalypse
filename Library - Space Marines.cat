@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="27a9-7510-4fa3-8c38" name="Library - Space Marines" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="df5a-b452-7741-6a5b" name="Library - Space Marines" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="3c96-97a9-97eb-8a11" name="Tactical Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+    <selectionEntry id="1fa2-88c4-2c7e-5d33" name="Tactical Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
-        <profile id="d3fa-332e-9335-e137" name="Tactical Squad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="e6d3-e98c-f12c-176e" name="Tactical Squad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5780-84ae-5f6f-8f01" type="equalTo"/>
+                <condition field="selections" scope="1fa2-88c4-2c7e-5d33" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="increment" field="ddfe-6a9e-32c1-a51c" value="1"/>
@@ -36,57 +36,42 @@
         <categoryLink id="46c4-aaf3-baa3-d820" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="ddb1-b366-3625-2e61" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="457c-2544-05c0-171e" name="Tactical Squad" hidden="false" targetId="51a9-73ff-29ec-793c" primary="false"/>
+        <categoryLink id="470e-47da-55ab-868a" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="ee4b-ee56-a2b0-0577" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5ef-a485-c5e6-3c2b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="693a-80dc-584b-5031" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="bae2-c59f-3511-e4f8" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8403-1642-b7dc-7d9f" name="Wargear Options" hidden="true" collective="false">
+        <selectionEntryGroup id="fca2-f817-1b0f-415e" name="Wargear Options" hidden="true" collective="false">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5780-84ae-5f6f-8f01" type="equalTo"/>
+                <condition field="selections" scope="1fa2-88c4-2c7e-5d33" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6113-2a91-23e6-3578" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c055-7a57-29c8-3796" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0278-1dc9-eba6-9843" name="Grav-Cannon" hidden="false" collective="false" targetId="2767-582b-0ce4-bab4" type="selectionEntry"/>
-            <entryLink id="8d8b-3e2f-f232-5f89" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry"/>
-            <entryLink id="ad73-2e77-90b1-17d3" name="Lascannon" hidden="false" collective="false" targetId="dd55-a2c1-238b-569f" type="selectionEntry"/>
-            <entryLink id="6c81-b300-1a95-a2ac" name="Missile Launcher" hidden="false" collective="false" targetId="a524-9ae0-16b9-cd61" type="selectionEntry"/>
-            <entryLink id="64cd-1678-9716-f826" name="Multi-melta" hidden="false" collective="false" targetId="1a13-f0be-ca42-c44b" type="selectionEntry"/>
-            <entryLink id="4e0d-395b-f09a-002d" name="Plasma Cannon" hidden="false" collective="false" targetId="257b-2e43-40d4-aebe" type="selectionEntry"/>
+            <entryLink id="98e2-90ab-24e3-e1c2" name="Grav-Cannon" hidden="false" collective="false" targetId="2767-582b-0ce4-bab4" type="selectionEntry"/>
+            <entryLink id="ae41-f46f-7afb-d652" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry"/>
+            <entryLink id="0da6-4422-d1da-0009" name="Lascannon" hidden="false" collective="false" targetId="dd55-a2c1-238b-569f" type="selectionEntry"/>
+            <entryLink id="cd9a-7035-7d1b-9132" name="Missile Launcher" hidden="false" collective="false" targetId="a524-9ae0-16b9-cd61" type="selectionEntry"/>
+            <entryLink id="629f-06d3-c70b-a434" name="Multi-melta" hidden="false" collective="false" targetId="1a13-f0be-ca42-c44b" type="selectionEntry"/>
+            <entryLink id="8fd7-3688-7100-7f7e" name="Plasma Cannon" hidden="false" collective="false" targetId="257b-2e43-40d4-aebe" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8dd3-88ed-3319-334b" name="Boltguns" hidden="false" collective="false" targetId="2d61-a814-63d8-0398" type="selectionEntry">
+        <entryLink id="31ba-5c58-59f7-afbf" name="Boltguns" hidden="false" collective="false" targetId="2d61-a814-63d8-0398" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fea-b02e-28c5-4be8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aff0-2e55-54a9-eae7" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e011-a197-e7e0-7dea" name="Models (Marines)" hidden="false" collective="false" targetId="dfca-1772-18d0-ab91" type="selectionEntryGroup"/>
+        <entryLink id="f8e6-0cd4-ed49-e6d1" name="Close Combat Weapons" hidden="false" collective="false" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9679-9134-c822-1095" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d89-1cc4-09c3-29c5" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -94,37 +79,29 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed5e-a0fe-ede8-f42b" name="5 Models" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b91b-0612-96f4-e29d" name="5 Models" hidden="false" collective="false" type="upgrade">
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5780-84ae-5f6f-8f01" name="10 Models" hidden="false" collective="false" type="upgrade">
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e325-143e-77a8-5558" name="Boltguns" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="7fe5-7024-d6e4-972a" name="Boltguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="810b-9a1d-3663-301d" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
-      </infoLinks>
+    <selectionEntry id="b387-d691-5e15-e5cc" name="10 Models" hidden="false" collective="false" type="upgrade">
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="dfca-1772-18d0-ab91" name="Models (Marines)" hidden="false" collective="false" defaultSelectionEntryId="12ba-b224-c129-7243">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d3d-c363-6bdb-5ebb" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb86-721d-7cf7-7295" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="12ba-b224-c129-7243" name="5 Models" hidden="false" collective="false" targetId="b91b-0612-96f4-e29d" type="selectionEntry"/>
+        <entryLink id="338d-ca45-0060-05bd" name="10 Models" hidden="false" collective="false" targetId="b387-d691-5e15-e5cc" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="4404-0180-5b33-35b4" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>
   </catalogueLinks>
