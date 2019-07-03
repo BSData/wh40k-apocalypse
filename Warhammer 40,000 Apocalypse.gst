@@ -326,6 +326,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -368,6 +371,12 @@
 Only place an Out of Command marker next to this unit if, at the start of the Orders phase, it is more than 24&quot; from its Detachment&apos;s Commander (this marker is removed if, at the end of any Move action, the unit is within 24&quot; of its Detachment&apos;s Commander).
 
 If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ are automatically successful, irrespective of this unit&apos;s Save characteristic.</description>
+    </rule>
+    <rule id="976e-f8cb-6d17-de4e" name="Engines of War" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>Super-heavy units in a Detachment carrying out an Aimed Fire or Advance order can make one Shoot action and one Fight action (instead of only being able to do one of these). All other rules for that order still apply.</description>
+    </rule>
+    <rule id="abd1-8c2e-fb0f-e980" name="Destroyed" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <description>Each time a Super-heavy unit is destroyed, the controlling player rolls one D12 before removing it from the battlefield. On a 10+ that unit explodes or collapses in such a way as to crush those nearby; place one blast marker next to every unit (excluding Super-heavy units) that is within 6&quot; of the destroyed unit before removing it from the battlefield.  If the destroyed Super-heavy unit is a Transport, units must attempt to disembark before these blast markers are applied.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
