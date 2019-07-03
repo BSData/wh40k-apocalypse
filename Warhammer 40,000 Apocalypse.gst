@@ -290,57 +290,39 @@
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="8950-1288-e36f-6423" name="Warlord" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7347-5716-355f-9165" name="Commander" hidden="false" collective="false" type="upgrade">
       <modifiers>
-        <modifier type="set" field="4016-e4d0-cd90-0d1b" value="0.0">
+        <modifier type="set" field="name" value="Warlord">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95c4-5c94-bf8e-1e7a" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b9a-33b1-3b42-e3f8" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4016-e4d0-cd90-0d1b" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b011-21f9-1f7d-69b8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d167-bf92-8882-4e36" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7245-873d-dd49-1753" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="39d2-a0ec-3c6a-7c38" name="Warlord" hidden="false" targetId="7453-e809-a313-a332" primary="false"/>
-      </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="46da-e379-8073-569b" name="Warmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="67cb-6187-3983-fecd" name="Warmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b9a-33b1-3b42-e3f8" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c5c2-85f1-66ab-b485" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8815-9391-9bab-be9f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="41d5-9f02-50fb-a7a4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="428a-a3ad-c7ab-8804" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="075e-3897-cf6b-6c34" name="Warmaster" hidden="false" targetId="3b0c-71a7-b28b-a310" primary="false"/>
+            <categoryLink id="0c6b-65c1-b506-01bd" name="Warmaster" hidden="false" targetId="3b0c-71a7-b28b-a310" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="95c4-5c94-bf8e-1e7a" name="Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="8e25-a5af-6785-b62b" value="0.0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8950-1288-e36f-6423" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8e25-a5af-6785-b62b" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc38-6448-cfb8-9a2f" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="4ff1-ccbe-3bcc-88fc" name="Warlord" hidden="false" targetId="7453-e809-a313-a332" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
