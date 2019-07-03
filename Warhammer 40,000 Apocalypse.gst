@@ -302,6 +302,9 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d167-bf92-8882-4e36" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7245-873d-dd49-1753" type="max"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink id="865e-ecad-5e83-4551" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="67cb-6187-3983-fecd" name="Warmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
           <modifiers>
