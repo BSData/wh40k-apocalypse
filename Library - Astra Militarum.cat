@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
+    <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
+    <categoryEntry id="6fb8-97f4-5bda-4e43" name="Officer" hidden="false"/>
+    <categoryEntry id="166c-8c93-3ee0-8ad1" name="Tank Commander" hidden="false"/>
+    <categoryEntry id="3f9d-8310-412e-1741" name="Faction: &lt;Regiment&gt;" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="3831-283a-3a5d-d7b3" name="Tank Commander" hidden="false" collective="false" targetId="882f-8841-6c41-a147" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="057b-5387-81ad-98c1" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="7b46-2b3d-3bcc-8702" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="a424-1e1a-419a-7f22" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="f8e8-1187-979d-11a5" name="Faction: &lt;Regiment&gt;" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
+        <categoryLink id="d7be-1bb6-aa18-94d0" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="0c92-393e-b6a8-08d6" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="10e3-a7aa-62fd-ed0f" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="7673-fba1-0baf-b4a4" name="Leman Russ" hidden="false" targetId="65a5-3f67-4f86-350f" primary="false"/>
+        <categoryLink id="64ed-0861-86a8-a65e" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
+        <categoryLink id="2c96-98ad-fd20-0958" name="Tank Commander" hidden="false" targetId="166c-8c93-3ee0-8ad1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="882f-8841-6c41-a147" name="Tank Commander" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="e609-f455-8719-51df" name="Tank Commander" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1d11-ec12-cc65-ed69" name="Tank Commander" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a friendly &lt;REGIMENT&gt; LEMAN RUSS unit starts a Move action within 6&quot; of this unit, that unit can be ordered to go full throttle; add 2&quot; to that unit’s Move characteristic whilst making that Move action. A unit can only go full throttle once per turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ce02-5938-cfef-7142" name="Grinding Advance" hidden="false" targetId="7b3f-ddab-6d2b-674a" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="0f60-304a-430f-adbb" name="Turret Weapon" hidden="false" collective="false" targetId="8599-3938-8abe-f84d" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd0-928b-3a4b-eec7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f266-1184-b94f-473a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="99bc-c936-fcbb-b2a0" name="Hull Weapon" hidden="false" collective="false" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ef-afe6-d001-5c6b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a16-1e35-177e-6576" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e9dc-08ea-6a09-16c8" name="Sponsons" hidden="false" collective="false" targetId="d206-5572-9576-566a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d401-d7a1-6623-018f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1937-9ede-2921-9767" name="Pintle Weapon" hidden="false" collective="false" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4713-3156-c5cb-ff4f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4d02-340c-e582-0dae" name="Grinding Tracks" hidden="false" collective="false" targetId="bd97-52de-276d-96b1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb64-79e9-662c-6701" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7aa-ee39-8d7d-05db" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b1a-095d-a2a9-1c93" name="Master of Ordnance" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1433-874e-4a1e-6ed8" name="Officer of the Fleet" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="05a5-a51f-14b2-dba3" name="Hellhound" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b867-ac66-149f-9edf" name="Hydra" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="56a3-3248-0189-622a" name="Basilisk" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b731-6641-ff27-d8b4" name="Baneblade" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="61f5-ed5a-0cc2-1976" name="Shadowsword" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e6eb-f9a4-3a09-1eaf" name="Stormsword" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e95-ce98-49a7-bf62" name="Valkyrie" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f05-9e28-bea2-5d2a" name="Atlas Recovery Tank" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b63d-05b4-e43b-26a9" name="Centaur Light Carrier" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c8f-ec28-4f55-87aa" name="Trojan Support Vehicle" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e7a-93c2-e2fa-d5ac" name="Salamander Scout Tank" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="af3a-a93e-254a-eec7" name="Tauros Assault Vehicle" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b2a7-e444-ede0-d14b" name="Tauros Venator" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f3b7-bd4c-3da3-fc50" name="Armageddon Pattern Medusa" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c58f-0f00-a8f3-21f7" name="Colossus Bombard" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b0d-256a-a713-f6c7" name="Cyclops Demolition Vehicle" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9582-2a79-7cda-e385" name="Earthshaker Carriage Battery" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e57-2e51-0e17-dac5" name="Griffon Mortar Carrier" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="23aa-209f-b675-fda0" name="Heavy Mortar" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b363-189e-f062-b976" name="Heavy Quad Launcher" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf75-1018-c977-a146" name="Malcador Annihilator" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2836-6d9c-fccb-9292" name="Malcador Defender" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2dd3-f632-39e2-5742" name="Malcador Heavy Tank" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8c82-1cf8-8c0f-2b9b" name="Malcador Infernus" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="46c2-aaa9-8c4e-7a1f" name="Medusa Carriage" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da58-29ef-714c-eb47" name="Rapier Laser Destroyer" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc4b-cc42-0af6-d0fc" name="Stygies Destroyer Tank Hunter" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d30f-0a7e-8156-8c2c" name="Stygies Thunderer Siege Tank" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5119-d7c9-7eea-df3f" name="Tarantula Sentry Gun" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="61ed-bfdf-cfa5-2c6d" name="Arkurian Pattern Stormblade" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c76-187f-3e6d-b5cf" name="Gorgon Heavy Transporter" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff20-5c3c-a798-08c9" name="Macharius Heavy Tank" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9652-e280-1759-b921" name="Macharius Omega" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="14b4-3376-467f-c639" name="Macharius Vanquisher" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a579-474b-306b-0a8c" name="Macharius Vulcan" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4046-05b7-268e-1c78" name="Minotaur Artillery Tank" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3adc-fac7-dcbb-30d3" name="Avenger Strike Fighter" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b76e-ab1a-c872-81de" name="Lightning Strike Fighter" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="37b6-4a59-a162-76a6" name="Thunderbolt Heavy Fighter" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="45cb-a763-0a75-8cba" name="Vendetta Gunship" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="241b-8e35-4349-6ebb" name="Vulture Gunship" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bfe4-98f0-d12a-f428" name="Scout Sentinels" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8854-9cf7-ef02-5f6a" name="Armoured Sentinels" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f5e6-6222-bf4e-6027" name="Wyvern" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c2a-4511-5dac-dcf1" name="Leman Russ Battle Tank" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e9b-8f15-dff5-4927" name="Chimera" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b588-222c-ea7c-aedc" name="Earthshaker Platform" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="787b-29d1-c891-11c0" name="Arvus Lighter" hidden="false" collective="false" type="unit">
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d5ff-ab6b-516a-a1b6" name="Battle Cannon" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="6b2c-02ee-79a0-c41a" name="Battle Cannon" hidden="false" targetId="1b34-b1b6-f47e-c6d2" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3fa-a9aa-5f44-8ca5" name="Demolisher Cannon" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="57ac-9296-1f6a-d2e3" name="Demolisher Cannon" hidden="false" targetId="f9ae-32e8-ca52-59f2" type="profile"/>
+        <infoLink id="d57e-e9b6-7fc6-62e0" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c810-d0a6-6376-e6f7" name="Eradicator Nova Cannon" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="4c94-f52d-ffe8-9d00" name="Eradicator Nova Cannon" hidden="false" targetId="5604-ea69-ec07-c136" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a204-6d64-d8ce-bfda" name="Executioner Plasma Cannon" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="91f1-5311-2988-5e41" name="Executioner Plasma Cannon" hidden="false" targetId="b8e2-4009-a70b-358a" type="profile"/>
+        <infoLink id="2e3a-8d5b-56a1-f714" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a0d-5f1a-7118-96d3" name="Exterminator Autocannon" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="78e1-9f09-1858-da25" name="Exterminator Autocannon" hidden="false" targetId="4a1b-30ee-a7d5-3564" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0695-104c-cc3f-69fb" name="Punisher Gatling Cannon" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="d795-a350-479c-87d4" name="Punisher Gatling Cannon" hidden="false" targetId="fae5-006c-aaf8-3d64" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f29d-9b37-da82-9fb9" name="Vanquisher Battle Cannon" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="562b-b118-1bb5-a21e" name="Vanquisher Battle Cannon" hidden="false" targetId="83b8-7378-70ad-a915" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="63f8-574f-828e-5380" name="Heavy Bolter" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="c319-ebbd-bed8-b9ed" name="Heavy Bolter" hidden="false" targetId="6518-4d8e-d396-ae28" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="296b-929d-3b75-ffb1" name="Heavy Flamer" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="dba3-a349-bd98-4101" name="Heavy Flamer" hidden="false" targetId="bf3a-9de0-4260-4d1c" type="profile"/>
+        <infoLink id="bb71-c4e6-1047-a7cf" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d489-79c2-9e08-29cd" name="Lascannon" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="0e45-cdd2-f9c0-04e2" name="Lascannon" hidden="false" targetId="0941-21a3-452e-58c3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07c4-d1b8-5662-306f" name="Heavy Stubber" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="a92f-1cc5-400f-5a97" name="Heavy Stubber" hidden="false" targetId="e327-bd95-4063-4659" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a79b-15bf-fecb-2138" name="Storm Bolter" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="9e04-1ab8-7bb1-dc5e" name="Storm Bolter" hidden="false" targetId="7ae4-e633-6c94-2739" type="profile"/>
+        <infoLink id="6308-e4c1-ae99-bfef" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd97-52de-276d-96b1" name="Grinding Tracks" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="f985-98b2-26aa-59e6" name="Grinding Tracks" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="8599-3938-8abe-f84d" name="Turret Weapon" hidden="false" collective="false" defaultSelectionEntryId="5571-7e96-26d7-f64d">
+      <entryLinks>
+        <entryLink id="5571-7e96-26d7-f64d" name="Battle Cannon" hidden="false" collective="false" targetId="d5ff-ab6b-516a-a1b6" type="selectionEntry"/>
+        <entryLink id="eabe-4af7-0ac5-fe5b" name="Eradicator Nova Cannon" hidden="false" collective="false" targetId="c810-d0a6-6376-e6f7" type="selectionEntry"/>
+        <entryLink id="6b44-fb18-ee66-8451" name="Executioner Plasma Cannon" hidden="false" collective="false" targetId="a204-6d64-d8ce-bfda" type="selectionEntry"/>
+        <entryLink id="18ee-73cf-c2d3-9d71" name="Exterminator Autocannon" hidden="false" collective="false" targetId="2a0d-5f1a-7118-96d3" type="selectionEntry"/>
+        <entryLink id="0e11-7189-65fe-0064" name="Punisher Gatling Cannon" hidden="false" collective="false" targetId="0695-104c-cc3f-69fb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="1b35-4db2-c1a8-de1f" name="Vanquisher Battle Cannon" hidden="false" collective="false" targetId="f29d-9b37-da82-9fb9" type="selectionEntry"/>
+        <entryLink id="4c68-a4b0-6cdc-af8b" name="Demolisher Cannon" hidden="false" collective="false" targetId="b3fa-a9aa-5f44-8ca5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0d4a-a5da-2e4b-4bf1" name="Hull Weapon" hidden="false" collective="false" defaultSelectionEntryId="e60a-d0cc-c41e-5b67">
+      <entryLinks>
+        <entryLink id="e60a-d0cc-c41e-5b67" name="Heavy Bolter" hidden="false" collective="false" targetId="63f8-574f-828e-5380" type="selectionEntry"/>
+        <entryLink id="2c78-45fe-6d2d-82a0" name="Heavy Flamer" hidden="false" collective="false" targetId="296b-929d-3b75-ffb1" type="selectionEntry"/>
+        <entryLink id="5f41-3395-9680-7caa" name="Lascannon" hidden="false" collective="false" targetId="d489-79c2-9e08-29cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65a5-3f67-4f86-350f" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d206-5572-9576-566a" name="Sponsons" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry id="7746-0c22-ba05-0542" name="2x Heavy Bolter" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="12a0-9d90-44d5-73fd" name="Heavy Bolter" hidden="false" targetId="6518-4d8e-d396-ae28" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="db1d-e1c5-234a-2aca" name="2x Heavy Flamer" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="86ce-d21d-8411-17c4" name="Heavy Flamer" hidden="false" targetId="bf3a-9de0-4260-4d1c" type="profile"/>
+            <infoLink id="8e52-22e6-d4f3-071e" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9485-ec53-d4ea-19d1" name="2x Multi-melta" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="0147-1775-e6a1-cd4c" name="Multi-melta" hidden="false" targetId="7af1-c9a3-0de5-d8f2" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5ce2-da75-50d6-cee5" name="2x Plasma Cannon" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="89d7-6750-e62f-d257" name="Plasma Cannon" hidden="false" targetId="9caa-eae9-90f2-8961" type="profile"/>
+            <infoLink id="8410-007a-fe1b-73ad" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a9bf-3be4-80b5-25eb" name="Pintle Weapon" hidden="false" collective="false">
+      <entryLinks>
+        <entryLink id="9a67-6c87-c4db-7a62" name="Heavy Stubber" hidden="false" collective="false" targetId="07c4-d1b8-5662-306f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b1cc-3a51-28bb-371d" name="Storm Bolter" hidden="false" collective="false" targetId="a79b-15bf-fecb-2138" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="1b34-b1b6-f47e-c6d2" name="Battle Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f9ae-32e8-ca52-59f2" name="Demolisher Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5604-ea69-ec07-c136" name="Eradicator Nova Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b8e2-4009-a70b-358a" name="Executioner Plasma Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4a1b-30ee-a7d5-3564" name="Exterminator Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fae5-006c-aaf8-3d64" name="Punisher Gatling Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">6</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="83b8-7378-70ad-a915" name="Vanquisher Battle Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6518-4d8e-d396-ae28" name="Heavy Bolter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bf3a-9de0-4260-4d1c" name="Heavy Flamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0941-21a3-452e-58c3" name="Lascannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7af1-c9a3-0de5-d8f2" name="Multi-melta" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9caa-eae9-90f2-8961" name="Plasma Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e327-bd95-4063-4659" name="Heavy Stubber" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7ae4-e633-6c94-2739" name="Storm Bolter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7b3f-ddab-6d2b-674a" name="Grinding Advance" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Shoot action, if it has remained stationary or moved a distance less than half its Move characteristic this turn, double the Attacks characteristic of its Battle Cannon, Demolisher Cannon, Eradicator Nova Cannon, Executioner Plasma Cannon, Exterminator Autocannon, Punisher Gatling Cannon and Vanquisher Battle Cannon for that action.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
