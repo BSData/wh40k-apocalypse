@@ -351,7 +351,7 @@
       <description>Double the attacks characteristic of this weapon if the target is with in half of the weapon&apos;s range.</description>
     </rule>
     <rule id="9988-c2ea-2f30-09c1" name="Supercharge" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <description>Before a unit attacks with this weapon ,it can super charge it. If it does, then until the end of the turn add 1 to wound rolls for attacks made with this weapon, but each time you roll an unmodified hit roll of 1 for an attack with this weapon place one blast marker next to the firing unit.</description>
+      <description>Before a unit attacks with this weapon, it can super charge it. If it does, then until the end of the turn add 1 to wound rolls for attacks made with this weapon, but each time you roll an unmodified hit roll of 1 for an attack with this weapon place one blast marker next to the firing unit.</description>
     </rule>
     <rule id="d452-1a22-2e0c-7a9e" name="Sniper" publicationId="8df9-0b3e-abea-3c15" hidden="false">
       <description>Add 2 to hit rolls made with this weapon that target CHARACTERS.</description>
