@@ -24,7 +24,111 @@
     <categoryEntry id="af7c-c010-74dc-c316" name="Plague Drones" hidden="false"/>
     <categoryEntry id="48ae-aa44-e518-6fe5" name="Plagueburst Crawler" hidden="false"/>
     <categoryEntry id="3e46-c33d-fcab-96c5" name="Mortarion" hidden="false"/>
+    <categoryEntry id="813a-f91c-a238-b454" name="Mamon Transfigured" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="3946-c826-6eb6-a323" name="Mamon Transfigured" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c96-9754-3d90-52e2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bdf5-3c5c-0111-9eaa" name="Fel Icon of The Tainted" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly THE TAINTED units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf33-72a6-a346-d3b5" name="Mamon Transfigured" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8393-844b-c1e9-714f" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b8a5-d28c-1884-ae79" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="adaa-5ef3-1126-c8c5" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="1140-aa4d-6d63-dc09" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
+        <categoryLink id="6621-d724-ec7c-bc55" name="Faction: Daemon" hidden="false" targetId="410c-b1b1-7712-6139" primary="false"/>
+        <categoryLink id="87ed-e65d-ebd5-c4e5" name="Faction: Legiones Daemonica" hidden="false" targetId="b4f7-484f-2a70-f712" primary="false"/>
+        <categoryLink id="3fa5-ebab-2f3d-53b9" name="Faction: Death Guard" hidden="false" targetId="e798-e6e5-1f68-da8b" primary="false"/>
+        <categoryLink id="60a3-0cc8-a124-6507" name="Faction: The Tainted" hidden="false" targetId="466a-33f5-0faf-5cd1" primary="false"/>
+        <categoryLink id="7dcd-beaf-2113-5c67" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="6ebb-3e6d-9103-59ae" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="37a2-f876-fa4d-aa1d" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="184f-5c82-e561-f089" name="Mamon Transfigured" hidden="false" targetId="813a-f91c-a238-b454" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="446b-544c-44f1-2fdf" name="Contagion Spray" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d69b-d86e-550b-7f3f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="723f-bf08-f51b-110b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="178e-5016-5f32-f219" name="Contagion Spray" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">9&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="0dec-1651-3bb5-e346" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="f6fd-1aa1-e515-c4d2" name="Fist of Decay" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ceb-228f-bb92-ebc4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c0f-6f41-677c-7d82" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fa0d-7ee5-2525-8612" name="Fist of Decay" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="8a59-b39b-7112-70fd" name="Pustulent Stomp" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fb9-fa59-c47c-162b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5625-66a6-6ed9-5b2c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7682-977f-e064-e10d" name="Pustulent Stomp" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="973c-a187-23eb-367c" name="Necrosius the Undying" hidden="false" collective="false" targetId="40f2-0d55-9248-1a38" type="selectionEntry"/>
     <entryLink id="3d96-2a41-5ab0-6309" name="Greater Blight Drone" hidden="false" collective="false" targetId="77e3-c8b6-ae89-11fd" type="selectionEntry">
