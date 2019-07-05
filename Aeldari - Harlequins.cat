@@ -43,16 +43,6 @@
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly &lt;MASQUE&gt; units whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
-        <profile id="33cc-771f-f8d4-1296" name="Troupe Master Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="e57a-11bf-4a02-ec03" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -64,6 +54,26 @@
         <categoryLink id="ebf7-c267-133c-4275" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="fd5b-954a-fc9a-73cb" name="Troupe Master" hidden="false" targetId="a992-2c60-0ed7-c937" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d5bc-b017-33e3-6dcd" name="Troupe Master Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c889-bb68-edbb-2d99" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92a0-d072-3cbc-a788" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1916-259e-3196-d92a" name="Troupe Master Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="aaa5-d8cf-3e8b-f9de" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="df07-8903-a3c9-1ada" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -90,26 +100,6 @@
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from wound rolls for attacks that target LIGHT &lt;MASQUE&gt; units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ebf4-c118-1984-bc0d" name="Hallucinogen Grenade Launcher" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="fc9f-c1aa-086b-0d78" name="Miststave" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="68c3-aa27-9af2-a573" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -122,6 +112,36 @@
         <categoryLink id="471f-6eb7-fd3b-fa01" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
         <categoryLink id="94c7-47e6-5c3d-b651" name="Shadowseer" hidden="false" targetId="5be1-3951-67ce-a349" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6233-e316-c525-a334" name="Shadowseer Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eddc-34d4-4d85-c3a5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="500a-5b4e-6c4a-a102" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3940-681c-b01b-d4c7" name="Hallucinogen Grenade Launcher" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="738c-692d-7616-5b62" name="Miststave" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="650e-4d0c-0a7d-fdb3" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="0238-b91a-72c8-a796" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -131,28 +151,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="229e-ce42-82d8-aee0" name="Troupe" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="6c2f-5f15-fd17-4c12" name="Troupe Pistols" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="12c2-d2e0-2f84-7d94" name="Troupe Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x8</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="300b-1653-365e-bfd9" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
         <categoryLink id="fe9d-4119-6d9a-f5dd" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
@@ -162,10 +160,41 @@
         <categoryLink id="e43b-9e1f-b5fd-f75e" name="Troupe" hidden="false" targetId="a37b-8726-8d6f-0408" primary="false"/>
         <categoryLink id="e02e-4b62-8540-44ab" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5a85-d201-47d6-daeb" name="Pistols &amp; Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a1-7250-ed5d-46c4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c03d-df15-03ad-d5e4" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b2f4-b974-60a9-aa8f" name="Troupe Pistols" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="b2ea-4d3d-5df3-2ac7" name="Troupe Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x8</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="7229-b681-0015-88f0" name="Unit size" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" defaultSelectionEntryId="9385-9737-aa4c-ffe5">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c99-07ac-61df-9cdc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13e4-a384-c8e1-984c" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="9385-9737-aa4c-ffe5" name="5 Models" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="model">
@@ -252,24 +281,9 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="f8aa-8bed-9c2a-8ca7" name="Shrieker Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+        <profile id="612e-2efc-d0d9-b604" name="Terror Troops" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="22c9-d115-46f9-b260" name="Close Combat Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Terror troops</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -283,6 +297,36 @@
         <categoryLink id="cd2f-6b15-de98-9cb1" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="26b4-eea5-4443-3559" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="af08-aa04-437e-7b62" name="Death Jester Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50e8-4406-d4e9-5c36" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e914-4dea-fcfe-f4b9" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="65d0-6ff5-6f7e-6dde" name="Close Combat Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5722-a20a-1ffa-5f62" name="Shrieker Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="fe14-807c-a3a2-fc3a" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="e9d1-72cf-04ad-dae8" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -304,16 +348,6 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="5395-243e-346f-6d65" name="Solitaire Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-          </characteristics>
-        </profile>
         <profile id="7805-4562-c3d4-f8e7" name="The Path of Damnation" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit cannot be a WARLORD.</characteristic>
@@ -330,6 +364,26 @@
         <categoryLink id="ba41-3dc8-e1c2-8be7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="e8e0-4540-6d5a-bafc" name="Solitaire" hidden="false" targetId="e2cc-4dd2-74a0-5ac3" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0160-9b26-4fc7-f47b" name="Solitaire Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd7a-6500-b908-03ea" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f957-ee36-df48-9254" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ed8a-3ad8-d751-a372" name="Solitaire Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="27e5-6f5c-8e36-cc7c" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="5ab1-3a02-452f-24cb" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -365,6 +419,7 @@
         <selectionEntryGroup id="c60f-cc4b-bfe4-4b68" name="Unit size" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" defaultSelectionEntryId="f559-ba36-3785-2217">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="014a-757d-dac0-a217" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee36-040c-266e-0cce" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="f559-ba36-3785-2217" name="2 Models" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="model">
@@ -621,7 +676,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="08ce-c951-31e0-7f74" name="Cannon Option" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false">
+        <selectionEntryGroup id="08ce-c951-31e0-7f74" name="Cannon Option" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" defaultSelectionEntryId="1db2-a018-7ac1-3ae7">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="049c-e5f2-73e6-8b7e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beed-a952-b164-046f" type="min"/>
