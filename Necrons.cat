@@ -219,6 +219,31 @@
         <categoryLink id="31db-8ddc-0558-f2ea" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="1c0f-83fa-e772-86f7" name="Annihilation Barge" hidden="false" collective="false" targetId="d9e3-27ce-0696-f232" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7f48-55e3-7ae3-0ba4" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="94ab-0bd6-642f-b39f" name="Monolith" hidden="false" collective="false" targetId="0548-6292-45ff-ee21" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2656-450b-6dec-2a45" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3052-5c18-a7eb-ce6b" name="Canoptek Spyders" hidden="false" collective="false" targetId="2dac-5d41-e411-48a5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3d3e-c22b-0f04-438a" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="73d0-bf29-cca9-e02b" name="Doomsday Ark" hidden="false" collective="false" targetId="8ef9-58a3-042e-d838" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="069b-b3dc-f7ad-fec3" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ee19-3679-31a9-f96d" name="Transcendent C&apos;tan" hidden="false" collective="false" targetId="a33e-6649-7e7c-74e7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c956-4eb3-b8d0-2e14" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="52ca-2535-b12b-af38" name="Living Metal" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -346,7 +371,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a5-e3cc-6d5f-ef22" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="2677-a334-baab-3dd6" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="2677-a334-baab-3dd6" name="Commander (C&apos;tan)" hidden="false" collective="false" targetId="8d65-75ba-3f36-d2e1" type="selectionEntry"/>
         <entryLink id="5c16-d1ff-1e7e-0121" name="Powers of the C&apos;tan" hidden="false" collective="false" targetId="430d-3f5c-5825-1bac" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d4-44e6-af67-cefd" type="max"/>
@@ -371,77 +396,49 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
         </profile>
+        <profile id="85ca-4259-88c1-3637" name="Portal of Exile" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After this unit ends a Move action choose one enemy unit within 1&quot; of this unit and roll one D6; on a 5+, place a blast marker next to that unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2f8f-2a7f-6668-f944" name="Eternity Gate" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">During deployment, you can set up any number of &lt;DYNASTY&gt; INFANTRY units on their tomb world. Such a unit is considered to be set up in Tactical Reserves. When a unit that was set up on its tomb world arrives as reinforcements, you must select one friendly &lt;DYNASTY&gt; MONOLITH or &lt;DYNASTY&gt; NIGHT SCYTHE unit for it to deploy from; set up the arriving unit within 6&quot; of the selected unit. If it is impossible to do so, you cannot set up that unit this turn. Each MONOLITH and NIGHT SCYTHE unit can only be deployed from once per turn. No more than half the total number of units in your army can be set up in Tactical Reserves.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="bf1f-c9dd-c341-490a" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="c49b-7c51-3925-073f" name="Hover" hidden="false" targetId="79a4-8001-1d45-8783" type="profile"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="a85e-3f67-21b2-69ea" name="Gauss Flux Arc" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb84-a245-80e3-74d7" type="max"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04ef-a4ae-4fef-fb6c" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="5b49-aab2-abf5-e715" name="Gauss Flux Arc" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="24bd-5c0f-9464-b16f" name="Particle Whip" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="164f-cd27-dd37-05e8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d48-afe1-767f-4824" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="908e-b2fa-580e-f5bc" name="Particle Whip" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7141-c591-39a9-5fcc" name="Crushing Bulk" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cac-4fc4-3842-d7a2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9160-388e-de5a-92f0" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="0ca5-cafb-733b-4b3b" name="Crushing Bulk" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <categoryLinks>
+        <categoryLink id="98f0-d8cb-1988-5581" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="8d7c-5983-e766-9f70" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="6823-6879-fc06-477f" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="4492-1853-16bb-0617" name="Monolith" hidden="false" targetId="b472-043f-bd3c-dcd0" primary="false"/>
+        <categoryLink id="35eb-117b-9074-10f9" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="853c-3076-bb98-8b87" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="344f-cf27-678a-90a9" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="a5fa-2f28-7e7d-50b2" name="Crushing Bulk" hidden="false" collective="false" targetId="6344-8f72-146f-6da0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a992-ff5d-22f6-970d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55f1-e259-0fb7-a37e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9891-3cd1-d3ec-870c" name="Particle Whip" hidden="false" collective="false" targetId="1a73-c95f-fcb4-b372" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="554d-a7c4-fdbc-6fe6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af7c-162e-7c2f-23d6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="486b-b467-813e-b961" name="Gauss Flux Arc" hidden="false" collective="false" targetId="fdb3-3efc-8cf1-9c76" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e756-72de-5ccd-ddb3" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0188-de9b-0d09-31b8" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="17.0"/>
@@ -2214,7 +2211,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="81db-be88-4e1b-973b" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="5f36-ddc0-8510-0b6f" name="Close Combat Weapons (Ghost Ark)" hidden="false" collective="false" targetId="8ced-823a-b6c3-02cb" type="selectionEntry">
+        <entryLink id="5f36-ddc0-8510-0b6f" name="Close Combat Weapons (Vehicles)" hidden="false" collective="false" targetId="8ced-823a-b6c3-02cb" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba19-6b15-b1df-30f0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0b0-bc5b-a2e3-dc11" type="min"/>
@@ -2356,6 +2353,9 @@
       <entryLinks>
         <entryLink id="3311-c4d5-6032-0b25" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b619-6527-9440-8b04" name="Rods of Covenant" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2380,6 +2380,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b52f-1924-67e0-6df4" name="Particle Casters and Voidblades" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
@@ -2396,6 +2399,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b512-e1ee-267c-1b4c" name="Particle Casters" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2410,6 +2416,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d511-2d21-2eed-d6b2" name="Voidblades" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2424,6 +2433,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1b4d-c9e0-0f22-bc48" name="Triarch Stalker" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
@@ -2519,6 +2531,9 @@
       <infoLinks>
         <infoLink id="2da9-9e2a-22af-0695" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="185b-74b7-84c5-76da" name="Particle Shredder" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2533,6 +2548,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="19de-eaa7-dda0-4751" name="Twin Heavy Gauss Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2547,6 +2565,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a982-8579-c4d0-d586" name="Massive Forelimbs" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2561,6 +2582,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="430d-3f5c-5825-1bac" name="Powers of the C&apos;tan" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2631,7 +2655,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31c5-63a4-738a-092d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="ce4f-98d4-b0de-f858" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="ce4f-98d4-b0de-f858" name="Commander (C&apos;tan)" hidden="false" collective="false" targetId="8d65-75ba-3f36-d2e1" type="selectionEntry"/>
         <entryLink id="f554-9ad0-ff00-5de6" name="Powers of the C&apos;tan" hidden="false" collective="false" targetId="430d-3f5c-5825-1bac" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daf5-b6cf-13f1-280a" type="max"/>
@@ -2656,6 +2680,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f000-279b-c7b2-1b80" name="Canoptek Wraiths" hidden="false" collective="false" type="unit">
       <profiles>
@@ -2758,6 +2785,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4d35-aea0-a479-d159" name="Wraith Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2772,6 +2802,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0275-468b-450e-0109" name="Transdimensional Beamer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2899,6 +2932,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f068-31b2-567a-80af" name="Feeder Mandibles" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -2913,6 +2949,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bef5-2b03-ff26-dbea" name="Tomb Blades" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <infoLinks>
@@ -3031,6 +3070,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e125-b65c-07b8-1213" name="Destroyers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <infoLinks>
@@ -3149,6 +3191,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2532-dd78-323b-9bd3" name="Heavy Destroyers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <infoLinks>
@@ -3250,6 +3295,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="53b9-2ddc-b150-f380" name="Gauss Cannons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3264,6 +3312,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0ba2-d207-e70f-3037" name="Heavy Gauss Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3295,6 +3346,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ebbd-7892-dcbe-d7f8" name="Tesla Carbines (Tomb Blades)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3326,6 +3380,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1f3d-5061-3539-6232" name="Gauss Blasters (Tomb Blades)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3343,6 +3400,434 @@
       <infoLinks>
         <infoLink id="5187-573c-1976-5f9f" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2dac-5d41-e411-48a5" name="Canoptek Spyders" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="d8db-7547-bf04-5d4a" name="Scarab Hive" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, you can replenish one friendly &lt;DYNASTY&gt; SCARABS unit within 6&quot; of this unit. If you do, remove one damage marker from that unit. Each SCARABS unit can only be replenished once per turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1d05-a387-f5f7-180e" name="Fabricator Array" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair one friendly &lt;DYNASTY&gt; VEHICLE unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that VEHICLE unit. Only one attempt to repair each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="888c-cc7b-8647-a9d9" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="2e08-08ed-3361-eefe" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="570c-97a8-a0dd-3124" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="7e07-a636-cf13-a52a" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="97d7-df4e-9740-2955" name="Canoptek Spyders" hidden="false" targetId="5a9f-cfe5-2f3c-225a" primary="false"/>
+        <categoryLink id="67a2-24eb-2a34-0358" name="Faction: Canoptek" hidden="false" targetId="aa05-1a68-784e-1c6e" primary="false"/>
+        <categoryLink id="4ad3-4d73-89df-34b0" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0839-d28a-6267-657d" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f4d-9964-c679-1762" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6797-3e9d-31bc-90c4" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="edf1-cb75-3010-ca6a" name="Canoptek Spyders (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f286-ac48-cd92-dc14" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2d60-51fd-182a-7e6e" name="Canoptek Spyders (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cc57-d881-c8c5-1dad" name="Canoptek Spyders (1 Model)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb1e-5721-1fbd-c101" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="514f-72f6-e629-05b7" name="Canoptek Spyders (1 Model)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="990a-d4d1-8f66-ac5c" name="Canoptek Spyders (2 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f52-484e-9f2a-5034" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bb27-3860-84e3-73a5" name="Canoptek Spyders (2 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1686-e581-b820-9f82" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="c2de-0e0e-9725-756a" name="Automaton Claws" hidden="false" collective="false" targetId="dd7b-41a9-d13a-fe65" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ce0-201f-aa16-bfb9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d563-8a6f-a806-9328" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8ddf-d0ae-121b-f6ae" name="Particle Beamer" hidden="false" collective="false" targetId="5c24-61f3-4606-ff36" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d560-c429-07f2-a3de" value="2.0">
+              <conditions>
+                <condition field="selections" scope="2dac-5d41-e411-48a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="990a-d4d1-8f66-ac5c" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="d560-c429-07f2-a3de" value="3.0">
+              <conditions>
+                <condition field="selections" scope="2dac-5d41-e411-48a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edf1-cb75-3010-ca6a" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d560-c429-07f2-a3de" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5c24-61f3-4606-ff36" name="Particle Beamer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="32d5-37bc-4c8e-c58e" name="Particle Beamer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dd7b-41a9-d13a-fe65" name="Automaton Claws" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="1ed5-b8a6-773f-58bf" name="Automaton Claws" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="fdb3-3efc-8cf1-9c76" name="Gauss Flux Arc" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="95bd-9bf6-2134-4cfb" name="Gauss Flux Arc" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a73-c95f-fcb4-b372" name="Particle Whip" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c92f-8dbf-36da-fdff" name="Particle Whip" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d9e3-27ce-0696-f232" name="Annihilation Barge" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="edbb-ea69-b94a-5ff2" name="Annihilation Barge" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7371-597e-cf08-960e" name="Hover" hidden="false" targetId="79a4-8001-1d45-8783" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9381-d2db-0100-a571" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="ab74-742f-6546-17d4" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="87ca-8abf-d5e6-c9d8" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="a1c1-1e7c-269d-655d" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="ee3a-af6f-5b65-03e7" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="e85d-235d-d1ba-3f87" name="Annihilation Barge" hidden="false" targetId="5316-1336-b9ea-36cf" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a889-5cbd-98c3-0937" name="Hull Weapon Choice" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" defaultSelectionEntryId="ca37-4782-8156-7aa5">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d04f-4777-8df2-12d0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5da1-2a9f-060f-534c" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="69a1-751d-2716-4730" name="Tesla Cannon" hidden="false" collective="false" targetId="791d-606b-c701-4b72" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af35-3860-f7a6-e085" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ca37-4782-8156-7aa5" name="Gauss Cannon" hidden="false" collective="false" targetId="60ca-0456-9e39-70cf" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0668-5cb7-ee45-ba85" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8c6a-7373-3665-5017" name="Close Combat Weapons (Vehicles)" hidden="false" collective="false" targetId="8ced-823a-b6c3-02cb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ccf-bb74-4066-d2ba" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a55-d8ec-5741-4cc5" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="22bd-619b-1898-cbb9" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="13a6-5330-658c-bb5d" name="Twin Tesla Destructor" hidden="false" collective="false" targetId="59b6-1196-21ba-4ae7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cc9-55bc-c782-6cb8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84fa-0aff-492a-de2c" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59b6-1196-21ba-4ae7" name="Twin Tesla Destructor" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="e423-379c-2945-ccb7" name="Twin Tesla Destructor" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="8ef9-58a3-042e-d838" name="Doomsday Ark" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="f4b4-f58a-2ad4-036d" name="Doomsday Ark" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e5e8-b23f-2ef9-43cb" name="Hover" hidden="false" targetId="79a4-8001-1d45-8783" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="ee25-4300-3137-3f8e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="0e6d-910a-58ef-faf5" name="Doomsday Cannon" hidden="false" collective="false" targetId="4911-17b6-7770-f0d6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbe2-8da6-5e4d-b3dc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04a2-221e-ac46-b8f4" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4cef-eecd-bd4f-b900" name="Guass Flayer Array" hidden="false" collective="false" targetId="7663-d926-af07-650b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adb6-94cf-2d44-8cf7" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9507-24f5-fab7-6dcc" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="19c6-8194-e69e-0e11" name="Close Combat Weapons (Weak)" hidden="false" collective="false" targetId="1f4d-4fa2-5c44-1af1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ce1-94f9-c05c-5416" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb05-8a62-6225-448c" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a33e-6649-7e7c-74e7" name="Transcendent C&apos;tan" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="bdd2-db39-67a0-2fb9" name="Transcendent C&apos;tan" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ee87-474d-4644-64c4" name="Cosmic Tyrant" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per turn, you can re-roll one hit roll or one wound roll for an attack made by this unit, or you can re-roll one saving throw made for this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2b1f-ef9a-e0a9-9cac" name="Immune to Natural Law" hidden="false" targetId="0369-7101-a7df-178b" type="profile"/>
+        <infoLink id="7dcd-ab8f-a01c-fd61" name="Enslaved Star God" hidden="false" targetId="b02b-f2a2-8424-126d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b693-874c-9971-8caf" name="Faction: C&apos;tan Shards" hidden="false" targetId="7150-8156-ad0f-77c7" primary="false"/>
+        <categoryLink id="80e2-499d-60de-9b33" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="2f0b-7546-89e8-f367" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="3dbf-f336-04d4-bdb9" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="edaa-d410-bd72-2e75" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="f7df-62c2-8638-fe1f" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="7fb4-9280-7e5d-6310" name="Transcendent C&apos;tan" hidden="false" targetId="b93c-fa8e-4af1-1772" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9548-1447-204e-da7e" name="Crackling Tendrils" hidden="false" collective="false" targetId="b194-c6bf-7025-cb62" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="706a-d60c-1ecd-d6d5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2755-288b-cdaf-39f6" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3294-d227-30f3-8838" name="Commander (C&apos;tan)" hidden="false" collective="false" targetId="8d65-75ba-3f36-d2e1" type="selectionEntry"/>
+        <entryLink id="8470-c4b8-b9d0-e27f" name="Powers of the C&apos;tan" hidden="false" collective="false" targetId="430d-3f5c-5825-1bac" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab99-ec48-1483-740c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4457-60bb-b2a3-6092" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f4d-4fa2-5c44-1af1" name="Close Combat Weapons (Weak)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="339e-6c1e-3bb6-f4b2" name="Close Combat Weapons (Vehicles)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4911-17b6-7770-f0d6" name="Doomsday Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="8b37-d463-5e72-f305" name="Doomsday Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b754-857c-0f16-c976" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="b194-c6bf-7025-cb62" name="Crackling Tendrils" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="ee7f-99d2-9f47-6206" name="Crackling Tendrils" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="8d65-75ba-3f36-d2e1" name="Commander (C&apos;tan)" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="1fb7-137a-2957-7ff4" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7347-5716-355f-9165" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff35-26fb-158f-2bdb" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1fb7-137a-2957-7ff4" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="014d-704e-721f-3a84" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
