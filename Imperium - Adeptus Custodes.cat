@@ -1,2 +1,392 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f96-4fc2-5d33-b11b" name="Imperium - Adeptus Custodes" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue id="5f96-4fc2-5d33-b11b" name="Imperium - Adeptus Custodes" revision="1" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="a70b-b27c-4926-d99c" name="Faction: Adeptus Custodes" hidden="false"/>
+    <categoryEntry id="e6c3-ba23-fdf0-2498" name="Captain-General Trajann Valoris" hidden="false"/>
+    <categoryEntry id="af37-16cc-82fd-38b6" name="Shield Captain" hidden="false"/>
+    <categoryEntry id="8d1e-d3ac-9bac-56e2" name="Terminator" hidden="false"/>
+    <categoryEntry id="c60e-fb1a-958f-b85d" name="Custodian Guard" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="4723-62f6-a2f8-2990" name="Captain-General Trajann Valoris" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="7d79-c978-04aa-7a7f" name="Legendary Commander" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 and wound rolls of 1 for attacks made by friendly ADEPTUS CUSTODES units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ed6d-0105-1ac0-0ca4" name="Moment Shackle" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a WARLORD, and is on the battlefield at the start of the Generate Command Assets step, you generate one extra Command Asset.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6aa-85d2-5df7-30fb" name="Captain-General Trajann Valoris" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6+</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5bff-a8b5-a5f3-bf90" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="d21c-6ddd-dcca-1dd5" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="18d8-7d89-bfb5-222b" name="Faction: Adeptus Custodes" hidden="false" targetId="a70b-b27c-4926-d99c" primary="false"/>
+        <categoryLink id="f7b8-3e10-ef4c-f429" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="ada8-2b39-6d70-cdff" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="a720-2dcb-5670-def0" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="966f-2013-9e31-dc1e" name="Captain-General Trajann Valoris" hidden="false" targetId="e6c3-ba23-fdf0-2498" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="341d-a26b-cc8b-82aa" name="Watcher&apos;s Axe" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="530e-e6cb-0d99-47a9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c91-4fce-223b-50b3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6c23-aa1f-5f68-b527" name="Watcher&apos;s Axe" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3658-f1ed-90dd-68b4" name="Shield Captain" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="4e79-019b-6cdb-ca28" name="Shield Captain" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6315-18d6-74da-4bcf" name="Inspirational Fighter" hidden="false" targetId="0b3c-9c63-6141-f2e8" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c3b2-eca6-0619-c7bb" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="a8fb-636b-6040-dd59" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="d7b6-561e-94ea-cb58" name="Faction: Adeptus Custodes" hidden="false" targetId="a70b-b27c-4926-d99c" primary="false"/>
+        <categoryLink id="27f5-22a3-20c4-daba" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="7da9-dbf9-1996-0e0a" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="9c8f-0799-e6bc-ec73" name="Shield Captain" hidden="false" targetId="af37-16cc-82fd-38b6" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="94f3-a644-48d8-46db" name="Relics of Terra" hidden="false" collective="false" targetId="2376-49ec-e176-a257" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="265d-5a70-e8ba-b3d1" name="Shield Captain in Allarus Terminator Armour" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="763f-77cc-3849-cc9b" name="Shield Captain" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="057d-b9c9-4ba4-f984" name="Inspirational Fighter" hidden="false" targetId="0b3c-9c63-6141-f2e8" type="profile"/>
+        <infoLink id="fb9e-e464-4f0a-1975" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1f2a-e4fe-1d04-d31e" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="cb4f-5777-88fe-319f" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="3b2b-c49a-4f2b-0cbf" name="Faction: Adeptus Custodes" hidden="false" targetId="a70b-b27c-4926-d99c" primary="false"/>
+        <categoryLink id="87a4-67d3-86bf-a21d" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="74b0-a1cc-29f2-17cc" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="6c97-2c42-8615-6919" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="d648-1996-ec01-7d47" name="Terminator" hidden="false" targetId="8d1e-d3ac-9bac-56e2" primary="false"/>
+        <categoryLink id="1d9c-e936-a6ab-83da" name="Shield Captain" hidden="false" targetId="af37-16cc-82fd-38b6" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2ad9-13cf-c41e-a117" name="Balistus Grenade Launcher" hidden="false" collective="false" targetId="8ac1-d011-2fc6-dc9c" type="selectionEntry"/>
+        <entryLink id="5318-ee43-2534-273c" name="Relics of Terra" hidden="false" collective="false" targetId="2376-49ec-e176-a257" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="142f-6af3-6633-5284" name="Shield Captain on Dawneagle Jetbike" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="2c8a-29d2-71a1-6fec" name="Shield Captain" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f054-eea8-87ae-72e7" name="Inspirational Fighter" hidden="false" targetId="0b3c-9c63-6141-f2e8" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e722-2c85-8ea6-f1e6" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="1708-6e27-6766-36e3" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="e92f-e5e6-fcb4-51ed" name="Faction: Adeptus Custodes" hidden="false" targetId="a70b-b27c-4926-d99c" primary="false"/>
+        <categoryLink id="c134-9a36-0fe5-4864" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="f211-3e9b-6940-89aa" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
+        <categoryLink id="dd20-ac24-0eed-b4c7" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="11d1-7c05-7c44-22fe" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="adea-bb9a-bcb2-4eb9" name="Shield Captain" hidden="false" targetId="af37-16cc-82fd-38b6" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="faad-31ce-255e-ffc5" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="bd50-2d8b-e1d4-86b6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f3e-a36c-2f03-c8d9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c64d-44de-4d16-dda6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="bd50-2d8b-e1d4-86b6" name="Hurricane Bolter" hidden="false" collective="false" targetId="fc09-1632-01ae-e431" type="selectionEntry"/>
+            <entryLink id="1915-5d83-4ece-e313" name="Salvo Launcher" hidden="false" collective="false" targetId="37d4-c8bb-5e25-6998" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ea4a-9bad-ee97-a51a" name="Relics of Terra" hidden="false" collective="false" targetId="2376-49ec-e176-a257" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d20-9ff9-5cb6-b9b9" name="Custodian Guard" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="a002-cf5b-9117-37ef" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="edb5-9f24-ec8b-8930" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="c27a-9485-52e6-1a22" name="Faction: Adeptus Custodes" hidden="false" targetId="a70b-b27c-4926-d99c" primary="false"/>
+        <categoryLink id="5dee-9144-93b9-2b0e" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="b14d-0d78-186f-d743" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="d862-ea18-7344-b620" name="Custodian Guard" hidden="false" targetId="c60e-fb1a-958f-b85d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="bfa1-c28d-5865-d565" name="Storm Shields" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c112-0e81-e91d-8bf3" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="67bc-abe0-7211-42ff" name="Custodian Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d69-060d-7661-d241" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="386a-1434-e7c5-2080" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="72fd-4650-b7cc-9464" name="Custodian Weapons (Ranged)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e84b-518a-9e87-890c" name="Custodian Weapons (Melee)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="66f3-612c-3ed0-82a2" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f2b8-d998-1437-abbf" name="3 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="8111-8240-5499-0393">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7134-c075-a258-7e26" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="002b-05a4-d1fa-189f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8111-8240-5499-0393" name="3 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="f0c4-2f8e-9aea-10b0" name="Custodian Guard (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="3+">
+                      <conditions>
+                        <condition field="selections" scope="6d20-9ff9-5cb6-b9b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfa1-c28d-5865-d565" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="df46-3963-9dfc-c35f" name="5 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="9db6-d911-749d-e479" name="Custodian Guard (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="3+">
+                      <conditions>
+                        <condition field="selections" scope="6d20-9ff9-5cb6-b9b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfa1-c28d-5865-d565" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="a651-61f2-edf3-49e1" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="f3b8-d1d6-70bb-d787" name="Custodian Guard (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="a56f-38ae-3917-aadc" value="3+">
+                      <conditions>
+                        <condition field="selections" scope="6d20-9ff9-5cb6-b9b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfa1-c28d-5865-d565" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="fc09-1632-01ae-e431" name="Hurricane Bolter" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c527-bad6-67cd-7ee5" name="Hurricane Bolter" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d857-c17a-b688-3859" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="37d4-c8bb-5e25-6998" name="Salvo Launcher" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="9766-322c-9618-69d1" name="Salvo Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e145-1311-15d1-a3a7" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2376-49ec-e176-a257" name="Relics of Terra" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5677-017b-a0ce-393b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b5f-62c2-c9cc-d18a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f461-19b3-030f-e13e" name="Relics of Terra" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="8ac1-d011-2fc6-dc9c" name="Balistus Grenade Launcher" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2515-424e-908b-b099" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7142-eba8-842e-392f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7151-1459-8b9d-cb07" name="Balistus Grenade Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="0b3c-9c63-6141-f2e8" name="Inspirational Fighter" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly ADEPTUS CUSTODES units whilst they are within 6&quot; of this unit.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
