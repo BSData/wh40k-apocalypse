@@ -1,5 +1,829 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c773-d2ab-f4e5-7bab" name="Aeldari - Harlequins" revision="2" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c773-d2ab-f4e5-7bab" name="Aeldari - Harlequins" revision="3" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="85e9-a70a-b094-f132" name="Harlequin Apoc Datasheets"/>
+  </publications>
+  <categoryEntries>
+    <categoryEntry id="96b5-b9fd-7da6-1b58" name="Faction: &lt;Masque&gt;" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+    <categoryEntry id="a992-2c60-0ed7-c937" name="Troupe Master" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+    <categoryEntry id="5be1-3951-67ce-a349" name="Shadowseer" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+    <categoryEntry id="a37b-8726-8d6f-0408" name="Troupe" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+    <categoryEntry id="5f59-f585-b0d0-6f9d" name="Death Jester" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+    <categoryEntry id="e2cc-4dd2-74a0-5ac3" name="Solitaire" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+    <categoryEntry id="7ff3-e65c-089b-ac4c" name="Skyweavers" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+    <categoryEntry id="f5df-3889-0194-d92a" name="Voidweaver" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+    <categoryEntry id="d7ac-43e0-3147-163f" name="Starweaver" publicationId="85e9-a70a-b094-f132" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="e243-bc6f-7d3c-bee0" name="Death Jester" hidden="false" collective="false" targetId="f8fc-6796-ad9c-c696" type="selectionEntry"/>
+    <entryLink id="0e97-4494-69ab-6c57" name="Shadowseer" hidden="false" collective="false" targetId="3cd7-e335-65b4-d72c" type="selectionEntry"/>
+    <entryLink id="794e-07b7-2371-e25e" name="Skyweavers" hidden="false" collective="false" targetId="e2d3-9025-87d1-d921" type="selectionEntry"/>
+    <entryLink id="78f9-85c0-9fd6-0802" name="Solitaire" hidden="false" collective="false" targetId="71d5-d82a-cd7b-453d" type="selectionEntry"/>
+    <entryLink id="8efc-cae3-4211-8427" name="Starweaver" hidden="false" collective="false" targetId="64cc-5f50-3731-5776" type="selectionEntry"/>
+    <entryLink id="ce75-d9ed-e8ce-1b8f" name="Troupe" hidden="false" collective="false" targetId="229e-ce42-82d8-aee0" type="selectionEntry"/>
+    <entryLink id="e2e5-2de3-4757-b707" name="Troupe Master" hidden="false" collective="false" targetId="3c5a-c6d6-3439-148b" type="selectionEntry"/>
+    <entryLink id="4097-01d6-3f04-d0ff" name="Voidweaver" hidden="false" collective="false" targetId="4e46-2995-b4ca-655c" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="3c5a-c6d6-3439-148b" name="Troupe Master" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="dc24-baac-d8d1-928a" name="Troupe Master" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9304-3d44-6512-e896" name="Choreographer of War" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly &lt;MASQUE&gt; units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e57a-11bf-4a02-ec03" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="6eed-af3f-0f61-7ae5" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
+        <categoryLink id="be12-5bbd-ee2a-10f9" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="acd6-e87f-2339-f735" name="Faction: Harlequins" hidden="false" targetId="0c79-7187-0a83-3a8f" primary="false"/>
+        <categoryLink id="0a68-44a2-3f27-2c1d" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="8bcf-f185-04ca-23f4" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ebf7-c267-133c-4275" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="fd5b-954a-fc9a-73cb" name="Troupe Master" hidden="false" targetId="a992-2c60-0ed7-c937" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d5bc-b017-33e3-6dcd" name="Troupe Master Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c889-bb68-edbb-2d99" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92a0-d072-3cbc-a788" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1916-259e-3196-d92a" name="Troupe Master Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="aaa5-d8cf-3e8b-f9de" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
+        <entryLink id="df07-8903-a3c9-1ada" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3cd7-e335-65b4-d72c" name="Shadowseer" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="1dbf-ba58-fd89-57aa" name="Shadowseer" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="300c-c302-ab6c-fd9f" name="Shield from Harm" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from wound rolls for attacks that target LIGHT &lt;MASQUE&gt; units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="68c3-aa27-9af2-a573" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="b06b-a607-c449-26c0" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
+        <categoryLink id="a9a6-4164-ec8b-c8c9" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="2597-bcec-df18-e9e4" name="Faction: Harlequins" hidden="false" targetId="0c79-7187-0a83-3a8f" primary="false"/>
+        <categoryLink id="bd0f-92f5-3aa7-63f2" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="d2ca-5684-957c-b57f" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="5037-c7f8-9792-7123" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="471f-6eb7-fd3b-fa01" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="94c7-47e6-5c3d-b651" name="Shadowseer" hidden="false" targetId="5be1-3951-67ce-a349" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6233-e316-c525-a334" name="Shadowseer Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eddc-34d4-4d85-c3a5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="500a-5b4e-6c4a-a102" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3940-681c-b01b-d4c7" name="Hallucinogen Grenade Launcher" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="738c-692d-7616-5b62" name="Miststave" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="650e-4d0c-0a7d-fdb3" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
+        <entryLink id="0238-b91a-72c8-a796" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="229e-ce42-82d8-aee0" name="Troupe" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="300b-1653-365e-bfd9" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
+        <categoryLink id="fe9d-4119-6d9a-f5dd" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="e13d-4e69-283d-290b" name="Faction: Harlequins" hidden="false" targetId="0c79-7187-0a83-3a8f" primary="false"/>
+        <categoryLink id="e416-1964-257d-c9b5" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ead9-d629-e626-1cb9" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="e43b-9e1f-b5fd-f75e" name="Troupe" hidden="false" targetId="a37b-8726-8d6f-0408" primary="false"/>
+        <categoryLink id="e02e-4b62-8540-44ab" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5a85-d201-47d6-daeb" name="Pistols &amp; Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a1-7250-ed5d-46c4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c03d-df15-03ad-d5e4" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b2f4-b974-60a9-aa8f" name="Troupe Pistols" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="b2ea-4d3d-5df3-2ac7" name="Troupe Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x8</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7229-b681-0015-88f0" name="Unit size" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" defaultSelectionEntryId="9385-9737-aa4c-ffe5">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c99-07ac-61df-9cdc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13e4-a384-c8e1-984c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9385-9737-aa4c-ffe5" name="5 Models" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d9-c817-c157-43af" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a69b-d2d5-ddd2-36f5" name="5 Models" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="442c-8488-c6fc-9bb6" name="10 Models" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70be-ae00-8baa-2209" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="07ad-028e-3d32-0431" name="10 Models" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9cd4-ec10-e890-3db1" name="12 Models" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c66-b561-d168-cc90" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="45de-50d8-bc1c-e2d4" name="12 Models" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="18.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="59e0-7cea-2df3-ceec" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
+        <entryLink id="fbb4-27df-36bb-ce90" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="f8fc-6796-ad9c-c696" name="Death Jester" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="a500-9a34-40e9-4671" name="Death Jester" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="612e-2efc-d0d9-b604" name="Terror Troops" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Terror troops</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5df3-9c16-d68d-2cc4" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="a4fe-07bc-412a-5a0a" name="Death Jester" hidden="false" targetId="5f59-f585-b0d0-6f9d" primary="false"/>
+        <categoryLink id="97fc-7d4b-2dfc-7686" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
+        <categoryLink id="7eab-c391-8e1b-b788" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="9086-00eb-fe61-5587" name="Faction: Harlequins" hidden="false" targetId="0c79-7187-0a83-3a8f" primary="false"/>
+        <categoryLink id="e21a-9aa3-cbb5-9694" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="cd2f-6b15-de98-9cb1" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="26b4-eea5-4443-3559" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="af08-aa04-437e-7b62" name="Death Jester Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50e8-4406-d4e9-5c36" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e914-4dea-fcfe-f4b9" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="65d0-6ff5-6f7e-6dde" name="Close Combat Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5722-a20a-1ffa-5f62" name="Shrieker Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="fe14-807c-a3a2-fc3a" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
+        <entryLink id="e9d1-72cf-04ad-dae8" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71d5-d82a-cd7b-453d" name="Solitaire" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="6230-823d-e0e0-5316" name="Solitaire" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7805-4562-c3d4-f8e7" name="The Path of Damnation" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit cannot be a WARLORD.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9419-1133-d19b-9816" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="1601-a824-c9f2-d932" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
+        <categoryLink id="4554-2c23-bcfa-2605" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="53e9-adec-4b29-edfd" name="Faction: Harlequins" hidden="false" targetId="0c79-7187-0a83-3a8f" primary="false"/>
+        <categoryLink id="c693-1b91-92fb-d0de" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="68c8-b1f7-fc82-d8d8" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ba41-3dc8-e1c2-8be7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="e8e0-4540-6d5a-bafc" name="Solitaire" hidden="false" targetId="e2cc-4dd2-74a0-5ac3" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0160-9b26-4fc7-f47b" name="Solitaire Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd7a-6500-b908-03ea" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f957-ee36-df48-9254" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ed8a-3ad8-d751-a372" name="Solitaire Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="27e5-6f5c-8e36-cc7c" name="Flip Belt" hidden="false" collective="false" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
+        <entryLink id="5ab1-3a02-452f-24cb" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e2d3-9025-87d1-d921" name="Skyweavers" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="1666-cc04-ca1e-50d5" name="Skyweaver Close Combat Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a71f-ea9b-42e9-c39e" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
+        <categoryLink id="7e33-3595-83ef-d253" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="3c9d-93b6-40bf-6f21" name="Faction: Harlequins" hidden="false" targetId="0c79-7187-0a83-3a8f" primary="false"/>
+        <categoryLink id="b045-ae9b-20c6-50e5" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="3057-0e51-ca92-5c0b" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="51f3-5e06-4911-7cce" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
+        <categoryLink id="9bef-456e-587c-07a8" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="daa9-70c9-cb89-1803" name="Skyweavers" hidden="false" targetId="7ff3-e65c-089b-ac4c" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c60f-cc4b-bfe4-4b68" name="Unit size" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" defaultSelectionEntryId="f559-ba36-3785-2217">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="014a-757d-dac0-a217" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee36-040c-266e-0cce" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f559-ba36-3785-2217" name="2 Models" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cd4-dc69-f0c2-5cf4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="304a-0b68-9759-3683" name="2 Models" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bfcc-e60b-981b-41bb" name="4 Models" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4882-a8a1-10a2-53dd" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="966c-f57c-4be1-61b7" name="4 Models" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="17.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6892-b08d-a648-431f" name="6 Models" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="403d-a7fb-c785-b28a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="935d-1df8-0b6c-cb4c" name="6 Models" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="26.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="08a0-98ed-dc7c-a359" name="Star Bolas / Zephyrglaive" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f559-ba36-3785-2217" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="dc3a-9c7e-3e73-4287" value="2.0"/>
+                <modifier type="set" field="3aa2-0cbd-b582-8911" value="2.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfcc-e60b-981b-41bb" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="3aa2-0cbd-b582-8911" value="4.0"/>
+                <modifier type="set" field="dc3a-9c7e-3e73-4287" value="4.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6892-b08d-a648-431f" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="3aa2-0cbd-b582-8911" value="6.0"/>
+                <modifier type="set" field="dc3a-9c7e-3e73-4287" value="6.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc3a-9c7e-3e73-4287" type="max"/>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aa2-0cbd-b582-8911" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cc41-c82c-f81d-a877" name="Star Bolas" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="437d-be4f-a1e2-bf29" name="Star Bolas" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="d407-57b1-e0fd-13da" name="Zephyrglaive" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="f15c-0781-042c-8c45" name="Zephyrglaive" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0d17-bd04-fe7d-d924" name="Shuriken / Haywire Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f559-ba36-3785-2217" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="e98b-a73e-70a0-3180" value="2.0"/>
+                <modifier type="set" field="5dd1-f4aa-7bd9-5453" value="2.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfcc-e60b-981b-41bb" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="e98b-a73e-70a0-3180" value="4.0"/>
+                <modifier type="set" field="5dd1-f4aa-7bd9-5453" value="4.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6892-b08d-a648-431f" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="e98b-a73e-70a0-3180" value="6.0"/>
+                <modifier type="set" field="5dd1-f4aa-7bd9-5453" value="6.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dd1-f4aa-7bd9-5453" type="max"/>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e98b-a73e-70a0-3180" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1d8d-9929-772c-8137" name="Shuriken Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="bb5e-cfc5-9437-c203" name="Shuriken Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="26a0-549b-d568-625e" name="Haywire Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="8e9d-1e21-49fc-89f8" name="Haywire Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a074-a1da-de97-d3ea" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4e46-2995-b4ca-655c" name="Voidweaver" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="7031-d575-56cd-764d" name="Voidweaver" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="424e-e28f-57e3-5134" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
+        <categoryLink id="d942-aa5d-c0f7-cd1b" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="aa07-240b-0891-c5b7" name="Faction: Harlequins" hidden="false" targetId="0c79-7187-0a83-3a8f" primary="false"/>
+        <categoryLink id="ac16-6ae0-ed86-2e84" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="5254-db14-5f1e-9ff8" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="57cf-c1ca-86c7-cf98" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="e56b-5012-b345-6ccc" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="6018-251e-76c5-1f03" name="Voidweaver" hidden="false" targetId="f5df-3889-0194-d92a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2e1e-1904-8338-771d" name="2 Shuriken Cannons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="001f-ea0c-abaa-8973" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d18-7050-929c-53a1" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="80ee-677e-7697-6fcf" name="Shuriken Cannon (Hv)" hidden="false" targetId="5c17-053b-654b-28b0" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="74a3-4835-25ca-1669" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b48b-3eee-da40-e5cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f495-aaea-7930-0bfa" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="43a2-8b80-ae04-a34d" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="08ce-c951-31e0-7f74" name="Cannon Option" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" defaultSelectionEntryId="1db2-a018-7ac1-3ae7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="049c-e5f2-73e6-8b7e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beed-a952-b164-046f" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1db2-a018-7ac1-3ae7" name="Haywire Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03c7-7f78-96ce-83fe" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6bf9-cbbc-4c4c-621c" name="Haywire Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="947a-9287-d494-ac5a" name="Prismatic Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b9-365c-641b-9ed3" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9783-014c-a718-a05d" name="Prismatic Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1d9e-85c0-feb0-a340" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="64cc-5f50-3731-5776" name="Starweaver" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="0855-5b11-1b25-6cce" name="Starweaver" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb12-1018-c73f-f90e" name="Open-topped" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b6d2-293a-b641-cf82" name="Starweaver (Transport)" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly &lt;MASQUE&gt; INFANTRY models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8653-58f9-22d5-4b76" name="New CategoryLink" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="true"/>
+        <categoryLink id="1967-302a-dd7f-f953" name="Faction: &lt;Masque&gt;" hidden="false" targetId="96b5-b9fd-7da6-1b58" primary="false"/>
+        <categoryLink id="519d-97d3-999f-628c" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="bdf9-8737-9fde-cf58" name="Faction: Harlequins" hidden="false" targetId="0c79-7187-0a83-3a8f" primary="false"/>
+        <categoryLink id="b246-7213-5c8f-b331" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="bb4f-43ec-df80-b4f7" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="03d0-51fa-adf1-1086" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="b6a0-7d42-dab2-790d" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="5c99-6835-734d-5bb8" name="Starweaver" hidden="false" targetId="d7ac-43e0-3147-163f" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cf7c-ddcf-eb1f-852b" name="2 Shuriken Cannons" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f049-be71-f4a9-c239" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b57-2376-c93d-453c" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="da6b-38dd-9044-8b26" name="Shuriken Cannon (Hv)" hidden="false" targetId="5c17-053b-654b-28b0" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="0bff-5bfe-29f9-2591" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b741-f8a7-68e9-a9ee" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b38f-cbcb-24f9-49e3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="320d-5c37-f43a-34d9" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="5b5f-3d3b-8a99-1dda" name="Holo-fields" hidden="false" collective="false" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb56-15a7-73e0-85e9" name="Holo-fields" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a4-72fa-d40f-1511" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="272a-8950-9836-f254" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="816a-9a08-3693-26db" name="Holo-fields" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit can move across models and terrain as if they were not there.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="1472-a692-deff-6edc" name="Flip Belt" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e482-a110-feb2-4982" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be3-5f3d-9772-6a00" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="df6b-de43-dc45-ae75" name="Flip Belt" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Roll D12&apos;s when making saving throws for this unit, irrespective of the size of the blast markers next to it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink id="bef0-1f05-7573-5679" name="AeldariWeapons" targetId="4b51-905f-01f3-083f" type="catalogue"/>
   </catalogueLinks>
