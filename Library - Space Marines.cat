@@ -73,6 +73,9 @@
     <categoryEntry id="dfd2-395e-ebd6-8bc9" name="Land Speeder Storm" hidden="false"/>
     <categoryEntry id="c13a-5687-1804-8a19" name="Land Speeder" hidden="false"/>
     <categoryEntry id="d2e8-8e40-ce10-3661" name="Repulsor" hidden="false"/>
+    <categoryEntry id="835b-c92f-322c-beed" name="Stormhawk Interceptor" hidden="false"/>
+    <categoryEntry id="4eaf-d2c8-7a03-347c" name="Stormraven Gunship" hidden="false"/>
+    <categoryEntry id="8aad-e2dd-68f7-395a" name="Stormtalon Gunship" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1fa2-88c4-2c7e-5d33" name="Tactical Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
@@ -2803,6 +2806,14 @@
       <infoLinks>
         <infoLink id="1e95-22a4-148e-92ff" name="Chapter banner" hidden="false" targetId="2721-0db2-54ce-0db9" type="profile"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="73a3-4b1c-d06a-e6b5" name="Chapter Ancient" hidden="false" targetId="038c-3926-2f07-5a74" primary="false"/>
+        <categoryLink id="dfc8-de91-cfba-afc8" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="2dab-e1f6-57fc-bd8b" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="877f-5825-c8a5-993d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="a23b-d4ab-c68e-2a09" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="5127-9d07-af14-ab79" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="93af-9566-6e2a-5538" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -4746,6 +4757,357 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3d68-4564-f328-1694" name="Stormhawk Interceptor" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="82ad-9e3a-44ad-9fbb" name="Stormhawk Interceptor" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20-60&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">63</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9a80-e175-ccf4-155b" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="03f6-789b-b27a-c13e" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="0be7-70f9-e07f-3fee" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="aa5d-41e8-f4af-2e46" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="9132-ac52-11e4-b936" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="db5a-3706-c730-9c7b" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="f30a-26db-b1e6-82f3" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="7d15-c1ec-e876-17d0" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="3fc5-baca-1b09-de19" name="Stormhawk Interceptor" hidden="false" targetId="835b-c92f-322c-beed" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e7c8-9880-1910-8d84" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="ac44-dc1f-58d8-cf38">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5198-f9eb-6970-8fd9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba4b-12f9-897e-35b1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ac44-dc1f-58d8-cf38" name="Icarus Stormcannon" hidden="false" collective="false" targetId="4217-a124-fb13-e08e" type="selectionEntry"/>
+            <entryLink id="32f0-7693-f46c-d5cb" name="Las-talon" hidden="false" collective="false" targetId="81e8-4ce7-961a-737a" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f344-c5f3-ac28-3266" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="ebae-f1b7-1554-cfee">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1539-114f-6675-99a4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc5f-eefb-3fd9-b67a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ebae-f1b7-1554-cfee" name="Heavy Bolters" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="5596-03d0-7e44-9cf5" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="573d-e82c-975f-0b6c" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3d-d5e7-0d5b-2f1a" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="a14e-dc47-d5a5-0206" name="Typhoon Missile Launcher" hidden="false" collective="false" targetId="5e58-e754-19bc-99c4" type="selectionEntry"/>
+            <entryLink id="af01-8adb-4813-7798" name="Skyreaper Battery" hidden="false" collective="false" targetId="0bfb-cbc9-918c-3b02" type="selectionEntry"/>
+            <entryLink id="251e-8ae2-b0c1-ef25" name="Skyhammer Missile Launcher" hidden="false" collective="false" targetId="2b5b-3a4b-e7d5-fd82" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c36b-42d6-192a-b9ba" name="Armoured Bulk" hidden="false" collective="false" targetId="c343-cc19-3a64-c7f2" type="selectionEntry"/>
+        <entryLink id="48b8-9005-0289-8fa3" name="Assault Cannon" hidden="false" collective="false" targetId="8678-7b89-1980-47b2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f08-cc8d-eb78-e584" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61a0-dc33-5232-83fa" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c343-cc19-3a64-c7f2" name="Armoured Bulk" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d008-200b-0c07-dd6d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31d8-17f8-0d1a-310c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="22c8-aba4-d61f-3b2e" name="Armoured Bulk" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4217-a124-fb13-e08e" name="Icarus Stormcannon" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="f395-682a-79e4-b9e5" name="Icarus Stormcannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3299-2897-69a3-1e5e" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b5b-3a4b-e7d5-fd82" name="Skyhammer Missile Launcher" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="daf1-9dcf-e7a0-ab28" name="Skyhammer Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8241-9951-17f1-bc7b" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="70d0-691d-94eb-12d5" name="Stormraven Gunship" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="8b70-9126-a4d5-48bc" name="Stormraven Gunship" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20-45&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">63</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ad10-fc12-f845-3251" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly &lt;Chapter&gt; Infantry models and 1 friendly &lt;Chapter&gt; Dreadnought. Each Jump Pack or Terminator model takes the space of 2 other Infantry models, and each Centurion model takes the space of 3 other Infantry models. It cannot transport Primaris units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ea83-bef9-c0b3-db5b" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+        <infoLink id="54e0-cf6f-308c-5391" name="Hover Jet" hidden="false" targetId="0092-c629-e49c-5650" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3bbd-f5c9-6241-e1f3" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="087f-e024-673b-625a" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="2ef1-15f9-e05f-27c9" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="7d86-577f-f582-23a6" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="48d7-9120-527b-7558" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="86f7-55c8-7db5-8b22" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="e5e3-2894-6baf-af77" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="b587-7d81-ce6e-ec86" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="6756-bd46-bc75-59cf" name="Stormraven Gunship" hidden="false" targetId="4eaf-d2c8-7a03-347c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="11bb-9fad-9662-abf6" name="Hurricane Bolters" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e03-3c03-0f00-1875" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c123-3659-3b30-54d9" name="Hurricane Bolter" hidden="false" collective="false" targetId="abd4-677c-38d8-044d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c12-973e-0ac0-48e9" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b80-eabc-cfed-4130" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="60b1-3751-c45c-8dfa" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="9f67-a95a-0541-99e6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df7b-7493-4c46-b268" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ee4-44e1-0855-5d93" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9f67-a95a-0541-99e6" name="Twin Assault Cannon" hidden="false" collective="false" targetId="6049-a3c6-fbb2-db4d" type="selectionEntry"/>
+            <entryLink id="d397-0ad6-08cb-598e" name="Twin Heavy Plasma Cannon" hidden="false" collective="false" targetId="8c5c-4add-d480-8268" type="selectionEntry"/>
+            <entryLink id="4c33-6da1-850f-7049" name="Twin Lascannon" hidden="false" collective="false" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2602-4442-1d7c-1f39" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="f982-d645-42b3-4a10">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c524-c3c4-f260-b016" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82d0-6dfc-8f78-748b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f982-d645-42b3-4a10" name="Twin Heavy Bolter" hidden="false" collective="false" targetId="6296-86a5-9a2b-3303" type="selectionEntry"/>
+            <entryLink id="2cc9-c7ba-8e15-4efe" name="Twin Multi-meltas" hidden="false" collective="false" targetId="8db9-b9be-885f-5a5f" type="selectionEntry"/>
+            <entryLink id="9045-3fb7-c11e-d7ea" name="Typhoon Missile Launcher" hidden="false" collective="false" targetId="5e58-e754-19bc-99c4" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ccb2-157c-ea94-7fc5" name="Armoured Bulk" hidden="false" collective="false" targetId="c343-cc19-3a64-c7f2" type="selectionEntry"/>
+        <entryLink id="4275-66d2-aa03-0207" name="Stormstrike Missile Launchers" hidden="false" collective="false" targetId="ccba-47fe-1316-dc34" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbad-f348-b9e7-f58f" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bab-bf62-bcb5-ee53" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ccba-47fe-1316-dc34" name="Stormstrike Missile Launchers" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="f0a0-a955-ea23-7768" name="Stormstrike Missile Launchers" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8c5c-4add-d480-8268" name="Twin Heavy Plasma Cannon" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="477c-0d38-b416-a29c" name="Twin Heavy Plasma Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8e2e-97e9-3a35-1480" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="80e9-fdb3-c8be-0c11" name="Stormtalon Gunship" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="7114-86c5-bea2-102f" name="Stormraven Gunship" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20-45&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">63</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ea2-aa93-92e6-281a" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly &lt;Chapter&gt; Infantry models and 1 friendly &lt;Chapter&gt; Dreadnought. Each Jump Pack or Terminator model takes the space of 2 other Infantry models, and each Centurion model takes the space of 3 other Infantry models. It cannot transport Primaris units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0260-01ae-70a3-7809" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+        <infoLink id="dda0-f40c-d3c5-debb" name="Hover Jet" hidden="false" targetId="0092-c629-e49c-5650" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8de5-f011-bd02-8e81" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="3f1b-967c-ae62-b79a" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="1559-833c-f3c7-6136" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="1b56-a157-10b5-987f" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="3e59-e0a4-1848-035a" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="f12e-003f-4e00-7acc" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="a846-1585-11d3-5e01" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="12f1-720a-a66b-d542" name="Stormtalon Gunship" hidden="false" targetId="8aad-e2dd-68f7-395a" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="548b-5a26-bd0e-66d3" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="772b-1d10-6d35-540c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fb2-af04-076a-afdf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ca-7470-4e74-2d5b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="772b-1d10-6d35-540c" name="Heavy Bolters" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="e2f0-304a-4bff-a13c" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="148e-852a-c62c-600f" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f45-1952-81e7-1ddc" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0a23-91d5-5c56-c21e" name="Lascannons" hidden="false" collective="false" type="upgrade">
+              <entryLinks>
+                <entryLink id="b6aa-f798-8b8b-2be3" name="Lascannon" hidden="false" collective="false" targetId="dd55-a2c1-238b-569f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43cb-32cb-35c0-2db7" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a864-2a66-4649-c321" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="9191-c26f-faa4-1963" name="Typhoon Missile Launcher" hidden="false" collective="false" targetId="5e58-e754-19bc-99c4" type="selectionEntry"/>
+            <entryLink id="e938-6e83-43ff-4b22" name="Skyhammer Missile Launcher" hidden="false" collective="false" targetId="2b5b-3a4b-e7d5-fd82" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a3e0-1e0f-30c7-1019" name="Armoured Bulk" hidden="false" collective="false" targetId="c343-cc19-3a64-c7f2" type="selectionEntry"/>
+        <entryLink id="c645-8073-8f0e-5a1d" name="Twin Assault Cannon" hidden="false" collective="false" targetId="6049-a3c6-fbb2-db4d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf2b-419d-704f-9ba2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f255-5dc9-8fe6-ee86" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="dfca-1772-18d0-ab91" name="5 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="12ba-b224-c129-7243">
@@ -5100,6 +5462,11 @@
     <profile id="72d2-613e-3410-6287" name="Hover" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Distances are measured to and from this unit’s hull, even though it has a base.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0092-c629-e49c-5650" name="Hover Jet" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Action phase, you can declare that this unit will hover. If it does, then until the end of the phase, its Move characteristic changes to 20&quot; but it loses the Supersonic ability.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
