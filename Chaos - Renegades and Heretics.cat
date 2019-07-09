@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b72f-3fb7-d57f-fae0" name="Chaos - Renegades and Heretics" revision="1" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="9da1-69b5-5b73-9ab2" name="Chaos Covenant" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8f27-3c8a-a502-e210" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b23a-0cc6-369c-91e9" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="929e-609b-e871-fa42" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="7610-dc3e-5688-9ea1" name="Renegade Commander" hidden="false" collective="false" targetId="f414-5d55-58a6-1ca4" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="f414-5d55-58a6-1ca4" name="Renegade Commander" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="102e-ef8f-1049-2330" name="Renegade Commander" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">9+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="c950-7726-6ab6-aa67" name="Commander&apos;s Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4ea-0103-ba91-29c7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3a2-96ba-70e2-a51d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e119-52d9-d2e4-b5d3" name="Commander&apos;s Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="a718-5e38-bda2-72ab" name="Chaos Covenant" hidden="false" collective="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f3d-f5a3-0d2f-25cc" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b816-4637-5a88-00d7" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="35fb-b88e-bbcd-8ce2" name="Covenant of Khorne" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="6174-3568-dc91-8ddf" name="Covenant of Khorne" hidden="false" targetId="9e06-fec3-28a4-e735" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="583b-0107-5b36-225e" name="Covenant of Nurgle" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="9c9e-67dc-fde6-9a81" name="Covenant of Nurgle" hidden="false" targetId="dbe5-ca4a-436b-4271" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="7fb9-2c89-ed69-dc5d" name="Covenant of Slaanesh" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="a20d-d9ef-9073-c49c" name="Covenant of Slaanesh" hidden="false" targetId="48d3-dfc2-ddf2-63bc" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="5c46-2171-7b90-eee7" name="Covenant of Tzeentch" hidden="false" collective="false" type="upgrade">
+          <infoLinks>
+            <infoLink id="1454-2b83-32b1-fefb" name="Covenant of Tzeentch" hidden="false" targetId="5a9c-8057-fbec-4782" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="5a9c-8057-fbec-4782" name="Covenant of Tzeentch" hidden="false">
+      <description>Add 1 to saving throws made for COVENANT OF TZEENTCH units in this unit’s Detachment.</description>
+    </rule>
+    <rule id="48d3-dfc2-ddf2-63bc" name="Covenant of Slaanesh" hidden="false">
+      <description>Add 2&quot; to the Move characteristic of COVENANT OF SLAANESH units in this unit’s Detachment.</description>
+    </rule>
+    <rule id="dbe5-ca4a-436b-4271" name="Covenant of Nurgle" hidden="false">
+      <description>COVENANT OF NURGLE units in this unit’s Detachment have the Ignore Damage (6+) ability.</description>
+    </rule>
+    <rule id="9e06-fec3-28a4-e735" name="Covenant of Khorne" hidden="false">
+      <description>Re-roll hit rolls and wound rolls of 1 for attacks made with melee weapons by COVENANT OF KHORNE units in this unit’s Detachment.</description>
+    </rule>
+  </sharedRules>
+  <catalogueLinks>
+    <catalogueLink id="d290-87ad-9d65-cce8" name="Library - Astra Militarum" targetId="83db-5e08-8b20-b377" type="catalogue"/>
+    <catalogueLink id="5c9a-0801-7a37-0810" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>
+  </catalogueLinks>
+</catalogue>
