@@ -4387,6 +4387,21 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3195-3f38-819b-9f45" name="Baneblade Sponsons" hidden="false" collective="false">
+      <modifiers>
+        <modifier type="set" field="820b-ec62-3cdf-2e3d" value="2.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3195-3f38-819b-9f45" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="820b-ec62-3cdf-2e3d" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3195-3f38-819b-9f45" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="820b-ec62-3cdf-2e3d" type="min"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="6e6f-f7c6-4d21-7a6e" name="Heavy Bolter Sponson" hidden="false" collective="false" type="upgrade">
           <constraints>
