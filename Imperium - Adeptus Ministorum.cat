@@ -4,6 +4,23 @@
     <categoryEntry id="571e-a83e-e771-780a" name="Faction: Adeptus Ministorum" hidden="false"/>
     <categoryEntry id="21f5-1b47-2570-42d1" name="Faction: Adepta Sororitas" hidden="false"/>
     <categoryEntry id="b6cb-539d-aa9d-dcae" name="Celestine" hidden="false"/>
+    <categoryEntry id="d1db-b546-73a0-db01" name="Geminae Superia" hidden="false"/>
+    <categoryEntry id="14d2-e9bb-166c-be34" name="Canoness" hidden="false"/>
+    <categoryEntry id="9b46-3491-e9b0-952c" name="Faction: &lt;Order&gt;" hidden="false"/>
+    <categoryEntry id="c89d-3eb5-a80b-ecaa" name="Imagifier" hidden="false"/>
+    <categoryEntry id="f4af-b4e6-1f73-6c84" name="Hospitaller" hidden="false"/>
+    <categoryEntry id="cc41-5d5a-466f-bb57" name="Dialogus" hidden="false"/>
+    <categoryEntry id="ce40-0aca-a128-777e" name="Battle Sisters Squad" hidden="false"/>
+    <categoryEntry id="c747-16a5-4d5b-8893" name="Seraphim Squad" hidden="false"/>
+    <categoryEntry id="0b9f-c570-936c-5bdc" name="Celestian Squad" hidden="false"/>
+    <categoryEntry id="9e60-5ea1-6c69-70ae" name="Mistress of Repentance" hidden="false"/>
+    <categoryEntry id="1841-1a9e-115a-acd7" name="Repentia Squad" hidden="false"/>
+    <categoryEntry id="4f83-9f0c-b49e-e4af" name="Retributor Squad" hidden="false"/>
+    <categoryEntry id="437f-7618-d991-58e2" name="Dominion Squad" hidden="false"/>
+    <categoryEntry id="be50-ec72-2d34-34d3" name="Sororitas Rhino" hidden="false"/>
+    <categoryEntry id="a0b2-5355-7af5-5474" name="Rhino" hidden="false"/>
+    <categoryEntry id="cd96-150d-ea38-6e34" name="Immolator" hidden="false"/>
+    <categoryEntry id="fe6e-94b1-5535-038a" name="Exorcist" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="09b2-d0ac-5c76-b710" name="Celestine" hidden="false" collective="false" type="unit">
@@ -86,11 +103,1249 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="76f5-ba65-b027-d059" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="29cb-a16d-860b-9fce" name="Canoness" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="8eaf-a34a-41be-9212" name="Canoness" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f1b3-9185-4384-b938" name="Lead the Righteous" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly &lt;ORDER&gt; units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="559a-f03b-8949-2efd" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="d231-8e46-20d3-b6dd" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="eb7c-eac2-965a-e9fb" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="9069-74b2-feb0-bad1" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="228d-a413-a000-de9b" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="7418-7c43-bd8b-c6af" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4131-d4df-f42c-a83d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="8375-fd2a-eb66-292c" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="db79-5b45-6c0c-317f" name="Canoness" hidden="false" targetId="14d2-e9bb-166c-be34" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8e3b-19eb-e6ba-38c1" name="Master-crafted Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccc1-4a97-3a88-5fb4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99b1-866a-2821-99da" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3db6-c28b-5649-a3de" name="Master-crafted Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2c73-9695-f9c2-faf8" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d099-bc6d-aa7c-d48a" name="Imagifier" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="9960-8833-88f7-3a8c" name="Imagifier" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4953-c39b-5f39-7d92" name="Simulacrum Imperialis" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If any friendly units with this ability are on the battlefield when an Adepta Sororitas Command Asset is played, roll one D12; on a roll of 10+ return that Command Asset to your hand instead of discarding it. That Command Asset cannot be played again this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c60d-7127-45c4-91fd" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="400b-b378-70a5-8986" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="484e-6603-2cfd-8f2d" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="871a-6660-ce57-587a" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="70d4-b9f9-3b16-c2f2" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="233e-692f-4df8-19e8" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="0634-3ee8-43a4-5d27" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="5522-c14c-536c-eb85" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="d86f-7e8c-db03-1b3d" name="Imagifier" hidden="false" targetId="c89d-3eb5-a80b-ecaa" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="529b-faf2-f83d-8f0a" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4308-e46b-7d0f-af11" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94cd-dd75-47e2-5caf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="987d-96ce-020c-b008" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="207f-0822-6691-8d95" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6ff0-e4ae-dcb9-4124" name="Hospitaller" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="78e5-31a2-c7a7-8e66" name="Hospitaller" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4d68-211b-d75f-c4d3" name="Medicus Ministorum" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to heal one friendly ADEPTUS MINISTORUM LIGHT unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that LIGHT unit. Only one attempt to heal each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="70a0-3110-cefd-1280" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="5241-5061-9326-a6bb" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="8a40-1a01-5a04-c397" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="4f10-dd7d-00a4-e308" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="b224-ca10-c2f3-e714" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="6ce1-1fd7-1e10-0dad" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="5b44-4adb-6853-fb8a" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="8a4b-f6e2-9938-9966" name="Hospitaller" hidden="false" targetId="f4af-b4e6-1f73-6c84" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="292f-b926-f3bb-9d5f" name="Chirurgeon&apos;s Tools" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="736f-0264-b965-06d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d930-c368-bbf6-273b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9ffa-0f89-5204-cb49" name="Chirurgeon&apos;s Tools" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+1</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="15d5-f11a-4e19-209e" name="Dialogus" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="2141-9c6a-67c6-083e" name="Dialogus" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ccf-3686-4415-9179" name="Laud Hailer" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll Morale tests taken for friendly ADEPTA SORORITAS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="95ed-b4a2-cdcb-2f4c" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="716e-0027-4470-dcc9" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="8482-7e9c-8e52-b96f" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="5a02-07f5-541f-f833" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="9178-47b2-8599-3ee4" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="2cc8-d025-332b-dcbe" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="6f16-56c6-523f-54ed" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="af30-3843-c806-a9b9" name="Dialogus" hidden="false" targetId="cc41-5d5a-466f-bb57" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6303-ae45-40f6-0d3b" name="Dialogus Staff" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05d5-e6a2-2327-4f6a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9cc-e6b9-a029-7fc6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a508-82fb-602b-83bf" name="Dialogus Staff" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d104-0699-3baf-aa42" name="Battle Sisters Squad" hidden="false" collective="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4482-450a-6974-d057" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="8475-a997-cdad-c6fb" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ee1f-2743-bd3d-59fb" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="c6c1-bb73-bbda-49fc" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="9b24-3103-f77a-64f1" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="b5f2-4254-e6d4-9487" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="550a-f0bb-3d3a-a498" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="3ba4-c14d-a355-69ef" name="Battle Sisters Squad" hidden="false" targetId="ce40-0aca-a128-777e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="830d-5396-07cc-7daa" name="5 - 15 Models" hidden="false" collective="false" defaultSelectionEntryId="6b0d-ced7-a212-484a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9408-7a5d-dbf1-066b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c745-73b8-499a-a130" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6b0d-ced7-a212-484a" name="05 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="e45f-6a2b-9f60-35f7" name="Battle Sisters Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="40f6-2336-51ee-0e99" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="c7d8-b086-5b75-a3a4" name="Battle Sisters Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5127-9bdd-ee3a-71bb" name="15 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="6607-48b5-2463-b32a" name="Battle Sisters Squad (15 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4206-4325-0457-d24b" name="Heavy Weapons" hidden="false" collective="false" targetId="d261-1682-80d1-47cb" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c09d-72e1-f581-baa4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4fb8-cb59-5c64-a80b" name="Boltguns" hidden="false" collective="false" targetId="2d61-a814-63d8-0398" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aed-4621-3aee-ae12" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eaa-fa98-f0a2-1f7c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="12bf-40b5-1f01-fc96" name="Close Combat Weapons" hidden="false" collective="false" targetId="a558-e259-5105-97eb" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5c8a-828e-8ebc-4f74" name="Seraphim Squad" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="f32e-66ba-6fa9-84a2" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8784-c033-5adf-fb33" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="4d24-cd3a-481e-eee7" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="80a5-744a-707c-5df7" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="fe9f-61fa-4934-fab9" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="8da2-b0ea-0fd3-10bc" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="b6be-36af-8425-f006" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="d1ec-d37d-4ca2-2581" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="49f9-95d7-35fe-7294" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="d6fa-603b-b5e0-4f2c" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
+        <categoryLink id="5bf7-e401-6144-da6d" name="Seraphim Squad" hidden="false" targetId="c747-16a5-4d5b-8893" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3646-d9bc-6876-e5e2" name="Twin Bolt Pistols" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5563-6d73-f1d0-47de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60cd-1451-dc88-f018" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a376-b562-09c4-9503" name="Twin Bolt Pistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2897-2c3a-4292-b037" name="5 - 10 Models" hidden="false" collective="false" defaultSelectionEntryId="cd9a-2565-044c-73cb">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35fe-c00e-63c7-fcb5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f813-edfd-67b7-6295" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cd9a-2565-044c-73cb" name="05 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="a761-1cae-784e-8529" name="Seraphim Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2a07-114f-6154-386e" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="c0ab-7d1c-a9c5-39f4" name="Seraphim Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f41b-4d2b-85c1-400d" name="Close Combat Weapons" hidden="false" collective="false" targetId="a558-e259-5105-97eb" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="95bb-2100-684f-d2c6" name="Celestian Squad" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="0e5e-8354-6d4c-2610" name="Bodyguard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, you can select one friendly &lt;ORDER&gt; LIGHT CHARACTER unit that has at least one blast marker next to it and is within 6&quot; of this unit. Remove up to D3 blast markers from that CHARACTER unit and place them next to this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="66c1-1d37-538e-9ef7" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="5e42-1276-6d61-f857" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="de0b-e3a8-2ae7-0c42" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="9fce-2d34-9281-c141" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="c11d-9b1d-e146-8284" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="201a-6c49-6b05-c7a3" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="e254-88b2-29a5-fb1d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="c75c-1c02-0e93-c431" name="Celestian Squad" hidden="false" targetId="0b9f-c570-936c-5bdc" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9b93-5d14-7867-69b6" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e222-f2e5-074e-93aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa02-429b-b127-51fa" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="23e4-aa3f-0b51-ef2f" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0328-2bb2-a7cf-d894" name="5 - 10 Models" hidden="false" collective="false" defaultSelectionEntryId="ae9a-64a4-9602-eae4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f516-77f6-ebad-2e8d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e55-68c2-6b78-6516" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ae9a-64a4-9602-eae4" name="05 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="b87f-75ff-4119-9bd2" name="Celestian Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4f79-b367-6d34-4935" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2b80-3e8f-b4f9-372f" name="Celestian Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4909-08c9-b6d7-c3ad" name="Boltguns" hidden="false" collective="false" targetId="2d61-a814-63d8-0398" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd26-34ab-736e-4aa0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ce-ac98-7c21-603f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2457-0bdd-3fee-8f87" name="Heavy Weapons" hidden="false" collective="false" targetId="d261-1682-80d1-47cb" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4045-c43b-878e-5620" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="9d8e-855d-df50-6727" name="Repentia Squad" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="d09d-0655-0eac-b225" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="97b0-3a62-7f9c-6adc" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="531f-78b3-bfb5-9e83" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="261a-330b-4c51-967f" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="870a-ccd8-19c9-7ed4" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="1b04-4739-8afd-36b8" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="6bf6-8fcb-6d30-f8fb" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="568c-11e5-e182-5d55" name="Repentia Squad" hidden="false" targetId="1841-1a9e-115a-acd7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4e21-3607-c1b8-b240" name="Penitent Eviscerators" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abd7-81e3-ba8c-f7a3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28ba-f7d0-2dcf-02dd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8c4e-6997-30b7-7a1f" name="Penitent Eviscerators" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6b9b-08ea-c9ce-792b" name="3 - 9 Models" hidden="false" collective="false" defaultSelectionEntryId="0615-a20b-dc4d-450e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="059f-1db8-2095-ef6a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="956a-e478-0d1b-b138" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0615-a20b-dc4d-450e" name="3 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="efc1-54b7-c67b-2d5e" name="Repentia Squad (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="46d9-c165-7001-9bba" name="6 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="f2c2-613a-e162-f738" name="Repentia Squad (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="276d-91be-b0fa-e5bc" name="9 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="f131-a758-cee2-dce8" name="Repentia Squad (9 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="4eed-3d3f-ef5b-8c69" name="Retributor Squad" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="ec59-3bf2-11e7-91bf" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="ba6d-455a-945c-866d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ae81-0881-6dd8-543b" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="5d39-5b59-23c6-92e2" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="179d-2c46-5b35-c186" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="50e8-91d8-6be3-5798" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="626f-2ed2-c112-dd00" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="6629-df4a-83c0-971b" name="Retibutor Squad" hidden="false" targetId="4f83-9f0c-b49e-e4af" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9e55-7921-ff0c-f962" name="5 - 10 Models" hidden="false" collective="false" defaultSelectionEntryId="f5b3-eb08-b6e1-4134">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f031-40a2-4d43-85e9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06b2-99c9-7808-726c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f5b3-eb08-b6e1-4134" name="05 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="7052-9f2a-a96f-84d8" name="Retributor Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6408-3784-87bc-e7ed" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="dcde-d12d-73e5-efa5" name="Retributor Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="43d4-3f8d-d467-5fc4" name="Close Combat Weapons" hidden="false" collective="false" targetId="a558-e259-5105-97eb" type="selectionEntry"/>
+        <entryLink id="4528-fc77-5d29-4e98" name="Heavy Weapons" hidden="false" collective="false" targetId="d261-1682-80d1-47cb" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b32a-b41a-c1a9-8f37" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="49aa-c869-81e7-42a9" name="Boltguns" hidden="false" collective="false" targetId="2d61-a814-63d8-0398" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="0651-815d-4b86-f62d" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="4eed-3d3f-ef5b-8c69" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6408-3784-87bc-e7ed" type="equalTo"/>
+                    <condition field="selections" scope="4eed-3d3f-ef5b-8c69" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d261-1682-80d1-47cb" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="6753-72fd-ae62-d49c" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="4eed-3d3f-ef5b-8c69" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6408-3784-87bc-e7ed" type="equalTo"/>
+                    <condition field="selections" scope="4eed-3d3f-ef5b-8c69" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d261-1682-80d1-47cb" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6753-72fd-ae62-d49c" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0651-815d-4b86-f62d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8284-79c4-2005-9e92" name="Dominion Squad" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="08fe-03f2-932b-0065" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8ec4-e65a-282c-4502" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="bc2d-d52c-2d5f-3e2e" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="581f-f4bd-77f9-e223" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="8f38-6cef-bfc6-0fb7" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="15df-ad78-2cee-4abe" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="f1a0-31f4-ee85-df19" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="055b-68f2-3cf7-3952" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="0d2c-78af-6d8c-b3f9" name="Dominion Squad" hidden="false" targetId="437f-7618-d991-58e2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="71d8-5a2e-bb7b-4fc1" name="5 - 10 Models" hidden="false" collective="false" defaultSelectionEntryId="520c-1f13-fe6d-b573">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b1c-32b5-908b-685f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c23-ad6b-365c-9776" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="520c-1f13-fe6d-b573" name="05 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="3db3-596d-8ea8-c26a" name="Dominion Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b4cb-f1aa-d74b-5af2" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="c004-8ce7-f6c8-8881" name="Dominion Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4a4c-c01c-1e10-844c" name="Special Weapons" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80eb-4aa5-a4a5-cae6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4d78-c05d-3355-ef77" name="Flamer" hidden="false" collective="false" targetId="0367-a01f-0c7d-7b64" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbcc-25ea-f2aa-38d7" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a8e5-f67b-99d5-571f" name="Meltagun" hidden="false" collective="false" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4de3-8faa-4307-d3e5" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6147-c7da-cd8b-753d" name="Storm Bolter" hidden="false" collective="false" targetId="7457-58c5-d5f1-11a0" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfaf-b308-ee60-b717" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e6a2-f254-a14f-ecf5" name="Close Combat Weapons" hidden="false" collective="false" targetId="a558-e259-5105-97eb" type="selectionEntry"/>
+        <entryLink id="7574-5d33-aa3e-6b78" name="Boltguns" hidden="false" collective="false" targetId="2d61-a814-63d8-0398" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5195-4762-7934-a535" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8284-79c4-2005-9e92" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4cb-f1aa-d74b-5af2" type="equalTo"/>
+                    <condition field="selections" scope="8284-79c4-2005-9e92" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a4c-c01c-1e10-844c" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="93a2-556f-4027-b478" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8284-79c4-2005-9e92" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4cb-f1aa-d74b-5af2" type="equalTo"/>
+                    <condition field="selections" scope="8284-79c4-2005-9e92" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a4c-c01c-1e10-844c" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a2-556f-4027-b478" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5195-4762-7934-a535" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="e61f-9055-ade5-9f39" name="Sororitas Rhino" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="d4fb-0a68-89c1-f452" name="Sororitas Rhino" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3b49-4f0b-5817-6ccd" name="Sororitas Rhino" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly ADEPTUS MINISTORUM INFANTRY models. It cannot transport JUMP PACK models and can only transport ADEPTA SORORITAS models if they have the &lt;ORDER&gt;, DIALOGUS or HOSPITALLER keyword.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8fa4-9362-9cb1-cef3" name="New CategoryLink" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="true"/>
+        <categoryLink id="7246-1a18-4bb4-1fc8" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="a418-26b3-e66f-7fd2" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="909c-7890-2c0e-a641" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="6c9f-d2c9-cd69-25a4" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="e006-78e7-f631-ff6f" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="0364-f3a2-f07e-c162" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="4bb8-9fc4-08b5-70bf" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="40f7-aa6c-3954-7933" name="Rhino" hidden="false" targetId="a0b2-5355-7af5-5474" primary="false"/>
+        <categoryLink id="14a5-85e1-4f14-5737" name="Sororitas Rhino" hidden="false" targetId="be50-ec72-2d34-34d3" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fb85-c05c-7082-bf8a" name="Storm Bolter" hidden="false" collective="false" targetId="7457-58c5-d5f1-11a0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d838-5ac2-41d7-d9ef" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb30-3a2c-ee96-7ebb" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3a02-ec92-99a7-64e1" name="Armoured Tracks" hidden="false" collective="false" targetId="f341-9de2-368a-56c4" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e59e-3b41-35d5-49c4" name="Immolator" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="b5b9-d3c8-3faf-b536" name="Immolator" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="01e3-9961-8a1a-461d" name="Immolator" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly ADEPTUS MINISTORUM INFANTRY models. It cannot transport JUMP PACK models and can only transport ADEPTA SORORITAS models if they have the &lt;ORDER&gt;, DIALOGUS or HOSPITALLER keyword.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e8ca-8ea0-ec3b-9ee7" name="New CategoryLink" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="true"/>
+        <categoryLink id="914b-be47-621c-a095" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="c9ba-8380-17b5-f96c" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="de1b-9753-af1a-2651" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="5543-99cc-d155-5d13" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="4806-d8c0-3c12-abd9" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="e092-679f-ea80-fd3d" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="f7f9-271b-6384-b432" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="b2c4-d56f-af75-183a" name="Immolator" hidden="false" targetId="cd96-150d-ea38-6e34" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e994-a3d3-74e3-237c" name="Turret Weapon" hidden="false" collective="false" defaultSelectionEntryId="3998-8a9c-f03c-589d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0afe-678d-0668-0fbe" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="537f-1c4b-3ad7-0315" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3998-8a9c-f03c-589d" name="Immolation Flamer" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="09d2-938e-5d69-999f" name="Immolation Flamer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="523f-bd7e-566c-7631" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="60b3-175d-1c37-adac" name="Twin Heavy Bolter" hidden="false" collective="false" targetId="6296-86a5-9a2b-3303" type="selectionEntry"/>
+            <entryLink id="502e-86ff-e8b0-2363" name="Twin Multi-meltas" hidden="false" collective="false" targetId="8db9-b9be-885f-5a5f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4bb9-784f-5e3f-a13b" name="Armoured Tracks" hidden="false" collective="false" targetId="f341-9de2-368a-56c4" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c8e-67c6-cda8-c421" name="Exorcist" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="7c04-c379-109d-0f68" name="Exorcist" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="821b-5cb3-568c-0edb" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="392d-6620-4c42-efe5" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ba91-5162-ce6a-6c82" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="9a24-39f3-4594-d53e" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="45db-cc9f-baf8-f31c" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="3031-3844-e051-3a60" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="0e22-ee9a-5699-c156" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="732e-a7d3-c1ce-bc57" name="Exorcist" hidden="false" targetId="fe6e-94b1-5535-038a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0007-c2c2-d1c3-b672" name="Exorcist Missile Launcher" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59c8-fccc-1c74-9f0d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fe0-4a04-82ab-c642" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c72e-4947-1b05-6ee3" name="Exorcist Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="160d-df13-fea3-12af" name="Armoured Tracks" hidden="false" collective="false" targetId="f341-9de2-368a-56c4" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="42db-5e55-cf04-5981" name="Geminae Superia" hidden="false" collective="false" targetId="ef0f-f67c-da10-8dcf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6cb-539d-aa9d-dcae" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3569-58fd-51f9-3f4f" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a60f-775e-0e45-5c7e" name="Geminae Superia" hidden="false" collective="false" targetId="ef0f-f67c-da10-8dcf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6cb-539d-aa9d-dcae" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f3e1-36ab-70ee-9f35" name="Mistress of Repentance" hidden="false" collective="false" targetId="4c42-09d7-f233-74e0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1841-1a9e-115a-acd7" type="lessThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="e77b-0cde-ff13-4929" name="Mistress of Repentance" hidden="false" collective="false" targetId="4c42-09d7-f233-74e0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1841-1a9e-115a-acd7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="66e5-2142-0abd-a771" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="ef0f-f67c-da10-8dcf" name="Geminae Superia" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="6760-1d26-ba5a-f992" name="Lifewards" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, you can select one friendly CELESTINE unit that has at least one blast marker next to it and is within 6&quot; of this unit. Remove up to D3 blast markers from that CELESTINE unit and place them next to this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6921-0ec9-0a8a-9b4d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="711a-04cd-44a2-fe79" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="8178-837f-2910-909c" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="2158-8f31-cee2-0483" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="813b-8ca0-2c46-bdc8" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="cb17-d3df-b7e6-564f" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="ff57-f886-0c70-213f" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="d8fe-e7e5-a59a-cfe9" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
+        <categoryLink id="58a0-2a3e-5580-b29c" name="Geminae Superia" hidden="false" targetId="d1db-b546-73a0-db01" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9c95-9e02-addf-43d3" name="Geminae Power Swords" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c443-b0dd-95bd-f14f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2dd-db69-8c4f-3678" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ab9f-5356-8d99-9270" name="Geminae Power Swords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b991-c5a4-2d93-f726" name="Models" hidden="false" collective="false" defaultSelectionEntryId="3024-b9d7-484c-d222">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f95-0b43-07b4-486b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="048e-a258-e6e3-e6a0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3024-b9d7-484c-d222" name="1 model" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="b8d6-b41c-d872-4520" name="Geminae Superia (1 model)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fa97-9c12-a7a3-65d7" name="2 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="310f-d6c3-51b4-8602" name="Geminae Superia (2 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d156-d53b-70b5-47f1" name="Bolt Pistols" hidden="false" collective="false" targetId="470f-196a-65be-f649" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a03c-a2e9-d1d1-8a54" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd9-ce6e-82a3-5cfa" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1ebc-d6d1-296d-15b4" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a558-e259-5105-97eb" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7f9-7d1c-27d7-c185" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7741-c470-2065-5f4b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6a9f-12cd-10a3-d8d6" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="4c42-09d7-f233-74e0" name="Mistress of Repentance" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="6c1d-82a3-cd35-dd5a" name="Mistress of Repentance" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7055-120b-6b14-21b9" name="Driven Onwards" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If an &lt;ORDER&gt; REPENTIA SQUAD unit starts a Move action within 6&quot; of any friendly units with this ability, add 3&quot; to that unit’s Move characteristic whilst making that Move action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="228b-4287-e78f-ca8a" name="Mistress of the Penitent" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit does not take up slots in a Detachment that contains any &lt;ORDER&gt; REPENTIA SQUAD units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="941d-24c3-a8b3-25ba" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="e163-c9a2-e233-4f89" name="Faction: Adeptus Ministorum" hidden="false" targetId="571e-a83e-e771-780a" primary="false"/>
+        <categoryLink id="903c-4388-fead-3c8c" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+        <categoryLink id="104b-8cd2-b7a3-feae" name="Faction: &lt;Order&gt;" hidden="false" targetId="9b46-3491-e9b0-952c" primary="false"/>
+        <categoryLink id="494d-8144-340e-2e64" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="de41-cd95-5bcf-a7b2" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="5f0c-1706-6fff-4c68" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="7493-c410-15f2-d669" name="Mistress of Repentance" hidden="false" targetId="9e60-5ea1-6c69-70ae" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4a5e-a7b0-b79b-dcc3" name="Neural Whips" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d88-62b8-646d-44bd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf02-787e-c743-7dd6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="57bc-6a71-834b-025f" name="Neural Whips" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f341-9de2-368a-56c4" name="Armoured Tracks" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69de-ab61-d935-4f29" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad17-3d62-632d-2515" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cbbc-9bcc-1b19-f628" name="Armoured Tracks" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="d261-1682-80d1-47cb" name="Heavy Weapons" hidden="false" collective="false">
+      <entryLinks>
+        <entryLink id="db74-cd37-b4bd-90d9" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88cc-df0e-2c4b-bc7a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3d66-af73-3a3c-fdf4" name="Heavy Flamer" hidden="false" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf6-4407-91af-40ab" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c7f8-2c6c-266a-b8f6" name="Multi-melta" hidden="false" collective="false" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b6-33b1-1066-fe10" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="0746-31d2-c836-e3e8" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>
   </catalogueLinks>
