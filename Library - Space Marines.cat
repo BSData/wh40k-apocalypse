@@ -25,23 +25,7 @@
     <categoryEntry id="69b9-2dfd-81e6-5540" name="Ancient" hidden="false"/>
     <categoryEntry id="7934-999d-0625-24a6" name="Company Ancient" hidden="false"/>
     <categoryEntry id="080d-1106-4107-3689" name="Company Champion" hidden="false"/>
-    <categoryEntry id="798a-c2b2-f347-595c" name="Company Veterans" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-      <profiles>
-        <profile id="48a0-a2cd-6628-c91f" name="Company Veterans" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5"/>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f"/>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0"/>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758"/>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb"/>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="7ee0-4967-37a1-eb88" name="Marine Profile" hidden="false" targetId="9fd5-e263-b9aa-02b7" type="profile"/>
-      </infoLinks>
-    </categoryEntry>
+    <categoryEntry id="798a-c2b2-f347-595c" name="Company Veterans" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="0bc3-ef6a-66db-b7ba" name="Venerable Dreadnought" hidden="false"/>
     <categoryEntry id="038b-c5e0-e944-a3f9" name="Contemptor Dreadnought" hidden="false"/>
     <categoryEntry id="f93e-cfb3-8fe6-16b6" name="Redemptor Dreadnought" hidden="false"/>
@@ -600,7 +584,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ed5-a202-dc2c-b654" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="4a0c-44ad-0852-3ba9" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
@@ -1256,8 +1239,13 @@
         <categoryLink id="f747-7a68-8b9e-5787" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fba6-d61a-dc75-c2be" name="Jump Pack" hidden="false" collective="false" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
+        <entryLink id="fba6-d61a-dc75-c2be" name="Jump Pack" hidden="false" collective="false" targetId="54ae-a37e-e67e-54e8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fed7-ed5b-8be0-3ca6" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="4501-1b25-a7d4-8801" name="Close Combat Weapons (Astartes)" hidden="false" collective="false" targetId="2472-1127-ec05-97d0" type="selectionEntry"/>
+        <entryLink id="86aa-f7f6-d2cb-8120" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
@@ -2884,7 +2872,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="db91-485c-ca74-9d54" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
+                <condition field="selections" scope="db91-485c-ca74-9d54" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
@@ -3727,7 +3715,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="10c9-b4bb-9816-ee1b" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8593-349a-e033-266b" type="equalTo"/>
+                <condition field="selections" scope="10c9-b4bb-9816-ee1b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8593-349a-e033-266b" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
@@ -3736,7 +3724,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="10c9-b4bb-9816-ee1b" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="335a-d51a-9f6d-434c" type="equalTo"/>
+                <condition field="selections" scope="10c9-b4bb-9816-ee1b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="335a-d51a-9f6d-434c" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
@@ -3867,7 +3855,7 @@
           <modifiers>
             <modifier type="set" field="e4b0-26df-e9f9-1694" value="2.0">
               <conditions>
-                <condition field="selections" scope="bfac-55c2-f1a4-838a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
+                <condition field="selections" scope="bfac-55c2-f1a4-838a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3903,7 +3891,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="f1dc-9426-c419-5aa6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39cc-5900-f296-f3ee" type="equalTo"/>
+                <condition field="selections" scope="f1dc-9426-c419-5aa6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39cc-5900-f296-f3ee" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
@@ -3912,7 +3900,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="f1dc-9426-c419-5aa6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="973a-0f6f-0bb6-eb25" type="equalTo"/>
+                <condition field="selections" scope="f1dc-9426-c419-5aa6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="973a-0f6f-0bb6-eb25" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
@@ -4092,7 +4080,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition scope="ea42-68aa-024e-2eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a9ec-6432-91ba-f8bf" type="equalTo"/>
+                <condition field="selections" scope="ea42-68aa-024e-2eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a9ec-6432-91ba-f8bf" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
@@ -4206,7 +4194,7 @@
             </modifierGroup>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="681e-16e9-5f60-6245" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b5e6-c02e-365f-2645" type="equalTo"/>
+                <condition field="selections" scope="681e-16e9-5f60-6245" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="335a-d51a-9f6d-434c" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
@@ -4259,7 +4247,7 @@
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8593-349a-e033-266b" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8593-349a-e033-266b" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
