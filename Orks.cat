@@ -5147,6 +5147,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5078-1f7e-b04c-9024" name="Battlewagon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
@@ -5612,6 +5615,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e685-b4ae-7ce6-d374" name="Morkanaut" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
@@ -6616,90 +6622,47 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f595-93e6-b495-6df9" name="Tertiary Weapon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false">
+        <selectionEntryGroup id="f595-93e6-b495-6df9" name="Tertiary Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false">
+          <modifiers>
+            <modifier type="set" field="f90a-0b72-9dfc-f365" value="2.0">
+              <conditions>
+                <condition field="selections" scope="ac4c-e36f-e1bf-450c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f595-93e6-b495-6df9" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="f90a-0b72-9dfc-f365" value="4.0">
+              <conditions>
+                <condition field="selections" scope="ac4c-e36f-e1bf-450c" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f595-93e6-b495-6df9" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40f6-76e8-32c1-905e" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40f6-76e8-32c1-905e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f90a-0b72-9dfc-f365" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="b223-e70f-f06e-bd0d" name="Two Weapons" hidden="false" collective="false" type="upgrade">
+          <entryLinks>
+            <entryLink id="d9db-cdf3-6f1e-8b7e" name="Rokkit Launcha and Twin Big Shoota" hidden="false" collective="false" targetId="d88f-d2cb-9b7f-0c80" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f71f-8270-6d13-02af" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8d3-afde-5e69-dca8" type="max"/>
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="ca93-c070-44a2-2c7f" name="Two Weapons" hidden="false" collective="false" defaultSelectionEntryId="d6e1-6ae9-c88d-5062">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f207-d46e-be84-3a75" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db14-b966-81f4-4c96" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="d6e1-6ae9-c88d-5062" name="Zzap Gun and Twin Big Shoota" hidden="false" collective="false" targetId="9c7d-d76c-fb18-8838" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b93-a53a-c92e-4c04" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="e47f-3ac5-a942-78ec" name="Zzap Gun and Twin Skorcha" hidden="false" collective="false" targetId="b2bf-c235-b484-51bd" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c251-9b86-2100-65e4" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="e2f0-ef12-3487-5df8" name="Rokkit Launcha and Twin Big Shoota" hidden="false" collective="false" targetId="d88f-d2cb-9b7f-0c80" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a65-acfa-92f8-6c98" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="3a77-9be2-7486-687b" name="Rokkit Launcha and Twin Skorcha" hidden="false" collective="false" targetId="edd5-b083-5415-67f8" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50d6-b0c7-0972-0b92" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4356-1b28-0cbb-f8be" name="Four Weapons" hidden="false" collective="false" type="upgrade">
+            </entryLink>
+            <entryLink id="8247-27c0-1b16-ab46" name="Rokkit Launcha and Twin Skorcha" hidden="false" collective="false" targetId="edd5-b083-5415-67f8" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2438-30e5-55ca-c420" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7640-eb18-f035-21bd" type="max"/>
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="f0ff-913b-6028-60c0" name="Four Weapons" hidden="false" collective="false" defaultSelectionEntryId="b288-bc88-fabc-4b4f">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3a5-5ad7-4c0b-c61d" type="max"/>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a288-3a62-51ba-1dc0" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="b288-bc88-fabc-4b4f" name="Rokkit Launcha and Twin Big Shoota" hidden="false" collective="false" targetId="d88f-d2cb-9b7f-0c80" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b02-ca61-37da-ae3b" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="5141-208e-80c5-0600" name="Zzap Gun and Twin Big Shoota" hidden="false" collective="false" targetId="9c7d-d76c-fb18-8838" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c88-fb82-8a50-8889" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="5890-fdbb-d909-cb60" name="Zzap Gun and Twin Skorcha" hidden="false" collective="false" targetId="b2bf-c235-b484-51bd" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04f2-70c2-2675-3295" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="28d4-81d3-5235-4c6b" name="Rokkit Launcha and Twin Skorcha" hidden="false" collective="false" targetId="edd5-b083-5415-67f8" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7187-ab8a-1605-acd5" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+            <entryLink id="1c67-31d9-8890-b2fe" name="Zzap Gun and Twin Big Shoota" hidden="false" collective="false" targetId="9c7d-d76c-fb18-8838" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f6-52c5-72b0-3733" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c368-ee20-faec-6f9a" name="Zzap Gun and Twin Skorcha" hidden="false" collective="false" targetId="b2bf-c235-b484-51bd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b04a-01a0-2f19-62c9" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9d41-cc7f-f848-09c8" name="Quatrinary Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="9d41-cc7f-f848-09c8" name="Quaternary Weapons" hidden="false" collective="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e004-b3c4-bfe1-b80a" type="max"/>
           </constraints>
@@ -8609,6 +8572,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5e1d-3c91-6fa8-a9e4" name="Deff Dread" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="model">
       <profiles>
@@ -8705,6 +8671,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1616-23d1-29d3-045d" name="Dread Klaws" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8719,6 +8688,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d5b8-14df-291d-957f" name="Two Dread Klaws" hidden="false" collective="false" type="upgrade">
       <entryLinks>
@@ -8729,6 +8701,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="37f9-7c60-e5a4-9ac9" name="One Dread Klaw and One Weapon" hidden="false" collective="false" type="upgrade">
       <selectionEntryGroups>
@@ -8769,6 +8744,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="22eb-f631-c50f-1785" name="Kustom Mega-Zappa" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8786,6 +8764,9 @@
       <infoLinks>
         <infoLink id="5af3-0828-a0bd-4fbf" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bc8e-f032-babf-7422" name="Klaw of Gork (or possibly Mork)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8800,6 +8781,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8c9e-6c0e-d508-5b3b" name="Deffstorm Mega-Shoota" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8814,6 +8798,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="85c1-4f73-318b-43ce" name="Deffguns" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8862,6 +8849,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ad31-997a-397c-5cbe" name="Trukk Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8889,6 +8879,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6cc5-cf4f-5196-92f0" name="Supa-shoota" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8903,6 +8896,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="08ed-c5e2-6924-d612" name="Armoured Bulk" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8917,6 +8913,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1ada-61ed-c3cb-4370" name="Skorcha Missiles" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8931,6 +8930,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="59d5-5663-a0b6-55d7" name="Stikkbomb Flinga" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8945,6 +8947,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1b94-a2db-0877-1c11" name="Tellyport Mega-Blasta" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8962,6 +8967,9 @@
       <infoLinks>
         <infoLink id="30c5-f2e4-d28b-db8e" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e670-6cc9-6e10-3a70" name="Wazbom Mega-Kannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -8979,6 +8987,9 @@
       <infoLinks>
         <infoLink id="4293-fe29-1f18-d879" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="59b4-5f84-3487-764b" name="Two Tellyport Mega-Blastas" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
@@ -8989,6 +9000,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8e54-4069-06af-bbf1" name="Two Wazbom Mega-Kannons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
@@ -8999,6 +9013,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a6fd-4814-4fa0-99aa" name="Stikkbomb Launcha" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -9016,6 +9033,9 @@
       <infoLinks>
         <infoLink id="4356-655e-5f20-3106" name="One Use Only" hidden="false" targetId="822c-cc23-b4b1-bcb2" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d8b8-5a6a-44a6-e93f" name="Mega-Gatler" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -9038,6 +9058,9 @@
       <categoryLinks>
         <categoryLink id="5338-6117-b634-9c79" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0232-e37c-4098-0838" name="Krushin&apos; Tracks" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -9052,70 +9075,85 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d88f-d2cb-9b7f-0c80" name="Rokkit Launcha and Twin Big Shoota" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
-        <entryLink id="1cef-971a-2d51-5af5" name="Rokkit Launcha" hidden="false" collective="false" targetId="9376-7743-9569-3886" type="selectionEntry">
+        <entryLink id="1cef-971a-2d51-5af5" name="Rokkit Launcha" hidden="false" collective="false" targetId="0a8f-c628-24e4-fcaa" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfac-494e-c0af-3db8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47de-ac8c-2e12-25d3" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="6f09-019c-ec9b-6bc5" name="Twin Big Shoota" hidden="false" collective="false" targetId="4078-6d45-aad2-0fbe" type="selectionEntry">
+        <entryLink id="6f09-019c-ec9b-6bc5" name="Twin Big Shoota" hidden="false" collective="false" targetId="c20e-9404-5bda-c394" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c69-31d0-3dda-d44c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a5e-3110-e04b-3e2b" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9c7d-d76c-fb18-8838" name="Zzap Gun and Twin Big Shoota" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
-        <entryLink id="6867-dba0-e576-db1e" name="Zzap Gun" hidden="false" collective="false" targetId="2b9a-f376-f0ee-6499" type="selectionEntry">
+        <entryLink id="6867-dba0-e576-db1e" name="Zzap Gun" hidden="false" collective="false" targetId="e922-5883-e03c-a34f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d0e-3a40-6d0b-dbe0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b7-5a4b-cdef-b76b" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="3955-369f-bdfb-4d35" name="Twin Big Shoota" hidden="false" collective="false" targetId="4078-6d45-aad2-0fbe" type="selectionEntry">
+        <entryLink id="3955-369f-bdfb-4d35" name="Twin Big Shoota" hidden="false" collective="true" targetId="c20e-9404-5bda-c394" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31a7-ee06-a079-1a3f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d764-6fac-296e-8847" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b2bf-c235-b484-51bd" name="Zzap Gun and Twin Skorcha" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
-        <entryLink id="dd27-3e33-3d7f-2b1c" name="Zzap Gun" hidden="false" collective="false" targetId="2b9a-f376-f0ee-6499" type="selectionEntry">
+        <entryLink id="dd27-3e33-3d7f-2b1c" name="Zzap Gun" hidden="false" collective="true" targetId="e922-5883-e03c-a34f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb3a-442d-f394-8187" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac18-a090-97a6-0d30" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="4bab-3f43-5439-28bd" name="Twin Skorcha" hidden="false" collective="false" targetId="15e8-01da-cb9f-4fa5" type="selectionEntry">
+        <entryLink id="4bab-3f43-5439-28bd" name="Twin Skorcha" hidden="false" collective="true" targetId="b54d-eb48-3afc-b677" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="392e-b34b-369a-4d3a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cd1-bf5f-67e4-f918" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="edd5-b083-5415-67f8" name="Rokkit Launcha and Twin Skorcha" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
-        <entryLink id="a90d-5630-020c-5d14" name="Rokkit Launcha" hidden="false" collective="false" targetId="9376-7743-9569-3886" type="selectionEntry">
+        <entryLink id="a90d-5630-020c-5d14" name="Rokkit Launcha" hidden="false" collective="false" targetId="0a8f-c628-24e4-fcaa" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df4-7264-7aa6-632f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="792f-015e-945b-1769" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="c651-fb23-34dc-a80b" name="Twin Skorcha" hidden="false" collective="false" targetId="15e8-01da-cb9f-4fa5" type="selectionEntry">
+        <entryLink id="c651-fb23-34dc-a80b" name="Twin Skorcha" hidden="false" collective="false" targetId="b54d-eb48-3afc-b677" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5272-9a64-d8e3-ba2c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65d9-9345-446c-8096" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="dd7a-d8ff-9e02-3732" name="Mega-Choppa" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -9133,6 +9171,9 @@
       <infoLinks>
         <infoLink id="cf7c-b112-53ba-a368" name="Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5959-8760-3abc-a7dc" name="Two Supa-rokkits" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <entryLinks>
@@ -9143,6 +9184,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3520-90fa-c5d7-8a54" name="Deffkannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -9153,6 +9197,77 @@
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">6</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e922-5883-e03c-a34f" name="Zzap Gun" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="true" type="upgrade">
+      <profiles>
+        <profile id="547f-6ae2-aafa-1eab" name="Zzap Gun" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c20e-9404-5bda-c394" name="Twin Big Shoota" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="true" type="upgrade">
+      <profiles>
+        <profile id="ea55-230f-7b33-eb38" name="Twin Big Shoota" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b54d-eb48-3afc-b677" name="Twin Skorcha" hidden="false" collective="true" type="upgrade">
+      <profiles>
+        <profile id="7f85-12d7-28bf-2997" name="Twin Skorcha" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d029-2fad-560a-e783" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0a8f-c628-24e4-fcaa" name="Rokkit Launcha" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="true" type="upgrade">
+      <profiles>
+        <profile id="9458-9bf7-4430-d1dd" name="Rokkit Launcha" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
