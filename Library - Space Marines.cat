@@ -1090,7 +1090,7 @@
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
           </characteristics>
         </profile>
@@ -1126,11 +1126,25 @@
           </selectionEntries>
           <entryLinks>
             <entryLink id="a289-ef3a-fc60-6040" name="Jump Pack" hidden="false" collective="false" targetId="54ae-a37e-e67e-54e8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c7d3-8cff-b008-5743" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="7ac3-31bb-a1ec-4225" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="043e-55f4-fc70-a61a" name="Bike" hidden="false" collective="false" targetId="30e3-b6c8-bb27-a512" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c7d3-8cff-b008-5743" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="be93-9e10-c500-3878" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
               </categoryLinks>
