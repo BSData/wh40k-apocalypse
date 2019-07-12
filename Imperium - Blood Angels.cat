@@ -1444,6 +1444,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1578,7 +1581,18 @@
         <categoryLink id="209c-4022-f0a7-6fac" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e5b1-8646-b9eb-c1ca" name="Servitors" hidden="false" collective="false" targetId="1407-a5e2-efbe-7a7c" type="selectionEntry"/>
+    <entryLink id="e5b1-8646-b9eb-c1ca" name="Servitors" hidden="false" collective="false" targetId="1407-a5e2-efbe-7a7c" type="selectionEntry">
+      <profiles>
+        <profile id="f16c-ee8e-18b2-21ad" name="Mindlock" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Change this unit’s Weapon Skill and Ballistic Skill characteristics to 4+ whilst it is within 6&quot; of at least one friendly BLOOD ANGELS TECHMARINE.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="36c4-848a-b516-21e5" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="a839-ec31-04b8-dc47" name="Company Ancient" hidden="false" collective="false" targetId="4991-016c-9c24-34d3" type="selectionEntry">
       <infoLinks>
         <infoLink id="6259-719f-de93-6874" name="Astartes Banner" hidden="false" targetId="5742-3523-f180-9b29" type="profile"/>
@@ -1595,15 +1609,45 @@
         <categoryLink id="4de9-dfe1-69ec-2d46" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4add-0f2c-6221-9781" name="Company Champion" hidden="false" collective="false" targetId="cdaa-fa38-e1f3-0555" type="selectionEntry"/>
-    <entryLink id="6f6e-eff7-68dc-9f49" name="Company Veterans" hidden="false" collective="false" targetId="b573-05bb-9d80-f130" type="selectionEntry"/>
+    <entryLink id="4add-0f2c-6221-9781" name="Company Champion" hidden="false" collective="false" targetId="cdaa-fa38-e1f3-0555" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f275-a356-5112-ae25" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6f6e-eff7-68dc-9f49" name="Company Veterans" hidden="false" collective="false" targetId="b573-05bb-9d80-f130" type="selectionEntry">
+      <profiles>
+        <profile id="842a-c3ba-6015-0305" name="Command Squad Bodyguard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, you can select one friendly BLOOD ANGELS LIGHT CHARACTER unit that has at least one blast marker next to it and is within 6&quot; of this unit. Remove up to D3 blast markers from that CHARACTER unit and place them next to this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ea77-c642-2378-4406" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="32cd-64e0-635c-7636" name="Dreadnought" hidden="false" collective="false" targetId="bd59-298f-ca7d-a418" type="selectionEntry"/>
     <entryLink id="9204-67fa-5174-a9dc" name="Venerable Dreadnought" hidden="false" collective="false" targetId="95ff-f0b4-5c6a-6d2b" type="selectionEntry"/>
     <entryLink id="1574-fee2-d868-afb8" name="Contemptor Dreadnought" hidden="false" collective="false" targetId="b2b9-dbc7-a71c-6665" type="selectionEntry"/>
     <entryLink id="fdbd-980c-4a6b-9289" name="Redemptor Dreadnought" hidden="false" collective="false" targetId="d377-d88e-e86a-4c9d" type="selectionEntry"/>
-    <entryLink id="f069-80a0-3eb1-1ae5" name="Primaris Apthecary" hidden="false" collective="false" targetId="daaf-718e-c540-13fa" type="selectionEntry"/>
-    <entryLink id="dc4f-2ec3-0674-82dc" name="Reiver Squad" hidden="false" collective="false" targetId="30bf-60b7-7f9f-7a2c" type="selectionEntry"/>
-    <entryLink id="337b-78bb-bc37-12ff" name="Aggressor Squad" hidden="false" collective="false" targetId="5b03-42d3-7b13-3294" type="selectionEntry"/>
+    <entryLink id="f069-80a0-3eb1-1ae5" name="Primaris Apothecary" hidden="false" collective="false" targetId="daaf-718e-c540-13fa" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="3da1-c863-0e45-6aa4" name="Narthecium" hidden="false" targetId="3a73-f1fc-524d-3cdc" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a148-2796-9d5c-ae04" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dc4f-2ec3-0674-82dc" name="Reiver Squad" hidden="false" collective="false" targetId="30bf-60b7-7f9f-7a2c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4ddf-cb17-8c77-4c1d" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="337b-78bb-bc37-12ff" name="Aggressor Squad" hidden="false" collective="false" targetId="5b03-42d3-7b13-3294" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="27a2-f3d7-68e1-3ba9" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="9844-d698-9f0b-156c" name="Imperial Space Marine" hidden="false" collective="false" targetId="8f20-d582-fdbe-37a5" type="selectionEntry"/>
     <entryLink id="ff7a-d3d6-5b0b-7622" name="Chapter Ancient" hidden="false" collective="false" targetId="7909-de04-0593-bdb0" type="selectionEntry"/>
     <entryLink id="fffa-1e10-0c73-a758" name="Devastator Squad" hidden="false" collective="false" targetId="db91-485c-ca74-9d54" type="selectionEntry"/>
@@ -1632,6 +1676,16 @@
     <entryLink id="d945-49e4-5b0e-e3f8" name="Stormhawk Interceptor" hidden="false" collective="false" targetId="3d68-4564-f328-1694" type="selectionEntry"/>
     <entryLink id="ca52-3224-a8f3-2402" name="Stormraven Gunship" hidden="false" collective="false" targetId="70d0-691d-94eb-12d5" type="selectionEntry"/>
     <entryLink id="455a-6f79-459c-737e" name="Stormtalon Gunship" hidden="false" collective="false" targetId="80e9-fdb3-c8be-0c11" type="selectionEntry"/>
+    <entryLink id="10c5-a36f-b0c4-8504" name="Terminator Squad" hidden="false" collective="false" targetId="c0b0-6b0b-7f09-d62c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b6e5-40eb-f9c9-9993" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c263-b47f-270d-d991" name="Terminator Assault Squad" hidden="false" collective="false" targetId="768d-883e-96a7-c2ce" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="747b-2c7d-5275-f00a" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ec11-15ce-8b1a-62a9" name="Dead Man&apos;s Hand" hidden="false" collective="false" type="upgrade">
