@@ -537,10 +537,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="f9b3-8d71-53a6-d7b7" name="Litanies of Hate" hidden="false" targetId="dbd5-e5c8-73df-07b8" type="profile"/>
-        <infoLink id="43f0-d85e-4fa0-cead" name="Spiritual Leader" hidden="false" targetId="74f7-3d04-b46b-7759" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="f0c0-bad2-ae7a-d4fd" name="Chaplain" hidden="false" targetId="89c1-3354-3e0d-279e" primary="false"/>
         <categoryLink id="acf5-3bc4-df4d-69f0" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -1095,9 +1091,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="de9f-a2a3-5194-ec24" name="Blessing of the Omnissiah" hidden="false" targetId="ab23-9dca-5848-48e6" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="80ab-c8cb-835c-ea34" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="2135-7ea4-84ee-4b73" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
@@ -1267,11 +1260,6 @@
     </selectionEntry>
     <selectionEntry id="f1d3-df65-80bc-5292" name="Land Raider Excelsior" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
-        <profile id="aa13-1304-ea3a-eec8" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly &lt;Chapter&gt; Infantry models. Each Jump Pack or Terminator model takes the space of 2 other Infantry models, and each Centurion model takes the space of 3 other Infantry models. It cannot transport Primaris units.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="f456-0230-f2e5-58ec" name="Data Augurs" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Change this unit’s Ballistic Skill characteristic to 2+ whilst it is within 6&quot; of any friendly &lt;Chapter&gt; Rhino Primaris units.</characteristic>
@@ -1488,7 +1476,7 @@
     </selectionEntry>
     <selectionEntry id="1407-a5e2-efbe-7a7c" name="Servitors" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
-        <profile id="8ece-78fa-2d8f-a934" name="Servitors" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="8ece-78fa-2d8f-a934" name="Servitors (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
@@ -1513,13 +1501,13 @@
         <categoryLink id="4e4a-37e4-7db2-b5ac" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9fad-3db2-0d37-fbed" name="Servo Arm" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9fad-3db2-0d37-fbed" name="Servo-arms" hidden="false" collective="false" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66cd-6013-9cae-b038" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5271-7c5d-b285-482c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f6f0-a109-74aa-6794" name="Servo Arm" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="f6f0-a109-74aa-6794" name="Servo-arms" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
@@ -1530,15 +1518,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c57c-eb18-44c7-463d" name="4 Models" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dc6-6d3e-63b6-bea0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d67-1956-f41d-b5f2" type="max"/>
-          </constraints>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
@@ -1554,16 +1533,25 @@
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9802-e483-b523-812d" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="c8cd-8065-6f3f-3b3c" name="Multi-melta" hidden="false" collective="false" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b6a-3faf-e596-dd33" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="d14d-1723-6251-9ec8" name="Plasma Cannon" hidden="false" collective="false" targetId="257b-2e43-40d4-aebe" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0bc-3852-76dc-b0a2" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3374,13 +3362,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="03e6-d2f0-4433-9ecb" name="Land Raider" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="c1b2-9da4-4f95-64c6" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly &lt;Chapter&gt; Infantry models. Each Jump Pack or Terminator model takes the space of 2 other Infantry models, and each Centurion model takes the space of 3 other Infantry models. It cannot transport Primaris units.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="c3f2-ea5d-1a64-04ef" name="Land Raider" hidden="false" targetId="1de9-50a7-0fd9-6a37" type="profile"/>
       </infoLinks>
@@ -3427,13 +3408,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e090-e09a-3fc2-625e" name="Land Raider Crusader" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="82a0-943f-437e-3dc9" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 16 friendly &lt;Chapter&gt; Infantry models. Each Jump Pack or Terminator model takes the space of 2 other Infantry models, and each Centurion model takes the space of 3 other Infantry models. It cannot transport Primaris units.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="013d-c361-3c96-0453" name="Land Raider" hidden="false" targetId="1de9-50a7-0fd9-6a37" type="profile">
           <modifiers>
@@ -3545,13 +3519,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2c85-0fe0-d71b-b759" name="Land Raider Redeemer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
-      <profiles>
-        <profile id="17e9-3e1f-010c-e247" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly &lt;Chapter&gt; Infantry models. Each Jump Pack or Terminator model takes the space of 2 other Infantry models, and each Centurion model takes the space of 3 other Infantry models. It cannot transport Primaris units.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="0a59-2f2d-ffa9-348b" name="Land Raider" hidden="false" targetId="1de9-50a7-0fd9-6a37" type="profile">
           <modifiers>
@@ -3569,25 +3536,6 @@
         <categoryLink id="c953-e8d1-6e04-91b9" name="Land Raider" hidden="false" targetId="e8c9-c1e3-8372-9280" primary="false"/>
         <categoryLink id="4d8c-6265-e53e-6baf" name="Land Raider Redeemer" hidden="false" targetId="8b62-3d1a-6626-8b2e" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b1c1-4670-3938-e865" name="Flamestorm Cannons" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd24-ddd6-eb96-0462" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87ea-309d-02e1-e8dc" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="4d8a-08a0-42d6-ed18" name="Flamestorm Cannon" hidden="false" collective="false" targetId="8578-7721-e821-d44b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f51-f67b-b567-1557" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1883-dccd-457c-7f2e" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="1173-16c0-6d45-616e" name="Multi-melta" hidden="false" collective="false" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
           <modifiers>
@@ -3610,6 +3558,18 @@
           </constraints>
         </entryLink>
         <entryLink id="b033-067f-5bda-116b" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="386e-0899-d3a2-15f0" name="Flamestorm Cannon" hidden="false" collective="false" targetId="8578-7721-e821-d44b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1f8-e226-fa4a-3ee3" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef1a-77f7-74d7-ebb8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="eb74-c6a6-142a-fbd0" name="Twin Assault Cannon" hidden="false" collective="false" targetId="6049-a3c6-fbb2-db4d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e58-aadc-d769-c3a4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa3-81e1-a2bc-d2af" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="19.0"/>
@@ -4452,11 +4412,6 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="ab16-61b0-0ba9-2242" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly &lt;Chapter&gt; Infantry models. It cannot transport Primaris, Terminator, Centurion or Jump Pack units.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="2c54-18b4-4c6a-7666" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -4492,11 +4447,6 @@
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="658b-efdf-c0d9-f546" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly &lt;Chapter&gt; Infantry models. It cannot transport Primaris, Terminator, Centurion or Jump Pack units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4847,7 +4797,7 @@
         <categoryLink id="3fc5-baca-1b09-de19" name="Stormhawk Interceptor" hidden="false" targetId="835b-c92f-322c-beed" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e7c8-9880-1910-8d84" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="ac44-dc1f-58d8-cf38">
+        <selectionEntryGroup id="e7c8-9880-1910-8d84" name="Main Weapon" hidden="false" collective="false" defaultSelectionEntryId="ac44-dc1f-58d8-cf38">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5198-f9eb-6970-8fd9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba4b-12f9-897e-35b1" type="max"/>
@@ -4857,7 +4807,7 @@
             <entryLink id="32f0-7693-f46c-d5cb" name="Las-talon" hidden="false" collective="false" targetId="81e8-4ce7-961a-737a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f344-c5f3-ac28-3266" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="ebae-f1b7-1554-cfee">
+        <selectionEntryGroup id="f344-c5f3-ac28-3266" name="Wing Weapons" hidden="false" collective="false" defaultSelectionEntryId="ebae-f1b7-1554-cfee">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1539-114f-6675-99a4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc5f-eefb-3fd9-b67a" type="max"/>
@@ -4879,7 +4829,6 @@
           </selectionEntries>
           <entryLinks>
             <entryLink id="a14e-dc47-d5a5-0206" name="Typhoon Missile Launcher" hidden="false" collective="false" targetId="5e58-e754-19bc-99c4" type="selectionEntry"/>
-            <entryLink id="af01-8adb-4813-7798" name="Skyreaper Battery" hidden="false" collective="false" targetId="0bfb-cbc9-918c-3b02" type="selectionEntry"/>
             <entryLink id="251e-8ae2-b0c1-ef25" name="Skyhammer Missile Launcher" hidden="false" collective="false" targetId="2b5b-3a4b-e7d5-fd82" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -4972,11 +4921,6 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="ad10-fc12-f845-3251" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly &lt;Chapter&gt; Infantry models and 1 friendly &lt;Chapter&gt; Dreadnought. Each Jump Pack or Terminator model takes the space of 2 other Infantry models, and each Centurion model takes the space of 3 other Infantry models. It cannot transport Primaris units.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="ea83-bef9-c0b3-db5b" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
@@ -5012,7 +4956,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="60b1-3751-c45c-8dfa" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="9f67-a95a-0541-99e6">
+        <selectionEntryGroup id="60b1-3751-c45c-8dfa" name="Turret Weapon" hidden="false" collective="false" defaultSelectionEntryId="9f67-a95a-0541-99e6">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df7b-7493-4c46-b268" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ee4-44e1-0855-5d93" type="max"/>
@@ -5023,7 +4967,7 @@
             <entryLink id="4c33-6da1-850f-7049" name="Twin Lascannon" hidden="false" collective="false" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="2602-4442-1d7c-1f39" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="f982-d645-42b3-4a10">
+        <selectionEntryGroup id="2602-4442-1d7c-1f39" name="Front Weapon" hidden="false" collective="false" defaultSelectionEntryId="f982-d645-42b3-4a10">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c524-c3c4-f260-b016" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82d0-6dfc-8f78-748b" type="max"/>
