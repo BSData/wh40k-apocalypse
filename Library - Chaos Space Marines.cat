@@ -85,6 +85,38 @@
     <categoryEntry id="b457-340c-c8e2-d60b" name="Daemon Prince" hidden="false"/>
     <categoryEntry id="cf25-3f10-bb2b-9ea0" name="Possessed" hidden="false"/>
   </categoryEntries>
+  <rules>
+    <rule id="fd9e-c779-e00b-f4e8" name="Let The Galaxy Burn" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Re-roll wound rolls of 1 for attacks made by HERETIC ASTARTES units in this Detachment.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e7d3-3095-e373-d4b3" name="Blood Slaughterer of Khorne" hidden="false" collective="false" type="unit">
       <profiles>
@@ -163,6 +195,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bff8-6ea9-2d26-8afc" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
@@ -266,6 +301,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="00ab-6e0c-3e5f-e502" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
@@ -368,6 +406,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4870-6023-4249-e5af" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
@@ -526,6 +567,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0022-4354-ba2a-c800" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
       </costs>
@@ -606,6 +650,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="6670-4ef2-1732-1038" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="23.0"/>
       </costs>
@@ -738,6 +785,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="b9f0-38a4-949f-c685" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="32.0"/>
       </costs>
@@ -982,6 +1032,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daa1-6d13-b108-da41" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="0136-29d3-814e-2a4a" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
@@ -1091,6 +1142,7 @@
         </entryLink>
         <entryLink id="53cb-289b-b338-996f" name="Havoc Launcher" hidden="false" collective="false" targetId="a07d-031c-6cd1-7a23" type="selectionEntry"/>
         <entryLink id="c58d-2e9f-b908-c276" name="Infernal Hunger" hidden="false" collective="false" targetId="3605-e17c-9a43-200d" type="selectionEntry"/>
+        <entryLink id="5c23-6592-fa3c-3119" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
@@ -1185,6 +1237,7 @@
         </entryLink>
         <entryLink id="cb99-2f29-6f07-ddd6" name="Havoc Launcher" hidden="false" collective="false" targetId="a07d-031c-6cd1-7a23" type="selectionEntry"/>
         <entryLink id="dbf5-6ea1-3ce3-9769" name="Infernal Hunger" hidden="false" collective="false" targetId="3605-e17c-9a43-200d" type="selectionEntry"/>
+        <entryLink id="2ea3-f04b-bccf-ac4b" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
@@ -1281,6 +1334,7 @@
       <entryLinks>
         <entryLink id="25f3-546f-309b-44bd" name="Infernal Hunger" hidden="false" collective="false" targetId="3605-e17c-9a43-200d" type="selectionEntry"/>
         <entryLink id="9477-f29e-65f4-6c93" name="Havoc Launcher" hidden="false" collective="false" targetId="a07d-031c-6cd1-7a23" type="selectionEntry"/>
+        <entryLink id="26a9-8023-aa63-e6f2" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
@@ -1327,6 +1381,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46ed-3d06-ca83-f135" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="20dc-0b5e-aed7-5659" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
@@ -1428,6 +1483,7 @@
           </constraints>
         </entryLink>
         <entryLink id="db27-642f-7da7-c69f" name="Infernal Hunger" hidden="false" collective="false" targetId="3605-e17c-9a43-200d" type="selectionEntry"/>
+        <entryLink id="3c58-409b-4444-480a" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
@@ -1509,6 +1565,7 @@
           </constraints>
         </entryLink>
         <entryLink id="b321-f89a-eb18-0c06" name="Infernal Hunger" hidden="false" collective="false" targetId="3605-e17c-9a43-200d" type="selectionEntry"/>
+        <entryLink id="f61a-a882-f022-caed" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
@@ -1596,6 +1653,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="0a9b-55c6-a2e8-6d5a" name="Infernal Hunger" hidden="false" collective="false" targetId="3605-e17c-9a43-200d" type="selectionEntry"/>
+        <entryLink id="ace8-94e9-58c1-d27e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="22.0"/>
@@ -1728,6 +1786,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e01-c60e-9b55-4bca" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="c35a-da4f-01f4-2111" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
@@ -1840,6 +1899,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="99e2-b22d-49fa-72cd" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -1998,6 +2060,7 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73d2-8c02-f7a1-c30f" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="0041-cd53-dcf3-9d00" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
@@ -2084,6 +2147,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="2524-50a8-7380-02b8" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
@@ -2212,6 +2278,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="7fbc-9920-9b54-d2ff" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="18.0"/>
       </costs>
@@ -2307,6 +2376,7 @@
       <entryLinks>
         <entryLink id="7c8e-f71e-819a-2629" name="Infernal Hunger" hidden="false" collective="false" targetId="3605-e17c-9a43-200d" type="selectionEntry"/>
         <entryLink id="f871-82d8-5a51-b848" name="Havoc Launcher" hidden="false" collective="false" targetId="a07d-031c-6cd1-7a23" type="selectionEntry"/>
+        <entryLink id="c3ff-4e8f-1b50-a625" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="20.0"/>
@@ -2408,6 +2478,7 @@
       <entryLinks>
         <entryLink id="0d9c-e28c-4d7b-e9aa" name="Havoc Launcher" hidden="false" collective="false" targetId="a07d-031c-6cd1-7a23" type="selectionEntry"/>
         <entryLink id="771e-15a1-e0fe-7796" name="Infernal Hunger" hidden="false" collective="false" targetId="3605-e17c-9a43-200d" type="selectionEntry"/>
+        <entryLink id="49b4-b653-4132-048e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="23.0"/>
@@ -2518,6 +2589,7 @@
           </constraints>
         </entryLink>
         <entryLink id="d676-c6ce-d070-4450" name="Havoc Launcher" hidden="false" collective="false" targetId="a07d-031c-6cd1-7a23" type="selectionEntry"/>
+        <entryLink id="ffb9-de5d-4564-f4a3" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="33.0"/>
@@ -2623,6 +2695,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8126-d05f-2a98-3123" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="4979-460f-e7b4-6b82" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="35.0"/>
@@ -2693,6 +2766,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd84-9964-c263-01da" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="d046-e6c5-ccf8-3ecf" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="37.0"/>
@@ -2780,6 +2854,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="689c-13b3-9d40-5f9b" name="Bladed Wings" hidden="false" collective="false" targetId="69a3-6c7c-432b-0342" type="selectionEntry"/>
+        <entryLink id="54cf-65e2-b473-6054" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
@@ -2860,6 +2935,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8824-fee2-e597-3bde" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="3ad9-ef04-7679-4650" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
@@ -2972,6 +3048,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </constraints>
         </entryLink>
         <entryLink id="cabc-335b-e651-263f" name="Armoured Bulk" hidden="false" collective="false" targetId="810b-7cdf-1a14-a480" type="selectionEntry"/>
+        <entryLink id="af0e-37ec-9c13-b6bd" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
@@ -3092,6 +3169,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </constraints>
         </entryLink>
         <entryLink id="db18-4a73-d57c-8156" name="Armoured Bulk" hidden="false" collective="false" targetId="810b-7cdf-1a14-a480" type="selectionEntry"/>
+        <entryLink id="6655-7a3c-738f-3a24" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="19.0"/>
@@ -3248,6 +3326,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </constraints>
         </entryLink>
         <entryLink id="c12e-61ef-65d3-f10f" name="Massively Armoured Bulk" hidden="false" collective="false" targetId="3690-6cf0-8024-b5f1" type="selectionEntry"/>
+        <entryLink id="8818-9a2a-38c7-5c01" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="42.0"/>
@@ -3342,6 +3421,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </constraints>
         </entryLink>
         <entryLink id="c780-5705-fea0-e3e7" name="Massively Armoured Bulk" hidden="false" collective="false" targetId="3690-6cf0-8024-b5f1" type="selectionEntry"/>
+        <entryLink id="4bf6-6266-00df-76ae" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="62.0"/>
@@ -3428,6 +3508,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </constraints>
         </entryLink>
         <entryLink id="ee9a-0c1d-cede-7bf1" name="Armoured Bulk" hidden="false" collective="false" targetId="810b-7cdf-1a14-a480" type="selectionEntry"/>
+        <entryLink id="bfe1-bb67-1bce-32a7" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
@@ -3449,6 +3530,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
       <entryLinks>
         <entryLink id="be7a-c3ca-9f5b-d4d1" name="Helbrute Arm 1" hidden="false" collective="false" targetId="90e6-f66f-ee82-6b1c" type="selectionEntryGroup"/>
         <entryLink id="6d17-bb0d-584d-a790" name="Helbrute Arm 2" hidden="false" collective="false" targetId="22bb-5910-c91a-0208" type="selectionEntryGroup"/>
+        <entryLink id="0c3f-02c5-f223-199d" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
@@ -3475,6 +3557,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
       <entryLinks>
         <entryLink id="1428-839f-395f-2a83" name="Helbrute Arm 1" hidden="false" collective="false" targetId="90e6-f66f-ee82-6b1c" type="selectionEntryGroup"/>
         <entryLink id="8f45-7c1c-f70a-c293" name="Helbrute Arm 2" hidden="false" collective="false" targetId="22bb-5910-c91a-0208" type="selectionEntryGroup"/>
+        <entryLink id="aa80-414d-f545-9c26" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
@@ -3511,6 +3594,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62bc-f7fa-116b-93c0" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="b7b4-b5c8-a83f-77e6" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
@@ -3615,6 +3699,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8316-e883-5936-a02e" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="6f60-ba60-036f-066a" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
@@ -3762,6 +3847,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="585f-ca0c-dc9a-99c0" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
       </costs>
@@ -3873,6 +3961,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="0a7d-9975-fe6c-41a7" name="Helwrought Weapons" hidden="false" collective="false" targetId="928c-a316-0e0f-302c" type="selectionEntry"/>
+        <entryLink id="897c-809d-f1b1-9a74" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
@@ -4073,6 +4162,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e8ee-b8a7-8060-2c64" name="Force Weapon " hidden="false" collective="false" targetId="fb4c-7116-4f16-b27e" type="selectionEntry"/>
+        <entryLink id="fc41-924e-ebfa-3648" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
@@ -4310,6 +4400,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d7-a0c9-784e-6811" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="5a9c-f564-d6c6-69d8" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -4451,6 +4542,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="f24f-02dd-0824-fc64" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
@@ -4553,6 +4647,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc75-81a2-90e4-ffa3" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="49cf-70b3-3b87-be24" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
@@ -4665,6 +4760,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="60d3-fedb-9555-bb65" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
@@ -4780,6 +4878,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1f05-f43e-3a7a-505d" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
@@ -4859,6 +4960,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb79-a5f9-e28e-fe9a" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="6a41-4b91-8ab3-ff61" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
@@ -4911,6 +5013,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82d8-f47d-02c1-6bac" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="3f5c-64d2-2590-455d" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
@@ -4993,6 +5096,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1978-ecc5-ad19-d646" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="6c65-85c5-e3f0-36dc" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
@@ -5076,6 +5180,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd56-07d5-3b99-3642" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="f398-6272-84b1-da27" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
@@ -5151,6 +5256,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="37e2-b803-64a8-4b03" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
@@ -5302,6 +5410,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f8b-6350-1b77-4ac1" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="cb2c-b0b9-30ba-84d6" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -5507,6 +5616,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25e9-dc9b-e614-7d01" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="ed55-e51f-2a37-8300" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -5672,6 +5782,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other Infantry models a
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a3e6-fed4-8961-a5ba" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
