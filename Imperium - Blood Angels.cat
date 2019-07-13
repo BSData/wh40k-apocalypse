@@ -22,6 +22,8 @@
     </categoryEntry>
     <categoryEntry id="5db4-914c-cd4c-3473" name="Sanguinary Guard" hidden="false"/>
     <categoryEntry id="3650-8272-477f-b9f8" name="Sanguinary Ancient" hidden="false"/>
+    <categoryEntry id="6e54-17b9-5ca7-665a" name="Furioso Dreadnought" hidden="false"/>
+    <categoryEntry id="50f5-b140-671b-ae8b" name="Baal Predator" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="9aa0-2583-581b-91f9" name="Commander Dante" hidden="false" collective="false" type="unit">
@@ -515,18 +517,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3be5-5c52-4cec-124b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="873d-1e6d-c8f3-e626" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="c6b0-3935-9e18-849f" name="Furioso Fist" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="2d02-ad7b-0176-866a" name="Furioso Fist" hidden="false" targetId="6ec4-0b00-020f-1043" type="profile">
+              <modifiers>
+                <modifier type="set" field="2883-af07-d4e8-d8d0" value="User"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="b264-4dba-539d-e8b1" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="0610-f6e9-767c-b5fc">
               <constraints>
@@ -902,6 +899,14 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6c40-2baa-0996-3c51" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1054-608b-7710-0f86" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bb7-2666-dff5-07bb" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -1102,58 +1107,15 @@
         <categoryLink id="a120-f0c0-c4df-9a16" name="Dreadnought" hidden="false" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4dc2-b698-2966-67bd" name="Melee Weapons" hidden="false" collective="false" defaultSelectionEntryId="510b-3bce-acd1-09df">
+        <selectionEntryGroup id="4dc2-b698-2966-67bd" name="Melee Weapons" hidden="false" collective="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68fd-af72-d4ba-f321" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54f6-fcd2-447a-0666" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="8cf0-d138-1359-1ed7" name="Blood Talons" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="6e7f-3e70-ef95-7585" name="Blood Talons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="510b-3bce-acd1-09df" name="Furioso Fists" hidden="false" collective="false" type="upgrade">
-              <selectionEntries>
-                <selectionEntry id="d165-a7d1-faf4-a192" name="Furioso Fist" hidden="false" collective="false" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88c1-893d-025e-e9da" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa5d-62c6-642c-8a2d" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e526-8109-022a-8df3" name="Furioso Fist" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                      <characteristics>
-                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
-                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <entryLinks>
+            <entryLink id="eb44-d7ca-fa55-b580" name="Blood Talons" hidden="false" collective="false" targetId="e0ea-7f86-09e8-1d4c" type="selectionEntry"/>
+            <entryLink id="a957-e5a5-936b-ec8c" name="Furioso Fists" hidden="false" collective="false" targetId="e80a-c0c6-96a1-b7eb" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="8dbf-b18f-6c54-90f3" name="Storm bolter" hidden="false" collective="false" defaultSelectionEntryId="dd47-4e25-a700-8e55">
           <constraints>
@@ -1389,6 +1351,14 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d525-29a0-fbd7-d609" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d440-f11b-77cb-b0de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c9d-3440-107f-3214" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -1449,8 +1419,179 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="9a4d-2db3-9766-9266" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78a5-69f5-c59c-33fe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd77-3160-b936-057a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8832-d6ed-41a8-26dd" name="Furioso Dreadnought" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="f294-edd8-4527-1360" name="Furioso Dreadnought" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0a34-f878-9442-efe5" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="d579-d08a-fcc7-ca58" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="edd2-91ec-032a-81e1" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="d41c-3a45-3b32-3ff8" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+        <categoryLink id="e2e1-5a79-043d-55c1" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="9a60-f5bd-c820-8fc5" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="3e62-50fa-6b64-2ff7" name="Dreadnought" hidden="false" targetId="5f52-c8e5-1f2f-5161" primary="false"/>
+        <categoryLink id="6de1-0305-5a69-522b" name="Furioso Dreadnought" hidden="false" targetId="6e54-17b9-5ca7-665a" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="efd4-4637-c373-b7d3" name="Weapons" hidden="false" collective="false" defaultSelectionEntryId="8dd3-cf44-4c7c-0263">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2cf-3b00-5521-e6f9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efe5-a296-dc16-b26d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4142-9569-3420-74d1" name="Furioso Fist and Frag Cannon" hidden="false" collective="false" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="3300-4f07-977d-8883" name="Furioso Fist" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc5b-1a1c-75cb-b01d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f849-bbde-9472-e15c" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b911-c930-b114-f3be" name="Furioso Fist" hidden="false" targetId="6ec4-0b00-020f-1043" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c4b2-b841-cf24-a26f" name="Frag Cannon" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fb7-3cb4-e416-1bde" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b04-7302-cde4-07ad" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="0369-74b2-4ae0-f943" name="Frag Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="8467-2e55-1c53-8d85" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="e70e-2733-dca2-41fe" name="Blood Talons" hidden="false" collective="false" targetId="e0ea-7f86-09e8-1d4c" type="selectionEntry"/>
+            <entryLink id="8dd3-cf44-4c7c-0263" name="Furioso Fists" hidden="false" collective="false" targetId="e80a-c0c6-96a1-b7eb" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7cbc-c582-beab-81a3" name="Meltagun" hidden="false" collective="false" defaultSelectionEntryId="1db4-24b2-279f-feab">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2b1-3594-08d1-35a4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1200-55df-fc33-527c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1db4-24b2-279f-feab" name="Meltagun" hidden="false" collective="false" targetId="aa7e-cb86-0ed9-1244" type="selectionEntry"/>
+            <entryLink id="bd87-a913-6bc4-b589" name="Heavy Flamer" hidden="false" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2f08-bcb4-78bc-449c" name="Storm bolter" hidden="false" collective="false" defaultSelectionEntryId="2d84-8427-8a9b-c7fe">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73e7-48b3-b339-1d17" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bf4-28d8-084e-5811" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2d84-8427-8a9b-c7fe" name="Storm Bolter" hidden="false" collective="false" targetId="7457-58c5-d5f1-11a0" type="selectionEntry"/>
+            <entryLink id="0cc8-b574-60ab-552c" name="Heavy Flamer" hidden="false" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e86a-5b73-3c91-d603" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b1-ec4c-02c1-5a93" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ac2-52db-5eff-8211" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07db-2be7-4a17-ae54" name="Baal Predator" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="1fab-584f-50bc-6bd9" name="Baal Predator" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="da22-1404-bbb6-5943" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="4aba-f0fd-c665-0f86" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="1776-64b9-e318-7ebb" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="3351-3344-4c3d-0bdb" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+        <categoryLink id="348d-9a58-5466-4912" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="7ee9-09a3-2903-5162" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="75f2-9eb0-a565-dd92" name="Predator" hidden="false" targetId="2b73-fbd1-6554-f297" primary="false"/>
+        <categoryLink id="2da3-172d-0ac6-2b0d" name="Baal Predator" hidden="false" targetId="50f5-b140-671b-ae8b" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7bb1-de7d-b12c-a149" name="Main Weapon" hidden="false" collective="false" defaultSelectionEntryId="74d9-e065-b307-9b01">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c2f-6c83-79bd-ab86" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4b6-0a6b-7250-d104" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="74d9-e065-b307-9b01" name="Twin Assault Cannon" hidden="false" collective="false" targetId="6049-a3c6-fbb2-db4d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91de-2676-4d49-3ad3" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37d9-0673-a7d0-3746" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b7b6-d292-6cdb-1b46" name="Flamestorm Cannon" hidden="false" collective="false" targetId="8578-7721-e821-d44b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7f74-95aa-f5e9-4e99" name="Armoured Tracks" hidden="false" collective="false" targetId="2b3b-d361-f599-8aad" type="selectionEntry"/>
+        <entryLink id="73b2-e98f-a650-63f3" name="Predator Sponson Weapons" hidden="false" collective="false" targetId="2cc7-f514-4a4b-2612" type="selectionEntryGroup"/>
+        <entryLink id="5c16-7f57-4770-930f" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1527,6 +1668,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="17cc-bfd0-76b9-8163" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="9ffb-6f51-e202-7f14" name="Lieutenants" hidden="false" collective="false" targetId="63dd-5f7e-f7ca-1ed2" type="selectionEntry">
       <infoLinks>
@@ -1626,10 +1770,26 @@
         <categoryLink id="ea77-c642-2378-4406" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="32cd-64e0-635c-7636" name="Dreadnought" hidden="false" collective="false" targetId="bd59-298f-ca7d-a418" type="selectionEntry"/>
-    <entryLink id="9204-67fa-5174-a9dc" name="Venerable Dreadnought" hidden="false" collective="false" targetId="95ff-f0b4-5c6a-6d2b" type="selectionEntry"/>
-    <entryLink id="1574-fee2-d868-afb8" name="Contemptor Dreadnought" hidden="false" collective="false" targetId="b2b9-dbc7-a71c-6665" type="selectionEntry"/>
-    <entryLink id="fdbd-980c-4a6b-9289" name="Redemptor Dreadnought" hidden="false" collective="false" targetId="d377-d88e-e86a-4c9d" type="selectionEntry"/>
+    <entryLink id="32cd-64e0-635c-7636" name="Dreadnought" hidden="false" collective="false" targetId="bd59-298f-ca7d-a418" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4372-ecd2-f03d-6fcf" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9204-67fa-5174-a9dc" name="Venerable Dreadnought" hidden="false" collective="false" targetId="95ff-f0b4-5c6a-6d2b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0110-587d-cca9-1a2d" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1574-fee2-d868-afb8" name="Contemptor Dreadnought" hidden="false" collective="false" targetId="b2b9-dbc7-a71c-6665" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9d65-6696-7d25-4b1c" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fdbd-980c-4a6b-9289" name="Redemptor Dreadnought" hidden="false" collective="false" targetId="d377-d88e-e86a-4c9d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7346-7cd0-58d5-cd84" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="f069-80a0-3eb1-1ae5" name="Primaris Apothecary" hidden="false" collective="false" targetId="daaf-718e-c540-13fa" type="selectionEntry">
       <infoLinks>
         <infoLink id="3da1-c863-0e45-6aa4" name="Narthecium" hidden="false" targetId="3a73-f1fc-524d-3cdc" type="profile"/>
@@ -1648,34 +1808,197 @@
         <categoryLink id="27a2-f3d7-68e1-3ba9" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9844-d698-9f0b-156c" name="Imperial Space Marine" hidden="false" collective="false" targetId="8f20-d582-fdbe-37a5" type="selectionEntry"/>
-    <entryLink id="ff7a-d3d6-5b0b-7622" name="Chapter Ancient" hidden="false" collective="false" targetId="7909-de04-0593-bdb0" type="selectionEntry"/>
-    <entryLink id="fffa-1e10-0c73-a758" name="Devastator Squad" hidden="false" collective="false" targetId="db91-485c-ca74-9d54" type="selectionEntry"/>
-    <entryLink id="91f1-3fac-7f1a-3eb8" name="Hellblaster Squad" hidden="false" collective="false" targetId="8c07-83c7-971e-da50" type="selectionEntry"/>
-    <entryLink id="2b4c-3dfa-b169-5ec8" name="Hunter" hidden="false" collective="false" targetId="1bec-a9ec-587e-7dd2" type="selectionEntry"/>
-    <entryLink id="2474-537e-e705-c6b2" name="Stalker" hidden="false" collective="false" targetId="2509-4c06-781e-7771" type="selectionEntry"/>
-    <entryLink id="2343-ae6b-1aa4-222d" name="Whirlwind" hidden="false" collective="false" targetId="d149-41f2-be2f-2236" type="selectionEntry"/>
-    <entryLink id="d34f-da54-c674-4901" name="Predator" hidden="false" collective="false" targetId="380b-365b-f724-e677" type="selectionEntry"/>
-    <entryLink id="623d-d34a-ff02-57cc" name="Vindicator" hidden="false" collective="false" targetId="5b4f-6d59-d2cb-6004" type="selectionEntry"/>
-    <entryLink id="ee4b-b497-1d96-5e59" name="Land Raider" hidden="false" collective="false" targetId="03e6-d2f0-4433-9ecb" type="selectionEntry"/>
-    <entryLink id="63fc-3b5f-1176-4943" name="Land Raider Crusader" hidden="false" collective="false" targetId="e090-e09a-3fc2-625e" type="selectionEntry"/>
-    <entryLink id="3e72-db65-e138-b03f" name="Land Raider Redeemer" hidden="false" collective="false" targetId="2c85-0fe0-d71b-b759" type="selectionEntry"/>
-    <entryLink id="87da-1646-d484-17b3" name="Eliminator Squad" hidden="false" collective="false" targetId="0e7e-b907-6bf2-d536" type="selectionEntry"/>
-    <entryLink id="81cc-6385-4d5d-e13e" name="Bike Squad" hidden="false" collective="false" targetId="10c9-b4bb-9816-ee1b" type="selectionEntry"/>
-    <entryLink id="d1c2-24bd-2dec-874f" name="Assault Squad" hidden="false" collective="false" targetId="bfac-55c2-f1a4-838a" type="selectionEntry"/>
-    <entryLink id="b0fc-c00e-750e-41c6" name="Land Speeders" hidden="false" collective="false" targetId="f1dc-9426-c419-5aa6" type="selectionEntry"/>
-    <entryLink id="0afd-e523-faa9-488e" name="Attack Bike Squad" hidden="false" collective="false" targetId="ea42-68aa-024e-2eaf" type="selectionEntry"/>
-    <entryLink id="6ff5-3c32-2b3f-4a03" name="Scout Bike Squad" hidden="false" collective="false" targetId="681e-16e9-5f60-6245" type="selectionEntry"/>
-    <entryLink id="a1b5-0ab0-d358-ec37" name="Inceptor Squad" hidden="false" collective="false" targetId="de74-5084-23cb-8519" type="selectionEntry"/>
-    <entryLink id="7fc8-e3cc-51b5-d912" name="Suppressor Squad" hidden="false" collective="false" targetId="0da8-2ac6-c01c-24e9" type="selectionEntry"/>
-    <entryLink id="3153-d31b-2f9a-ec44" name="Rhino" hidden="false" collective="false" targetId="7763-55dd-8812-7d23" type="selectionEntry"/>
-    <entryLink id="e810-d1f0-2502-8f73" name="Razorback" hidden="false" collective="false" targetId="7621-272e-ffe5-27d8" type="selectionEntry"/>
-    <entryLink id="3efc-d8d4-a4ac-3802" name="Drop Pod" hidden="false" collective="false" targetId="3b41-4746-fc8a-35ce" type="selectionEntry"/>
-    <entryLink id="8ee7-2c1d-fbad-db52" name="Land Speeder Storm" hidden="false" collective="false" targetId="b166-97a1-112d-3a2f" type="selectionEntry"/>
-    <entryLink id="e723-29c7-a66c-7a86" name="Repulsor" hidden="false" collective="false" targetId="5da0-0fe0-081a-1339" type="selectionEntry"/>
-    <entryLink id="d945-49e4-5b0e-e3f8" name="Stormhawk Interceptor" hidden="false" collective="false" targetId="3d68-4564-f328-1694" type="selectionEntry"/>
-    <entryLink id="ca52-3224-a8f3-2402" name="Stormraven Gunship" hidden="false" collective="false" targetId="70d0-691d-94eb-12d5" type="selectionEntry"/>
-    <entryLink id="455a-6f79-459c-737e" name="Stormtalon Gunship" hidden="false" collective="false" targetId="80e9-fdb3-c8be-0c11" type="selectionEntry"/>
+    <entryLink id="9844-d698-9f0b-156c" name="Imperial Space Marine" hidden="false" collective="false" targetId="8f20-d582-fdbe-37a5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="136d-0505-f8e2-80f2" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fffa-1e10-0c73-a758" name="Devastator Squad" hidden="false" collective="false" targetId="db91-485c-ca74-9d54" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0322-157d-53c8-fa79" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="91f1-3fac-7f1a-3eb8" name="Hellblaster Squad" hidden="false" collective="false" targetId="8c07-83c7-971e-da50" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2830-8665-4a16-3276" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2b4c-3dfa-b169-5ec8" name="Hunter" hidden="false" collective="false" targetId="1bec-a9ec-587e-7dd2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7119-9675-ca65-7e15" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2474-537e-e705-c6b2" name="Stalker" hidden="false" collective="false" targetId="2509-4c06-781e-7771" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="39b5-0ecc-7b56-d5bf" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2343-ae6b-1aa4-222d" name="Whirlwind" hidden="false" collective="false" targetId="d149-41f2-be2f-2236" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2750-6c21-2369-48dd" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d34f-da54-c674-4901" name="Predator" hidden="false" collective="false" targetId="380b-365b-f724-e677" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e031-08a2-fd8f-a1ab" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="623d-d34a-ff02-57cc" name="Vindicator" hidden="false" collective="false" targetId="5b4f-6d59-d2cb-6004" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7ae5-f2d4-32bd-e3c6" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ee4b-b497-1d96-5e59" name="Land Raider" hidden="false" collective="false" targetId="03e6-d2f0-4433-9ecb" type="selectionEntry">
+      <profiles>
+        <profile id="9f25-c44b-8750-f76b" name="Land Raider" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly BLOOD ANGELS INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models. It cannot transport PRIMARIS units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="bef4-fc5b-7f59-3a51" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="63fc-3b5f-1176-4943" name="Land Raider Crusader" hidden="false" collective="false" targetId="e090-e09a-3fc2-625e" type="selectionEntry">
+      <profiles>
+        <profile id="43e6-c382-db96-3356" name="Land Raider Crusader" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 16 friendly BLOOD ANGELS INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models. It cannot transport PRIMARIS units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3845-e913-f5c2-6d24" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3e72-db65-e138-b03f" name="Land Raider Redeemer" hidden="false" collective="false" targetId="2c85-0fe0-d71b-b759" type="selectionEntry">
+      <profiles>
+        <profile id="bb32-a388-a447-dfee" name="Land Raider Redeemer" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly BLOOD ANGELS INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models. It cannot transport PRIMARIS units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d501-e399-434f-0d1c" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="87da-1646-d484-17b3" name="Eliminator Squad" hidden="false" collective="false" targetId="0e7e-b907-6bf2-d536" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1354-bf5e-18f0-08de" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="81cc-6385-4d5d-e13e" name="Bike Squad" hidden="false" collective="false" targetId="10c9-b4bb-9816-ee1b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a0eb-e299-308c-e49c" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d1c2-24bd-2dec-874f" name="Assault Squad" hidden="false" collective="false" targetId="bfac-55c2-f1a4-838a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e63a-7e4e-0113-8b80" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b0fc-c00e-750e-41c6" name="Land Speeders" hidden="false" collective="false" targetId="f1dc-9426-c419-5aa6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="38de-6df1-1563-4c79" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0afd-e523-faa9-488e" name="Attack Bike Squad" hidden="false" collective="false" targetId="ea42-68aa-024e-2eaf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="eadb-42e3-df52-eaba" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6ff5-3c32-2b3f-4a03" name="Scout Bike Squad" hidden="false" collective="false" targetId="681e-16e9-5f60-6245" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c489-4a78-d46b-ee01" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a1b5-0ab0-d358-ec37" name="Inceptor Squad" hidden="false" collective="false" targetId="de74-5084-23cb-8519" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="761a-80c7-1850-9018" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7fc8-e3cc-51b5-d912" name="Suppressor Squad" hidden="false" collective="false" targetId="0da8-2ac6-c01c-24e9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e21b-6095-37fb-595c" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3153-d31b-2f9a-ec44" name="Rhino" hidden="false" collective="false" targetId="7763-55dd-8812-7d23" type="selectionEntry">
+      <profiles>
+        <profile id="24dc-64a4-fa6e-5174" name="Rhino" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly BLOOD ANGELS INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models. It cannot transport PRIMARIS units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="77e7-c4aa-a2cc-105f" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e810-d1f0-2502-8f73" name="Razorback" hidden="false" collective="false" targetId="7621-272e-ffe5-27d8" type="selectionEntry">
+      <profiles>
+        <profile id="eaf0-c184-d411-0c1c" name="Razorback" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly BLOOD ANGELS INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of 2 other INFANTRY models. It cannot transport PRIMARIS units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f672-d86a-640a-16b5" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3efc-d8d4-a4ac-3802" name="Drop Pod" hidden="false" collective="false" targetId="3b41-4746-fc8a-35ce" type="selectionEntry">
+      <profiles>
+        <profile id="4920-a307-4394-9381" name="Drop Pod" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly BLOOD ANGELS INFANTRY models. It cannot transport PRIMARIS, JUMP PACK or TERMINATOR units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ee85-473e-6a23-ba14" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8ee7-2c1d-fbad-db52" name="Land Speeder Storm" hidden="false" collective="false" targetId="b166-97a1-112d-3a2f" type="selectionEntry">
+      <profiles>
+        <profile id="fd13-c575-33e7-d540" name="Land Speeder Storm" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 5 friendly BLOOD ANGELS INFANTRY SCOUT models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2cbe-bac0-3e40-7a93" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e723-29c7-a66c-7a86" name="Repulsor" hidden="false" collective="false" targetId="5da0-0fe0-081a-1339" type="selectionEntry">
+      <profiles>
+        <profile id="8fed-18a2-db4e-3048" name="Repulsor" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly BLOOD ANGELS PRIMARIS INFANTRY models. Each MK X GRAVIS model takes up the space of 2 other models. It cannot transport JUMP PACK units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6f8f-f92b-f9a8-8afa" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d945-49e4-5b0e-e3f8" name="Stormhawk Interceptor" hidden="false" collective="false" targetId="3d68-4564-f328-1694" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cc55-dd4c-722f-4181" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ca52-3224-a8f3-2402" name="Stormraven Gunship" hidden="false" collective="false" targetId="70d0-691d-94eb-12d5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1d4d-d424-0d57-377d" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="455a-6f79-459c-737e" name="Stormtalon Gunship" hidden="false" collective="false" targetId="80e9-fdb3-c8be-0c11" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2ec0-9567-af79-4e2e" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="10c5-a36f-b0c4-8504" name="Terminator Squad" hidden="false" collective="false" targetId="c0b0-6b0b-7f09-d62c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b6e5-40eb-f9c9-9993" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
@@ -1684,6 +2007,28 @@
     <entryLink id="c263-b47f-270d-d991" name="Terminator Assault Squad" hidden="false" collective="false" targetId="768d-883e-96a7-c2ce" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="747b-2c7d-5275-f00a" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="41b4-9f64-ad62-4223" name="Vanguard Veteran Squad" hidden="false" collective="false" targetId="7690-88a6-cb08-4bcf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0eb8-b8a4-e724-06a0" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3e99-9011-1978-a45e" name="Sternguard Veteran Squad" hidden="false" collective="false" targetId="9493-235c-f85f-e04f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="bf45-bf0d-45ec-3a3e" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c429-09fa-abac-77c8" name="Repulsor Executioner" hidden="false" collective="false" targetId="6d30-c860-3c7b-3357" type="selectionEntry">
+      <profiles>
+        <profile id="0763-66bf-ba7f-c970" name="Repulsor Executioner" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly BLOOD ANGELS PRIMARIS INFANTRY models. Each MK X GRAVIS model takes up the space of 2 other models. It cannot transport JUMP PACK units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="bf42-a4ef-59a1-e704" name="Faction: Blood Angels" hidden="false" targetId="f7a9-266d-efb6-d80f" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1705,6 +2050,42 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e0ea-7f86-09e8-1d4c" name="Blood Talons" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="3003-59e4-f036-8636" name="Blood Talons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e80a-c0c6-96a1-b7eb" name="Furioso Fists" hidden="false" collective="false" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="d543-5131-f774-9636" name="Furioso Fist" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d17-6383-4fcc-8cde" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ab1-89a7-27c5-6892" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="19b2-0c8d-3937-7ee9" name="Furioso Fist" hidden="false" targetId="6ec4-0b00-020f-1043" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -1749,6 +2130,16 @@
     <profile id="5742-3523-f180-9b29" name="Astartes Banner" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly BLOOD ANGELS units are automatically passed whilst they are within 6&quot; of this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6ec4-0b00-020f-1043" name="Furioso Fist" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
