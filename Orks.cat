@@ -427,6 +427,38 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="4177-ac6f-4aa5-c54a" name="Waaagh!" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Each time you roll an unmodified hit roll of 6+ for an attack made by an ORKS unit in this Detachment, you can immediately make one additional attack at the same target using the same weapon (this additional attack cannot generate more).</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="81d3-773f-91dd-db15" name="Boyz" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <categoryLinks>
@@ -6607,7 +6639,7 @@
             </entryLink>
             <entryLink id="a33a-5b67-5303-4913" name="Twin Big Shoota" hidden="false" collective="false" targetId="4078-6d45-aad2-0fbe" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7705-9f89-b019-2f3f" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7705-9f89-b019-2f3f" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="a7c1-337c-ff11-994f" name="Lobba" hidden="false" collective="false" targetId="ea01-fbbd-f273-4d37" type="selectionEntry">
@@ -6698,7 +6730,7 @@
         <entryLink id="da68-ca36-6a88-64a9" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink id="1b47-ff23-9a48-7ebd" name="Big Shoota" hidden="false" collective="false" targetId="fe1a-3f0a-ab27-f142" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f669-e359-45a1-da1b" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f669-e359-45a1-da1b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a0d-cd3b-32c5-253b" type="min"/>
           </constraints>
         </entryLink>
