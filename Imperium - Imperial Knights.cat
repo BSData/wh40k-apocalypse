@@ -129,6 +129,38 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="80c2-3449-cf92-a17d" name="Knight Lances" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>One IMPERIAL KNIGHTS unit in the Detachment becomes a CHARACTER and so can be a WARLORD if they are the Detachment&apos;s Commander. In addition, this unit has a Warmaster Trait, even if they are not your Warmaster (if the unit is your Warmaster, then they have two Warmaster Traits - re-roll any duplicate results when determining these).</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="b645-f778-adbf-c66c" name="Heavy Stubber" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -657,6 +689,7 @@
           </constraints>
         </entryLink>
         <entryLink id="3d1b-68e9-eabf-1dec" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="1375-a182-f281-6b8b" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="26.0"/>
@@ -767,6 +800,7 @@
           </constraints>
         </entryLink>
         <entryLink id="f246-0d05-f183-c90d" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="0529-fcdc-6c63-b525" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="38.0"/>
@@ -821,6 +855,7 @@
           </constraints>
         </entryLink>
         <entryLink id="834d-9b51-2fd9-d8e9" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="1eb7-9e96-c489-274d" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="27.0"/>
@@ -874,6 +909,7 @@
           </constraints>
         </entryLink>
         <entryLink id="529e-46e8-659a-bc21" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="8a53-7ece-9e76-6b07" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="23.0"/>
@@ -952,7 +988,30 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8131-f199-bd89-8de6" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="c9e1-9cfd-074a-d0f5" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="c9e1-9cfd-074a-d0f5" name="Commander" hidden="false" collective="false" targetId="8b69-e9c3-4cfe-7fa3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Warlord">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="29e3-7f16-82ce-44d8" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b79b-73d1-833e-f59f" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
+        <entryLink id="9d91-3e91-46bc-1a22" name="Warmaster" hidden="false" collective="false" targetId="1509-e8a6-2816-95d2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29e3-7f16-82ce-44d8" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="23.0"/>
@@ -1028,7 +1087,30 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ede8-ad32-19d5-6217" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="1e03-3969-6f2a-3970" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="9e98-b024-4b18-ca7e" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
+        <entryLink id="3857-90fc-b075-5bd2" name="Commander" hidden="false" collective="false" targetId="8b69-e9c3-4cfe-7fa3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Warlord">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="29e3-7f16-82ce-44d8" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b817-31a9-0f0c-3f3b" name="Warmaster" hidden="false" collective="false" targetId="1509-e8a6-2816-95d2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29e3-7f16-82ce-44d8" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="21.0"/>
@@ -1084,6 +1166,7 @@
           </constraints>
         </entryLink>
         <entryLink id="c555-b57d-2e2d-e757" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="4517-2186-8565-cefa" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="29.0"/>
@@ -1641,6 +1724,7 @@
           </constraints>
         </entryLink>
         <entryLink id="89d7-511a-55cf-58b0" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="780e-7418-aed0-cbc4" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
@@ -1758,6 +1842,7 @@
           </constraints>
         </entryLink>
         <entryLink id="7fdf-d1ff-dbf9-2c56" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="422a-1875-95ed-7074" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="24.0"/>
@@ -1875,6 +1960,7 @@
           </constraints>
         </entryLink>
         <entryLink id="dae7-9935-7ee0-57ad" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="5e94-1960-24e9-e676" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="24.0"/>
@@ -1961,6 +2047,7 @@
           </constraints>
         </entryLink>
         <entryLink id="0abd-04bf-b164-51ca" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="7458-013c-d6e6-2d2f" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
@@ -2060,6 +2147,7 @@
           </constraints>
         </entryLink>
         <entryLink id="49a4-c4e7-7590-ac5c" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="32e9-98d1-7546-a27d" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="24.0"/>
@@ -2177,6 +2265,7 @@
           </constraints>
         </entryLink>
         <entryLink id="441a-57c6-ede4-57f1" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="27c0-84a4-ae5e-50d3" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="24.0"/>
@@ -2304,6 +2393,7 @@
           </constraints>
         </entryLink>
         <entryLink id="89ca-82ae-992a-1023" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="8620-d2dc-dbef-a0ae" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="25.0"/>
@@ -2367,6 +2457,7 @@
           </constraints>
         </entryLink>
         <entryLink id="8ebd-5da2-49fd-a269" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="8a76-922d-91d4-1c08" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
@@ -2490,6 +2581,7 @@
           </constraints>
         </entryLink>
         <entryLink id="da02-88e4-8cc0-5c28" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="a96c-02f9-888b-5ec4" name="Character (Knight Lances)" hidden="false" collective="false" targetId="29e3-7f16-82ce-44d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="28.0"/>
@@ -2693,6 +2785,63 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf55-a473-4dc2-b516" type="min"/>
           </constraints>
         </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="29e3-7f16-82ce-44d8" name="Character (Knight Lances)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="55ba-fcb3-e793-7745" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6dd5-81e3-d720-750d" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="092a-942e-a206-00b3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4c80-304b-c104-1ba0" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4492-b29a-184e-26b5" name="Warmaster Traits" hidden="false" collective="false" targetId="acd4-8bbf-d48d-1a62" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b69-e9c3-4cfe-7fa3" name="Commander" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daf6-0f5d-c1de-f00c" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4c69-a7ab-155a-0af1" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ac7e-e031-9123-6ed5" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="96d6-0d28-2b95-e0ad" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1509-e8a6-2816-95d2" name="Warmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="b66c-5dd9-4e02-a28a" value="1.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb01-8e54-8822-7de4" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0a49-3f8b-1a97-28ff" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c106-34c6-c9ca-4393" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b66c-5dd9-4e02-a28a" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2458-c55c-99ca-cf5a" name="Warmaster" hidden="false" targetId="3b0c-71a7-b28b-a310" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="24dc-4738-1c1e-70b0" name="Warmaster Traits" hidden="false" collective="false" targetId="acd4-8bbf-d48d-1a62" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
