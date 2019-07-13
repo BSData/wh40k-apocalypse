@@ -27,6 +27,37 @@
     <entryLink id="569c-684c-4721-57cd" name="Renegade Knight Porphyrion" hidden="false" collective="false" targetId="80b2-f53e-adf8-682c" type="selectionEntry"/>
     <entryLink id="172e-3293-5378-2a80" name="Renegade Knight Styrix" hidden="false" collective="false" targetId="7fe3-1bdc-a4d7-d217" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="228d-e058-5c88-cba8" name="Fallen Courts" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>One [CHAOS KNIGHTS] unit becomes a CHARACTER and so can be a WARLORD if they are the Detachment&apos;s Commander. In addition, this unit has a Warmaster Trait, even though they are not your Warmaster (if this unit is also your Warmaster, then they have two Warmaster Traits - re-roll any duplicate results when determining these).</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="395b-0487-1ba7-906c" name="War Dog" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
@@ -164,6 +195,11 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="befe-085a-8386-e267" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="d817-a555-fe5d-ceee" name="Character (Fallen Courts)" hidden="false" collective="false" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="4ff4-c414-5657-8812" name="Warmaster" hidden="false" collective="false" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
@@ -281,6 +317,9 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f5-a513-c8aa-3a1d" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="4db5-6697-c484-0202" name="Character (Fallen Courts)" hidden="false" collective="false" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="0687-68eb-b35c-57e4" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="db99-283d-7733-c9fd" name="Warmaster" hidden="false" collective="false" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
@@ -502,6 +541,9 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3687-c81b-1ef3-61de" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="b820-5d20-860c-f00c" name="Character (Fallen Courts)" hidden="false" collective="false" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="6c7a-0a25-78a4-b630" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="3db8-101b-07b7-ea3c" name="Warmaster" hidden="false" collective="false" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="24.0"/>
@@ -929,6 +971,55 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="23.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c8da-2e77-79c0-db28" name="Character (Fallen Courts)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ca8a-03ae-4312-9495" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ff90-e36b-ae5e-305c" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="43ab-cfdb-4491-081d" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7108-7970-d9bb-643b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b072-34bf-e854-6fb1" name="Warmaster Traits" hidden="false" collective="false" targetId="acd4-8bbf-d48d-1a62" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f4a6-edd0-3a0d-fcca" name="Warmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d817-a555-fe5d-ceee" type="lessThan"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd2e-b7ed-76c8-a4d9" type="lessThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="69f5-c227-1b6d-e257" value="1.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb01-8e54-8822-7de4" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db2d-ac19-bb75-c269" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="69f5-c227-1b6d-e257" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="aee3-3305-8660-6968" name="Warmaster" hidden="false" targetId="3b0c-71a7-b28b-a310" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="017d-a6e5-de53-e2e0" name="Warmaster Traits" hidden="false" collective="false" targetId="acd4-8bbf-d48d-1a62" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="dc14-7072-6d6b-e1f6" name="Allegiance" hidden="false" collective="false" defaultSelectionEntryId="8061-4cc1-9b83-d793">
@@ -941,11 +1032,17 @@
           <categoryLinks>
             <categoryLink id="0b74-d281-bfdf-b5e7" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9898-3ddc-693c-1a04" name="Dark Mechanicus" hidden="false" collective="false" type="upgrade">
           <categoryLinks>
             <categoryLink id="3003-c22c-0441-b71b" name="Faction: Dark Mechanicus" hidden="false" targetId="c402-ad33-3a74-657c" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
