@@ -3480,26 +3480,6 @@ target Necrons units.</characteristic>
         <categoryLink id="c74c-0c87-627c-6abe" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
         <categoryLink id="4f81-f843-8c4b-ce15" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="88d8-af06-d1a1-0978" name="Pulse Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55e2-34c5-62f0-cf11" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bba-d15a-4dc1-6e4a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4168-6d3e-34c4-0d82" name="Pulse Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="28bb-9add-300d-e1e7" name="Primary Weapon Options" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="af14-e145-2369-3dcc">
           <constraints>
@@ -3555,6 +3535,7 @@ target Necrons units.</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d1e7-aaca-3812-da22" name="Armoured Hull" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="45fa-707e-2263-3d07" type="selectionEntry"/>
+        <entryLink id="a159-f7eb-c65f-e23c" name="Pulse Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="04fa-3cf2-b1c9-03e6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
@@ -3841,16 +3822,264 @@ target Necrons units.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="390d-1450-f97d-9f59" name="Crimson Hunter" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="5578-15f9-e39e-fa47" name="Crimson Hunter" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20&quot;-60&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dda7-e4b9-795e-e097" name="Skyhunters" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made by this unit that target units that can Fly.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="bd63-26ca-893c-6582" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="5359-9661-b36d-eec2" name="Crimson Hunter" hidden="false" targetId="bd57-0da8-3bb1-2db4" primary="false"/>
+        <categoryLink id="392a-f527-b416-13f8" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="5aa3-ec97-f47e-09d0" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="e1c5-965d-4991-4b06" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="962c-b99c-7bb8-eea0" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="9995-7b53-87cb-6e2c" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="2c70-d9e2-9fdd-3b91" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="4feb-382f-c57d-63b8" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="2578-55b8-66d8-353c" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2f94-739e-00a7-6be1" name="Exarch Pilot" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ab-70d2-6668-69e5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1265-0929-2957-bba5" name="Exarch Pilot" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has an Exarch Pilot, re-roll hit rolls of 1 for attacks made with ranged
+weapons by this unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e033-a433-7f5f-caaf" name="Armoured Hull" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="45fa-707e-2263-3d07" type="selectionEntry"/>
+        <entryLink id="21ef-cca4-8e49-ca91" name="Pulse Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="04fa-3cf2-b1c9-03e6" type="selectionEntry"/>
+        <entryLink id="92dd-80f9-606d-a03b" name="Bright Lance" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="48e5-6b9d-8c24-42bd" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="2 Bright Lances"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1d02-87a0-c957-1ecb" name="Hemlock Wraithfighter" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="336e-764a-ae1d-ea6d" name="Hemlock Wraithfighter" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20&quot;-60&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9c22-6c44-dc82-9450" name="Ignore Damage (6+)" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+        <infoLink id="bdbd-1839-9f95-0a1d" name="Terror Troops" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f023-7775-a8c0-6eac" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="703b-01c3-caf6-c0d0" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="3fc4-5644-b3b6-30e9" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="6977-6f7b-3260-7e75" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="6691-7e3f-f298-03d0" name="Faction: Spirit Host" hidden="false" targetId="d87a-76eb-0a86-5eb4" primary="false"/>
+        <categoryLink id="5b03-94d2-62ae-14a7" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="78b6-1aa7-7f14-95b1" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="ff7d-a744-6768-8b48" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="2804-b3f4-bfee-92fa" name="Hemlock Wraithfighter" hidden="false" targetId="010e-d870-19d3-b261" primary="false"/>
+        <categoryLink id="9d96-33b7-ee34-f586" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="de5a-6498-842f-3216" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="b292-fe49-7bc7-bbdd" name="Wraith Construct" hidden="false" targetId="15c3-2847-803f-ab5c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c785-3f32-15e5-1473" name="2 Heavy D-scythes" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f38-a7a2-669c-cf59" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e566-3136-a9d0-db8a" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1f9a-1d67-c735-c483" name="2 Heavy D-scythes" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">3+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="708a-82bd-7826-87b8" name="Armoured Hull" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="45fa-707e-2263-3d07" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9d0a-caea-baf7-39ef" name="Wraithknight" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="d357-7cde-d0a7-c04c" name="Wraithknight" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="a56f-38ae-3917-aadc" value="5+">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b1f-4b04-ebc6-2bb1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5ecf-b38f-5327-0463" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="6d28-e462-8895-6f5f" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="253a-8199-2fce-ab34" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="f7db-7588-cb57-c5bf" name="Faction: Spirit Host" hidden="false" targetId="d87a-76eb-0a86-5eb4" primary="false"/>
+        <categoryLink id="f9a0-97ad-2c94-a599" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="3386-8b23-7a74-a64f" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="1ef6-ffdf-ef6b-2132" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="0d5d-5bca-d211-cbad" name="Wraith Construct" hidden="false" targetId="15c3-2847-803f-ab5c" primary="false"/>
+        <categoryLink id="14e4-d7e2-ae63-0702" name="Wraithknight" hidden="false" targetId="c031-35fd-5467-0224" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1eba-7d3a-2889-80a9" name="Primary Weapon Options" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="4c23-982e-6e7e-5d6d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e81-93d9-2085-1997" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e3d-aef0-6fab-19a1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4c23-982e-6e7e-5d6d" name="2 Heavy Wraithcannons &amp; Titanic Wraithbone Fist" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77ec-2b0a-a347-c375" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ceb6-9ac4-ecaa-9f96" name="2 Heavy Wraithcannons" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="6e91-7329-adb7-435e" name="Titanic Wraithbone Fist" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="7b1f-4b04-ebc6-2bb1" name="Suncannon &amp; Scattershield" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b8e-4526-ecb9-da85" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="52da-8754-7ae7-cdbf" name="Suncannon" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="49b2-8e4f-db84-f54a" name="Titanic Ghostglaive &amp; Scattershield" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db18-b092-ace6-80fc" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6a30-196e-bfe0-816b" name="Titanic Ghostglaive" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="83e1-8aa7-96ba-872a" name="Secondary Weapon Options" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0188-2c11-c716-d2df" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4037-40e2-3c75-1c03" name="Scatter Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="0ed2-0608-7a18-bbb8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2654-524d-5f29-a906" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="de23-3ba6-686f-f742" name="Shuriken Cannon" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="446d-8d64-5ada-49e9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21e5-fb87-3aee-9f13" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="994e-2e8e-bcda-32a7" name="Starcannon" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="754a-eeb3-5170-a03f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f408-8363-bac1-8268" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="21.0"/>
       </costs>
@@ -4016,6 +4245,24 @@ target Necrons units.</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="04fa-3cf2-b1c9-03e6" name="Pulse Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f2f-d546-9424-e14d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69bf-4366-baa4-42be" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7e37-a8ac-ce8d-ceb6" name="Pulse Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
