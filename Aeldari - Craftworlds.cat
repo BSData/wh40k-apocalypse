@@ -107,7 +107,7 @@
   <sharedSelectionEntries>
     <selectionEntry id="e4e5-fffd-9435-163e" name="Eldrad Ulthran" publicationId="280a-43bb-426c-aa7c" page="1" hidden="false" collective="false" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeeb-a47c-4050-b13b" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="eeeb-a47c-4050-b13b" type="max"/>
       </constraints>
       <profiles>
         <profile id="41cb-9e3a-991e-2d01" name="Eldrad Ulthran" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -493,101 +493,1569 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0ff6-ae15-e08c-9ea5" name="Prince Yriel" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4e2e-9a98-7c51-8c9c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ec81-544f-da01-b864" name="Prince Yriel" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3a54-6689-907d-fffa" name="The Eye of Wrath" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, after this unit makes a Move action, select one enemy unit within 3&quot; of it and roll one D12; on a 4+ place one blast marker next to that unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2293-fb2d-558a-8000" name="Path of Command" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="b615-6db0-50d9-adf4" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9c2e-ddcc-0ff8-5089" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="64a9-dddb-24ef-a66a" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="5c14-7fe1-757e-2f01" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="81b5-9f3f-74e9-eb18" name="Faction: Iyanden" hidden="false" targetId="ea95-b026-c30c-948c" primary="false"/>
+        <categoryLink id="4388-faab-0e6d-ef3a" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="6d6d-e957-48d6-b7fc" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="8dd4-e0be-01a0-f783" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ca74-9e48-138b-d912" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="5c38-2a97-4def-cb7b" name="Prince Yriel" hidden="false" targetId="4d7f-30fc-b674-da2a" primary="false"/>
+        <categoryLink id="c020-485c-549d-82a6" name="Autarch" hidden="false" targetId="85fb-e447-f6b6-108e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a367-996c-2cc0-5082" name="The Spear of Twilight" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bd9-ede3-51fb-4315" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65e0-8131-0da0-4c31" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ac4a-bd7d-4657-f836" name="The Spear of Twilight" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">3+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ffd8-28a3-0207-0f27" name="Illic Nightspear" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ef92-1878-408a-d941" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="19fe-f712-9b57-ce76" name="Illic Nightspear" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3352-8d56-21ed-2d0c" name="Bringer of the True Death" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls and wound rolls of 1 for attacks made by this unit that
+target Necrons units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="598d-fead-6cd4-2669" name="Deep Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="9308-46b4-10fa-f23a" name="Stealth" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="b133-8e04-3e7b-9fd6" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="95cd-d2ab-fe78-503a" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="0ab0-15a0-9d13-ab93" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="61cb-e019-e96d-3cfc" name="Faction: Alaitoc" hidden="false" targetId="22a2-27b2-b2bc-f851" primary="false"/>
+        <categoryLink id="5000-1d7a-b690-0854" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="d44d-2aae-941b-547a" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="31b6-9660-00b2-e086" name="Illic Nightspear" hidden="false" targetId="7ca2-31c7-3f2b-3d2b" primary="false"/>
+        <categoryLink id="8f17-2e09-f8e2-7ab4" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="f47d-0e19-0cd3-358f" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="6c30-0188-5c7e-8ce6" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="ccc1-d785-e8e6-cdcf" name="Ranger" hidden="false" targetId="0fba-5905-99af-65b7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cd24-a705-2124-457f" name="Voidbringer" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a84-416c-6f29-d7cf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b65e-acac-b6b3-f3f7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e8a6-b84a-2d14-37c6" name="Voidbringer" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="797e-20b5-849f-295d" name="Power Sword" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6578-d009-f464-b9d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cc9-960b-e20b-68d0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b2bb-6f51-30fa-ee51" name="Power Sword" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be2f-3864-670d-7ee8" name="Autarch" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="4f6c-4e13-0134-9219" name="Autarch" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a7a7-8882-bed4-1403" name="Path of Command" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="b615-6db0-50d9-adf4" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1102-d31d-68ac-0da7" name="Autarch" hidden="false" targetId="85fb-e447-f6b6-108e" primary="false"/>
+        <categoryLink id="44ef-0d86-cb76-2295" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="f9c3-b9b8-e23e-cfa3" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="118c-2c64-0f07-8edf" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="1251-6f0d-44d9-a7b9" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="43fd-dde1-1d8f-16bc" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="b98f-d6ae-fe43-f0c5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="472b-216b-90f9-8e55" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ea87-5974-ab4b-ceda" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7248-78f6-2cc9-48e0" name="Autarch Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="e6d4-6942-f926-4720" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="629f-fd39-b3e9-96f0" name="Avatar of Khaine" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="79aa-f42c-a9e3-741f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7c2a-1f2b-5b17-6a2e" name="Avatar of Khaine" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7edc-926b-8834-c516" name="Khaine Awakened" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly Asuryani units are automatically passed whilst they are within 12&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c09d-b6b4-37f3-c451" name="Ignore Damage (5+)" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="958c-7037-989a-6da0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="73f9-71c6-a781-ef15" name="Avatar of Khaine" hidden="false" targetId="2e91-aa9f-83cf-7eb8" primary="false"/>
+        <categoryLink id="4abc-8330-91c4-d1aa" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="e2cf-335c-ff13-2085" name="Daemon" hidden="false" targetId="dfc6-5d64-127f-97a1" primary="false"/>
+        <categoryLink id="692d-6010-9f52-3232" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="643e-b9f8-a732-c783" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="5b3c-bcb4-1f0d-6211" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="9a19-e732-b380-0864" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="5f52-0a53-cdfe-7adf" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="9a7b-f155-14e8-fcca" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="5685-6024-bb44-8816" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="46c3-e64a-70f4-3822" name="The Wailing Doom" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="447a-7ac6-8e18-2972" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4af3-91d5-783a-da99" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dcfc-9149-0cc1-b034" name="The Wailing Doom (Ranged)" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9756-5234-1be0-38ab" name="The Wailing Doom (Melee)" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b1e9-150f-2d7c-2053" name="Asurmen" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="44ad-31a6-ec6d-44f3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4407-8481-34ed-0858" name="Asurmen" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2b72-b61a-7400-ca63" name="The Hand of Asuryan" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to saving throws made for friendly Aspect Warrior units whilst they are within 6&quot; of this unit. Add a further 1 to saving throws made for friendly Dire Avengers units whilst they are within 6&quot; of this unit. This cannot improve a saving throw roll beyond 4+.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4746-a079-0415-8f71" name="Bladestorm" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit and friendly Dire Avengers units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7ff7-6f33-68f7-3128" name="Asurmen" hidden="false" targetId="3ffb-066a-b606-8e9d" primary="false"/>
+        <categoryLink id="6a46-3fa2-7e28-ea98" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="b8c2-097e-180d-4c0a" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="5d33-092f-b041-e5ca" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="d14a-f670-a60a-a232" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="9b35-b9f5-5dde-c49f" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="e172-119c-ee97-80af" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="59b9-e89b-2f0c-469d" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="0ffe-d9b6-a465-f99d" name="Phoenix Lord" hidden="false" targetId="1d1d-2698-50bf-08b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="96c1-8065-76f9-b965" name="The Sword of Asur" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea17-a1f4-0874-072a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a51-202f-8f45-2173" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="452d-6cba-da05-ecf7" name="The Sword of Asur" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="5357-b317-cb94-7565" name="Avenger Shuriken Catapults" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="ab35-1721-b89b-9aeb" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3562-c0f4-6625-577d" name="Baharroth" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7c68-77e5-3c11-2ea6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0e36-f1e2-13da-0324" name="Baharroth" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="07c9-9f90-84f5-8e45" name="Brilliant Sun" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of friendly Aspect Warrior units whilst they are within 6&quot; of this unit. Add a further 1 to the Leadership characteristic of friendly Swooping Hawks units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7b18-6b68-979e-3de6" name="Blazing Fury" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit and friendly Swooping Hawks units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="86e1-122a-5dd2-da69" name="Deep Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="efa1-4b7d-c1f7-a742" name="Skyleap" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="ca0c-ced5-1816-2b42" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5c7b-77e6-6290-448a" name="Baharroth" hidden="false" targetId="fcdb-eb9d-5da1-9f9d" primary="false"/>
+        <categoryLink id="de7c-1c29-6796-0ea2" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="699d-adb3-9815-a2f5" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="c468-c471-57bf-a29e" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="dcf9-57d1-2298-b31f" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="3d13-14aa-43d6-f1a2" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="3af4-2735-d344-a5f5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="67d8-c9de-a9f9-9dd5" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="8c52-4692-50cb-5407" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
+        <categoryLink id="0fec-5da2-3baa-ef12" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="f7a2-a88d-60ff-cef9" name="Phoenix Lord" hidden="false" targetId="1d1d-2698-50bf-08b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b617-a848-528b-2e03" name="Hawk&apos;s Talon" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc0-1f38-ed44-3892" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="537d-3c37-84a5-bede" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="22e8-0dad-56ed-7092" name="Hawk&apos;s Talon" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="5dce-f741-3022-b255" name="The Shining Blade" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47eb-0611-a4eb-636c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0788-1c82-1e99-b05b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3398-f686-d7f4-c957" name="The Shining Blade" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8cc2-4200-3c18-116b" name="Fuegan" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="97b7-789c-3feb-68c8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9bc8-1972-53be-9cba" name="Fuegan" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="84a2-408e-5b42-e579" name="Fuegan" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit and friendly Fire Dragon units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5d01-b508-89b3-a833" name="Assured Destruction" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="dbf1-067f-2e0e-d7a7" type="profile"/>
+        <infoLink id="54ad-56fa-7708-33b8" name="Ignore Damage (6+)" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="230a-1a3a-7ab1-0ce7" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="ab21-d1b4-83cb-aa9a" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="2742-9730-60f4-5803" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="8f73-1a53-5317-959a" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="a1e7-39cf-e46d-acb1" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="e13f-cff8-d64a-b300" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="6a45-e139-8d92-962f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="610a-1b85-29ad-91de" name="Fuegan" hidden="false" targetId="11cd-1f82-d273-0db8" primary="false"/>
+        <categoryLink id="ea7c-c98d-811b-0fa6" name="Phoenix Lord" hidden="false" targetId="1d1d-2698-50bf-08b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="68df-7094-1fae-acb4" name="Firepike" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be31-9ccc-6d54-526d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a0a-e2a4-5fad-f9eb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b9fd-2c9c-3587-08ce" name="Firepike" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="7167-cafd-e5c7-f5a6" name="The Fire Axe" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd5c-bc50-f5ff-69fe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc50-94d0-9f8f-4581" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a5ee-d4d4-d52f-1f0c" name="The Fire Axe" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4426-bfdb-0078-52cc" name="Jain Zar" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="eece-3c70-976f-9f16" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a19d-06f1-c2ab-f885" name="Jain Zar" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8ffd-960b-3431-03fa" name="Jain Zar" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit and friendly Howling Banshee units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="02f3-7210-ea14-ef91" name="Terror Troops" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+        <infoLink id="2c58-410f-21f6-18fd" name="Banshee Mask" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="2827-f1c7-7523-2d95" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5415-d6a4-c309-0cee" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="a2d7-f292-fa40-6d3d" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="928f-1909-4d5d-3f99" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="659f-5e43-6756-ec85" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="27ed-14e8-43b5-860d" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="3fd5-40b3-b4b3-abd1" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="731d-13f8-a8b0-8612" name="Jain Zar" hidden="false" targetId="7fcb-572a-369f-05f1" primary="false"/>
+        <categoryLink id="1b44-1d1f-2ba5-082f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="baab-a82d-689f-22a5" name="Phoenix Lord" hidden="false" targetId="1d1d-2698-50bf-08b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9c18-8b02-094b-8e0e" name="Silent Death" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3278-5d7f-285f-ad9b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85b6-9627-7149-5172" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="552b-a38f-9db7-afa8" name="Silent Death" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="def3-3d1c-ba9c-8cd0" name="The Blade of Destruction" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09e1-1091-40a4-cd83" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c897-2692-fe9f-16e0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="00da-bd60-e66b-3132" name="The Blade of Destruction" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0cf3-b3f6-b571-97de" name="Karandras" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b33f-6436-9e41-8dfe" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="270c-f1ae-4e19-0461" name="Karandras" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="da06-d3e9-1278-8164" name="The Shadow Hunter" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit and friendly Striking Scorpion units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c7d8-5dc5-9a7f-432c" name="Death by a Thousand Stings" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">For each attack made by this unit that targets a Light unit, make two attacks instead of one.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f544-d64b-963d-a6e4" name="Deep Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="61f9-27c2-7521-f969" name="Infiltrators" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
+        <infoLink id="5bb4-117e-ca4f-c1b0" name="Shadow Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="6120-7f0f-d3b0-a6dc" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2678-ff45-8773-257b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="911d-36e5-301f-f238" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="f88d-e84a-7478-0567" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="e272-b94a-0b04-52b8" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="9649-c8a5-d292-b802" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="5738-9d81-d8d0-5742" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="1133-cdfe-d7e6-7aa3" name="Karandras" hidden="false" targetId="32f5-5b4d-18fc-b3d3" primary="false"/>
+        <categoryLink id="93a2-8106-151f-c5e2" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="61f9-4c7e-1087-573e" name="Phoenix Lord" hidden="false" targetId="1d1d-2698-50bf-08b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f0f4-5ca7-6fd4-90f9" name="The Scorpion&apos;s Bite" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f186-c09c-d7af-fc32" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d400-3c4b-6ae4-b652" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e78a-f144-9feb-37df" name="The Scorpion&apos;s Bite" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="03f2-67a7-90bb-c9eb" name="Scorpion&apos;s Claw" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e34c-3912-2da2-e99a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fea-496e-9bfc-95f4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0923-43dd-fa81-57c6" name="Scorpion&apos;s Claw" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a3de-399e-d9fe-fc95" name="Spiritseer" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="33c4-9c37-cc8b-c129" name="Spiritseer" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0061-d8fa-7642-090a" name="Spirit Mark" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly &lt;Craftworld&gt; Spirit Host units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5778-0d5a-a5b8-eb49" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="4fca-08df-fa1c-63ea" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="1344-73d2-3987-f42b" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="71c7-40c1-0d0e-2993" name="Faction: Spirit Host" hidden="false" targetId="d87a-76eb-0a86-5eb4" primary="false"/>
+        <categoryLink id="50d9-c6a4-ab98-7ca5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="b1c4-008e-c74d-2996" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="5846-1265-4598-a70e" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="90f5-969b-375f-dd9e" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="a7d8-4bf2-257d-9161" name="Spiritseer" hidden="false" targetId="5276-66b7-4039-9f57" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="18d8-d6a4-fe92-9cf7" name="Witch Staff" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="727b-9e25-62ac-369b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1913-c147-5b39-12b7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="665a-ebd9-5595-a72a" name="Witch Staff" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3673-2d76-83e7-62a5" name="Maugan Ra" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2e20-d2af-8570-9b43" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a343-0314-1fc0-b7bf" name="Maugan Ra" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cfa5-dfe1-15e4-0bba" name="The Harvester" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls of 1 for attacks made by this unit and friendly Dark Reaper units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c9dc-0c8b-8583-9c4f" name="Inescapable Death" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Unmodified hit rolls of 2+ for attacks made with this unit’s ranged weapons are always successful.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4e28-3c5d-72ec-bb3b" name="Legacy of Altansar" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by this unit that target Chaos units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ffa0-b6c5-d7fa-e20b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="1ca6-1f89-d7bf-1605" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="3393-90d5-d284-a930" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="68af-01ce-622b-fe84" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="ca7a-3d31-0c51-1cc5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="9f16-8631-6c18-6396" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="0446-1cfc-cfaf-6f85" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="54ff-1e49-197e-8393" name="Maugan Ra" hidden="false" targetId="3f4b-6e5c-df13-6bd1" primary="false"/>
+        <categoryLink id="9ae1-4a9d-7adc-bbf4" name="Phoenix Lord" hidden="false" targetId="1d1d-2698-50bf-08b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="40c5-551a-755c-a92a" name="The Maugetar" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa5a-f870-1f0c-fa9d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9488-d4ae-9a91-d1e5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7c6b-4226-a03a-61aa" name="The Maugetar (Ranged)" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aa38-0498-99e0-d451" name="The Maugetar (Melee)" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2a2e-7341-a82a-bd71" name="Howling Banshees" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="6a44-a399-5bb0-57fa" name="Terror Troops" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+        <infoLink id="6908-8a28-e3c8-4544" name="Banshee Mask" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="2827-f1c7-7523-2d95" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d3b3-2167-18f4-17a2" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="a644-7942-e420-9c20" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="310a-a68e-b2bf-650b" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="a429-78d6-b065-f57a" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="68b6-7960-1a1e-491a" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="8d1a-120a-72cd-8e39" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="9d3a-8581-d8f9-375d" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="2ea7-c59e-6e27-3c10" name="Howling Banshees" hidden="false" targetId="e6b3-694b-d2d0-6d3d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a6e1-d245-1b45-8d63" name="Power Swords" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea9-141c-9adb-0360" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="653a-a9c3-cd22-0465" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c7a3-3c99-9948-9ca8" name="Power Swords" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="908a-803e-f254-e65e" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="fa5b-96ef-7a30-5a84">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1836-a45c-696e-417c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9b5-dc31-99d3-c78f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fa5b-96ef-7a30-5a84" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="725a-74d9-9d6f-1075" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="61d4-8315-5d35-fdf3" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4859-37e7-5553-eb20" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e54-8774-c2e9-1e8c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f37b-012e-362e-8a8b" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d3b7-81ba-8363-64d8" name="Shuriken Pistols" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="3134-bebb-ccd6-bd9e" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8bf0-5926-7f9f-a5fe" name="Autarch - Skyrunner" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="7394-74e5-7727-1f97" name="Autarch - Skyrunner" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">17&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="dbc7-5575-820d-d21b" name="Path of Command" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="b615-6db0-50d9-adf4" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2329-e55a-4118-287e" name="Autarch" hidden="false" targetId="85fb-e447-f6b6-108e" primary="false"/>
+        <categoryLink id="761a-655f-a654-cf46" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
+        <categoryLink id="f3cd-dff7-537d-0a16" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="ba38-81be-40b6-d4b3" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="7570-9066-f89c-d263" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="7ea2-415b-f429-0b64" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="97dd-1698-27ef-a5b4" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="6ab8-666d-9680-fc2d" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="2336-d993-75b6-e2b0" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="ccf8-de55-e68c-a805" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="935b-ef3c-b9e6-feeb" name="Autarch Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="e6d4-6942-f926-4720" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b2f-0889-4d9e-0a2b" name="Autarch - Warp Jump Generator" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="67a7-cf2c-f641-709d" name="Autarch - Warp Jump Generator" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cb58-d694-cb52-c300" name="Path of Command" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="b615-6db0-50d9-adf4" type="profile"/>
+        <infoLink id="ec3f-ec4e-d569-3012" name="Deep Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="0cf6-79e8-ea7a-565d" name="Warp Jump Generator" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="ff0c-9ce2-72ca-fbca" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2355-7f4b-cd01-ea3f" name="Autarch" hidden="false" targetId="85fb-e447-f6b6-108e" primary="false"/>
+        <categoryLink id="7e8b-ffb2-0a82-a3c5" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="0fde-1c17-8b17-cb57" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="586f-08c4-004e-0c2d" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="d14f-2c6b-3899-f3c7" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="621b-f4e0-7814-68d8" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="a653-fbad-e143-1ebf" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="9325-1ff2-4c60-35b6" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="da5a-7cbc-f2d6-d3da" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
+        <categoryLink id="bf7e-70f9-41b5-a6c7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="90ea-d251-f217-e752" name="Autarch Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="e6d4-6942-f926-4720" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e94-7f86-50dd-2db5" name="Autarch - Swooping Hawk Wings" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="4d57-af2c-b4f5-6eb8" name="Autarch - Swooping Hawk Wings" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b3bc-ba76-9c41-5cb2" name="Path of Command" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="b615-6db0-50d9-adf4" type="profile"/>
+        <infoLink id="bf9d-295e-2418-7573" name="Deep Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="c755-76ae-5018-92d2" name="Skyleap" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="ca0c-ced5-1816-2b42" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6cc8-401e-a0c9-f20e" name="Autarch" hidden="false" targetId="85fb-e447-f6b6-108e" primary="false"/>
+        <categoryLink id="be24-0683-c1ec-4d61" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="79f6-4e63-2950-d281" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="b360-28c4-36c9-a734" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="2776-6eae-2569-257c" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="f795-7c9c-a5a0-cadf" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="b16f-9491-5917-acc6" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="6ed4-38c6-bb94-6988" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="472e-bb1d-2f02-7bf9" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="f887-e4f3-e9fd-80c4" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
+        <categoryLink id="2b84-77f3-8feb-9c63" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="acc6-25a7-289a-6ac8" name="Autarch Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="e6d4-6942-f926-4720" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9264-38a4-f7e5-b84a" name="Striking Scorpions" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="a29a-c53c-2909-cd33" name="Infiltrators" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
+        <infoLink id="09fd-947d-3dbd-947e" name="Deep Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="90bb-c4ee-7065-1964" name="Shadow Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="6120-7f0f-d3b0-a6dc" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8277-4a1d-a02c-c868" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="9e8d-0fc7-6bed-7722" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="a865-d3e8-4bb5-9ab8" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="833b-7ae5-e112-594a" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="43b4-b7c2-c023-3562" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="e36b-6f53-47dc-7d45" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="503e-b94f-a4f3-6b5c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="f4d2-a535-fba2-1efc" name="Striking Scorpions" hidden="false" targetId="4d2f-2983-d867-e5a9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c58b-285d-c606-77ee" name="Mandiblasters" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6326-2da3-2f23-2090" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e02-21b4-029a-06e0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1fa5-ee44-4c84-d4ee" name="Mandiblasters" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="2318-c964-f96c-35d2" name="Scorpion Chainswords" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e91b-f283-7760-5bb5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ad1-6ce1-5589-a925" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bcd0-bd97-6e63-213f" name="Scorpion Chainswords" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5f95-15c9-7b48-a99e" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="c8cd-3d26-1889-e606">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0662-b755-32dc-b581" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9565-f587-21af-240a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c8cd-3d26-1889-e606" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b35-b648-4364-aff1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8116-e56f-cb8e-8b0d" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f23a-ba25-36b3-4c42" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9781-7b14-0d3f-c506" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bb60-1a9a-8e04-426b" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="07f6-08ff-c1c8-aae1" name="Shuriken Pistols" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="3134-bebb-ccd6-bd9e" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d9d6-9114-3ac9-5567" name="Fire Dragons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="a02b-1e57-eb7b-e1ba" name="Assured Destruction" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="dbf1-067f-2e0e-d7a7" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5268-9700-b60b-a8cf" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="9d6e-9fa6-6e94-34e1" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="4f32-5f10-6073-bb31" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="26da-7682-6473-7b03" name="Faction: Aspect Warrior" hidden="false" targetId="6b12-0532-6c76-4d6a" primary="false"/>
+        <categoryLink id="8449-0bd8-dfb6-776b" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="8fa9-080a-bdac-7b8d" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="39ba-42af-96bb-4984" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="ff62-9cc4-26ec-e484" name="Fire Dragons" hidden="false" targetId="2029-92cf-1d2d-126a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a8df-6fab-b1df-95b1" name="Fusion Guns" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e906-2acd-07b9-c380" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b99-7598-f6ee-1eb1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fc3b-3876-8663-f9c7" name="Fusion Guns" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">2+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="0481-ca26-2f0a-756d" name="Melta Bombs" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3610-2631-66d5-19aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d020-50ac-f7b2-7fc7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7a84-447c-00b3-8de9" name="Melta Bombs" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">2+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="66d5-4187-20e9-afd8" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="3719-7783-4936-cc1f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de07-a129-74cb-e8f2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26a8-31da-f223-5d10" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3719-7783-4936-cc1f" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be3-71f6-8c73-b35b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="476a-4e12-af88-17f8" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0719-5b9e-b889-8ff4" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca7b-34b4-94d5-8a14" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="cefa-a004-e0fb-993b" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee31-1ec1-2733-9021" name="Wraithblades" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <categoryLinks>
+        <categoryLink id="8f26-a94f-e831-7dd6" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="e779-0d38-29dc-2004" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="c14e-fa3f-5feb-9e58" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="0c9f-1a7e-c9e2-5da4" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="b739-b2d0-445b-f111" name="Faction: Spirit Host" hidden="false" targetId="d87a-76eb-0a86-5eb4" primary="false"/>
+        <categoryLink id="1ade-4f29-826a-88e2" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="7505-33ae-8280-16ce" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="e2aa-d816-ab81-225c" name="Wraith Construct" hidden="false" targetId="15c3-2847-803f-ab5c" primary="false"/>
+        <categoryLink id="c785-bade-545a-e9f7" name="Wraithblades" hidden="false" targetId="8ba3-d349-fc11-281b" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7ea6-274a-d323-e7c8" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="20ad-eaef-781d-b476">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5752-b80d-b9e5-3a62" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be15-8afb-8b0e-451e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="20ad-eaef-781d-b476" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c6-baf9-678b-6a88" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bcf3-66e8-ab34-7e41" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9966-eed9-c51a-dd82" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d24-6ff5-417d-f306" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="96a7-0c35-b1b3-58a2" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="38da-d97b-dd28-fb29" name="Weapon Options" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="9836-5687-5a51-5cc6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c51c-826a-5572-4587" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb7-76fa-a506-7143" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9836-5687-5a51-5cc6" name="Ghostswords" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bea-c7b7-f1fb-b383" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8408-e0c3-2842-81e6" name="Ghostswords" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x4</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="9c94-7f1a-8d63-f10a" name="Ghostaxes" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bed6-9bfe-0719-d595" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7e9e-e69e-758c-fff5" name="Ghostaxes" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="56e5-8735-aae8-619b" name="Wraithguard" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="ad03-09c1-2394-32e1" name="Implacable" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit can still make a Shoot action in a turn in which it Fell Back.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="53c2-0deb-1210-577f" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="63e1-cc02-3a74-f224" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="ac14-7515-a569-36a1" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="39d8-65bb-acc2-157f" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="81ee-088e-472a-f93a" name="Faction: Spirit Host" hidden="false" targetId="d87a-76eb-0a86-5eb4" primary="false"/>
+        <categoryLink id="894e-60ee-c7e8-a662" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4ccf-2c5e-e97b-433d" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="438b-96e4-e07d-9690" name="Wraithguard" hidden="false" targetId="3531-dacf-0de7-75e9" primary="false"/>
+        <categoryLink id="d557-0d64-ce78-59ee" name="Wraith Construct" hidden="false" targetId="15c3-2847-803f-ab5c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b573-fed9-891e-83e7" name="Wraithguard Fists" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5869-c451-ac06-0fa2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d832-469b-747a-8af0" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="9119-b242-4191-2fb7" name="Wraithguard Fists" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3c7b-bb04-9865-4665" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="7399-19c6-254a-d1b3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a48-d887-c843-7f5f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a38f-79a0-90e7-44ed" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7399-19c6-254a-d1b3" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e1e-70b1-988e-384b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7d92-33f2-5311-bf99" name="5 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="939a-4f28-e1db-c239" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80af-dbec-a43d-e521" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8ba7-6d98-3e42-ba00" name="10 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dccc-94f4-7147-29a8" name="Weapons Options" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="a6c1-b39b-375d-0d71">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc63-56ec-0f8c-ff6d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5824-0734-9d9a-9d25" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a6c1-b39b-375d-0d71" name="Wraithcannon" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d07-2d18-832c-d771" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2ca4-d6c8-6442-8c91" name="Wraithcannon" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="7c57-b0db-2b0b-bf86" name="D-Scythes" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c39-e1c5-bae4-adf1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2f42-6eb1-20ff-dcc9" name="D-Scythes" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4f84-648e-afa4-1be6" name="Guardian Defenders" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6bb6-0893-18aa-a75c" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="368e-7460-45bf-9005">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="036b-6309-2783-1667" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4c1-4295-8761-1f7b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="368e-7460-45bf-9005" name="10-11 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e3-a8e4-3b29-b8e8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="0ffd-9190-6d75-e06a" name="10-11 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d49c-5b9a-422a-728c" name="20-22 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c11-941f-422c-7db2" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9c86-7d54-1ade-703f" name="20-22 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5351-0934-9fbe-2730" name="Heavy Weapon Platform" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false">
+          <modifiers>
+            <modifier type="set" field="a6d6-35fc-f8ac-5f64" value="2.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d49c-5b9a-422a-728c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d6-35fc-f8ac-5f64" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1515-b2f6-1eb8-bfd8" name="Aeldari Missile Launcher" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="05f5-1769-2db1-427e" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1515-b2f6-1eb8-bfd8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="f54e-8cd8-8b98-1821" name="Bright Lance" hidden="false" collective="false" targetId="48e5-6b9d-8c24-42bd" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f54e-8cd8-8b98-1821" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="bbd3-9000-78a2-8e6a" name="Scatter Laser" hidden="false" collective="false" targetId="0ed2-0608-7a18-bbb8" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbd3-9000-78a2-8e6a" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="2a9e-3c68-d040-957c" name="Shuriken Cannon" hidden="false" collective="false" targetId="446d-8d64-5ada-49e9" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2a9e-3c68-d040-957c" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e529-06d8-4357-fc96" name="Starcannon" hidden="false" collective="false" targetId="754a-eeb3-5170-a03f" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e529-06d8-4357-fc96" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="415e-0f12-c265-eb60" name="Shuriken Catapults" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="8c54-7d0e-9061-d141" type="selectionEntry"/>
+        <entryLink id="d53d-f02a-ea60-6a5f" name="Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="d151-baee-772a-7265" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -692,6 +2160,96 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e6d4-6942-f926-4720" name="Autarch Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ce-0c66-3a4b-04f9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18d5-daac-f7fa-8c89" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c80b-621e-75f1-a78e" name="Autarch Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="ab35-1721-b89b-9aeb" name="Avenger Shuriken Catapults" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51c5-3547-c95e-e770" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cb5-0831-1907-dc6a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="18cd-bf9a-aad7-eb10" name="Avenger Shuriken Catapults" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="3134-bebb-ccd6-bd9e" name="Shuriken Pistols" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21e8-4009-9dd0-6567" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a32-d1f8-6d67-4e6e" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="e30b-b8ed-86d1-e0d2" name="Shuriken Pistols" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="8c54-7d0e-9061-d141" name="Shuriken Catapults" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73b7-e1a7-3712-c3b0" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f4d-1005-ca1f-7d8b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3c75-c6d1-e6b1-34fe" name="Shuriken Catapults" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="d151-baee-772a-7265" name="Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c25f-c0fc-eb5c-5d36" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="964e-c034-4fa2-ddc8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7049-360d-94e7-e52c" name="Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="7a7f-f5ba-ede0-73b2" name="Witchblade" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -737,6 +2295,36 @@
         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b615-6db0-50d9-adf4" name="Path of Command" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warlord, you can secretly choose two orders to issue to this unit’s Detachment instead of one, placing an order marker for each. After all orders are revealed, discard one of those order markers; the Detachment is considered not to have been issued that order.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ca0c-ced5-1816-2b42" name="Skyleap" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Move action, it can skyleap instead of moving. If it does, it is removed from the battlefield and placed into Tactical Reserves. When this unit arrives as reinforcements, set it up anywhere on the battlefield that is more than 9&quot; away from any enemy units. A unit cannot skyleap if it was set up on the battlefield this turn, if there are any enemy units in base contact with it, or if there are any blast markers next to it.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ff0c-9ce2-72ca-fbca" name="Warp Jump Generator" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Instead of making a Move action, this unit can perform a warp jump. If it has any blast markers next to it, you must first resolve damage for it as if it were the Damage phase. If it is not destroyed, remove this unit from the battlefield, set it up anywhere on the battlefield that is more than 9&quot; away from any enemy units and then roll one D12; on a 1, place one blast marker next to this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dbf1-067f-2e0e-d7a7" name="Assured Destruction" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by this unit that target Heavy or Super-heavy units.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2827-f1c7-7523-2d95" name="Banshee Mask" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with melee weapons by enemy units that target this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6120-7f0f-d3b0-a6dc" name="Shadow Strike" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with melee weapons by this unit that target units garrisoning a Defensible Terrain feature.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
