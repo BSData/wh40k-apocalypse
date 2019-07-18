@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="1" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="2" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse"/>
   </publications>
@@ -74,7 +74,7 @@
     <categoryEntry id="7453-e809-a313-a332" name="Warlord" hidden="false"/>
     <categoryEntry id="bad3-1204-2d12-3c3d" name="Aircraft" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="8951-2d88-3b2b-4de4" name="Building" hidden="false"/>
-    <categoryEntry id="ef15-faf4-a4a1-33f5" name="Beasts" hidden="false"/>
+    <categoryEntry id="ef15-faf4-a4a1-33f5" name="Beast" hidden="false"/>
     <categoryEntry id="351c-b6fa-4d4f-70f3" name="Cavalry" hidden="false"/>
     <categoryEntry id="5f52-c8e5-1f2f-5161" name="Dreadnought" hidden="false"/>
     <categoryEntry id="cdf9-175a-b31b-44a1" name="Jump Pack" hidden="false"/>
@@ -91,6 +91,8 @@
     </categoryEntry>
     <categoryEntry id="041b-bb02-a8be-3c9c" name="Special Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="9f9b-a0ff-1523-746d" name="No Force Org Slot" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="c2cd-6e10-a4dd-093c" name="Artillery" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="dfc6-5d64-127f-97a1" name="Daemon" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="8ba0-7df9-3f27-d4b1" name="Ad Hoc Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -975,6 +977,11 @@ If this unit is garrisoning Defensible Terrain, unmodified saving throws of 5+ a
     <profile id="bf9d-2c1a-d513-4513" name="Immobile" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit is never Out of Command: an Out of Command marker is never placed next to it. When measuring distances to and from this unit, measure to and from the closest point of this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5711-082b-6f95-d8ef" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Distances are measured to and from this unit’s hull, even though it has a base.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
