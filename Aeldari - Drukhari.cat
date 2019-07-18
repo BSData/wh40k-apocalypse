@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e93c-6dd4-eb77-893d" name="Aeldari - Drukhari" revision="7" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e93c-6dd4-eb77-893d" name="Aeldari - Drukhari" revision="8" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="3cef-65f6-1938-6b57" name="Archon" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="052f-2cba-abf7-da92" name="Faction: &lt;KABAL&gt;" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -71,6 +71,7 @@
     <entryLink id="48dd-78b1-9cab-c3ef" name="Voidraven Bomber" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="9da5-a417-8adb-6bd8" type="selectionEntry"/>
     <entryLink id="ba0f-9c39-ddac-4fad" name="Wracks" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="5fab-1d88-23b5-b612" type="selectionEntry"/>
     <entryLink id="cd4e-0971-3830-20b2" name="Wyches" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="6298-2e7d-b945-6ef4" type="selectionEntry"/>
+    <entryLink id="24bd-71e6-964e-3edf" name="Webway Gate" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="f4ea-67e2-d7a9-3bbd" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="17d0-1558-09cd-cb58" name="Archon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
@@ -1854,6 +1855,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
         <categoryLink id="c0ea-8e47-aaf0-fc83" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
         <categoryLink id="d0e1-cbe8-4076-5d3a" name="Khymerae" hidden="false" targetId="330f-c845-fe71-cb62" primary="false"/>
         <categoryLink id="7dbd-2dd8-8fff-e0f7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4ed6-eb4a-ae56-76b6" name="Daemon" hidden="false" targetId="dfc6-5d64-127f-97a1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7a0f-ef6d-fb21-3338" name="Claws &amp; Talons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
@@ -2649,7 +2651,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="053c-cf3d-c19a-9ba4" name="Gruesome Weapon Replacement" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false">
+            <selectionEntryGroup id="053c-cf3d-c19a-9ba4" name="Gruesome Weapon Replacement" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" defaultSelectionEntryId="ebf5-b31c-b85b-5113">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaa4-7ca9-2947-bde3" type="min"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f901-045d-a7c1-c375" type="max"/>
@@ -2697,7 +2699,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="b856-f461-3dfe-31bd" name="Splinter Cannon Replacement" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false">
+            <selectionEntryGroup id="b856-f461-3dfe-31bd" name="Splinter Cannon Replacement" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" defaultSelectionEntryId="d9e3-84a7-1157-c10d">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf92-ea24-3a02-d068" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e0f-5709-12e8-7599" type="min"/>
@@ -2733,6 +2735,9 @@ rounding down, from this unit. Small blast markers must be removed before large 
       <entryLinks>
         <entryLink id="53c0-f576-1ab5-efc6" name="Pain Engines" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="7c03-1909-6a29-47b6" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d1e6-d3d5-dc28-9c3b" name="Cronos" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <categoryLinks>
@@ -2746,6 +2751,10 @@ rounding down, from this unit. Small blast markers must be removed before large 
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c437-df08-64fd-9dd0" name="Cronos" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b39-c224-956c-f26f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d94-dc6f-129b-cd9c" type="min"/>
+          </constraints>
           <profiles>
             <profile id="7fe6-03a6-1a0b-6fa4" name="Cronos" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
               <characteristics>
@@ -2756,6 +2765,11 @@ rounding down, from this unit. Small blast markers must be removed before large 
                 <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                 <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
                 <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7ca0-687b-da4f-b328" name="Spirit Probe" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made with melee weapons by friendly Drukhari units whilst they are within 6&quot; of this unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2774,18 +2788,6 @@ rounding down, from this unit. Small blast markers must be removed before large 
                     <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                     <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                     <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d6ef-25f4-f33e-5f72" name="Spirit Probe" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="77de-6777-131e-1e35" name="Spirit Probe" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made with melee weapons by friendly Drukhari units whilst they are within 6&quot; of this unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2846,6 +2848,9 @@ rounding down, from this unit. Small blast markers must be removed before large 
       <entryLinks>
         <entryLink id="ffda-d508-dea3-0972" name="Pain Engines" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="7c03-1909-6a29-47b6" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a8a1-1517-c076-9735" name="Ravager" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
       <profiles>
