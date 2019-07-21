@@ -2648,29 +2648,6 @@ target Necrons units.</characteristic>
         <categoryLink id="74c6-62f0-29de-a971" name="Vypers" hidden="false" targetId="6f1e-0423-70d8-bb02" primary="false"/>
         <categoryLink id="ab95-6a39-cd86-f674" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="8359-8ec7-2050-b10e" name="Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f602-0cdb-eedd-f0dc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="949b-7e2b-59a5-8c87" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="60d4-95d2-3c52-2680" name="Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="d650-08dd-cb0e-bb66" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="b9fa-7d97-5458-0ccb">
           <constraints>
@@ -2808,6 +2785,7 @@ target Necrons units.</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e1bd-c350-dcf2-9196" name="Commander" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="dd94-a64d-0dfd-bbd0" name="Close Combat Weapons (7/9)" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="663a-a631-45d1-f15d" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -3376,26 +3354,41 @@ target Necrons units.</characteristic>
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bfb-ee23-1e5e-f7c9" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="ce55-5868-2785-3946" name="Bright Lance" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="48e5-6b9d-8c24-42bd" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6591-aa0a-52fe-598e" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="0bf3-8be0-e4f8-4b04" name="Scatter Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="0ed2-0608-7a18-bbb8" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4986-fe83-851d-b7f3" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="6970-b2d8-4bdf-87b9" name="Shuriken Cannon" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="446d-8d64-5ada-49e9" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6815-66cd-c9ce-a935" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="64e1-1d84-92dd-6388" name="Starcannon" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="754a-eeb3-5170-a03f" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="350f-e564-a0bb-485d" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -4403,7 +4396,7 @@ weapons by this unit.</characteristic>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d151-baee-772a-7265" name="Guardian Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d151-baee-772a-7265" name="Close Combat Weapons (8/10)" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c25f-c0fc-eb5c-5d36" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="964e-c034-4fa2-ddc8" type="max"/>
@@ -4424,7 +4417,7 @@ weapons by this unit.</characteristic>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9b28-4821-8027-142e" name="Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="9b28-4821-8027-142e" name="Close Combat Weapons (8/9)" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba99-18f3-5b37-8a2d" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00a7-e4ce-74ff-1dba" type="max"/>
@@ -4522,6 +4515,26 @@ weapons by this unit.</characteristic>
         <categoryLink id="0eba-63f9-047b-16c6" name="Shadows Spectres" hidden="false" targetId="1cbc-1458-9175-2cba" primary="false"/>
         <categoryLink id="d635-9ebc-ccd2-7644" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="185b-cabc-dcec-8f0d" name="Prism Rifles" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62cb-d762-c3a8-1925" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a550-e8ca-2abd-bbcd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5abf-ce7c-7dc9-18ad" name="Prism Rifles" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="d44f-5248-9e87-f8ca" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="fcbc-7333-9bc4-194b">
           <constraints>
@@ -4574,6 +4587,12 @@ weapons by this unit.</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d090-749d-6a39-1b2f" name="Close Combat Weapons (7/9)" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="663a-a631-45d1-f15d" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3cc1-eb93-ef2f-6b65" name="Wasp Assault Walkers" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
       <infoLinks>
@@ -4692,8 +4711,11 @@ weapons by this unit.</characteristic>
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="5a9a-c25b-0e58-e279" name="Wasp Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5a9a-c25b-0e58-e279" name="Close Combat Weapons (9/10)" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84ef-eda5-710d-e549" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a4-366a-f50a-f52b" type="max"/>
@@ -4706,6 +4728,27 @@ weapons by this unit.</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="663a-a631-45d1-f15d" name="Close Combat Weapons (7/9)" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c20-adf6-e459-62d6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e5e-716b-b064-bf4f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="70c8-47fe-fae3-f6fc" name="Close Combat Weapons" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
