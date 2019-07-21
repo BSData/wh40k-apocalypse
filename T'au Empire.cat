@@ -14,7 +14,7 @@
     <categoryEntry id="553b-0c29-feed-1103" name="Faction: Vespid" publicationId="6e11-42ed-c084-ce74" hidden="false"/>
     <categoryEntry id="cddc-e90c-2a2c-cc25" name="Battlesuit" hidden="false"/>
     <categoryEntry id="b9f7-43d5-dd6a-0b50" name="Jet Pack" hidden="false"/>
-    <categoryEntry id="ba97-8cad-a18a-626d" name="Commander" hidden="false"/>
+    <categoryEntry id="ba97-8cad-a18a-626d" name="Commander (T&apos;au)" hidden="false"/>
     <categoryEntry id="4d69-8ede-1cbf-6421" name="XV22 Stalker" hidden="false"/>
     <categoryEntry id="ae13-43d2-8a9b-6a49" name="Shadowsun" hidden="false"/>
     <categoryEntry id="97ee-28ed-a428-0145" name="Farsight" hidden="false"/>
@@ -56,6 +56,11 @@
     <categoryEntry id="97d8-f94f-74c4-3881" name="Drone" hidden="false"/>
     <categoryEntry id="e52e-ca49-457b-b0bf" name="XV85 Enforcer" hidden="false"/>
     <categoryEntry id="997e-85b7-b0aa-3b65" name="XV86 Coldstar" hidden="false"/>
+    <categoryEntry id="324c-1111-7214-00e2" name="Faction: Dal&apos;yth" publicationId="e282-a216-345a-e73a" hidden="false"/>
+    <categoryEntry id="b609-58b5-5a26-045c" name="Shas&apos;o R&apos;myr" publicationId="e282-a216-345a-e73a" hidden="false"/>
+    <categoryEntry id="1288-81c2-ae48-6093" name="Faction: Ke&apos;lShan" publicationId="e282-a216-345a-e73a" hidden="false"/>
+    <categoryEntry id="c92e-04c6-04cd-3639" name="Shas&apos;o R&apos;alai" publicationId="e282-a216-345a-e73a" hidden="false"/>
+    <categoryEntry id="cf7c-ae7e-d2a7-3128" name="Commander in XV81 Crisis Battlesuit" publicationId="e282-a216-345a-e73a" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="1b3c-ffd5-59f4-28b7" name="Commander Shadowsun" hidden="false" collective="false" targetId="ccb7-9961-bfa0-718f" type="selectionEntry"/>
@@ -94,7 +99,41 @@
     <entryLink id="946f-804d-f625-03e3" name="XV8 Crisis Battlesuits" hidden="false" collective="false" targetId="fa7a-9ba1-fcc4-b47f" type="selectionEntry"/>
     <entryLink id="6109-b638-6b79-042f" name="XV8 Crisis Bodyguards" hidden="false" collective="false" targetId="3dca-5c02-78a2-bc20" type="selectionEntry"/>
     <entryLink id="db67-5adf-01a4-fe2e" name="XV88 Broadside Battlesuits" hidden="false" collective="false" targetId="0872-9cc4-b270-199a" type="selectionEntry"/>
+    <entryLink id="8ecf-1798-f076-766b" name="Shas&apos;o R&apos;Myr" hidden="false" collective="false" targetId="3fa2-0fca-00dc-0d49" type="selectionEntry"/>
+    <entryLink id="d050-45ec-773f-c34b" name="Shas&apos;o R&apos;alai" hidden="false" collective="false" targetId="c80b-071f-b284-84fd" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule id="2a43-fe14-7278-383b" name="For the Greater Good" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba0-7df9-3f27-d4b1" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d22-806b-bfc5-db54" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2bc-37e7-468c-5e76" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5642-ce25-4f9d-5cb3" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f70-4411-2a13-96bf" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>If this Detachment is carrying out an Aimed Fire order, then until the end of the turn, T&apos;AU EMPIRE units in this Detachment can still make a shoot action if enemy units are in base contact with them, and they can target enemy units in base contact with friendly T&apos;AU EMPIRE units from this Detachment.  However, if they do either, subtract 1 from hit rolls for attacks made by those units when resolving those attacks.</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="ccb7-9961-bfa0-718f" name="Commander Shadowsun" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <constraints>
@@ -211,6 +250,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="35e5-2a9d-533f-281e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
@@ -305,6 +347,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="f715-97ce-5a5c-127f" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
       </costs>
@@ -578,6 +623,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4cc4-c106-cc7b-6dcf" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
@@ -646,6 +694,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="1851-5b85-b241-6ed0" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
@@ -708,6 +759,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="1435-9966-33c3-0a07" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
@@ -827,6 +881,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5acc-19d2-81aa-fb0d" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
       </costs>
@@ -932,6 +989,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0ea0-dd58-b2c0-8e23" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
@@ -1005,6 +1065,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="630a-8a21-e2b8-aac7" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
@@ -1037,7 +1100,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="affe-f7a1-4d5a-bdda" name="Hover" hidden="false" targetId="9d57-7d9d-1bbb-9845" type="profile"/>
+        <infoLink id="affe-f7a1-4d5a-bdda" name="Hover" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="92f3-f3a7-6dd4-a737" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -1131,6 +1194,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0c9c-feae-ec4c-d025" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
       </costs>
@@ -1266,6 +1332,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6bc7-3733-646c-2029" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -1429,6 +1498,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e31e-cd1f-681f-0129" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -1538,6 +1610,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="de7d-4e9f-fb1e-03be" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -1598,6 +1673,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="9c33-5446-522b-8c26" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
@@ -1722,6 +1800,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="94e4-f43b-c958-9801" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -1863,6 +1944,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="89ce-8427-0426-faef" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -2060,6 +2144,9 @@
               <infoLinks>
                 <infoLink id="553f-d832-6112-64ab" name="Airbursting Fragmentation Projector" hidden="false" targetId="a0f6-4fcc-64b0-ab22" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ffa7-eccd-322c-795c" name="3 Fusion Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -2068,6 +2155,9 @@
               <infoLinks>
                 <infoLink id="268b-46af-124a-845f" name="Fusion Blaster" hidden="false" targetId="0f4e-ab4d-4ae5-3382" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2962-b882-35eb-eb29" name="3 Missile Pods" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -2076,6 +2166,9 @@
               <infoLinks>
                 <infoLink id="5aba-d6f4-1007-d3f9" name="Missile Pod" hidden="false" targetId="e5db-08f5-e1d6-fc6b" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8ec1-f5ad-51dd-13bd" name="3 Burst Cannons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -2124,6 +2217,12 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="de0f-af76-ef73-b67e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3dca-5c02-78a2-bc20" name="XV8 Crisis Bodyguards" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <profiles>
@@ -2325,6 +2424,9 @@
               <infoLinks>
                 <infoLink id="f75a-9f47-e6de-6229" name="Airbursting Fragmentation Projector" hidden="false" targetId="a0f6-4fcc-64b0-ab22" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="b3f6-6e91-01ee-f623" name="3 Fusion Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -2333,6 +2435,9 @@
               <infoLinks>
                 <infoLink id="174d-5356-e979-069a" name="Fusion Blaster" hidden="false" targetId="0f4e-ab4d-4ae5-3382" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="86b0-198d-58b6-34dc" name="3 Missile Pods" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -2341,6 +2446,9 @@
               <infoLinks>
                 <infoLink id="3a32-604b-c72f-30ce" name="Missile Pod" hidden="false" targetId="e5db-08f5-e1d6-fc6b" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c068-45a7-11c5-5a2e" name="3 Burst Cannons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -2389,6 +2497,12 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ca08-889d-ad2a-2e8e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="665b-3ca2-f381-67b6" name="Firesight Marksman" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <profiles>
@@ -2444,6 +2558,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="b784-e05b-5802-a98f" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
@@ -2600,6 +2717,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="89cc-ce81-ee19-552b" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
       </costs>
@@ -2774,6 +2894,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4519-e505-7e0e-3e29" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
       </costs>
@@ -3022,6 +3145,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dafc-c19c-bfa8-96fe" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -3201,6 +3327,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6af9-a096-6a38-bdff" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -3385,6 +3514,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="adec-4307-fd18-5bdc" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -3510,6 +3642,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="32ae-39f9-8c04-3c89" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -3617,6 +3752,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4b3e-741c-d1aa-02c7" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -3809,6 +3947,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="07bf-d715-5c2b-1550" name="2 High-yield Missile Pods" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -3897,6 +4038,9 @@
               <infoLinks>
                 <infoLink id="82b9-fba1-d9e5-d512" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3911,6 +4055,12 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7202-3c73-4958-ebf3" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="964d-0b30-009f-2095" name="TX7 Hammerhead Gunship" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="unit">
       <profiles>
@@ -3927,7 +4077,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="1ac9-9d92-2ab9-3ce6" name="Hover" hidden="false" targetId="9d57-7d9d-1bbb-9845" type="profile"/>
+        <infoLink id="1ac9-9d92-2ab9-3ce6" name="Hover" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9ea3-eef3-1197-4026" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
@@ -4019,6 +4169,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2415-221f-55a7-8ffa" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
@@ -4043,7 +4196,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="ac5f-a705-bf6a-a330" name="Hover" hidden="false" targetId="9d57-7d9d-1bbb-9845" type="profile"/>
+        <infoLink id="ac5f-a705-bf6a-a330" name="Hover" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="09cf-270c-fc63-6745" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
@@ -4135,6 +4288,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dc7b-0193-2926-a530" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
@@ -4263,6 +4419,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6619-c932-ebf9-8e6c" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -4287,7 +4446,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a13e-18a4-c14a-f4bf" name="Hover" hidden="false" targetId="9d57-7d9d-1bbb-9845" type="profile"/>
+        <infoLink id="a13e-18a4-c14a-f4bf" name="Hover" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d14c-7c88-e607-993b" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
@@ -4360,6 +4519,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="37ac-c81b-06f4-8789" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
@@ -4465,6 +4627,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="531e-8491-3444-9ed1" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
@@ -4560,6 +4725,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="2c26-6067-481e-97fd" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
@@ -4627,6 +4795,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4f98-97d0-67b6-f611" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -4686,8 +4857,14 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="fa63-a045-4258-2525" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
@@ -4750,8 +4927,14 @@
           <infoLinks>
             <infoLink id="9241-6e71-6029-bc08" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="f361-b494-534a-c27e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
@@ -4802,6 +4985,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8673-2bd5-23ec-8697" name="Destroyer Missile" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -4824,6 +5010,9 @@
             <infoLink id="4939-7e36-c0dd-b312" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
             <infoLink id="737f-d297-8c67-9404" name="One Use Only" hidden="false" targetId="822c-cc23-b4b1-bcb2" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a80e-5677-35ee-ebf1" name="Crushing Feet" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -4842,6 +5031,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b5bf-d82e-c7c1-77a8" name="Smart Missile Systems" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -4851,6 +5043,9 @@
           <infoLinks>
             <infoLink id="069e-99b5-ccf9-41c7" name="Smart Missile Systems" hidden="false" targetId="5de3-527e-6d5e-ee8f" type="infoGroup"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4873,6 +5068,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a3c3-d121-8f55-9d9a" name="Pulse Driver Cannon" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -4890,6 +5088,9 @@
               <infoLinks>
                 <infoLink id="974d-6395-49c6-cc0f" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4950,6 +5151,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1096-3d9f-eb9b-3c10" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="20.0"/>
       </costs>
@@ -4999,8 +5203,189 @@
       <infoLinks>
         <infoLink id="d9f1-5c7d-1c22-19ec" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink id="da34-3764-816f-7f5d" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fa2-0fca-00dc-0d49" name="Shas&apos;o R&apos;Myr" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6cb2-bd07-b69e-b82c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b636-8046-435b-1aca" name="Shas&apos;o R&apos;Myr" publicationId="e282-a216-345a-e73a" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d4f5-f2c1-a69a-139c" name="Vengeance" publicationId="e282-a216-345a-e73a" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit that target ASTRA MILITARUM units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="716f-9fd0-719d-c7f0" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="8aa1-d977-d948-fc18" name="Master of War" hidden="false" targetId="a04c-f866-5ae9-ab55" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a3e2-2d36-c32e-c287" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
+        <categoryLink id="e3aa-6e59-0261-218c" name="Faction: Dal&apos;yth" hidden="false" targetId="324c-1111-7214-00e2" primary="false"/>
+        <categoryLink id="3eb4-430d-8c32-70a3" name="Commander" hidden="false" targetId="ba97-8cad-a18a-626d" primary="false"/>
+        <categoryLink id="7932-6c25-6962-8929" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="6d07-cf62-eb34-0b53" name="Battlesuit" hidden="false" targetId="cddc-e90c-2a2c-cc25" primary="false"/>
+        <categoryLink id="020a-794a-4167-edce" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="cb76-3162-0436-4054" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="2dd3-cc39-13a1-f79e" name="Jet Pack" hidden="false" targetId="b9f7-43d5-dd6a-0b50" primary="false"/>
+        <categoryLink id="b604-6df6-fb54-8080" name="Shas&apos;o R&apos;myr" hidden="false" targetId="b609-58b5-5a26-045c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ea6d-3833-dc62-ce70" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecbe-bcff-4d74-c2cf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2723-add2-8d5a-d0c7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2d04-edc9-e2ed-f2fb" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="13ea-b926-6b62-13b0" name="Double-barrelled Plasma Rifle" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc6c-d823-aa30-be77" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1524-d61a-6ef3-51fe" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="48fc-c765-1c48-5d9c" name="Double-barrelled Plasma Rifle" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b23a-501a-561e-f4f0" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2551-894a-4414-da33" name="Cadre Fireblade" hidden="false" collective="false" targetId="1675-2edd-b2c3-6ecd" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c80b-071f-b284-84fd" name="Shas&apos;o R&apos;alai" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="96da-d51e-5e9d-baee" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9d98-813a-49ed-0394" name="Shas&apos;o R&apos;alai" publicationId="e282-a216-345a-e73a" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="efdf-5b48-0450-4dfb" name="The Assassin" publicationId="e282-a216-345a-e73a" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made by this unit that target CHARACTERS.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f5a2-d41b-c036-1bf0" name="Blacklight Marker Drones" publicationId="e282-a216-345a-e73a" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made with ranged weapons by this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bf20-0b3b-a40d-53a1" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="cde0-91f2-2bca-134f" name="Master of War" hidden="false" targetId="a04c-f866-5ae9-ab55" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6d63-b294-5e78-0326" name="Faction: T&apos;au Empire" hidden="false" targetId="0ab2-e0c9-6254-5de7" primary="false"/>
+        <categoryLink id="a5fb-e401-de90-fdf3" name="Commander" hidden="false" targetId="ba97-8cad-a18a-626d" primary="false"/>
+        <categoryLink id="410e-7893-089d-0c11" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="daac-3241-d009-9602" name="Battlesuit" hidden="false" targetId="cddc-e90c-2a2c-cc25" primary="false"/>
+        <categoryLink id="9e63-b2a8-49a3-8097" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="219c-fc75-6fb0-04a0" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="1055-2368-5528-bcf5" name="Jet Pack" hidden="false" targetId="b9f7-43d5-dd6a-0b50" primary="false"/>
+        <categoryLink id="9dc3-8685-3277-564e" name="Faction: Ke&apos;lShan" hidden="false" targetId="1288-81c2-ae48-6093" primary="false"/>
+        <categoryLink id="822e-39fa-4fee-3cc4" name="Shas&apos;o R&apos;alai" hidden="false" targetId="c92e-04c6-04cd-3639" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1a5d-7f6c-0621-c32c" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d1d-208d-2e62-c014" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dea-4a48-fa60-6978" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="68be-509a-fb50-19c3" name="Close Combat Weapons" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="31eb-e442-3086-b713" name="Experimental Pulse Submunitions Rifle" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7506-5867-4782-e9a6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7bc-d2d8-b096-81ff" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="21f4-ae80-fcf0-0c0a" name="Experimental Pulse Submunitions Rifle" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a3c1-7f9e-b0a8-310e" name="Cadre Fireblade" hidden="false" collective="false" targetId="1675-2edd-b2c3-6ecd" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5009,9 +5394,9 @@
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, at the start of the Action Phase, one Commander from your army can declare either Kauyon or Mont’ka:
 
-Kauyon: Until the end of the turn, you can re-roll hit rolls for attacks made with ranged weapons by friendly &lt;Sept&gt; units whilst they are within 12&quot; of the Commander using this ability if they remained stationary this turn.
+Kauyon: Until the end of the turn, you can re-roll hit rolls for attacks made with ranged weapons by friendly &lt;SEPT&gt; units whilst they are within 12&quot; of the COMMANDER using this ability if they remained stationary this turn.
 
-Mont&apos;ka: Until the end of the turn, friendly &lt;Sept&gt; units can make a Shoot action instead of a Fight action whilst they are carrying out an Assault order, if they were within 12&quot; of the Commander using this ability at the start of the Action phase.
+Mont&apos;ka: Until the end of the turn, friendly &lt;SEPT&gt; units can make a Shoot action instead of a Fight action whilst they are carrying out an Assault order, if they were within 12&quot; of the Commander using this ability at the start of the Action phase.
 
 Unless stated otherwise, the Master of War ability can only be used once per battle, irrespective of how many units in your army have this ability.</characteristic>
       </characteristics>
@@ -5019,11 +5404,6 @@ Unless stated otherwise, the Master of War ability can only be used once per bat
     <profile id="786b-87a7-09ef-d92c" name="Failure Is Not an Option" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly T&apos;au Empire units can use this unit&apos;s Leadership characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="9d57-7d9d-1bbb-9845" name="Hover" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-      <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Distances are measured to and from this unit’s hull, even though it has a base.</characteristic>
       </characteristics>
     </profile>
     <profile id="7f30-dd91-5477-6b45" name="Mobile Defence Platform" publicationId="6e11-42ed-c084-ce74" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
