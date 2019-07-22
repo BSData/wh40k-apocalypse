@@ -9451,7 +9451,7 @@
             <entryLink id="1734-2dc9-37aa-f2ef" name="Turbo-laser Destructor" hidden="false" collective="false" targetId="303a-29b7-3c61-41d5" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4b36-be1e-d758-e24b" name="Missiles/Bombs" hidden="false" collective="false">
+        <selectionEntryGroup id="4b36-be1e-d758-e24b" name="Missiles/Bombs" hidden="false" collective="false" defaultSelectionEntryId="1b24-ef0b-b746-2b4f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d459-1b3c-cce4-64cd" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="290c-732e-51fa-79f4" type="max"/>
@@ -10015,6 +10015,9 @@
               <infoLinks>
                 <infoLink id="dab3-3278-f853-508d" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -10025,6 +10028,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4a13-6a66-aa3a-4763" name="Lucius Pattern Dreadnought Drop Pod" hidden="false" collective="false" type="unit">
       <profiles>
@@ -10110,6 +10116,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9e9d-f15a-91fc-215c" name="Deathstorm Missile Array" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -10124,6 +10133,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -10145,6 +10157,7 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c23-b3b1-add9-bcfd" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d5-7be3-926f-8aed" type="max"/>
       </constraints>
       <profiles>
         <profile id="8393-2731-7cb4-aa22" name="Tacticus Bunker" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -10248,6 +10261,9 @@
               <infoLinks>
                 <infoLink id="45f6-2b32-3553-9092" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="53e4-1020-fe4f-eb01" name="Communications Array" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -10260,6 +10276,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -10311,6 +10330,13 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ab4f-5dbc-3c29-87ad" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdaa-4f73-a00f-c63c" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
       </costs>
@@ -10331,6 +10357,9 @@
       <infoLinks>
         <infoLink id="320a-7ab0-649c-1723" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1ccc-77b7-7298-8c9c" name="Castellum Stronghold - Bunker Annex" hidden="false" collective="false" type="unit">
       <modifiers>
