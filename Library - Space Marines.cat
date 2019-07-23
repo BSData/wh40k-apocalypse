@@ -3945,29 +3945,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bfac-55c2-f1a4-838a" name="Assault Squad" hidden="false" collective="false" type="unit">
-      <infoLinks>
-        <infoLink id="62ee-b36c-0c9f-da4f" name="Marine Profile" hidden="false" targetId="9fd5-e263-b9aa-02b7" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Asaullt Squad"/>
-            <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
-              <conditions>
-                <condition field="selections" scope="bfac-55c2-f1a4-838a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdf9-175a-b31b-44a1" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="bfac-55c2-f1a4-838a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
-                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="c343-5f82-950f-1575" name="Assault Squad" hidden="false" targetId="c747-0503-c0a5-151e" primary="false"/>
         <categoryLink id="2888-ab7a-b67c-7a99" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
@@ -3976,8 +3953,67 @@
         <categoryLink id="6362-090f-d3bf-e5e3" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="5ca9-6636-3ada-6e24" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="94e6-ba34-33b4-c763" name="5 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="2fa6-224b-3882-53ed">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b012-f64b-b940-67ff" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3369-7417-c66a-f63b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2fa6-224b-3882-53ed" name="5 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="92a8-63a3-7525-1856" name="Assault Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
+                      <conditions>
+                        <condition field="selections" scope="bfac-55c2-f1a4-838a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6960-2afe-30f4-bfc8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5f48-32f9-4de9-c2a4" name="10 models" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="3d8c-a250-d6fe-67f5" name="Assault Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="606d-344a-bc3d-9dce" value="12&quot;">
+                      <conditions>
+                        <condition field="selections" scope="bfac-55c2-f1a4-838a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6960-2afe-30f4-bfc8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c448-ebe9-bdb3-ea26" name="5 - 10 models" hidden="false" collective="false" targetId="dfca-1772-18d0-ab91" type="selectionEntryGroup"/>
         <entryLink id="2870-d2e8-101e-68ba" name="Bolt Pistols" hidden="false" collective="false" targetId="470f-196a-65be-f649" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a93-0559-9109-92ed" type="min"/>
@@ -4002,7 +4038,7 @@
           <modifiers>
             <modifier type="set" field="e4b0-26df-e9f9-1694" value="2.0">
               <conditions>
-                <condition field="selections" scope="bfac-55c2-f1a4-838a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
+                <condition field="selections" scope="bfac-55c2-f1a4-838a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f48-32f9-4de9-c2a4" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5547,7 +5583,6 @@
         <entryLink id="27ea-d4ec-4463-df0e" name="5 - 10 models" hidden="false" collective="false" targetId="dfca-1772-18d0-ab91" type="selectionEntryGroup"/>
         <entryLink id="4008-fcb3-6ba5-c2d7" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e85-f52b-9aca-3f0b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7600-4c5e-9428-61b5" type="max"/>
           </constraints>
         </entryLink>
@@ -5679,7 +5714,6 @@
         </entryLink>
         <entryLink id="56b5-3f78-dfe0-b1b3" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ac-2489-4da8-0c6e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fce-4ee5-2d2e-6ef6" type="max"/>
           </constraints>
         </entryLink>
@@ -5856,7 +5890,6 @@
       <entryLinks>
         <entryLink id="82fc-c29f-d1cd-3e5a" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c0-d27b-5a81-03e6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ec-d56d-84e9-4de2" type="max"/>
           </constraints>
         </entryLink>
