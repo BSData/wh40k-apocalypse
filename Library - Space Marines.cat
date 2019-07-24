@@ -492,8 +492,27 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="29cb-36f3-3f72-ac2d" name="Bolt Rifles" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="name" value="Deathwatch Bolt Rifles">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="0421-2114-e8ba-1929" name="Bolt Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="bea7-7040-8485-6f0f" value="36&quot;"/>
+                <modifier type="set" field="4b6c-996a-d317-affb" value="9+"/>
+                <modifier type="set" field="name" value="Deathwatch Bolt Rifles"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
@@ -668,7 +687,15 @@
                 <categoryLink id="0876-01d2-4319-186a" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="5c52-e905-faf3-fde6" name="Bike" hidden="false" collective="false" targetId="30e3-b6c8-bb27-a512" type="selectionEntry"/>
+            <entryLink id="5c52-e905-faf3-fde6" name="Bike" hidden="false" collective="false" targetId="30e3-b6c8-bb27-a512" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="7fba-2973-ecc6-4cdb" name="Terminator Armour" hidden="false" collective="false" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -854,6 +881,13 @@
               </categoryLinks>
             </entryLink>
             <entryLink id="2355-a38b-5c67-7bba" name="Bike" hidden="false" collective="false" targetId="30e3-b6c8-bb27-a512" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="6bd2-09db-f652-e766" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
               </categoryLinks>
@@ -2740,12 +2774,30 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3210-df3e-378c-3d70" name="Bolt Carbines" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="name" value="Deathwatch Bolt Carbines">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a1a-8c21-b52b-6f94" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fba-048a-18b3-2ea7" type="max"/>
       </constraints>
       <profiles>
         <profile id="57fd-936a-e078-5b3d" name="Bolt Carbines" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="bea7-7040-8485-6f0f" value="30&quot;"/>
+                <modifier type="set" field="name" value="Deathwatch Bolt Carbines"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
@@ -2761,12 +2813,30 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="35bb-c4c0-0e46-cd22" name="Heavy Bolt Pistols" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="name" value="Deathwatch Heavy Bolt Pistols">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b568-69f1-c93b-4aa1" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d917-5b84-280f-2561" type="max"/>
       </constraints>
       <profiles>
         <profile id="59e3-9f4a-f4a8-49d8" name="Heavy Bolt Pistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="bea7-7040-8485-6f0f" value="15&quot;"/>
+                <modifier type="set" field="name" value="Deathwatch Heavy Bolt Pistols"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
@@ -5415,26 +5485,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7509-f9f0-af22-cfc7" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e524-2604-12e0-95f9" name="Cyclone Missile Launcher" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05b6-16a5-a2c2-a3c1" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="facf-3229-3f5e-1a55" name="Cyclone Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="fa29-51b7-86fc-69a4" name="Reaper Autocannon" hidden="false" collective="false" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6115-bb14-dc4c-dae2" type="max"/>
@@ -5471,6 +5521,11 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0107-7a7a-579d-fefe" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5e57-657b-a63c-fdf4" name="Cyclone Missile Launcher" hidden="false" collective="false" targetId="098d-bedf-91b5-c61b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d48b-96de-3adc-9ac0" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -10486,6 +10541,23 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="098d-bedf-91b5-c61b" name="Cyclone Missile Launcher" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="3903-c05b-9c12-0bd6" name="Cyclone Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="dfca-1772-18d0-ab91" name="5 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="12ba-b224-c129-7243">
@@ -10497,9 +10569,21 @@
         <entryLink id="12ba-b224-c129-7243" name="5 Models" hidden="false" collective="false" targetId="b91b-0612-96f4-e29d" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="1466-da3f-0d27-dace" value="7.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01f6-1948-b1ea-e57a" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01f6-1948-b1ea-e57a" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd27-33f2-0ec4-544f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="4.0">
               <conditionGroups>
@@ -10522,9 +10606,14 @@
               </conditions>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd27-33f2-0ec4-544f" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd27-33f2-0ec4-544f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="3.0">
               <conditionGroups>
@@ -10576,14 +10665,31 @@
               </conditionGroups>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="12.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d67-81da-d95d-adb3" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d67-81da-d95d-adb3" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd27-33f2-0ec4-544f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="11.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd27-33f2-0ec4-544f" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd27-33f2-0ec4-544f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e02e-4d8f-946c-6550" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
               <conditions>
