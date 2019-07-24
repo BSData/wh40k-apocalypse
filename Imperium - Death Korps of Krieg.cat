@@ -1,61 +1,1346 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="08cc-2f74-3bde-6cc7" name="Imperium - Death Korps of Krieg" revision="1" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="08cc-2f74-3bde-6cc7" name="Imperium - Death Korps of Krieg" revision="3" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry id="d0d8-2592-6ea9-5c0e" name="Death Korps Marshal Karis Venner" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="cb7f-4037-47e1-436f" name="Death Korps Mashal" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="08bf-fe0d-6b60-1550" name="Death Korps Field Officer" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="a483-6960-c005-6510" name="Death Korps Death Rider Squadron Commander" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="f2d1-365f-7600-7731" name="Death Korps Infantry Squad" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="8cd6-d876-2ff0-44d5" name="Death Korps Grenadier Storm Squad" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="9f0a-8156-dd02-4a1d" name="Death Korps Centaur Light Assault Carrier" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="83f6-276e-0b33-fd0f" name="Death Korps of Krieg Storm Chimera" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="dc96-c9a8-1f9c-d157" name="Death Korps of Krieg Command Squad" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="efd9-cd57-9d5e-9cf6" name="Death Korps Combat Engineer Squad" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="1cdb-4f0c-5b6d-db70" name="Death Korps Commissar" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="c308-79fa-7ba4-4414" name="Death Korps of Krieg Hades Breaching Drill Squadron" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="cf49-c1ff-f303-0532" name="Death Korps Quartermaster Cadre" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="70f0-2463-219c-957d" name="Death Korps Death Rider Command Squadron" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="9bb5-3138-1114-cebc" name="Death Korps Death Rider Commissar" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="68ee-8d70-8098-0db7" name="Death Korps Death Rider Squadron" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="1051-3a08-8d83-8ae8" name="Death Korps Heavy Weapons Squad" hidden="false" collective="false" type="upgrade"/>
-    <selectionEntry id="b3a3-39cb-fe4c-7294" name="Death Korps Leman Russ Mars-Alpha Battle Tank" hidden="false" collective="false" type="upgrade"/>
+    <selectionEntry id="d0d8-2592-6ea9-5c0e" name="Death Korps Marshal Karis Venner" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="5886-ada6-a5e0-f84e" name="Death Korps Marshal Karis Venner" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97dd-0593-c595-ca12" name="Command-in-Chief" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly Death Korps of Krieg units can use this unit’s Leadership
+characteristic instead of their own whilst they are within 12&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e601-4539-5de8-71f7" name="Momento Mori" hidden="false" targetId="e521-45e6-bdbd-549d" type="profile"/>
+        <infoLink id="b9d1-b8dc-401f-b3be" name="Officer" hidden="false" targetId="29b8-aa23-5c9f-5917" type="profile"/>
+        <infoLink id="0dca-7a36-9f0f-799d" name="Officer Weapons" hidden="false" targetId="caef-f710-d0de-c438" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bff3-b36f-2ca4-3bf2" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb7f-4037-47e1-436f" name="Death Korps Mashal" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="bc58-0966-5614-4ca7" name="Death Korps Mashal" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3499-4855-8017-b726" name="Officer Weapons" hidden="false" targetId="caef-f710-d0de-c438" type="profile"/>
+        <infoLink id="35cf-912c-eefc-27a0" name="Officer" hidden="false" targetId="29b8-aa23-5c9f-5917" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5679-eb63-b3ce-8fb5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3973-cc7f-3f64-97da" name="Momento Mori" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d795-d690-0820-0cd9" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a7c5-9cd2-1a72-c37c" name="Momento Mori" hidden="false" targetId="e521-45e6-bdbd-549d" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="08bf-fe0d-6b60-1550" name="Death Korps Field Officer" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="39e4-2cdb-b174-2e0a" name="Death Korps Field Officer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="617c-e2a7-2e38-9927" name="Field Officer Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="91b4-381b-6135-c5d4" name="Officer" hidden="false" targetId="29b8-aa23-5c9f-5917" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d8e2-b3e6-e12f-9bc2" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a483-6960-c005-6510" name="Death Korps Death Rider Squadron Commander" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="8254-7a9d-74f0-62fb" name="Death Korps Death Rider Squadron Commander" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="af7e-13d1-bac4-8ee6" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4845-ab8e-96eb-57e1" name="Officer" hidden="false" targetId="29b8-aa23-5c9f-5917" type="profile"/>
+        <infoLink id="7a12-6527-feff-55be" name="Death Korps Hunting Lance" hidden="false" targetId="179b-def6-2e2d-0aa6" type="profile"/>
+        <infoLink id="d68b-269b-0af2-6a1c" name="Augmented Mount" hidden="false" targetId="106c-0e9b-6219-e7e3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4743-dca6-3cf2-e7e7" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2d1-365f-7600-7731" name="Death Korps Infantry Squad" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="b100-9c96-e51c-5075" name="Death Korps Infantry Squad (10 Models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3653-4f2e-941f-7e54" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
+        <infoLink id="e90d-09ae-8869-c8a2" name="Lasguns" hidden="false" targetId="768f-8e47-43bb-f441" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b9d7-ba28-def4-9a94" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a592-a5ea-a5d2-7ccc" name="Platoon Standard" hidden="false" collective="false" targetId="4293-2618-aa1c-8082" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cd6-d876-2ff0-44d5" name="Death Korps Grenadier Storm Squad" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c24d-72eb-75a4-5ce9" name="Death Korps Grenadier Storm Squad (4/5 Models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2">
+              <conditions>
+                <condition field="selections" scope="8cd6-d876-2ff0-44d5" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fa08-e50c-6ae3-46a2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="7c7f-f763-1f39-410c" value="2">
+              <conditions>
+                <condition field="selections" scope="8cd6-d876-2ff0-44d5" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fa08-e50c-6ae3-46a2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Death Korps Grenadier Storm Squad (9/10 models)">
+              <conditions>
+                <condition field="selections" scope="8cd6-d876-2ff0-44d5" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fa08-e50c-6ae3-46a2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f4dd-21b6-7968-954c" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
+        <infoLink id="6de3-1a0d-3f0f-806b" name="Hot-shot Lasguns" hidden="false" targetId="0a3c-1509-a7d1-188e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e5ba-3d18-40dd-894d" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="730e-c68b-a700-6152" name="Heavy Flamer Team" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f36d-e47f-9211-ae1f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9975-55ea-d855-00b8" name="Heavy Flamer" hidden="false" targetId="bf3a-9de0-4260-4d1c" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fa08-e50c-6ae3-46a2" name="5 additional Grenadiers" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ff2-d3e1-b6e4-0220" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f0a-8156-dd02-4a1d" name="Death Korps Centaur Light Assault Carrier" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="ce6f-b818-c441-df4a" name="Assault Team Transport" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a Death Korps Grenadier Storm Squad unit is set up embarked
+aboard this unit during deployment, this unit has the Infiltrators ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b0c3-5508-2292-a5cf" name="Artillery Tractor" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Move action, you can select one friendly Death Korps of Krieg Artillery unit from the same Detachment that is within 3&quot; of this unit, as long as that unit has not made a Move action this turn, and neither unit is within 1&quot; of any enemy units. Change the Move characteristic of that unit to 12&quot; until the end of the turn. If that unit makes a Move action this turn, it must end that move within 1&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d00d-7748-c5d3-12b6" name="Death Korps Centaur Light Assault Carrier" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e03b-1ab6-6abd-4268" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 5 Astra Militarum Infantry models. Each weapons team model takes the space of 2 other Infantry models and each Ogryn model takes the space of 3 other Infantry models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8283-1f63-c43b-c58f" name="Armoured Hull" hidden="false" targetId="84c7-3c1c-e2f5-588b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b032-a9c4-5146-ca3f" name="New CategoryLink" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7516-9708-1d23-6d7d" name="2x Heavy Stubber" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba7-5a04-8be1-2b39" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9438-4691-f189-fba4" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fded-17b6-4f80-c616" name="Heavy Stubber" hidden="false" targetId="e327-bd95-4063-4659" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="83f6-276e-0b33-fd0f" name="Death Korps of Krieg Storm Chimera" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="3afa-c838-d029-ffed" name="Death Korps of Krieg Storm Chimera" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a020-c1d0-9765-2b84" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 Astra Militarum Infantry models. Each weapons team model takes the space of 2 other Infantry models and each Ogryn model takes the space of 3 other Infantry models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="989c-a9f4-73af-b8b2" name="Lasgun Array" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1aee-907f-f3be-f693" name="Armoured Hull" hidden="false" targetId="84c7-3c1c-e2f5-588b" type="profile"/>
+        <infoLink id="20e0-2d99-6757-60ba" name="Autocannon" hidden="false" targetId="23ea-d37a-0fa4-4c03" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b6c1-08a4-1b50-f483" name="New CategoryLink" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="32a8-de91-8310-b26f" name="Ablative Storm Armour and Mine Plough" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="1885-d72f-c159-fa90" name="Ignore Damage (6+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c378-625d-c1b8-3b26" name="Hull Weapon" hidden="false" collective="false" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup"/>
+        <entryLink id="c0ca-696b-e175-973d" name="Pintle Weapon" hidden="false" collective="false" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc96-c9a8-1f9c-d157" name="Death Korps of Krieg Command Squad" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="80e5-26aa-c828-99ea" name="Death Korps of Krieg Command Squad (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a2aa-dc05-b436-d9d2" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
+        <infoLink id="57c6-0dca-009c-9306" name="Lasguns" hidden="false" targetId="768f-8e47-43bb-f441" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dd31-25b9-874c-876e" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="44f7-7bd8-b5d5-863a" name="This unit can have one of the following" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7e-5e03-595e-26e3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6036-3d77-739c-e6c3" name="Regimental Standard" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d785-aa4e-97e2-35b8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7822-3199-d661-dc31" name="Regimental Standard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of Death Korps of Krieg units
+whilst they are within 6&quot; of any friendly Death Korps of Krieg units with a Regimental Standard.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="fc2c-30a2-a601-d020" name="Platoon Standard" hidden="false" collective="false" targetId="4293-2618-aa1c-8082" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="efd9-cd57-9d5e-9cf6" name="Death Korps Combat Engineer Squad" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="ec53-7ac5-77f8-0ab9" name="Death Korps Combat Engineer Squad (4/5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2">
+              <conditions>
+                <condition field="selections" scope="efd9-cd57-9d5e-9cf6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0ef7-376b-a218-bd1c" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Death Korps Combat Engineer Squad (9/10 models)">
+              <conditions>
+                <condition field="selections" scope="efd9-cd57-9d5e-9cf6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0ef7-376b-a218-bd1c" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="7c7f-f763-1f39-410c" value="2">
+              <conditions>
+                <condition field="selections" scope="efd9-cd57-9d5e-9cf6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0ef7-376b-a218-bd1c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ffcc-ded4-f878-c1f9" name="Krieg Combat Shotguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6970-996a-2a25-1b7a" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0247-2c90-e513-1a1c" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0ef7-376b-a218-bd1c" name="5 Additional Engineers" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e29-5bcf-6a2b-931d" type="max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="eae8-7e4f-cb65-19dd" name="Heavy Weapons Team" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa0b-a575-fa1d-d198" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4ee5-0c06-92a8-65bc" name="Heavy Weapons" hidden="false" collective="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a4-7747-f75e-2c72" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebdf-c64a-509c-3278" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="f068-7257-7752-7e5a" name="Mole Launcher" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d8b-ee09-e6b3-43ea" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="9b1d-3324-8a96-7424" name="Mole Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="7f90-d813-aad1-e314" name="Heavy Flamer" hidden="false" collective="false" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="105c-6c68-486b-feb5" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="647e-0256-14ea-db79" name="Heavy Flamer" hidden="false" targetId="bf3a-9de0-4260-4d1c" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1cdb-4f0c-5b6d-db70" name="Death Korps Commissar" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="734e-be49-d36e-66b6" name="Death Korps Commissar" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7adb-a773-5261-1c28" name="Aura of Discipline" hidden="false" targetId="06db-6c39-4cf4-efa7" type="profile"/>
+        <infoLink id="43ef-fe24-810c-f265" name="Commissar Weapons" hidden="false" targetId="4c1f-561a-c303-95cb" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8d4d-8374-7f86-dd44" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c308-79fa-7ba4-4414" name="Death Korps of Krieg Hades Breaching Drill Squadron" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="5682-2e69-3a14-e13e" name="Fortification Breacher" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes an attack with its Melta-cutter Drill that targets a Building, add the Destroyer ability to its Melta-cutter Drill for that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="12af-bbd7-11e6-1de7" name="Melta Cutter Drill" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+        <profile id="f571-69ab-6104-9ea3" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+        <profile id="5aab-a173-385f-e6ee" name="Shotguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+        <profile id="bdc0-b89d-0ad2-59a0" name="Death Korps of Krieg Hades Breaching Drill Squadron (11 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8fff-9b93-f49c-dafc" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dd1a-2ee8-1713-7ace" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf49-c1ff-f303-0532" name="Death Korps Quartermaster Cadre" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="1052-9384-40f1-d6cb" name="Death Korps Quartermaster Cadre (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2">
+              <conditions>
+                <condition field="selections" scope="cf49-c1ff-f303-0532" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="5b4a-f3e7-d1af-c6e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Death Korps Quartermaster Cadre (5 models)">
+              <conditions>
+                <condition field="selections" scope="cf49-c1ff-f303-0532" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b4a-f3e7-d1af-c6e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8d79-cb59-8395-d92f" name="Vitae Mortis" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly Death Korps of Krieg Infantry and Death Korps of Krieg
+Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b381-91f0-ab76-ce80" name="Close Combat weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e254-8800-febb-82d1" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5b4a-f3e7-d1af-c6e5" name="2 Additional servitors" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1468-6cff-2c86-1ad6" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="70f0-2463-219c-957d" name="Death Korps Death Rider Command Squadron" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="88b5-6041-4faa-30c6" name="Flanking Manoeuvres" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit is set up in Tactical Reserves using the Deep Strike rule, you can also set up up to 5 other Death Korps of Krieg Death Rider units in Tactical Reserve. When this unit arrives as reinforcements, in addition to the normal Deep Strike restrictions it must be set up wholly within 7&quot; of a battlefield edge. Any other units set up in Tactical Reserve at the same time as this unit using this rule are then set up following the same restrictions, and within 6&quot; of this model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c924-f69b-6c98-d410" name="Death Korps Death Rider Command Squadron (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e360-9455-40ea-fae4" name="Augmented Mount" hidden="false" targetId="106c-0e9b-6219-e7e3" type="profile"/>
+        <infoLink id="a741-38e0-3217-f0ad" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
+        <infoLink id="8d3c-77d7-fbe7-5a30" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="9ce3-69c7-4dd0-20de" name="Laspistols" hidden="false" targetId="64e5-c6e5-9739-fcaf" type="profile"/>
+        <infoLink id="da9e-72be-4642-8a9e" name="Death Korps Hunting Lances" hidden="false" targetId="2d8c-ae7e-c774-211a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a51e-8a3f-a8a8-dc92" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9bb5-3138-1114-cebc" name="Death Korps Death Rider Commissar" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="df8a-7014-6cf4-21d9" name="Death Korps Death Rider Commissar" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bb27-3fc1-5cd5-e2f3" name="Commissar Weapons" hidden="false" targetId="4c1f-561a-c303-95cb" type="profile"/>
+        <infoLink id="344d-fd59-f73b-a83d" name="Augmented Mount" hidden="false" targetId="106c-0e9b-6219-e7e3" type="profile"/>
+        <infoLink id="6b78-9391-e4c5-6d89" name="Aura of Discipline" hidden="false" targetId="06db-6c39-4cf4-efa7" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d00d-2108-aceb-4e7a" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="68ee-8d70-8098-0db7" name="Death Korps Death Rider Squadron" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="b624-f379-3804-0c29" name="Death Korps Death Rider Squadron (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2">
+              <conditions>
+                <condition field="selections" scope="68ee-8d70-8098-0db7" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="18c6-d2fb-62b2-08be" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Death Korps Death Rider Squadron (10 models)">
+              <conditions>
+                <condition field="selections" scope="68ee-8d70-8098-0db7" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="18c6-d2fb-62b2-08be" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="7c7f-f763-1f39-410c" value="2">
+              <conditions>
+                <condition field="selections" scope="68ee-8d70-8098-0db7" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="18c6-d2fb-62b2-08be" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7094-0ca5-3b5a-f1c2" name="Laspistols" hidden="false" targetId="64e5-c6e5-9739-fcaf" type="profile"/>
+        <infoLink id="bbf9-4a9b-7f8c-8fa3" name="Death Korps Hunting Lances" hidden="false" targetId="2d8c-ae7e-c774-211a" type="profile"/>
+        <infoLink id="1fd3-2032-6073-6312" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
+        <infoLink id="2ccc-e067-0f6d-1cb8" name="Augmented Mount" hidden="false" targetId="106c-0e9b-6219-e7e3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e9b8-2f09-fac1-4997" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="18c6-d2fb-62b2-08be" name="5 Additional Riders" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1051-3a08-8d83-8ae8" name="Death Korps Heavy Weapons Squad" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="7ae0-cab0-1ca9-2fc7" name="Death Korps Heavy Weapons Squad (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e15e-2487-b30f-16cc" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e9f1-bd83-5567-2b68" name="Heavy Weapons Team" hidden="false" collective="false" targetId="fc63-c69d-a1c5-86fc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e49-f2a2-ca23-4581" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f5f-d619-1f82-18e3" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4816-6e22-6972-c3b5" name="Death Korps Leman Russ Mars-Alpha Battle Tank" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="0bc0-d01c-a409-edcf" name="Death Korps Leman Russ Mars-Alpha Battle Tank" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="444d-afd5-2eeb-af5d" name="Ignores Damage (6+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3fe4-19d6-faf9-3f0f" name="Tank Squadron" hidden="false" targetId="a437-a863-2fd2-bad0" type="profile"/>
+        <infoLink id="966e-c9f3-0bd0-af88" name="Grinding Advance" hidden="false" targetId="7b3f-ddab-6d2b-674a" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="1c3d-43a5-2fd9-c78f" name="Grinding Tracks" hidden="false" collective="false" targetId="bd97-52de-276d-96b1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c395-d3f6-5188-867e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2222-58b5-a3bb-ea3b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f845-9c38-dc08-536a" name="Turret Weapon" hidden="false" collective="false" targetId="8386-952d-9ae7-e3b2" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc2a-f4f9-7b55-aa83" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c5e-b58c-5945-5a03" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f1f2-4200-3f97-f57a" name="Hull Weapon" hidden="false" collective="false" targetId="0534-53f6-6df7-ef45" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8376-50bd-df45-3ad1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56db-a755-c1a6-36d8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="52c7-0d30-48a5-de88" name="Sponsons" hidden="false" collective="false" targetId="d206-5572-9576-566a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee01-cf51-1a62-bf11" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a02d-f742-fac6-4ef6" name="Pintle Weapon" hidden="false" collective="false" targetId="a9bf-3be4-80b5-25eb" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fc5-c466-a08c-6d46" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="2f81-1335-828f-6153" name="Tank Commander" hidden="false" collective="false" targetId="882f-8841-6c41-a147" type="selectionEntry"/>
-    <entryLink id="5994-30ed-7cce-886b" name="Atlas Recovery Tank" hidden="false" collective="false" targetId="1f05-9e28-bea2-5d2a" type="selectionEntry"/>
-    <entryLink id="c926-b803-91c0-9394" name="Master of Ordnance" hidden="false" collective="false" targetId="1b1a-095d-a2a9-1c93" type="selectionEntry"/>
-    <entryLink id="6d28-210f-8b08-745e" name="Hellhound" hidden="false" collective="false" targetId="05a5-a51f-14b2-dba3" type="selectionEntry"/>
-    <entryLink id="b217-af75-7173-f66e" name="Salamander Scout Tank" hidden="false" collective="false" targetId="4e7a-93c2-e2fa-d5ac" type="selectionEntry"/>
-    <entryLink id="ed81-e22e-ca40-b7a4" name="Armageddon Pattern Medusa" hidden="false" collective="false" targetId="f3b7-bd4c-3da3-fc50" type="selectionEntry"/>
-    <entryLink id="bbdc-aa08-dd1a-181b" name="Basilisk" hidden="false" collective="false" targetId="56a3-3248-0189-622a" type="selectionEntry"/>
-    <entryLink id="3ad5-b47d-ea47-7c03" name="Colossus Bombard" hidden="false" collective="false" targetId="c58f-0f00-a8f3-21f7" type="selectionEntry"/>
-    <entryLink id="c5fb-7667-6b87-dcfb" name="Cyclops Demolition Vehicle" hidden="false" collective="false" targetId="8b0d-256a-a713-f6c7" type="selectionEntry"/>
-    <entryLink id="8024-00ed-5b6c-fdf9" name="Earthshaker Carriage Battery" hidden="false" collective="false" targetId="9582-2a79-7cda-e385" type="selectionEntry"/>
-    <entryLink id="6151-9bdd-1fe7-7437" name="Griffon Mortar Carrier" hidden="false" collective="false" targetId="4e57-2e51-0e17-dac5" type="selectionEntry"/>
-    <entryLink id="4990-d4a6-fa53-3d34" name="Heavy Mortar" hidden="false" collective="false" targetId="23aa-209f-b675-fda0" type="selectionEntry"/>
-    <entryLink id="4552-3f84-c33e-6631" name="Heavy Quad Launcher" hidden="false" collective="false" targetId="b363-189e-f062-b976" type="selectionEntry"/>
-    <entryLink id="79a0-ca9d-8736-c056" name="Hydra" hidden="false" collective="false" targetId="b867-ac66-149f-9edf" type="selectionEntry"/>
-    <entryLink id="4625-d777-357f-26cd" name="Malcador Annihilator" hidden="false" collective="false" targetId="cf75-1018-c977-a146" type="selectionEntry"/>
-    <entryLink id="f333-98a3-af50-253c" name="Malcador Defender" hidden="false" collective="false" targetId="2836-6d9c-fccb-9292" type="selectionEntry"/>
-    <entryLink id="9206-9582-ee98-05e6" name="Malcador Heavy Tank" hidden="false" collective="false" targetId="2dd3-f632-39e2-5742" type="selectionEntry"/>
-    <entryLink id="9903-ff8b-cc58-6b27" name="Malcador Infernus" hidden="false" collective="false" targetId="8c82-1cf8-8c0f-2b9b" type="selectionEntry"/>
-    <entryLink id="bb52-611b-d91a-9087" name="Medusa Carriage" hidden="false" collective="false" targetId="46c2-aaa9-8c4e-7a1f" type="selectionEntry"/>
-    <entryLink id="b6dc-7051-435e-6091" name="Rapier Laser Destroyer" hidden="false" collective="false" targetId="da58-29ef-714c-eb47" type="selectionEntry"/>
-    <entryLink id="7c23-aea2-8942-75ac" name="Stygies Destroyer Tank Hunter" hidden="false" collective="false" targetId="cc4b-cc42-0af6-d0fc" type="selectionEntry"/>
-    <entryLink id="83fc-5262-996e-628c" name="Stygies Thunderer Siege Tank" hidden="false" collective="false" targetId="d30f-0a7e-8156-8c2c" type="selectionEntry"/>
-    <entryLink id="2f81-8024-948b-c9b0" name="Centaur Light Carrier" hidden="false" collective="false" targetId="b63d-05b4-e43b-26a9" type="selectionEntry"/>
-    <entryLink id="313c-7962-e9c8-a7e9" name="Trojan Support Vehicle" hidden="false" collective="false" targetId="0c8f-ec28-4f55-87aa" type="selectionEntry"/>
-    <entryLink id="b362-622e-771e-13aa" name="Arkurian Pattern Stormblade" hidden="false" collective="false" targetId="61ed-bfdf-cfa5-2c6d" type="selectionEntry"/>
-    <entryLink id="e0f7-0317-6690-a693" name="Baneblade" hidden="false" collective="false" targetId="b731-6641-ff27-d8b4" type="selectionEntry"/>
-    <entryLink id="c618-456b-05c2-e853" name="Gorgon Heavy Transporter" hidden="false" collective="false" targetId="0c76-187f-3e6d-b5cf" type="selectionEntry"/>
-    <entryLink id="f9ce-885b-f24a-bdd5" name="Macharius Heavy Tank" hidden="false" collective="false" targetId="ff20-5c3c-a798-08c9" type="selectionEntry"/>
-    <entryLink id="f8ec-ac11-e411-f643" name="Macharius Omega" hidden="false" collective="false" targetId="9652-e280-1759-b921" type="selectionEntry"/>
-    <entryLink id="80b9-4634-ad81-3473" name="Macharius Vanquisher" hidden="false" collective="false" targetId="14b4-3376-467f-c639" type="selectionEntry"/>
-    <entryLink id="00f0-c05b-d82d-4fa0" name="Macharius Vulcan" hidden="false" collective="false" targetId="a579-474b-306b-0a8c" type="selectionEntry"/>
-    <entryLink id="8a0e-a673-896c-c5db" name="Minotaur Artillery Tank" hidden="false" collective="false" targetId="4046-05b7-268e-1c78" type="selectionEntry"/>
-    <entryLink id="8653-8f9a-1e2b-6d7d" name="Shadowsword" hidden="false" collective="false" targetId="61f5-ed5a-0cc2-1976" type="selectionEntry"/>
-    <entryLink id="5c69-5986-8d75-6dc8" name="Stormsword" hidden="false" collective="false" targetId="e6eb-f9a4-3a09-1eaf" type="selectionEntry"/>
+    <entryLink id="2f81-1335-828f-6153" name="Tank Commander" hidden="false" collective="false" targetId="882f-8841-6c41-a147" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3a3e-e33e-1cb9-bb59" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5994-30ed-7cce-886b" name="Atlas Recovery Tank" hidden="false" collective="false" targetId="1f05-9e28-bea2-5d2a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c988-fc72-4d13-98ac" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c926-b803-91c0-9394" name="Master of Ordnance" hidden="false" collective="false" targetId="1b1a-095d-a2a9-1c93" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d0ef-0344-d0f1-fb8f" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6d28-210f-8b08-745e" name="Hellhound" hidden="false" collective="false" targetId="05a5-a51f-14b2-dba3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9cdd-cc06-ec79-ded6" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b217-af75-7173-f66e" name="Salamander Scout Tank" hidden="false" collective="false" targetId="4e7a-93c2-e2fa-d5ac" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e748-a952-4dd5-d4ac" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ed81-e22e-ca40-b7a4" name="Armageddon Pattern Medusa" hidden="false" collective="false" targetId="f3b7-bd4c-3da3-fc50" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7537-bde7-b5d0-30de" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bbdc-aa08-dd1a-181b" name="Basilisk" hidden="false" collective="false" targetId="56a3-3248-0189-622a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6309-70a7-72ce-5b44" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3ad5-b47d-ea47-7c03" name="Colossus Bombard" hidden="false" collective="false" targetId="c58f-0f00-a8f3-21f7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="23e3-2319-7237-04c0" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c5fb-7667-6b87-dcfb" name="Cyclops Demolition Vehicle" hidden="false" collective="false" targetId="8b0d-256a-a713-f6c7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c282-1292-8d75-67fa" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8024-00ed-5b6c-fdf9" name="Earthshaker Carriage Battery" hidden="false" collective="false" targetId="9582-2a79-7cda-e385" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8451-1a21-8c2e-d936" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6151-9bdd-1fe7-7437" name="Griffon Mortar Carrier" hidden="false" collective="false" targetId="4e57-2e51-0e17-dac5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="110d-e807-8d76-fa57" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4990-d4a6-fa53-3d34" name="Heavy Mortar" hidden="false" collective="false" targetId="23aa-209f-b675-fda0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3bec-82d1-5958-b030" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4552-3f84-c33e-6631" name="Heavy Quad Launcher" hidden="false" collective="false" targetId="b363-189e-f062-b976" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6d1d-a0d5-bbfd-e7f1" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="79a0-ca9d-8736-c056" name="Hydra" hidden="false" collective="false" targetId="b867-ac66-149f-9edf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0641-1e7c-f7af-be5d" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4625-d777-357f-26cd" name="Malcador Annihilator" hidden="false" collective="false" targetId="cf75-1018-c977-a146" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="67df-a557-938b-493a" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f333-98a3-af50-253c" name="Malcador Defender" hidden="false" collective="false" targetId="2836-6d9c-fccb-9292" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1392-850e-1617-2dd9" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9206-9582-ee98-05e6" name="Malcador Heavy Tank" hidden="false" collective="false" targetId="2dd3-f632-39e2-5742" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c4bd-98bc-5d34-18bc" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9903-ff8b-cc58-6b27" name="Malcador Infernus" hidden="false" collective="false" targetId="8c82-1cf8-8c0f-2b9b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e23c-6cb8-4c88-c941" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bb52-611b-d91a-9087" name="Medusa Carriage" hidden="false" collective="false" targetId="46c2-aaa9-8c4e-7a1f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e52f-5b3a-08ae-a492" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b6dc-7051-435e-6091" name="Rapier Laser Destroyer" hidden="false" collective="false" targetId="da58-29ef-714c-eb47" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e593-ff30-3c3b-03c1" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7c23-aea2-8942-75ac" name="Stygies Destroyer Tank Hunter" hidden="false" collective="false" targetId="cc4b-cc42-0af6-d0fc" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7bb4-bccf-4caf-c554" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="83fc-5262-996e-628c" name="Stygies Thunderer Siege Tank" hidden="false" collective="false" targetId="d30f-0a7e-8156-8c2c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3f0b-9ccc-8c8e-19e0" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2f81-8024-948b-c9b0" name="Centaur Light Carrier" hidden="false" collective="false" targetId="b63d-05b4-e43b-26a9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f6e4-ca61-7d74-48e4" name="New CategoryLink" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="313c-7962-e9c8-a7e9" name="Trojan Support Vehicle" hidden="false" collective="false" targetId="0c8f-ec28-4f55-87aa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c8e9-7ad1-fd9b-f60e" name="New CategoryLink" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b362-622e-771e-13aa" name="Arkurian Pattern Stormblade" hidden="false" collective="false" targetId="61ed-bfdf-cfa5-2c6d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="73e1-4063-af8a-a2bc" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e0f7-0317-6690-a693" name="Baneblade" hidden="false" collective="false" targetId="b731-6641-ff27-d8b4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b3b8-ffd6-359d-1b51" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c618-456b-05c2-e853" name="Gorgon Heavy Transporter" hidden="false" collective="false" targetId="0c76-187f-3e6d-b5cf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="edae-3746-ad19-beae" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f9ce-885b-f24a-bdd5" name="Macharius Heavy Tank" hidden="false" collective="false" targetId="ff20-5c3c-a798-08c9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="024f-9e1a-a2b2-1785" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f8ec-ac11-e411-f643" name="Macharius Omega" hidden="false" collective="false" targetId="9652-e280-1759-b921" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cd2d-8f64-fc5c-c63c" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="80b9-4634-ad81-3473" name="Macharius Vanquisher" hidden="false" collective="false" targetId="14b4-3376-467f-c639" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4223-3113-c690-e603" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="00f0-c05b-d82d-4fa0" name="Macharius Vulcan" hidden="false" collective="false" targetId="a579-474b-306b-0a8c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f3ba-fb34-b5fd-c3f6" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8a0e-a673-896c-c5db" name="Minotaur Artillery Tank" hidden="false" collective="false" targetId="4046-05b7-268e-1c78" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f825-90ae-8634-3ac0" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8653-8f9a-1e2b-6d7d" name="Shadowsword" hidden="false" collective="false" targetId="61f5-ed5a-0cc2-1976" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d8b8-c7e1-3279-5385" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5c69-5986-8d75-6dc8" name="Stormsword" hidden="false" collective="false" targetId="e6eb-f9a4-3a09-1eaf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5c7a-21f6-a3b2-e522" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="fc63-c69d-a1c5-86fc" name="Heavy Weapons Team" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e41f-0563-ce4a-6a2d" type="max"/>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a0e-bd80-ba67-956f" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="e55e-61b8-bee2-377e" name="Weapons Teams" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">For the purposes of determining what models a unit can transport, models in this unit are weapons team models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4e11-4792-c013-8f74" name="Close Combat Weapons" hidden="false" targetId="619d-027a-996d-47d3" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="36fe-cdc1-5e62-778d" name="Heavy Weapons" hidden="false" collective="false" defaultSelectionEntryId="2221-c4f6-761f-5bd6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fb9-8b38-954c-1dee" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bde-4766-5b41-7a4a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ffd4-6637-0f95-f33b" name="Mortar" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aec2-ff42-5ae3-f496" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8cad-a25c-a70f-a1f7" name="Mortar" hidden="false" targetId="c2e2-a2fc-d2e8-d04a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3491-bca0-271b-2c10" name="Missile Launcher" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8da0-4ea7-45bf-5a7c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4712-0e7d-2c0b-1be4" name="Missile Launcher" hidden="false" targetId="280f-60f8-d06f-1ef0" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2221-c4f6-761f-5bd6" name="Heavy Bolter" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047c-97cd-8427-dbc4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="94ef-b552-cce3-32e5" name="Heavy Bolter" hidden="false" targetId="6518-4d8e-d396-ae28" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7097-c994-0de0-a5dc" name="Twin Heavy Stubber" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="629a-1317-8752-6ccb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="34ff-6117-ec61-d9fb" name="Twin Heavy Stubber" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="dd59-5040-e0f4-f0c0" name="Lascannon" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aed-2531-84cc-ea69" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7743-97fb-22b1-9488" name="Lascannon" hidden="false" targetId="0941-21a3-452e-58c3" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="a892-89b8-a7a4-1b27" name="Heavy Flamer" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="507b-776e-910b-e399" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ca71-b58d-82f5-cbe6" name="Heavy Flamer" hidden="false" targetId="bf3a-9de0-4260-4d1c" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="7c64-e2ef-c324-1484" name="Autocannon" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b860-b284-33c8-78c9" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0d94-6171-4d4e-68af" name="Autocannon" hidden="false" targetId="23ea-d37a-0fa4-4c03" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4293-2618-aa1c-8082" name="Platoon Standard" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edf9-4422-009b-e548" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e813-4b34-3646-1270" name="Platoon Standard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to the Leadership characteristic of Death Korps of Krieg units whilst they are within 6&quot; of any friendly Death Korps of Krieg units with a Platoon Standard.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="8386-952d-9ae7-e3b2" name="Turret Weapon" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry id="add1-93d2-ba8c-c445" name="Conqueror Cannon and Storm Bolter" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8a4-2a48-0d06-7911" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="075f-8669-4070-8c7a" name="Conqueror Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9e3d-c097-1461-d228" name="Storm Bolter" hidden="false" targetId="7ae4-e633-6c94-2739" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="b15c-d27c-a368-5ce5" name="Twin Lascannon" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1046-117d-bf0c-7e8c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="57d0-4e69-d4c5-db51" name="Twin Lascannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="cc67-b998-858d-6b65" name="Battle Cannon" hidden="false" collective="false" targetId="d5ff-ab6b-516a-a1b6" type="selectionEntry"/>
+        <entryLink id="9b61-a221-3db6-4138" name="Eradicator Nova Cannon" hidden="false" collective="false" targetId="c810-d0a6-6376-e6f7" type="selectionEntry"/>
+        <entryLink id="699d-524d-8ce0-c23f" name="Executioner Plasma Cannon" hidden="false" collective="false" targetId="a204-6d64-d8ce-bfda" type="selectionEntry"/>
+        <entryLink id="0ed5-dead-2a45-d372" name="Exterminator Autocannon" hidden="false" collective="false" targetId="2a0d-5f1a-7118-96d3" type="selectionEntry"/>
+        <entryLink id="4d22-791a-9369-1fed" name="Punisher Gatling Cannon" hidden="false" collective="false" targetId="0695-104c-cc3f-69fb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="2445-38be-3042-e26f" name="Vanquisher Battle Cannon" hidden="false" collective="false" targetId="f29d-9b37-da82-9fb9" type="selectionEntry"/>
+        <entryLink id="9ce6-614c-21aa-8afb" name="Demolisher Cannon" hidden="false" collective="false" targetId="b3fa-a9aa-5f44-8ca5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0534-53f6-6df7-ef45" name="Hull Weapon" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry id="17ea-af25-e569-2949" name="Plasma Cannon" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c957-10d1-06d1-b3d4" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="cb1b-8573-1c15-cc92" name="Plasma Cannon" hidden="false" targetId="9caa-eae9-90f2-8961" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a23b-ec99-b9f5-3025" name="Heavy Bolter" hidden="false" collective="false" targetId="63f8-574f-828e-5380" type="selectionEntry"/>
+        <entryLink id="0dfb-20dd-0d7d-8938" name="Heavy Flamer" hidden="false" collective="false" targetId="296b-929d-3b75-ffb1" type="selectionEntry"/>
+        <entryLink id="12b6-3290-e6ee-833e" name="Lascannon" hidden="false" collective="false" targetId="d489-79c2-9e08-29cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65a5-3f67-4f86-350f" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="e0c7-88b8-da75-18b1" name="Multi-melta" hidden="false" collective="false" targetId="0eee-719c-7432-8cf0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6141-1e50-39bc-148c" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="29b8-aa23-5c9f-5917" name="Officer" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Generate Command Assets step, if this unit is a Warlord and is on the battlefield, you generate one extra Command Asset.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="619d-027a-996d-47d3" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+      </characteristics>
+    </profile>
+    <profile id="768f-8e47-43bb-f441" name="Lasguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c2e2-a2fc-d2e8-d04a" name="Mortar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="caef-f710-d0de-c438" name="Officer Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+      </characteristics>
+    </profile>
+    <profile id="e521-45e6-bdbd-549d" name="Momento Mori" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When multiple blast markers would be placed next to this unit, half that number are placed (rounding up).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="106c-0e9b-6219-e7e3" name="Augmented Mount" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has no Ignore Damage abilities, each time you fail a saving throw for this unit, roll one D12; on a 12, no damage marker is placed next to this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="179b-def6-2e2d-0aa6" name="Death Korps Hunting Lance" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">One Use Only</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0a3c-1509-a7d1-188e" name="Hot-shot Lasguns" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="84c7-3c1c-e2f5-588b" name="Armoured Hull" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+      </characteristics>
+    </profile>
+    <profile id="4c1f-561a-c303-95cb" name="Commissar Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+      </characteristics>
+    </profile>
+    <profile id="06db-6c39-4cf4-efa7" name="Aura of Discipline" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly Death Korps of Krieg units can use this unit’s Leadership
+characteristic instead of their own whilst they are within 6&quot; of this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="64e5-c6e5-9739-fcaf" name="Laspistols" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+      </characteristics>
+    </profile>
+    <profile id="2d8c-ae7e-c774-211a" name="Death Korps Hunting Lances" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">One Use Only</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="20c3-0fde-9632-bafc" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>
     <catalogueLink id="13c7-707f-6b38-d039" name="Library - Astra Militarum" targetId="83db-5e08-8b20-b377" type="catalogue"/>
