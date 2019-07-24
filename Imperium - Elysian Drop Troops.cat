@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6760-4e27-dd57-9031" name="Imperium - Elysian Drop Troops" revision="4" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6760-4e27-dd57-9031" name="Imperium - Elysian Drop Troops" revision="5" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="5471-10e9-a8c3-64a9" name="Commissar" hidden="false"/>
+    <categoryEntry id="055b-116c-2c64-c172" name="Elysian Command Squad" hidden="false"/>
+    <categoryEntry id="06a4-11a4-a8f9-34ac" name="Elysian Company Commander" hidden="false"/>
+    <categoryEntry id="43e8-25f4-13e4-9eb3" name="Elysian Drop Sentinels" hidden="false"/>
+    <categoryEntry id="7e5b-6196-1336-6c79" name="Elysian Drop Trooper Squad" hidden="false"/>
+    <categoryEntry id="486b-032e-1154-435e" name="Faction: Elysian Drop Troops" hidden="false"/>
+    <categoryEntry id="0ff5-b2e8-fd82-e10c" name="Elysian Heavy Weapon Squad" hidden="false"/>
+    <categoryEntry id="7471-96d8-51d8-82c7" name="Elysian Lord Commissar" hidden="false"/>
+    <categoryEntry id="c11c-b745-0f50-b4aa" name="Elysian Platoon Commander" hidden="false"/>
+    <categoryEntry id="a3e7-2b8d-f957-df10" name="Elysian Sniper Squad" hidden="false"/>
+    <categoryEntry id="b233-292c-86a3-fa79" name="Elysian Special Weapons Squad" hidden="false"/>
+    <categoryEntry id="61df-ed9b-c479-15a8" name="Elysian Veterans Squad" hidden="false"/>
+    <categoryEntry id="4826-b96a-0702-899c" name="Valkyrie Sky Talon" hidden="false"/>
+    <categoryEntry id="ee25-a63e-816a-9241" name="Faction: Officio Prefectus" hidden="false"/>
+  </categoryEntries>
   <selectionEntries>
     <selectionEntry id="c230-e722-907b-6fc4" name="Elysian Company Commander" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -23,7 +39,18 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="329d-0032-b3f2-03f3" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="7e9a-9382-6466-f136" name="Elysian Company Commander" hidden="false" targetId="06a4-11a4-a8f9-34ac" primary="false"/>
+        <categoryLink id="61bd-36ca-03fb-0120" name="Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="a990-8f55-969f-d655" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="6cc5-365c-640e-0868" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="8f7c-e260-3a70-ef06" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="a0a0-3ad0-ec3f-e9f9" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="4199-a8d5-8ccb-cebf" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
+        <categoryLink id="fd32-d9cc-1f97-c0c0" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="ce36-2a77-f921-626d" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
@@ -64,7 +91,19 @@ characteristic instead of their own whilst they are within 6&quot; of this unit.
       </infoLinks>
       <categoryLinks>
         <categoryLink id="89db-7200-e993-62f8" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="5892-b769-4291-e762" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="5adb-3113-709a-2da5" name="Commissar" hidden="false" targetId="5471-10e9-a8c3-64a9" primary="false"/>
+        <categoryLink id="9bf0-b705-9423-da40" name="Elysian Lord Commissar" hidden="false" targetId="7471-96d8-51d8-82c7" primary="false"/>
+        <categoryLink id="6b6d-cf65-0ffc-d9a1" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="053c-7986-81d9-3ed7" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="2b25-b429-7466-468f" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="f47a-1ff0-1712-5e13" name="Faction: Officio Prefectus" hidden="false" targetId="ee25-a63e-816a-9241" primary="false"/>
+        <categoryLink id="0438-ff3c-3992-92fc" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="c6be-6354-9b58-e876" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="301e-7eb1-336a-ecbc" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
@@ -90,6 +129,12 @@ characteristic instead of their own whilst they are within 6&quot; of this unit.
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0029-c8cb-a973-8d5f" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="cc76-0fd3-041a-c8ea" name="Elysian Drop Trooper Squad" hidden="false" targetId="7e5b-6196-1336-6c79" primary="false"/>
+        <categoryLink id="c250-81d6-1e8e-860a" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="c860-4c9a-f137-03a5" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="6c73-598f-052f-55dc" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="9e42-8a6f-b83e-3f52" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="e74e-40ef-f8e3-320e" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
@@ -134,6 +179,12 @@ characteristic instead of their own whilst they are within 6&quot; of this unit.
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4669-bc79-308e-d46b" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="b5c8-ad8e-4fd4-3c76" name="Elysian Special Weapons Squad" hidden="false" targetId="b233-292c-86a3-fa79" primary="false"/>
+        <categoryLink id="e202-c5b0-e611-44d0" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="d5d7-ed83-6036-27f5" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="0e5c-cbb0-5a57-e4f9" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="8f94-3834-eb10-8650" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="60a3-9d47-6b15-230c" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
@@ -169,6 +220,12 @@ characteristic instead of their own whilst they are within 6&quot; of this unit.
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4cd3-a640-f2dc-aa67" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="2ad6-8cc8-58b4-3723" name="Elysian Veterans Squad" hidden="false" targetId="61df-ed9b-c479-15a8" primary="false"/>
+        <categoryLink id="9773-5edb-4673-e9d7" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="558c-cb5e-89bc-441b" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="aaae-ffda-b48e-180e" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ccb9-62b5-a35d-94fb" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="c9ee-3358-19b7-8280" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1839-5108-c909-2764" name="Heavy Flamer" hidden="false" collective="false" type="upgrade">
@@ -258,6 +315,12 @@ characteristic instead of their own whilst they are within 6&quot; of this unit.
       </infoLinks>
       <categoryLinks>
         <categoryLink id="229e-7e49-816e-dcce" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="9311-7949-0bf5-905f" name="Elysian Command Squad" hidden="false" targetId="055b-116c-2c64-c172" primary="false"/>
+        <categoryLink id="83fc-32f5-fde5-60c9" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="0e70-ab90-74a5-2743" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="8a3b-0ece-b8d1-40a4" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="929d-3d49-dbf6-c796" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4419-158f-a560-3e3f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bbc7-6694-040b-1946" name="Heavy Weapons Team" hidden="false" collective="false" type="upgrade">
@@ -335,6 +398,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
     <selectionEntry id="2e46-4ab1-a3d2-1f07" name="Elysian Drop Sentinels" hidden="false" collective="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="b8c2-3ed7-ac4d-4b99" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="7517-a809-2cdd-3859" name="Elysian Drop Sentinels" hidden="false" targetId="43e8-25f4-13e4-9eb3" primary="false"/>
+        <categoryLink id="0fd7-7003-2a3d-ea30" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="c2e8-c588-7ca1-700b" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="9f53-63a2-f8e2-f7f7" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="16b8-704d-f173-0c59" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="58a0-cffd-1f5d-8a1d" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="0062-ce87-fabc-4b9a" name="Elysian Drop Sentinel" hidden="false" collective="false" type="model">
@@ -467,7 +536,18 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7418-e96d-dfdb-918f" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="da93-59bb-0abb-3070" name="Elysian Platoon Commander" hidden="false" targetId="c11c-b745-0f50-b4aa" primary="false"/>
+        <categoryLink id="0390-6315-ec99-b363" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="7628-00a6-5b6c-3553" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="567e-b0eb-3201-8e9e" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="876d-27e7-c5de-c60d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="2602-d2e4-20a8-211c" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="48f1-e8a0-f00b-b7b6" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="145b-73cd-db6d-15ba" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="bfc4-d37f-6c53-2953" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
@@ -511,6 +591,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d841-24d3-f80b-b38c" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="b649-8022-f61c-2b95" name="Elysian Sniper Squad" hidden="false" targetId="a3e7-2b8d-f957-df10" primary="false"/>
+        <categoryLink id="9eae-358c-daba-410e" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="d457-45a9-58b2-4fd6" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="4f76-2de2-69c6-c941" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="c06c-c859-c357-61a2" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="aec0-cfb9-d893-be82" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
@@ -519,6 +605,12 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
     <selectionEntry id="de21-3e8b-fb9a-36dc" name="Elysian Heavy Weapons Squad" hidden="false" collective="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="c9fc-4ffa-1951-0e92" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="ce6e-f23d-8ef4-6996" name="Elysian Heavy Weapon Squad" hidden="false" targetId="0ff5-b2e8-fd82-e10c" primary="false"/>
+        <categoryLink id="4202-f6df-78fd-eb2b" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="0b8e-3120-d34e-89d3" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="8ebb-f43f-2094-a50a" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="f040-1295-71d7-9b3b" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="9c1e-68e2-b429-7359" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c962-1848-d2fb-c36c" name="Heavy Weapons Team" hidden="false" collective="false" type="upgrade">
@@ -580,6 +672,9 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -623,6 +718,14 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ffe0-4032-ad2a-51f4" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="e969-747d-c35c-458c" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="e178-7650-352b-6f5a" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="a60e-67d7-7956-b460" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="e81f-4b2a-e455-5fb7" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="c3e7-27bd-d2f0-895e" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="28ff-5af9-503e-b0f9" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="8aa4-12ca-7d07-b20b" name="Valkyrie Sky Talon" hidden="false" targetId="4826-b96a-0702-899c" primary="false"/>
+        <categoryLink id="d732-a09d-91c7-97cb" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b579-5829-7138-50a9" name="Wing Weapons" hidden="false" collective="false" defaultSelectionEntryId="ec1d-d0b0-7ebe-19f4">
@@ -645,56 +748,143 @@ whilst they are within 6&quot; of any friendly Elysian Drop Troops units with a 
     <entryLink id="c4e1-0b90-26ad-040a" name="Officer of the Fleet" hidden="false" collective="false" targetId="1433-874e-4a1e-6ed8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b33f-5eca-1788-5466" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="e2d7-694f-53b0-5610" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="5a29-22e1-8b8a-dbdf" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="9ab8-af14-c305-28ec" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="334b-9304-bcb4-049c" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="5843-f399-b459-0850" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ec22-4552-1af4-e2f4" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4d6a-eff4-cc01-f6bc" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
+        <categoryLink id="736d-f415-726c-be08" name="Officer of the Fleet" hidden="false" targetId="7568-20fa-84e1-ef3b" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="6408-ef3b-e557-ba29" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="5d8e-aaf4-1572-43c2" name="Tauros Assault Vehicle" hidden="false" collective="false" targetId="af3a-a93e-254a-eec7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b384-cda7-a0d3-3c96" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="e050-dddd-3b50-3000" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="00b8-b57c-fdcb-ba75" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="fecf-2782-918d-4bc1" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="2f48-4d3c-43fb-6e75" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="c1b8-941c-c5e2-202f" name="Tauros" hidden="false" targetId="05d6-9e34-a0ae-fd17" primary="false"/>
+        <categoryLink id="8282-8b06-cc08-f734" name="Tauros Assault Vehicle" hidden="false" targetId="a63a-fea9-f176-8691" primary="false"/>
+        <categoryLink id="5994-617b-2b9d-5d77" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="578e-ee74-3deb-565d" name="Tauros Venator" hidden="false" collective="false" targetId="b2a7-e444-ede0-d14b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="cbbf-d9a5-fe91-884d" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="ef21-b729-e339-4ded" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="fbd4-cef9-2140-a8b4" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="55d4-26dd-8472-0dcc" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="acb3-fa83-1236-535b" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="151d-f225-6b54-559a" name="Tauros" hidden="false" targetId="05d6-9e34-a0ae-fd17" primary="false"/>
+        <categoryLink id="4f3d-94ab-d22b-aa6a" name="Tauros Venator" hidden="false" targetId="3281-235c-9370-a922" primary="false"/>
+        <categoryLink id="f990-6d46-80c8-f2ac" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="24f1-0f93-d697-ac64" name="Cyclops Demolition Vehicle" hidden="false" collective="false" targetId="8b0d-256a-a713-f6c7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4fe1-a6eb-c891-7c06" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="5a3d-dcf9-7059-3eda" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="dccf-7828-19cd-8ca6" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="ee00-8be8-6053-7713" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="34c7-ee3c-f4d2-1c06" name="Cyclops Demolition Vehicle" hidden="false" targetId="4f56-a07b-ddb1-0c0e" primary="false"/>
+        <categoryLink id="cc37-cc44-3d16-2f69" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="ae2b-81b0-7ce3-8f82" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b063-4075-5635-dd2b" name="Tarantula Sentry Gun" hidden="false" collective="false" targetId="5119-d7c9-7eea-df3f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7424-6d41-82ab-f92c" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="e063-29da-7a6b-2ddf" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="ae28-1507-9d6c-26af" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="9c8e-67ab-0fe2-b3b8" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="40c0-3664-5c76-b28d" name="Artillery" hidden="false" targetId="3346-8cf4-dde4-50ae" primary="false"/>
+        <categoryLink id="6b46-8417-87f5-8592" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="8a53-b821-8480-9ed2" name="Tarantula Sentry Gun" hidden="false" targetId="bed3-3647-e5b1-6f7f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5615-97b7-bd58-abcb" name="Avenger Strike Fighter" hidden="false" collective="false" targetId="3adc-fac7-dcbb-30d3" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4900-2ae0-0971-6e74" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="dd1b-cdad-e515-5912" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="4c4c-8276-e265-6124" name="Avenger Strike Fighter" hidden="false" targetId="d7f2-0a08-e895-72e9" primary="false"/>
+        <categoryLink id="050f-cf9b-7db7-b55a" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="6dec-a257-fefc-ad94" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="acbd-08e0-479f-f9db" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="c3a4-49c5-c752-9a0f" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="a62d-d5ca-09f5-6d37" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="8090-ee34-49b3-ac94" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9ec0-2ef0-375f-0fd0" name="Lightning Strike Fighter" hidden="false" collective="false" targetId="b76e-ab1a-c872-81de" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4fe4-b182-8b42-dca8" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="8688-af53-94f8-ec35" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="d6ec-f1ce-88e5-aa5b" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="8234-e872-6d4c-0f19" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="4d9b-4cad-6a3c-e054" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="f804-5d70-5038-61c8" name="Lightning Strike Fighter" hidden="false" targetId="c21e-2e84-66fb-210d" primary="false"/>
+        <categoryLink id="3a28-7b56-ee7f-878e" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="7684-1dd2-9551-9998" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="9fc0-9011-38b7-da83" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="973b-0dfd-d072-a15c" name="Thunderbolt Heavy Fighter" hidden="false" collective="false" targetId="37b6-4a59-a162-76a6" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="43ba-c608-84e1-d6e9" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="ab88-f56b-b96e-89ae" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="6d1f-a4e0-615f-6a48" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="bb8d-dda7-4dda-f54e" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="b472-143d-b796-452d" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="f39c-cc29-1e23-4581" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="0191-cede-dd42-8a42" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="a5a1-083b-9dfe-95e1" name="Thunderbolt Heavy Fighter" hidden="false" targetId="1976-32a8-c614-6b6a" primary="false"/>
+        <categoryLink id="642b-dd18-1e4f-17cd" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4350-0c7c-816b-b08b" name="Valkyrie" hidden="false" collective="false" targetId="5e95-ce98-49a7-bf62" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="03e7-84c8-c9a5-100d" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="4480-2cb9-9816-8293" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="1cc1-9ab4-7e6d-1cb3" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="825a-4078-a5cc-9fa0" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="1c7e-844a-3c04-7746" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="48b7-db44-2f2c-8843" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="b156-7d6d-f234-f619" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="df99-2201-91b1-02d5" name="Valkyrie" hidden="false" targetId="72a7-3c52-395b-85ae" primary="false"/>
+        <categoryLink id="c8fd-4f41-1724-c1ba" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="7dae-8088-938e-cc7a" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="12e8-a3d1-d712-c0be" name="Vendetta Gunship" hidden="false" collective="false" targetId="45cb-a763-0a75-8cba" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="635b-ce48-998f-cba9" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="2e8c-bf46-4ef0-706a" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="c914-6c4b-7895-3dad" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="07fa-0674-eef9-874e" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="8578-26d7-e502-1f4c" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="a1bb-a0ef-1869-769f" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="c97b-6bbf-39ac-b5cf" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="4818-66ec-042e-70cb" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="9a9c-3195-3c76-3ebb" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="8732-9f99-75ba-d6ab" name="Vendetta Gunship" hidden="false" targetId="1a4f-0fab-aa49-c77f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fc85-3dd3-4110-6243" name="Vulture Gunship" hidden="false" collective="false" targetId="241b-8e35-4349-6ebb" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b79c-7f50-6349-48d0" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="bc2d-29df-aef8-da8d" name="Vulture Gunship" hidden="false" targetId="b147-2671-b01f-a253" primary="false"/>
+        <categoryLink id="abab-4711-cd4b-5523" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="d2f3-7844-ecbc-239e" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="c768-10c0-dd9c-3ad8" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="bc87-2d66-c986-80c3" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="cef7-c7b6-7c1f-fedf" name="Faction: Elysian Drop Troops" hidden="false" targetId="486b-032e-1154-435e" primary="false"/>
+        <categoryLink id="1ea0-6e07-af80-98b0" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="9d7b-8ec4-be38-6b7e" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
