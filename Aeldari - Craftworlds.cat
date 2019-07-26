@@ -134,6 +134,7 @@
     <entryLink id="5e93-e1c7-c47d-0d8e" name="Wraithseer" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="f9fa-b9d8-81ed-993a" type="selectionEntry"/>
     <entryLink id="e257-f18e-29ef-e088" name="Wasp Assault Walkers" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="3cc1-eb93-ef2f-6b65" type="selectionEntry"/>
     <entryLink id="dbd0-37b5-173a-3e7e" name="Shadow Spectres" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="5d7e-5783-b123-60dd" type="selectionEntry"/>
+    <entryLink id="303e-a35e-9b64-71e1" name="Hornets" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="844f-aee0-9460-9665" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e4e5-fffd-9435-163e" name="Eldrad Ulthran" publicationId="280a-43bb-426c-aa7c" page="1" hidden="false" collective="false" type="model">
@@ -4465,6 +4466,13 @@ weapons by this unit.</characteristic>
       </constraints>
       <profiles>
         <profile id="eeb5-9a8f-99a0-14b3" name="Armoured Hull" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <modifiers>
+            <modifier type="set" field="74b1-f85d-ede5-c758" value="9+">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="844f-aee0-9460-9665" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
             <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
@@ -4808,6 +4816,9 @@ weapons by this unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4869,6 +4880,143 @@ weapons by this unit.</characteristic>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="844f-aee0-9460-9665" name="Hornets" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="unit">
+      <infoLinks>
+        <infoLink id="e563-0ac8-cfaf-fabb" name="Hover" publicationId="280a-43bb-426c-aa7c" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5465-36d4-1cb2-cf54" name="Faction: &lt;Craftworld&gt;" hidden="false" targetId="c595-6cad-4e25-eb78" primary="false"/>
+        <categoryLink id="bab4-c329-b658-2416" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="8011-427c-bb70-92ee" name="Faction: Asuryani" hidden="false" targetId="b3cf-7747-c0da-770b" primary="false"/>
+        <categoryLink id="1271-15ea-f9bc-a4a9" name="Faction: Warhost" hidden="false" targetId="426a-d6ae-7bf1-76e7" primary="false"/>
+        <categoryLink id="e019-3bca-6e8e-4441" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="6bd7-1310-ab90-9d12" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="bb51-f412-d440-dc1b" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="4ade-ccb0-b0e3-1da9" name="Hornets" hidden="false" targetId="c40c-2fce-7076-8471" primary="false"/>
+        <categoryLink id="aead-c133-3378-1c10" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7740-8a18-50a1-1b88" name="Unit Size" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" defaultSelectionEntryId="5663-0c0c-f0c7-d60e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="551c-5101-a1f9-0c53" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68c1-04e5-023e-8c15" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5663-0c0c-f0c7-d60e" name="1 Model" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d659-c59e-528c-c1a0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c96f-bdd8-6674-f11e" name="1 Model" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">18&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="79d3-8775-60ae-9e2d" name="3 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fe5-6649-532c-e6b0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="49da-0f6c-4e0c-3d0d" name="3 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">18&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="18.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9ef9-3159-6bee-85e4" name="2 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17e6-1790-7694-7c4c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="47bd-ff61-ee44-ebdf" name="2 Models" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">18&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4f68-66af-7f3d-71ef" name="Weapons Options" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="844f-aee0-9460-9665" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ef9-3159-6bee-85e4" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="0bfd-43ef-8eb0-dc6e" value="4.0"/>
+                <modifier type="set" field="ca26-6fad-a554-27f5" value="4.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="844f-aee0-9460-9665" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="79d3-8775-60ae-9e2d" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="0bfd-43ef-8eb0-dc6e" value="6.0"/>
+                <modifier type="set" field="ca26-6fad-a554-27f5" value="6.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bfd-43ef-8eb0-dc6e" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca26-6fad-a554-27f5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d2f6-7e16-c60d-58e0" name="Hornet Pulse Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="c55a-7eb2-09c5-e7cb" name="Hornet Pulse Laser" publicationId="280a-43bb-426c-aa7c" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="5f0e-9685-880d-299f" name="Heavy Weapon Options" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="ea6e-afbd-f193-2be0" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e80f-2f85-8ef0-fc67" name="Armoured Hull" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" targetId="45fa-707e-2263-3d07" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
