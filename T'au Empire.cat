@@ -4098,6 +4098,44 @@
             <entryLink id="7e3f-bed3-dc62-615f" name="Shield Drone" hidden="false" collective="false" targetId="904a-178c-f29c-e404" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="e749-4e9e-795f-5163" name="Missile Drones (0-2/m)" hidden="false" collective="false" defaultSelectionEntryId="ff1a-902b-92ff-aaa1">
+          <modifiers>
+            <modifier type="increment" field="2430-06b9-072e-be6a" value="4.0">
+              <conditions>
+                <condition field="selections" scope="0872-9cc4-b270-199a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2483-aa0b-7ac5-5f60" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="2430-06b9-072e-be6a" value="2.0">
+              <conditions>
+                <condition field="selections" scope="0872-9cc4-b270-199a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21fb-e939-f30c-0a3a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2430-06b9-072e-be6a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ff1a-902b-92ff-aaa1" name="Missile Drone" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7236-9136-96cc-e743" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="29f9-3623-ef28-37a8" name="Missile Pod" hidden="false" collective="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fb9-8267-12af-112a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dfd-4015-b6b0-09c1" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="389a-c596-50c7-555f" name="Missile Pod" hidden="false" targetId="e5db-08f5-e1d6-fc6b" type="infoGroup"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="7202-3c73-4958-ebf3" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
@@ -5482,6 +5520,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5557,6 +5598,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="adc8-93f3-e897-676c" name="Baggage Harness" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -5569,6 +5613,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5610,6 +5657,9 @@
           <infoLinks>
             <infoLink id="2e96-659c-85e8-fb11" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="da54-8b31-61a7-aa09" name="Sharp Beak &amp; Talons" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -5628,6 +5678,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5679,6 +5732,9 @@
       <entryLinks>
         <entryLink id="66a6-ed9f-ed8b-e6f9" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0ab3-8385-0be7-62da" name="Remote Sensor Tower" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
       <profiles>
@@ -5789,6 +5845,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           <infoLinks>
             <infoLink id="67f2-6fb9-758c-7a30" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e8f4-7637-88f7-bdc2" name="Long-barrelled Ion Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -5810,6 +5869,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           <infoLinks>
             <infoLink id="b505-9ddb-747d-d52f" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="df41-33d1-d99a-baae" name="Missile Pod" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -5828,6 +5890,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a056-0d59-71e8-1400" name="Armoured Hull" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -5846,6 +5911,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a2ae-23f0-4c6d-6fff" name="Long-barrelled Burst Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -5864,6 +5932,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5925,6 +5996,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5f47-57f7-e8b5-8da0" name="Long-barrelled Burst Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -5943,6 +6017,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ac2b-b795-680e-b659" name="Missile Pod" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -5961,6 +6038,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6018,6 +6098,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           <infoLinks>
             <infoLink id="94fa-e936-18a7-1a4e" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ae94-6726-8292-5246" name="Missile Pod" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -6036,6 +6119,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2b84-f091-37f9-1436" name="Armoured Hull" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -6054,6 +6140,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5435-9517-b10f-5aa5" name="Burst Cannon" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -6063,6 +6152,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           <infoLinks>
             <infoLink id="0954-e1ac-b1bf-eac5" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6118,6 +6210,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4d16-9caa-fdc3-53fd" name="Burst Cannon" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -6127,6 +6222,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           <infoLinks>
             <infoLink id="ecb8-a025-2eb9-122e" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="f8dc-9436-1d7a-8e7f" name="Missile Pod" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -6145,6 +6243,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6239,6 +6340,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               <categoryLinks>
                 <categoryLink id="5493-d6bd-cd61-fc8a" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="18d4-6213-b88d-cb34" name="2 Skyspear Missile Racks" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -6256,6 +6360,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6312,6 +6419,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="0e58-c889-30b2-d116" name="Missile Pod" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -6330,6 +6440,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6355,6 +6468,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ff0f-5948-c24d-f63a" name="Swiftstrike Cannon" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -6423,6 +6539,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d95a-5e07-e0db-2286" name="2 Cyclic Ion Blasters" publicationId="6e11-42ed-c084-ce74" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -6431,6 +6550,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               <infoLinks>
                 <infoLink id="371d-9d89-fcd1-a837" name="Cyclic Ion Blaster" hidden="false" targetId="317b-ee9c-836d-c55d" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6476,6 +6598,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6431-33df-430a-eca2" name="Close Combat Weapons" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -6494,6 +6619,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6593,6 +6721,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <entryLinks>
         <entryLink id="b158-47a5-d34d-cf52" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ed22-7125-fbf9-3f63" name="TX7 Fire Support Hammerhead Gunship" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
       <profiles>
@@ -6667,6 +6798,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e481-c76f-1498-7035" name="Twin Swiftstrike Burst Cannon" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -6732,6 +6866,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d4fb-c48e-5360-7329" name="2 Burst Cannons" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -6749,6 +6886,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="63bb-05a5-fe28-82b4" name="Smart Missile Systems" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -6757,6 +6897,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               <infoLinks>
                 <infoLink id="2145-b58d-2d4c-cd59" name="Smart Missile Systems" hidden="false" targetId="5de3-527e-6d5e-ee8f" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6834,6 +6977,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6859,6 +7005,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2f9b-5cf1-3648-de3c" name="2 Burst Cannons" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -6876,6 +7025,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0cb3-02e8-aa52-7e71" name="Smart Missile Systems" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -6884,6 +7036,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               <infoLinks>
                 <infoLink id="5144-33fa-7d9c-100d" name="Smart Missile Systems" hidden="false" targetId="5de3-527e-6d5e-ee8f" type="infoGroup"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7061,6 +7216,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <entryLinks>
         <entryLink id="f873-6c70-0015-666e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5b35-736a-6681-e1b4" name="Piranha TX-42 Light Skimmers" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
       <categoryLinks>
@@ -7312,6 +7470,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <entryLinks>
         <entryLink id="c09c-b6a0-c61a-023c" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cde2-64f1-fad8-3dc6" name="Tetra Scout Speeder Team" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
       <infoLinks>
@@ -7449,6 +7610,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <entryLinks>
         <entryLink id="d7a3-d01b-398c-c179" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="663c-3c40-e160-5654" name="KX139 Ta&apos;unar Supremacy Armour" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
       <profiles>
@@ -7498,6 +7662,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           <infoLinks>
             <infoLink id="bfc2-5ecd-b262-cbb2" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1231-d7ef-5c82-1baf" name="Smart Missile Systems" hidden="false" collective="false" type="upgrade">
           <constraints>
@@ -7540,6 +7707,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7568,6 +7738,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               <infoLinks>
                 <infoLink id="316a-9c31-4f3c-cb52" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4f02-8deb-6758-f036" name="Nexus Meteor Missile System" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -7585,6 +7758,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9624-9053-d6c2-6c83" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -7605,6 +7781,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               <infoLinks>
                 <infoLink id="caf8-c0fd-ec84-cc11" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7633,6 +7812,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               <infoLinks>
                 <infoLink id="4b98-ab01-1eca-21dc" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4f2f-5175-83a7-daf3" name="Tri-axis Ion Cannon" hidden="false" collective="false" type="upgrade">
               <constraints>
@@ -7650,6 +7832,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -8154,6 +8339,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <entryLinks>
         <entryLink id="0e18-418c-8a97-2739" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1ca8-12b4-8ce6-5bbb" name="Commander In XV84 Crisis Battlesuit" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
       <modifiers>
@@ -8684,6 +8872,9 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       <entryLinks>
         <entryLink id="baf5-0124-eb7f-2ed4" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="920a-0c15-26da-bcb5" name="Missile Drone" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="upgrade">
       <constraints>
@@ -8707,8 +8898,14 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1d21-307c-187b-ed63" name="Drone Sentry Turrets" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" type="unit">
       <categoryLinks>
@@ -8762,21 +8959,33 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                   <infoLinks>
                     <infoLink id="c182-27cd-ffbe-b50f" name="Burst Cannon" hidden="false" targetId="6b5f-7c5d-595e-2c2d" type="infoGroup"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="7af8-8791-ccfb-0578" name="2 Fusion Blasters" hidden="false" collective="false" type="upgrade">
                   <infoLinks>
                     <infoLink id="93de-9096-7c93-2a99" name="Fusion Blaster" hidden="false" targetId="0f4e-ab4d-4ae5-3382" type="infoGroup"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="3197-c63b-b319-1302" name="2 Missile Pods" hidden="false" collective="false" type="upgrade">
                   <infoLinks>
                     <infoLink id="bac4-a874-653e-d20f" name="Missile Pod" hidden="false" targetId="e5db-08f5-e1d6-fc6b" type="infoGroup"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="ddc0-20d8-cf42-374a" name="2 Plasma Rifles" hidden="false" collective="false" type="upgrade">
                   <infoLinks>
                     <infoLink id="b564-ebf9-a3e1-b966" name="Plasma Rifle" hidden="false" targetId="32bf-abd8-f77b-a925" type="infoGroup"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
