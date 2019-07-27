@@ -322,7 +322,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2f0b-6129-dd5f-2e0f" type="max"/>
+        <constraint field="forces" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2f0b-6129-dd5f-2e0f" type="max"/>
       </constraints>
       <forceEntries>
         <forceEntry id="1d7c-c265-300a-2c99" name="Supreme Command Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
