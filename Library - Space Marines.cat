@@ -2369,6 +2369,28 @@
         <categoryLink id="a283-45f9-30f2-b99d" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
         <categoryLink id="1e89-fb34-467e-1369" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cccd-09a3-8acc-069f" name="Dreadnought Combat Weapon" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e31e-c749-e725-89ba" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ae-ce10-304d-172d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="71c1-cd41-4f2a-7163" name="Dreadnought Combat Weapon" hidden="false" targetId="e199-b982-8946-993d" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="1343-90ca-2296-27a4" name="Combi-bolter" hidden="false" collective="false" targetId="f25f-41f2-ba88-cb85" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f77-d290-8357-0c80" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a74-53a5-4fe7-1042" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="45fd-7b66-b81b-f341" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="5668-a23a-5f42-4c3f">
           <constraints>
@@ -2382,18 +2404,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="77e6-9ac1-bbaf-2726" name="Combi-bolter" hidden="false" collective="false" targetId="f25f-41f2-ba88-cb85" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc8b-ed9c-0542-5a37" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f5-46e1-4b4e-114d" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="190a-a414-8ccf-e133" name="Dreadnought Close Combat Weapon" hidden="false" collective="false" targetId="da58-6d66-706c-0d22" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9281-9ce8-5c31-53e4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53fd-931d-3bba-e631" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="e0dd-a697-6a02-d5b7" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -5485,28 +5495,6 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7509-f9f0-af22-cfc7" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="fa29-51b7-86fc-69a4" name="Reaper Autocannon" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6115-bb14-dc4c-dae2" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="60f2-41f8-36ae-8822" name="Reaper Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="08ea-22c5-0212-12c3" name="Assault Cannon" hidden="false" collective="false" targetId="8678-7b89-1980-47b2" type="selectionEntry">
               <modifiers>
@@ -5527,6 +5515,14 @@
             <entryLink id="5e57-657b-a63c-fdf4" name="Cyclone Missile Launcher" hidden="false" collective="false" targetId="098d-bedf-91b5-c61b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d48b-96de-3adc-9ac0" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3cfb-1f16-f413-ef0d" name="Reaper Autocannon" hidden="false" collective="false" targetId="d9c9-34cc-fbf1-5c83" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f72d-cf21-bd38-d028" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -10557,6 +10553,23 @@
       </profiles>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d9c9-34cc-fbf1-5c83" name="Reaper Autocannon" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="a1c2-da71-b049-1631" name="Reaper Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
