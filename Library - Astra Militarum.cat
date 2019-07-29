@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="3" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="5" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -313,6 +313,9 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b867-ac66-149f-9edf" name="Hydra" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -337,32 +340,6 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           <infoLinks>
             <infoLink id="6204-6f37-6414-c2dc" name="Tank Squadron" hidden="false" targetId="a437-a863-2fd2-bad0" type="profile"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="c44e-d23f-6e2e-1398" name="Hydra Quad Autocannon" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="901a-f200-0e0a-31f9" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d6-cdf5-57bd-a01a" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="90ce-fbdd-de65-a65e" name="Hydra Quad Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="887b-68d7-f2a6-9161" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="b474-dd05-fdff-ed9a" name="Hull Weapon" hidden="false" collective="false" targetId="0d4a-a5da-2e4b-4bf1" type="selectionEntryGroup">
               <constraints>
@@ -381,12 +358,16 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f780-3fe7-33d7-a080" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="757a-bc63-8e56-3176" name="Hydra Quad Autocannon" hidden="false" collective="false" targetId="9b6a-c1f6-e6e8-6149" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="56a3-3248-0189-622a" name="Basilisk" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -441,6 +422,9 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b731-6641-ff27-d8b4" name="Baneblade" hidden="false" collective="false" type="unit">
       <profiles>
@@ -759,6 +743,9 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1f05-9e28-bea2-5d2a" name="Atlas Recovery Tank" hidden="false" collective="false" type="unit">
       <profiles>
@@ -935,6 +922,9 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="af3a-a93e-254a-eec7" name="Tauros Assault Vehicle" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -1002,6 +992,9 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b2a7-e444-ede0-d14b" name="Tauros Venator" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -1069,6 +1062,9 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f3b7-bd4c-3da3-fc50" name="Armageddon Pattern Medusa" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -1147,6 +1143,9 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c58f-0f00-a8f3-21f7" name="Colossus Bombard" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -1230,6 +1229,9 @@ ranged weapons by friendly Aeronautica Imperialis units against the selected uni
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8b0d-256a-a713-f6c7" name="Cyclops Demolition Vehicle" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -1306,6 +1308,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9582-2a79-7cda-e385" name="Earthshaker Carriage Battery" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -1377,6 +1382,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4e57-2e51-0e17-dac5" name="Griffon Mortar Carrier" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -1455,6 +1463,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="23aa-209f-b675-fda0" name="Heavy Mortar" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -1636,6 +1647,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cf75-1018-c977-a146" name="Malcador Annihilator" hidden="false" collective="false" type="unit">
       <profiles>
@@ -2034,6 +2048,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="da58-29ef-714c-eb47" name="Rapier Laser Destroyer" hidden="false" collective="false" type="unit">
       <profiles>
@@ -2175,6 +2192,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d30f-0a7e-8156-8c2c" name="Stygies Thunderer Siege Tank" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -2224,6 +2244,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5119-d7c9-7eea-df3f" name="Tarantula Sentry Gun" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -2275,6 +2298,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="61ed-bfdf-cfa5-2c6d" name="Arkurian Pattern Stormblade" hidden="false" collective="false" type="unit">
       <profiles>
@@ -3221,6 +3247,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="241b-8e35-4349-6ebb" name="Vulture Gunship" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -3426,6 +3455,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bfe4-98f0-d12a-f428" name="Scout Sentinels" hidden="false" collective="false" type="unit">
       <modifiers>
@@ -3763,6 +3795,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0c2a-4511-5dac-dcf1" name="Leman Russ Battle Tank" hidden="false" collective="false" type="unit">
       <selectionEntries>
@@ -3823,6 +3858,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9e9b-8f15-dff5-4927" name="Chimera" hidden="false" collective="false" type="unit">
       <profiles>
@@ -3838,32 +3876,6 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry id="41f9-2b5c-0e21-a604" name="Lasgun Array" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40f6-5958-50cf-6a58" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b810-4221-5353-df42" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="f0d7-27df-77b0-4138" name="Lasgun Array" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="4795-9886-6656-b72f" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="60b4-e21c-8326-e35d" name="Main Weapons" hidden="false" collective="false">
           <constraints>
@@ -3909,6 +3921,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca67-33ca-b247-363f" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="34a3-b08d-68de-4461" name="Lasgun Array" hidden="false" collective="false" targetId="22fd-8109-96b9-1f9b" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
@@ -3955,6 +3968,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="787b-29d1-c891-11c0" name="Arvus Lighter" hidden="false" collective="false" type="unit">
       <profiles>
@@ -4472,6 +4488,54 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="22fd-8109-96b9-1f9b" name="Lasgun Array" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca19-d077-fc47-d0fb" type="min"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="132c-b5aa-4bd8-f3a2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e36f-4262-e749-9e06" name="Lasgun Array" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1321-c0e5-6ab9-19ca" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b6a-c1f6-e6e8-6149" name="Hydra Quad Autocannon" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de1d-bd49-e15b-80a6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="080b-acc5-fc6a-9589" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1ffe-8fb5-d017-b29e" name="Hydra Quad Autocannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f135-bde7-ae43-8038" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
