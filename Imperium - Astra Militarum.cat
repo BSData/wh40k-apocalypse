@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9a31-6a48-3ea4-327a" name="Imperium - Astra Militarum" revision="7" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9a31-6a48-3ea4-327a" name="Imperium - Astra Militarum" revision="8" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b6a1-41e3-5fe3-e661" name="Lord Castellan Creed" hidden="false"/>
     <categoryEntry id="b0a1-41e3-5fe3-e661" name="Colour Sergeant Kell" hidden="false"/>
@@ -1815,7 +1815,7 @@ Praetor Launcher for this action.</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2x</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"></characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
           </characteristics>
         </profile>
         <profile id="a9d5-3dc5-0a72-59f0" name="Hunting Lances" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -1857,7 +1857,11 @@ Praetor Launcher for this action.</characteristic>
         <categoryLink id="9395-ec56-1cb8-0850" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d169-5bd5-ccb9-3041" name="3 Additional " hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="d169-5bd5-ccb9-3041" name="3 Additional " hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="8205-0fa3-6299-fa4e" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
@@ -2670,7 +2674,19 @@ Praetor Launcher for this action.</characteristic>
         <categoryLink id="3de4-8fa0-fddc-22f4" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0cf2-c9e3-81e8-bc85" name="Lord Castellan Creed" hidden="false" collective="false" targetId="65d8-4976-0432-72b5" type="selectionEntry"/>
+    <entryLink id="0cf2-c9e3-81e8-bc85" name="Lord Castellan Creed" hidden="false" collective="false" targetId="65d8-4976-0432-72b5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d6ab-79a9-66b0-ca47" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="3f78-f947-394e-1b74" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
+        <categoryLink id="2788-7252-5046-a9d8" name="Faction: Cadian" hidden="false" targetId="b6a1-41e3-0fe3-e661" primary="false"/>
+        <categoryLink id="cb60-5509-b5eb-a63f" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ad84-6e0c-2957-f9ea" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="d1cb-b8a9-aabe-558a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="b68c-8d2e-9718-5fbd" name="Lord Castellan Creed" hidden="false" targetId="b6a1-41e3-5fe3-e661" primary="false"/>
+        <categoryLink id="1985-0899-c7e2-f140" name="Officer" hidden="false" targetId="6fb8-97f4-5bda-4e43" primary="false"/>
+        <categoryLink id="96f4-7c26-374e-ecad" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="375e-a4c5-23c1-2f7d" name="Servitors" hidden="false" collective="false" targetId="d783-faa9-1f01-b40b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c52b-f290-761e-1555" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
@@ -2795,6 +2811,7 @@ Praetor Launcher for this action.</characteristic>
         <categoryLink id="e1a2-1b53-d9df-dd14" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
         <categoryLink id="c27f-f2bf-5ed6-22cb" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
         <categoryLink id="d10f-42e9-db52-fa21" name="Faction: Astra Telepathica" hidden="false" targetId="b6a1-41e3-5fe3-e660" primary="false"/>
+        <categoryLink id="4567-729d-3eee-571d" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b280-eed0-b20e-11bf" name="Special Weapons Team" hidden="false" collective="false" targetId="71c2-ed4f-77e4-8090" type="selectionEntry">
@@ -2956,6 +2973,7 @@ Praetor Launcher for this action.</characteristic>
         <categoryLink id="6f8f-1860-2701-2794" name="Faction: Astra Militarum" hidden="false" targetId="93ec-5bb0-7861-be16" primary="false"/>
         <categoryLink id="bbf0-0c94-6bc7-6569" name="Faction: &lt;Regiment&gt;" hidden="false" targetId="3f9d-8310-412e-1741" primary="false"/>
         <categoryLink id="3e36-be2b-6956-ac14" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="87b0-cdb2-2e2f-405e" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="15af-1f19-2afa-2db5" name="Company Commander" hidden="false" collective="false" targetId="a7f7-baea-5526-f138" type="selectionEntry">
@@ -4078,6 +4096,9 @@ Praetor Launcher for this action.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="85ee-ca18-174f-6c56" name="Crusaders" hidden="false" collective="false" type="unit">
+      <entryLinks>
+        <entryLink id="73c9-6670-f94c-5c16" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -4147,6 +4168,9 @@ Praetor Launcher for this action.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="bca8-2933-fc75-7adf" name="Conscripts" hidden="false" collective="false" type="unit">
+      <entryLinks>
+        <entryLink id="87a3-0c93-9673-b09f" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -4168,6 +4192,9 @@ Praetor Launcher for this action.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="d03d-3b2e-6376-acbd" name="Devil Dog" hidden="false" collective="false" type="unit">
+      <entryLinks>
+        <entryLink id="6dd9-a357-a8eb-1671" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
@@ -4181,6 +4208,9 @@ Praetor Launcher for this action.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="0bdc-f674-6b5b-5a66" name="Deathstrike" hidden="false" collective="false" type="unit">
+      <entryLinks>
+        <entryLink id="55b8-0ee9-56c6-3848" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
