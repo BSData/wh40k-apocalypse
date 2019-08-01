@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="4" battleScribeVersion="2.02" authorName="BSData Developers" authorContact="@Developer" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="5" battleScribeVersion="2.02" authorName="BSData Developers" authorContact="@Developer" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse"/>
   </publications>
@@ -326,9 +326,6 @@
       </constraints>
       <forceEntries>
         <forceEntry id="1d7c-c265-300a-2c99" name="Supreme Command Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5c06-8d17-c698-baf4" type="max"/>
-          </constraints>
           <categoryLinks>
             <categoryLink id="f4dc-ed11-f1cf-9bdc" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
             <categoryLink id="59b0-e22a-9c23-8de6" name="No Force Org Slot" hidden="false" targetId="9f9b-a0ff-1523-746d" primary="false"/>
