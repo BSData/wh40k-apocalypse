@@ -5569,26 +5569,28 @@
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="7974-d940-a8e2-42df" name="Primary Weapons" hidden="false" collective="false" defaultSelectionEntryId="b31d-7a77-ea75-5d2a">
-          <modifierGroups>
-            <modifierGroup>
+          <modifiers>
+            <modifier type="set" field="2026-a75e-7283-7a21" value="3.0">
               <conditions>
-                <condition field="selections" scope="6c13-a4c1-4357-8b34" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3506-2338-2a06-ad59" type="atLeast"/>
+                <condition field="selections" scope="6c13-a4c1-4357-8b34" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3506-2338-2a06-ad59" type="equalTo"/>
               </conditions>
-              <modifiers>
-                <modifier type="set" field="a0ad-3185-eef0-88a7" value="3.0"/>
-                <modifier type="set" field="2026-a75e-7283-7a21" value="3.0"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
+            </modifier>
+            <modifier type="set" field="a0ad-3185-eef0-88a7" value="3.0">
               <conditions>
-                <condition field="selections" scope="6c13-a4c1-4357-8b34" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26ae-951f-a93e-0978" type="atLeast"/>
+                <condition field="selections" scope="6c13-a4c1-4357-8b34" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3506-2338-2a06-ad59" type="equalTo"/>
               </conditions>
-              <modifiers>
-                <modifier type="set" field="a0ad-3185-eef0-88a7" value="6.0"/>
-                <modifier type="set" field="2026-a75e-7283-7a21" value="6.0"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+            </modifier>
+            <modifier type="set" field="2026-a75e-7283-7a21" value="6.0">
+              <conditions>
+                <condition field="selections" scope="6c13-a4c1-4357-8b34" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26ae-951f-a93e-0978" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="a0ad-3185-eef0-88a7" value="6.0">
+              <conditions>
+                <condition field="selections" scope="6c13-a4c1-4357-8b34" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26ae-951f-a93e-0978" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0ad-3185-eef0-88a7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2026-a75e-7283-7a21" type="min"/>
