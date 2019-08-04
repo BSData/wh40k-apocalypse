@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4b51-905f-01f3-083f" name="AeldariWeapons" revision="2" battleScribeVersion="2.02" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4b51-905f-01f3-083f" name="AeldariWeapons" revision="3" battleScribeVersion="2.02" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b3cf-7747-c0da-770b" name="Faction: Asuryani" hidden="false"/>
     <categoryEntry id="fb21-5552-52d6-42e7" name="Faction: Drukhari" hidden="false"/>
@@ -105,6 +105,31 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9a02-7219-768e-dee6" name="Splinter Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="6102-de75-1153-a070" name="Splinter Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="1c62-acbd-cd9d-1f83" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3c9c-8811-9520-6178" name="Twin Splinter Rifle" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="76d9-2478-8db2-d51b" name="Twin Splinter Rifle" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="7b9a-9d1c-7465-666d" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="d357-2319-e092-bf3b" name="Bladevanes" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="733d-a311-b242-7b92" name="Bladevanes" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="e0eb-a08a-4608-4979" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="aacc-4f88-7aab-37ef" name="Corsair Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="9ad5-80cb-dd4d-8a29" name="Corsair Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="fc80-52dc-975c-5a88" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4978-78a3-f29b-4d53" name="Dark Lance" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="5472-2e1e-3e50-2ead" name="Dark Lance" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="23d8-0184-73c2-f964" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="5c17-053b-654b-28b0" name="Shuriken Cannon (Hv)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -180,6 +205,56 @@
     <profile id="c3bd-4dd9-ae75-f56d" name="Runes of the Farseer" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit is a Warlord, then once per battle, at the end of the Orders phase, you can look through your Command Asset deck, draw one Asuryani Command Asset card of your choice and add it to your hand. Then shuffle the Command Asset deck and place it face down.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1c62-acbd-cd9d-1f83" name="Splinter Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7b9a-9d1c-7465-666d" name="Twin Splinter Rifle" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e0eb-a08a-4608-4979" name="Bladevanes" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="23d8-0184-73c2-f964" name="Dark Lance" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fc80-52dc-975c-5a88" name="Corsair Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
