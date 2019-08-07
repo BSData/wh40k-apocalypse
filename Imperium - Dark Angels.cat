@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="3" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="4" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -88,12 +88,32 @@
             <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 10 friendly Dark Angels Infantry models. Each Jump Pack or Terminator model takes the space of 2 other Infantry models. It cannot transport Primaris units.</characteristic>
           </characteristics>
         </profile>
+        <profile id="76e3-e124-430c-f781" name="Data Augurs" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Change this unit’s Ballistic Skill characteristic to 2+ whilst it is within 6&quot; of any friendly Dark Angels Rhino Primaris units.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="1da3-aedb-fb88-b6ba" name="Rites of Battle" hidden="false" targetId="a9a4-c13f-702f-4bae" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="9220-e9b8-4c72-729b" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b768-96a2-3723-ce3d" name="Rhino Primaris" hidden="false" collective="false" targetId="6fdd-0f7d-c487-6743" type="selectionEntry">
+      <profiles>
+        <profile id="37bd-6fd0-be8f-957c" name="Servo-skull Hub" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, you can remove one small blast marker from one friendly Dark Angels Vehicle unit within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="66b4-1655-9e1d-1687" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly Dark Angels Infantry models. It cannot transport Primaris, Terminator or Jump Pack units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="4bf5-fa7a-58d2-d869" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
