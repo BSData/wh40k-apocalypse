@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="4" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="5" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -46,6 +46,10 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="5f51-e234-3cd0-0877" name="Chaplain" hidden="false" collective="false" targetId="b371-3bcc-b91b-03e6" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="b317-e91d-ad1a-22ad" name="Litanies of Hate" hidden="false" targetId="1020-199d-b194-0218" type="profile"/>
+        <infoLink id="2484-00d9-b32c-7c6a" name="Spritiual Leader" hidden="false" targetId="f2e9-2ae6-3afd-0024" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="88c8-130e-3d0d-51e3" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
@@ -72,11 +76,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="1393-3d07-7661-59b6" name="Techmarine" hidden="false" collective="false" targetId="6690-dae8-1ba2-9454" type="selectionEntry">
+      <profiles>
+        <profile id="b04c-9bc6-d679-ddaf" name="Blessing of the Omnissiah" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair one friendly Dark Angels Vehicle unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that Vehicle unit. Only one attempt to repair each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="4ace-3d05-e47b-7416" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9ffb-6f51-e202-7f14" name="Lieutenant" hidden="false" collective="false" targetId="63dd-5f7e-f7ca-1ed2" type="selectionEntry">
+    <entryLink id="9ffb-6f51-e202-7f14" name="Lieutenants" hidden="false" collective="false" targetId="63dd-5f7e-f7ca-1ed2" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="7037-bc90-824c-6654" name="Tactical Precision" hidden="false" targetId="a59a-956d-9741-2423" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="801a-f84b-84f2-2f2c" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
@@ -118,7 +132,10 @@
         <categoryLink id="4bf5-fa7a-58d2-d869" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0937-b575-b813-5ada" name="Primaris Lieutenant" hidden="false" collective="false" targetId="bbe6-4a4c-8477-4b34" type="selectionEntry">
+    <entryLink id="0937-b575-b813-5ada" name="Primaris Lieutenants" hidden="false" collective="false" targetId="bbe6-4a4c-8477-4b34" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="21b9-18d8-b344-67e2" name="Tactical Precision" hidden="false" targetId="a59a-956d-9741-2423" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f919-e858-8366-9064" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
@@ -129,16 +146,25 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="61d7-fb7c-46ae-c0b8" name="Apothecary" hidden="false" collective="false" targetId="47e5-110b-315c-0cb3" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="3b38-72d4-900d-e084" name="Narthecium" hidden="false" targetId="e29f-d600-021b-a7ec" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="5df3-d14b-2d3b-1a92" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a839-ec31-04b8-dc47" name="Company Ancient" hidden="false" collective="false" targetId="4991-016c-9c24-34d3" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="8214-c044-9fc2-d790" name="Astartes Banner" hidden="false" targetId="e6e5-25f0-34b4-0fe8" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="651e-f0f2-5350-1317" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4dc6-574e-30a2-923f" name="Primaris Ancient" hidden="false" collective="false" targetId="ca50-b2c7-56ad-f6a3" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="5604-15d9-934f-9455" name="Astartes Banner" hidden="false" targetId="e6e5-25f0-34b4-0fe8" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="fd8a-fa33-f5cf-487f" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
@@ -149,6 +175,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="6f6e-eff7-68dc-9f49" name="Company Veterans" hidden="false" collective="false" targetId="b573-05bb-9d80-f130" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="afe7-babb-4fe9-d21e" name="Command Squad Bodyguard" hidden="false" targetId="5531-a308-d067-eba6" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c698-30b7-3bc1-adc7" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
@@ -173,7 +202,10 @@
         <categoryLink id="67d4-8566-3d1e-3e71" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f069-80a0-3eb1-1ae5" name="Primaris Apthecary" hidden="false" collective="false" targetId="daaf-718e-c540-13fa" type="selectionEntry">
+    <entryLink id="f069-80a0-3eb1-1ae5" name="Primaris Apothecary" hidden="false" collective="false" targetId="daaf-718e-c540-13fa" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="e357-a6bb-f5a7-2f6d" name="Narthecium" hidden="false" targetId="e29f-d600-021b-a7ec" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="88f6-b077-01d8-c1ff" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
@@ -373,14 +405,27 @@
     <entryLink id="959c-a0fa-4c8f-abac" name="Sammael in Sableclaw" hidden="false" collective="false" targetId="7155-e869-e193-7d39" type="selectionEntry"/>
     <entryLink id="8d33-11b7-0f75-d983" name="Sammael on Corvex" hidden="false" collective="false" targetId="905d-d514-3d6a-8ff1" type="selectionEntry"/>
     <entryLink id="84e2-64a1-7fca-9a87" name="Primaris Chaplain" hidden="false" collective="false" targetId="7813-d97a-0510-14e6" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="fe5c-332b-9f7f-3bfe" name="Litanies of Hate" hidden="false" targetId="1020-199d-b194-0218" type="profile"/>
+        <infoLink id="d655-f16a-b2a1-7a9c" name="Spiritual Leader" hidden="false" targetId="74f7-3d04-b46b-7759" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7e99-93fb-8d24-7816" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5704-ddac-4193-c450" name="Ezekiel" hidden="false" collective="false" targetId="f206-4087-d9fa-ee49" type="selectionEntry"/>
-    <entryLink id="312f-7b82-dfed-cae5" name="Primaris Master" hidden="false" collective="false" targetId="9f6a-b064-852b-66d5" type="selectionEntry"/>
+    <entryLink id="312f-7b82-dfed-cae5" name="Primaris Master" hidden="false" collective="false" targetId="9f6a-b064-852b-66d5" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="75ab-b8c8-c23d-c97e" name="Rites of Battle" hidden="false" targetId="a9a4-c13f-702f-4bae" type="profile"/>
+      </infoLinks>
+    </entryLink>
     <entryLink id="4676-57a8-b31d-1143" name="Interrogator-Chaplain" hidden="false" collective="false" targetId="0b29-b69f-4c9e-c3ec" type="selectionEntry"/>
-    <entryLink id="4209-d2c7-f2be-5689" name="Master" hidden="false" collective="false" targetId="bfd6-618e-d7ee-41e3" type="selectionEntry"/>
+    <entryLink id="4209-d2c7-f2be-5689" name="Master" hidden="false" collective="false" targetId="bfd6-618e-d7ee-41e3" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="6239-940a-ca79-7238" name="Rites of Battle" hidden="false" targetId="a9a4-c13f-702f-4bae" type="profile"/>
+        <infoLink id="cabf-01b0-a80f-05c7" name="Inner Circle" hidden="false" targetId="9331-d919-e587-f51f" type="profile"/>
+      </infoLinks>
+    </entryLink>
     <entryLink id="b533-c8a7-47de-367f" name="Deathwing Ancient" hidden="false" collective="false" targetId="dd70-7189-96d5-19fc" type="selectionEntry"/>
     <entryLink id="aa9a-e575-5eac-8be1" name="Deathwing Apothecary" hidden="false" collective="false" targetId="8e2b-354d-7879-ad34" type="selectionEntry"/>
     <entryLink id="36a8-0af1-2593-ead1" name="Deathwing Champion" hidden="false" collective="false" targetId="4c8d-91ec-27e9-0ca4" type="selectionEntry"/>
@@ -923,6 +968,9 @@ Primaris models.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e005-e514-dda0-e152" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33ec-a67a-fec7-7924" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="eb8a-817a-b760-91b8" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="9458-87bc-f4f0-3e8c" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
@@ -1053,8 +1101,8 @@ Primaris models.</characteristic>
       <infoLinks>
         <infoLink id="8a2d-7772-11d4-5576" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
         <infoLink id="1291-54a7-6561-c9e5" name="Inner Circle" hidden="false" targetId="9331-d919-e587-f51f" type="profile"/>
-        <infoLink id="52c5-afe6-276c-6fed" name="Litanies of Hate" hidden="false" targetId="dbd5-e5c8-73df-07b8" type="profile"/>
-        <infoLink id="15d7-f15f-bc8a-2442" name="Spiritual Leader" hidden="false" targetId="74f7-3d04-b46b-7759" type="profile"/>
+        <infoLink id="52c5-afe6-276c-6fed" name="Litanies of Hate" hidden="false" targetId="1020-199d-b194-0218" type="profile"/>
+        <infoLink id="15d7-f15f-bc8a-2442" name="Spritiual Leader" hidden="false" targetId="f2e9-2ae6-3afd-0024" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1451-9575-620e-aafc" name="Chaplain" hidden="false" targetId="89c1-3354-3e0d-279e" primary="false"/>
@@ -2192,6 +2240,17 @@ Primaris models.</characteristic>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Icon of Old Caliban: Friendly Dark Angels Light and Dark Angels Heavyff units have the Stealth ability whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
+        <profile id="04c1-a3ef-91a4-1121" name="Ravenwing Darkshroud" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6+</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="eb2c-4f1f-ed7e-d31f" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
@@ -2720,6 +2779,32 @@ Primaris models.</characteristic>
     <profile id="e998-eef2-2f4b-d053" name="Honour or Death" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by this unit that target Character units.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1020-199d-b194-0218" name="Litanies of Hate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll hit rolls for attacks made with melee weapons by friendly Dark Angels units whilst they are within 6&quot; of this unit</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f2e9-2ae6-3afd-0024" name="Spiritual Leader" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
+      </characteristics>
+    </profile>
+    <profile id="2d15-5e78-6744-d151" name="Narthecium" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to heal one friendly Dark Angels Light unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that Light unit. Only one attempt to heal each unit can be made each turn. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e6e5-25f0-34b4-0fe8" name="Astartes Banner" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f"> Morale tests taken for friendly Dark Angels units are automatically passed whilst they are within 6&quot; of this unit.
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5531-a308-d067-eba6" name="Command Squad Bodyguard" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Damage phase, you can select one friendly Dark Angels Light Character unit that has at least one blast marker next to it and is within 6&quot; of this unit. Remove up to D3 blast markers from that Character unit and place them next to this unit</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
