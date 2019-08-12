@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e93c-6dd4-eb77-893d" name="Aeldari - Drukhari" revision="10" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e93c-6dd4-eb77-893d" name="Aeldari - Drukhari" revision="11" battleScribeVersion="2.02" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="3cef-65f6-1938-6b57" name="Archon" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="052f-2cba-abf7-da92" name="Faction: &lt;KABAL&gt;" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -39,6 +39,9 @@
     <categoryEntry id="6ffa-e877-538b-30f1" name="Venom" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="3d1b-9934-1289-8521" name="Razorwing Jetfighter" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="241c-dc12-f1c3-3825" name="Voidraven Bomber" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="7355-f30b-49c9-5c8f" name="Reaper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="6b4f-d841-6885-81f6" name="Tantalus" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="882a-3509-5dcc-393c" name="Raven Strike Fighter" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="5a25-f53a-0105-5865" name="Archon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="17d0-1558-09cd-cb58" type="selectionEntry"/>
@@ -72,6 +75,9 @@
     <entryLink id="ba0f-9c39-ddac-4fad" name="Wracks" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="5fab-1d88-23b5-b612" type="selectionEntry"/>
     <entryLink id="cd4e-0971-3830-20b2" name="Wyches" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="6298-2e7d-b945-6ef4" type="selectionEntry"/>
     <entryLink id="24bd-71e6-964e-3edf" name="Webway Gate" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="f4ea-67e2-d7a9-3bbd" type="selectionEntry"/>
+    <entryLink id="6d41-6021-f008-0c79" name="Reaper" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="240a-0b05-43dd-4520" type="selectionEntry"/>
+    <entryLink id="5c5f-36fe-f80a-fcd9" name="Tantalus" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="5967-7f20-d3ac-aeaa" type="selectionEntry"/>
+    <entryLink id="d295-f135-6ceb-dad2" name="Raven Strike Fighter" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="6968-70b8-0797-74a2" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="17d0-1558-09cd-cb58" name="Archon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
@@ -2549,10 +2555,26 @@ rounding down, from this unit. Small blast markers must be removed before large 
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca2c-21e9-00c4-c7e6" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="41f7-ea93-cf6f-cbc9" name="Blaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="0e94-8e25-18b5-b354" type="selectionEntry"/>
-            <entryLink id="4962-a208-75f5-e1c2" name="Dark Lance" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="43f5-4c44-ca95-3cde" type="selectionEntry"/>
-            <entryLink id="8898-3f05-50dc-19ea" name="Haywire Blaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="0f3b-33c7-0815-b786" type="selectionEntry"/>
-            <entryLink id="55c1-4272-308b-b179" name="Heat Lance" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="66f9-d3c6-9e33-a1d0" type="selectionEntry"/>
+            <entryLink id="41f7-ea93-cf6f-cbc9" name="Blaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="0e94-8e25-18b5-b354" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4962-a208-75f5-e1c2" name="Dark Lance" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="43f5-4c44-ca95-3cde" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8898-3f05-50dc-19ea" name="Haywire Blaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="0f3b-33c7-0815-b786" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="55c1-4272-308b-b179" name="Heat Lance" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="66f9-d3c6-9e33-a1d0" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+              </modifiers>
+            </entryLink>
             <entryLink id="cc8b-dae6-aaf2-f3a4" name="Shredder" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" targetId="f9dd-c820-f298-0ca4" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="2.0"/>
@@ -2843,7 +2865,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="c878-8e18-24ae-7586" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="cdf1-5a0b-ef1e-7266" type="profile"/>
+        <infoLink id="c878-8e18-24ae-7586" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="77a7-3c40-47db-00e3" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
@@ -2903,7 +2925,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="410d-7e85-d53a-bfb1" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="cdf1-5a0b-ef1e-7266" type="profile"/>
+        <infoLink id="410d-7e85-d53a-bfb1" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
         <infoLink id="0d9f-d618-cac1-39b5" name="Open-topped" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="e66d-fc46-6a89-4318" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -2967,7 +2989,7 @@ rounding down, from this unit. Small blast markers must be removed before large 
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8c14-e859-ae5f-ffe3" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="cdf1-5a0b-ef1e-7266" type="profile"/>
+        <infoLink id="8c14-e859-ae5f-ffe3" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
         <infoLink id="8e08-ca01-2382-0eb4" name="Open-topped" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="e66d-fc46-6a89-4318" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -3278,9 +3300,6 @@ rounding down, from this unit. Small blast markers must be removed before large 
           </characteristics>
         </profile>
       </profiles>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="a492-561d-c38a-08d6" name="Splinter Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -3547,6 +3566,236 @@ rounding down, from this unit. Small blast markers must be removed before large 
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="240a-0b05-43dd-4520" name="Reaper" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="2df7-352f-8e09-fa4b" name="Reaper" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f241-f48b-e147-d132" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e3a1-85ca-7252-7522" name="Faction: &lt;HAEMONCULUS COVEN&gt;" hidden="false" targetId="784b-a6b0-402c-c53c" primary="false"/>
+        <categoryLink id="1320-dc06-367e-7cce" name="Faction: &lt;KABAL&gt;" hidden="false" targetId="052f-2cba-abf7-da92" primary="false"/>
+        <categoryLink id="24e6-d474-d684-6962" name="Faction: &lt;WYCH CULT&gt;" hidden="false" targetId="cb7c-1a71-1a58-69b9" primary="false"/>
+        <categoryLink id="dc8b-516f-1a76-03d8" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="0b12-de40-ccd8-cb5b" name="Faction: Drukhari" hidden="false" targetId="fb21-5552-52d6-42e7" primary="false"/>
+        <categoryLink id="20df-c0fc-2cb8-9078" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="aee3-1ca5-0756-eecc" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="f3b0-6497-c898-4419" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="65d9-173e-3500-c09c" name="Reaper" hidden="false" targetId="7355-f30b-49c9-5c8f" primary="false"/>
+        <categoryLink id="0514-4f9e-c98e-4c39" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3071-9b23-d4e4-a710" name="Storm Vortex Projector" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a1-a1c4-bb28-9942" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64ee-ee43-c688-3b7d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a102-b984-facd-8540" name="Storm Vortex Projector" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="4d06-c5c3-2c65-f3e1" name="Scythevanes" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c9-2e18-9f1c-73de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3606-6dd5-c2fc-c8d1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="093b-f8f2-17f0-2784" name="Scythevanes" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5967-7f20-d3ac-aeaa" name="Tantalus" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="b24a-6c3d-54f5-1172" name="Tantalus" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f20a-c5e4-f114-a939" name="Tantalus" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 16 friendly Drukhari Infantry models. Each Grotesque model takes the space of 2 other Infantry models. It cannot transport Scourge or Skyboard units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d28e-a917-df6f-a676" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
+        <infoLink id="58cb-40b9-77ec-98f0" name="Open-topped" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="e66d-fc46-6a89-4318" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="79ad-b2f1-9819-38c5" name="Faction: &lt;HAEMONCULUS COVEN&gt;" hidden="false" targetId="784b-a6b0-402c-c53c" primary="false"/>
+        <categoryLink id="d86a-b12c-b69b-a9da" name="Faction: &lt;KABAL&gt;" hidden="false" targetId="052f-2cba-abf7-da92" primary="false"/>
+        <categoryLink id="e1c0-ff78-039c-cdf8" name="Faction: &lt;WYCH CULT&gt;" hidden="false" targetId="cb7c-1a71-1a58-69b9" primary="false"/>
+        <categoryLink id="01a0-6523-b2c3-7058" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="e7c9-8cf8-390b-df66" name="Faction: Drukhari" hidden="false" targetId="fb21-5552-52d6-42e7" primary="false"/>
+        <categoryLink id="5ba4-9465-44d3-1e34" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="6005-656d-42f7-cf40" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="d111-1027-d561-35f3" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="efb5-da40-7e26-70d4" name="Tantalus" hidden="false" targetId="6b4f-d841-6885-81f6" primary="false"/>
+        <categoryLink id="80a3-0f86-dd7d-9435" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="b758-9f4a-3837-2f1f" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ea9a-ba87-5433-015c" name="2 Pulse-disintegrators" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ec8-9949-6b20-3af0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8cd-60ba-ec39-86a7" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="a264-b9e9-6bda-fab6" name="Pulse-disintegrator" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="9526-dfb4-d8ce-561b" name="Dire Scythe Blade" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cdb-f6f2-c0c1-7efb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3304-b153-ddf2-7cfc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cd01-386d-34b7-94ca" name="Dire Scythe Blade" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6968-70b8-0797-74a2" name="Raven Strike Fighter" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="5f11-c008-9f8b-adb9" name="Raven Strike Fighter" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">20&quot;-72&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5dee-fc60-4a67-99d1" name="Supersonic" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="81f2-9980-ddc7-4710" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="e72b-f48b-8841-c9a0" name="Faction: &lt;HAEMONCULUS COVEN&gt;" hidden="false" targetId="784b-a6b0-402c-c53c" primary="false"/>
+        <categoryLink id="4c9c-0611-d8da-c564" name="Faction: &lt;KABAL&gt;" hidden="false" targetId="052f-2cba-abf7-da92" primary="false"/>
+        <categoryLink id="4c3f-bc65-12ec-4de8" name="Faction: &lt;WYCH CULT&gt;" hidden="false" targetId="cb7c-1a71-1a58-69b9" primary="false"/>
+        <categoryLink id="254a-57d5-c4c3-ca8e" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+        <categoryLink id="1a87-01ae-c12c-da86" name="Faction: Drukhari" hidden="false" targetId="fb21-5552-52d6-42e7" primary="false"/>
+        <categoryLink id="8938-07d4-fb9f-43f8" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="9ed4-d0ec-f3a6-fbc3" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="3122-7c9d-d886-8ea2" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="7ecd-7cef-fd30-4a6f" name="Raven Strike Fighter" hidden="false" targetId="882a-3509-5dcc-393c" primary="false"/>
+        <categoryLink id="81ea-56a9-ba1f-6578" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a107-21ab-39ef-b48f" name="2 Dark Lances" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e623-e80c-8209-68a1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4064-bbf2-0237-6dcc" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8ca3-c799-5f11-8991" name="Dark Lance" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="23d8-0184-73c2-f964" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="3c9f-76a0-603e-587c" name="Splinterstorm Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97f2-7b8a-103e-195f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8040-7b94-dc85-ca67" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9c8b-9a57-b74c-6be1" name="Splinterstorm Cannon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">12+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="7d7e-b75c-f738-2cbe" name="Bladed Hull" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4499-d8cc-1d27-ca6d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c3b-7bc6-b94d-088e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8ef1-0e2a-456b-6cd2" name="Bladed Hull" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="5eaa-c4f9-b8ab-2158" name="Splinter Rifle" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -3567,11 +3816,6 @@ rounding down, from this unit. Small blast markers must be removed before large 
         <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
         <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="cdf1-5a0b-ef1e-7266" name="Hover" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-      <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Distances are measured to and from this unit’s hull, even though it has a base.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
