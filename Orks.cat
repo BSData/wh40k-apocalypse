@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="18e4-faec-a65f-58d0" name="Orks" revision="2" battleScribeVersion="2.02" authorName="BSData Developers" authorContact="@Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="18e4-faec-a65f-58d0" name="Orks" revision="3" battleScribeVersion="2.02" authorName="BSData Developers" authorContact="@Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -5082,26 +5082,28 @@
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="ab6a-1ee2-019f-b2f6" name="Primary Weapons" hidden="false" collective="false" defaultSelectionEntryId="3d3e-7572-a151-1799">
-          <modifierGroups>
-            <modifierGroup>
+          <modifiers>
+            <modifier type="set" field="49e8-bcb9-8f08-87a1" value="2.0">
               <conditions>
                 <condition field="selections" scope="a267-3871-8021-ce5b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d862-0ca7-c63a-5227" type="atLeast"/>
               </conditions>
-              <modifiers>
-                <modifier type="set" field="49e8-bcb9-8f08-87a1" value="2.0"/>
-                <modifier type="set" field="9d3d-c620-8a16-cd5b" value="2.0"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
+            </modifier>
+            <modifier type="set" field="9d3d-c620-8a16-cd5b" value="2.0">
+              <conditions>
+                <condition field="selections" scope="a267-3871-8021-ce5b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d862-0ca7-c63a-5227" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="49e8-bcb9-8f08-87a1" value="3.0">
               <conditions>
                 <condition field="selections" scope="a267-3871-8021-ce5b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aef2-62ef-a8d8-20a0" type="atLeast"/>
               </conditions>
-              <modifiers>
-                <modifier type="set" field="49e8-bcb9-8f08-87a1" value="3.0"/>
-                <modifier type="set" field="9d3d-c620-8a16-cd5b" value="3.0"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+            </modifier>
+            <modifier type="set" field="9d3d-c620-8a16-cd5b" value="3.0">
+              <conditions>
+                <condition field="selections" scope="a267-3871-8021-ce5b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aef2-62ef-a8d8-20a0" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49e8-bcb9-8f08-87a1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d3d-c620-8a16-cd5b" type="max"/>
@@ -8350,7 +8352,7 @@
         <profile id="f85d-0fa8-79e0-d01e" name="Spinnin&apos; Blades" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
             <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Mele</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
