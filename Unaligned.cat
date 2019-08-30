@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="45fc-6b5f-a181-4cd3" name="Unaligned" revision="1" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="45fc-6b5f-a181-4cd3" name="Unaligned" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a5a-e86c-95b1-af1a" name="Faction: Unaligned" hidden="false"/>
     <categoryEntry id="f43f-4d40-bdd9-9dc3" name="Aegis Defence Line" hidden="false"/>
@@ -23,7 +23,7 @@
     <categoryEntry id="3e81-642b-650c-10b9" name="Primaris Redoubt" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry id="f46d-c8d1-dff8-817b" name="Aegis Defense Line" hidden="false" collective="false" type="unit">
+    <selectionEntry id="f46d-c8d1-dff8-817b" name="Aegis Defense Line" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="d3b4-28a9-5641-a504" name="Aegis Defense Line" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -46,7 +46,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1ca7-a076-3c1e-334b" name="Aegis Defense Line Gun Emplacement" hidden="false" collective="false" type="unit">
+    <selectionEntry id="1ca7-a076-3c1e-334b" name="Aegis Defense Line Gun Emplacement" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="9a68-1ab8-2aa2-518a" value="-1.0">
           <conditions>
@@ -88,14 +88,14 @@
         <categoryLink id="887d-7765-c1bf-f8ee" name="Gun Emplacement" hidden="false" targetId="9697-1c74-a238-fd21" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="30f9-49e0-56bd-36ac" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="8db2-ad55-7125-d121">
+        <selectionEntryGroup id="30f9-49e0-56bd-36ac" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8db2-ad55-7125-d121">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea9-a414-bab8-11ef" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7ce-87dd-c10d-66dd" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8db2-ad55-7125-d121" name="Icarus Lascannon" hidden="false" collective="false" targetId="4696-876f-6c1e-aad7" type="selectionEntry"/>
-            <entryLink id="2e28-cc4b-bf69-9166" name="Quad-gun" hidden="false" collective="false" targetId="86b9-826a-44de-062d" type="selectionEntry"/>
+            <entryLink id="8db2-ad55-7125-d121" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="4696-876f-6c1e-aad7" type="selectionEntry"/>
+            <entryLink id="2e28-cc4b-bf69-9166" name="Quad-gun" hidden="false" collective="false" import="true" targetId="86b9-826a-44de-062d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -103,7 +103,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fdea-2223-b604-fd4c" name="Imperial Bastion" hidden="false" collective="false" type="unit">
+    <selectionEntry id="fdea-2223-b604-fd4c" name="Imperial Bastion" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="43d9-ec45-9317-b49c" name="Imperial Bastion" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -137,17 +137,17 @@
         <categoryLink id="0234-22b7-83e9-744c" name="Imperial Bastion" hidden="false" targetId="5161-d570-de2e-71ce" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0d1c-6f5c-42bc-cbc0" name="AA Weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="0d1c-6f5c-42bc-cbc0" name="AA Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667d-792c-1b73-5713" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c072-b45d-2364-7957" name="Icarus Lascannon" hidden="false" collective="false" targetId="4696-876f-6c1e-aad7" type="selectionEntry">
+            <entryLink id="c072-b45d-2364-7957" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="4696-876f-6c1e-aad7" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="c350-26f7-239e-06f4" name="Quad-gun" hidden="false" collective="false" targetId="86b9-826a-44de-062d" type="selectionEntry">
+            <entryLink id="c350-26f7-239e-06f4" name="Quad-gun" hidden="false" collective="false" import="true" targetId="86b9-826a-44de-062d" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -156,7 +156,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4297-9d03-4485-dab0" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+        <entryLink id="4297-9d03-4485-dab0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc81-3465-6454-945e" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c25-71fe-0c7a-6967" type="max"/>
@@ -167,7 +167,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1ff8-573b-e9de-08c0" name="Imperial Defence Line" hidden="false" collective="false" type="unit">
+    <selectionEntry id="1ff8-573b-e9de-08c0" name="Imperial Defence Line" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="caa9-e2cc-6c34-7125" name="Imperial Defence Line" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -191,7 +191,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8d52-bf39-c6d9-f8e7" name="Imperial Bunker" hidden="false" collective="false" type="unit">
+    <selectionEntry id="8d52-bf39-c6d9-f8e7" name="Imperial Bunker" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="0618-f26c-c722-47a9" name="Imperial Bunker" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -234,17 +234,17 @@
         <categoryLink id="0b76-b994-5b3e-3ca5" name="Imperial Bunker" hidden="false" targetId="a60e-1140-c0a4-72ca" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a18d-c63f-a147-6a15" name="AA Weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="a18d-c63f-a147-6a15" name="AA Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b35-a3ff-25cb-1b0d" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6f76-1480-54aa-9b23" name="Icarus Lascannon" hidden="false" collective="false" targetId="4696-876f-6c1e-aad7" type="selectionEntry">
+            <entryLink id="6f76-1480-54aa-9b23" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="4696-876f-6c1e-aad7" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="d995-0ef5-6f43-72ea" name="Quad-gun" hidden="false" collective="false" targetId="86b9-826a-44de-062d" type="selectionEntry">
+            <entryLink id="d995-0ef5-6f43-72ea" name="Quad-gun" hidden="false" collective="false" import="true" targetId="86b9-826a-44de-062d" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -256,7 +256,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f5e0-821e-23d1-4dd7" name="Vengeance Weapon Battery" hidden="false" collective="false" type="unit">
+    <selectionEntry id="f5e0-821e-23d1-4dd7" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="f03f-6902-5254-0f3e" name="Fully Automated Weapons" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -274,7 +274,7 @@
         <categoryLink id="667d-7668-196f-e5e7" name="Vengeance Weapon Battery" hidden="false" targetId="865a-1f8b-7bf9-e18a" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1c64-f465-676f-9efc" name="Weapon" hidden="false" collective="false" targetId="c83a-5090-6640-dcbc" type="selectionEntryGroup">
+        <entryLink id="1c64-f465-676f-9efc" name="Weapon" hidden="false" collective="false" import="true" targetId="c83a-5090-6640-dcbc" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce83-c9dc-56a2-d422" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e7d-e28c-cf51-31da" type="min"/>
@@ -285,7 +285,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dd92-1110-4a47-b81a" name="Firestorm Redoubt" hidden="false" collective="false" type="unit">
+    <selectionEntry id="dd92-1110-4a47-b81a" name="Firestorm Redoubt" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="e4d6-37f2-4d5c-2e42" name="Firestorm Redoubt" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -320,7 +320,7 @@
         <categoryLink id="64bd-6bd8-cfea-a212" name="Firestorm Redoubt" hidden="false" targetId="72fb-880d-6a58-c521" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="918a-b75a-e9ba-335b" name="Weapon" hidden="false" collective="false" targetId="c83a-5090-6640-dcbc" type="selectionEntryGroup">
+        <entryLink id="918a-b75a-e9ba-335b" name="Weapon" hidden="false" collective="false" import="true" targetId="c83a-5090-6640-dcbc" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e80c-b73d-8c27-ece9" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6398-3742-328e-32e6" type="max"/>
@@ -331,7 +331,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="12eb-1334-a41a-4ae9" name="Plasma Obliterator" hidden="false" collective="false" type="unit">
+    <selectionEntry id="12eb-1334-a41a-4ae9" name="Plasma Obliterator" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="a033-33be-554b-591c" name="Plasma Obliterator" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -365,7 +365,7 @@
         <categoryLink id="9c84-8af9-fa9e-9584" name="Plasma Obliterator" hidden="false" targetId="86b5-094e-4f00-170d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1bcc-d203-0c96-0d4f" name="Plasma Obliterator" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1bcc-d203-0c96-0d4f" name="Plasma Obliterator" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2aa-b7a6-d523-e0be" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5137-84a3-68a3-171a" type="max"/>
@@ -391,7 +391,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1822-ffa5-0605-16d6" name="Macro-cannon Aquila Strongpoint" hidden="false" collective="false" type="unit">
+    <selectionEntry id="1822-ffa5-0605-16d6" name="Macro-cannon Aquila Strongpoint" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="5a49-f3a3-8358-e168" name="Macro-cannon Aquila Strongpoint" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -427,7 +427,7 @@
         <categoryLink id="4715-477b-91ec-1901" name="Macro-cannon" hidden="false" targetId="da24-201b-8179-9a6a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0dfb-4c04-20c3-6e7a" name="Aquila Macro-cannon" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0dfb-4c04-20c3-6e7a" name="Aquila Macro-cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="521d-9d71-a80e-1ad5" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07d8-2bf6-6959-f60d" type="max"/>
@@ -453,7 +453,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="b089-d9ae-20aa-3274" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+        <entryLink id="b089-d9ae-20aa-3274" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1569-b50c-19a8-6d69" type="max"/>
           </constraints>
@@ -463,7 +463,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8424-07c3-523d-a146" name="Vortex Missile Aquila Strongpoint" hidden="false" collective="false" type="unit">
+    <selectionEntry id="8424-07c3-523d-a146" name="Vortex Missile Aquila Strongpoint" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="facc-9376-c147-75eb" name="Vortex Missile Aquila Strongpoint" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -488,7 +488,7 @@
         <categoryLink id="0bc8-b533-1239-49bc" name="Vortex Missile" hidden="false" targetId="ebde-cae4-1134-fec0" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e3cf-07ed-8969-d65a" name="Vortex Missile Battery" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e3cf-07ed-8969-d65a" name="Vortex Missile Battery" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6933-a6bc-1582-b8cc" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="243c-7f88-ac95-70f0" type="max"/>
@@ -515,7 +515,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="b518-a4f2-e400-70d0" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+        <entryLink id="b518-a4f2-e400-70d0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
           </modifiers>
@@ -528,7 +528,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="17.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f8ea-9dd1-3c48-22b3" name="Void Shield Generator" hidden="false" collective="false" type="unit">
+    <selectionEntry id="f8ea-9dd1-3c48-22b3" name="Void Shield Generator" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="f123-a850-f4f8-fa0d" name="Void Shield Generator" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -559,7 +559,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aff0-eb2f-4997-96fd" name="Skyshield Landing Pad" hidden="false" collective="false" type="unit">
+    <selectionEntry id="aff0-eb2f-4997-96fd" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="76be-7cf6-cf40-8646" name="Skyshield Landing Pad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -590,7 +590,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c419-a84f-d8f6-508e" name="Fortress of Redemption" hidden="false" collective="false" type="unit">
+    <selectionEntry id="c419-a84f-d8f6-508e" name="Fortress of Redemption" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="b8bf-9876-4575-ea3f" name="Fortress of Redemption" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -613,7 +613,7 @@
         <categoryLink id="dfa1-6142-aa96-e358" name="Fortress of Redemption" hidden="false" targetId="d49d-eb3b-2ead-d63d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8338-f8d2-15d3-015d" name="Twin Icarus Lascannon" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8338-f8d2-15d3-015d" name="Twin Icarus Lascannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="187c-4b3a-f1da-bfd9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4734-eabf-6ccf-4e08" type="max"/>
@@ -637,7 +637,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7298-cf12-a605-6e41" name="Redemption Missile Silo" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7298-cf12-a605-6e41" name="Redemption Missile Silo" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a25-49d0-5663-edaa" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fb4-5442-d320-4fb7" type="max"/>
@@ -663,7 +663,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="e058-58be-b63c-b5e7" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+        <entryLink id="e058-58be-b63c-b5e7" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
           </modifiers>
@@ -676,7 +676,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="17.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bb20-f45b-e00e-7852" name="Spindle Drones" hidden="false" collective="false" type="unit">
+    <selectionEntry id="bb20-f45b-e00e-7852" name="Spindle Drones" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="b880-afde-2684-52d5" name="Spindle Drones (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -704,7 +704,7 @@
         <categoryLink id="35c0-c48d-7a9e-42a4" name="Spindle Drones" hidden="false" targetId="6656-eed6-3631-3f4d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="36b7-a623-33da-5240" name="Drone Pulses" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="36b7-a623-33da-5240" name="Drone Pulses" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b3a-3e90-ae2b-1c82" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e716-24f5-294f-f097" type="max"/>
@@ -725,7 +725,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fb88-1249-58fe-b2e8" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fb88-1249-58fe-b2e8" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="489b-b90d-c794-3b41" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c893-3146-7278-a8ef" type="max"/>
@@ -751,12 +751,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8edf-fdac-99e2-52fe" name="Imperial Fortress Wall" hidden="false" collective="false" type="unit">
+    <selectionEntry id="8edf-fdac-99e2-52fe" name="Imperial Fortress Wall" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="3730-5305-f0a5-8b2d" name="Imperial Fortress Wall" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b"></characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b"/>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">-</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">8</characteristic>
@@ -788,7 +788,7 @@
         <categoryLink id="83ca-b25d-6050-6934" name="Imperial Fortress Wall" hidden="false" targetId="7256-ef3d-ecb0-07e5" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0784-02b5-512d-41e9" name="Twin Long-barrelled Autocannon" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0784-02b5-512d-41e9" name="Twin Long-barrelled Autocannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bae0-48ef-3f22-f60e" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e458-340b-7748-f22f" type="max"/>
@@ -805,33 +805,36 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="dbc4-f7e3-92f3-08bc" name="Default weapons" hidden="false" collective="false" defaultSelectionEntryId="a9cc-7440-eea3-d316">
+        <selectionEntryGroup id="dbc4-f7e3-92f3-08bc" name="Default weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9cc-7440-eea3-d316">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d135-bbc1-866a-c76e" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b04-6a5d-4322-f30d" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a9cc-7440-eea3-d316" name="Twin Heavy Bolter" hidden="false" collective="false" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
+            <entryLink id="a9cc-7440-eea3-d316" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bf2-e312-6962-3e73" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="c423-8105-0cf0-b50d" name="Twin Lascannon" hidden="false" collective="false" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
+            <entryLink id="c423-8105-0cf0-b50d" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8314-ea38-7ffa-70d0" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d1d4-e30c-2760-6445" name="Extra weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="d1d4-e30c-2760-6445" name="Extra weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="060a-42d3-b1e5-5d34" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="17e5-9393-22ba-5abb" name="Twin Heavy Bolter" hidden="false" collective="false" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
+            <entryLink id="17e5-9393-22ba-5abb" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -839,7 +842,7 @@
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8e1-db32-e978-e8bb" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="0c99-4e72-e99f-ed62" name="Twin Lascannon" hidden="false" collective="false" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
+            <entryLink id="0c99-4e72-e99f-ed62" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -854,7 +857,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d0da-897a-bcdf-ca79" name="Primaris Redoubt" hidden="false" collective="false" type="unit">
+    <selectionEntry id="d0da-897a-bcdf-ca79" name="Primaris Redoubt" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="16fb-19de-92df-cc56" name="Primaris Redoubt" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -894,7 +897,7 @@
         <categoryLink id="b1d6-3e90-52d0-ea95" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0baf-55e5-9b7b-a556" name="Dual Turbo-laser Destructor" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0baf-55e5-9b7b-a556" name="Dual Turbo-laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="703f-b68c-d7b9-76e7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d466-f1b0-3535-fbf9" type="max"/>
@@ -914,15 +917,18 @@
           <infoLinks>
             <infoLink id="df24-1cdd-2916-c648" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="58fd-ba7b-6f97-9f59" name="Additional Weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="58fd-ba7b-6f97-9f59" name="Additional Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e0-0745-b580-9325" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="32ba-54fe-7f0e-c67b" name="Whirlwind Rocket Launcher" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="32ba-54fe-7f0e-c67b" name="Whirlwind Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="88cb-d60a-618c-f5c2" name="Whirlwind Rocket Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
@@ -942,7 +948,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f881-6ad3-2c8d-c832" name="Air Defense Missiles" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f881-6ad3-2c8d-c832" name="Air Defense Missiles" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="f827-7a78-ada0-c3da" name="Air Defense Missiles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
@@ -962,7 +968,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dd04-df4b-d9cc-ee29" name="Icarus Quad Lascannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dd04-df4b-d9cc-ee29" name="Icarus Quad Lascannon" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="9edb-8cb3-bddc-db3c" name="Icarus Quad Lascannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
@@ -984,37 +990,37 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="0c6a-9483-2ab0-82a6" name="Battle Cannon" hidden="false" collective="false" targetId="c421-b72d-bf12-38b0" type="selectionEntry">
+            <entryLink id="0c6a-9483-2ab0-82a6" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="c421-b72d-bf12-38b0" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="dad6-6166-e767-af8b" name="Icarus Lascannon" hidden="false" collective="false" targetId="4696-876f-6c1e-aad7" type="selectionEntry">
+            <entryLink id="dad6-6166-e767-af8b" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="4696-876f-6c1e-aad7" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="93ca-f9db-5fe2-7b9d" name="Multi-melta" hidden="false" collective="false" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+            <entryLink id="93ca-f9db-5fe2-7b9d" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="9e4d-1144-08e6-d99e" name="Quad-gun" hidden="false" collective="false" targetId="86b9-826a-44de-062d" type="selectionEntry">
+            <entryLink id="9e4d-1144-08e6-d99e" name="Quad-gun" hidden="false" collective="false" import="true" targetId="86b9-826a-44de-062d" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="2.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="bbe2-304f-42d9-b65b" name="Twin Heavy Bolter" hidden="false" collective="false" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
+            <entryLink id="bbe2-304f-42d9-b65b" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="6296-86a5-9a2b-3303" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="6128-eb1b-db13-1cce" name="Twin Heavy Flamer" hidden="false" collective="false" targetId="ef0f-d8ec-5be7-d039" type="selectionEntry">
+            <entryLink id="6128-eb1b-db13-1cce" name="Twin Heavy Flamer" hidden="false" collective="false" import="true" targetId="ef0f-d8ec-5be7-d039" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="097a-ee09-8deb-8a16" name="Twin Lascannon" hidden="false" collective="false" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
+            <entryLink id="097a-ee09-8deb-8a16" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -1023,7 +1029,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d8ae-a5d6-8d2a-2552" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+        <entryLink id="d8ae-a5d6-8d2a-2552" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
           </modifiers>
@@ -1038,7 +1044,7 @@
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="4696-876f-6c1e-aad7" name="Icarus Lascannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="4696-876f-6c1e-aad7" name="Icarus Lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d6b5-17c9-8412-b28b" name="Icarus Lascannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
@@ -1058,7 +1064,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86b9-826a-44de-062d" name="Quad-gun" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="86b9-826a-44de-062d" name="Quad-gun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="96b1-8bf0-cf70-90e1" name="Quad-gun" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
           <characteristics>
@@ -1080,9 +1086,9 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="c83a-5090-6640-dcbc" name="Weapon" hidden="false" collective="false">
+    <selectionEntryGroup id="c83a-5090-6640-dcbc" name="Weapon" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="65d0-18f7-a6f4-60a5" name="Punisher Gatling Cannon" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="65d0-18f7-a6f4-60a5" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5c8-6caa-97f1-9300" type="max"/>
           </constraints>
@@ -1102,7 +1108,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="869b-eb45-c39f-6827" name="Quad Icarus Lascannon" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="869b-eb45-c39f-6827" name="Quad Icarus Lascannon" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="1466-da3f-0d27-dace" value="2.0">
               <conditions>
@@ -1134,7 +1140,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="c7fb-2127-fcd9-87cb" name="Battle Cannon" hidden="false" collective="false" targetId="c421-b72d-bf12-38b0" type="selectionEntry">
+        <entryLink id="c7fb-2127-fcd9-87cb" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="c421-b72d-bf12-38b0" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90aa-e90f-044c-2610" type="max"/>
           </constraints>
@@ -1160,6 +1166,6 @@
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="03b0-bd27-6796-a386" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>
+    <catalogueLink id="03b0-bd27-6796-a386" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

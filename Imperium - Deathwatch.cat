@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e02e-4d8f-946c-6550" name="Imperium - Deathwatch" revision="1" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e02e-4d8f-946c-6550" name="Imperium - Deathwatch" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -17,7 +17,7 @@
     <categoryEntry id="87c9-248c-8ff5-acb3" name="Corvus Blackstar" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry id="4447-535c-14e0-0f30" name="Watch Master" hidden="false" collective="false" type="unit">
+    <selectionEntry id="4447-535c-14e0-0f30" name="Watch Master" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="2679-b0b3-6f93-255d" name="Watch Master" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -47,7 +47,7 @@
         <categoryLink id="6198-831b-09aa-4283" name="Watch Master" hidden="false" targetId="30fe-6106-40b8-2104" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9fdc-78e9-2d95-5857" name="Guardian Spear" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9fdc-78e9-2d95-5857" name="Guardian Spear" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e00-7bca-55b7-6e98" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a575-5b2e-5b0d-1d6c" type="max"/>
@@ -70,13 +70,13 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="18d5-cb7d-1ee2-2743" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="18d5-cb7d-1ee2-2743" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="78a2-a0ec-79a7-30bd" name="Watch Captain Artemis" hidden="false" collective="false" type="unit">
+    <selectionEntry id="78a2-a0ec-79a7-30bd" name="Watch Captain Artemis" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6119-eae9-f7f8-7a0e" type="max"/>
       </constraints>
@@ -113,19 +113,19 @@
         <categoryLink id="8932-630f-d5a1-a0c1" name="Artemis" hidden="false" targetId="f3d5-0141-11e0-f493" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b321-320f-9c2e-4586" name="Master-crafted Weapons" hidden="false" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry">
+        <entryLink id="b321-320f-9c2e-4586" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f7b-2929-49f3-538c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea7a-0a00-3544-499a" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="8133-f302-51b2-52ce" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="8133-f302-51b2-52ce" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="31dd-75e9-acf7-4447" name="Watch Captain" hidden="false" collective="false" type="unit">
+    <selectionEntry id="31dd-75e9-acf7-4447" name="Watch Captain" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="b1eb-62b5-46cb-9948" name="Watch Captain" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <modifiers>
@@ -170,13 +170,13 @@
         <categoryLink id="dc91-f8b6-65bf-6118" name="Watch Captain" hidden="false" targetId="69c3-b0be-fdac-e4a3" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="aea8-f769-4c32-27b1" name="Wargear" hidden="false" collective="false" defaultSelectionEntryId="4e22-8a6a-9c37-dd66">
+        <selectionEntryGroup id="aea8-f769-4c32-27b1" name="Wargear" hidden="false" collective="false" import="true" defaultSelectionEntryId="4e22-8a6a-9c37-dd66">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bd1-deda-b037-a1a4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7598-5a32-ed38-173c" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="4e22-8a6a-9c37-dd66" name="*No Wargear*" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4e22-8a6a-9c37-dd66" name="*No Wargear*" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="697d-5228-1c2b-15d5" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
               </categoryLinks>
@@ -186,20 +186,20 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="139b-b396-cb37-c3bd" name="Jump Pack" hidden="false" collective="false" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
-            <entryLink id="e74c-6c46-fa6d-11b6" name="Terminator Armour" hidden="false" collective="false" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
+            <entryLink id="139b-b396-cb37-c3bd" name="Jump Pack" hidden="false" collective="false" import="true" targetId="54ae-a37e-e67e-54e8" type="selectionEntry"/>
+            <entryLink id="e74c-6c46-fa6d-11b6" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f8b7-406f-35ea-c5a6" name="Master-crafted Weapons" hidden="false" collective="false" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
-        <entryLink id="ecd7-b305-1ea5-b1c4" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="f8b7-406f-35ea-c5a6" name="Master-crafted Weapons" hidden="false" collective="false" import="true" targetId="1a85-1077-c8ae-f16b" type="selectionEntry"/>
+        <entryLink id="ecd7-b305-1ea5-b1c4" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4a9a-1ecd-72e3-f5ea" name="Primaris Watch Captain" hidden="false" collective="false" type="unit">
+    <selectionEntry id="4a9a-1ecd-72e3-f5ea" name="Primaris Watch Captain" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="2c96-00a9-3144-6076" name="Primaris Watch Captain" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -228,7 +228,7 @@
         <categoryLink id="b6db-a00a-4eeb-5ec9" name="Watch Captain" hidden="false" targetId="69c3-b0be-fdac-e4a3" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0801-3393-f0f7-f29e" name="Master-crafted Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0801-3393-f0f7-f29e" name="Master-crafted Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3d-c6fa-5861-085c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dd4-3da8-7b1a-5c9f" type="max"/>
@@ -251,13 +251,13 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="3dc0-91cd-746c-fe35" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="3dc0-91cd-746c-fe35" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="47a3-4978-b75f-06ac" name="Veterans" hidden="false" collective="false" type="unit">
+    <selectionEntry id="47a3-4978-b75f-06ac" name="Veterans" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="8e30-8261-9508-c25a" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="7247-1696-f474-9bee" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -268,7 +268,7 @@
         <categoryLink id="8eff-2f11-554b-d6c5" name="Veterans" hidden="false" targetId="27be-7f92-8c92-4a7e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="81e2-992f-1437-1a2c" name="Deathwatch Boltguns" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="81e2-992f-1437-1a2c" name="Deathwatch Boltguns" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="b7ef-4f81-7801-a012" value="0.0">
               <conditionGroups>
@@ -316,13 +316,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3514-1d94-ddef-a3eb" name="5 - 10 Models" hidden="false" collective="false" defaultSelectionEntryId="8371-061e-e8d9-0474">
+        <selectionEntryGroup id="3514-1d94-ddef-a3eb" name="5 - 10 Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="8371-061e-e8d9-0474">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0638-88ab-8a59-6159" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4f3-c753-3d1d-0823" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8371-061e-e8d9-0474" name="5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8371-061e-e8d9-0474" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="a551-b1a2-a988-3b80" name="Veterans (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -340,7 +340,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4a1a-4259-50a2-4d1a" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4a1a-4259-50a2-4d1a" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="76bc-3bd0-0f38-0b01" name="Veterans (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -360,13 +360,13 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="eb93-4f8e-68aa-9c96" name="Melee Weapons" hidden="false" collective="false" defaultSelectionEntryId="8fcf-5643-0a42-fcdc">
+        <selectionEntryGroup id="eb93-4f8e-68aa-9c96" name="Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="8fcf-5643-0a42-fcdc">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae18-b634-cdb0-f6a1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb70-97d0-1678-e17c" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8691-fd1f-5d15-1d86" name="Deathwatch Melee Weapons" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8691-fd1f-5d15-1d86" name="Deathwatch Melee Weapons" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="6c01-38f0-0f23-2f04" name="Deathwatch Melee Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
@@ -385,15 +385,15 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="8fcf-5643-0a42-fcdc" name="Close Combat Weapons" hidden="false" collective="false" targetId="6144-aa85-b770-2f33" type="selectionEntry"/>
+            <entryLink id="8fcf-5643-0a42-fcdc" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="dc5d-6fa0-0fd6-efea" name="Heavy Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="dc5d-6fa0-0fd6-efea" name="Heavy Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d015-c3d9-fdf9-7aff" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="70db-e0e0-9370-e752" name="Infernus Heavy Bolter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="70db-e0e0-9370-e752" name="Infernus Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dec4-32d1-1b0d-7e76" type="max"/>
               </constraints>
@@ -413,7 +413,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1810-d299-6a59-fb94" name="Deathwatch Frag Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="1810-d299-6a59-fb94" name="Deathwatch Frag Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aa1-1225-02a8-af90" type="max"/>
               </constraints>
@@ -438,7 +438,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="b3b3-891b-09cf-8058" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+            <entryLink id="b3b3-891b-09cf-8058" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -446,7 +446,7 @@
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7960-e0a1-9b3f-8e2a" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="3e60-7d20-72ec-5049" name="Heavy Flamer" hidden="false" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+            <entryLink id="3e60-7d20-72ec-5049" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -454,7 +454,7 @@
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c94-bb01-fa7f-bcd1" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="b56a-b841-1529-b420" name="Missile Launcher" hidden="false" collective="false" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
+            <entryLink id="b56a-b841-1529-b420" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -466,13 +466,13 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6d50-4faa-8056-6019" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="6d50-4faa-8056-6019" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5d9a-75bc-846f-fd80" name="Terminators" hidden="false" collective="false" type="unit">
+    <selectionEntry id="5d9a-75bc-846f-fd80" name="Terminators" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="5a77-2e8c-35d6-ebfe" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
       </infoLinks>
@@ -486,7 +486,7 @@
         <categoryLink id="bb9d-393d-106c-8564" name="Terminators" hidden="false" targetId="9fa2-100c-e234-c17f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1583-ba01-7042-c342" name="Terminator Power Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1583-ba01-7042-c342" name="Terminator Power Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60d0-c437-74f3-a2ca" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23df-e232-6664-bb49" type="max"/>
@@ -507,7 +507,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="50ed-8787-6d34-b4ab" name="Deathwatch Storm Bolters" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="50ed-8787-6d34-b4ab" name="Deathwatch Storm Bolters" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ed-5ae7-e02b-74cf" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5392-b616-f8b5-fa5c" type="max"/>
@@ -533,13 +533,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4e60-bbf0-9982-f6be" name="5 - 10 Models" hidden="false" collective="false" defaultSelectionEntryId="79e6-567c-2011-8bf7">
+        <selectionEntryGroup id="4e60-bbf0-9982-f6be" name="5 - 10 Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="79e6-567c-2011-8bf7">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f2c-3115-33b3-61af" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1bc-23dd-4741-80e0" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="79e6-567c-2011-8bf7" name="5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="79e6-567c-2011-8bf7" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="0e1b-c929-5093-20c5" name="Terminators (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -557,7 +557,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="abf2-2ee1-2466-e7c1" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="abf2-2ee1-2466-e7c1" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="8700-1737-f166-0aa5" name="Terminators (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -577,12 +577,12 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1640-fc37-5f88-8cd4" name="Heavy Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="1640-fc37-5f88-8cd4" name="Heavy Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92b8-6533-ac9c-2d32" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9a2f-b217-33dc-721d" name="Assault Cannon" hidden="false" collective="false" targetId="8678-7b89-1980-47b2" type="selectionEntry">
+            <entryLink id="9a2f-b217-33dc-721d" name="Assault Cannon" hidden="false" collective="false" import="true" targetId="8678-7b89-1980-47b2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -590,7 +590,7 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1474-587f-c62b-eeaf" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="4d0e-d70d-f17c-9f65" name="Heavy Flamer" hidden="false" collective="false" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+            <entryLink id="4d0e-d70d-f17c-9f65" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
               </modifiers>
@@ -598,7 +598,7 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7b-2db9-8f35-3749" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="8315-f4bf-fdd0-c811" name="Cyclone Missile Launcher" hidden="false" collective="false" targetId="098d-bedf-91b5-c61b" type="selectionEntry">
+            <entryLink id="8315-f4bf-fdd0-c811" name="Cyclone Missile Launcher" hidden="false" collective="false" import="true" targetId="098d-bedf-91b5-c61b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2dc-965f-e2a2-d7d7" type="max"/>
               </constraints>
@@ -610,7 +610,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="119c-1f8b-a735-b1d8" name="Vanguard Veterans" hidden="false" collective="false" type="unit">
+    <selectionEntry id="119c-1f8b-a735-b1d8" name="Vanguard Veterans" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="0032-8457-e2bd-be99" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
       </infoLinks>
@@ -626,7 +626,7 @@
         <categoryLink id="cfc5-75cc-3f98-aa1a" name="Vanguard Veterans" hidden="false" targetId="4e54-ff83-8b9a-1a2d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ea87-bfa8-fb1a-0bda" name="Deathwatch Bolt Pistols" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ea87-bfa8-fb1a-0bda" name="Deathwatch Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="120a-7a91-01e0-3fa1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8b8-d223-7ebb-aaa0" type="max"/>
@@ -643,8 +643,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
-        <selectionEntry id="10f3-fafd-c8fe-2313" name="Vanguard Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="10f3-fafd-c8fe-2313" name="Vanguard Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3216-1803-3e38-a7d2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b75-f7d7-1658-836b" type="max"/>
@@ -661,16 +664,19 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2bc3-876e-b227-5232" name="5 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="7305-bfaa-de58-4dde">
+        <selectionEntryGroup id="2bc3-876e-b227-5232" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="7305-bfaa-de58-4dde">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af12-2162-c8fe-b91d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d769-89a8-8c62-55a1" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7305-bfaa-de58-4dde" name="5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7305-bfaa-de58-4dde" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="93e2-079a-da43-6305" name="Vanguard Veterans (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -688,7 +694,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ea34-452b-6ec8-7161" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ea34-452b-6ec8-7161" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="618f-6cd9-4dd0-2339" name="Vanguard Veterans (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -710,10 +716,13 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1b6b-4837-6ac8-b367" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="1b6b-4837-6ac8-b367" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="8d4f-5fd3-bcb0-9f5f" name="Intercessors" hidden="false" collective="false" type="unit">
+    <selectionEntry id="8d4f-5fd3-bcb0-9f5f" name="Intercessors" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="bd46-9339-1323-d0eb" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="24cb-e0b3-1ca6-5d5e" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -725,7 +734,7 @@
         <categoryLink id="b62f-e12c-3663-1a3c" name="Intercessors" hidden="false" targetId="6f5e-3697-6d04-383d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9f5d-cdcf-7a79-5bce" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9f5d-cdcf-7a79-5bce" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="862c-388a-9f07-53ee" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d61c-f4cc-f95f-f218" type="max"/>
@@ -748,13 +757,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b1f4-06ad-3ef8-e9ed" name="5 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="aacf-7a2e-7250-59d9">
+        <selectionEntryGroup id="b1f4-06ad-3ef8-e9ed" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="aacf-7a2e-7250-59d9">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb07-61cf-85a4-a598" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28f9-c95f-19ea-ec52" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="aacf-7a2e-7250-59d9" name="5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="aacf-7a2e-7250-59d9" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="6143-60c9-c6cf-85d4" name="Intercessors (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -772,7 +781,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fd0c-c3bb-85c2-508b" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="fd0c-c3bb-85c2-508b" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="d201-9dec-75f9-fca2" name="Intercessors (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -794,16 +803,19 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a499-1435-bab7-2e86" name="Bolt Rifles" hidden="false" collective="false" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
+        <entryLink id="a499-1435-bab7-2e86" name="Bolt Rifles" hidden="false" collective="false" import="true" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f92-d2dc-b61f-6c4f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c1-4785-7a0a-4dcc" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="150d-e3f9-3639-8a40" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="150d-e3f9-3639-8a40" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="2e4f-efcf-0db6-52ca" name="Reivers" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2e4f-efcf-0db6-52ca" name="Reivers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="0e4c-0df7-0dee-807f" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
       </infoLinks>
@@ -819,15 +831,15 @@
         <categoryLink id="fb84-6581-9df4-16a7" name="Reivers" hidden="false" targetId="ffba-6172-38f5-6441" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="521e-b3a4-46db-f58e" name="Weapons" hidden="false" collective="false" defaultSelectionEntryId="2894-093c-2c18-3562">
+        <selectionEntryGroup id="521e-b3a4-46db-f58e" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="2894-093c-2c18-3562">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e07-303d-0e39-d939" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac7-ec42-c28d-eb04" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2894-093c-2c18-3562" name="Reiver Blades &amp; Heavy Bolt Pistols" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2894-093c-2c18-3562" name="Reiver Blades &amp; Heavy Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
-                <selectionEntry id="da59-f67a-5907-019a" name="Reiver Blades" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="da59-f67a-5907-019a" name="Reiver Blades" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d91-e964-d18a-c5da" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fae8-9a7b-a9c3-78d0" type="max"/>
@@ -850,15 +862,15 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="d89d-b95e-4d63-a618" name="Heavy Bolt Pistols" hidden="false" collective="false" targetId="35bb-c4c0-0e46-cd22" type="selectionEntry"/>
+                <entryLink id="d89d-b95e-4d63-a618" name="Heavy Bolt Pistols" hidden="false" collective="false" import="true" targetId="35bb-c4c0-0e46-cd22" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7c48-cd09-a9ea-bf66" name="Bolt Carbines &amp; Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7c48-cd09-a9ea-bf66" name="Bolt Carbines &amp; Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
-                <selectionEntry id="c824-f008-6b3d-50aa" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="c824-f008-6b3d-50aa" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e31-66c9-0e25-f1c0" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20f7-21f0-9193-6d96" type="max"/>
@@ -881,7 +893,7 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="0337-0ea0-1c92-64f3" name="Bolt Carbines" hidden="false" collective="false" targetId="3210-df3e-378c-3d70" type="selectionEntry"/>
+                <entryLink id="0337-0ea0-1c92-64f3" name="Bolt Carbines" hidden="false" collective="false" import="true" targetId="3210-df3e-378c-3d70" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -889,13 +901,13 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f8f6-2c7c-aff7-d4e7" name="5 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="e761-6925-7a30-2a41">
+        <selectionEntryGroup id="f8f6-2c7c-aff7-d4e7" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="e761-6925-7a30-2a41">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fee-516b-1730-2e05" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5013-2072-34b2-06ec" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e761-6925-7a30-2a41" name="5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e761-6925-7a30-2a41" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="9c1f-82ce-b962-e06b" name="Reivers (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -913,7 +925,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2df9-f636-c122-9631" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2df9-f636-c122-9631" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="3aa7-0341-3c0d-2106" name="Reivers (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -935,12 +947,15 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4207-7f37-e3f7-59ad" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="2fbb-3b6a-3eae-7c60" name="Grapnel Launchers" hidden="false" collective="false" targetId="57c0-6498-d6c9-c779" type="selectionEntry"/>
-        <entryLink id="3fb7-3679-bfc4-db5a" name="Grav-Chutes" hidden="false" collective="false" targetId="b647-14a7-5911-697d" type="selectionEntry"/>
+        <entryLink id="4207-7f37-e3f7-59ad" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="2fbb-3b6a-3eae-7c60" name="Grapnel Launchers" hidden="false" collective="false" import="true" targetId="57c0-6498-d6c9-c779" type="selectionEntry"/>
+        <entryLink id="3fb7-3679-bfc4-db5a" name="Grav-Chutes" hidden="false" collective="false" import="true" targetId="b647-14a7-5911-697d" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="bfe4-88df-5cbd-24b4" name="Aggressors" hidden="false" collective="false" type="unit">
+    <selectionEntry id="bfe4-88df-5cbd-24b4" name="Aggressors" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="60a1-a230-88b7-5242" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
         <categoryLink id="fd78-e30b-38b4-c455" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -953,7 +968,7 @@
         <categoryLink id="4393-f892-d460-860b" name="Agressors" hidden="false" targetId="664d-1733-ea28-7bc9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b7d9-15e1-90a2-1d5d" name="Aggressor Gauntlets" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b7d9-15e1-90a2-1d5d" name="Aggressor Gauntlets" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9190-5f8a-fea5-261e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b57-2064-b527-06f4" type="max"/>
@@ -976,23 +991,23 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5488-61f2-c43f-7767" name="Weapons" hidden="false" collective="false" defaultSelectionEntryId="f177-64f2-8c5c-74ff">
+        <selectionEntryGroup id="5488-61f2-c43f-7767" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="f177-64f2-8c5c-74ff">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc7c-94cd-135f-a1fb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="176f-a4d5-e6c0-05dd" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f177-64f2-8c5c-74ff" name="Auto Boltstorm Gauntlets" hidden="false" collective="false" targetId="6d49-27aa-2e97-e511" type="selectionEntry"/>
-            <entryLink id="9742-1e49-693e-183b" name="Flamestorm Gauntlets" hidden="false" collective="false" targetId="8374-8ec2-4117-5478" type="selectionEntry"/>
+            <entryLink id="f177-64f2-8c5c-74ff" name="Auto Boltstorm Gauntlets" hidden="false" collective="false" import="true" targetId="6d49-27aa-2e97-e511" type="selectionEntry"/>
+            <entryLink id="9742-1e49-693e-183b" name="Flamestorm Gauntlets" hidden="false" collective="false" import="true" targetId="8374-8ec2-4117-5478" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="86cf-5a46-23d6-980c" name="3 - 6 models" hidden="false" collective="false" defaultSelectionEntryId="b8b6-9cb9-2217-0777">
+        <selectionEntryGroup id="86cf-5a46-23d6-980c" name="3 - 6 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="b8b6-9cb9-2217-0777">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d13-aea8-720d-2007" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f275-2501-677f-a770" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b8b6-9cb9-2217-0777" name="3 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b8b6-9cb9-2217-0777" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="3986-a88c-d823-cb9c" name="Aggressors (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1010,7 +1025,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c76f-3f15-0bff-6aa8" name="6 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c76f-3f15-0bff-6aa8" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="1528-9832-9cc2-7797" name="Aggressors (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1032,10 +1047,13 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d33e-4524-f1cd-faf9" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="d33e-4524-f1cd-faf9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="bb36-bece-319a-b805" name="Bikers" hidden="false" collective="false" type="unit">
+    <selectionEntry id="bb36-bece-319a-b805" name="Bikers" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="1afd-0e8b-595d-bf33" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
         <categoryLink id="c164-df02-4efa-ffae" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -1045,7 +1063,7 @@
         <categoryLink id="0a6a-7114-eaaa-6296" name="Bikers" hidden="false" targetId="e6bf-f707-727d-de81" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="50be-dbae-90b2-4574" name="Deathwatch Twin Boltguns" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="50be-dbae-90b2-4574" name="Deathwatch Twin Boltguns" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a903-53b5-ddb0-18e7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d40-789f-df43-2eee" type="max"/>
@@ -1065,16 +1083,19 @@
           <infoLinks>
             <infoLink id="7ea0-935e-1f4e-3ef3" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="684b-e39f-d777-796a" name="3 - 6 models" hidden="false" collective="false" defaultSelectionEntryId="6ad1-b7dc-d7ad-fe25">
+        <selectionEntryGroup id="684b-e39f-d777-796a" name="3 - 6 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="6ad1-b7dc-d7ad-fe25">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b58-b655-5ecb-3c3b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48c1-85c5-d651-ca57" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6ad1-b7dc-d7ad-fe25" name="3 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6ad1-b7dc-d7ad-fe25" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="2741-2dc0-551c-c4ba" name="Bikers (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1092,7 +1113,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3468-1f37-49c5-8eee" name="6 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3468-1f37-49c5-8eee" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="c8eb-6009-6d5f-d9b8" name="Bikers (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1114,16 +1135,19 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="52d0-41b9-6da1-8c3a" name="Close Combat Weapons" hidden="false" collective="false" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+        <entryLink id="52d0-41b9-6da1-8c3a" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1974-d723-9018-ac22" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="317b-be4b-4ebc-1658" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="e826-3b94-99e5-5864" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="e826-3b94-99e5-5864" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="b850-c8fd-5229-9b90" name="Inceptors" hidden="false" collective="false" type="unit">
+    <selectionEntry id="b850-c8fd-5229-9b90" name="Inceptors" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="1386-8950-6522-b763" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
       </infoLinks>
@@ -1141,7 +1165,7 @@
         <categoryLink id="9670-8e98-088a-5fdd" name="Inceptors" hidden="false" targetId="f863-5a53-bf6b-06dd" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="47d8-ce35-8626-7fc5" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="47d8-ce35-8626-7fc5" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59ad-914c-7590-667d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20b2-2227-3d4b-2dac" type="min"/>
@@ -1164,13 +1188,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cd31-9204-523b-ac41" name="3 - 6 models" hidden="false" collective="false" defaultSelectionEntryId="81c1-db3f-0a02-67dc">
+        <selectionEntryGroup id="cd31-9204-523b-ac41" name="3 - 6 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="81c1-db3f-0a02-67dc">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b13c-274c-b414-aee8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c83-8083-7e19-6084" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="81c1-db3f-0a02-67dc" name="3 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="81c1-db3f-0a02-67dc" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="aa92-72fb-e2c0-44d0" name="Inceptors (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1188,7 +1212,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="89c1-3a94-6cf2-7ac4" name="6 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="89c1-3a94-6cf2-7ac4" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="9317-7d59-00f1-c823" name="Inceptors (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1208,22 +1232,25 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e529-4d2f-6289-e76a" name="Weapons" hidden="false" collective="false" defaultSelectionEntryId="9b7f-408f-5f0c-ee2e">
+        <selectionEntryGroup id="e529-4d2f-6289-e76a" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9b7f-408f-5f0c-ee2e">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="688a-2cf6-4874-c930" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd40-c64f-a606-6aa7" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9b7f-408f-5f0c-ee2e" name="Assault Bolters" hidden="false" collective="false" targetId="cd4d-0d06-c8fa-aea0" type="selectionEntry"/>
-            <entryLink id="a51b-ad46-3037-e788" name="Plasma Exterminators" hidden="false" collective="false" targetId="5496-02cf-9377-7f0b" type="selectionEntry"/>
+            <entryLink id="9b7f-408f-5f0c-ee2e" name="Assault Bolters" hidden="false" collective="false" import="true" targetId="cd4d-0d06-c8fa-aea0" type="selectionEntry"/>
+            <entryLink id="a51b-ad46-3037-e788" name="Plasma Exterminators" hidden="false" collective="false" import="true" targetId="5496-02cf-9377-7f0b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="aff2-c284-06cd-c772" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="aff2-c284-06cd-c772" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="867e-9526-a357-27f5" name="Hellblasters" hidden="false" collective="false" type="unit">
+    <selectionEntry id="867e-9526-a357-27f5" name="Hellblasters" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="be21-7c86-d399-29b6" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
         <categoryLink id="24be-1269-c29d-25b1" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
@@ -1235,7 +1262,7 @@
         <categoryLink id="8396-fac9-9ef6-ccb9" name="Hellblasters" hidden="false" targetId="8d63-7372-ad8b-034c" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="843d-aa90-5f40-f265" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="843d-aa90-5f40-f265" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d7-2333-2e9e-710d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4524-8fe7-39aa-b13e" type="max"/>
@@ -1256,7 +1283,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ff54-c652-2292-791b" name="Plasma Incinerators" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ff54-c652-2292-791b" name="Plasma Incinerators" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a927-3a9a-4ae3-820e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acf9-9f29-8a9b-e1b6" type="max"/>
@@ -1283,13 +1310,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f5f8-7a26-2a52-98fe" name="5 - 10 models" hidden="false" collective="false" defaultSelectionEntryId="8d80-bc55-ef1b-ad8f">
+        <selectionEntryGroup id="f5f8-7a26-2a52-98fe" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d80-bc55-ef1b-ad8f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e149-d74e-add6-97f5" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b95-50a0-2ae7-b0fb" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8d80-bc55-ef1b-ad8f" name="5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8d80-bc55-ef1b-ad8f" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="d636-dc14-1473-880c" name="Hellblasters (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1307,7 +1334,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0cde-0699-9c1b-7f2e" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0cde-0699-9c1b-7f2e" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="e8fa-bc2f-d274-f9ff" name="Hellblasters (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1329,10 +1356,13 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b075-2766-8268-19a9" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="b075-2766-8268-19a9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="1036-69c7-cd3c-3493" name="Corvus Blackstar" hidden="false" collective="false" type="unit">
+    <selectionEntry id="1036-69c7-cd3c-3493" name="Corvus Blackstar" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="c7d6-f5eb-e8c1-352d" name="Corvus Blackstar" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -1373,15 +1403,15 @@
         <categoryLink id="1524-e4aa-c7a8-a3a8" name="Corvus Blackstar" hidden="false" targetId="87c9-248c-8ff5-acb3" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ec9b-3892-6aae-05c1" name="Launchers" hidden="false" collective="false" defaultSelectionEntryId="7f4c-a0f7-eb9e-b9d4">
+        <selectionEntryGroup id="ec9b-3892-6aae-05c1" name="Launchers" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f4c-a0f7-eb9e-b9d4">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c46-cfeb-ed9e-d8cc" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="966e-c358-7108-a0de" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7f4c-a0f7-eb9e-b9d4" name="Stormstrike Missile Launchers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7f4c-a0f7-eb9e-b9d4" name="Stormstrike Missile Launchers" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
-                <selectionEntry id="1ffd-a9f1-8eb1-01a2" name="Stormstrike Missile Launcher" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1ffd-a9f1-8eb1-01a2" name="Stormstrike Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46de-ce23-1a91-c687" type="min"/>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13d9-a8cd-fec4-71b9" type="max"/>
@@ -1398,12 +1428,18 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
-            <selectionEntry id="b103-57ff-7b88-3358" name="Blackstar Rocket Launchers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b103-57ff-7b88-3358" name="Blackstar Rocket Launchers" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
-                <selectionEntry id="1670-70fc-3228-9f9f" name="Blackstar Rocket Launcher" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1670-70fc-3228-9f9f" name="Blackstar Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4426-00d2-2700-73d7" type="min"/>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f51-ccd0-1d0c-40fd" type="max"/>
@@ -1423,33 +1459,39 @@
                   <infoLinks>
                     <infoLink id="55dd-4378-2b96-f9e2" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="2e1b-c4d2-b0c5-7aed" name="Nose weapon" hidden="false" collective="false" defaultSelectionEntryId="5640-3c3e-c401-c994">
+        <selectionEntryGroup id="2e1b-c4d2-b0c5-7aed" name="Nose weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5640-3c3e-c401-c994">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5011-6595-d9da-a00f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbfb-7f61-8b7b-ab68" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="82f1-ff3d-a872-d576" name="Twin Assault Cannon" hidden="false" collective="false" targetId="6049-a3c6-fbb2-db4d" type="selectionEntry">
+            <entryLink id="82f1-ff3d-a872-d576" name="Twin Assault Cannon" hidden="false" collective="false" import="true" targetId="6049-a3c6-fbb2-db4d" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="1466-da3f-0d27-dace" value="2.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="5640-3c3e-c401-c994" name="Twin Lascannon" hidden="false" collective="false" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry"/>
+            <entryLink id="5640-3c3e-c401-c994" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="443d-1b9d-e711-1e64" name="Hurricane Bolter" hidden="false" collective="false" targetId="abd4-677c-38d8-044d" type="selectionEntry">
+        <entryLink id="443d-1b9d-e711-1e64" name="Hurricane Bolter" hidden="false" collective="false" import="true" targetId="abd4-677c-38d8-044d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6807-1120-96d5-b819" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="918f-9f2b-094d-0d96" name="Armoured Bulk" hidden="false" collective="false" targetId="c343-cc19-3a64-c7f2" type="selectionEntry"/>
+        <entryLink id="918f-9f2b-094d-0d96" name="Armoured Bulk" hidden="false" collective="false" import="true" targetId="c343-cc19-3a64-c7f2" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
@@ -1457,17 +1499,17 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="190e-18f3-e788-0201" name="Librarian" hidden="false" collective="false" targetId="791d-6d90-4c77-c0ed" type="selectionEntry">
+    <entryLink id="190e-18f3-e788-0201" name="Librarian" hidden="false" collective="false" import="true" targetId="791d-6d90-4c77-c0ed" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c7cf-47a3-045d-12d4" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9c42-ee65-1d47-cb6d" name="Primaris Librarian" hidden="false" collective="false" targetId="8896-4617-12f7-2495" type="selectionEntry">
+    <entryLink id="9c42-ee65-1d47-cb6d" name="Primaris Librarian" hidden="false" collective="false" import="true" targetId="8896-4617-12f7-2495" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d740-7970-5feb-c865" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f080-a10f-95d1-bbcf" name="Chaplain" hidden="false" collective="false" targetId="b371-3bcc-b91b-03e6" type="selectionEntry">
+    <entryLink id="f080-a10f-95d1-bbcf" name="Chaplain" hidden="false" collective="false" import="true" targetId="b371-3bcc-b91b-03e6" type="selectionEntry">
       <infoLinks>
         <infoLink id="4e1d-e3dd-97cd-7258" name="Litanies of Hate" hidden="false" targetId="0b0d-e29f-3c40-67f7" type="profile"/>
         <infoLink id="5fa1-9b28-fbed-2244" name="Spiritual Leader" hidden="false" targetId="6b7b-e54c-78fc-50b6" type="profile"/>
@@ -1476,7 +1518,7 @@
         <categoryLink id="0b24-b311-b7d9-9886" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3df7-4f4f-2c6a-c600" name="Primaris Chaplain" hidden="false" collective="false" targetId="7813-d97a-0510-14e6" type="selectionEntry">
+    <entryLink id="3df7-4f4f-2c6a-c600" name="Primaris Chaplain" hidden="false" collective="false" import="true" targetId="7813-d97a-0510-14e6" type="selectionEntry">
       <infoLinks>
         <infoLink id="218c-00b3-de33-706d" name="Litanies of Hate" hidden="false" targetId="0b0d-e29f-3c40-67f7" type="profile"/>
         <infoLink id="b429-7943-f93a-1c01" name="Spiritual Leader" hidden="false" targetId="6b7b-e54c-78fc-50b6" type="profile"/>
@@ -1485,7 +1527,7 @@
         <categoryLink id="9231-cfe4-1a2a-3cdb" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="932e-844e-6c44-b251" name="Primaris Apothecary" hidden="false" collective="false" targetId="daaf-718e-c540-13fa" type="selectionEntry">
+    <entryLink id="932e-844e-6c44-b251" name="Primaris Apothecary" hidden="false" collective="false" import="true" targetId="daaf-718e-c540-13fa" type="selectionEntry">
       <profiles>
         <profile id="6d1b-9b0e-56c7-5a14" name="Narthecium" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -1497,22 +1539,22 @@
         <categoryLink id="76d2-4c82-eb37-cb1f" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="968b-b283-f2c2-f755" name="Venerable Dreadnought" hidden="false" collective="false" targetId="95ff-f0b4-5c6a-6d2b" type="selectionEntry">
+    <entryLink id="968b-b283-f2c2-f755" name="Venerable Dreadnought" hidden="false" collective="false" import="true" targetId="95ff-f0b4-5c6a-6d2b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7b11-53d4-55c9-2d5c" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="fdf6-9ab2-3ca9-781c" name="Dreadnought" hidden="false" collective="false" targetId="bd59-298f-ca7d-a418" type="selectionEntry">
+    <entryLink id="fdf6-9ab2-3ca9-781c" name="Dreadnought" hidden="false" collective="false" import="true" targetId="bd59-298f-ca7d-a418" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5f40-2e7e-17b9-b3f9" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2b01-7b6b-3180-9ccc" name="Redemptor Dreadnought" hidden="false" collective="false" targetId="d377-d88e-e86a-4c9d" type="selectionEntry">
+    <entryLink id="2b01-7b6b-3180-9ccc" name="Redemptor Dreadnought" hidden="false" collective="false" import="true" targetId="d377-d88e-e86a-4c9d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="81bf-73c2-d838-426e" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5893-ebfb-6511-8343" name="Land Raider" hidden="false" collective="false" targetId="03e6-d2f0-4433-9ecb" type="selectionEntry">
+    <entryLink id="5893-ebfb-6511-8343" name="Land Raider" hidden="false" collective="false" import="true" targetId="03e6-d2f0-4433-9ecb" type="selectionEntry">
       <profiles>
         <profile id="79af-c01c-a872-42e5" name="Land Raider" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1524,7 +1566,7 @@
         <categoryLink id="94b9-7c8c-b972-f218" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="73d3-e52a-b3ae-4983" name="Land Raider Crusader" hidden="false" collective="false" targetId="e090-e09a-3fc2-625e" type="selectionEntry">
+    <entryLink id="73d3-e52a-b3ae-4983" name="Land Raider Crusader" hidden="false" collective="false" import="true" targetId="e090-e09a-3fc2-625e" type="selectionEntry">
       <profiles>
         <profile id="155e-6b43-80af-6161" name="Land Raider Crusader" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1536,7 +1578,7 @@
         <categoryLink id="af19-bf6b-7268-d070" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="408f-1b76-0799-c18a" name="Land Raider Redeemer" hidden="false" collective="false" targetId="2c85-0fe0-d71b-b759" type="selectionEntry">
+    <entryLink id="408f-1b76-0799-c18a" name="Land Raider Redeemer" hidden="false" collective="false" import="true" targetId="2c85-0fe0-d71b-b759" type="selectionEntry">
       <profiles>
         <profile id="8fba-4c1a-f53f-730e" name="Land Raider Redeemer" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1548,7 +1590,7 @@
         <categoryLink id="4e28-6595-a997-4fec" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c6dc-1aef-7470-ce00" name="Rhino" hidden="false" collective="false" targetId="7763-55dd-8812-7d23" type="selectionEntry">
+    <entryLink id="c6dc-1aef-7470-ce00" name="Rhino" hidden="false" collective="false" import="true" targetId="7763-55dd-8812-7d23" type="selectionEntry">
       <profiles>
         <profile id="ca9e-2a99-8565-bbb3" name="Rhino" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1560,7 +1602,7 @@
         <categoryLink id="d4cd-6b51-46ea-397e" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7870-c1e4-14ed-70b9" name="Razorback" hidden="false" collective="false" targetId="7621-272e-ffe5-27d8" type="selectionEntry">
+    <entryLink id="7870-c1e4-14ed-70b9" name="Razorback" hidden="false" collective="false" import="true" targetId="7621-272e-ffe5-27d8" type="selectionEntry">
       <profiles>
         <profile id="ea72-a8de-8b71-7772" name="Razorback" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1572,7 +1614,7 @@
         <categoryLink id="d9c5-8955-d78b-dd26" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="33f3-5211-35b0-c22f" name="Drop Pod" hidden="false" collective="false" targetId="3b41-4746-fc8a-35ce" type="selectionEntry">
+    <entryLink id="33f3-5211-35b0-c22f" name="Drop Pod" hidden="false" collective="false" import="true" targetId="3b41-4746-fc8a-35ce" type="selectionEntry">
       <profiles>
         <profile id="20a5-9968-fe6b-feab" name="Drop Pod" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1584,7 +1626,7 @@
         <categoryLink id="5b5e-e3d1-4c9c-f946" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="29aa-74a8-9fef-bf8c" name="Repulsor" hidden="false" collective="false" targetId="5da0-0fe0-081a-1339" type="selectionEntry">
+    <entryLink id="29aa-74a8-9fef-bf8c" name="Repulsor" hidden="false" collective="false" import="true" targetId="5da0-0fe0-081a-1339" type="selectionEntry">
       <profiles>
         <profile id="f0e8-87e6-cb4a-ecfe" name="Repulsor" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1596,7 +1638,7 @@
         <categoryLink id="b366-3d06-5457-0b1b" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d7f0-8f3d-dd11-489b" name="Repulsor Executioner" hidden="false" collective="false" targetId="6d30-c860-3c7b-3357" type="selectionEntry">
+    <entryLink id="d7f0-8f3d-dd11-489b" name="Repulsor Executioner" hidden="false" collective="false" import="true" targetId="6d30-c860-3c7b-3357" type="selectionEntry">
       <profiles>
         <profile id="151a-87cc-0450-e147" name="Repulsor Executioner" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1608,17 +1650,17 @@
         <categoryLink id="3d69-1f2f-4f24-3c9f" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="aeb7-396a-4edc-2868" name="Deimos Pattern Relic Predator" hidden="false" collective="false" targetId="e5a7-51b9-e6c0-0486" type="selectionEntry">
+    <entryLink id="aeb7-396a-4edc-2868" name="Deimos Pattern Relic Predator" hidden="false" collective="false" import="true" targetId="e5a7-51b9-e6c0-0486" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b1ad-514f-98b1-e28b" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7d57-cfc7-2b17-a6dd" name="Deimos Pattern Vindicator Laser Destroyer" hidden="false" collective="false" targetId="3a5e-cfc0-318b-4da9" type="selectionEntry">
+    <entryLink id="7d57-cfc7-2b17-a6dd" name="Deimos Pattern Vindicator Laser Destroyer" hidden="false" collective="false" import="true" targetId="3a5e-cfc0-318b-4da9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4f76-834f-c223-e35e" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8af2-6360-3aaf-fdd8" name="Infernum Pattern Razorback" hidden="false" collective="false" targetId="fe60-c74c-37d0-edf3" type="selectionEntry">
+    <entryLink id="8af2-6360-3aaf-fdd8" name="Infernum Pattern Razorback" hidden="false" collective="false" import="true" targetId="fe60-c74c-37d0-edf3" type="selectionEntry">
       <profiles>
         <profile id="b5df-53f9-904d-ec80" name="Infernum Pattern Razorback" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1630,7 +1672,7 @@
         <categoryLink id="9460-6e17-3757-8754" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b946-1e97-8a0d-959e" name="Relic Land Raider Proteus" hidden="false" collective="false" targetId="2468-48de-617e-2258" type="selectionEntry">
+    <entryLink id="b946-1e97-8a0d-959e" name="Relic Land Raider Proteus" hidden="false" collective="false" import="true" targetId="2468-48de-617e-2258" type="selectionEntry">
       <profiles>
         <profile id="6a7b-c11e-8bbe-3a90" name="Relic Land Raider Proteus" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1639,7 +1681,7 @@
         </profile>
       </profiles>
     </entryLink>
-    <entryLink id="f920-a0a8-f9a4-5a61" name="Land Raider Helios" hidden="false" collective="false" targetId="81de-15ce-d9d3-f684" type="selectionEntry">
+    <entryLink id="f920-a0a8-f9a4-5a61" name="Land Raider Helios" hidden="false" collective="false" import="true" targetId="81de-15ce-d9d3-f684" type="selectionEntry">
       <profiles>
         <profile id="aa9a-39cb-cabf-502b" name="Land Raider Helios" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1651,7 +1693,7 @@
         <categoryLink id="2a09-d510-b0c8-93d6" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="659a-12d7-afd0-135a" name="Terrax-pattern Termite Assault Drill" hidden="false" collective="false" targetId="2235-b44c-a7d2-d517" type="selectionEntry">
+    <entryLink id="659a-12d7-afd0-135a" name="Terrax-pattern Termite Assault Drill" hidden="false" collective="false" import="true" targetId="2235-b44c-a7d2-d517" type="selectionEntry">
       <profiles>
         <profile id="396b-9436-b550-fae8" name="Terrax-pattern Termite Assault Drill" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1663,7 +1705,7 @@
         <categoryLink id="aeda-3337-490e-6fc6" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="971c-f5b3-f9de-36c7" name="Land Raider Prometheus" hidden="false" collective="false" targetId="2c96-5e9d-5061-c166" type="selectionEntry">
+    <entryLink id="971c-f5b3-f9de-36c7" name="Land Raider Prometheus" hidden="false" collective="false" import="true" targetId="2c96-5e9d-5061-c166" type="selectionEntry">
       <profiles>
         <profile id="002b-f3a1-2400-8664" name="Land Raider Prometheus" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1675,7 +1717,7 @@
         <categoryLink id="1173-083d-1a77-8be5" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1047-344e-8f7e-ac3a" name="Land Raider Achilles" hidden="false" collective="false" targetId="ba17-8566-b04c-09d3" type="selectionEntry">
+    <entryLink id="1047-344e-8f7e-ac3a" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="ba17-8566-b04c-09d3" type="selectionEntry">
       <profiles>
         <profile id="5704-acee-d6f8-fec8" name="Land Raider Achilles" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1687,22 +1729,22 @@
         <categoryLink id="c7bc-7896-8ef2-339d" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="69e3-64d2-506c-d7f4" name="Relic Sicaran Battle Tank" hidden="false" collective="false" targetId="486f-3047-10d1-a12a" type="selectionEntry">
+    <entryLink id="69e3-64d2-506c-d7f4" name="Relic Sicaran Battle Tank" hidden="false" collective="false" import="true" targetId="486f-3047-10d1-a12a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a691-2400-d011-2522" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d2f0-bd6a-98c0-4b16" name="Relic Sicaran Punisher Assault Tank" hidden="false" collective="false" targetId="0f9f-7190-66d2-39bf" type="selectionEntry">
+    <entryLink id="d2f0-bd6a-98c0-4b16" name="Relic Sicaran Punisher Assault Tank" hidden="false" collective="false" import="true" targetId="0f9f-7190-66d2-39bf" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6b25-51b0-309a-f9be" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="03c4-464f-1c53-4a44" name="Relic Sicaran Venator Tank Destroyer" hidden="false" collective="false" targetId="7f1f-08ac-f562-ee9f" type="selectionEntry">
+    <entryLink id="03c4-464f-1c53-4a44" name="Relic Sicaran Venator Tank Destroyer" hidden="false" collective="false" import="true" targetId="7f1f-08ac-f562-ee9f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="9673-a2e8-5677-7b18" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ba59-0a8e-22a0-8cf5" name="Relic Spartan Assault Tank" hidden="false" collective="false" targetId="68f5-0eaf-e33d-6992" type="selectionEntry">
+    <entryLink id="ba59-0a8e-22a0-8cf5" name="Relic Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="68f5-0eaf-e33d-6992" type="selectionEntry">
       <profiles>
         <profile id="603d-99e2-4261-18ef" name="Relic Spartan Assault Tank" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1711,27 +1753,27 @@
         </profile>
       </profiles>
     </entryLink>
-    <entryLink id="0ecc-ef3a-66c8-a34f" name="Relic Typhon Heavy Siege Tank" hidden="false" collective="false" targetId="818c-71cb-91b8-14c6" type="selectionEntry">
+    <entryLink id="0ecc-ef3a-66c8-a34f" name="Relic Typhon Heavy Siege Tank" hidden="false" collective="false" import="true" targetId="818c-71cb-91b8-14c6" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8bdf-5923-7f66-d593" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d03a-fb8e-dc62-65f3" name="Relic Cerberus Heavy Tank Destroyer" hidden="false" collective="false" targetId="33ad-2c9d-dca2-507a" type="selectionEntry">
+    <entryLink id="d03a-fb8e-dc62-65f3" name="Relic Cerberus Heavy Tank Destroyer" hidden="false" collective="false" import="true" targetId="33ad-2c9d-dca2-507a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="32c0-d69a-be40-7bb2" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="986b-6bad-9b6d-0403" name="Relic Fellblade Super-heavy Tank" hidden="false" collective="false" targetId="a634-4723-ba51-60ca" type="selectionEntry">
+    <entryLink id="986b-6bad-9b6d-0403" name="Relic Fellblade Super-heavy Tank" hidden="false" collective="false" import="true" targetId="a634-4723-ba51-60ca" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8d9f-c1e7-a58b-560d" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="692e-b2fd-e9bd-f0f1" name="Relic Falchion Super-heavy Tank Destroyer" hidden="false" collective="false" targetId="0f93-c25d-2b63-2f39" type="selectionEntry">
+    <entryLink id="692e-b2fd-e9bd-f0f1" name="Relic Falchion Super-heavy Tank Destroyer" hidden="false" collective="false" import="true" targetId="0f93-c25d-2b63-2f39" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5ce0-ad75-4609-e3cd" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f21e-1cb7-3fb5-77d8" name="Relic Mastodon Super-heavy Siege Transport" hidden="false" collective="false" targetId="bbb9-54eb-4f59-e9dc" type="selectionEntry">
+    <entryLink id="f21e-1cb7-3fb5-77d8" name="Relic Mastodon Super-heavy Siege Transport" hidden="false" collective="false" import="true" targetId="bbb9-54eb-4f59-e9dc" type="selectionEntry">
       <profiles>
         <profile id="9379-f658-5540-9cfc" name="Relic Mastodon Super-heavy Siege Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1744,58 +1786,58 @@ TERMINATOR and JUMP PACK models take up the space of 2 other models and each CEN
         </profile>
       </profiles>
     </entryLink>
-    <entryLink id="e1f9-854f-e0e4-9386" name="Astraeus Super-heavy Tank" hidden="false" collective="false" targetId="0975-6a9a-ebe0-2feb" type="selectionEntry">
+    <entryLink id="e1f9-854f-e0e4-9386" name="Astraeus Super-heavy Tank" hidden="false" collective="false" import="true" targetId="0975-6a9a-ebe0-2feb" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="2703-22c5-d878-5e33" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f5fe-c834-633f-c8cf" name="Mortis Dreadnought" hidden="false" collective="false" targetId="ab0b-3c90-cd3d-14e5" type="selectionEntry">
+    <entryLink id="f5fe-c834-633f-c8cf" name="Mortis Dreadnought" hidden="false" collective="false" import="true" targetId="ab0b-3c90-cd3d-14e5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="43bf-2290-382a-adfb" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e136-5a14-3d51-a344" name="Siege Dreadnought" hidden="false" collective="false" targetId="07ed-fe1c-27d3-b5f8" type="selectionEntry">
+    <entryLink id="e136-5a14-3d51-a344" name="Siege Dreadnought" hidden="false" collective="false" import="true" targetId="07ed-fe1c-27d3-b5f8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6b96-2057-d667-2398" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b1e7-bece-79cb-9dae" name="Contemptor Mortis Dreadnought" hidden="false" collective="false" targetId="3e0f-a71c-233c-5c6d" type="selectionEntry">
+    <entryLink id="b1e7-bece-79cb-9dae" name="Contemptor Mortis Dreadnought" hidden="false" collective="false" import="true" targetId="3e0f-a71c-233c-5c6d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1776-fd43-6cab-b42f" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4a90-248f-a829-909b" name="Chaplain Venerable Dreadnought" hidden="false" collective="false" targetId="ab53-eec6-d4be-ab28" type="selectionEntry">
+    <entryLink id="4a90-248f-a829-909b" name="Chaplain Venerable Dreadnought" hidden="false" collective="false" import="true" targetId="ab53-eec6-d4be-ab28" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c86e-1da8-e139-bcac" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2756-1f37-b590-8b4b" name="Relic Contemptor Dreadnought" hidden="false" collective="false" targetId="0321-28ba-f11e-426c" type="selectionEntry">
+    <entryLink id="2756-1f37-b590-8b4b" name="Relic Contemptor Dreadnought" hidden="false" collective="false" import="true" targetId="0321-28ba-f11e-426c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0898-12d9-0549-6059" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="fe3a-337e-afc5-b2fd" name="Relic Deredeo Dreadnought" hidden="false" collective="false" targetId="710a-fbe4-6cac-3054" type="selectionEntry">
+    <entryLink id="fe3a-337e-afc5-b2fd" name="Relic Deredeo Dreadnought" hidden="false" collective="false" import="true" targetId="710a-fbe4-6cac-3054" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4363-fd2c-1eab-a07a" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7e95-6733-2f21-ec3c" name="Relic Leviathan Dreadnought" hidden="false" collective="false" targetId="a40f-f1a8-4416-b632" type="selectionEntry">
+    <entryLink id="7e95-6733-2f21-ec3c" name="Relic Leviathan Dreadnought" hidden="false" collective="false" import="true" targetId="a40f-f1a8-4416-b632" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="08f9-901d-bb24-aa37" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="aa33-6ee2-891e-d8f0" name="Land Speeder Tempests" hidden="false" collective="false" targetId="ea0b-da21-710a-a0b8" type="selectionEntry">
+    <entryLink id="aa33-6ee2-891e-d8f0" name="Land Speeder Tempests" hidden="false" collective="false" import="true" targetId="ea0b-da21-710a-a0b8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="40cf-421b-e3c6-9ca1" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ec6a-6f59-aa98-4a5f" name="Relic Javelin Attack Speeder" hidden="false" collective="false" targetId="ac7c-d4c4-d0bf-8d7b" type="selectionEntry">
+    <entryLink id="ec6a-6f59-aa98-4a5f" name="Relic Javelin Attack Speeder" hidden="false" collective="false" import="true" targetId="ac7c-d4c4-d0bf-8d7b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4483-e1b5-c9aa-4240" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3dbd-fa25-d8f7-cf78" name="Xiphon Interceptor" hidden="false" collective="false" targetId="7701-7457-621e-6f84" type="selectionEntry"/>
-    <entryLink id="237c-05c9-2d1c-0e2c" name="Storm Eagle Assault Gunship" hidden="false" collective="false" targetId="a66b-42aa-4c20-300b" type="selectionEntry">
+    <entryLink id="3dbd-fa25-d8f7-cf78" name="Xiphon Interceptor" hidden="false" collective="false" import="true" targetId="7701-7457-621e-6f84" type="selectionEntry"/>
+    <entryLink id="237c-05c9-2d1c-0e2c" name="Storm Eagle Assault Gunship" hidden="false" collective="false" import="true" targetId="a66b-42aa-4c20-300b" type="selectionEntry">
       <profiles>
         <profile id="4ba2-8153-be0c-614d" name="Storm Eagle Assault Gunship" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1807,12 +1849,12 @@ TERMINATOR and JUMP PACK models take up the space of 2 other models and each CEN
         <categoryLink id="8d64-58fe-10f8-ae48" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c251-0f44-2bdf-bce1" name="Fire Raptor Assault Gunship" hidden="false" collective="false" targetId="7afa-0a96-ea6d-7695" type="selectionEntry">
+    <entryLink id="c251-0f44-2bdf-bce1" name="Fire Raptor Assault Gunship" hidden="false" collective="false" import="true" targetId="7afa-0a96-ea6d-7695" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="2ffd-ca8f-0ab6-55ac" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8576-73ef-6e4b-1b29" name="Caestus Assault Ram" hidden="false" collective="false" targetId="c0bc-b91c-1598-39d7" type="selectionEntry">
+    <entryLink id="8576-73ef-6e4b-1b29" name="Caestus Assault Ram" hidden="false" collective="false" import="true" targetId="c0bc-b91c-1598-39d7" type="selectionEntry">
       <profiles>
         <profile id="bf3c-f173-e3c7-9791" name="Caestus Assault Ram" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1824,7 +1866,7 @@ TERMINATOR and JUMP PACK models take up the space of 2 other models and each CEN
         <categoryLink id="2a10-b48d-6fd4-6ecd" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a3d2-862c-8645-4bc2" name="Thunderhawk Assault Gunship" hidden="false" collective="false" targetId="a2db-2d39-b71f-baad" type="selectionEntry">
+    <entryLink id="a3d2-862c-8645-4bc2" name="Thunderhawk Assault Gunship" hidden="false" collective="false" import="true" targetId="a2db-2d39-b71f-baad" type="selectionEntry">
       <profiles>
         <profile id="1cbd-6c3a-84d0-df43" name="Thunderhawk Assault Gunship" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1839,7 +1881,7 @@ Each TERMINATOR and JUMP PACK model takes up the space of 2 other models and eac
         <categoryLink id="a788-92fc-648d-c725" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="eb5b-a6ad-b3af-9a79" name="Thunderhawk Transporter" hidden="false" collective="false" targetId="4944-fdb4-2e47-e4a5" type="selectionEntry">
+    <entryLink id="eb5b-a6ad-b3af-9a79" name="Thunderhawk Transporter" hidden="false" collective="false" import="true" targetId="4944-fdb4-2e47-e4a5" type="selectionEntry">
       <profiles>
         <profile id="2bbf-711d-10bd-f3a3" name="Thunderhawk Transporter" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1858,7 +1900,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="fd42-b556-94f9-85f5" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="24b5-c08e-5233-8aec" name="Sokar Pattern Stormbird" hidden="false" collective="false" targetId="d978-4ed0-3aa8-ae11" type="selectionEntry">
+    <entryLink id="24b5-c08e-5233-8aec" name="Sokar Pattern Stormbird" hidden="false" collective="false" import="true" targetId="d978-4ed0-3aa8-ae11" type="selectionEntry">
       <profiles>
         <profile id="abc2-056c-2072-6e4b" name="Sokar Pattern Stormbird" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1870,7 +1912,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="3f8b-a0ba-f459-a284" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4b28-94c1-b20a-a8dd" name="Damocles Command Rhino" hidden="false" collective="false" targetId="8e5c-499e-a68c-ce86" type="selectionEntry">
+    <entryLink id="4b28-94c1-b20a-a8dd" name="Damocles Command Rhino" hidden="false" collective="false" import="true" targetId="8e5c-499e-a68c-ce86" type="selectionEntry">
       <profiles>
         <profile id="e391-0e90-5c4b-4dbf" name="Damocles Command Rhino" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1882,32 +1924,32 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="b640-c7ea-13d5-c902" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="682d-a187-836a-05b3" name="Whirlwind Hyperios" hidden="false" collective="false" targetId="bd52-9f38-da26-61d5" type="selectionEntry">
+    <entryLink id="682d-a187-836a-05b3" name="Whirlwind Hyperios" hidden="false" collective="false" import="true" targetId="bd52-9f38-da26-61d5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b892-0835-e697-cca5" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="69fa-b116-a28d-fdd1" name="Relic Whirlwind Scorpius" hidden="false" collective="false" targetId="b3b9-7176-b67a-0531" type="selectionEntry">
+    <entryLink id="69fa-b116-a28d-fdd1" name="Relic Whirlwind Scorpius" hidden="false" collective="false" import="true" targetId="b3b9-7176-b67a-0531" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6cde-d48c-2802-9030" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0e78-90e2-4c1c-5481" name="Rapier Carrier" hidden="false" collective="false" targetId="d3d0-2acc-450c-fba7" type="selectionEntry">
+    <entryLink id="0e78-90e2-4c1c-5481" name="Rapier Carrier" hidden="false" collective="false" import="true" targetId="d3d0-2acc-450c-fba7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="40be-6251-8c7c-4907" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="fa72-d937-4dc7-2d43" name="Tarantula Air Defence Battery" hidden="false" collective="false" targetId="d9f4-d203-bd9c-8b46" type="selectionEntry">
+    <entryLink id="fa72-d937-4dc7-2d43" name="Tarantula Air Defence Battery" hidden="false" collective="false" import="true" targetId="d9f4-d203-bd9c-8b46" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3c7b-7ecc-2528-0690" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7a16-ec8f-47fb-c5d7" name="Tarantula Battery" hidden="false" collective="false" targetId="8e13-a3be-f344-12ec" type="selectionEntry">
+    <entryLink id="7a16-ec8f-47fb-c5d7" name="Tarantula Battery" hidden="false" collective="false" import="true" targetId="8e13-a3be-f344-12ec" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="57c6-2008-b26f-b47b" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="44a5-69fb-8529-4be3" name="Lucius Pattern Dreadnought Drop Pod" hidden="false" collective="false" targetId="4a13-6a66-aa3a-4763" type="selectionEntry">
+    <entryLink id="44a5-69fb-8529-4be3" name="Lucius Pattern Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="4a13-6a66-aa3a-4763" type="selectionEntry">
       <profiles>
         <profile id="4b1e-e987-0168-0042" name="Lucius Pattern Dreadnought Drop Pod" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1919,12 +1961,12 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="b3bb-11bd-3499-055f" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5d4f-db51-8a2b-dfdf" name="Deathstorm Drop Pod" hidden="false" collective="false" targetId="8753-faf5-ddf9-6563" type="selectionEntry">
+    <entryLink id="5d4f-db51-8a2b-dfdf" name="Deathstorm Drop Pod" hidden="false" collective="false" import="true" targetId="8753-faf5-ddf9-6563" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="52cd-95a6-39ba-5b0c" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="88fc-cbf3-4078-6cb5" name="Castellum Stronghold - Tacticus Bunker" hidden="false" collective="false" targetId="c0ad-b807-9b3a-5075" type="selectionEntry">
+    <entryLink id="88fc-cbf3-4078-6cb5" name="Castellum Stronghold - Tacticus Bunker" hidden="false" collective="false" import="true" targetId="c0ad-b807-9b3a-5075" type="selectionEntry">
       <profiles>
         <profile id="baba-0d19-8dc0-7c0e" name="Tacticus Bunker" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1939,7 +1981,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="927f-4a81-ec26-2410" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f12f-2ece-029c-29e5" name="Castellum Stronghold - Bunker Annex" hidden="false" collective="false" targetId="1ccc-77b7-7298-8c9c" type="selectionEntry">
+    <entryLink id="f12f-2ece-029c-29e5" name="Castellum Stronghold - Bunker Annex" hidden="false" collective="false" import="true" targetId="1ccc-77b7-7298-8c9c" type="selectionEntry">
       <profiles>
         <profile id="8ba1-78a2-9ff1-a8d0" name="Bunker Annex" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -1978,7 +2020,7 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="8f54-c775-b0c6-b1e5" name="Library - Space Marines" targetId="df5a-b452-7741-6a5b" type="catalogue"/>
-    <catalogueLink id="c7df-33a9-4b40-af6c" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>
+    <catalogueLink id="8f54-c775-b0c6-b1e5" name="Library - Space Marines" targetId="df5a-b452-7741-6a5b" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="c7df-33a9-4b40-af6c" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

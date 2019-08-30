@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="5" battleScribeVersion="2.02" authorName="BSData Developers" authorContact="@Developer" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="6" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Developer" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse"/>
   </publications>
@@ -664,7 +664,7 @@
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="7347-5716-355f-9165" name="Commander" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7347-5716-355f-9165" name="Commander" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="name" value="Warlord">
           <conditionGroups>
@@ -685,7 +685,7 @@
         <categoryLink id="865e-ecad-5e83-4551" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="67cb-6187-3983-fecd" name="Warmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="67cb-6187-3983-fecd" name="Warmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -712,7 +712,7 @@
             <categoryLink id="0c6b-65c1-b506-01bd" name="Warmaster" hidden="false" targetId="3b0c-71a7-b28b-a310" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink id="d941-561f-3b7f-9eb0" name="Warmaster Traits" hidden="false" collective="false" targetId="acd4-8bbf-d48d-1a62" type="selectionEntryGroup"/>
+            <entryLink id="d941-561f-3b7f-9eb0" name="Warmaster Traits" hidden="false" collective="false" import="true" targetId="acd4-8bbf-d48d-1a62" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -725,12 +725,12 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="acd4-8bbf-d48d-1a62" name="Warmaster Traits" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false">
+    <selectionEntryGroup id="acd4-8bbf-d48d-1a62" name="Warmaster Traits" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8104-740a-4899-2235" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="ff1b-fab5-8c75-89dc" name="01 - Master Strategist" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ff1b-fab5-8c75-89dc" name="01 - Master Strategist" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c76-f498-2598-3134" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7c4e-ee1a-0a29-80a5" type="max"/>
@@ -746,7 +746,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7a24-0103-6606-2d37" name="11 - Born Survivor" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7a24-0103-6606-2d37" name="11 - Born Survivor" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a42-5551-03f1-097f" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2695-9f40-4afe-49c6" type="max"/>
@@ -762,7 +762,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0208-af20-305b-f98a" name="12 - Relic Force Field" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0208-af20-305b-f98a" name="12 - Relic Force Field" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df9f-2bf1-2c15-52b9" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5d6-08eb-6547-31bd" type="max"/>
@@ -778,7 +778,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2c6c-21ae-487d-1755" name="10 - Head-taker" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2c6c-21ae-487d-1755" name="10 - Head-taker" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5172-8d2d-3cd1-34bc" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="effb-8ca8-9bfe-9a49" type="max"/>
@@ -794,7 +794,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="768d-3f65-8ef4-c4bb" name="09 - Martial Discipline" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="768d-3f65-8ef4-c4bb" name="09 - Martial Discipline" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4eb-7953-1334-a147" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a84d-2c2e-aa7b-87fa" type="max"/>
@@ -810,7 +810,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bfd4-d210-74af-550b" name="04 - Master-crafted Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="bfd4-d210-74af-550b" name="04 - Master-crafted Weapons" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c037-91ed-7f00-8a2f" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c1cb-73eb-7e71-1599" type="max"/>
@@ -826,7 +826,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3821-a34b-cca3-4370" name="05 - Supreme Tactician" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3821-a34b-cca3-4370" name="05 - Supreme Tactician" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f934-9656-ea1d-57c1" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9897-5a71-bab4-2857" type="max"/>
@@ -842,7 +842,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1bf0-ce52-2831-870d" name="06 - Heroic Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1bf0-ce52-2831-870d" name="06 - Heroic Commander" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b40b-6dc0-faaa-862f" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1104-1ccd-27ae-cf94" type="max"/>
@@ -858,7 +858,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1c02-f4fc-4236-83fe" name="03 - Stealth Adept" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1c02-f4fc-4236-83fe" name="03 - Stealth Adept" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="005e-06b9-37b6-1bd6" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04eb-76f9-0416-f0da" type="max"/>
@@ -874,7 +874,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c735-9280-eda5-c96f" name="07 - Inspiring Presence" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c735-9280-eda5-c96f" name="07 - Inspiring Presence" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4749-ba8d-84be-13ba" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a49-8ff2-ece1-1e30" type="max"/>
@@ -890,7 +890,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b08a-a1b0-63d4-4c6a" name="02 - Righteous Fury" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b08a-a1b0-63d4-4c6a" name="02 - Righteous Fury" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a29f-5af3-3b82-bb06" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b7c-e91e-0d83-0057" type="max"/>
@@ -906,7 +906,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="faa8-cc49-b9d5-afe7" name="08 - Fearsome Reputation" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="faa8-cc49-b9d5-afe7" name="08 - Fearsome Reputation" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ec-632d-fd4e-5c5d" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7146-1331-a836-24d2" type="max"/>
