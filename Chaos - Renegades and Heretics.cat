@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b72f-3fb7-d57f-fae0" name="Chaos - Renegades and Heretics" revision="1" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b72f-3fb7-d57f-fae0" name="Chaos - Renegades and Heretics" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="cdd6-b04b-690c-bca3" name="Mutated Beyond Reason - D3 Roll">
       <characteristicTypes>
@@ -37,7 +37,7 @@
     <categoryEntry id="ada6-a083-08a7-ab7a" name="Earthshaker Platform" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry id="37b9-a813-1e02-7137" name="Renegade Commander" hidden="false" collective="false" type="unit">
+    <selectionEntry id="37b9-a813-1e02-7137" name="Renegade Commander" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="6dd3-caf2-219a-2c94" name="Renegade Commander" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -61,7 +61,7 @@
         <categoryLink id="2bd3-6f27-1ccc-4de4" name="Renegade Commander" hidden="false" targetId="6645-8c00-931b-4840" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="072b-c67a-7a58-7c02" name="Commander&apos;s Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="072b-c67a-7a58-7c02" name="Commander&apos;s Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b60-42bd-e82c-10c2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc23-1653-8759-3c62" type="max"/>
@@ -84,14 +84,14 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="6030-3a70-6999-144f" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="d1cd-c68a-0c4c-b236" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="6030-3a70-6999-144f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="d1cd-c68a-0c4c-b236" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e367-1966-498d-ddda" name="Malefic Lord" hidden="false" collective="false" type="unit">
+    <selectionEntry id="e367-1966-498d-ddda" name="Malefic Lord" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="f00b-adec-0374-7cfd" name="Malefic Lord" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -121,7 +121,7 @@
         <categoryLink id="f5d1-0145-53c9-9a14" name="Malefic Lord" hidden="false" targetId="d897-8d4c-f762-e250" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="fe0e-4e36-6027-5c02" name="Warp-empowered Fists" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fe0e-4e36-6027-5c02" name="Warp-empowered Fists" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c1-63d6-083d-05df" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ba9-3383-ed41-c94b" type="max"/>
@@ -144,15 +144,15 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="76f9-6855-75ab-b81f" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="309a-8f9e-b4ee-ac7a" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="8638-aabb-abe4-49bf" name="Bare Hands" hidden="false" collective="false" targetId="209a-2017-ac8d-30b4" type="selectionEntry"/>
+        <entryLink id="76f9-6855-75ab-b81f" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="309a-8f9e-b4ee-ac7a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="8638-aabb-abe4-49bf" name="Bare Hands" hidden="false" collective="false" import="true" targetId="209a-2017-ac8d-30b4" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3649-eec6-c067-b17b" name="Rogue Psyker Coven" hidden="false" collective="false" type="unit">
+    <selectionEntry id="3649-eec6-c067-b17b" name="Rogue Psyker Coven" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="379a-a788-7f88-2bbd" name="Rogue Psyker Coven" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -181,15 +181,15 @@
         <categoryLink id="8f4e-cf54-001b-9d8f" name="Rogue Psyker Coven" hidden="false" targetId="ba79-47bc-ce95-ecc7" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6bf2-3c16-3763-dd67" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="3e69-7d28-a2be-ef39" name="Bare Hands" hidden="false" collective="false" targetId="209a-2017-ac8d-30b4" type="selectionEntry"/>
-        <entryLink id="273c-732d-a135-4a0f" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="6bf2-3c16-3763-dd67" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="3e69-7d28-a2be-ef39" name="Bare Hands" hidden="false" collective="false" import="true" targetId="209a-2017-ac8d-30b4" type="selectionEntry"/>
+        <entryLink id="273c-732d-a135-4a0f" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2717-a71a-6921-e5e5" name="Renegade Cultists" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2717-a71a-6921-e5e5" name="Renegade Cultists" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="9643-44a0-d1bf-dd36" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="3a28-470c-d9f4-52eb" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -199,13 +199,13 @@
         <categoryLink id="1135-3d9f-a154-94f1" name="Renegade Cultists" hidden="false" targetId="7327-499c-006c-2b3c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cc54-35b8-aa03-4d90" name="10 - 30 models" hidden="false" collective="false" defaultSelectionEntryId="2b06-dc92-f8c8-9d12">
+        <selectionEntryGroup id="cc54-35b8-aa03-4d90" name="10 - 30 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b06-dc92-f8c8-9d12">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f62e-8557-a0fb-68b4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f040-da4f-1028-c33f" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2b06-dc92-f8c8-9d12" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2b06-dc92-f8c8-9d12" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="1d3b-d052-3c19-3ef6" name="Renegade Cultists (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -223,7 +223,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cef1-a55b-e51c-bb3e" name="20 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cef1-a55b-e51c-bb3e" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="a0b9-37a3-dfdb-97d7" name="Renegade Cultists (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -241,7 +241,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d853-f26f-9c94-41ef" name="30 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d853-f26f-9c94-41ef" name="30 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="7604-1866-dffc-cf72" name="Renegade Cultists (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -263,7 +263,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e8e6-6338-d636-1f9c" name="Heavy Stubber" hidden="false" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+        <entryLink id="e8e6-6338-d636-1f9c" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="0e3e-478a-a8fc-f9e4" value="2.0">
               <conditions>
@@ -281,15 +281,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e3e-478a-a8fc-f9e4" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="5a4d-ae51-849f-bd95" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="cd6e-0117-a8fa-1d75" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="9e78-62d1-c52d-5926" name="Cultist Weapons" hidden="false" collective="false" targetId="e864-1d89-e03e-4b30" type="selectionEntry"/>
+        <entryLink id="5a4d-ae51-849f-bd95" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="cd6e-0117-a8fa-1d75" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="9e78-62d1-c52d-5926" name="Cultist Weapons" hidden="false" collective="false" import="true" targetId="e864-1d89-e03e-4b30" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4bf0-f0cc-3ef5-9a1a" name="Renegade Militia Squad" hidden="false" collective="false" type="unit">
+    <selectionEntry id="4bf0-f0cc-3ef5-9a1a" name="Renegade Militia Squad" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="1de1-a6b8-3360-4d45" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="c8c9-3efc-9f17-7c29" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -299,7 +299,7 @@
         <categoryLink id="81e8-8d89-37b8-a41e" name="Renegade Militia Squad" hidden="false" targetId="dff4-60b8-8563-14a1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="40a2-0812-001a-d882" name="Weapons Team" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="40a2-0812-001a-d882" name="Weapons Team" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ea03-067e-c648-0fcf" value="2.0">
               <conditions>
@@ -311,7 +311,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea03-067e-c648-0fcf" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="44dd-163d-aa3f-2cd8" name="Heavy Weapon" hidden="false" collective="false" targetId="dbb1-7736-03e9-05ff" type="selectionEntryGroup">
+            <entryLink id="44dd-163d-aa3f-2cd8" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="dbb1-7736-03e9-05ff" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a969-7028-0345-e7d4" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef4a-37a0-0e47-8521" type="max"/>
@@ -324,13 +324,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="acef-ae84-1d81-706e" name="9 - 20 Models" hidden="false" collective="false" defaultSelectionEntryId="ba91-8e0e-c976-370c">
+        <selectionEntryGroup id="acef-ae84-1d81-706e" name="9 - 20 Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="ba91-8e0e-c976-370c">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6468-dab2-579a-3a95" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c76-4a92-7812-b09a" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ba91-8e0e-c976-370c" name="9/10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ba91-8e0e-c976-370c" name="9/10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="7242-e8ef-825b-f49c" name="9/10 models" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -348,7 +348,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="27cc-0866-a2dc-1bc2" name="18-20 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="27cc-0866-a2dc-1bc2" name="18-20 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="484f-46de-5e79-cc65" name="18-20 models" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -370,15 +370,15 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3bff-5cc6-94b3-de1a" name="Cultist Weapons" hidden="false" collective="false" targetId="e864-1d89-e03e-4b30" type="selectionEntry"/>
-        <entryLink id="16d0-1f73-6032-1964" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="42bf-06d1-5f70-e595" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="3bff-5cc6-94b3-de1a" name="Cultist Weapons" hidden="false" collective="false" import="true" targetId="e864-1d89-e03e-4b30" type="selectionEntry"/>
+        <entryLink id="16d0-1f73-6032-1964" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="42bf-06d1-5f70-e595" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6608-6476-b611-ddbb" name="Renegade Mutant Rabble" hidden="false" collective="false" type="unit">
+    <selectionEntry id="6608-6476-b611-ddbb" name="Renegade Mutant Rabble" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="ebfe-c7b3-03d7-934a" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
         <categoryLink id="932b-f0fd-727c-7e02" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -389,7 +389,7 @@
         <categoryLink id="1e5a-28ce-953f-2918" name="Renegade Mutant Rabble" hidden="false" targetId="6fc6-2378-c928-1ada" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0fcd-8851-b62d-04ed" name="Mutant Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0fcd-8851-b62d-04ed" name="Mutant Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cb4-9b7a-e246-5d59" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18e5-12dd-b53a-b5d0" type="max"/>
@@ -422,13 +422,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a3ae-3105-671d-eb5c" name="10 - 50 models" hidden="false" collective="false" defaultSelectionEntryId="3269-5f36-58d3-e09c">
+        <selectionEntryGroup id="a3ae-3105-671d-eb5c" name="10 - 50 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="3269-5f36-58d3-e09c">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b94-3f12-5a15-d37d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a96-4d6e-b79a-5139" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3269-5f36-58d3-e09c" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3269-5f36-58d3-e09c" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="e36f-1359-8dcd-adf7" name="Renegade Mutant Rabble (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -446,7 +446,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="294b-9182-7d3f-c5f3" name="20 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="294b-9182-7d3f-c5f3" name="20 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="e746-592c-bdf2-cba0" name="Renegade Mutant Rabble (20 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -464,7 +464,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f2be-750d-e341-f2dc" name="30 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f2be-750d-e341-f2dc" name="30 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="1f9b-1311-1705-ea91" name="Renegade Mutant Rabble (30 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -482,7 +482,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8ba0-eb70-819e-cb63" name="40 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8ba0-eb70-819e-cb63" name="40 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="c631-8241-2313-4287" name="Renegade Mutant Rabble (40 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -500,7 +500,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8bc7-755a-a3ae-0bfe" name="50 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8bc7-755a-a3ae-0bfe" name="50 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="ec58-e632-17af-eba0" name="Renegade Mutant Rabble (50 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -522,14 +522,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a5fa-3e12-502a-9f26" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="c341-880b-c927-947f" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="a5fa-3e12-502a-9f26" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="c341-880b-c927-947f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5e0c-2a62-3ef5-f4a5" name="Chaos Spawn" hidden="false" collective="false" type="unit">
+    <selectionEntry id="5e0c-2a62-3ef5-f4a5" name="Chaos Spawn" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="f61f-4151-5267-f531" name="1 - Razor Claws" hidden="false" typeId="cdd6-b04b-690c-bca3" typeName="Mutated Beyond Reason - D3 Roll">
           <characteristics>
@@ -564,7 +564,7 @@
         <categoryLink id="6d65-3e60-d3f0-8c85" name="Chaos Spawn" hidden="false" targetId="d008-2fbf-3011-2057" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="40be-7620-68ee-9c7d" name="Hideous Mutations" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="40be-7620-68ee-9c7d" name="Hideous Mutations" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b05-14e4-5815-d892" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28b4-fe14-957f-be29" type="max"/>
@@ -587,13 +587,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c565-3b8f-998c-ed38" name="1 - 5 models" hidden="false" collective="false" defaultSelectionEntryId="758f-89ca-5e40-92bf">
+        <selectionEntryGroup id="c565-3b8f-998c-ed38" name="1 - 5 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="758f-89ca-5e40-92bf">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="629d-c92a-912a-05ed" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4144-f589-30a4-d628" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="758f-89ca-5e40-92bf" name="1 model" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="758f-89ca-5e40-92bf" name="1 model" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="4cac-a102-7e23-e8ab" name="Chaos Spawn (1 model)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -611,7 +611,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8ec9-5998-e503-16ef" name="2 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8ec9-5998-e503-16ef" name="2 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="b469-96a4-67da-e5bd" name="Chaos Spawn (2 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -629,7 +629,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a844-d288-6e48-0d43" name="3 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a844-d288-6e48-0d43" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="d3ee-43f7-4d08-8647" name="Chaos Spawn (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -647,7 +647,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f558-81a7-6c8d-aedf" name="4 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f558-81a7-6c8d-aedf" name="4 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="522f-b3e7-b40f-5e09" name="Chaos Spawn (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -665,7 +665,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b708-b098-3325-3cf1" name="5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b708-b098-3325-3cf1" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="6886-8aba-1910-b35a" name="Chaos Spawn (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -687,14 +687,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="646a-3006-64dc-62f4" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="2554-812b-0636-6507" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="646a-3006-64dc-62f4" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="2554-812b-0636-6507" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0a8a-fe7c-b77e-5b9b" name="Renegade Command Squad" hidden="false" collective="false" type="unit">
+    <selectionEntry id="0a8a-fe7c-b77e-5b9b" name="Renegade Command Squad" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="69fd-034f-b2a2-a9d4" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
         <categoryLink id="9b5b-844f-f8d0-8acf" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -704,7 +704,7 @@
         <categoryLink id="61cb-c719-92e4-78f4" name="Renegade Command Squad" hidden="false" targetId="9c7d-a7a8-c2e5-ece6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="267c-059d-365f-4eb4" name="Renegade Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="267c-059d-365f-4eb4" name="Renegade Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3664-607f-b35b-766d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9743-182a-f0de-89be" type="max"/>
@@ -735,12 +735,12 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c800-ea14-7d85-cb1f" name="Weapons Team" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c800-ea14-7d85-cb1f" name="Weapons Team" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2625-0b2d-b14b-85a3" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="69b5-288e-1ad5-48b0" name="Heavy Weapon" hidden="false" collective="false" targetId="dbb1-7736-03e9-05ff" type="selectionEntryGroup">
+            <entryLink id="69b5-288e-1ad5-48b0" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="dbb1-7736-03e9-05ff" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2d4-235a-3097-ae9d" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b0d-cc01-8816-3cc9" type="max"/>
@@ -753,13 +753,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3b06-330b-50ab-f2c6" name="3 - 14 models" hidden="false" collective="false" defaultSelectionEntryId="942a-f8d5-73ef-73b0">
+        <selectionEntryGroup id="3b06-330b-50ab-f2c6" name="3 - 14 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="942a-f8d5-73ef-73b0">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcc1-00b3-5d8c-aa67" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d8b-aa75-85dd-f7f4" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="942a-f8d5-73ef-73b0" name="3/4 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="942a-f8d5-73ef-73b0" name="3/4 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="780c-9fab-f7f0-b1ae" name="Renegade Command Squad (3/4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -777,7 +777,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ddef-9f2b-8bdb-7737" name="8/9 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ddef-9f2b-8bdb-7737" name="8/9 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="8197-346a-8796-c6b7" name="Renegade Command Squad (8/9 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -795,7 +795,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f974-d1ff-40e4-3618" name="13/14 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f974-d1ff-40e4-3618" name="13/14 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="ba94-aaca-1793-e89a" name="Renegade Command Squad (13/14 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -815,12 +815,12 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="437a-86e2-b74f-6935" name="Banner" hidden="false" collective="false">
+        <selectionEntryGroup id="437a-86e2-b74f-6935" name="Banner" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7462-5da5-2295-ef42" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ff08-6382-0031-f8f4" name="Banner of the Apostate" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ff08-6382-0031-f8f4" name="Banner of the Apostate" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="cdc4-c563-8286-4407" name="Banner of the Apostate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
                   <characteristics>
@@ -832,7 +832,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f60d-125a-ab3a-214f" name="Banner of Hate" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f60d-125a-ab3a-214f" name="Banner of Hate" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="ee9b-86e4-cc5e-50ef" name="Banner of Hate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
                   <characteristics>
@@ -848,14 +848,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4d0b-4d4c-5a45-b1c5" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="727f-67f4-0f9c-4eb5" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="4d0b-4d4c-5a45-b1c5" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="727f-67f4-0f9c-4eb5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bd0a-0328-8bbb-df4f" name="Renegade Disciple Squad" hidden="false" collective="false" type="unit">
+    <selectionEntry id="bd0a-0328-8bbb-df4f" name="Renegade Disciple Squad" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="b662-74a0-6a93-9c38" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
         <categoryLink id="bc9b-f026-f6e2-4a3b" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -865,7 +865,7 @@
         <categoryLink id="ab1c-cdaf-5dbe-ee2d" name="Renegade Disciple Squad" hidden="false" targetId="400d-918b-9b6f-13ec" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a5a6-85eb-7f9d-e56f" name="Disciple&apos;s Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a5a6-85eb-7f9d-e56f" name="Disciple&apos;s Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ad9-36e9-93ab-c106" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cdf-1596-8b19-bb08" type="max"/>
@@ -896,12 +896,12 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4600-1c22-8f09-0530" name="Weapons Team" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4600-1c22-8f09-0530" name="Weapons Team" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a14-9739-8681-91a4" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="3a24-1308-8af4-78e8" name="Heavy Weapon" hidden="false" collective="false" targetId="dbb1-7736-03e9-05ff" type="selectionEntryGroup">
+            <entryLink id="3a24-1308-8af4-78e8" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="dbb1-7736-03e9-05ff" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b155-490b-8624-8131" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba0-83f5-b485-f127" type="max"/>
@@ -914,13 +914,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0398-61b0-4d48-beeb" name="4 - 15 models" hidden="false" collective="false" defaultSelectionEntryId="2d8d-ae10-69ff-267b">
+        <selectionEntryGroup id="0398-61b0-4d48-beeb" name="4 - 15 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="2d8d-ae10-69ff-267b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a5-0fbb-3e2f-35b2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b534-d473-5110-6187" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2d8d-ae10-69ff-267b" name="4/5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2d8d-ae10-69ff-267b" name="4/5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="3aca-6589-33d1-4f1c" name="Renegade Disciple Squad (4/5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -938,7 +938,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cf10-c51c-ec2f-658e" name="9/10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cf10-c51c-ec2f-658e" name="9/10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="41fc-5b1f-80ef-0ffc" name="Renegade Disciple Squad (9/10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -956,7 +956,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9161-3420-05e6-fd0a" name="14/15 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9161-3420-05e6-fd0a" name="14/15 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="3f4c-8292-db29-55a1" name="Renegade Command Squad (14/15 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -978,14 +978,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c027-6f39-7af5-5ab1" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="b6c9-73e0-1ad9-602a" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="c027-6f39-7af5-5ab1" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="b6c9-73e0-1ad9-602a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2aab-89e4-8430-1eaf" name="Renegade Enforcer" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2aab-89e4-8430-1eaf" name="Renegade Enforcer" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="a06d-7e75-0c9e-5ca2" name="Renegade Enforcer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -1014,7 +1014,7 @@
         <categoryLink id="2f23-5973-718f-9293" name="Renegade Enforcer" hidden="false" targetId="9f12-b490-c019-e031" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="fb8f-61a5-dc75-7057" name="Enforcer Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fb8f-61a5-dc75-7057" name="Enforcer Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32c3-4de9-54a4-0d81" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d923-99ff-24e2-25b1" type="max"/>
@@ -1037,14 +1037,14 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="d675-7206-2f26-d325" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="3ec2-0bc3-e6f9-a1eb" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="d675-7206-2f26-d325" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="3ec2-0bc3-e6f9-a1eb" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8831-648a-148f-ea69" name="Renegade Marauder Squad" hidden="false" collective="false" type="unit">
+    <selectionEntry id="8831-648a-148f-ea69" name="Renegade Marauder Squad" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="1cf7-9374-08db-7818" name="In It For The Money" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -1061,7 +1061,7 @@
         <categoryLink id="9d5b-15de-f21a-47e6" name="Renegade Marauder Squad" hidden="false" targetId="1c8c-782e-5846-ea10" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e2f5-21eb-90dd-2f09" name="Marauder Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e2f5-21eb-90dd-2f09" name="Marauder Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7367-1e7c-03e3-deb0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b94f-100a-3ba3-3cc9" type="max"/>
@@ -1094,13 +1094,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b346-0ca6-6768-097a" name="5 - 12 Models" hidden="false" collective="false" defaultSelectionEntryId="2d14-42dc-c288-32f3">
+        <selectionEntryGroup id="b346-0ca6-6768-097a" name="5 - 12 Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="2d14-42dc-c288-32f3">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ff6-34ea-6817-ec34" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d87d-0da9-8a19-c41f" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2d14-42dc-c288-32f3" name="5 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2d14-42dc-c288-32f3" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="1b1e-d891-e77b-f0cb" name="Renegade Marauder Squad (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1118,7 +1118,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0ed0-8082-16d1-ee8c" name="7 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0ed0-8082-16d1-ee8c" name="7 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="e973-44d0-c056-5e4e" name="Renegade Marauder Squad (7 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1136,7 +1136,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="78f2-fc3b-e54f-8fa8" name="10 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="78f2-fc3b-e54f-8fa8" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="b181-56f3-62fe-eb5c" name="Renegade Marauder Squad (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1154,7 +1154,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="23e0-03ae-6e1b-3b9f" name="12 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="23e0-03ae-6e1b-3b9f" name="12 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="ac29-a443-e8a4-4c22" name="Renegade Marauder Squad (12 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1176,13 +1176,13 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8822-1abd-ed61-ddc4" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="8822-1abd-ed61-ddc4" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cab8-562e-95b0-8821" name="Renegade Ogryn Beast Handlers" hidden="false" collective="false" type="unit">
+    <selectionEntry id="cab8-562e-95b0-8821" name="Renegade Ogryn Beast Handlers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="cc18-b325-417b-ba48" name="Avalanche of Muscle" hidden="false" targetId="2b5e-dcb7-b80c-8eb2" type="profile"/>
         <infoLink id="f743-9fc0-05c0-fbb6" name="Combat Stimms" hidden="false" targetId="fad3-ece2-e1a2-4f79" type="profile"/>
@@ -1197,7 +1197,7 @@
         <categoryLink id="0f80-794e-3c1f-8cbf" name="Renegade Ogryn Beast Handlers" hidden="false" targetId="3cee-f68b-f659-3a4e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d1f2-a3e3-3f51-e91d" name="Goad and Claws" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d1f2-a3e3-3f51-e91d" name="Goad and Claws" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b238-e2f5-d53d-f656" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1669-9012-14e8-e0da" type="max"/>
@@ -1220,13 +1220,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b943-9821-4ac9-b282" name="4 - 7 models" hidden="false" collective="false" defaultSelectionEntryId="e02f-3e97-aa42-5dcf">
+        <selectionEntryGroup id="b943-9821-4ac9-b282" name="4 - 7 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="e02f-3e97-aa42-5dcf">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d273-1468-da73-62a9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce90-c02a-5d34-3485" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e02f-3e97-aa42-5dcf" name="4 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e02f-3e97-aa42-5dcf" name="4 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="7c8b-2303-47d1-6eb9" name="Renegade Ogryn Beast Handlers (4 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1244,7 +1244,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="35f5-8f21-7319-7d1b" name="7 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="35f5-8f21-7319-7d1b" name="7 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="d515-98bb-3b70-cc1c" name="Renegade Ogryn Beast Handlers (7 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1266,14 +1266,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2fae-0ef5-9a48-5f24" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="d7b5-c836-2b6d-d043" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="2fae-0ef5-9a48-5f24" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="d7b5-c836-2b6d-d043" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a267-798d-07a1-4a1d" name="Renegade Ogryn Brutes" hidden="false" collective="false" type="unit">
+    <selectionEntry id="a267-798d-07a1-4a1d" name="Renegade Ogryn Brutes" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="bc1a-4380-2cee-c5d5" name="Avalanche of Muscle" hidden="false" targetId="2b5e-dcb7-b80c-8eb2" type="profile"/>
         <infoLink id="61ce-8dd3-b025-c01d" name="Combat Stimms" hidden="false" targetId="fad3-ece2-e1a2-4f79" type="profile"/>
@@ -1288,7 +1288,7 @@
         <categoryLink id="1f44-5c3b-17a9-9bc1" name="Renegade Ogryn Brutes" hidden="false" targetId="85d1-894e-d77b-e79a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="da2d-afae-1fe6-a942" name="Brute Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="da2d-afae-1fe6-a942" name="Brute Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dfd-8673-194c-f530" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7550-34ad-df4e-2085" type="max"/>
@@ -1309,7 +1309,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="91d7-b2d5-1837-6a5c" name="Ogryn Power Drill" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="91d7-b2d5-1837-6a5c" name="Ogryn Power Drill" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d1e-1eee-0f52-8ca9" type="max"/>
           </constraints>
@@ -1331,13 +1331,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f493-b230-5a26-6a6c" name="3 - 12 models" hidden="false" collective="false" defaultSelectionEntryId="e643-f218-1d40-70ec">
+        <selectionEntryGroup id="f493-b230-5a26-6a6c" name="3 - 12 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="e643-f218-1d40-70ec">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1735-7d63-8cb5-02dd" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="838b-120b-cf5d-46ce" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e643-f218-1d40-70ec" name="3 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e643-f218-1d40-70ec" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="7a49-1e63-7c0a-9528" name="Renegade Ogryn Brutes (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1355,7 +1355,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6172-e882-af64-9ae9" name="6 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6172-e882-af64-9ae9" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="92fd-5548-acb3-942c" name="Renegade Ogryn Brutes (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1373,7 +1373,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="06f8-177f-725e-7803" name="9 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="06f8-177f-725e-7803" name="9 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="544f-1b2a-987f-0541" name="Renegade Ogryn Brutes (9 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1391,7 +1391,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="855a-df3d-bc27-b48a" name="12 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="855a-df3d-bc27-b48a" name="12 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="eba7-64b9-11be-0fdc" name="Renegade Ogryn Brutes (12 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1413,14 +1413,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="dbed-1433-8a7d-f122" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="563e-7422-5a37-cb22" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="dbed-1433-8a7d-f122" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="563e-7422-5a37-cb22" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1846-6d84-15bd-492d" name="Renegade Plague Ogryns" hidden="false" collective="false" type="unit">
+    <selectionEntry id="1846-6d84-15bd-492d" name="Renegade Plague Ogryns" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="3504-e148-ac3d-a23e" name="Shower of Bile" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -1443,7 +1443,7 @@
         <categoryLink id="31a4-9ed5-9c71-9923" name="Renegade Plague Ogryns" hidden="false" targetId="0649-1e37-81ab-f20f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0d75-e0ac-d52c-1359" name="Plague Ogryn Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0d75-e0ac-d52c-1359" name="Plague Ogryn Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="521e-7ee1-63e2-0673" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d6b-c0ae-df99-d9ed" type="max"/>
@@ -1466,13 +1466,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cedd-b001-adf9-24e0" name="3 - 9 models" hidden="false" collective="false" defaultSelectionEntryId="9482-07d1-6e69-7caf">
+        <selectionEntryGroup id="cedd-b001-adf9-24e0" name="3 - 9 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="9482-07d1-6e69-7caf">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce65-c8a2-ab39-63f3" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a86-daec-43c0-0a72" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="9482-07d1-6e69-7caf" name="3 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9482-07d1-6e69-7caf" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="6429-5170-a2d8-3348" name="Renegade Plague Ogryns (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1490,7 +1490,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ea8a-8948-9cdc-8ced" name="6 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ea8a-8948-9cdc-8ced" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="4e3e-2ba3-9714-f0af" name="Renegade Plague Ogryns (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1508,7 +1508,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="aa57-c6ce-f961-8cf1" name="9 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="aa57-c6ce-f961-8cf1" name="9 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="2e36-3731-950d-c860" name="Renegade Plague Ogryns (9 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1530,13 +1530,13 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e0ef-d50e-1ed2-b840" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="e0ef-d50e-1ed2-b840" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8692-16f2-59da-5423" name="Renegade Heavy Weapons Squad" hidden="false" collective="false" type="unit">
+    <selectionEntry id="8692-16f2-59da-5423" name="Renegade Heavy Weapons Squad" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="8237-50be-cf58-4ab0" name="Weapon Teams" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
@@ -1553,7 +1553,7 @@
         <categoryLink id="194e-f247-1b44-54ad" name="Renegade Heavy Weapons Squad" hidden="false" targetId="10fa-e746-6866-c425" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e0a1-84c6-4c27-fd07" name="Close Combat Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e0a1-84c6-4c27-fd07" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e47-a624-dfd1-2090" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0fa-aa40-ccaa-139b" type="max"/>
@@ -1576,13 +1576,13 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="54f8-2935-f6de-34b6" name="3 - 6 models" hidden="false" collective="false" defaultSelectionEntryId="88a5-050f-af24-a0d4">
+        <selectionEntryGroup id="54f8-2935-f6de-34b6" name="3 - 6 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="88a5-050f-af24-a0d4">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea0-34e5-9fd3-f472" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96aa-d0fb-cd7f-699b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="88a5-050f-af24-a0d4" name="3 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="88a5-050f-af24-a0d4" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="fb59-34f5-b482-feaf" name="Renegade Heavy Weapons Squad (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1600,7 +1600,7 @@
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b81f-d5e4-b0f1-5aab" name="6 models" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b81f-d5e4-b0f1-5aab" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="d0e0-7109-835f-4d44" name="Renegade Heavy Weapons Squad (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
                   <characteristics>
@@ -1622,9 +1622,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a9bb-5dbd-06c6-e38d" name="Chaos Covenant" hidden="false" collective="false" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
-        <entryLink id="e833-dc55-0a5f-e925" name="Commander" hidden="false" collective="false" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-        <entryLink id="9529-1d55-62c9-71aa" name="Heavy Weapon" hidden="false" collective="false" targetId="dbb1-7736-03e9-05ff" type="selectionEntryGroup">
+        <entryLink id="a9bb-5dbd-06c6-e38d" name="Chaos Covenant" hidden="false" collective="false" import="true" targetId="a718-5e38-bda2-72ab" type="selectionEntryGroup"/>
+        <entryLink id="e833-dc55-0a5f-e925" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="9529-1d55-62c9-71aa" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="dbb1-7736-03e9-05ff" type="selectionEntryGroup">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -1646,12 +1646,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="db3b-71d5-dc10-3abf" name="Hellhound Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="db3b-71d5-dc10-3abf" name="Hellhound Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0a7a-54a4-c75d-e790" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d670-2339-0a2a-0b35" name="Hellhound" hidden="false" collective="false" targetId="05a5-a51f-14b2-dba3" type="selectionEntry">
+        <entryLink id="d670-2339-0a2a-0b35" name="Hellhound" hidden="false" collective="false" import="true" targetId="05a5-a51f-14b2-dba3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf9-24ea-b836-cf4a" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd35-c830-e2e0-6c2b" type="max"/>
@@ -1669,12 +1669,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0c48-8afc-e103-d2ca" name="Salamander Scout Tank Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="0c48-8afc-e103-d2ca" name="Salamander Scout Tank Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="953e-fe8a-a4bf-528e" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f79f-22cf-1419-9cd2" name="Salamander Scout Tank" hidden="false" collective="false" targetId="4e7a-93c2-e2fa-d5ac" type="selectionEntry">
+        <entryLink id="f79f-22cf-1419-9cd2" name="Salamander Scout Tank" hidden="false" collective="false" import="true" targetId="4e7a-93c2-e2fa-d5ac" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc5-0917-9dd6-19c6" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c3-6d83-7f3d-7c58" type="max"/>
@@ -1693,12 +1693,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe2e-7516-d5d6-e40b" name="Armageddon Pattern Medusa Battery" hidden="false" collective="false" type="unit">
+    <selectionEntry id="fe2e-7516-d5d6-e40b" name="Armageddon Pattern Medusa Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="fe82-8fac-a715-b88a" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a3a4-0399-db89-599c" name="Armageddon Pattern Medusa" hidden="false" collective="false" targetId="f3b7-bd4c-3da3-fc50" type="selectionEntry">
+        <entryLink id="a3a4-0399-db89-599c" name="Armageddon Pattern Medusa" hidden="false" collective="false" import="true" targetId="f3b7-bd4c-3da3-fc50" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ae-3b84-ae5a-a504" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6c3-66da-d65f-51d2" type="max"/>
@@ -1717,12 +1717,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e28a-3252-e72b-6071" name="Basilisk Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="e28a-3252-e72b-6071" name="Basilisk Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="10f5-de53-faec-7017" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1eae-6a7c-55b2-94b8" name="Basilisk" hidden="false" collective="false" targetId="56a3-3248-0189-622a" type="selectionEntry">
+        <entryLink id="1eae-6a7c-55b2-94b8" name="Basilisk" hidden="false" collective="false" import="true" targetId="56a3-3248-0189-622a" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d9d-6444-a74b-5cd5" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b943-0e55-c63b-bc11" type="max"/>
@@ -1740,12 +1740,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="230f-59a9-3e0a-1095" name="Colossus Bombard Battery" hidden="false" collective="false" type="unit">
+    <selectionEntry id="230f-59a9-3e0a-1095" name="Colossus Bombard Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="db9d-b09b-d5f3-a031" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="de1f-f07a-d0db-80a5" name="Colossus Bombard" hidden="false" collective="false" targetId="c58f-0f00-a8f3-21f7" type="selectionEntry">
+        <entryLink id="de1f-f07a-d0db-80a5" name="Colossus Bombard" hidden="false" collective="false" import="true" targetId="c58f-0f00-a8f3-21f7" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d9-853c-c984-26dd" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="173f-8f7c-00a9-85b9" type="max"/>
@@ -1763,12 +1763,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="07ef-ac1c-0ca3-206f" name="Earthshaker Carriage Batteries" hidden="false" collective="false" type="unit">
+    <selectionEntry id="07ef-ac1c-0ca3-206f" name="Earthshaker Carriage Batteries" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="aa12-ed9e-7c06-f3da" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="245a-682b-2d4e-ba1f" name="Earthshaker Carriage Battery" hidden="false" collective="false" targetId="9582-2a79-7cda-e385" type="selectionEntry">
+        <entryLink id="245a-682b-2d4e-ba1f" name="Earthshaker Carriage Battery" hidden="false" collective="false" import="true" targetId="9582-2a79-7cda-e385" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="249a-b406-d066-39c2" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ba-2228-2977-bfbe" type="max"/>
@@ -1786,12 +1786,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c799-7f81-7970-902b" name="Earthshaker Platform Battery" hidden="false" collective="false" type="unit">
+    <selectionEntry id="c799-7f81-7970-902b" name="Earthshaker Platform Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="c900-dba0-2669-7484" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a9c7-6941-ce9f-471f" name="Earthshaker Platform" hidden="false" collective="false" targetId="b588-222c-ea7c-aedc" type="selectionEntry">
+        <entryLink id="a9c7-6941-ce9f-471f" name="Earthshaker Platform" hidden="false" collective="false" import="true" targetId="f554-4ea8-46a0-e264" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="609e-5416-48cb-0ba0" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b2-6154-72b1-15ee" type="max"/>
@@ -1809,12 +1809,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2e19-d3df-4fdc-a1fc" name="Griffon Mortar Carrier Battery" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2e19-d3df-4fdc-a1fc" name="Griffon Mortar Carrier Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="e153-6707-5714-9322" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="545b-8d64-9257-acb4" name="Griffon Mortar Carrier" hidden="false" collective="false" targetId="4e57-2e51-0e17-dac5" type="selectionEntry">
+        <entryLink id="545b-8d64-9257-acb4" name="Griffon Mortar Carrier" hidden="false" collective="false" import="true" targetId="4e57-2e51-0e17-dac5" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a21-d345-631e-3738" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a04-00b1-6bc5-f489" type="max"/>
@@ -1832,12 +1832,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5084-6362-4024-2a92" name="Heavy Mortar Battery" hidden="false" collective="false" type="unit">
+    <selectionEntry id="5084-6362-4024-2a92" name="Heavy Mortar Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="894b-fd9c-e06a-52a1" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="47ef-fa79-3a94-9c21" name="Heavy Mortar" hidden="false" collective="false" targetId="23aa-209f-b675-fda0" type="selectionEntry">
+        <entryLink id="47ef-fa79-3a94-9c21" name="Heavy Mortar" hidden="false" collective="false" import="true" targetId="23aa-209f-b675-fda0" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f34b-3ea7-6da1-f468" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3778-2633-7439-ee32" type="max"/>
@@ -1856,12 +1856,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9fb8-fcf6-93ae-ea82" name="Heavy Quad Launcher Battery" hidden="false" collective="false" type="unit">
+    <selectionEntry id="9fb8-fcf6-93ae-ea82" name="Heavy Quad Launcher Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="477e-2005-f819-6272" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e326-2eaf-e2e0-1fab" name="Heavy Quad Launcher" hidden="false" collective="false" targetId="b363-189e-f062-b976" type="selectionEntry">
+        <entryLink id="e326-2eaf-e2e0-1fab" name="Heavy Quad Launcher" hidden="false" collective="false" import="true" targetId="b363-189e-f062-b976" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26e0-fc22-c6cd-c11e" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a75b-f692-7c49-fe7c" type="max"/>
@@ -1880,12 +1880,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b34e-fcd2-23e4-3a09" name="Hydra Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="b34e-fcd2-23e4-3a09" name="Hydra Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="34a7-7131-8d1e-f683" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d63f-2f45-096e-b947" name="Hydra" hidden="false" collective="false" targetId="b867-ac66-149f-9edf" type="selectionEntry">
+        <entryLink id="d63f-2f45-096e-b947" name="Hydra" hidden="false" collective="false" import="true" targetId="b867-ac66-149f-9edf" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5cc-7885-e282-c124" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8059-567a-7106-dda2" type="max"/>
@@ -1903,12 +1903,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d235-2d8c-d06e-943e" name="Leman Russ Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="d235-2d8c-d06e-943e" name="Leman Russ Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="c0aa-8e81-57fa-457f" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9315-c300-e2f5-e69c" name="Leman Russ Battle Tank" hidden="false" collective="false" targetId="0c2a-4511-5dac-dcf1" type="selectionEntry">
+        <entryLink id="9315-c300-e2f5-e69c" name="Leman Russ Battle Tank" hidden="false" collective="false" import="true" targetId="0c2a-4511-5dac-dcf1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48cd-4a92-90ef-dd32" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="716b-57ea-a3e9-b938" type="max"/>
@@ -1927,12 +1927,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f660-0c87-55ba-0506" name="Medusa Carriage Battery" hidden="false" collective="false" type="unit">
+    <selectionEntry id="f660-0c87-55ba-0506" name="Medusa Carriage Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="6922-1096-ea6d-5873" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="59dd-3822-3731-a55f" name="Medusa Carriage" hidden="false" collective="false" targetId="46c2-aaa9-8c4e-7a1f" type="selectionEntry">
+        <entryLink id="59dd-3822-3731-a55f" name="Medusa Carriage" hidden="false" collective="false" import="true" targetId="46c2-aaa9-8c4e-7a1f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ec-b7e6-902c-904c" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9388-a633-37bf-3c0b" type="max"/>
@@ -1951,12 +1951,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dacb-6135-e4b4-7c76" name="Wyvern Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="dacb-6135-e4b4-7c76" name="Wyvern Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="b5c2-c6d5-3a85-1d09" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="43e9-ece2-b173-9598" name="Wyvern" hidden="false" collective="false" targetId="f5e6-6222-bf4e-6027" type="selectionEntry">
+        <entryLink id="43e9-ece2-b173-9598" name="Wyvern" hidden="false" collective="false" import="true" targetId="f5e6-6222-bf4e-6027" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89e4-1e1a-acb8-2f49" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89a5-3f4d-a554-57e4" type="max"/>
@@ -1974,12 +1974,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="20ce-c45e-55fa-7f3f" name="Arvus Lighter Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="20ce-c45e-55fa-7f3f" name="Arvus Lighter Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="e486-d3b9-72ce-a75c" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fcc7-c459-0bfc-fb74" name="Arvus Lighter" hidden="false" collective="false" targetId="787b-29d1-c891-11c0" type="selectionEntry">
+        <entryLink id="fcc7-c459-0bfc-fb74" name="Arvus Lighter" hidden="false" collective="false" import="true" targetId="bf0f-6c7d-31aa-ee4e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b55-2b56-2824-dbc4" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae76-5a13-8034-8159" type="max"/>
@@ -2007,12 +2007,12 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7963-9912-6456-edd9" name="Valkyrie Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="7963-9912-6456-edd9" name="Valkyrie Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="7f5f-4151-a6e6-2e60" name="New CategoryLink" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6156-3aa1-43bb-dc8e" name="Valkyrie" hidden="false" collective="false" targetId="5e95-ce98-49a7-bf62" type="selectionEntry">
+        <entryLink id="6156-3aa1-43bb-dc8e" name="Valkyrie" hidden="false" collective="false" import="true" targetId="5e95-ce98-49a7-bf62" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a567-19aa-3adf-fd5d" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c485-a0e0-2f6c-fe6f" type="max"/>
@@ -2042,7 +2042,7 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="d766-fc50-1fa9-c661" name="Armoured Sentinels" hidden="false" collective="false" targetId="8854-9cf7-ef02-5f6a" type="selectionEntry">
+    <entryLink id="d766-fc50-1fa9-c661" name="Armoured Sentinels" hidden="false" collective="false" import="true" targetId="8854-9cf7-ef02-5f6a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7b57-ea5d-dc5a-3e58" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
         <categoryLink id="8370-b385-e430-d3e2" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2052,7 +2052,7 @@
         <categoryLink id="29c3-da76-38d4-449d" name="Armoured Sentinels" hidden="false" targetId="8f04-ec5c-e552-d09f" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="bb22-3bff-8895-718b" name="Scout Sentinels" hidden="false" collective="false" targetId="bfe4-98f0-d12a-f428" type="selectionEntry">
+    <entryLink id="bb22-3bff-8895-718b" name="Scout Sentinels" hidden="false" collective="false" import="true" targetId="bfe4-98f0-d12a-f428" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a2a3-d56f-554f-bbe7" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
         <categoryLink id="7ee5-5520-945f-4410" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2062,7 +2062,7 @@
         <categoryLink id="6b3b-86ee-7d39-7972" name="Scout Sentinels" hidden="false" targetId="6cee-44d6-5c95-b087" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="cd03-6fec-5bcd-9093" name="Malcador Defender" hidden="false" collective="false" targetId="2836-6d9c-fccb-9292" type="selectionEntry">
+    <entryLink id="cd03-6fec-5bcd-9093" name="Malcador Defender" hidden="false" collective="false" import="true" targetId="2836-6d9c-fccb-9292" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3772-b617-f79f-cf45" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
         <categoryLink id="e451-184f-97de-a2db" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2073,7 +2073,7 @@
         <categoryLink id="1448-1cd2-976a-da7f" name="Malcador Defender" hidden="false" targetId="d90c-2175-5849-d3cf" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="931f-8081-34ef-1223" name="Malcador Heavy Tank" hidden="false" collective="false" targetId="2dd3-f632-39e2-5742" type="selectionEntry">
+    <entryLink id="931f-8081-34ef-1223" name="Malcador Heavy Tank" hidden="false" collective="false" import="true" targetId="2dd3-f632-39e2-5742" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e9a1-f328-a2e7-e8b1" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
         <categoryLink id="15cd-6b11-79ac-4ec2" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2084,7 +2084,7 @@
         <categoryLink id="f46f-4a03-f6c2-304d" name="Malcador Heavy Tank" hidden="false" targetId="9552-3968-d3ac-c1c4" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="fc2f-4968-9d37-b9b6" name="Rapier Laser Destroyer" hidden="false" collective="false" targetId="da58-29ef-714c-eb47" type="selectionEntry">
+    <entryLink id="fc2f-4968-9d37-b9b6" name="Rapier Laser Destroyer" hidden="false" collective="false" import="true" targetId="da58-29ef-714c-eb47" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ada5-3d0e-5c46-2d6e" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
         <categoryLink id="2dad-04d7-5e8e-8c6f" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2095,7 +2095,7 @@
         <categoryLink id="ecde-21b3-a5d2-4ba4" name="Rapier Laser Destroyer" hidden="false" targetId="e192-48d6-5ad7-4b78" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="eda2-d2e8-e0e8-e9ef" name="Chimera" hidden="false" collective="false" targetId="9e9b-8f15-dff5-4927" type="selectionEntry">
+    <entryLink id="eda2-d2e8-e0e8-e9ef" name="Chimera" hidden="false" collective="false" import="true" targetId="9e9b-8f15-dff5-4927" type="selectionEntry">
       <profiles>
         <profile id="9ebe-2737-563d-1e4e" name="Chimera" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
@@ -2113,7 +2113,7 @@
         <categoryLink id="5116-29a3-68e4-6c4c" name="Chimera" hidden="false" targetId="02f5-fb34-1f1b-4df4" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c786-6d75-e0bd-d165" name="Baneblade" hidden="false" collective="false" targetId="b731-6641-ff27-d8b4" type="selectionEntry">
+    <entryLink id="c786-6d75-e0bd-d165" name="Baneblade" hidden="false" collective="false" import="true" targetId="b731-6641-ff27-d8b4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4e17-3cab-e32f-2afa" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="2a3a-3a1e-0127-7b8c" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2124,7 +2124,7 @@
         <categoryLink id="8ecc-3fb4-1194-599b" name="Baneblade" hidden="false" targetId="f7d8-653a-b68a-dd98" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9c40-9424-c14c-eb8d" name="Macharius Heavy Tank" hidden="false" collective="false" targetId="ff20-5c3c-a798-08c9" type="selectionEntry">
+    <entryLink id="9c40-9424-c14c-eb8d" name="Macharius Heavy Tank" hidden="false" collective="false" import="true" targetId="ff20-5c3c-a798-08c9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="383d-83cc-c84b-7009" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="3b24-3e2e-f7f4-2ed0" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2136,7 +2136,7 @@
         <categoryLink id="2d9f-d77a-fb4f-63c0" name="Macharius Heavy Tank" hidden="false" targetId="65dc-a3e4-c104-2758" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0b38-7ac2-217b-7ab9" name="Macharius Omega" hidden="false" collective="false" targetId="9652-e280-1759-b921" type="selectionEntry">
+    <entryLink id="0b38-7ac2-217b-7ab9" name="Macharius Omega" hidden="false" collective="false" import="true" targetId="9652-e280-1759-b921" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="612b-9a7f-aac5-03dc" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="dd9a-0386-41ee-2916" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2148,7 +2148,7 @@
         <categoryLink id="8717-78a1-5b64-8dbd" name="Macharius Omega" hidden="false" targetId="1204-31eb-4fb7-5e98" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="51ab-48d1-535a-4f0c" name="Macharius Omega" hidden="false" collective="false" targetId="9652-e280-1759-b921" type="selectionEntry">
+    <entryLink id="51ab-48d1-535a-4f0c" name="Macharius Omega" hidden="false" collective="false" import="true" targetId="9652-e280-1759-b921" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7524-cd6f-bead-ed2d" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="49c8-b938-7321-f3fe" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2160,7 +2160,7 @@
         <categoryLink id="08d9-40d6-ef31-1914" name="Macharius Vanquisher" hidden="false" targetId="dc86-fa58-5f5c-d47b" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="849b-c9c0-3172-5a80" name="Macharius Vulcan" hidden="false" collective="false" targetId="a579-474b-306b-0a8c" type="selectionEntry">
+    <entryLink id="849b-c9c0-3172-5a80" name="Macharius Vulcan" hidden="false" collective="false" import="true" targetId="a579-474b-306b-0a8c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="baa2-a949-a690-94b0" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="1abb-d2a4-2ae7-6203" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2172,7 +2172,7 @@
         <categoryLink id="5fd1-5c0a-6bc9-d2d8" name="Macharius Vulcan" hidden="false" targetId="0ef1-db4f-5b14-bbde" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5c8d-ccea-5ab2-86f8" name="Minotaur Artillery Tank" hidden="false" collective="false" targetId="4046-05b7-268e-1c78" type="selectionEntry">
+    <entryLink id="5c8d-ccea-5ab2-86f8" name="Minotaur Artillery Tank" hidden="false" collective="false" import="true" targetId="4046-05b7-268e-1c78" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7779-1330-396a-d11f" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="856d-4bb9-c107-def7" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -2185,7 +2185,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="209a-2017-ac8d-30b4" name="Bare Hands" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="209a-2017-ac8d-30b4" name="Bare Hands" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e1-adf8-b5bf-d948" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ba8-26fd-b5dd-ddad" type="max"/>
@@ -2206,7 +2206,7 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e864-1d89-e03e-4b30" name="Cultist Weapons" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="e864-1d89-e03e-4b30" name="Cultist Weapons" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06c1-540f-8e52-8fdd" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b693-7f5f-844b-4fb3" type="max"/>
@@ -2239,13 +2239,13 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="a718-5e38-bda2-72ab" name="Chaos Covenant" hidden="false" collective="false">
+    <selectionEntryGroup id="a718-5e38-bda2-72ab" name="Chaos Covenant" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f3d-f5a3-0d2f-25cc" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b816-4637-5a88-00d7" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="35fb-b88e-bbcd-8ce2" name="Covenant of Khorne" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="35fb-b88e-bbcd-8ce2" name="Covenant of Khorne" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -2273,7 +2273,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="583b-0107-5b36-225e" name="Covenant of Nurgle" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="583b-0107-5b36-225e" name="Covenant of Nurgle" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2296,7 +2296,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7fb9-2c89-ed69-dc5d" name="Covenant of Slaanesh" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7fb9-2c89-ed69-dc5d" name="Covenant of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2319,7 +2319,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5c46-2171-7b90-eee7" name="Covenant of Tzeentch" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5c46-2171-7b90-eee7" name="Covenant of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2342,7 +2342,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4e87-21f7-99a4-ee59" name="Covenant of Tzeentch" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4e87-21f7-99a4-ee59" name="Covenant of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2365,7 +2365,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="cbae-d3ff-e432-17c5" name="Covenant of Slaanesh" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="cbae-d3ff-e432-17c5" name="Covenant of Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2388,7 +2388,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b1f7-737c-ee57-0161" name="Covenant of Nurgle" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b1f7-737c-ee57-0161" name="Covenant of Nurgle" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2411,7 +2411,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="abe1-b01a-e574-dfc5" name="Covenant of Khorne" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="abe1-b01a-e574-dfc5" name="Covenant of Khorne" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -2441,9 +2441,9 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="dbb1-7736-03e9-05ff" name="Heavy Weapon" hidden="false" collective="false">
+    <selectionEntryGroup id="dbb1-7736-03e9-05ff" name="Heavy Weapon" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="5130-20da-1c32-2b1e" name="Mortar" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5130-20da-1c32-2b1e" name="Mortar" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa5c-31e8-5b74-f00f" type="max"/>
           </constraints>
@@ -2468,27 +2468,27 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="8ea7-747b-5583-146d" name="Autocannon" hidden="false" collective="false" targetId="02f7-7194-f8cf-2299" type="selectionEntry">
+        <entryLink id="8ea7-747b-5583-146d" name="Autocannon" hidden="false" collective="false" import="true" targetId="02f7-7194-f8cf-2299" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6acb-fce6-1093-e21d" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="8e39-b8f1-6ec2-337b" name="Heavy Bolter" hidden="false" collective="false" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+        <entryLink id="8e39-b8f1-6ec2-337b" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a234-9c37-2f63-e0e6" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="c810-11c9-eb45-0f90" name="Heavy Stubber" hidden="false" collective="false" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+        <entryLink id="c810-11c9-eb45-0f90" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e419-8ce6-2865-125b" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="7a80-f165-9de8-169e" name="Lascannon" hidden="false" collective="false" targetId="dd55-a2c1-238b-569f" type="selectionEntry">
+        <entryLink id="7a80-f165-9de8-169e" name="Lascannon" hidden="false" collective="false" import="true" targetId="dd55-a2c1-238b-569f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="657a-fb85-5790-e12f" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="b97c-3192-7f84-43e5" name="Missile Launcher" hidden="false" collective="false" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
+        <entryLink id="b97c-3192-7f84-43e5" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e96-6b19-cbb4-c7c2" type="max"/>
           </constraints>
@@ -2551,7 +2551,7 @@
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="d290-87ad-9d65-cce8" name="Library - Astra Militarum" targetId="83db-5e08-8b20-b377" type="catalogue"/>
-    <catalogueLink id="5c9a-0801-7a37-0810" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue"/>
+    <catalogueLink id="d290-87ad-9d65-cce8" name="Library - Astra Militarum" targetId="83db-5e08-8b20-b377" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="5c9a-0801-7a37-0810" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
