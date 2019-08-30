@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="36f7-e6ed-e15a-0dd6" name="Chaos - Gellerpox Infected" revision="1" battleScribeVersion="2.02" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="36f7-e6ed-e15a-0dd6" name="Chaos - Gellerpox Infected" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="822b-13e1-7116-4490" name="Faction: Gellerpox Infected" hidden="false"/>
     <categoryEntry id="0a29-a423-00d9-6cb9" name="Twisted Lord" hidden="false"/>
@@ -14,7 +14,7 @@
     <categoryEntry id="8200-0f86-96fc-c99f" name="Mutoid Vermin" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry id="04a2-9f41-137b-b676" name="Vulgrar Thrice-cursed" hidden="false" collective="false" type="unit">
+    <selectionEntry id="04a2-9f41-137b-b676" name="Vulgrar Thrice-cursed" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="56a2-c61a-b67a-803d" type="max"/>
       </constraints>
@@ -52,7 +52,7 @@
         <categoryLink id="dc86-c54f-13f4-8dec" name="Vulgrar Thrice-cursed" hidden="false" targetId="cf0b-69c9-2055-d34a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9318-8367-bc76-6244" name="Belly Flamer" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9318-8367-bc76-6244" name="Belly Flamer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e269-b575-c247-20e9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2f-6341-f264-ffa2" type="max"/>
@@ -72,8 +72,11 @@
           <infoLinks>
             <infoLink id="d163-e29c-c5c3-6c9f" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
-        <selectionEntry id="b119-d139-325b-de70" name="Fleshripper Claws" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b119-d139-325b-de70" name="Fleshripper Claws" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c5-e55f-b872-303d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d01b-7067-1be6-7390" type="max"/>
@@ -90,13 +93,16 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dcbd-b29d-54db-a781" name="The Vox Shamblers" hidden="false" collective="false" type="unit">
+    <selectionEntry id="dcbd-b29d-54db-a781" name="The Vox Shamblers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3361-db48-79df-6bea" type="max"/>
       </constraints>
@@ -127,7 +133,7 @@
         <categoryLink id="064a-cb19-8597-1069" name="The Vox Shamblers" hidden="false" targetId="85f7-99a4-5fd0-5fb5" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="18c8-66a9-b9e8-d084" name="Mutated Limbs &amp; Improvised Weapons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="18c8-66a9-b9e8-d084" name="Mutated Limbs &amp; Improvised Weapons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97c5-6bf7-6dc3-e715" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5617-8af0-265d-d93b" type="max"/>
@@ -144,13 +150,16 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="54ad-9c8d-a251-f2db" name="Glitchlings" hidden="false" collective="false" type="unit">
+    <selectionEntry id="54ad-9c8d-a251-f2db" name="Glitchlings" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c267-bce2-e0aa-9f04" type="max"/>
       </constraints>
@@ -182,7 +191,7 @@
         <categoryLink id="ccf8-5a21-1062-0427" name="Glitchlings" hidden="false" targetId="cbc6-d124-0ea3-a0e2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3ad9-db84-e1b8-b47e" name="Diseased Claws &amp; Fangs" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3ad9-db84-e1b8-b47e" name="Diseased Claws &amp; Fangs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42aa-d029-b24c-ffef" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e80-b121-ab62-60c2" type="max"/>
@@ -199,13 +208,16 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="486e-8e34-5a0c-f209" name="The Hullbreakers" hidden="false" collective="false" type="unit">
+    <selectionEntry id="486e-8e34-5a0c-f209" name="The Hullbreakers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="923f-f737-da09-9d33" type="max"/>
       </constraints>
@@ -242,7 +254,7 @@
         <categoryLink id="7ffe-1f70-5469-1bce" name="The Hullbreakers" hidden="false" targetId="a03d-3871-ee9f-55a8" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6fe3-b471-a150-4dba" name="Hideous Mutations" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6fe3-b471-a150-4dba" name="Hideous Mutations" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b6-ae52-efd9-3d65" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08a2-e79b-0238-aeff" type="max"/>
@@ -259,6 +271,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -267,7 +282,7 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="2e91-7476-0093-faa3" name="Mutoid Vermin" hidden="false" collective="false" targetId="d968-ea96-4863-9ddf" type="selectionEntry">
+    <entryLink id="2e91-7476-0093-faa3" name="Mutoid Vermin" hidden="false" collective="false" import="true" targetId="d968-ea96-4863-9ddf" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -279,7 +294,7 @@
         <categoryLink id="e6aa-9e5f-47aa-9942" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="dc18-a084-f238-1ebb" name="Mutoid Vermin" hidden="false" collective="false" targetId="d968-ea96-4863-9ddf" type="selectionEntry">
+    <entryLink id="dc18-a084-f238-1ebb" name="Mutoid Vermin" hidden="false" collective="false" import="true" targetId="d968-ea96-4863-9ddf" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -290,7 +305,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="d968-ea96-4863-9ddf" name="Mutoid Vermin" hidden="false" collective="false" type="unit">
+    <selectionEntry id="d968-ea96-4863-9ddf" name="Mutoid Vermin" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="1ca0-ce1d-ba45-1993" name="Mutoid Vermin" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
@@ -331,7 +346,7 @@
         <categoryLink id="2bc8-5eef-31e4-1871" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a32f-b072-2874-7382" name="Insectile Appendages" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a32f-b072-2874-7382" name="Insectile Appendages" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e0-d286-2bb7-96e9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5934-0b28-8529-9edb" type="max"/>
@@ -348,6 +363,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
