@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9ba1-c994-4719-e3ac" name="Aeldari - Asuryani" revision="10" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9ba1-c994-4719-e3ac" name="Aeldari - Asuryani" revision="11" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="280a-43bb-426c-aa7c" name="Asuryani Datasheets PDF"/>
   </publications>
@@ -5229,6 +5229,9 @@ weapons by this unit.</characteristic>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b19-0147-98e2-7591" type="max"/>
               </constraints>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5253,9 +5256,6 @@ weapons by this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="5f7b-fd92-2eb1-5517" name="Lynx" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -5673,16 +5673,17 @@ weapons by this unit.</characteristic>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c58-0427-59a0-d54d" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="62ff-21a8-a85e-65f8" name="Twin Shuriken Cannon" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="4488-40cf-9258-2c09" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a053-7639-aed8-e524" type="max"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2978-9eeb-a149-f938" name="Armoured Hull" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="45fa-707e-2263-3d07" type="selectionEntry"/>
+        <entryLink id="b8e0-60f0-d3d3-6971" name="Twin Shuriken Cannon" publicationId="280a-43bb-426c-aa7c" hidden="false" collective="false" import="true" targetId="4488-40cf-9258-2c09" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="948d-9c4d-98db-1272" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b83-065f-4a6b-57de" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
