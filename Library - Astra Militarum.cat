@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="12" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="13" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -3925,21 +3925,9 @@ When targets would be picked for a Fight action made by this unit, it instead ta
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f30-9efd-118a-892a" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="53e7-8795-f80b-4020" name="Multi-laser" hidden="false" collective="false" import="true" targetId="782b-bfab-b9a5-5b99" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2579-d6ac-eca0-ed02" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="d156-2577-6b08-1ef0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfd9-e0c6-bcf2-5d2a" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="6fc6-d058-ecec-6cf7" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a1-1c81-775d-0d91" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="53e7-8795-f80b-4020" name="Multi-laser" hidden="false" collective="false" import="true" targetId="782b-bfab-b9a5-5b99" type="selectionEntry"/>
+            <entryLink id="d156-2577-6b08-1ef0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry"/>
+            <entryLink id="6fc6-d058-ecec-6cf7" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4436,33 +4424,22 @@ When targets would be picked for a Fight action made by this unit, it instead ta
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e37-f2ce-ad0d-c102" type="min"/>
       </constraints>
       <entryLinks>
-        <entryLink id="e60a-d0cc-c41e-5b67" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95ff-48b9-fd4f-6198" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="2c78-45fe-6d2d-82a0" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c635-16f1-9d4e-bf71" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="e60a-d0cc-c41e-5b67" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry"/>
+        <entryLink id="2c78-45fe-6d2d-82a0" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry"/>
         <entryLink id="5f41-3395-9680-7caa" name="Lascannon" hidden="false" collective="false" import="true" targetId="dd55-a2c1-238b-569f" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65a5-3f67-4f86-350f" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65a5-3f67-4f86-350f" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8387-a16a-3c3b-7e87" type="max"/>
-          </constraints>
         </entryLink>
         <entryLink id="2c30-3904-5ca1-e8bd" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6141-1e50-39bc-148c" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6141-1e50-39bc-148c" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4534,17 +4511,11 @@ When targets would be picked for a Fight action made by this unit, it instead ta
           <modifiers>
             <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45da-2b70-5784-4e87" type="max"/>
-          </constraints>
         </entryLink>
         <entryLink id="b1cc-3a51-28bb-371d" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="7457-58c5-d5f1-11a0" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7acf-d846-1cd7-2995" type="max"/>
-          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
