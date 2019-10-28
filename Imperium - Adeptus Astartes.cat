@@ -84,6 +84,7 @@
     <categoryEntry id="9b20-fd06-68ae-c8f4" name="Tigurius" hidden="false"/>
     <categoryEntry id="19c4-393b-6162-0a89" name="Faction: Imperial Fists" hidden="false"/>
     <categoryEntry id="15ff-9b00-d153-16bd" name="Lysander" hidden="false"/>
+    <categoryEntry id="054c-0d53-6da0-de4b" name="Tor Garadon" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="1843-1f7a-63ca-0acc" name="Lord High Commander Carab Culln" hidden="false" collective="false" import="true" type="unit">
@@ -5151,6 +5152,89 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </selectionEntryGroups>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="653c-6ca5-e468-beda" name="Captain Tor Garadon" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f733-a658-d16e-f091" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c323-58b6-b03f-dba3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ca96-2b0e-3ca5-aa31" name="Rites of Battle" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly IMPERIAL FISTS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="374f-bf39-7509-72c8" name="Captain Tor Garadon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="743b-f917-2c27-c4ae" name="Siege Captain" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+          <description>Whilst they are within 6&quot; of this unit, you can re-roll wound rolls for attacks made by
+friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2182-a228-f78f-f0d1" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="1bed-638a-92b2-22be" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="3ea2-64d0-e3dd-3d7a" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="a8e9-f15e-fd2a-93d0" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="9be2-47e0-7049-d6bf" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4417-7ddc-273b-6472" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="e85b-f9ea-7ad9-b965" name="Captain" hidden="false" targetId="7151-56f9-0163-eadc" primary="false"/>
+        <categoryLink id="4580-4e35-9000-f5d9" name="Faction: Imperial Fists" hidden="false" targetId="19c4-393b-6162-0a89" primary="false"/>
+        <categoryLink id="6956-6100-3360-6fbe" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="e09a-9073-eee4-af1d" name="MK X Gravis" hidden="false" targetId="8438-9607-67d0-a3e3" primary="false"/>
+        <categoryLink id="5d09-a579-2041-6b36" name="Tor Garadon" hidden="false" targetId="054c-0d53-6da0-de4b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0cd5-9999-1ff1-1116" name="Hand of Defiance" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0019-88d0-7ca0-2808" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a3-ce50-ee02-3eba" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="17f2-0cd8-f42b-6e5a" name="Hand of Defiance" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"></characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="edb5-c834-3ea3-4709" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
