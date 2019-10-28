@@ -10576,17 +10576,20 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f2e6-ac69-ac7f-bc56" name="Incursor Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <rules>
-        <rule id="dc5f-e4f9-5823-214f" name="Multi-spectrum Gunsights" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-          <description>Do not apply negative modifiers to hit rolls for attacks made with
-ranged weapons by this unit.</description>
-        </rule>
-        <rule id="d0d9-472a-869c-e5ad" name="Haywire Mine" publicationId="8df9-0b3e-abea-3c15" hidden="false">
-          <description>Once per battle, at the end of the Fight phase, you can select one enemy unit within
-3&quot; of this unit. If the selected unit is a Vehicle or Building, place two blast markers next to it;
-otherwise, place one blast marker next to it.</description>
-        </rule>
-      </rules>
+      <profiles>
+        <profile id="b77f-145f-db50-59f9" name="Haywire Mine" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, at the end of the Fight phase, you can select one enemy unit within
+3&quot; of this unit. If the selected unit is a VEHICLE or BUILDING, place two blast markers next to it;
+otherwise, place one blast marker next to it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c2e5-17c5-791b-1a88" name="Multi-spectrum Gunsights" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Do not apply negative modifiers to hit rolls for attacks made with ranged weapons by this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="b6de-ed75-91d6-a099" name="Infiltrators" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
         <infoLink id="fab0-2b91-cbc3-fb2c" name="Primaris Profile" publicationId="8df9-0b3e-abea-3c15" hidden="false" targetId="b2c7-a677-95c3-6c20" type="profile">
@@ -10634,6 +10637,9 @@ otherwise, place one blast marker next to it.</description>
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="4a0c-de93-6d12-91f4" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
