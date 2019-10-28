@@ -89,6 +89,7 @@
     <categoryEntry id="5806-9b7a-d76f-f5ff" name="Feirros" hidden="false"/>
     <categoryEntry id="3679-5872-2305-7b4f" name="Faction: Iron Hands" hidden="false"/>
     <categoryEntry id="fdb0-8a61-9ef9-f7a2" name="Iron Father" hidden="false"/>
+    <categoryEntry id="c8ce-ce43-b776-951d" name="Terminus Ultra" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="1843-1f7a-63ca-0acc" name="Lord High Commander Carab Culln" hidden="false" collective="false" import="true" type="unit">
@@ -5459,6 +5460,79 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</descriptio
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a94c-d62e-d216-aaa9" name="Terminus Ultra" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3452-3268-cdfd-b119" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8843-f391-2cc1-27b0" name="Terminus Ultra" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="57d8-4c46-4603-1696" name="Power Overload" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When resolving a Shoot action with this unit, if you roll three or more hit rolls of 1 for attacks made with this unit’s Lascannons or Twin Lascannons, place two blast markers next to this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="171f-09e5-6b9b-cbce" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="f84c-be09-0211-ccec" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="7eb8-4e20-7642-5620" name="Faction: Ultramarines" hidden="false" targetId="0f44-4bfd-acaf-7de9" primary="false"/>
+        <categoryLink id="599e-f199-dc40-dd95" name="Land Raider" hidden="false" targetId="e8c9-c1e3-8372-9280" primary="false"/>
+        <categoryLink id="212b-1d50-f14e-ed1a" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="e2d9-3dce-d55c-7b53" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="902f-c614-cc3d-72ae" name="Terminus Ultra" hidden="false" targetId="c8ce-ce43-b776-951d" primary="false"/>
+        <categoryLink id="1546-6b27-9a57-6177" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="21f3-fbc5-43e8-fe98" name="Armoured Tracks" hidden="false" collective="false" import="true" targetId="2b3b-d361-f599-8aad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c15d-26c5-c6e4-b9b7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8a0-7306-02f3-eaac" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5b8e-278a-b132-f77c" name="Lascannon" hidden="false" collective="false" import="true" targetId="dd55-a2c1-238b-569f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cd5-1a08-e6f7-f29c" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fe5-4ea9-0df9-c89d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="87d6-24ad-1189-431e" name="Twin Lascannon" hidden="false" collective="false" import="true" targetId="ca25-e5ce-34c4-ec69" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae60-d14e-7cbf-3e6c" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac02-5d38-dd7c-13a2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e40b-722a-9fb1-1d13" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31ac-e1bf-0314-34c2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
