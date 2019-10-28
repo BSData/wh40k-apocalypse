@@ -86,6 +86,9 @@
     <categoryEntry id="15ff-9b00-d153-16bd" name="Lysander" hidden="false"/>
     <categoryEntry id="054c-0d53-6da0-de4b" name="Tor Garadon" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="6366-5191-55db-e2fc" name="Adrax Agatone" hidden="false"/>
+    <categoryEntry id="5806-9b7a-d76f-f5ff" name="Feirros" hidden="false"/>
+    <categoryEntry id="3679-5872-2305-7b4f" name="Faction: Iron Hands" hidden="false"/>
+    <categoryEntry id="fdb0-8a61-9ef9-f7a2" name="Iron Father" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="1843-1f7a-63ca-0acc" name="Lord High Commander Carab Culln" hidden="false" collective="false" import="true" type="unit">
@@ -5148,6 +5151,14 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="de57-853a-5f34-5553" name="Iron Hands" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5c8-69fe-34d0-f096" type="max"/>
+              </constraints>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5341,6 +5352,113 @@ friendly IMPERIAL FISTS units that target VEHICLE or BUILDING units.</descriptio
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e592-9962-2379-bc7f" name="Iron Father Feirros" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cb6-4d82-b69c-886a" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de57-853a-5f34-5553" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="83cc-5692-345b-1496" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="52d3-b537-6584-8be9" name="Rites of Tempering" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to saving throws made for friendly IRON HANDS units whilst they are within 6&quot; of this unit. This cannot improve a saving throw roll beyond 4+.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="53de-258b-18c5-3536" name="Blessing of the Omnissiah" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair one friendly IRON HANDS VEHICLE unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that VEHICLE unit. Only one attempt to repair each unit can be made each turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1777-8006-01a4-36d3" name="Iron Father Feirros" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b9b8-e565-e48e-011a" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a3b9-af10-6fee-3470" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="0f8e-bb94-7848-faf4" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="2fa2-6fc7-8db7-d6c5" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="447a-a322-3eb6-5ae3" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="6264-d6b8-663a-5ebc" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ef7c-87d4-1206-c12c" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="5a8b-1f6c-eb22-1ce9" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="4d8b-a087-7d95-6cd0" name="Faction: Iron Hands" hidden="false" targetId="3679-5872-2305-7b4f" primary="false"/>
+        <categoryLink id="224f-9a2f-dd75-5a6c" name="MK X Gravis" hidden="false" targetId="8438-9607-67d0-a3e3" primary="false"/>
+        <categoryLink id="08f6-298e-b2bb-6ec2" name="Iron Father" hidden="false" targetId="fdb0-8a61-9ef9-f7a2" primary="false"/>
+        <categoryLink id="732d-5e04-bfa1-43c5" name="Techmarine" hidden="false" targetId="aba1-da6d-7a57-d464" primary="false"/>
+        <categoryLink id="3c8f-dd77-3e72-e96b" name="Feirros" hidden="false" targetId="5806-9b7a-d76f-f5ff" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b0fd-60e8-0c25-c839" name="Harrowhand &amp; Servo-arms" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c0a-fc05-b407-8bec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ed-3e56-ac1f-9632" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="99f6-ad9c-a67b-d8ba" name="Harrowhand &amp; Servo-arms" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9e79-0dcc-3874-68cf" name="Gorgon&apos;s Wrath" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b06e-2816-403a-0686" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="437a-de56-9357-e283" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e733-8b3a-98e9-ed33" name="Gorgon&apos;s Wrath" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"></characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="058e-f85a-a753-0978" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
