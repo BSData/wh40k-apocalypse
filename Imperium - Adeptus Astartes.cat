@@ -4262,13 +4262,6 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </constraints>
       <profiles>
         <profile id="8a07-087e-1dc7-a5b3" name="Kor’sarro Khan" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <modifiers>
-            <modifier type="set" field="606d-344a-bc3d-9dce" value="14&quot;">
-              <conditions>
-                <condition field="selections" scope="f850-22c4-b868-bec5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30e3-b6c8-bb27-a512" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -4304,6 +4297,8 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         <categoryLink id="95ae-c380-909c-f7f9" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="5762-8f74-10cc-ebdb" name="Captain" hidden="false" targetId="7151-56f9-0163-eadc" primary="false"/>
         <categoryLink id="4b2e-6510-956e-a3ce" name="Kor’sarro Khan" hidden="false" targetId="cf97-ab5f-f2ad-b398" primary="false"/>
+        <categoryLink id="8528-191d-b6c8-4742" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="732a-c780-94d0-bb3e" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7ddb-41f1-d819-d924" name="Moonfang" hidden="false" collective="false" import="true" type="upgrade">
@@ -4328,27 +4323,6 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="0ef9-cec5-1187-e511" name="Wargear" hidden="false" collective="false" import="true" defaultSelectionEntryId="d6b4-d387-26d0-77c6">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcb7-be68-9d05-0bc1" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f0a-a257-93a3-3b3a" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="d6b4-d387-26d0-77c6" name="*No Wargear*" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="ac14-7cff-e3bd-3151" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="1109-14a5-3afb-392d" name="Bike" hidden="false" collective="false" import="true" targetId="30e3-b6c8-bb27-a512" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="9280-b6e6-86f0-8eb5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
@@ -4484,7 +4458,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         </profile>
         <profile id="4181-9d97-7fa4-231f" name="Kayvaan Shrike" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
@@ -4496,6 +4470,8 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </profiles>
       <infoLinks>
         <infoLink id="0586-95dc-f45b-4d2a" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="61a2-1f2d-1202-e6a8" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
+        <infoLink id="4bb8-b784-1279-031b" name="Stealth" hidden="false" targetId="b133-8e04-3e7b-9fd6" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2289-83ef-d0db-0d3b" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
@@ -4509,6 +4485,8 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         <categoryLink id="dea3-8aad-8016-c4ec" name="Jump Pack" hidden="false" targetId="cdf9-175a-b31b-44a1" primary="false"/>
         <categoryLink id="31c1-8dd3-051f-b035" name="Chapter Master" hidden="false" targetId="b3fb-f781-c79e-900b" primary="false"/>
         <categoryLink id="1b9f-9bfb-1587-f659" name="Kayvaan Shrike" hidden="false" targetId="ff8b-a5c2-eab1-fe83" primary="false"/>
+        <categoryLink id="91db-a614-489e-51fd" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="3106-3cff-6688-c398" name="Phobos" hidden="false" targetId="9338-3c48-ea3c-cb83" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7f07-8968-0943-190f" name="The Raven&apos;s Talons" hidden="false" collective="false" import="true" type="upgrade">
@@ -4521,10 +4499,31 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="46ea-48f6-74e4-aaa2" name="Blackout" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="850b-9980-45fc-0020" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dc8-b240-fd8e-1def" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="45bd-a407-dd16-921a" name="Blackout" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4537,7 +4536,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         <entryLink id="1778-2e4d-70fa-8313" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7aa5-42f1-8757-7987" name="Tyrannic War Veterans" hidden="false" collective="false" import="true" type="unit">
@@ -4807,7 +4806,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
             <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
         <profile id="de98-ee35-4b9a-b164" name="Master Psyker" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -4828,6 +4827,7 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
         <categoryLink id="dc4e-86b2-f4a2-31ab" name="Librarian" hidden="false" targetId="e934-b1d0-35ff-8cc4" primary="false"/>
         <categoryLink id="3a41-797b-1d5d-819f" name="Chief Librarian" hidden="false" targetId="11b7-eed3-29de-aae6" primary="false"/>
         <categoryLink id="9f4d-9517-c410-e540" name="Tigurius" hidden="false" targetId="9b20-fd06-68ae-c8f4" primary="false"/>
+        <categoryLink id="cb7f-3101-8703-4db7" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="654f-bbc4-4ea6-e550" name="Rod of Tigurius" hidden="false" collective="false" import="true" type="upgrade">
@@ -4841,8 +4841,8 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
                 <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
@@ -5403,7 +5403,11 @@ Whilst a Vehicle unit is being commanded by Sergeant Chronus, it has a 2+ Ballis
       </categoryLinks>
     </entryLink>
     <entryLink id="6ff5-3c32-2b3f-4a03" name="Scout Bike Squad" hidden="false" collective="false" import="true" targetId="681e-16e9-5f60-6245" type="selectionEntry"/>
-    <entryLink id="a1b5-0ab0-d358-ec37" name="Inceptor Squad" hidden="false" collective="false" import="true" targetId="de74-5084-23cb-8519" type="selectionEntry"/>
+    <entryLink id="a1b5-0ab0-d358-ec37" name="Inceptor Squad" hidden="false" collective="false" import="true" targetId="de74-5084-23cb-8519" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5447-1fee-309a-1617" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="7fc8-e3cc-51b5-d912" name="Suppressor Squad" hidden="false" collective="false" import="true" targetId="0da8-2ac6-c01c-24e9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b0df-32e0-476e-7a03" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
@@ -5880,6 +5884,11 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
       </profiles>
       <categoryLinks>
         <categoryLink id="a143-6912-9933-34a6" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a92f-7ab2-6cdc-2ec9" name="Incursor Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" targetId="f2e6-ac69-ac7f-bc56" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8451-4a8b-a098-f69a" name="Faction: &lt;CHAPTER&gt;" hidden="false" targetId="fe0e-e179-5b4e-c377" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
