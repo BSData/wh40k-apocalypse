@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b60f-8159-b5d0-66ab" name="T&apos;au Empire" revision="3" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b60f-8159-b5d0-66ab" name="T&apos;au Empire" revision="4" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6e11-42ed-c084-ce74" name="Datasheet T&apos;au Empire"/>
     <publication id="e282-a216-345a-e73a" name="Datasheet FW T&apos;au Empire"/>
@@ -2815,7 +2815,7 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5289-fc90-f887-80da" name="Missile Drone" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5289-fc90-f887-80da" name="Shielded Missile Drone" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c4c-4ec8-65b4-a201" type="max"/>
           </constraints>
@@ -4678,7 +4678,6 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="4e3d-0a2a-2f70-b94c" name="Anti-air" hidden="false" targetId="48b8-058a-9085-0e80" type="rule"/>
             <infoLink id="bfe8-d480-dfef-43a5" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
           </infoLinks>
           <costs>
@@ -5828,30 +5827,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
         <categoryLink id="3199-bccb-ad6d-1b60" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ec3e-92fe-7070-ab64" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a42-0704-fff4-5e1a" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9177-205b-1efe-431c" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="2ede-6f44-8688-504c" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">120&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">2+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="67f2-6fb9-758c-7a30" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="e8f4-7637-88f7-bdc2" name="Long-barrelled Ion Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52c6-1085-faa7-461f" type="max"/>
@@ -5942,6 +5917,12 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       </selectionEntries>
       <entryLinks>
         <entryLink id="a996-de51-07ae-a29f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="c707-6ca1-3c2b-4dac" name="Heavy Rail Cannon" hidden="false" collective="false" import="true" targetId="47ad-fce0-7fe4-2975" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cc7-269a-96d6-ced2" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b69-4fcd-876e-0fd2" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="154.0"/>
@@ -6081,30 +6062,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
         <categoryLink id="e277-35a9-5266-c5d7" name="Tiger Shark AX-1-0" hidden="false" targetId="6225-6f51-fe83-62c2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="145f-2dd4-ccf1-bd9f" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ae8-c031-eca6-717e" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a61b-2805-bc1f-4fbf" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="0d08-d28c-f45f-840c" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-              <characteristics>
-                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">120&quot;</characteristic>
-                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">2+</characteristic>
-                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="94fa-e936-18a7-1a4e" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="ae94-6726-8292-5246" name="Missile Pod" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3696-2ab9-bf04-3208" type="max"/>
@@ -6162,6 +6119,12 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       </selectionEntries>
       <entryLinks>
         <entryLink id="c209-b6e3-c480-3c86" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="3936-0002-a931-d605" name="Heavy Rail Cannon" hidden="false" collective="false" import="true" targetId="47ad-fce0-7fe4-2975" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47cb-38eb-e0c6-4d42" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c59-4bd3-c4f0-b2ea" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
@@ -7723,9 +7686,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
           </constraints>
           <selectionEntries>
             <selectionEntry id="cd65-8557-99c4-1273" name="Pulse Ordnance Multi-driver System" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5904-8d1d-4b50-83af" type="max"/>
-              </constraints>
               <profiles>
                 <profile id="cd06-0a5c-825f-fc37" name="Pulse Ordnance Multi-driver System" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
@@ -7746,9 +7706,6 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
               </costs>
             </selectionEntry>
             <selectionEntry id="4f02-8deb-6758-f036" name="Nexus Meteor Missile System" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f77e-3f5f-1bd6-0393" type="max"/>
-              </constraints>
               <profiles>
                 <profile id="c558-f3df-e8ff-b645" name="Nexus Meteor Missile System" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
@@ -7765,30 +7722,10 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
                 <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9624-9053-d6c2-6c83" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49cc-7c93-adfc-37b5" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="02a0-6b95-bb5f-29f3" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-                  <characteristics>
-                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
-                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">120&quot;</characteristic>
-                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
-                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">2+</characteristic>
-                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="caf8-c0fd-ec84-cc11" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="71e0-8eb6-12c8-5819" name="Heavy Rail Cannon" hidden="false" collective="false" import="true" targetId="47ad-fce0-7fe4-2975" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="b57f-7fe7-1e4b-42cf" name="Primary Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6848-1260-4686-3019">
           <constraints>
@@ -9003,6 +8940,26 @@ TX7 DEVILFISH models can transport models whilst they are embarked aboard this u
       </selectionEntries>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47ad-fce0-7fe4-2975" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8065-8d66-004c-d14c" name="Heavy Rail Cannon" publicationId="e282-a216-345a-e73a" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">120&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">2+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Apocalyptic Destroyer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="48a1-e161-f293-6e65" name="Apocalyptic Destroyer" hidden="false" targetId="2315-eb7a-ff97-9084" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
