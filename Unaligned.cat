@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="45fc-6b5f-a181-4cd3" name="Unaligned" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="45fc-6b5f-a181-4cd3" name="Unaligned" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a5a-e86c-95b1-af1a" name="Faction: Unaligned" hidden="false"/>
     <categoryEntry id="f43f-4d40-bdd9-9dc3" name="Aegis Defence Line" hidden="false"/>
@@ -21,6 +21,7 @@
     <categoryEntry id="6656-eed6-3631-3f4d" name="Spindle Drones" hidden="false"/>
     <categoryEntry id="7256-ef3d-ecb0-07e5" name="Imperial Fortress Wall" hidden="false"/>
     <categoryEntry id="3e81-642b-650c-10b9" name="Primaris Redoubt" hidden="false"/>
+    <categoryEntry id="c71d-5931-7128-dcd4" name="Ambull" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="f46d-c8d1-dff8-817b" name="Aegis Defense Line" hidden="false" collective="false" import="true" type="unit">
@@ -1040,6 +1041,54 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6852-1289-2d49-8676" name="Ambull" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0711-bf39-c9f5-bfc7" name="Ambull" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">6+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c9e1-b97a-57f6-b62e" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7783-6f6f-93d0-3632" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="7afd-2666-d848-563b" name="Faction: Unaligned" hidden="false" targetId="0a5a-e86c-95b1-af1a" primary="false"/>
+        <categoryLink id="036a-c1d9-b153-7ede" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="2017-7270-2b71-0c44" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="26bc-15b5-3cd4-a1c8" name="Ambull" hidden="false" targetId="c71d-5931-7128-dcd4" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="64e4-bdf2-095f-89d5" name="Enormous Claws" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb8d-a5fd-95ad-0a84" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d02d-4474-abc6-e176" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c0ef-428e-f261-d449" name="Enormous Claws" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
