@@ -119,6 +119,7 @@
     <categoryEntry id="a6ce-39ae-08f2-df62" name="Incursor Squad" hidden="false"/>
     <categoryEntry id="82e5-3102-8d10-1cb7" name="Invictor Tactical Warsuit" hidden="false"/>
     <categoryEntry id="3008-0f00-5961-31b7" name="Impulsor" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="1a8c-3bcd-b407-c487" name="Relic Sicaran Arcus Strike Tank" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -10951,6 +10952,76 @@ otherwise, place one blast marker next to it.</characteristic>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a74b-6c63-1601-9920" name="Relic Sicaran Arcus Strike Tank" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cb9c-6162-259b-7753" name="Relic Sicaran Arcus Strike Tank" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="04bc-2e16-2036-1072" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="c0d3-7e52-41f6-74b8" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ba65-b2c1-bb3d-42ea" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="6cb2-b06b-8c7e-991b" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="9b4f-dc28-55e6-ecb3" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="a573-008e-d3ab-9ae2" name="Relic" hidden="false" targetId="59eb-2fd1-6cdc-fcc5" primary="false"/>
+        <categoryLink id="7542-813e-b579-c45b" name="Sicaran" hidden="false" targetId="a290-a223-cbc3-ea86" primary="false"/>
+        <categoryLink id="dab7-c13a-ab69-8969" name="Relic Sicaran Arcus Strike Tank" hidden="false" targetId="1a8c-3bcd-b407-c487" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1df7-189b-b35e-6a53" name="Twin Rotary Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba9-6988-ef37-896b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c756-92d7-3ee2-e837" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f8f7-37c1-7749-379a" name="Twin Rotary Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9b3d-7ff4-461c-e255" name="Sicaran Sponsons" hidden="false" collective="false" import="true" targetId="4737-38de-8ee7-59d6" type="selectionEntryGroup"/>
+        <entryLink id="0c5c-e0a1-aa6b-e7a1" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="7457-58c5-d5f1-11a0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1994-ab22-50e7-7d9d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5a5e-d441-2b37-46f8" name="Armoured Tracks" hidden="false" collective="false" import="true" targetId="2b3b-d361-f599-8aad" type="selectionEntry"/>
+        <entryLink id="84b0-b5a6-a508-33b9" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74ec-3bf2-f1ef-08ec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7ff-2c5f-6d12-2e31" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bf85-b395-6771-2d30" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
