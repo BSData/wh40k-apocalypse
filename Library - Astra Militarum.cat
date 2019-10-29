@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="13" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="14" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -4742,6 +4742,18 @@ When targets would be picked for a Fight action made by this unit, it instead ta
       </characteristics>
     </profile>
     <profile id="83b8-7378-70ad-a915" name="Vanquisher Battle Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <modifiers>
+        <modifier type="set" field="2883-af07-d4e8-d8d0" value="1">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a5f0-5aec-0755-1261" type="notInstanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a31-6a48-3ea4-327a" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
         <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>

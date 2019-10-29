@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="16a6-8f74-bc7b-7933" name="Chaos - Chaos Knights" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="16a6-8f74-bc7b-7933" name="Chaos - Chaos Knights" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="21a9-75bf-0619-e801" name="Faction: Chaos Knights" hidden="false"/>
     <categoryEntry id="b868-0761-072e-7456" name="Faction: &lt;Questor Traitoris&gt;" hidden="false"/>
@@ -14,7 +14,442 @@
     <categoryEntry id="871c-6f6d-df53-8e13" name="Renegade Knight Atropos" hidden="false"/>
     <categoryEntry id="1b9d-1381-7fe1-e04c" name="Renegade Knight Porphyrion" hidden="false"/>
     <categoryEntry id="f5d5-88c2-d4df-9ba5" name="Renegade Knight Styrix" hidden="false"/>
+    <categoryEntry id="9fc4-1a3a-b3ff-38e9" name="Abhorrent Class" hidden="false"/>
+    <categoryEntry id="eeb5-c081-ec8e-527a" name="Knight Rampager" hidden="false"/>
+    <categoryEntry id="eb48-08e4-3e1c-1f97" name="Knight Desecrator" hidden="false"/>
+    <categoryEntry id="9643-4cf1-22b8-cede" name="Renegade Knight Asterius" hidden="false"/>
+    <categoryEntry id="d60b-0397-a52f-c9fb" name="War Dog Moirax" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="3cd1-2c70-2b17-cd4f" name="Knight Rampager" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="84c8-b4af-0f33-dc0f" name="Knight Rampager" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4fa1-b294-1b3f-2d3b" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="398e-3cd0-4fe2-7da0" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="9a35-20d4-27b7-e4f5" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="c1dd-e702-997d-5823" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="a427-8f58-ddcf-45b6" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="ef01-61a7-b35e-ea3d" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="dd23-8d0c-eb08-bc81" name="Abhorrent Class" hidden="false" targetId="9fc4-1a3a-b3ff-38e9" primary="false"/>
+        <categoryLink id="a7c8-d98d-a811-bfa0" name="Knight Rampager" hidden="false" targetId="eeb5-c081-ec8e-527a" primary="false"/>
+        <categoryLink id="2d32-565c-b96b-9f38" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6af1-b2fd-0189-2255" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c41-3a8b-5db7-ecfd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80c6-411d-12e8-f228" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e622-1234-8c1f-a7bb" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="3172-e033-60cf-b815" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0298-2c60-5e37-2277" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b5c-27e4-1b2c-6ad6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a0de-af0b-e0ec-519c" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="96e0-f293-162c-33e1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d6-e1ea-3fb3-935a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5daf-46eb-259e-62d1" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9dfe-2504-3721-428a" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="e7dc-c836-1090-a559" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="e37b-3c0f-c0f6-efc8" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="19.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f4e-37b5-85c2-e590" name="Knight Desecrator" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1215-d021-6b09-38f7" name="Knight Desecrator" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="db56-e3fc-bda8-a986" name="Taskmaster" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by friendly &lt;QUESTOR TRAITORIS&gt; WAR DOG units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5c5e-22fa-383d-d677" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="76d5-cfb9-975b-d986" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="7bf2-c7a4-4d9d-588f" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="041b-5bed-3a6b-d5a5" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="0c38-d9cf-7499-3069" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="dc58-e350-7ff1-b468" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="06ae-eee6-b2de-2e79" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="b8fc-349d-a9d6-7c80" name="Abhorrent Class" hidden="false" targetId="9fc4-1a3a-b3ff-38e9" primary="false"/>
+        <categoryLink id="4fc9-9aed-8613-7194" name="Knight Desecrator" hidden="false" targetId="eb48-08e4-3e1c-1f97" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="475e-372d-355d-cc05" name="Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="021c-8a8d-da26-6c54" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6e4-3d0e-0b5c-392c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="df06-78e5-4452-b0ba" name="Laser Destructor" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="16d0-5b01-fd45-21b5" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="543b-5f6c-b41c-0884" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf2e-72cd-6f85-1f3d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e772-52ac-bd99-f0ca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e53c-d812-a7d5-992f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b8dc-b8f5-9cf9-3320" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="96e0-f293-162c-33e1" type="selectionEntry"/>
+            <entryLink id="bf2e-72cd-6f85-1f3d" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="3172-e033-60cf-b815" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b169-c31a-109b-e128" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="1896-0c3b-29df-97e4" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="229b-a9db-98c8-5b10" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d580-a102-eb3f-5edf" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a5e9-d93c-e75d-372f" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="84e0-eadd-c782-9f05" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+        <entryLink id="c694-631f-8a87-f0aa" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="21.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e1d-8763-c0fd-30ed" name="Renegade Knight Asterius" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b9c5-fa85-da0c-fe8e" name="Renegade Knight Asterius" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="319e-7bf5-2695-9c5d" name="Unstable Reactor" hidden="false" targetId="7605-79c5-c44b-fe95" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="da08-a377-b5ca-8c34" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="7971-dd66-7fcc-6a67" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="4c96-39c7-0435-8181" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="8578-41c8-4388-5dd5" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="e207-4a6c-f276-6cde" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="bd9c-98ab-ebb2-3c08" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="5688-52fe-14ee-ce98" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="f64c-52fd-2fe4-52e1" name="Renegade Knight Asterius" hidden="false" targetId="9643-4cf1-22b8-cede" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c4cf-c951-2c89-4967" name="Twin Conversion Beam Cannons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb4b-1111-1faf-6b08" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ad3-6aa3-d25a-a61e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c701-d2ec-bf1d-61f8" name="Twin Conversion Beam Cannons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="6c0b-bc68-4f33-9780" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="1c7a-1c0f-f7fb-058d" name="Volkite Culverin" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae72-16a3-10ee-bde8" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0d9-43fa-e10e-0f6a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4770-40af-037c-7066" name="Volkite Culverin" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">45&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa"></characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="511e-3212-f04b-5775" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="778c-008b-6ed5-46e7" name="Karacnos Mortar Battery" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a4d-5ecf-3080-c035" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="307b-405d-dc0e-f82d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9a11-8707-8b03-1a75" name="Karacnos Mortar Battery" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">60&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Barrage</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1d7e-1319-8543-6789" name="Barrage" hidden="false" targetId="7296-134e-970b-4790" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0650-f989-53e7-3ad6" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="721a-4eac-e0af-22de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ea5-626a-8567-1545" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="66e6-5f53-cb7a-0277" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="7fc8-dae3-ec37-eb3f" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="e199-b530-1aa5-0103" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="39.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b2c3-b442-d173-25ad" name="War Dog Moirax Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="29f6-a038-461e-afc2" name="Vehicle Squadron" hidden="false" targetId="4511-ac8f-1b8c-b430" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cdf6-ba6a-c20e-79df" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2b8d-217f-fb11-7652" name="War Dog Moirax" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adde-aa61-be41-b3d2" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2040-dc6c-d496-8746" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="38a4-35f7-0ed4-cd8b" name="War Dog Moirax" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+                <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="a9ca-3293-cbe6-567b" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+            <categoryLink id="4c60-3039-68e5-25b4" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+            <categoryLink id="0a24-363e-ce83-7dd9" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+            <categoryLink id="be26-bd96-6078-2ff4" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+            <categoryLink id="ae4b-88a5-0a8f-7b6a" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+            <categoryLink id="16ae-00f8-c428-9c3c" name="War Dog" hidden="false" targetId="0fc9-abe9-7537-40fb" primary="false"/>
+            <categoryLink id="8799-2860-6a7c-37b1" name="War Dog Moirax" hidden="false" targetId="d60b-0397-a52f-c9fb" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e08f-1f5b-13fe-3bfc" name="Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50ee-ee69-d852-a3a2" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0334-cf22-cae7-01e5" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="7396-35db-ff80-5128" name="Volkite Veuglaire" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="b8df-bb39-5a2a-bce6" value="0.0"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65c8-6372-da2a-8206" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8df-bb39-5a2a-bce6" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="be51-3eb5-3ad3-3677" name="Volkite Veuglaire" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="6503-a18a-2cf2-60ce" name="Graviton Pulsar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbe-3915-bbdf-47f4" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="b4e5-72ce-b557-4c51" name="Graviton Pulsar" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="5bbc-331f-d635-c2d8" name="Lightning Lock" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0cb-eabe-6ad4-c3ea" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="3496-f542-5bb3-30e6" name="Lightning Lock" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="e72b-944c-397c-4ee5" name="Moirax Conversion Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8433-2ba8-b733-e131" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e3b7-ff66-cace-cffa" name="Moirax Conversion Beam Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">54&quot;</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="07a7-f13e-3cfc-d415" name="Moirax Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="0f33-e334-f2fc-26cf" value="0.0"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8214-35b7-c335-98df" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f33-e334-f2fc-26cf" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="3e5a-f8c0-b57d-142b" name="Moirax Siege Claw" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntries>
+                    <selectionEntry id="89d9-ca55-5efd-2c9a" name="Rad Cleanser" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d4b-a2bb-3e09-f37b" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a46d-7647-695a-03fe" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="3a16-8c34-c23c-7788" name="Rad Cleanser" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                          <characteristics>
+                            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">9&quot;</characteristic>
+                            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink id="1d12-ec09-7c69-9af7" name="Inferno" hidden="false" targetId="f3a7-fc0c-a9e3-d382" type="rule"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="d5dc-898e-60a0-e3c1" name="Armoured Feet" hidden="false" collective="false" import="true" targetId="c5c6-1c25-2e1e-c2d2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="b92a-030f-ac0c-84dd" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="2b8d-217f-fb11-7652" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07a7-f13e-3cfc-d415" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="05c3-3bba-7110-3ec0" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="2b8d-217f-fb11-7652" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07a7-f13e-3cfc-d415" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b92a-030f-ac0c-84dd" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9f49-3cd3-e8dd-fa10" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+            <entryLink id="268c-0766-5667-6170" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+            <entryLink id="fd65-67ec-f509-f296" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="ebb0-3b9f-9896-0c08" name="War Dog Squadron" hidden="false" collective="false" import="true" targetId="8887-d3ef-4835-7bb5" type="selectionEntry"/>
     <entryLink id="6900-d6e5-1813-96ae" name="Knight Tyrant" hidden="false" collective="false" import="true" targetId="9f63-edf1-0c98-c9c4" type="selectionEntry"/>
@@ -72,11 +507,6 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="1bf2-d539-a3a1-594c" name="Vehicle Squadron" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f"> Each Lord of War slot in a Detachment allows you to take up to three of this unit in your army, instead of one. Each unit taken for a single Lord of War slot must be placed at the same time and within 6&quot; of each other unit taken for the same slot the first time they are set up.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="01d8-8c00-df67-3c49" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
@@ -86,17 +516,6 @@
         <categoryLink id="9475-ceda-d2c9-5df3" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
         <categoryLink id="94a0-f15f-1139-9999" name="War Dog" hidden="false" targetId="0fc9-abe9-7537-40fb" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="352a-3ec1-3a43-42c8" name="Armoured Feet" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79dc-c947-53f0-e88a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba37-987c-b1fc-8479" type="max"/>
-          </constraints>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2997-2e21-47e2-665d" name="Arm Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="29ea-37a4-2985-0398">
           <constraints>
@@ -198,6 +617,11 @@
         <entryLink id="befe-085a-8386-e267" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink id="d817-a555-fe5d-ceee" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
         <entryLink id="4ff4-c414-5657-8812" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
+        <entryLink id="873f-21c8-6c46-509e" name="Armoured Feet" hidden="false" collective="false" import="true" targetId="c5c6-1c25-2e1e-c2d2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ace-5daf-c244-ce3e" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
@@ -549,6 +973,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8887-d3ef-4835-7bb5" name="War Dog Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ae7d-e9fe-9317-3d84" name="Vehicle Squadron" hidden="false" targetId="4511-ac8f-1b8c-b430" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="901a-e631-820c-666f" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
       </categoryLinks>
@@ -571,7 +998,7 @@
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">15&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
@@ -580,11 +1007,13 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="efd4-7cf6-76b2-af95" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
-        <categoryLink id="0a8e-1b83-58be-42f2" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="e760-fd40-b5d3-b57d" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-        <categoryLink id="dbe2-208e-29a6-ebcc" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-        <categoryLink id="5232-6d4f-156f-03b1" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="1008-7344-a39c-b7b3" name="Renegade Knight Acheron" hidden="false" targetId="cfc0-0eb3-0e0a-7d76" primary="false"/>
+        <categoryLink id="55bd-a657-6106-58af" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="622b-39f1-cf5f-73d4" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="ca98-e498-398b-cbed" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="5316-94ae-c3c4-9fe3" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="8d3f-1a4a-143b-11a0" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="2269-b942-fd7b-5e27" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="a9cd-9334-bef1-cc5f" name="Renegade Knight Acheron" hidden="false" targetId="cfc0-0eb3-0e0a-7d76" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8cd7-5d80-4f20-b911" name="Acheron Flame Cannon" hidden="false" collective="false" import="true" targetId="57c2-d0ce-dbd1-14eb" type="selectionEntry">
@@ -605,13 +1034,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c3d-b5ba-0f93-4327" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="91a7-b92f-88f4-41e8" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d970-ec3c-9793-561a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2526-f73f-3d29-5804" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="15e2-fb62-ce47-a09a" name="Allegiance" hidden="false" collective="false" import="true" targetId="dc14-7072-6d6b-e1f6" type="selectionEntryGroup"/>
+        <entryLink id="2618-41c8-1f71-e100" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="d5b5-f7e3-7c9c-7dfa" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="7946-6c7c-b383-bee3" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="26.0"/>
@@ -624,7 +1049,7 @@
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
@@ -637,11 +1062,13 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6dea-9eae-558e-e90f" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="e57e-5cbd-e67b-3f8e" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-        <categoryLink id="8039-721d-322b-f2be" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-        <categoryLink id="a09c-4d7f-d0ae-f457" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="0fa1-ecf6-b007-2df7" name="Renegade Knight Magaera" hidden="false" targetId="4ca9-1d27-8c94-a0ff" primary="false"/>
         <categoryLink id="de6c-d9b7-02e4-3e88" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="1e4f-5bbb-26df-9bde" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="e390-429c-a062-b3d5" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="deff-9c22-be93-e050" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="4668-00d3-fafa-34e3" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="c595-f089-1066-0181" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="be16-4565-2c10-f509" name="Renegade Knight Magaera" hidden="false" targetId="4ca9-1d27-8c94-a0ff" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0c18-9b1a-b7e2-3379" name="Chainsword exchange" hidden="false" collective="false" import="true" defaultSelectionEntryId="31ad-ebd0-b09a-d50a">
@@ -669,13 +1096,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a95-ed92-4713-39cb" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="de52-1f17-23af-4197" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0501-5aab-6849-8455" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c72-a0af-4987-8747" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ea92-8e5c-7bdb-34c0" name="Allegiance" hidden="false" collective="false" import="true" targetId="dc14-7072-6d6b-e1f6" type="selectionEntryGroup"/>
+        <entryLink id="0b57-c9a7-2250-51b5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="ec0b-3097-8527-9454" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="03f9-e485-c8c0-3477" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="21.0"/>
@@ -702,6 +1125,13 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="4280-b6f6-38ba-138c" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="78eb-bf1b-69d3-2729" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
+        <categoryLink id="9b2c-dd9e-f4a1-815e" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="66de-0caf-5f2b-7531" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="7355-3d8f-f2d8-a856" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="2d85-dd05-6e88-bdc4" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="be29-8b80-af4e-1b66" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="09da-3d5b-cfc2-ad3e" name="Renegade Knight Lancer" hidden="false" targetId="7159-cb6c-569d-2f35" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3c70-af1f-9ef2-eee0" name="Cerastus Shock Lance" hidden="false" collective="false" import="true" targetId="831c-a6cc-bc0a-3fb0" type="selectionEntry">
@@ -710,20 +1140,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87ae-3935-e3ff-f548" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="3c7d-fbf1-4e6a-3396" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fac-9aad-be9d-4cd3" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdb8-382c-b1a9-1c08" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="cc43-7f1b-fc41-e117" name="Allegiance" hidden="false" collective="false" import="true" targetId="dc14-7072-6d6b-e1f6" type="selectionEntryGroup">
-          <categoryLinks>
-            <categoryLink id="a7d7-fc52-bc88-61dc" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-            <categoryLink id="6260-f7d3-fb1d-bec3" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-            <categoryLink id="a90d-fddf-4ae3-354f" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-            <categoryLink id="659c-9d6d-4cd8-68b6" name="Renegade Knight Lancer" hidden="false" targetId="7159-cb6c-569d-2f35" primary="false"/>
-          </categoryLinks>
-        </entryLink>
+        <entryLink id="03b1-de41-4a82-0db4" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="c8e6-9afa-e0dd-f948" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="66ae-9ac0-ed32-34f1" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="23.0"/>
@@ -736,7 +1155,7 @@
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">15&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
@@ -745,11 +1164,13 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="bbed-6a16-c28a-73d8" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="ae9e-608c-7719-91a8" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-        <categoryLink id="3341-82c1-5e67-1e04" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-        <categoryLink id="b4ec-c7aa-bd4a-31a5" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="de12-8440-a7ab-bf58" name="Renegade Knight Castigator" hidden="false" targetId="68d2-b801-a6ae-1aa4" primary="false"/>
         <categoryLink id="eaa4-362b-7034-db75" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+        <categoryLink id="d0cc-9de7-d10e-bac5" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="aab6-b260-e4a0-9c3c" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="a444-ab7f-1965-fc4b" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="37c2-61bf-33e2-0b14" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="7855-2227-9d8b-d6e4" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="7262-15c6-f737-8f05" name="Renegade Knight Castigator" hidden="false" targetId="68d2-b801-a6ae-1aa4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5f9e-f013-b1c5-cb4c" name="Castigator Bolt Cannon" hidden="false" collective="false" import="true" targetId="d74d-2cf1-ab00-c119" type="selectionEntry">
@@ -764,13 +1185,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fece-7257-440b-cf65" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="3293-b75f-a2d6-bc72" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b15-061b-3953-31f6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f95a-6d47-aa44-9aca" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="035f-60ad-f290-3573" name="Allegiance" hidden="false" collective="false" import="true" targetId="dc14-7072-6d6b-e1f6" type="selectionEntryGroup"/>
+        <entryLink id="e5fe-78a2-f7b9-b218" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="0c24-5c15-0f2f-d3b4" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="cdb2-8076-7d80-c4d4" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="27.0"/>
@@ -788,7 +1205,7 @@
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">15&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
@@ -802,10 +1219,12 @@
       <categoryLinks>
         <categoryLink id="3bad-eb04-23cc-c4c7" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="7b94-2d13-6452-654d" name="New CategoryLink" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="8bfc-1411-1032-ad93" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-        <categoryLink id="4a93-12b7-a0f0-f5a9" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-        <categoryLink id="ddd1-0a65-8153-7db7" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="9e61-d51e-cf78-f451" name="Renegade Knight Atropos" hidden="false" targetId="871c-6f6d-df53-8e13" primary="false"/>
+        <categoryLink id="e4b5-65c6-2c28-a2c7" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="89de-b0bd-9312-b302" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="5304-4d8b-c3ca-2b9e" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="717c-437f-acf4-46ee" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="7686-d5da-bbb4-aef2" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="493c-3d40-4a32-b628" name="Renegade Knight Atropos" hidden="false" targetId="871c-6f6d-df53-8e13" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f4cc-f563-9791-e42b" name="Atropos Lascutter" hidden="false" collective="false" import="true" targetId="2731-b764-29a4-13ea" type="selectionEntry">
@@ -814,19 +1233,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b294-4a39-ca16-526c" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4e20-eecc-a08d-c956" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5e4-68a6-3d9b-d1b4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f813-a0e1-9813-7715" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="fafe-c968-1737-5922" name="Allegiance" hidden="false" collective="false" import="true" targetId="dc14-7072-6d6b-e1f6" type="selectionEntryGroup"/>
         <entryLink id="94e2-6c90-2919-a68c" name="Graviton Singularity Cannon" hidden="false" collective="false" import="true" targetId="5de2-13ff-c3de-37e6" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="527f-9e65-5fe7-e0a9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5c1-80c8-f616-6dd2" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="c14b-6f59-37ee-c726" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="15e7-9ff9-bcc2-3369" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="7826-b23e-e99c-775e" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
@@ -839,7 +1254,7 @@
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
@@ -852,10 +1267,12 @@
       <categoryLinks>
         <categoryLink id="fd93-0d38-6013-1df9" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="1a8b-850f-0759-5984" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="8504-897e-87ef-27b1" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-        <categoryLink id="6d41-346b-46a0-5ab6" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-        <categoryLink id="d409-06d2-fe1a-8c6b" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="b09b-ffa8-124f-5d3c" name="Renegade Knight Porphyrion" hidden="false" targetId="1b9d-1381-7fe1-e04c" primary="false"/>
+        <categoryLink id="4104-29c1-a1a6-9678" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="98e6-bd65-1857-7134" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="b46f-f8e1-3868-fcac" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="ea76-0348-10c3-571c" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="b052-0dc3-80bf-482f" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="c62b-0d03-d66a-e702" name="Renegade Knight Porphyrion" hidden="false" targetId="1b9d-1381-7fe1-e04c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="8257-8f2b-0320-eecc" name="Point Defence" hidden="false" collective="false" import="true" defaultSelectionEntryId="daac-865b-83d3-4b46">
@@ -894,13 +1311,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65a2-0e03-d34f-ef5d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="11ff-cbd1-25ba-7833" name="Allegiance" hidden="false" collective="false" import="true" targetId="dc14-7072-6d6b-e1f6" type="selectionEntryGroup"/>
         <entryLink id="83d6-cab1-3452-526e" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe9-4ee4-78a6-cfde" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5576-62ab-8315-ba54" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="914b-3795-a7eb-a8ea" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="6d00-1816-a2f6-9be8" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="9d13-a530-a648-31fc" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="38.0"/>
@@ -913,7 +1332,7 @@
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
             <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">5</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
@@ -927,10 +1346,12 @@
       <categoryLinks>
         <categoryLink id="e10d-ac9d-3549-5ba2" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
         <categoryLink id="1bc0-9d17-8314-701f" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
-        <categoryLink id="9e2c-4a2b-a867-d681" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
-        <categoryLink id="e5b8-98ae-25ed-53b0" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
-        <categoryLink id="653a-0b0f-cb02-f87a" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
-        <categoryLink id="85f3-7235-19a4-c83f" name="Renegade Knight Styrix" hidden="false" targetId="f5d5-88c2-d4df-9ba5" primary="false"/>
+        <categoryLink id="a503-f173-d2e7-81ee" name="Faction: Chaos Knights" hidden="false" targetId="21a9-75bf-0619-e801" primary="false"/>
+        <categoryLink id="3844-9fb0-5791-a9c8" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
+        <categoryLink id="fd31-2a7f-f559-3fdf" name="Super-heavy" hidden="false" targetId="9030-584a-81ae-9e31" primary="false"/>
+        <categoryLink id="e568-2919-6efc-2ae5" name="Titanic" hidden="false" targetId="bef0-3698-6fb6-9b5c" primary="false"/>
+        <categoryLink id="f368-680f-540e-8446" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="a0c6-42dc-30e6-1ae7" name="Renegade Knight Styrix" hidden="false" targetId="f5d5-88c2-d4df-9ba5" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="34b5-0962-f5dc-4f59" name="Chainsword exchange" hidden="false" collective="false" import="true" defaultSelectionEntryId="e952-1e3e-c512-68af">
@@ -938,20 +1359,30 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b0c-606d-ef70-a37c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a76-950b-383e-bc44" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="b4be-c99f-d15e-0385" name="Hekaton Siege Claw and Twin Rad Cleanser" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="b986-b9b6-34bb-c4f5" name="Twin Rad Cleanser" hidden="false" collective="false" import="true" targetId="ec5e-f728-39b8-d8cd" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f701-e087-6445-39ad" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d8-e75c-7b44-aafe" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4d74-311d-8d95-53fe" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5d7-06c8-de73-2265" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d13-08a4-3565-f7fa" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38de-38bf-aa18-1ea5" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="e952-1e3e-c512-68af" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="3172-e033-60cf-b815" type="selectionEntry"/>
-            <entryLink id="7556-65ad-64b9-5a7d" name="Twin Rad Cleanser" hidden="false" collective="false" import="true" targetId="ec5e-f728-39b8-d8cd" type="selectionEntry"/>
-            <entryLink id="6644-be90-63c0-f9e1" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5d7-06c8-de73-2265" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4492-6c1b-5314-a132" name="Titanic Feet" hidden="false" collective="false" import="true" targetId="ffe4-d26c-71ad-694b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e9-f8d0-49aa-87cc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d2-35ff-defe-f0fc" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="bcd8-4078-068f-2918" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="3a1c-a2c2-7762-a5f6" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2876-1baf-6a8e-109d" type="min"/>
@@ -964,7 +1395,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed3f-593c-0124-cbb6" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="112f-ff54-8021-dc36" name="Allegiance" hidden="false" collective="false" import="true" targetId="dc14-7072-6d6b-e1f6" type="selectionEntryGroup"/>
+        <entryLink id="88ee-9cb4-fdaf-4db9" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="d372-b912-c46b-0b64" name="Character (Fallen Courts)" hidden="false" collective="false" import="true" targetId="c8da-2e77-79c0-db28" type="selectionEntry"/>
+        <entryLink id="2b2e-7d97-7964-a601" name="Warmaster" hidden="false" collective="false" import="true" targetId="f4a6-edd0-3a0d-fcca" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="23.0"/>
@@ -1019,33 +1452,27 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-  </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="dc14-7072-6d6b-e1f6" name="Allegiance" hidden="false" collective="false" import="true" defaultSelectionEntryId="8061-4cc1-9b83-d793">
+    <selectionEntry id="c5c6-1c25-2e1e-c2d2" name="Armoured Feet" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e195-ce98-3772-e1e4" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b8-88ed-b5eb-33a5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05c3-3bba-7110-3ec0" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="8061-4cc1-9b83-d793" name="Questor Traitoris" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="0b74-d281-bfdf-b5e7" name="Faction: &lt;Questor Traitoris&gt;" hidden="false" targetId="b868-0761-072e-7456" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9898-3ddc-693c-1a04" name="Dark Mechanicus" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="3003-c22c-0441-b71b" name="Faction: Dark Mechanicus" hidden="false" targetId="c402-ad33-3a74-657c" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
+      <profiles>
+        <profile id="7432-3009-bfc1-367f" name="Armoured Feet" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="7605-79c5-c44b-fe95" name="Unstable Reactor" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
@@ -1055,6 +1482,11 @@
     <profile id="d5ed-1320-e3f7-24a1" name="Empyreal Preysight" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit does not suffer the penalty for attacks made with ranged weapons that target obscured targets.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4511-ac8f-1b8c-b430" name="Vehicle Squadron" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f"> Each Lord of War slot in a Detachment allows you to take up to three of this unit in your army, instead of one. Each unit taken for a single Lord of War slot must be placed at the same time and within 6&quot; of each other unit taken for the same slot the first time they are set up.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
