@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="08cc-2f74-3bde-6cc7" name="Imperium - Death Korps of Krieg" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="08cc-2f74-3bde-6cc7" name="Imperium - Death Korps of Krieg" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="5be3-8726-078b-1a23" name="Faction: Officio Prefectus" hidden="false"/>
     <categoryEntry id="7e0f-9b5b-7250-2db7" name="Death Korps of Krieg Hades Breaching Drill Squadron" hidden="false"/>
@@ -998,6 +998,7 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
         <selectionEntry id="5515-518b-d8af-5e5d" name="Death Korps Leman Russ Mars-Alpha Battle Tank" hidden="false" collective="false" import="true" type="unit">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e57-23df-edd4-1f8c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="666e-2086-383c-8e2d" type="min"/>
           </constraints>
           <profiles>
             <profile id="b0f3-62a9-81f9-9802" name="Death Korps Leman Russ Mars-Alpha Battle Tank" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
@@ -1011,15 +1012,11 @@ Cavalry units gain the Ignore Damage (6+) ability whilst they are within 6&quot;
                 <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
               </characteristics>
             </profile>
-            <profile id="d2d0-0c94-7ed0-249f" name="Ignores Damage (6+)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="4493-9fa3-8c30-866f"/>
-              </characteristics>
-            </profile>
           </profiles>
           <infoLinks>
             <infoLink id="c4fe-8e69-ddf6-ee2b" name="Tank Squadron" hidden="false" targetId="a437-a863-2fd2-bad0" type="profile"/>
             <infoLink id="a9ae-77a6-5f7d-b2f2" name="Grinding Advance" hidden="false" targetId="7b3f-ddab-6d2b-674a" type="profile"/>
+            <infoLink id="a67e-8b8e-87e4-f991" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
           </infoLinks>
           <entryLinks>
             <entryLink id="5d82-5497-e39e-ea7b" name="Grinding Tracks" hidden="false" collective="false" import="true" targetId="bd97-52de-276d-96b1" type="selectionEntry">
