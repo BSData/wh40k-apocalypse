@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5cae-1520-9795-90bb" name="Tyranids - Hive Fleets" revision="3" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5cae-1520-9795-90bb" name="Tyranids - Hive Fleets" revision="4" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="a37b-2844-afcc-f4eb" name="Tyranid Hive Fleets"/>
     <publication id="5101-ac41-4666-a01a" name="Forge World Tyranids"/>
@@ -57,7 +57,247 @@
     <categoryEntry id="a30b-d734-5f5b-a0b4" name="Harridan" hidden="false"/>
     <categoryEntry id="e2d0-8e4e-b4dd-c8ce" name="Hierophant Bio-titan" hidden="false"/>
     <categoryEntry id="308f-0380-f963-15fd" name="Scythed Hierodule" hidden="false"/>
+    <categoryEntry id="de59-105b-7c5b-1844" name="Sky-slasher Swarms" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="350d-2007-459c-db4c" name="Tyranid Shrikes" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="9178-40dc-ceb1-52f4" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="9d67-28d2-220a-ffab" name="Faction: Tyranids" hidden="false" targetId="20b7-cc09-763a-ab83" primary="false"/>
+        <categoryLink id="819c-b827-ac37-bb9b" name="Faction: Tyranid Hive Fleets" hidden="false" targetId="3699-ec81-e389-df02" primary="false"/>
+        <categoryLink id="a341-af83-2e50-95bb" name="Faction: &lt;Hive Fleet&gt;" hidden="false" targetId="e4b8-286f-8440-1d05" primary="false"/>
+        <categoryLink id="9743-7aff-5141-37d7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="418e-043b-e310-78db" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="512a-013e-cc02-45a1" name="Spore Mines" hidden="false" targetId="ebaf-42c0-8344-cb27" primary="false"/>
+        <categoryLink id="bd4f-5c59-476c-53d2" name="Meiotic Spores" hidden="false" targetId="c533-ec93-b682-73c5" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0e0c-8863-fa0c-6803" name="Bio-weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c10-6ce9-4dec-df29" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f13c-1d98-2073-a83d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5310-ed06-9988-9c07" name="Ranged Bio-weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="512e-48d7-4a52-f0bd" name="Melee Bio-weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2a6c-f418-320e-ee37" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="b58b-0329-28d1-7d3f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a887-2703-5eb0-d7e6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c0-584c-e584-5a82" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b58b-0329-28d1-7d3f" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="a7c6-4501-308d-2095" name="Tyranid Shrikes (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6dd6-115a-1eae-4012" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ee6a-89f1-08e1-9714" name="Tyranid Shrikes (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3951-593a-7b5d-9303" name="9 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e3c9-2e20-0cc7-257e" name="Tyranid Shrikes (9 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1032-71de-516f-5381" name="Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="increment" field="b423-e3a1-0c3c-c3d9" value="1.0">
+              <conditions>
+                <condition field="selections" scope="350d-2007-459c-db4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6dd6-115a-1eae-4012" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="b423-e3a1-0c3c-c3d9" value="2.0">
+              <conditions>
+                <condition field="selections" scope="350d-2007-459c-db4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3951-593a-7b5d-9303" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b423-e3a1-0c3c-c3d9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8996-a4c6-66c5-3188" name="Barbed Strangler" hidden="false" collective="false" import="true" targetId="ea6c-50a6-ac19-2e6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8283-63b3-436b-dd53" type="max"/>
+              </constraints>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="6e4a-b28d-66d3-7122" name="Venom Cannon" hidden="false" collective="false" import="true" targetId="bc77-2679-10ca-503f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="212d-15c0-4684-e9aa" type="max"/>
+              </constraints>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="b655-6e10-0965-d4f3" name="Sky-slasher Swarms" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="512d-3cfe-839a-985e" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="8250-902d-f7ee-76b1" name="Faction: Tyranids" hidden="false" targetId="20b7-cc09-763a-ab83" primary="false"/>
+        <categoryLink id="4760-2daa-25cf-d4d3" name="Faction: Tyranid Hive Fleets" hidden="false" targetId="3699-ec81-e389-df02" primary="false"/>
+        <categoryLink id="5c56-7ce0-4aeb-0679" name="Faction: &lt;Hive Fleet&gt;" hidden="false" targetId="e4b8-286f-8440-1d05" primary="false"/>
+        <categoryLink id="b330-e051-12a6-72d0" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="c079-1c14-bac8-8c54" name="Swarm" hidden="false" targetId="65b5-f311-b8c4-3721" primary="false"/>
+        <categoryLink id="7f9c-776e-e894-ee49" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="c44a-d0d4-88a2-84f4" name="Sky-slasher Swarms" hidden="false" targetId="de59-105b-7c5b-1844" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8607-f379-d1b9-2dd8" name="Claws &amp; Teeth" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e62b-9b73-8827-cb9f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="496f-0174-3daa-d07e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e6f7-b194-f3ac-7c68" name="Claws &amp; Teeth" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3498-e7cc-7c15-c802" name="Unit Size" hidden="false" collective="false" import="true" defaultSelectionEntryId="98cf-8141-e81e-5cd7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee72-0b0f-8191-7728" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccaa-c041-c48c-a5aa" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="98cf-8141-e81e-5cd7" name="3 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="974a-3df9-c555-3625" name="Sky-slasher Swarms (3 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2724-7726-801e-abef" name="6 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="d36b-845f-c165-5974" name="Sky-slasher Swarms (6 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b027-86cd-0846-12b9" name="9 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3e94-a967-7706-fcd5" name="Sky-slasher Swarms (9 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">6</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">11+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="ba9b-43de-53b3-415a" name="Broodlord" hidden="false" collective="false" import="true" targetId="1b06-fb81-fd21-a23e" type="selectionEntry">
       <categoryLinks>
@@ -522,14 +762,18 @@
         <categoryLink id="ac8e-f8e9-fdaf-5410" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e92d-4c2b-9fb5-113e" name="Malanthrope Brood" hidden="false" collective="false" import="true" targetId="27e0-f962-4de4-a5f9" type="selectionEntry">
+    <entryLink id="4f5b-35b6-6ccb-425b" name="Malanthrope" hidden="false" collective="false" import="true" targetId="8c56-8ef8-7cff-6e6d" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="cef9-9261-9f23-8166" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="4f5b-35b6-6ccb-425b" name="Malanthrope Brood" hidden="false" collective="false" import="true" targetId="27e0-f962-4de4-a5f9" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="b89c-9913-86c2-9c19" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="da68-0fc3-5914-5907" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="123e-5519-cc82-e9ce" name="Faction: Tyranids" hidden="false" targetId="20b7-cc09-763a-ab83" primary="false"/>
+        <categoryLink id="407e-8bc6-c336-2fd7" name="Faction: Tyranid Hive Fleets" hidden="false" targetId="3699-ec81-e389-df02" primary="false"/>
+        <categoryLink id="ab1d-15df-c113-c7e1" name="Faction: &lt;Hive Fleet&gt;" hidden="false" targetId="e4b8-286f-8440-1d05" primary="false"/>
+        <categoryLink id="7472-4242-c085-b687" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="dd21-1095-017d-2a8d" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="624e-5ef8-88d2-85c8" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="72ba-566a-d1c3-273b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="5e05-0a41-d549-56b2" name="Synapse Creature" hidden="false" targetId="9006-f915-0a26-a45e" primary="false"/>
+        <categoryLink id="acbd-5d0f-f06c-70d9" name="Malanthrope" hidden="false" targetId="8829-4d7a-a279-78ce" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bb99-c2f2-922f-4282" name="Dimachaeron" hidden="false" collective="false" import="true" targetId="145a-ef54-8727-8cf3" type="selectionEntry">
@@ -2819,7 +3063,7 @@
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
@@ -2837,7 +3081,7 @@
                     <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
                     <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
                     <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
-                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
                     <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
                     <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
                     <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
@@ -4589,11 +4833,6 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">10+</characteristic>
           </characteristics>
         </profile>
-        <profile id="f19d-2c29-7c15-593e" name="Monstrous Brood" publicationId="5101-ac41-4666-a01a" page="2" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each Heavy Support slot in a Detachment allows you to take up to three of this unit in your army, instead of one. Each unit taken for a single Heavy Support slot must be placed at the same time and within 6&quot; of each other unit taken for the same slot the first time they are set up.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="57cc-c933-35cf-8a80" name="Toxic Miasma" publicationId="5101-ac41-4666-a01a" page="2" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, roll one D6 for each unit within 6&quot; of any enemy units with this ability; on a 5+ place one blast marker next to the unit being rolled for.</characteristic>
@@ -4609,7 +4848,7 @@
         <infoLink id="3ab8-50eb-16f6-94ef" name="Stealth" hidden="false" targetId="b133-8e04-3e7b-9fd6" type="profile"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="005c-88ec-b33d-54db" name="Grasping Tail" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="005c-88ec-b33d-54db" name="Grasping Tail" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b376-c966-6274-2f8d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f8a-5c9b-3fdd-b648" type="max"/>
@@ -5272,30 +5511,6 @@
             <categoryLink id="4bb9-f2c7-912a-f356" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
             <categoryLink id="1bd8-d56b-79e8-7692" name="Carnifex" hidden="false" targetId="f8da-5058-2d2f-59f8" primary="false"/>
             <categoryLink id="2584-f8e5-1562-7396" name="Thornback" hidden="false" targetId="3f1a-2bae-1555-584e" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="27e0-f962-4de4-a5f9" name="Malanthrope Brood" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="ca62-9b84-4097-2b75" name="Malanthrope" hidden="false" collective="false" import="true" targetId="8c56-8ef8-7cff-6e6d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3ec-f09d-70c8-f543" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb01-b746-44b8-cd02" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="821b-d1bc-180b-a7e8" name="Faction: Tyranids" hidden="false" targetId="20b7-cc09-763a-ab83" primary="false"/>
-            <categoryLink id="17ca-d284-e1b3-98c1" name="Faction: Tyranid Hive Fleets" hidden="false" targetId="3699-ec81-e389-df02" primary="false"/>
-            <categoryLink id="ffe9-284d-f317-cd33" name="Faction: &lt;Hive Fleet&gt;" hidden="false" targetId="e4b8-286f-8440-1d05" primary="false"/>
-            <categoryLink id="7cb4-7e16-ebb5-ac70" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
-            <categoryLink id="aa8f-b747-a409-6b9b" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
-            <categoryLink id="2e70-ad08-f052-842b" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
-            <categoryLink id="e4be-8960-4124-c24e" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-            <categoryLink id="0fa1-ff4e-b9ef-b9a2" name="Synapse Creature" hidden="false" targetId="9006-f915-0a26-a45e" primary="false"/>
-            <categoryLink id="904c-43c2-cdf4-7536" name="Malanthrope" hidden="false" targetId="8829-4d7a-a279-78ce" primary="false"/>
           </categoryLinks>
         </entryLink>
       </entryLinks>
