@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e02e-4d8f-946c-6550" name="Imperium - Deathwatch" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e02e-4d8f-946c-6550" name="Imperium - Deathwatch" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -755,6 +755,27 @@
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="275d-76a6-9ebf-ccd2" name="Deathwatch Bolt Rifles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b09-386b-5fee-2b32" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dcd-479e-9902-6ba8" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="0da0-c5d7-a2cb-01b2" name="Deathwatch Bolt Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2a5a-e771-07ed-54df" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="b1f4-06ad-3ef8-e9ed" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="aacf-7a2e-7250-59d9">
@@ -803,12 +824,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a499-1435-bab7-2e86" name="Bolt Rifles" hidden="false" collective="false" import="true" targetId="29cb-36f3-3f72-ac2d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f92-d2dc-b61f-6c4f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c1-4785-7a0a-4dcc" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="150d-e3f9-3639-8a40" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="7" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="8" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -740,6 +740,29 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
         <categoryLink id="1dec-1a48-73e0-7c80" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="bbba-c189-89bf-be2a" name="Incursor Squad" hidden="false" collective="false" import="true" targetId="f2e6-ac69-ac7f-bc56" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1752-50c9-31f1-2d73" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bca0-0055-c138-2ead" name="Invictor Tactical Warsuit" hidden="false" collective="false" import="true" targetId="4730-6697-b894-e0de" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="669a-a19a-d76b-f87f" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a05a-7543-c317-ffd5" name="Impulsor" hidden="false" collective="false" import="true" targetId="ed0d-c99c-3497-a919" type="selectionEntry">
+      <profiles>
+        <profile id="fc7c-974a-a1ed-d359" name="Impulsor" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 6 friendly DARK ANGELS PRIMARIS INFANTRY models. It cannot transport JUMP PACK or MK X GRAVIS units.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="093d-010e-435f-d93c" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3cbe-c8ba-c8b4-3f8e" name="Azrael" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -760,7 +783,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
         </profile>
         <profile id="eb87-87da-e5b8-7d24" name="The Lion Helm" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Improve the Save characteristic (to a maximum of 4+) of friendly LIGHT DARK ANGELS units by 1 whilst they are within 18&quot; of this unit.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Improve the Save characteristic (to a maximum of 4+) of friendly LIGHT DARK ANGELS units by 1 whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
         <profile id="11d0-b769-6b03-c24e" name="Chapter Master" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
