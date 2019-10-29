@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="82e1-d60e-88f6-abda" name="Imperium - Adeptus Mechanicus" revision="3" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="82e1-d60e-88f6-abda" name="Imperium - Adeptus Mechanicus" revision="4" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="9542-47d3-14fe-04e0" name="Faction: Adeptus Mechanicus" hidden="false"/>
     <categoryEntry id="4dc1-30a6-aa31-19a9" name="Faction: Cult Mechanicus" hidden="false"/>
@@ -2378,9 +2378,9 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="68cb-df9d-d4bf-99bb" name="Termite Assault Drill" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="68cb-df9d-d4bf-99bb" name="Terrax-pattern Termite Assault Drill" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="528b-581a-99bc-a209" name="Termite Assault Drill" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="528b-581a-99bc-a209" name="Terrax-pattern Termite Assault Drill" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
@@ -2393,7 +2393,7 @@
         </profile>
         <profile id="d70f-484f-0031-b440" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly Secutarii Infantry or &lt;Forge World&gt; Infantry models. It cannot transport Belisarius Cawl, Kataphron Breacher or Kataphron Destroyer models.</characteristic>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport up to 12 friendly SECUTARII INFANTRY or &lt;FORGEWORLD&gt; INFANTRY models. It cannot transport BELISARIUS CAWL, KATAPHRON BREACHER or KATAPHRON DESTROYER models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2499,9 +2499,9 @@
                       <characteristics>
                         <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                         <characteristic name="Range" typeId="bea7-7040-8485-6f0f">15&quot;</characteristic>
-                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
-                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
-                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
                         <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
                       </characteristics>
                     </profile>
@@ -2512,14 +2512,14 @@
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="12.0"/>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9602-2f0e-c4af-6535" name="Secutarii Hoplites" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -2702,27 +2702,27 @@
             <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
             <modifier type="set" field="1466-da3f-0d27-dace" value="4.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="48ae-882f-be6d-efea" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6f2-4f9d-9cbf-8cbb" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a50-5537-8e36-98af" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3656-e1b0-2ba1-3f19" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="2bff-9feb-93ca-17e4" name="10 Models" hidden="false" collective="false" import="true" targetId="4725-4dee-e275-9c3f" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="8.0"/>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="6.0"/>
             <modifier type="set" field="1466-da3f-0d27-dace" value="10.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="48ae-882f-be6d-efea" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6f2-4f9d-9cbf-8cbb" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="12.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a50-5537-8e36-98af" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3656-e1b0-2ba1-3f19" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2739,12 +2739,12 @@
           <modifiers>
             <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed49-d92e-14f5-7b01" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c16-d97f-7221-504a" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="7.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed42-6a95-bcf1-d99d" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c1a3-9deb-2b42-7190" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
