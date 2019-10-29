@@ -120,6 +120,7 @@
     <categoryEntry id="82e5-3102-8d10-1cb7" name="Invictor Tactical Warsuit" hidden="false"/>
     <categoryEntry id="3008-0f00-5961-31b7" name="Impulsor" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="1a8c-3bcd-b407-c487" name="Relic Sicaran Arcus Strike Tank" hidden="false"/>
+    <categoryEntry id="e51f-9585-c82b-64fc" name="Relic Sicaran Omega Tank Destroyer" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -11019,6 +11020,79 @@ otherwise, place one blast marker next to it.</characteristic>
           </constraints>
         </entryLink>
         <entryLink id="bf85-b395-6771-2d30" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b61-539d-610c-1928" name="Relic Sicaran Omega Tank Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cf89-a25d-7cb9-381a" name="Relic Sicaran Omega Tank Destroyer" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">6+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c863-2df6-0adc-87d3" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="4a47-4eb0-9ce1-6019" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ec38-a820-29b8-0cc6" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="a0cf-2aff-c11a-5ff0" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="7f61-266d-543e-9663" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="cccd-bbb7-c753-6248" name="Relic" hidden="false" targetId="59eb-2fd1-6cdc-fcc5" primary="false"/>
+        <categoryLink id="fea4-61a7-bd53-c329" name="Sicaran" hidden="false" targetId="a290-a223-cbc3-ea86" primary="false"/>
+        <categoryLink id="3dc8-996a-365f-d887" name="Relic Sicaran Omega Tank Destroyer" hidden="false" targetId="e51f-9585-c82b-64fc" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="517e-e024-8db9-17c1" name="Omega Plasma Array" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f86d-f9dc-71b8-b0be" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3991-1eda-01fc-ace9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dee3-4de7-0b07-3ac9" name="Omega Plasma Array" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="65a2-9fd9-ae87-27b4" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="be26-fbc8-d9a3-c44b" name="Sicaran Sponsons" hidden="false" collective="false" import="true" targetId="4737-38de-8ee7-59d6" type="selectionEntryGroup"/>
+        <entryLink id="f4b3-6488-d831-cfca" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="7457-58c5-d5f1-11a0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="892d-e894-90e6-ca7f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b88a-8a40-eb93-9f6e" name="Armoured Tracks" hidden="false" collective="false" import="true" targetId="2b3b-d361-f599-8aad" type="selectionEntry"/>
+        <entryLink id="b555-c936-124a-0bd5" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="5049-c0b5-625c-a7af" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4b2-dbdc-5898-759b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f21-2803-09e5-c89c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d13e-75b3-e4ed-e886" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
