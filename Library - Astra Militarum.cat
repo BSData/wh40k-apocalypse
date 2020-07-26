@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="14" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="83db-5e08-8b20-b377" name="Library - Astra Militarum" revision="15" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="93ec-5bb0-7861-be16" name="Faction: Astra Militarum" hidden="false"/>
     <categoryEntry id="65a5-3f67-4f86-350f" name="Leman Russ" hidden="false"/>
@@ -3526,7 +3526,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
     </selectionEntry>
     <selectionEntry id="bfe4-98f0-d12a-f428" name="Scout Sentinels" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
-        <selectionEntry id="fb43-8d83-e2ba-d82c" name="Scout Sentinels" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="fb43-8d83-e2ba-d82c" name="Scout Sentinel" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e80c-ac2b-dfec-1e02" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79bf-b055-56fe-f0c2" type="min"/>
@@ -3577,41 +3577,26 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               </constraints>
               <entryLinks>
                 <entryLink id="58ba-bf8a-dbdb-1869" name="Autocannon" hidden="false" collective="false" import="true" targetId="02f7-7194-f8cf-2299" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31fe-0ba4-a42e-d5cc" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="072c-0202-9942-5cb4" name="Lascannon" hidden="false" collective="false" import="true" targetId="dd55-a2c1-238b-569f" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17c9-53e3-ba44-fcc5" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="7e46-db72-31ee-9199" name="Multi-laser" hidden="false" collective="false" import="true" targetId="782b-bfab-b9a5-5b99" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e1-750c-3e73-b1fa" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="d071-10a2-f7b8-6ed4" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d406-54b9-99d6-ab9b" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="13ea-070f-3b5c-82c0" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86ec-6511-cff6-ea0d" type="max"/>
                   </constraints>
@@ -3639,7 +3624,7 @@ When targets would be picked for a Fight action made by this unit, it instead ta
     </selectionEntry>
     <selectionEntry id="8854-9cf7-ef02-5f6a" name="Armoured Sentinels" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
-        <selectionEntry id="6166-74ae-cce5-4664" name="Armoured Sentinels" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="6166-74ae-cce5-4664" name="Armoured Sentinel" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="382f-9114-7eaa-cc3f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc0-718f-989a-e4b8" type="min"/>
@@ -3693,49 +3678,31 @@ When targets would be picked for a Fight action made by this unit, it instead ta
               </constraints>
               <entryLinks>
                 <entryLink id="14ec-2945-9684-a4c3" name="Autocannon" hidden="false" collective="false" import="true" targetId="02f7-7194-f8cf-2299" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b1c-6736-6cab-c0d0" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="f189-5096-8a6d-4064" name="Lascannon" hidden="false" collective="false" import="true" targetId="dd55-a2c1-238b-569f" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdfa-a7e3-27da-2646" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="22dd-b7e2-3cf3-636a" name="Multi-laser" hidden="false" collective="false" import="true" targetId="782b-bfab-b9a5-5b99" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4d9-1db4-315a-64f3" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="b444-7c16-57ff-d5b9" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3113-8559-fa38-9287" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="8b85-a9ab-1c2e-c7e4" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e5d-6d1b-752d-ca04" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="c441-eee7-5e0e-9845" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="257b-2e43-40d4-aebe" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="1466-da3f-0d27-dace" value="3.0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="082f-dff3-5894-4d55" type="max"/>
                   </constraints>
