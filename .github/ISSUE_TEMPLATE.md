@@ -1,9 +1,7 @@
-**File/Catalogue:** 
+**Faction:**
 
-**BattleScribe version:** 2.01.
+**Unit:**
 
-**Platform:** Windows/iOS/Android/Mac/Linux
-
-**Dropbox:** Yes/No
+**Issue Type:** Incorrect Datasheet/Missing Datasheet
 
 **Description:** Detailed issue description.
