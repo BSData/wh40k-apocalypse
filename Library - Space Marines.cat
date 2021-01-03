@@ -124,6 +124,7 @@
     <categoryEntry id="e4aa-ca30-7e31-c323" name="Gladiator" hidden="false"/>
     <categoryEntry id="4f6d-256a-d422-e707" name="Gladiator Lancer" hidden="false"/>
     <categoryEntry id="f052-fae1-e97f-8ce2" name="Gladiator Reaper" hidden="false"/>
+    <categoryEntry id="6214-edc1-318d-3246" name="Gladiator Valiant" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -11307,6 +11308,75 @@ otherwise, place one blast marker next to it.</characteristic>
             <characteristic name="A" typeId="2883-af07-d4e8-d8d0">8</characteristic>
             <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
             <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a80b-3524-b19e-e4f2" name="Gladiator Valiant" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="77a9-b514-e9f5-0304" name="Hover" hidden="false" targetId="5711-082b-6f95-d8ef" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8196-274e-4441-b9a6" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="3b16-925c-3bc6-5ce6" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="bc23-924b-0050-cae9" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="939d-3f82-56ec-5f87" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="23dc-d364-7570-41b3" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="8e21-2f79-a321-32b8" name="Gladiator" hidden="false" targetId="e4aa-ca30-7e31-c323" primary="false"/>
+        <categoryLink id="5d7d-8856-45eb-26d4" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="e440-2bf5-e1f0-bead" name="Gladiator Valiant" hidden="false" targetId="6214-edc1-318d-3246" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bdfc-db16-d7d6-25e1" name="Repulsor Field" hidden="false" collective="false" import="true" targetId="01db-cc4c-6770-c042" type="selectionEntry"/>
+        <entryLink id="557f-b8ae-d377-1b14" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="03b9-862f-f6e4-dfa9" name="Icarus Rocket Pod" hidden="false" collective="false" import="true" targetId="084d-262f-bd4b-0403" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af61-8184-e06a-c47c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d192-c09c-9c85-2e46" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0674-bffc-f227-6b2b" name="Ironhail Heavy Stubber" hidden="false" collective="false" import="true" targetId="f2e6-2219-c71f-9401" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c45c-7351-6632-41e7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="816c-b9f8-e1c8-b0c3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bbac-75d1-9c07-6ae3" name="Gladiator" hidden="false" collective="false" import="true" targetId="d1d9-b865-21d1-7019" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c9c-7297-9d89-bda9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76df-1287-0c12-babe" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bfde-89a6-6df4-f746" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7dd-bec3-68f3-632d" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a55b-8f5a-b60c-bd32" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="34fe-c590-4cb4-df3e" name="Twin Las-talon" hidden="false" collective="false" import="true" targetId="1e0e-9bb8-531c-7e41" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f8-1430-3b78-8321" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="840c-9fbb-7af3-8030" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1e0e-9bb8-531c-7e41" name="Twin Las-talon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e97b-5dcf-bcaa-c863" name="Twin Las-talon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
             <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
           </characteristics>
         </profile>
