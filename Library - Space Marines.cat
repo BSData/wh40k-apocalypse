@@ -772,6 +772,16 @@
     <selectionEntry id="7813-d97a-0510-14e6" name="Primaris Chaplain" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="a692-be3a-1580-7e0d" name="Primaris Chaplain" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="7813-d97a-0510-14e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b5-9ad5-d8df-45f2" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="606d-344a-bc3d-9dce" value="14&quot;"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -818,6 +828,12 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="c9ea-ea99-0e1a-735b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="8e7c-0d33-9397-251a" name="Bike" hidden="false" collective="false" import="true" targetId="30e3-b6c8-bb27-a512" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="579f-6c4d-277b-1188" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0767-d1ea-535b-0ea2" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
