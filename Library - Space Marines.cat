@@ -1133,6 +1133,14 @@
                 <modifier type="set" field="a56f-38ae-3917-aadc" value="4+"/>
               </modifiers>
             </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="b734-ce0c-dd48-e51f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0381-ed23-9518-21a3" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="a56f-38ae-3917-aadc" value="4+"/>
+              </modifiers>
+            </modifierGroup>
           </modifierGroups>
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
@@ -1173,6 +1181,11 @@
           <entryLinks>
             <entryLink id="8755-a65c-623f-e9d3" name="Gravis Armor" hidden="false" collective="false" import="true" targetId="6200-8ffc-5988-6301" type="selectionEntry"/>
             <entryLink id="c36a-2f1b-95f4-5181" name="Phobos Armor" hidden="false" collective="false" import="true" targetId="d44c-e9c9-d9b3-05f5" type="selectionEntry"/>
+            <entryLink id="0381-ed23-9518-21a3" name="Relic Shield" hidden="false" collective="false" import="true" targetId="cbe5-b0aa-9974-6507" type="selectionEntry">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -11384,6 +11397,15 @@ otherwise, place one blast marker next to it.</characteristic>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="cbe5-b0aa-9974-6507" name="Relic Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="11de-3a8e-a38f-8b7c" name="Relic Shield" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has a Relic Shield, it has a Save characteristic of 4+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
