@@ -127,6 +127,8 @@
     <categoryEntry id="6214-edc1-318d-3246" name="Gladiator Valiant" hidden="false"/>
     <categoryEntry id="5d9c-2492-402c-a0be" name="Assault Intercessor Squad" hidden="false"/>
     <categoryEntry id="f796-4636-603d-0a34" name="Heavy Intercessor Squad" hidden="false"/>
+    <categoryEntry id="e478-a6dd-c4a9-4f81" name="Bladeguard" hidden="false"/>
+    <categoryEntry id="91b3-0259-1252-fd8e" name="Bladeguard Ancient" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -3153,7 +3155,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="1e95-22a4-148e-92ff" name="Chapter banner" hidden="false" targetId="2721-0db2-54ce-0db9" type="profile"/>
+        <infoLink id="1e95-22a4-148e-92ff" name="Chapter Banner" hidden="false" targetId="2721-0db2-54ce-0db9" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="73a3-4b1c-d06a-e6b5" name="Chapter Ancient" hidden="false" targetId="038c-3926-2f07-5a74" primary="false"/>
@@ -11563,6 +11565,13 @@ otherwise, place one blast marker next to it.</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="daf6-0fd3-3356-b4cd" name="Heavy Intercessor Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="0fc8-e111-b68f-bd5b" name="Heavy Intercessor Squad" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">While a friendly </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="70a9-614c-79ab-f744" name="Primaris Profile" hidden="false" targetId="b2c7-a677-95c3-6c20" type="profile">
           <modifiers>
@@ -11643,6 +11652,74 @@ otherwise, place one blast marker next to it.</characteristic>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0cbf-a1e2-653b-48e7" name="Bladeguard Ancient" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2277-cb54-aed1-eadb" name="Bladeguard Ancient" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="950d-64ea-8a2e-7f15" name="Deeds of Heroism" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">While a friendly &lt;CHAPTER&gt; BLADEGUARD unit is within 6&quot; of this model, each time a model in that unit makes an attack, add 1 to that attack&apos;s hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1ae1-15e8-7950-88a0" name="Chapter Banner" hidden="false" targetId="2721-0db2-54ce-0db9" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Astartes Banner"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dca3-1c2f-f39c-da56" name="Ancient" hidden="false" targetId="69b9-2dfd-81e6-5540" primary="false"/>
+        <categoryLink id="f093-10fd-9537-230b" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="ae46-61a0-f635-efff" name="New CategoryLink" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="d9d8-43b4-7f53-488b" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="b081-d4a4-e40f-393e" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="b4ec-9a9c-3f0c-50b0" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="b0f5-e208-ae7b-fa35" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="a635-b70d-74d9-72f8" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="ef1c-3960-6964-09de" name="Bladeguard" hidden="false" targetId="e478-a6dd-c4a9-4f81" primary="false"/>
+        <categoryLink id="3637-4ed2-10dc-a854" name="Bladeguard Ancient" hidden="false" targetId="91b3-0259-1252-fd8e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a28d-3008-4ac6-7502" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="334e-dd08-4832-4e17" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fdf-39f5-5d57-b150" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8d4c-8a46-cb9a-e171" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="55de-37ce-fb9f-c238" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
