@@ -133,6 +133,7 @@
     <categoryEntry id="da19-0bfc-b19a-7182" name="Bladeguard Veteran Squad" hidden="false"/>
     <categoryEntry id="f56b-7e5c-3a28-96e1" name="Judiciar" hidden="false"/>
     <categoryEntry id="1121-9466-fbc1-a28b" name="Outrider Squad" hidden="false"/>
+    <categoryEntry id="c9a4-1853-0149-42d2" name="Invader ATV Squad" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -12070,6 +12071,110 @@ that target this unit.</characteristic>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9a45-0fb7-b6fa-db42" name="Invader ATV Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f281-9fb3-c00d-d919" name="Invader ATV Squad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="9a45-0fb7-b6fa-db42" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="973a-0f6f-0bb6-eb25" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="6"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="6"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="9a45-0fb7-b6fa-db42" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39cc-5900-f296-f3ee" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="4"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7d76-0eb4-33d5-7d4d" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="19c2-8fb3-166d-df7c" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="3b5d-7427-ca51-0e01" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="6ab2-109d-fe6c-18a3" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
+        <categoryLink id="447e-8583-f08d-446b" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="5110-1b27-c50d-0059" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="1a2b-3973-81e1-f042" name="Invader ATV Squad" hidden="false" targetId="c9a4-1853-0149-42d2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="caa4-2315-6cda-bbdd" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21eb-d8b4-dbc9-565f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abe9-9e50-9b62-0e5e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4b58-59d7-9890-b667" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c259-d701-5e29-c91a" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb9f-3ee0-e123-128b" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3b0-2b9b-c08e-a224" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8737-aa3f-385d-2b5a" name="Onslaught Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="fc36-49ae-69b2-c196" name="Onslaught Gatling Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="a48f-2492-8c8b-5dcd" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d7e9-5423-eb8b-5e7e" name="1 -3 models" hidden="false" collective="false" import="true" targetId="9eaa-60fe-a305-25af" type="selectionEntryGroup"/>
+        <entryLink id="d9e7-6ed6-4646-44b1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="dfca-1772-18d0-ab91" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="12ba-b224-c129-7243">
@@ -12372,6 +12477,11 @@ that target this unit.</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="12.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9a4-1853-0149-42d2" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="0bfb-a9f5-a06e-c8a7" name="3 models" hidden="false" collective="false" import="true" targetId="973a-0f6f-0bb6-eb25" type="selectionEntry">
@@ -12386,6 +12496,11 @@ that target this unit.</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="18.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9a4-1853-0149-42d2" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="e148-d80f-65e5-a1ed" name="1 model" hidden="false" collective="false" import="true" targetId="2d2d-bda0-50dc-b72d" type="selectionEntry">
@@ -12399,6 +12514,11 @@ that target this unit.</characteristic>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9a4-1853-0149-42d2" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
