@@ -132,6 +132,7 @@
     <categoryEntry id="f94f-e05a-03c1-9057" name="Veteran Intercessor Squad" hidden="false"/>
     <categoryEntry id="da19-0bfc-b19a-7182" name="Bladeguard Veteran Squad" hidden="false"/>
     <categoryEntry id="f56b-7e5c-3a28-96e1" name="Judiciar" hidden="false"/>
+    <categoryEntry id="1121-9466-fbc1-a28b" name="Outrider Squad" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -11988,6 +11989,85 @@ that target this unit.</characteristic>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="778d-e22c-27cb-5b1b" name="Outrider Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="355d-aab8-177c-dff4" name="Outrider Squad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1aaa-9c65-9a50-23d0" name="Devastating Charge" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Fight Action, if it has not remained stationary or Piled In this turn, double it&apos;s Attacks characteristic for that action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0e07-5660-b600-5c75" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="c3e7-4b81-e697-8254" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="8afc-320a-a824-364d" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="a426-d4bc-14fe-8bd3" name="Biker" hidden="false" targetId="c8b5-9ad5-d8df-45f2" primary="false"/>
+        <categoryLink id="cc24-5ce7-07f4-1850" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="608c-518a-0dcf-9537" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="febd-15f4-f14b-daab" name="Outrider Squad" hidden="false" targetId="1121-9466-fbc1-a28b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c90c-2cf1-32fd-90e2" name="Twin Bolt Rifles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ad3-7393-ed72-fb66" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b94a-8575-b124-bdec" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c52f-8316-3556-be18" name="Twin Bolt Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6a9c-1dc4-bb35-c889" name="Chainswords" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b5-f6e3-3bb9-126c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d015-3eb0-de0c-d6d6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="af14-1603-3b15-b0b2" name="Chainswords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="36be-c92c-7696-fc15" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
