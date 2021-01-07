@@ -130,6 +130,7 @@
     <categoryEntry id="e478-a6dd-c4a9-4f81" name="Bladeguard" hidden="false"/>
     <categoryEntry id="91b3-0259-1252-fd8e" name="Bladeguard Ancient" hidden="false"/>
     <categoryEntry id="f94f-e05a-03c1-9057" name="Veteran Intercessor Squad" hidden="false"/>
+    <categoryEntry id="da19-0bfc-b19a-7182" name="Bladeguard Veteran Squad" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -2898,6 +2899,7 @@
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d9c-2492-402c-a0be" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f94f-e05a-03c1-9057" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da19-0bfc-b19a-7182" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -11795,6 +11797,9 @@ otherwise, place one blast marker next to it.</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9f16-1bed-dca0-c01c" name="Chainswords and Heavy Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
@@ -11823,6 +11828,9 @@ otherwise, place one blast marker next to it.</characteristic>
               <entryLinks>
                 <entryLink id="4f4c-0936-e9b8-0a0d" name="Heavy Bolt Pistols" hidden="false" collective="false" import="true" targetId="35bb-c4c0-0e46-cd22" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -11834,6 +11842,89 @@ otherwise, place one blast marker next to it.</characteristic>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="531c-7893-3dab-280c" name="Bladeguard Veteran Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="e59a-223c-4378-cded" name="Primaris Profile" hidden="false" targetId="b2c7-a677-95c3-6c20" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Bladeguard Veteran Squad"/>
+            <modifier type="set" field="91b0-3d37-1843-1290" value="7"/>
+            <modifier type="set" field="a56f-38ae-3917-aadc" value="5+"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="811d-be8d-23fb-7100" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b387-d691-5e15-e5cc" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="aad8-a226-20e3-f8f4" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="8e28-057e-79f7-fad4" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="463a-57b7-32b7-d753" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="ac53-0784-9fd1-3a0a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="22d3-9d07-ff43-0094" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="8588-58e0-8582-ab4a" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="7a6e-df92-8451-9549" name="New CategoryLink" hidden="false" targetId="e478-a6dd-c4a9-4f81" primary="false"/>
+        <categoryLink id="e28d-7745-0ff5-22cf" name="Bladeguard Veteran Squad" hidden="false" targetId="da19-0bfc-b19a-7182" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="356a-9eef-2ecc-fa34" name="Master-crafted Power Swords" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bbe-4150-85eb-d7c7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c67e-dc70-c00a-ce6d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9b13-5328-3d69-d8d1" name="Master-crafted Power Swords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9d95-db5b-ff34-3078" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="80cf-9069-bfc2-df51" name="Heavy Bolt Pistols" hidden="false" collective="false" import="true" targetId="35bb-c4c0-0e46-cd22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bce-dfa5-b9ab-0aa1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6226-7a7d-6b13-f7a7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="208c-8307-1d6d-b71c" name="Storm Shield" hidden="false" collective="false" import="true" targetId="00ff-947b-e05e-be1b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1766-4cf7-3c7e-23fe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0615-4228-4167-fd67" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8c7c-03b2-9fed-031d" name="3 - 6 models" hidden="false" collective="false" import="true" targetId="fd57-db55-b1b1-9b16" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="00ff-947b-e05e-be1b" name="Storm Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fe98-1f1d-0014-1bb3" name="Storm Shield" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit has a Storm Shield, it has a Save characteristic of 5+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -12037,6 +12128,15 @@ otherwise, place one blast marker next to it.</characteristic>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c608-6a5b-42d5-48e2" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="12.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da19-0bfc-b19a-7182" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="a9ec-6432-91ba-f8bf" name="3 models" hidden="false" collective="false" import="true" targetId="973a-0f6f-0bb6-eb25" type="selectionEntry">
@@ -12049,6 +12149,11 @@ otherwise, place one blast marker next to it.</characteristic>
             <modifier type="set" field="1466-da3f-0d27-dace" value="11.0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="57ca-d94a-0480-077c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da19-0bfc-b19a-7182" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
