@@ -131,6 +131,7 @@
     <categoryEntry id="91b3-0259-1252-fd8e" name="Bladeguard Ancient" hidden="false"/>
     <categoryEntry id="f94f-e05a-03c1-9057" name="Veteran Intercessor Squad" hidden="false"/>
     <categoryEntry id="da19-0bfc-b19a-7182" name="Bladeguard Veteran Squad" hidden="false"/>
+    <categoryEntry id="f56b-7e5c-3a28-96e1" name="Judiciar" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -11925,6 +11926,69 @@ otherwise, place one blast marker next to it.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a848-d1fb-7516-1180" name="Judiciar" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1183-79ac-77a8-3767" name="Judiciar" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="91d3-c40b-0e05-89a7" name="Tempormortis" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with melee weapons by enemy units
+that target this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="382a-c2bc-e040-984e" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="430f-4a05-a477-f338" name="New CategoryLink" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="85fa-aadf-647d-3c12" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="ca61-7c85-3a2f-bc7c" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="027f-6500-755f-374d" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="eb1a-f8b1-29f6-5d33" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="df51-d3c1-4895-d2b9" name="Judiciar" hidden="false" targetId="f56b-7e5c-3a28-96e1" primary="false"/>
+        <categoryLink id="5b08-2e7a-af23-4a41" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0175-8748-cd00-feea" name="Executioner Relic Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcc5-52f8-2425-43f1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6cc-97bd-0ee6-e09d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3e53-7ee8-5e0e-2b83" name="Executioner Relic Blade" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9f3e-05b7-3520-32d5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
