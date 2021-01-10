@@ -134,6 +134,7 @@
     <categoryEntry id="f56b-7e5c-3a28-96e1" name="Judiciar" hidden="false"/>
     <categoryEntry id="1121-9466-fbc1-a28b" name="Outrider Squad" hidden="false"/>
     <categoryEntry id="c9a4-1853-0149-42d2" name="Invader ATV Squad" hidden="false"/>
+    <categoryEntry id="0062-66ea-c154-299c" name="Eradicator Squad" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -12175,6 +12176,101 @@ that target this unit.</characteristic>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7a4f-1b01-9979-5aef" name="Eradicator Squad" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="4bfc-8eda-0ca6-5080" name="Eradicator Squad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="7a4f-1b01-9979-5aef" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8593-349a-e033-266b" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c788-2ff7-969b-fc77" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="0a93-72d0-00c7-7d8b" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="3da4-03e2-d8ee-2fb5" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="44a1-e53e-cb4e-e4dd" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="774c-c335-e02c-9c74" name="MK X Gravis" hidden="false" targetId="8438-9607-67d0-a3e3" primary="false"/>
+        <categoryLink id="b8d5-1740-d9ac-5e76" name="Eradicator Squad" hidden="false" targetId="0062-66ea-c154-299c" primary="false"/>
+        <categoryLink id="03b3-7ae9-1be6-760b" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2cc1-e505-edca-8d0b" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83b0-a16c-e6d4-9756" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cfd-80f4-1a2d-5a4c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="18e3-90db-b6ea-2c7e" name="Melta Rifles" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="881f-0f06-9b26-2fc8" name="Melta Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2c1f-37dd-da76-2bba" name="Heavy Melta Rifles" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ed6b-a209-2647-ef2f" name="Heavy Melta Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e7cf-ab35-5f2c-f0ea" name="3 - 6 models" hidden="false" collective="false" import="true" targetId="fd57-db55-b1b1-9b16" type="selectionEntryGroup"/>
+        <entryLink id="70cd-391f-d08e-63ad" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="5d6e-b740-2f14-a5a2" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="577c-a176-ff04-64fb" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="938c-da78-e438-4d41" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="dfca-1772-18d0-ab91" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="12ba-b224-c129-7243">
@@ -12386,6 +12482,11 @@ that target this unit.</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="18.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0062-66ea-c154-299c" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="a9ec-6432-91ba-f8bf" name="3 models" hidden="false" collective="false" import="true" targetId="973a-0f6f-0bb6-eb25" type="selectionEntry">
@@ -12403,6 +12504,11 @@ that target this unit.</characteristic>
             <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da19-0bfc-b19a-7182" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="9.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0062-66ea-c154-299c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
