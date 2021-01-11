@@ -136,6 +136,7 @@
     <categoryEntry id="c9a4-1853-0149-42d2" name="Invader ATV Squad" hidden="false"/>
     <categoryEntry id="0062-66ea-c154-299c" name="Eradicator Squad" hidden="false"/>
     <categoryEntry id="a174-ff44-76cf-3ae8" name="Firestrike Servo-turrets" hidden="false"/>
+    <categoryEntry id="aa58-6af4-07cd-ebff" name="Hammerfall Bunker" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -12338,6 +12339,100 @@ that target this unit.</characteristic>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cbce-7f99-5113-19d1" name="Hammerfall Bunker" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="349c-fc0e-b7a2-c33a" name="Hammerfall Bunker" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">-</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">-</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">-</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="81d8-18ba-8321-cc4b" name="Defensive Array" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Shoot action, its Hammerfall Heavy Bolter Array or its Hammerfall Heavy Flamer Array may target, and resolve attacks against, every eligible enemy unit. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6414-0880-9500-ba41" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="dd48-e8e3-df37-435c" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="3f97-74fe-3d6c-b110" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="c245-0b65-8b1b-20a3" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="f696-bc40-35a1-db54" name="Building" hidden="false" targetId="8951-2d88-3b2b-4de4" primary="false"/>
+        <categoryLink id="ca38-e0e9-9474-fd80" name="Fortification" hidden="false" targetId="e2ad-0813-395c-442a" primary="true"/>
+        <categoryLink id="1aca-5838-217e-e02f" name="Hammerfall Bunker" hidden="false" targetId="aa58-6af4-07cd-ebff" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d586-cb79-61a9-be4e" name="Hammerfall Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bce0-0a09-302e-63c3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7029-711f-098b-dcc5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d8ca-3813-86e1-8fd6" name="Hammerfall Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">72&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8ccc-696e-a23f-497c" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8c3-d9a9-d59c-ace3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbd8-0fce-5b5f-709a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7b2e-c6ea-e2fb-4807" name="Hammerfall Heavy Flamer Array" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="c01d-ae96-d3b6-c7af" name="Heavy Flamer" hidden="false" targetId="59d9-521f-7559-6fa6" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hammerfall Heavy Flamer Array"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9cd2-8ee6-4311-bf77" name="Hammerfall Heavy Bolter Array" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="58d2-b15a-f7c6-97c4" name="Hammerfall Heavy Bolter Array" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="cafa-a811-5d8d-91b7" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
