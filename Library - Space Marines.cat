@@ -135,6 +135,7 @@
     <categoryEntry id="1121-9466-fbc1-a28b" name="Outrider Squad" hidden="false"/>
     <categoryEntry id="c9a4-1853-0149-42d2" name="Invader ATV Squad" hidden="false"/>
     <categoryEntry id="0062-66ea-c154-299c" name="Eradicator Squad" hidden="false"/>
+    <categoryEntry id="a174-ff44-76cf-3ae8" name="Firestrike Servo-turrets" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -12271,6 +12272,74 @@ that target this unit.</characteristic>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="52f3-77e4-8b3f-8a97" name="Firestrike Servo-turrets" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7cd0-80fd-a3df-a6e1" name="Firestrike Servo-turrets" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="52f3-77e4-8b3f-8a97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39cc-5900-f296-f3ee" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="52f3-77e4-8b3f-8a97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="973a-0f6f-0bb6-eb25" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">3&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f451-9d46-9ae6-7497" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+        <categoryLink id="82fc-7bf1-2e0a-3c7a" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="8dcc-ff92-d147-4dc1" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="92cf-2010-f8ca-1228" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="bca4-36a0-3e8d-06a3" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="c299-a7eb-0f37-0370" name="Artillery" hidden="false" targetId="c2cd-6e10-a4dd-093c" primary="false"/>
+        <categoryLink id="b16c-05dc-b133-ed64" name="Firestrike Servo-Turrets" hidden="false" targetId="a174-ff44-76cf-3ae8" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8d39-b37e-d95f-0666" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9f8-6da1-9a2f-d0cb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4093-2751-c5bb-1408" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="dd28-eccd-8f01-4c6f" name="Twin Las-talon" hidden="false" collective="false" import="true" targetId="1e0e-9bb8-531c-7e41" type="selectionEntry"/>
+            <entryLink id="6eac-f56b-1619-bd7f" name="Twin Accelerator Autocannon" hidden="false" collective="false" import="true" targetId="5b9c-0685-b97a-0619" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="68d2-63d8-6206-a876" name="1 -3 models" hidden="false" collective="false" import="true" targetId="9eaa-60fe-a305-25af" type="selectionEntryGroup"/>
+        <entryLink id="96c5-91cd-d05a-c380" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1e7-4301-679d-9dac" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bed0-ccb9-00e9-48ff" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="dfca-1772-18d0-ab91" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="12ba-b224-c129-7243">
@@ -12588,6 +12657,11 @@ that target this unit.</characteristic>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9a4-1853-0149-42d2" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="14.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a174-ff44-76cf-3ae8" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="0bfb-a9f5-a06e-c8a7" name="3 models" hidden="false" collective="false" import="true" targetId="973a-0f6f-0bb6-eb25" type="selectionEntry">
@@ -12607,6 +12681,11 @@ that target this unit.</characteristic>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9a4-1853-0149-42d2" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="21.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a174-ff44-76cf-3ae8" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="e148-d80f-65e5-a1ed" name="1 model" hidden="false" collective="false" import="true" targetId="2d2d-bda0-50dc-b72d" type="selectionEntry">
@@ -12624,6 +12703,11 @@ that target this unit.</characteristic>
             <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c9a4-1853-0149-42d2" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="7.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a174-ff44-76cf-3ae8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
