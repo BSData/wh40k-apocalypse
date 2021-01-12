@@ -140,6 +140,7 @@
     <categoryEntry id="a383-a7ed-acfe-1935" name="Storm Speeder" hidden="false"/>
     <categoryEntry id="399c-b44c-cfa9-b8c1" name="Hailstrike" hidden="false"/>
     <categoryEntry id="1762-9303-f65e-d6de" name="Thunderstrike" hidden="false"/>
+    <categoryEntry id="2c2c-ac12-de58-4f4e" name="Hammerstrike" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="d3fe-d179-4b39-60b7" name="And They Shall Know No Fear" hidden="false">
@@ -12456,13 +12457,13 @@ that target this unit.</characteristic>
         <categoryLink id="3674-15a0-fbaf-a292" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4189-6480-2bce-fc94" name="Fragstorm Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4189-6480-2bce-fc94" name="Fragstorm Grenade Launchers" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47eb-c27d-c6e1-a080" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a566-b00e-88a9-65f5" type="min"/>
           </constraints>
           <profiles>
-            <profile id="05d7-317c-2878-028f" name="Fragstorm Grenade Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+            <profile id="05d7-317c-2878-028f" name="Fragstorm Grenade Launchers" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
@@ -12587,6 +12588,89 @@ that target this unit.</characteristic>
                 <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
                 <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
                 <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Anti-air</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5592-33ce-cd2a-dbea" name="Storm Speeder Hammerstrike" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d4b0-1f08-43b8-c889" name="Storm Speeder" hidden="false" targetId="7934-c3d7-6271-1f18" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a61d-fc55-61e8-4307" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="bbbe-3a53-6438-2a9b" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="b696-664c-a451-564f" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="aa0f-491e-9f73-fe4e" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="3526-aed3-362e-89bf" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="ebea-6971-d2fb-f332" name="Storm Speeder" hidden="false" targetId="a383-a7ed-acfe-1935" primary="false"/>
+        <categoryLink id="785e-3f2e-2fb9-5a5d" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="9c3a-7c19-cf0a-2d05" name="Hammerstrike" hidden="false" targetId="2c2c-ac12-de58-4f4e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="22a2-65a3-d8ee-67f6" name="Hammerstrike Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2015-ae1c-3ca8-86aa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00cb-9d2e-e013-aafc" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3b3b-d346-7437-5792" name="Hammerstrike Missile Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="14c4-ff46-0dcc-61e2" name="Krakstorm Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aa7-39d9-3c41-8d74" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a09-ef1b-762f-7fe2" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ce04-8044-21cf-3df6" name="Krakstorm Grenade Launcher" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d753-ca06-cdba-1d09" name="Melta Destroyer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ca-7be2-5827-482a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde4-6d1b-d824-a5e6" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d117-a51e-e08f-b305" name="Melta Destroyer" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
