@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="18e4-faec-a65f-58d0" name="Orks" revision="8" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="18e4-faec-a65f-58d0" name="Orks" revision="9" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -2452,6 +2452,50 @@
         <categoryLink id="849e-3b2a-4277-23cb" name="Stompa" hidden="false" targetId="5113-f00e-d94a-04f7" primary="false"/>
         <categoryLink id="f744-2866-e118-6742" name="Kustom Stompa" hidden="false" targetId="4bdf-de7d-4a1f-8074" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1fa1-bea0-b840-e9fe" name="Gaze of Mork" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3825-86d3-7c66-0c71" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bfe-acf9-9d98-aaec" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6438-a240-766c-9fad" name="Gaze of Mork" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">3+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8e6d-f908-edc6-1acb" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="fb93-66cb-035c-f8f9" name="Mega Klaw" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d93-8bc7-f2e7-a1c7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f47c-530a-acad-f0a5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="065b-bde6-487f-09f0" name="Mega Klaw" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2091-f068-4204-7b06" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="ca17-52d6-0d61-38f6" name="Torso Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="dcc7-7b51-ddd3-77c9">
           <constraints>
@@ -2459,7 +2503,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7146-d1d0-3b22-ca40" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="dcc7-7b51-ddd3-77c9" name="Trasnport Capability" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="dcc7-7b51-ddd3-77c9" name="Transport Capability" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25dc-7d90-254b-acde" type="max"/>
               </constraints>
@@ -2530,11 +2574,35 @@
           </constraints>
         </entryLink>
         <entryLink id="991c-6cab-ff35-c911" name="Supa-rokkit" hidden="false" collective="false" import="true" targetId="8eaa-5e04-c287-af98" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="1466-da3f-0d27-dace" value="1.0"/>
-          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c5d-228c-2b3a-0466" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c5d-228c-2b3a-0466" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c88-7ef5-91f1-d4ce" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4b02-d2b0-feab-735d" name="Big Shoota" hidden="false" collective="false" import="true" targetId="fe1a-3f0a-ab27-f142" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12ef-95be-9435-984b" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c66-61f9-f330-3468" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ffa9-8ec6-6a79-2e20" name="Supa-rokkit" hidden="false" collective="false" import="true" targetId="8eaa-5e04-c287-af98" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d249-7992-e0ac-1878" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="f261-8b25-d2f8-8cea" name="Skorcha" hidden="false" collective="false" import="true" targetId="350c-c6dc-abb8-2507" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbb6-de32-def6-568f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21e4-f7f3-98f6-d4d2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e750-a9ca-6485-a748" name="Twin Big Shoota" hidden="false" collective="false" import="true" targetId="4078-6d45-aad2-0fbe" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8880-08f2-a3db-1e9f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c7-0c00-2e76-bca1" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
