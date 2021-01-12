@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="71e2-8d92-4ff5-4acb" name="Imperium - Blood Angels" revision="4" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="71e2-8d92-4ff5-4acb" name="Imperium - Blood Angels" revision="5" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -1555,19 +1555,30 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4b6-0a6b-7250-d104" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="74d9-e065-b307-9b01" name="Twin Assault Cannon" hidden="false" collective="false" import="true" targetId="6049-a3c6-fbb2-db4d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91de-2676-4d49-3ad3" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37d9-0673-a7d0-3746" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="74d9-e065-b307-9b01" name="Twin Assault Cannon" hidden="false" collective="false" import="true" targetId="6049-a3c6-fbb2-db4d" type="selectionEntry"/>
             <entryLink id="b7b6-d292-6cdb-1b46" name="Flamestorm Cannon" hidden="false" collective="false" import="true" targetId="8578-7721-e821-d44b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="7f74-95aa-f5e9-4e99" name="Armoured Tracks" hidden="false" collective="false" import="true" targetId="2b3b-d361-f599-8aad" type="selectionEntry"/>
-        <entryLink id="73b2-e98f-a650-63f3" name="Predator Sponson Weapons" hidden="false" collective="false" import="true" targetId="2cc7-f514-4a4b-2612" type="selectionEntryGroup"/>
+        <entryLink id="73b2-e98f-a650-63f3" name="Predator Sponson Weapons" hidden="false" collective="false" import="true" targetId="2cc7-f514-4a4b-2612" type="selectionEntryGroup">
+          <selectionEntries>
+            <selectionEntry id="fb0a-5cbc-212d-a355" name="Heavy Flamers" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="421e-fd17-5f97-25a7" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="46e7-d278-1268-caaf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbb3-f844-598f-941d" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5da7-ffc0-1a28-3976" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
         <entryLink id="5c16-7f57-4770-930f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
