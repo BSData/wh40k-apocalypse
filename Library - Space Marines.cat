@@ -12156,12 +12156,44 @@ that target this unit.</characteristic>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="c259-d701-5e29-c91a" name="Weapons" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="9a45-0fb7-b6fa-db42" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d2d-bda0-50dc-b72d" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="fb9f-3ee0-e123-128b" value="1.0"/>
+                <modifier type="set" field="d3b0-2b9b-c08e-a224" value="1.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="9a45-0fb7-b6fa-db42" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="973a-0f6f-0bb6-eb25" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="fb9f-3ee0-e123-128b" value="3.0"/>
+                <modifier type="set" field="d3b0-2b9b-c08e-a224" value="3.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="9a45-0fb7-b6fa-db42" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39cc-5900-f296-f3ee" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="fb9f-3ee0-e123-128b" value="2.0"/>
+                <modifier type="set" field="d3b0-2b9b-c08e-a224" value="2.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb9f-3ee0-e123-128b" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3b0-2b9b-c08e-a224" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="8737-aa3f-385d-2b5a" name="Onslaught Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd58-0d5b-bdc6-7006" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="fc36-49ae-69b2-c196" name="Onslaught Gatling Cannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
                   <characteristics>
@@ -12180,7 +12212,11 @@ that target this unit.</characteristic>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="a48f-2492-8c8b-5dcd" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry"/>
+            <entryLink id="a48f-2492-8c8b-5dcd" name="Multi-melta" hidden="false" collective="false" import="true" targetId="1a13-f0be-ca42-c44b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8e9-5261-5122-89d3" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
