@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df5a-b452-7741-6a5b" name="Library - Space Marines" revision="10" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="df5a-b452-7741-6a5b" name="Library - Space Marines" revision="11" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -788,6 +788,7 @@
         <categoryLink id="51ec-3fa0-8d7f-19cf" name="Priest" hidden="false" targetId="0642-3d2d-db41-9ddd" primary="false"/>
         <categoryLink id="00e1-dc19-44c9-f82f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="6fd0-aff4-1593-a913" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="273d-fca3-d823-c871" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f6a0-285c-0f74-1127" name="Crozius Arcanum" hidden="false" collective="false" import="true" type="upgrade">
@@ -1824,6 +1825,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="5ff1-9f49-0acd-6820" name="Astartes Banner" hidden="false" targetId="9b14-07f3-7d04-8408" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="ee18-2cf9-7d53-0b2d" name="Ancient" hidden="false" targetId="69b9-2dfd-81e6-5540" primary="false"/>
         <categoryLink id="910a-d3d7-b1a3-988e" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -1893,6 +1897,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="3552-487d-9fab-2923" name="Astartes Banner" hidden="false" targetId="9b14-07f3-7d04-8408" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="b23c-af75-2426-32d2" name="Ancient" hidden="false" targetId="69b9-2dfd-81e6-5540" primary="false"/>
         <categoryLink id="ee64-db6d-90e5-46e1" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -3112,7 +3119,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="1e95-22a4-148e-92ff" name="Chapter banner" hidden="false" targetId="2721-0db2-54ce-0db9" type="profile"/>
+        <infoLink id="1e95-22a4-148e-92ff" name="Chapter Banner" hidden="false" targetId="2721-0db2-54ce-0db9" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="73a3-4b1c-d06a-e6b5" name="Chapter Ancient" hidden="false" targetId="038c-3926-2f07-5a74" primary="false"/>
@@ -4378,7 +4385,7 @@
                 <condition field="selections" scope="ea42-68aa-024e-2eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a9ec-6432-91ba-f8bf" type="equalTo"/>
               </conditions>
               <modifiers>
-                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
                 <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
               </modifiers>
             </modifierGroup>
@@ -11628,7 +11635,7 @@ otherwise, place one blast marker next to it.</characteristic>
     </profile>
     <profile id="2721-0db2-54ce-0db9" name="Chapter Banner" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly Dark Angels units are automatically passed whilst they are within 9&quot; of this unit.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for friendly &lt;CHAPTER&gt; units are automatically passed whilst they are within 9&quot; of this unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="1de9-50a7-0fd9-6a37" name="Land Raider" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
