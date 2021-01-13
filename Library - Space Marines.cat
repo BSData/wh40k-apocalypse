@@ -12368,9 +12368,38 @@ that target this unit.</characteristic>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="8d39-b37e-d95f-0666" name="Weapons" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="52f3-77e4-8b3f-8a97" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="973a-0f6f-0bb6-eb25" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="4093-2751-c5bb-1408" value="3.0"/>
+                <modifier type="set" field="d9f8-6da1-9a2f-d0cb" value="3.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="52f3-77e4-8b3f-8a97" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39cc-5900-f296-f3ee" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="d9f8-6da1-9a2f-d0cb" value="2.0"/>
+                <modifier type="set" field="4093-2751-c5bb-1408" value="2.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="52f3-77e4-8b3f-8a97" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e148-d80f-65e5-a1ed" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="4093-2751-c5bb-1408" value="1.0"/>
+                <modifier type="set" field="d9f8-6da1-9a2f-d0cb" value="1.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9f8-6da1-9a2f-d0cb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4093-2751-c5bb-1408" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4093-2751-c5bb-1408" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="dd28-eccd-8f01-4c6f" name="Twin Las-talon" hidden="false" collective="false" import="true" targetId="1e0e-9bb8-531c-7e41" type="selectionEntry"/>
