@@ -734,6 +734,13 @@
           </constraints>
           <profiles>
             <profile id="f542-c610-76f1-0da6" name="Frostfang" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <modifiers>
+                <modifier type="set" field="74b1-f85d-ede5-c758" value="7+">
+                  <conditions>
+                    <condition field="selections" scope="d3d6-de51-2440-a511" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="34ee-2cee-93bf-b3c3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
@@ -747,6 +754,14 @@
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="14d4-9df8-3f84-07ff" name="Primaris" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1c2-b0f0-ff7c-b98b" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="4a12-8f37-010b-a101" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
