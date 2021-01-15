@@ -50,6 +50,7 @@
     <categoryEntry id="ad77-6c4a-74ef-94e6" name="Stormfang Gunship" hidden="false"/>
     <categoryEntry id="f66b-11b4-5daf-9b88" name="Stormwolf" hidden="false"/>
     <categoryEntry id="0d3d-523e-d125-51bc" name="Swiftclaw" hidden="false"/>
+    <categoryEntry id="0fbe-d451-d2b1-902c" name="Hounds of Morkai" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="b86f-f535-5a4e-c796" name="Logan Grimnar" hidden="false" collective="false" import="true" type="unit">
@@ -762,6 +763,9 @@
           <categoryLinks>
             <categoryLink id="4a12-8f37-010b-a101" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4720,6 +4724,156 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e832-e976-398e-610d" name="Hounds of Morkai" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="7372-429d-bd94-e93c" name="Reiver Squad" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="e832-e976-398e-610d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5f48-32f9-4de9-c2a4" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="4"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ce6-9a69-edb9-5228" name="Hunters Beyond Death" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Shoot action, add 2 to hit rolls and you can reroll wound rolls for attacks made by this unit that target a PSYKER for that action.
+Additionally, when this unit makes a Fight action, add 1 to hit rolls and you can reroll the wound roll for attacks made by this unit that target a PSYKER for that action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9e45-7318-55a8-13d1" name="Morkai&apos;s Howl and Runic Totems" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit cannot be targeted or affected by Command Assets that are psychic powers, or weapons with the Witchfire ability. PSYKER units within 6&quot; of this unit cannot be selected to manifest psychic powers.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="38be-8a4f-8c44-00b0" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="becd-6d10-99ec-4818" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="6649-ae2b-1dbd-a15f" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="567e-794d-2ed1-f5a8" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="22f5-3a9c-409e-cfec" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="7967-a550-13bb-dbc8" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="4319-9a2b-27f8-c36e" name="Phobos" hidden="false" targetId="9338-3c48-ea3c-cb83" primary="false"/>
+        <categoryLink id="4355-69ff-333b-7518" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+        <categoryLink id="6612-33fd-5b54-36c6" name="Hounds of Morkai" hidden="false" targetId="0fbe-d451-d2b1-902c" primary="false"/>
+        <categoryLink id="d30d-58ce-b342-5c0b" name="Reivers" hidden="false" targetId="0fe5-73c8-3eee-8c56" primary="false"/>
+        <categoryLink id="f90d-a288-1bb2-5ea3" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fcbd-c26b-ace8-9ac2" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09e7-4fff-e100-e6f4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f35f-fa8d-134e-175d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5070-9749-797e-3b8b" name="Reiver Blades &amp; Heavy Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="8a38-b0c1-104d-f544" name="Reiver Blades" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b2-74c8-10b2-bea9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a13d-b49a-cf81-b483" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="63ef-623e-b779-05d9" name="Reiver Blades" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="77aa-1ea6-b80f-7bf4" name="Heavy Bolt Pistols" hidden="false" collective="false" import="true" targetId="35bb-c4c0-0e46-cd22" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c1f4-d217-9239-dd47" name="Bolt Carbines &amp; Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="504a-84a1-3338-2cc7" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71fb-9ace-12d0-cc10" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53a-9ba3-ca50-4bcc" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="ccee-dcc6-c2e4-9942" name="Close Combat Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="0830-0852-8fce-3bec" name="Bolt Carbines" hidden="false" collective="false" import="true" targetId="3210-df3e-378c-3d70" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2b37-4776-ecd5-a094" name="5 - 10 models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f228-f91e-92e9-53c3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42da-71d0-37fd-a585" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2ea7-665f-4d39-5e53" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="140f-3794-7b50-a030" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="95b2-4d7c-d25e-8f6a" name="Grapnel Launchers" hidden="false" collective="false" import="true" targetId="57c0-6498-d6c9-c779" type="selectionEntry"/>
+        <entryLink id="498e-e9db-a0b9-7810" name="Grav-Chutes" hidden="false" collective="false" import="true" targetId="b647-14a7-5911-697d" type="selectionEntry"/>
+        <entryLink id="92c8-c195-4c1a-87d5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
