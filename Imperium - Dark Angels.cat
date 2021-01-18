@@ -23,6 +23,8 @@
     <categoryEntry id="e3bd-cef6-9d66-30f1" name="Ravenwing Black Knights" hidden="false"/>
     <categoryEntry id="aa71-2348-e01f-c59d" name="Dark Talon" hidden="false"/>
     <categoryEntry id="3bfb-ebb6-76f1-9343" name="Nephilim Jetfighter" hidden="false"/>
+    <categoryEntry id="3600-450b-a555-569e" name="Lazarus" hidden="false"/>
+    <categoryEntry id="d537-b50c-719d-d101" name="Inner Circle" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -968,6 +970,11 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
       <categoryLinks>
         <categoryLink id="d2c9-768f-36b3-0d5e" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="83ef-43e2-c3d8-8d50" name="Lazarus" hidden="false" collective="false" import="true" targetId="b139-64d6-2db2-d741" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="e6e6-6c61-bef7-9c85" name="Rites of Battle" hidden="false" targetId="a9a4-c13f-702f-4bae" type="profile"/>
+      </infoLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -2875,6 +2882,65 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b139-64d6-2db2-d741" name="Lazarus" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1773-aacc-7917-20c2" name="Lazarus" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c758-7361-42a3-0952" name="The Spiritshield Helm" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly DARK ANGELS units gain the Ignore Damage (6+) ability whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a21c-648f-9d26-c4d6" name="Intractable Will" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for this unit are automatically passed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9a4a-0450-d71e-ed58" name="Enmity&apos;s Edge" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">If a wound roll for an attack made with this weapon is successful, and the target is a PSYKER, place two blast markers next to the target unit instead of one.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="85c1-2b18-5c2f-ce21" name="Inner Circle" hidden="false" targetId="9331-d919-e587-f51f" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c1c3-098e-5953-9fe1" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="1dbe-b063-fd0f-5e42" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
+        <categoryLink id="8e95-0784-0283-f0cd" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="23ec-5c42-27df-4fa0" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="b752-89cf-db52-f2a6" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="c473-e496-9f90-6e42" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="075d-ef3c-b9d7-a097" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="a556-454e-8cb5-c2fb" name="Master" hidden="false" targetId="06fe-0fb5-1263-898f" primary="false"/>
+        <categoryLink id="6476-6cf4-0597-19d8" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
+        <categoryLink id="1240-8ee4-56d9-0b70" name="Lazarus" hidden="false" targetId="3600-450b-a555-569e" primary="false"/>
+        <categoryLink id="beb0-b036-ac7c-7938" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="b48a-47c6-3027-c92a" name="Captain" hidden="false" targetId="7151-56f9-0163-eadc" primary="false"/>
+        <categoryLink id="386b-ba6e-5b91-0537" name="Inner Circle" hidden="false" targetId="d537-b50c-719d-d101" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="31d3-00ca-beb0-2899" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
