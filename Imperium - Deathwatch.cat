@@ -18,6 +18,7 @@
     <categoryEntry id="16ea-1369-44dd-0e0d" name="Kill Team" hidden="false"/>
     <categoryEntry id="7325-f863-b537-9620" name="Fortis" hidden="false"/>
     <categoryEntry id="cb0c-1daf-3cdb-eb70" name="Proteus" hidden="false"/>
+    <categoryEntry id="a469-3d5d-f6f6-8981" name="Indomitor" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="4447-535c-14e0-0f30" name="Watch Master" hidden="false" collective="false" import="true" type="unit">
@@ -1534,28 +1535,6 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6dbb-5d94-df2d-4fab" name="Deathwatch Bolt Rifles" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="7bb2-e441-0229-2244" value="0.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e87e-dc56-e840-bb37" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3602-785c-6cf2-8ab2" type="atLeast"/>
-                    <condition field="selections" scope="e87e-dc56-e840-bb37" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd15-750f-d2b5-0529" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="111a-6502-2c53-f908" value="0.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="e87e-dc56-e840-bb37" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3602-785c-6cf2-8ab2" type="atLeast"/>
-                    <condition field="selections" scope="e87e-dc56-e840-bb37" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd15-750f-d2b5-0529" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bb2-e441-0229-2244" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="111a-6502-2c53-f908" type="min"/>
@@ -1654,13 +1633,20 @@
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="3602-785c-6cf2-8ab2" name="Heavy Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="5496-9e77-0d81-210a" value="5.0">
+              <conditions>
+                <condition field="selections" scope="e87e-dc56-e840-bb37" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd15-750f-d2b5-0529" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5496-9e77-0d81-210a" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5496-9e77-0d81-210a" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="029f-3769-a841-e5ba" name="Heavy Plasma Incinerator" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e2-0256-cd42-2a20" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e2-0256-cd42-2a20" type="max"/>
               </constraints>
               <profiles>
                 <profile id="3005-d227-3604-98aa" name="Heavy Plasma Incinerator" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
@@ -1686,6 +1672,192 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="18a4-2965-90fb-73c4" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="157c-be68-caef-6f9f" name="Indomitor Kill Team" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e213-d93c-97fe-e887" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="6b26-683a-39e9-e2dc" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="6b07-aa33-2843-61ac" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="62ea-1336-e384-b049" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+        <categoryLink id="6e0b-7af7-1ae7-d6ea" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="64e3-f5f4-98d2-3ee3" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4c86-27a5-3ad6-38d9" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="fc37-1f0d-61ff-0bc7" name="Kill Team" hidden="false" targetId="16ea-1369-44dd-0e0d" primary="false"/>
+        <categoryLink id="9cfd-4dbf-0994-c1df" name="MK X Gravis" hidden="false" targetId="8438-9607-67d0-a3e3" primary="false"/>
+        <categoryLink id="db3b-b5d9-fd00-b793" name="Indomitor" hidden="false" targetId="a469-3d5d-f6f6-8981" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d10f-e925-24a1-603c" name="Deathwatch Heavy Bolt Rifles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6ca-ac5f-d61f-6f87" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0426-94af-44a7-c5b3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="9f4d-9375-b3f2-682d" name="Deathwatch Heavy Bolt Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">42&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="48ab-9ea3-8c2c-2f31" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d561-8bab-b3e7-a382" name="5 - 10 Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3674-5f86-25b1-7df5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac39-362f-3e4c-2ce1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d3af-ba8f-9b95-3d4f" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="dd97-72cb-f3ac-f226" name="Indomitor Kill Team (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4297-28c6-9ec6-2ff4" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="fdc6-bb8a-e79d-533d" name="Indomitor Kill Team (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="18.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a50c-e837-0aff-3816" name="Heavy Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="f7d0-1df4-12c7-349e" value="5.0">
+              <conditions>
+                <condition field="selections" scope="157c-be68-caef-6f9f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4297-28c6-9ec6-2ff4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7d0-1df4-12c7-349e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2451-9c79-08c0-a4fc" name="Auto Boltstorm Gauntlets and Fragtstorm Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ec-0023-ac5f-7e12" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f95e-6a3f-3436-5470" name="Auto Boltstorm Gauntlets" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="fed3-27f6-8dd9-9bbf" name="Fragstorm Grenade Launchers" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5b5c-c790-a17d-2f94" name="Flamestorm Gauntlets" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b023-b199-e938-081a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ee45-7c48-5135-0a55" name="Flamestorm Gauntlets" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4311-2047-438b-7aac" name="Melta Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5926-5f04-5e6e-e4cc" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9895-e838-0321-77ba" name="Total Obliteration" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit&apos;s detachment carries out the Aimed Fire order and this unit makes a Shoot action, double the Attacks characteristic of any Melta Rifles it is equipped with for that action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="e2ab-3a4c-13ef-41c4" name="Meltagun" hidden="false" targetId="f167-5ca5-16c9-7f21" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Melta Rifle"/>
+                    <modifier type="set" field="bea7-7040-8485-6f0f" value="24&quot;"/>
+                    <modifier type="set" field="359f-19b3-6670-21f5" value="Small Arms"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6060-239e-fb14-7f12" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="e2db-8e1b-1b2a-95f9" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ed5-2982-4cee-90ef" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4389-0966-9e8a-1cf7" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
