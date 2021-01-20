@@ -25,7 +25,9 @@ Fundamalleus Organization created this project. It's a GitHub repository of data
 
 __Okay, nice project. Is it actually working?__ _I just want those files..._
 
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
+Not Yet! We are working on getting it hosted.
+
+Hopefully, we will eventually have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
 
 __I found a bug!__ / *I have another request*
 
