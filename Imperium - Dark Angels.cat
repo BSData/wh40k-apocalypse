@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="9" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="10" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -11,7 +11,7 @@
     <categoryEntry id="8121-541f-b6a2-36c7" name="Belial" hidden="false"/>
     <categoryEntry id="6693-a499-f60d-c30c" name="Sammael" hidden="false"/>
     <categoryEntry id="2328-6a93-eccb-5303" name="Ezekiel" hidden="false"/>
-    <categoryEntry id="c6f5-7549-ed8c-6b38" name="Azmodai" hidden="false"/>
+    <categoryEntry id="c6f5-7549-ed8c-6b38" name="Asmodai" hidden="false"/>
     <categoryEntry id="ebcd-c838-e016-6604" name="Interrogator-Chaplain" hidden="false"/>
     <categoryEntry id="6c28-92e8-fde7-8b86" name="Talonmaster" hidden="false"/>
     <categoryEntry id="50cb-96c6-f120-0e77" name="Chief Librarian" hidden="false"/>
@@ -60,6 +60,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7035-ff2b-6293-c47d" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
+        <categoryLink id="cbf2-8de8-c43b-c506" name="Faction: Deathwing" hidden="false" targetId="d673-6f6d-5df6-035c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3b11-222b-8636-7b88" name="Primaris Librarian" hidden="false" collective="false" import="true" targetId="8896-4617-12f7-2495" type="selectionEntry">
@@ -68,6 +69,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e342-71df-6c63-8721" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
+        <categoryLink id="598e-9765-33a3-a2a1" name="Faction: Deathwing" hidden="false" targetId="d673-6f6d-5df6-035c" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1393-3d07-7661-59b6" name="Techmarine" hidden="false" collective="false" import="true" targetId="6690-dae8-1ba2-9454" type="selectionEntry">
@@ -395,7 +397,7 @@
     </entryLink>
     <entryLink id="3492-9fa2-1625-69db" name="Azrael" hidden="false" collective="false" import="true" targetId="3cbe-c8ba-c8b4-3f8e" type="selectionEntry"/>
     <entryLink id="2f24-698b-bcee-3385" name="Belial" hidden="false" collective="false" import="true" targetId="3973-fc63-a673-ec32" type="selectionEntry"/>
-    <entryLink id="05f1-46a5-d852-d868" name="Azmodai" hidden="false" collective="false" import="true" targetId="c207-bb2b-3bf3-20ca" type="selectionEntry"/>
+    <entryLink id="05f1-46a5-d852-d868" name="Asmodai" hidden="false" collective="false" import="true" targetId="c207-bb2b-3bf3-20ca" type="selectionEntry"/>
     <entryLink id="88df-ef3c-2ace-dbec" name="Talonmaster" hidden="false" collective="false" import="true" targetId="de97-eb8f-895e-ccf9" type="selectionEntry"/>
     <entryLink id="959c-a0fa-4c8f-abac" name="Sammael in Sableclaw" hidden="false" collective="false" import="true" targetId="7155-e869-e193-7d39" type="selectionEntry"/>
     <entryLink id="8d33-11b7-0f75-d983" name="Sammael on Corvex" hidden="false" collective="false" import="true" targetId="905d-d514-3d6a-8ff1" type="selectionEntry"/>
@@ -1177,9 +1179,9 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="de97-eb8f-895e-ccf9" name="Talonmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="de97-eb8f-895e-ccf9" name="Ravenwing Talonmaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="f217-daea-3e40-3f3d" name="Talonmaster" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="f217-daea-3e40-3f3d" name="Ravenwing Talonmaster" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">16&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -1250,12 +1252,12 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c207-bb2b-3bf3-20ca" name="Azmodai" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c207-bb2b-3bf3-20ca" name="Asmodai" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ce-9f01-ca0c-2ccb" type="max"/>
       </constraints>
       <profiles>
-        <profile id="be57-84e3-6ef6-aa27" name="Azmodai" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+        <profile id="be57-84e3-6ef6-aa27" name="Asmodai" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -1513,6 +1515,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
         <categoryLink id="edfd-b03a-5c94-98e1" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="b89a-516e-80af-0b35" name="Master" hidden="false" targetId="06fe-0fb5-1263-898f" primary="false"/>
         <categoryLink id="f288-5832-09ec-711c" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
+        <categoryLink id="103a-bcde-965c-4028" name="Faction: Deathwing" hidden="false" targetId="d673-6f6d-5df6-035c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="edfa-d994-0c0c-7140" name="Wargear" hidden="false" collective="false" import="true" defaultSelectionEntryId="c75b-4075-d39b-51a1">
