@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e5a-79b4-9478-4a63" name="Chaos - Heretic Astartes" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e5a-79b4-9478-4a63" name="Chaos - Heretic Astartes" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="9ce0-92a4-75e9-c09f" name="Faction: Skulltakers" hidden="false"/>
     <categoryEntry id="77e2-0635-9df5-4f43" name="Zhufor the Impaler" hidden="false"/>
@@ -1787,6 +1787,9 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="a32d-17c9-078a-c703" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e4a2-cc5c-c47c-ca1c" name="Faction: Chaos" hidden="false" targetId="841f-fc30-da92-90cf" primary="false"/>
         <categoryLink id="a5af-7ce2-646a-c0d3" name="Faction: Heretic Astartes" hidden="false" targetId="cecb-fa3c-dd10-54b1" primary="false"/>
@@ -1816,6 +1819,21 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
           </profiles>
           <costs>
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="79d8-329f-1fc1-0215" name="Surgeon Acolyte" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c4-efe8-ecae-3691" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="80a7-361c-4f8e-4757" name="Another Pair of Hands" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When using the Enhanced Warriors Ability, if Fabius Bile is accompanied by a Surgeon Acolyte, you can choose to grant the affected unit Ignore Damage (6+) instead of improving that unit&apos;s Attacks characteristic. The unit can still only be enhanced once per battle, regardless of which enhancement is chosen.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4485,21 +4503,33 @@ characteristic by 1 for the rest of the game. A unit can only be enhanced once p
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a35b-9375-faef-eda9" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="cb10-03ef-d0d8-fd80" name="The Faithless" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d0-a37d-d214-5149" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="63a0-9329-4342-a4d3" name="Skulltakers" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6188-41e1-860e-e352" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9bce-7b4a-ce17-aea9" name="Servants of the Abyss" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="730d-5ea2-27e9-7b2c" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
