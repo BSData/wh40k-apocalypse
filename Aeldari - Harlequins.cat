@@ -100,11 +100,6 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="300c-c302-ab6c-fd9f" name="Shield from Harm" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from wound rolls for attacks that target LIGHT &lt;MASQUE&gt; units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="68c3-aa27-9af2-a573" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -150,6 +145,64 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f231-f5c8-a310-3909" name="Pivotal Role" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9004-8aef-5a91-1eab" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31db-0f60-7aca-352c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5212-ae09-a24a-af5b" name="Veil of Illusion" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="b467-ab4a-2431-003d" name="Veil of Illusion" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Whilst a friendly &lt;MASQUE&gt; unit is within 6&quot; of this model, when determining if that unit is within range of attacks made by enemy models with ranged weapons, add 6&quot; to the distance measured.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d0e8-b6e8-e9f3-b08e" name="Agent of Bedlam" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="246e-d052-9ee9-2459" name="Agent of Bedlam" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Units must re-roll successful hit rolls whilst they are within 6&quot; of any enemy units with this ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4a33-667b-ce81-01e6" name="Gloomwake" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="bee3-1610-6cb7-ab80" name="Gloomwake" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly &lt;MASQUE&gt; units are always obscured targets whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7047-fce6-47cd-25a3" name="Shield from Harm" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f37d-a8a0-0ec1-d9a3" name="Shield from Harm" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from wound rolls for attacks that target LIGHT &lt;MASQUE&gt; units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="650e-4d0c-0a7d-fdb3" name="Flip Belt" hidden="false" collective="false" import="true" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="0238-b91a-72c8-a796" name="Holo-fields" hidden="false" collective="false" import="true" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -359,6 +412,9 @@
               <infoLinks>
                 <infoLink id="fbba-e5c6-7896-36d6" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1c04-60a3-da2a-2c17" name="Harvester of Torment" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -368,6 +424,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f5f7-20cf-713b-2e34" name="The Jest Inescapable" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -377,6 +436,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c9c2-636b-0bcc-74cb" name="Humbling Cruelty" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -386,6 +448,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
