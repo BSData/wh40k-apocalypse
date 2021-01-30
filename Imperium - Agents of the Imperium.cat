@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3ad2-838c-6d14-9609" name="Imperium - Agents of the Imperium" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3ad2-838c-6d14-9609" name="Imperium - Agents of the Imperium" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="89bc-3cf7-adff-c6eb" name="D3 Roll">
       <characteristicTypes>
@@ -54,6 +54,7 @@
     <categoryEntry id="a321-4444-29b5-944e" name="Inquisitor-Lord Solomon Lok" hidden="false"/>
     <categoryEntry id="beac-0e26-bf81-f4f0" name="Inquisition Land Raider Prometheus" hidden="false"/>
     <categoryEntry id="c431-35ab-41a7-7d5a" name="Land Raider" hidden="false"/>
+    <categoryEntry id="01ae-5f71-be28-d294" name="Kyria Draxus" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="5001-ff3f-5528-d39c" name="Prosecutors" hidden="false" collective="false" import="true" type="unit">
@@ -2657,6 +2658,97 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e92-77a0-45a0-3e68" name="Lord Inquisitor Kyria Draxus" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ed-e29b-d7f7-2179" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2219-b5a2-1e18-50b3" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="20b3-645d-ce9b-58e6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a645-d870-4061-bf30" name="Lord Inquisitor Kyria Draxus" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="83a5-c02b-fe6c-b684" name="Paralysis Grenades" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with melee weapons by enemy units that target this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4e24-58d8-7358-c60d" name="Authority of the Inquisition" hidden="false" targetId="78d4-4bb0-a75e-abcd" type="profile"/>
+        <infoLink id="4894-40a2-4e88-d520" name="Unquestionable Wisdom" hidden="false" targetId="9415-e79a-2b3a-07bf" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="477c-8ace-cdd7-07b9" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="9cbe-2c71-8825-a273" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="b769-afb6-8959-d263" name="Faction: Inquisition" hidden="false" targetId="d072-90bf-a1ae-a442" primary="false"/>
+        <categoryLink id="fe05-b4c3-a49b-836a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="c96f-9474-122a-a96c" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="3582-c9ac-a48a-df12" name="Psyker" hidden="false" targetId="4de4-bea8-4f0e-7f9c" primary="false"/>
+        <categoryLink id="a7cc-7c2e-e399-4e69" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="4c36-339b-24f0-b611" name="Inquisitor" hidden="false" targetId="cb72-5831-d7e1-06e5" primary="false"/>
+        <categoryLink id="0a2c-585d-3d48-fe55" name="Faction: Ordo Xenos" hidden="false" targetId="1a3b-b0a4-8312-fa5c" primary="false"/>
+        <categoryLink id="15b7-b9e7-27a2-b707" name="Kyria Draxus" hidden="false" targetId="01ae-5f71-be28-d294" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="de25-4332-3429-3b50" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d78-c31e-5959-782e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b97-57dc-29a7-4f57" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="689f-db9f-748e-442f" name="Power Fist" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="caef-f25c-f123-64f6" name="Dirgesinger" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="163a-79a5-fbd7-71ea" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="77b8-207b-42a0-ed4e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="da1b-48c9-5b4b-bd20" name="Dirgesinger" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="ec4a-5d70-0397-22c5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
