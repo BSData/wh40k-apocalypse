@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a26e-b569-a4ac-ce35" name="Imperium - Adeptus Ministorum" revision="3" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a26e-b569-a4ac-ce35" name="Imperium - Adeptus Ministorum" revision="3" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="571e-a83e-e771-780a" name="Faction: Adeptus Ministorum" hidden="false"/>
     <categoryEntry id="21f5-1b47-2570-42d1" name="Faction: Adepta Sororitas" hidden="false"/>
@@ -36,6 +36,8 @@
     <categoryEntry id="3dd1-7ccf-df45-e908" name="Triumph of Saint Katherine" hidden="false"/>
     <categoryEntry id="ce62-6952-14f9-bbce" name="Zephyrim Squad" hidden="false"/>
     <categoryEntry id="31e9-0c9c-5055-9fed" name="Mortifiers" hidden="false"/>
+    <categoryEntry id="5d69-be94-f29c-88a5" name="Ephrael Stern" hidden="false"/>
+    <categoryEntry id="5189-798a-3989-1d01" name="Kyganil" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="09b2-d0ac-5c76-b710" name="Celestine" hidden="false" collective="false" import="true" type="unit">
@@ -1150,6 +1152,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1612,6 +1617,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1687,6 +1695,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1792,6 +1803,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1849,6 +1863,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8850-8c4e-1da8-561c" name="Mortifiers" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2018,6 +2035,170 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4626-18fc-bc1a-14a6" name="Ephrael Stern and Kyganil of the Bloody Tears" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ef62-b427-a645-9f4a" name="Cast Together by Fate" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Ephrael Stern and Kyganil of the Bloody Tears are treated as separate units that take up 1 HQ slot instead of 2. They must be placed at the same time and within 3&quot; of each other the first time they are set up.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="72b5-b35f-6b4f-31a8" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="8895-5f9e-1454-e826" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1ab6-e375-a36e-e1fa" name="Ephrael Stern" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8391-290a-4604-9184" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c22-4440-844a-8b89" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ea20-615b-78f7-4d33" name="Ephrael Stern" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+                <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2010-7746-5af2-14b3" name="Daemonifuge" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made with this unit&apos;s Daemonifuge whilst it is within 18&quot; of any CHAOS units.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e8af-d609-f6d4-c077" name="Divine Protection" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit frolls for attacks that target Ephrael Stern.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="10c2-c166-d1bf-ac1e" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0a83-5b7c-e3b7-c6bb" name="Faction: Adepta Sororitas" hidden="false" targetId="21f5-1b47-2570-42d1" primary="false"/>
+            <categoryLink id="4430-2bbc-55c9-9a15" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+            <categoryLink id="98f7-7dd7-acfc-be91" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+            <categoryLink id="1173-212d-34c1-52c9" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+            <categoryLink id="da3f-6437-d6ad-faaf" name="Ephrael Stern" hidden="false" targetId="5d69-be94-f29c-88a5" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="1cee-f547-a042-1d68" name="Daemonifuge" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98e4-2526-e3aa-2f8b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfbb-b571-1afb-6821" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f9fa-7052-1190-ddca" name="Daemonifuge" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Witchfire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1adf-2206-7ab6-7684" name="Master-crafted Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6de6-6c85-a8f1-dbdb" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ba9-4b9e-a296-4dc6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="668e-1bd2-39bf-1a9f" name="Master-crafted Weapons" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="2ca6-0138-44cc-b31e" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry id="e216-bce3-58a3-f99a" name="Kyganil" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28d4-9fcc-ab2a-52b5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5361-14bf-e69e-4ec0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e0e9-d9ac-02bb-4ba9" name="Kyganil" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+                <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+                <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+                <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5d46-145c-4184-abbd" name="Mysterious Saviour" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Ephreal Stern has Ignore Damage(6+) whilst they are within 3&quot; of Kyganil.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="57ed-8e3d-ed5a-7bb2" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="04e7-5799-021b-57de" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+            <categoryLink id="ddba-a249-e5d3-079f" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+            <categoryLink id="33e5-6f3d-ebdd-9271" name="Kyganil" hidden="false" targetId="5189-798a-3989-1d01" primary="false"/>
+            <categoryLink id="8ebe-354a-8528-aba1" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+            <categoryLink id="676f-6d60-8c9f-9d60" name="Faction: Aeldari" hidden="false" targetId="ce0a-bb90-8dd4-f52d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="d746-608d-5853-29a2" name="Harlequin&apos;s Kiss and The Outcast&apos;s Blades" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d45-ba7f-ff10-df5f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d40-4b5e-4ea7-4478" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2634-02bd-4bb0-9e29" name="Harlequin&apos;s Kiss and The Outcast&apos;s Blades" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="0b32-9b24-3dd6-0f7c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
