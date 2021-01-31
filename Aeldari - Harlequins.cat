@@ -467,6 +467,13 @@
     <selectionEntry id="71d5-d82a-cd7b-453d" name="Solitaire" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="6230-823d-e0e0-5316" name="Solitaire" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="606d-344a-bc3d-9dce" value="15&quot;">
+              <conditions>
+                <condition field="selections" scope="71d5-d82a-cd7b-453d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b26-67c1-4178-749a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -516,6 +523,55 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a16d-91b9-75b7-c4c1" name="Pivotal Role" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae2f-2ef5-87ea-9053" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3629-8a37-bd6f-5765" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="181a-7790-0cff-ae2c" name="Shocking Emergence" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="177d-315e-dc60-77bc" name="Shocking Emergence" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit arrives as reinforcements, add 1&quot; to its Move characteristic until the end of the turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="9f89-3982-a6af-9255" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5b26-67c1-4178-749a" name="Chromatic Rush" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f79e-4238-5f86-cd0d" name="Chromatic Rush" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1&quot; to this models movement characteristic (already reflected in the profile). In addition when this unit piles in, it can move an additional 3&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="85bb-a7e8-c628-f5d4" name="Unnatural Acrobatics" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1cf2-b889-00f9-70cc" name="Unnatural Acrobatics" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made by enemy units that target this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="27e5-6f5c-8e36-cc7c" name="Flip Belt" hidden="false" collective="false" import="true" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="5ab1-3a02-452f-24cb" name="Holo-fields" hidden="false" collective="false" import="true" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
