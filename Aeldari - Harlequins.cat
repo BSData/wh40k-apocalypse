@@ -39,11 +39,6 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="9304-3d44-6512-e896" name="Choreographer of War" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly &lt;MASQUE&gt; units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="e57a-11bf-4a02-ec03" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -63,6 +58,13 @@
           </constraints>
           <profiles>
             <profile id="1916-259e-3196-d92a" name="Troupe Master Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <modifiers>
+                <modifier type="set" field="74b1-f85d-ede5-c758" value="3+">
+                  <conditions>
+                    <condition field="selections" scope="3c5a-c6d6-3439-148b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5ef-4c7d-1dfc-1802" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
@@ -78,6 +80,52 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2c21-5fc4-3370-9da3" name="Pivotal Role" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd60-b948-bb8f-db36" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5033-260e-7fdb-1d97" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1fe7-f425-91af-d809" name="Darkness&apos; Bite" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="46ce-7513-a728-7ad5" name="Darkness&apos; Bite" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Fight phase, you can select one enemy unit this model made an attack against and place one blast marker next to it.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="8669-242c-6d0e-ba4f" name="Choreographer of War" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="837e-ab4a-4eac-99ff" name="Choreographer of War" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly &lt;MASQUE&gt; units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="f5ef-4c7d-1dfc-1802" name="Twilight&apos;s Grasp" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c3d6-2db8-55bf-3b91" name="Twilight&apos;s Grasp" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time a melee attack is made by this model against a LIGHT unit, a wound roll of of 3+ is always successful (already reflected in the profile).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="46d1-07d2-3da1-970e" name="Prince of Light" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c4c9-8715-0198-d043" name="Prince of Light" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1&quot; to &lt;MASQUE&gt; units&apos; movement characteristic whilst they are within 6&quot; of any friendly units with this ability</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="aaa5-d8cf-3e8b-f9de" name="Flip Belt" hidden="false" collective="false" import="true" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="df07-8903-a3c9-1ada" name="Holo-fields" hidden="false" collective="false" import="true" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
