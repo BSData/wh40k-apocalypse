@@ -33,6 +33,7 @@
     <categoryEntry id="8b02-26d6-52d9-444f" name="Secutarii Hoplites" hidden="false"/>
     <categoryEntry id="3e22-af47-2980-a468" name="Secutarii Peltasts" hidden="false"/>
     <categoryEntry id="69ee-41d4-619a-68c6" name="Serberys Sulphurhounds" hidden="false"/>
+    <categoryEntry id="ea4e-5069-9b84-cc1d" name="Serberys Raiders" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="54b1-381c-630c-0611" name="Serberys Sulphurhounds" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -123,6 +124,108 @@
       <entryLinks>
         <entryLink id="493f-134b-8738-5e52" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
         <entryLink id="3fa6-1ea4-778e-3a9f" name="3-9 models" hidden="false" collective="false" import="true" targetId="9e45-56bc-47c3-d578" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b722-cd80-4a32-fd50" name="Serberys Raiders" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="af0d-dc29-e0e2-fbc0" name="Serberys Raiders" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="b722-cd80-4a32-fd50" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="55d8-dc4c-4046-7336" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="2"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="b722-cd80-4a32-fd50" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a155-e4fa-84c8-9212" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="3"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">5</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6391-99c7-a505-20cd" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="70b3-a879-7e4c-3024" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="67ca-cc1c-7c73-6faa" name="Faction: Forge World" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="7441-1108-9345-8241" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="8179-152d-cb48-0997" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+        <categoryLink id="9eb7-fae3-deb3-d783" name="Faction: Skitarii" hidden="false" targetId="47b6-38f8-7a3a-5ccd" primary="false"/>
+        <categoryLink id="9c30-fae5-ff88-19d7" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="6622-d96e-b18c-e8a3" name="Cavalry" hidden="false" targetId="351c-b6fa-4d4f-70f3" primary="false"/>
+        <categoryLink id="babd-7f4e-e3c0-aa15" name="Serberys Raiders" hidden="false" targetId="ea4e-5069-9b84-cc1d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c2c0-1ce9-0bdf-dd29" name="Clawed Limbs" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c87-8738-3701-b42b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad0a-3107-06e7-7151" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c7de-8538-0c48-ae47" name="Clawed Limbs" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="da43-b2ad-1ab2-7593" name="Galvanic Carbines" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fe1-2a69-140a-4cae" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ddb-2e9c-0e90-5a17" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6b87-b52b-d9a7-2dcd" name="Galvanic Carbines" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5d90-fd43-f18b-edf1" name="Sniper" hidden="false" targetId="d452-1a22-2e0c-7a9e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="fa0f-656e-72d9-9a3f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="362d-ea1d-445e-151b" name="3-9 models" hidden="false" collective="false" import="true" targetId="9e45-56bc-47c3-d578" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
@@ -3083,6 +3186,11 @@
       <entryLinks>
         <entryLink id="4a5d-42ca-91f4-8b2f" name="3 Models" hidden="false" collective="false" import="true" targetId="9188-e990-df5e-cdb7" type="selectionEntry">
           <modifiers>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="2.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea4e-5069-9b84-cc1d" type="instanceOf"/>
+              </conditions>
+            </modifier>
             <modifier type="set" field="1466-da3f-0d27-dace" value="3.0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69ee-41d4-619a-68c6" type="instanceOf"/>
@@ -3097,6 +3205,11 @@
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69ee-41d4-619a-68c6" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="4.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea4e-5069-9b84-cc1d" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="ed36-b5c2-3c29-3cfa" name="9 Models" hidden="false" collective="false" import="true" targetId="a155-e4fa-84c8-9212" type="selectionEntry">
@@ -3104,6 +3217,11 @@
             <modifier type="set" field="1466-da3f-0d27-dace" value="9.0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69ee-41d4-619a-68c6" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="1466-da3f-0d27-dace" value="6.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea4e-5069-9b84-cc1d" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
