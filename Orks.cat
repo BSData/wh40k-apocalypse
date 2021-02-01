@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="18e4-faec-a65f-58d0" name="Orks" revision="9" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="18e4-faec-a65f-58d0" name="Orks" revision="9" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0a10-9bdd-9094-8fd9" name="Zhadsnark Da Ripper" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="a7b6-c22d-eef2-aa0c" name="Weirdboy" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -89,7 +89,82 @@
     <categoryEntry id="b0f0-a51b-db62-c355" name="Fighta-Bommer" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="8ce6-ca21-09cd-0717" name="Dethrolla Battle Fortress" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="e28d-eb85-1284-8f77" name="Nob" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="a915-812d-32d4-da1f" name="Makari" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="7d3b-fb30-dffb-626d" name="Makari" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dd4e-fc91-f868-d6be" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2a3d-9b3d-d8e3-b9bc" name="Makari" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">4</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="654f-7e49-7daf-9e38" name="Accidental Figurehead" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly GOFF GRETCHIN units can use this model&apos;s Leadership instead of their own whilst they are within 12&quot; of this model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fdf7-ed14-8d54-c786" name="Ghazghkull&apos;s Waaagh! Banner" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly GOFF ORK units have the Ignore Damage (6+) ability whilst they are within 6&quot; of this unit and this unit is within 3&quot; of a friendly GHAZGHKULL THRAKA unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f2be-e05c-cacb-fd76" name="Keep Up!" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit starts a Move action within 3&quot; of a friendly GHAZGHKULL THRAKA unit, add 2&quot; to this unit’s Move characteristic whilst making that Move action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4354-e05c-74fb-f105" name="Faction: Orks" hidden="false" targetId="6e8c-3054-cdbb-4a5a" primary="false"/>
+        <categoryLink id="34c9-131d-bbac-118f" name="Faction: Goff" hidden="false" targetId="1a8c-71a8-0fdb-4340" primary="false"/>
+        <categoryLink id="da5e-a86a-9710-38f7" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="037b-69f6-c004-a9a7" name="Gretchin" hidden="false" targetId="0efd-2ad9-5d32-cce7" primary="false"/>
+        <categoryLink id="ee89-6c6e-b9b8-c405" name="Makari" hidden="false" targetId="a915-812d-32d4-da1f" primary="false"/>
+        <categoryLink id="c2fe-8190-3703-e050" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="f683-7ad6-5eae-7c8a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="cb24-03f8-1b69-e21d" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9f65-47a4-2578-1f60" name="Makari&apos;s Stabba" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4b7-2107-064c-2dd6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e637-219e-885f-63aa" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7c23-0333-4e64-ef8a" name="Makari&apos;s Stabba" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">11+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="bf29-c013-3f2b-7bf8" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="36c1-103d-08f9-a9e1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="150c-e999-ed4d-bf0d" name="Boyz" hidden="false" collective="false" import="true" targetId="81d3-773f-91dd-db15" type="selectionEntry">
       <categoryLinks>
@@ -2473,6 +2548,9 @@
           <infoLinks>
             <infoLink id="8e6d-f908-edc6-1acb" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="fb93-66cb-035c-f8f9" name="Mega Klaw" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2494,6 +2572,9 @@
           <infoLinks>
             <infoLink id="2091-f068-4204-7b06" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
