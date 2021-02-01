@@ -38,6 +38,7 @@
     <categoryEntry id="950a-a53f-99f8-b8d1" name="Pteraxii Skystalkers" hidden="false"/>
     <categoryEntry id="ec49-739e-4d19-5ede" name="Archaeopter" hidden="false"/>
     <categoryEntry id="2ebe-2ec8-671f-8812" name="Archaeopter Transvector" hidden="false"/>
+    <categoryEntry id="1952-0b2e-7ea8-8762" name="Archaeopter Stratoraptor" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="54b1-381c-630c-0611" name="Serberys Sulphurhounds" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -489,6 +490,61 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="340c-3d19-72c6-c837" name="Archaeopter Stratoraptor" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6462-5bbe-c2a8-26c6" name="Archaeopter" hidden="false" targetId="ad2d-20e4-1ec8-dc2b" type="profile"/>
+        <infoLink id="546d-21b5-2e42-97df" name="Command Uplink" hidden="false" targetId="baaa-3c17-0051-466d" type="profile"/>
+        <infoLink id="6ff9-c5d3-d80d-e99d" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+        <infoLink id="8bb5-7cdc-ab35-751d" name="Hover Jet" hidden="false" targetId="607c-6a91-8443-f291" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a4cb-721f-cfee-0efa" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="22a4-2f2c-fc09-7db6" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="7907-0f72-fc4b-908f" name="Faction: Forge World" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="ba22-bbd9-ca09-e372" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="693f-f881-5715-03d9" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="015d-45a9-43be-71f5" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="01c3-b6b7-a26f-8273" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="7a99-bea8-68b0-21d4" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="1372-e1ad-5273-36e2" name="Archaeopter" hidden="false" targetId="ec49-739e-4d19-5ede" primary="false"/>
+        <categoryLink id="4918-640d-a3c0-3bc5" name="Archaeopter Stratoraptor" hidden="false" targetId="1952-0b2e-7ea8-8762" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="565f-7d08-5621-19a0" name="Twin Cognis Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce35-2a11-a248-319d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="199a-7d6c-ea6c-1ce9" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4af4-c8b7-9881-eab7" name="Twin Cognis Lascannon" hidden="false" targetId="e511-6e1b-d720-6d02" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="8f78-4036-8b6f-5b85" name="Cognis Heavy Stubbers" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d7d-1008-0f56-fd08" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a9f-2bb8-367b-ea7d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="40ee-91f9-f4f4-a2f8" name="Cognis Heavy Stubber" hidden="false" targetId="ebd8-a1b9-ead4-9fe7" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="b0db-8281-7fb5-de4e" name="Heavy Phosphor Blasters" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6027-0df6-9616-c09e" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5f7-f9d8-8bdd-f8e6" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="dff3-5779-ecf7-56a9" name="Heavy Phosphor Blaster" hidden="false" targetId="bb01-28d7-4a5f-a35c" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c520-e6d5-2e5f-81d8" name="Armoured Bulk" hidden="false" collective="false" import="true" targetId="2ab7-fc09-bf28-a68e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -3575,6 +3631,16 @@
     <profile id="607c-6a91-8443-f291" name="Hover Jet" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Action phase, you can declare that this unit will hover. If it does, then until the end of the phase, its Move characteristic changes to 20&quot; but it loses the Supersonic ability.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e511-6e1b-d720-6d02" name="Twin Cognis Lascannon" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+        <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+        <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">10+</characteristic>
+        <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+        <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
