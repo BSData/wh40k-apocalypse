@@ -39,6 +39,7 @@
     <categoryEntry id="ec49-739e-4d19-5ede" name="Archaeopter" hidden="false"/>
     <categoryEntry id="2ebe-2ec8-671f-8812" name="Archaeopter Transvector" hidden="false"/>
     <categoryEntry id="1952-0b2e-7ea8-8762" name="Archaeopter Stratoraptor" hidden="false"/>
+    <categoryEntry id="22d6-4304-353b-37b0" name="Archaeopter Fusilave" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="54b1-381c-630c-0611" name="Serberys Sulphurhounds" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -545,6 +546,50 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e13e-fc8f-2471-59a8" name="Archaeopter Fusilave" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a329-6004-6acf-eb97" name="Bomb Rack" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After this unit makes a Move action, select one enemy unit it passed within 1&quot; of during that Move action. Roll two D6; for each 3+ place one blast marker next to that unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="125f-859e-b264-dae4" name="Archaeopter" hidden="false" targetId="ad2d-20e4-1ec8-dc2b" type="profile"/>
+        <infoLink id="2dab-108b-13ee-8c29" name="Command Uplink" hidden="false" targetId="baaa-3c17-0051-466d" type="profile"/>
+        <infoLink id="e75e-7eb4-2f7f-012f" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+        <infoLink id="2ee3-05bf-68a3-0912" name="Hover Jet" hidden="false" targetId="607c-6a91-8443-f291" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="47c2-3a80-9fc7-9378" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="4746-1e5f-39cd-cc93" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="d665-a128-591e-9bca" name="Faction: Forge World" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="eefe-ebb7-82d9-404a" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="6ca9-5b4b-5728-7efd" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="74c6-21a4-8ec3-57fa" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="84e6-0fa1-d0c6-0d1e" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="0b2a-b751-162f-123e" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="c6f6-231c-9300-577b" name="Archaeopter" hidden="false" targetId="ec49-739e-4d19-5ede" primary="false"/>
+        <categoryLink id="86cc-39a7-d30f-cc81" name="Archaeopter Fusilave" hidden="false" targetId="22d6-4304-353b-37b0" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a9b9-6ff5-2454-47fd" name="Cognis Heavy Stubbers" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0442-6a57-68bd-bd37" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b276-4b5e-d255-243c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e1c5-917a-cb55-432f" name="Cognis Heavy Stubber" hidden="false" targetId="ebd8-a1b9-ead4-9fe7" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="84fc-66cb-210b-1a8c" name="Armoured Bulk" hidden="false" collective="false" import="true" targetId="2ab7-fc09-bf28-a68e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
