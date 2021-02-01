@@ -36,6 +36,8 @@
     <categoryEntry id="ea4e-5069-9b84-cc1d" name="Serberys Raiders" hidden="false"/>
     <categoryEntry id="90e3-39b2-e074-ad08" name="Pteraxii Sterylizors" hidden="false"/>
     <categoryEntry id="950a-a53f-99f8-b8d1" name="Pteraxii Skystalkers" hidden="false"/>
+    <categoryEntry id="ec49-739e-4d19-5ede" name="Archaeopter" hidden="false"/>
+    <categoryEntry id="2ebe-2ec8-671f-8812" name="Archaeopter Transvector" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="54b1-381c-630c-0611" name="Serberys Sulphurhounds" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
@@ -428,6 +430,65 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a23-7dea-afae-89f0" name="Archaeopter Transvector" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9c4c-d68a-9042-0955" name="Transport" hidden="false" typeId="5dca-db35-b3d1-ce65" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="6948-e9fe-7eb0-b8be">This unit can transport 6 SECUTARII, &lt;FORGE WORLD&gt; ELECTRO-PRIESTS,   &lt;FORGE WORLD&gt; TECH-PRIESTS, or  SECUTARII INFANTRY models. It cannot transport Belisarius Cawl.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9e32-8ae3-3610-0453" name="Archaeopter" hidden="false" targetId="ad2d-20e4-1ec8-dc2b" type="profile"/>
+        <infoLink id="1e71-9057-96a5-31a0" name="Command Uplink" hidden="false" targetId="baaa-3c17-0051-466d" type="profile"/>
+        <infoLink id="7e73-464c-8571-2392" name="Supersonic" hidden="false" targetId="a828-c8a3-c4ed-f34b" type="profile"/>
+        <infoLink id="47cb-463a-02c6-bdec" name="Hover Jet" hidden="false" targetId="607c-6a91-8443-f291" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7379-b92d-9313-ebbe" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="547d-f596-103b-45c4" name="Faction: Adeptus Mechanicus" hidden="false" targetId="9542-47d3-14fe-04e0" primary="false"/>
+        <categoryLink id="46aa-52e7-a7ee-6f45" name="Faction: Forge World" hidden="false" targetId="bbd2-1e01-a32a-3e5d" primary="false"/>
+        <categoryLink id="b43b-2cc5-8c63-c5a5" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="b6b4-6722-829c-309f" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="1c59-1a1e-fad4-c8f7" name="Aircraft" hidden="false" targetId="bad3-1204-2d12-3c3d" primary="false"/>
+        <categoryLink id="86e8-d49b-7707-af69" name="Transport" hidden="false" targetId="6f18-a45e-43de-b8b8" primary="false"/>
+        <categoryLink id="6093-630d-465a-b8e5" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="926d-c0b9-9828-67b5" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="true"/>
+        <categoryLink id="8f27-17b5-56cb-66e2" name="Archaeopter" hidden="false" targetId="ec49-739e-4d19-5ede" primary="false"/>
+        <categoryLink id="62a1-cbd1-77bd-7467" name="Archaeopter Transvector" hidden="false" targetId="2ebe-2ec8-671f-8812" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b701-3408-e1bd-12b1" name="Twin Cognis Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a5d-9afc-3b1c-9f8e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a123-5589-92d6-7010" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4d8a-ffde-8a75-4799" name="Cognis Heavy Stubber" hidden="false" targetId="ebd8-a1b9-ead4-9fe7" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Twin Cognis Heavy Stubber"/>
+                <modifier type="set" field="2883-af07-d4e8-d8d0" value="2"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="5c64-2b4f-9c81-3b4a" name="Cognis Heavy Stubbers" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abca-792f-b8db-a568" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e42-2628-da30-af61" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="aa60-77c9-e6c1-e635" name="Cognis Heavy Stubber" hidden="false" targetId="ebd8-a1b9-ead4-9fe7" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="4550-1a43-856b-b806" name="Armoured Bulk" hidden="false" collective="false" import="true" targetId="2ab7-fc09-bf28-a68e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -3493,6 +3554,27 @@
     <profile id="a0ed-662e-c4ce-aa07" name="Soar Away" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Move action, it can Soar Away instead of moving. If it does, it is removed from the battlefield and placed into Tactical Reserves. When this unit arrives as reinforcements, set it up anywhere on the battlefield that is more than 9&quot; away from any enemy units. A unit cannot Soar Away if it was set up on the battlefield this turn, if there are any enemy units in base contact with it, or if there are any blast markers next to it.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ad2d-20e4-1ec8-dc2b" name="Archaeopter" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+      <characteristics>
+        <characteristic name="M" typeId="606d-344a-bc3d-9dce">20-50&quot;</characteristic>
+        <characteristic name="WS" typeId="e2a3-fade-c12d-860b">5+</characteristic>
+        <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+        <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+        <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+        <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+        <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="baaa-3c17-0051-466d" name="Command Uplink" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly &lt;FORGE WORLD&gt; units can use this model&apos;s Leadership instead of their own whilst they are within 6&quot; of this model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="607c-6a91-8443-f291" name="Hover Jet" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the start of the Action phase, you can declare that this unit will hover. If it does, then until the end of the phase, its Move characteristic changes to 20&quot; but it loses the Supersonic ability.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
