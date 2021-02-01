@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="faa2-6155-22f4-8288" name="Warhammer 40,000: Fundapocalypse" revision="7" battleScribeVersion="2.03" authorName="Fundamalleus" authorContact="" authorUrl="fundamalleus.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="faa2-6155-22f4-8288" name="Warhammer 40,000: Fundapocalypse" revision="8" battleScribeVersion="2.03" authorName="Fundamalleus" authorContact="" authorUrl="fundamalleus.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Custom extension for Apocalypse to add profiles for new units</readme>
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse"/>
