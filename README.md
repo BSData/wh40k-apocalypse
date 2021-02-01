@@ -21,11 +21,18 @@ Warhammer 40,000 Fundapocalypse
 
 __What's this?__
 
-Fundamalleus Organization created this project. It's a GitHub repository of datafiles. It extends [Warhammer 40,000 Apocalypse](https://github.com/BSData/wh40k-apocalypse) and adds missing datasheets from recent releases
+Fundamalleus Organization created this project. It's a GitHub repository of datafiles. It extends [Warhammer 40,000 Apocalypse](https://github.com/BSData/wh40k-apocalypse) and adds missing datasheets and rules from recent releases
 
 __Okay, nice project. Is it actually working?__ _I just want those files..._
 
-Not Yet! We are working on getting it hosted.
+Yes! For now we are hosting it ourselves. You will need to add the data source directly.
+
+Data Url:
+https://www.fundamalleus.com/assets/battlescribe-data/index.bsi
+
+On PC you go Manage Data (three rectangles) -> Import Data -> Import Data from URL -> use our data URL.
+
+On Mobile go Manage Data (three rectangles) -> 3 dots -> Add data index url -> use our data URL.
 
 Hopefully, we will eventually have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
 
@@ -40,13 +47,15 @@ Great, thank you! Now, you have some options:
 ## Links ##
 [Links]: #links
 
+* [Project wiki][]
 * [BattleScribe homepage][]
 * [BattleScribe Data on Appspot][]
-* [Getting Started wiki][]
+<!-- * [Getting Started wiki][] -->
 
 [Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/TemplateDataRepo
 [Open Issue directly]: https://github.com/normanthesquid/wh40k-fundapocalypse/issues
 [BattleScribe homepage]: http://www.battlescribe.net/
 [BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
+[Project wiki]: https://github.com/normanthesquid/wh40k-fundapocalypse/wiki
 <!-- [Getting Started wiki]: https://github.com/BSData/catalogue-development/wiki/Getting-Started#contributing -->
 
