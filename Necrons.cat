@@ -904,6 +904,18 @@
       </constraints>
       <profiles>
         <profile id="d2ec-c626-3c60-4667" name="Illuminor Szeras" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="8908-d04e-955f-7e3c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60c3-1299-a49c-97d1" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ddfe-6a9e-32c1-a51c" value="3"/>
+                <modifier type="set" field="7c7f-f763-1f39-410c" value="2"/>
+                <modifier type="set" field="606d-344a-bc3d-9dce" value="8&quot;"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
@@ -951,13 +963,68 @@
         <categoryLink id="1f2d-bdb2-406c-b39f" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="2cf3-7885-6d64-1b0e" name="Illuminor Szeras" hidden="false" targetId="3a18-54b2-1d5f-8477" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="0df0-a340-420a-2666" name="Eldritch Lance" hidden="false" collective="false" import="true" targetId="4d8a-6d7f-9cae-2d32" type="selectionEntry">
+      <selectionEntries>
+        <selectionEntry id="60c3-1299-a49c-97d1" name="Reborn" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="406d-a267-9d1f-da62" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5acd-9b6e-5e94-1383" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f66-06d6-56c6-b3d9" type="max"/>
           </constraints>
-        </entryLink>
+          <profiles>
+            <profile id="bea1-7f3f-c4b7-930d" name="Empyric Overcharger" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After this unit makes a Move action, select one enemy PSYKER unit within 12&quot; of it and roll one D12; on a 9+ place one blast marker next to that unit.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="8c54-7c57-3bae-4dae" name="Atomic Energy Manipulator" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this model destroys one of more enemy models with a Melee attack, then at the end of the Fight action it can use it&apos;s Mechanical Augmentation ability as if it was the end of it&apos;s Move action.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dbd6-3048-143a-9afc" name="Eldritch Lance" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b69-9e63-19d8-485d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abfa-4504-93df-eabe" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="a0dd-b009-0fa5-f5da" name="Eldritch Lance (Melee)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="8908-d04e-955f-7e3c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="60c3-1299-a49c-97d1" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="74b1-f85d-ede5-c758" value="7+"/>
+                    <modifier type="set" field="4b6c-996a-d317-affb" value="9+"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2766-83c8-c419-9458" name="Eldritch Lance (Ranged)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">9+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
         <entryLink id="9409-1292-c4ea-22d5" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
