@@ -67,6 +67,9 @@
     <categoryEntry id="edfd-eedc-54cd-8d91" name="Power Crucible" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="69b2-e3d0-22f6-2003" name="Gun Emplacement" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="05b1-cdb2-912c-8736" name="Royal Warden" hidden="false"/>
+    <categoryEntry id="ab74-9945-4041-73d8" name="Destroyer Cult" hidden="false"/>
+    <categoryEntry id="c567-c336-9fe6-eaf3" name="Skorpekh Lord" hidden="false"/>
+    <categoryEntry id="15e1-9323-4598-fd90" name="Lokhust Lord" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -315,6 +318,16 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="728d-a7c4-8690-40d0" name="Royal Warden" hidden="false" collective="false" import="true" targetId="a212-8f25-bad9-7293" type="selectionEntry"/>
+    <entryLink id="fa80-899a-f5e3-7128" name="Skorpekh Lord" hidden="false" collective="false" import="true" targetId="299a-25e4-9e92-e671" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="bdcb-1c07-f307-a3eb" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bbfe-2f72-60f6-8075" name="Lokhust Lord" hidden="false" collective="false" import="true" targetId="6a1b-d5f2-89e0-b3b8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e9c0-114b-4442-6989" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="52ca-2535-b12b-af38" name="Living Metal" publicationId="8df9-0b3e-abea-3c15" hidden="false">
@@ -1301,7 +1314,7 @@
         </profile>
         <profile id="56f7-05a6-7f89-c9f2" name="United in Hatred" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly &lt;DYNASTY&gt; DESTROYER and &lt;DYNASTY&gt; HEAVY DESTROYER units whilst they are within 6&quot; of this unit.</characteristic>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly &lt;DYNASTY&gt; DESTROYER CULT units whilst they are within 6&quot; of this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1316,6 +1329,7 @@
         <categoryLink id="3f7f-09e5-4177-6863" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="e581-74c9-cc29-ad74" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="f4a1-9084-596f-ca37" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="281c-57bd-b47f-f342" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="358b-9caf-af67-0d66" name="Lord&apos;s Weapons" hidden="false" collective="false" import="true" targetId="d840-6683-08c5-6793" type="selectionEntry">
@@ -3251,6 +3265,7 @@
         <categoryLink id="3d4d-2eb4-f139-70ba" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
         <categoryLink id="f2a3-92b6-3cce-fdc4" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="fc7e-5ea5-7621-4281" name="Destoyers" hidden="false" targetId="7433-ff15-0db1-5680" primary="false"/>
+        <categoryLink id="bcbb-1ae8-9f1d-3f54" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a8c8-4677-0200-9081" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="0ddf-2ba2-f179-0570">
@@ -5237,6 +5252,97 @@ units with this ability, add 1&quot; to that unit’s Move characteristic for th
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="299a-25e4-9e92-e671" name="Skorpekh Lord" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9bee-f161-32c1-6364" name="Skorpekh Lord" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="66f3-bd55-98be-ab85" name="United in Hatred" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly &lt;DYNASTY&gt; DESTROYER CULT units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="543b-6f7d-8626-ae11" name="Hardwired Hatred" hidden="false" targetId="1678-e6b6-2b2c-fc79" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8406-5073-30f6-5f89" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="1fa0-cea1-eeb2-e78d" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="e799-b987-a420-395e" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="34c3-2b7f-286d-de59" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="7f97-da2a-bf07-5dcd" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="17f4-e642-4988-7f1a" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
+        <categoryLink id="8036-7107-5bb6-d919" name="Skorpekh Lord" hidden="false" targetId="c567-c336-9fe6-eaf3" primary="false"/>
+        <categoryLink id="f629-c69f-17fd-978d" name="Destroyer Lord" hidden="false" targetId="c98a-cdfc-9be9-7759" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1b3d-381a-fed4-6384" name="Lord&apos;s Weapons" hidden="false" collective="false" import="true" targetId="d840-6683-08c5-6793" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8dc-64f4-2dbd-c8f5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f2-e354-cce6-068f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7a8d-4539-7693-c59a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a1b-d5f2-89e0-b3b8" name="Lokhust Lord" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="08c6-ff22-c885-4c2e" name="Destroyer Lord" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aab5-2b96-80b2-e1ba" name="United in Hatred" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls of 1 for attacks made by friendly &lt;DYNASTY&gt; DESTROYER CULT units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f281-34cf-2376-4460" name="Hardwired Hatred" hidden="false" targetId="1678-e6b6-2b2c-fc79" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f251-61d9-6daa-79bc" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="22d9-8235-21b6-f02e" name="Destroyer Lord" hidden="false" targetId="c98a-cdfc-9be9-7759" primary="false"/>
+        <categoryLink id="18eb-8a12-fc1d-0bd3" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="b1b5-59c0-c82d-cbaf" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="32be-c2f5-32da-5d22" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="7bd5-8ac3-d7d4-b125" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="6caf-2d28-0058-2b39" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="c251-c182-f2a5-b0b5" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
+        <categoryLink id="a598-6d6a-99b0-94e7" name="Lokhust Lord" hidden="false" targetId="15e1-9323-4598-fd90" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1f9e-2bea-647d-214a" name="Lord&apos;s Weapons" hidden="false" collective="false" import="true" targetId="d840-6683-08c5-6793" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94b6-08a5-58b1-4296" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0f4-9b35-305f-9997" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="66b7-cbdb-2151-8132" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
