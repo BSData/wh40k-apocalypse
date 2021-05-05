@@ -70,6 +70,10 @@
     <categoryEntry id="ab74-9945-4041-73d8" name="Destroyer Cult" hidden="false"/>
     <categoryEntry id="c567-c336-9fe6-eaf3" name="Skorpekh Lord" hidden="false"/>
     <categoryEntry id="15e1-9323-4598-fd90" name="Lokhust Lord" hidden="false"/>
+    <categoryEntry id="d120-c399-6414-41c1" name="Technomancer" hidden="false"/>
+    <categoryEntry id="a43b-2305-1c5b-0b75" name="Chronomancer" hidden="false"/>
+    <categoryEntry id="966e-c18f-b4f2-bf60" name="Psychomancer" hidden="false"/>
+    <categoryEntry id="9330-21e6-6796-30da" name="Plasmancer" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -326,6 +330,26 @@
     <entryLink id="bbfe-2f72-60f6-8075" name="Lokhust Lord" hidden="false" collective="false" import="true" targetId="6a1b-d5f2-89e0-b3b8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e9c0-114b-4442-6989" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="17a0-b06f-3460-a6c5" name="Technomancer" hidden="false" collective="false" import="true" targetId="1786-8f40-6d4d-073e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1668-87de-1f53-5e9b" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d658-0040-163a-5f7b" name="Chronomancer" hidden="false" collective="false" import="true" targetId="b7e3-44f9-5a29-f14e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0ac9-0afe-aff8-75d5" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="79b1-2d27-9883-e644" name="Psychomancer" hidden="false" collective="false" import="true" targetId="46dc-04f7-90e6-42e7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5720-c4a7-6455-e731" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0604-54c1-b708-2d24" name="Plasmancer" hidden="false" collective="false" import="true" targetId="fbb7-7fdc-49fd-e1ec" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="569e-bbad-d7f9-5fe1" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5343,6 +5367,223 @@ units with this ability, add 1&quot; to that unit’s Move characteristic for th
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1786-8f40-6d4d-073e" name="Technomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="3e11-80e7-7eb3-a130" name="Technomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="606d-344a-bc3d-9dce" value="10&quot;">
+              <conditions>
+                <condition field="selections" scope="1786-8f40-6d4d-073e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2429-ca61-abb5-9b07" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6df8-5e37-b95f-a96a" name="Rites of Reanimation" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly &lt;DYNASTY&gt; units have the Ignore Damage (6+) ability whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f7d3-fb9c-237b-8bb9" name="Cryptek" hidden="false" targetId="d30e-201a-1b4d-d381" primary="false"/>
+        <categoryLink id="d6ca-023c-c2c3-85ed" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="a2bf-0f5d-6648-565f" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="6265-a4b1-b750-3618" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="173d-42cf-c0b2-c4fe" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="311d-a4f2-5a9d-e8cf" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="39ad-df59-b39c-5f37" name="Technomancer" hidden="false" targetId="d120-c399-6414-41c1" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="00ad-51fd-e92d-2532" name="Wargear" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0277-be9a-9f31-9079" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d2-c0de-4052-cc1c" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2429-ca61-abb5-9b07" name="Canoptek Cloak" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="214d-6e30-c4ac-8599" name="Canoptek Cloak" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">The bearer has a move characteristic of 10&quot; and the FLY keyword (already reflected in profile).
+In addition, at the end of the Action phase, this unit can repair one friendly &lt;Dynasty&gt; unit in base contact with it. Remove one damage marker from that unit. Only one attempt to repair each unit can be made each turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="dc6e-27cf-d28d-88ef" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f18b-89d4-14e5-ae29" name="Canoptek Control Node" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="32b4-a151-1388-610f" name="Canoptek Control Node" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made by friendly &lt;DYNASTY&gt; CANOPTEK units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7b0c-583a-e695-4742" name="Staff of Light" hidden="false" collective="false" import="true" targetId="8341-b494-ff4a-5fab" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6cc-c9e9-4e46-ddf0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc63-dbd3-200f-2566" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f91d-62b8-a5a9-bcc2" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b7e3-44f9-5a29-f14e" name="Chronomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="a929-9fec-a322-9fd2" name="Chronomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">7+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b2e3-30c9-60e0-71ef" name="Chronometron" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll saving throws of 1 for friendly &lt;DYNASTY&gt; INFANTRY units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b3cd-e05e-ff44-6353" name="Cryptek" hidden="false" targetId="d30e-201a-1b4d-d381" primary="false"/>
+        <categoryLink id="603a-6a00-aafb-e109" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="ce21-e486-9795-ef2d" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="85ed-a08a-1a74-9eb0" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="1868-06f5-8e22-322c" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="9f9d-e370-d577-7287" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="d261-c13a-384b-1b4a" name="Chronomancer" hidden="false" targetId="a43b-2305-1c5b-0b75" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1cde-e302-9a17-53bd" name="Staff of Light" hidden="false" collective="false" import="true" targetId="8341-b494-ff4a-5fab" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2327-d640-c38f-8d31" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76bc-7dba-4936-c251" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8e35-1c9f-8e6e-515a" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="46dc-04f7-90e6-42e7" name="Psychomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2bca-4af5-ad61-91eb" name="Psychomancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="32a6-2201-2c57-7d70" name="Harbinger of Despair" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made by enemy units whilst they are within 6&quot; of this unit.
+Subtract 1&quot; from the movement characteristic of enemy units that start a move action within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9179-6aaf-bf01-f8f2" name="Nightmare Shroud" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from the leadership characterstic of enemy units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e55f-ad01-32d9-4c7f" name="Cryptek" hidden="false" targetId="d30e-201a-1b4d-d381" primary="false"/>
+        <categoryLink id="03b0-8864-2859-f197" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="f937-0934-d842-065b" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="e101-22c4-a29f-11ee" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="0e9c-7df2-1e83-efb5" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="f2be-d9f5-fe22-94bb" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="647d-b1aa-89ee-f5a2" name="Psychomancer" hidden="false" targetId="966e-c18f-b4f2-bf60" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e8d5-957a-6d59-8573" name="Staff of Light" hidden="false" collective="false" import="true" targetId="8341-b494-ff4a-5fab" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ee5-2aac-ba46-256d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd38-4836-7b05-20a6" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="594c-5744-9791-0b6c" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbb7-7fdc-49fd-e1ec" name="Plasmancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cb1b-e4a0-864e-0960" name="Plasmancer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d6a-141f-6fd6-cc92" name="Harbinger of Destruction" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After this unit makes a Move action, if this unit did not Fall Back, roll three D6s: for each 4+, place a blast marker next to nearest enemy unit within 24&quot; and visible to this model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d202-3af0-6745-c2b5" name="Living Lightning" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After this unit makes a Move action, roll one D6 for each enemy unit within 6&quot; of this model: on a 4+, place a blast marker next to the unit being rolled for.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="79aa-95ed-e655-234d" name="Cryptek" hidden="false" targetId="d30e-201a-1b4d-d381" primary="false"/>
+        <categoryLink id="9e48-9ce7-cfea-3ae8" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="18e2-be25-02bc-4e30" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="2a19-ff19-b6c7-b512" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="df92-7787-501b-8465" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="54dc-61a7-662f-3a77" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4b08-5660-2b2c-903e" name="Plasmancer" hidden="false" targetId="9330-21e6-6796-30da" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3061-4e04-fb6c-7634" name="Staff of Light" hidden="false" collective="false" import="true" targetId="8341-b494-ff4a-5fab" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d544-8b2b-259d-3f8b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42db-3c04-c8f2-6e4e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="99f0-b568-6b77-0b26" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
