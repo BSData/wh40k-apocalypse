@@ -76,6 +76,8 @@
     <categoryEntry id="9330-21e6-6796-30da" name="Plasmancer" hidden="false"/>
     <categoryEntry id="3699-13f9-799e-7279" name="Canoptek" hidden="false"/>
     <categoryEntry id="bbd9-d0f0-e6e4-86d9" name="Canoptek Reanimator" hidden="false"/>
+    <categoryEntry id="92a6-b61f-d0bf-f31b" name="Hyperspace Hunter" hidden="false"/>
+    <categoryEntry id="6cf7-e1aa-cb2b-bec6" name="Hexmark Destroyer" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -357,6 +359,11 @@
     <entryLink id="022a-909d-5652-2159" name="Canoptek Reanimator" hidden="false" collective="false" import="true" targetId="a078-6f67-b134-0983" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ea62-aa52-0c02-e032" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2b4b-e79a-1cd2-a9b0" name="Hexmark Destroyer" hidden="false" collective="false" import="true" targetId="8dfc-7e9c-d169-e8ed" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="52d4-a78c-7e25-8826" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5661,6 +5668,80 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8dfc-7e9c-d169-e8ed" name="Hexmark Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="5f68-8135-04ac-3a30" name="Hexmark Destroyer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2005-8bb8-2e64-1ef8" name="Inescapable Threat" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You may ignore all hit roll and Ballistic Skill modifers for attacks made by this unit, and the target does not receive the benefits of cover against that attack. In addition, this model may still make a Shoot action if enemy units are in base contact with them, and it may shoot at units that are in base contact with this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8706-6bd9-a274-670b" name="Multi-Threat Eliminator" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit makes a Shoot action, it may target, and resolve attacks against, every eligible enemy LIGHT unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ede8-7e32-23a6-e7aa" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="4cd7-0156-211c-3460" name="Hardwired Hatred" hidden="false" targetId="1678-e6b6-2b2c-fc79" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="83b7-36db-18d2-7e08" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="7515-3842-71ce-3a86" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="cd55-b410-5691-73be" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="6d26-4f5c-da63-5210" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="bb40-33e3-5c22-c5ad" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="3f43-989d-5de9-554d" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
+        <categoryLink id="1213-6d52-5436-81c5" name="Hexmark Destroyer" hidden="false" targetId="6cf7-e1aa-cb2b-bec6" primary="false"/>
+        <categoryLink id="9c34-5ee8-f091-ac22" name="Hyperspace Hunter" hidden="false" targetId="92a6-b61f-d0bf-f31b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="26df-722f-75ae-bcb0" name="Enmitic Disintegrator Pistols" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71f8-f0da-3064-6c0c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bdd-d1ac-7547-c3bd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8204-53b1-8776-e953" name="Enmitic Disintegrator Pistols" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="fcf4-4ddf-d7a4-671f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="cc64-4b30-7e3d-5a1c" name="Close Combat Weapons (Personnel)" hidden="false" collective="false" import="true" targetId="c664-08fe-61e9-52d1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9272-7e83-566d-81ca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ca-6877-9e95-a5ae" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
