@@ -74,6 +74,8 @@
     <categoryEntry id="a43b-2305-1c5b-0b75" name="Chronomancer" hidden="false"/>
     <categoryEntry id="966e-c18f-b4f2-bf60" name="Psychomancer" hidden="false"/>
     <categoryEntry id="9330-21e6-6796-30da" name="Plasmancer" hidden="false"/>
+    <categoryEntry id="3699-13f9-799e-7279" name="Canoptek" hidden="false"/>
+    <categoryEntry id="bbd9-d0f0-e6e4-86d9" name="Canoptek Reanimator" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -350,6 +352,11 @@
     <entryLink id="0604-54c1-b708-2d24" name="Plasmancer" hidden="false" collective="false" import="true" targetId="fbb7-7fdc-49fd-e1ec" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="569e-bbad-d7f9-5fe1" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="022a-909d-5652-2159" name="Canoptek Reanimator" hidden="false" collective="false" import="true" targetId="a078-6f67-b134-0983" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ea62-aa52-0c02-e032" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1059,6 +1066,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5435,6 +5445,9 @@ In addition, at the end of the Action phase, this unit can repair one friendly &
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5587,6 +5600,67 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a078-6f67-b134-0983" name="Canoptek Reanimator" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="5836-7752-a414-e590" name="Nanoscarab Reanimation Beam" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">After this unit makes a Move action, you can remove one damage marker from a friendly &lt;DYNASTY&gt; unit within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b84c-3da7-f850-f8c7" name="Canoptek Reanimator" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="37bf-34cb-b120-3673" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="4312-60cb-d5e2-bb22" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="5d17-9d3b-4eac-40c9" name="Faction: Canoptek" hidden="false" targetId="aa05-1a68-784e-1c6e" primary="false"/>
+        <categoryLink id="e385-ef57-ff83-f6a5" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="5f65-dd0e-07f9-87a9" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="d050-b558-01b0-ae7e" name="Canoptek" hidden="false" targetId="3699-13f9-799e-7279" primary="false"/>
+        <categoryLink id="98ae-4023-a3a5-4a16" name="Canoptek Reanimator" hidden="false" targetId="bbd9-d0f0-e6e4-86d9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3b17-966d-7fd6-5292" name="Atomiser Beam" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64ee-1afe-feaa-63bc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e05-b691-f72d-de50" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="120d-3d45-39d8-2625" name="Atomiser Beam" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="455f-5916-544d-4287" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="c869-050f-3641-c98f" name="Automaton Claws" hidden="false" collective="false" import="true" targetId="dd7b-41a9-d13a-fe65" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a094-82d2-aa07-dac5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6750-f2c0-4d00-620f" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
