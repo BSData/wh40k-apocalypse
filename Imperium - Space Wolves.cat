@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="61c5-1517-db5f-03f8" name="Imperium - Space Wolves" revision="7" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="61c5-1517-db5f-03f8" name="Imperium - Space Wolves" revision="8" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -600,6 +600,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd47-d94f-b12b-24a4" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="4c71-06df-04f6-ee7d" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
@@ -661,11 +662,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="703d-0769-0f47-f6cc" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="0.0"/>
-          </modifiers>
-        </entryLink>
+        <entryLink id="703d-0769-0f47-f6cc" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
@@ -1015,6 +1012,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a94f-221f-6661-39ad" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
@@ -1375,6 +1375,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1b09-5b81-59a8-8153" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
       </costs>
@@ -3064,7 +3067,15 @@
     </selectionEntry>
     <selectionEntry id="0396-28a3-bf99-c3be" name="Venerable Dreadnought" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="f555-d121-567a-3df9" name="Venerable Dreadnought" hidden="false" targetId="7ac8-6cde-90ce-b297" type="profile"/>
+        <infoLink id="f555-d121-567a-3df9" name="Venerable Dreadnought" hidden="false" targetId="7ac8-6cde-90ce-b297" type="profile">
+          <modifiers>
+            <modifier type="set" field="a56f-38ae-3917-aadc" value="4+">
+              <conditions>
+                <condition field="selections" scope="0396-28a3-bf99-c3be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ddc-a430-f2c0-9d4e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="7cca-a1e2-ba17-2973" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -3082,6 +3093,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf4-de5d-c758-5d99" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5554-238a-90e4-ac8a" type="min"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="5ddc-a430-f2c0-9d4e" name="Blizzard Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="2247-2ad0-6800-6a26" name="Assault Cannon" hidden="false" collective="false" import="true" targetId="8678-7b89-1980-47b2" type="selectionEntry"/>
             <entryLink id="2614-9e85-841d-75d8" name="Heavy Plasma Cannon" hidden="false" collective="false" import="true" targetId="5e7d-1692-4f48-b402" type="selectionEntry"/>
@@ -3099,6 +3117,25 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9b5-0ceb-35bb-a8ca" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1fc-03a7-7c27-11bd" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="3b35-23c5-1137-beae" name="Fenrisian Great Axe" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="39ed-e26a-0332-cb98" name="Fenrisian Great Axe" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Mele</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="d703-8f15-2ce1-ea68" name="Dreadnought Combat Weapon" hidden="false" collective="false" import="true" targetId="da58-6d66-706c-0d22" type="selectionEntry"/>
             <entryLink id="dcf3-3032-732f-fd72" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="a524-9ae0-16b9-cd61" type="selectionEntry">
@@ -5685,6 +5722,12 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="2fbf-ddb8-6723-ce44" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="3f1b-0538-7ca0-97a7" name="Relic Sicaran Arcus Strike Tank" hidden="false" collective="false" import="true" targetId="a74b-6c63-1601-9920" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ff47-f601-7c4d-f8ad" name="Faction: Space Wolves" hidden="false" targetId="58c1-00b9-7a20-4110" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="00c4-26f7-f2af-791a" name="Relic Sicaran Omega Tank Destroyer" hidden="false" collective="false" import="true" targetId="1b61-539d-610c-1928" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="a123-b4e9-1693-784f" name="The Axe Morkai" hidden="false" collective="false" import="true" type="upgrade">
