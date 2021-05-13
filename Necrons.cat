@@ -34,7 +34,7 @@
     <categoryEntry id="d0cc-e13f-4632-213e" name="Canoptek Wraiths" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="db86-4dc2-4c41-7d58" name="Catacomb Command Barge" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="82fd-1ba2-b2dc-051f" name="Deathmarks" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
-    <categoryEntry id="7433-ff15-0db1-5680" name="Destoyers" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
+    <categoryEntry id="7433-ff15-0db1-5680" name="Destroyers" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="c98a-cdfc-9be9-7759" name="Destroyer Lord" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="1efd-eaa3-a922-300d" name="Doom Scythe" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
     <categoryEntry id="229c-7685-bf8d-08ea" name="Doomsday Ark" publicationId="8df9-0b3e-abea-3c15" hidden="false"/>
@@ -79,6 +79,9 @@
     <categoryEntry id="92a6-b61f-d0bf-f31b" name="Hyperspace Hunter" hidden="false"/>
     <categoryEntry id="6cf7-e1aa-cb2b-bec6" name="Hexmark Destroyer" hidden="false"/>
     <categoryEntry id="947b-3cb9-7167-d641" name="Cryptothralls" hidden="false"/>
+    <categoryEntry id="db25-1c62-5e15-5f0e" name="Skorpekh Destroyers" hidden="false"/>
+    <categoryEntry id="82c2-f274-c269-7cf5" name="Lokhust Destroyers" hidden="false"/>
+    <categoryEntry id="26c7-3fe1-06e2-ffe7" name="Lokhust Heavy Destroyers" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -370,6 +373,21 @@
     <entryLink id="d676-26d9-d87c-781b" name="Cryptothralls" hidden="false" collective="false" import="true" targetId="57b4-0cde-2293-fea5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6299-540a-05d8-9c9b" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f669-aa6e-33b1-06cd" name="Skorpekh Destroyers" hidden="false" collective="false" import="true" targetId="df9d-f156-729d-8eca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7d5b-9392-f43b-d56c" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1400-e6e7-9128-8d2c" name="Lokhust Destroyers" hidden="false" collective="false" import="true" targetId="253b-a102-5567-5257" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c5c6-ac4d-f80f-f841" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="54f4-557c-af18-5c3c" name="Lokhust Heavy Destroyers" hidden="false" collective="false" import="true" targetId="4b7f-a983-4fa7-f4ba" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="11dd-acc4-86f3-0a7a" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5799,6 +5817,359 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df9d-f156-729d-8eca" name="Skorpekh Destroyers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="2ef2-8063-849d-cb12" name="Hardwired Hatred" hidden="false" targetId="1678-e6b6-2b2c-fc79" type="profile"/>
+        <infoLink id="99da-c3ca-e8be-f6fe" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d7ee-59a4-4368-5325" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="d197-b4d5-c395-54f0" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="93e2-953b-32c7-0678" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="dfe5-18c0-d315-090f" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="9be9-3937-99da-b475" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
+        <categoryLink id="7109-450a-a2e2-f0eb" name="Destoyers" hidden="false" targetId="7433-ff15-0db1-5680" primary="false"/>
+        <categoryLink id="a49b-c6f8-1d14-0d99" name="Skorpekh Destroyers" hidden="false" targetId="db25-1c62-5e15-5f0e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1bfd-41ff-74b8-d849" name="Hyperphase Blades" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c83c-027b-e752-d7ab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43cd-8567-d92f-ab7e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="6526-9ef5-8fdc-516d" name="Hyperphase Blades" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="db6f-a4ce-e9ea-ebfd" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b38c-3e9e-3feb-3ae0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6099-4d33-b7ec-7e47" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4c1b-fd0a-d8f4-fa47" name="Skorpekh Destroyers (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8942-876f-9c97-69de" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f981-c082-56b9-9307" name="Destroyers (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2fd0-610c-5d7e-f79d" name="Skorpekh Destroyers (6 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40f5-1d7e-bd49-e380" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="108d-fd31-2c26-b023" name="Destroyers (6 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="13.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3936-1aff-57bc-0e8b" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="253b-a102-5567-5257" name="Lokhust Destroyers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="4947-dfb5-2fc4-7143" name="Hardwired Hatred" hidden="false" targetId="1678-e6b6-2b2c-fc79" type="profile"/>
+        <infoLink id="c19a-309b-6a50-c321" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e6a8-d49d-5c19-e69e" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="f31c-52b3-a786-3c82" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="6f03-4b04-b80d-2523" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="00c9-c6b3-e3a5-c02e" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="92e6-2837-12d7-6d44" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="1a1f-4414-9bef-226b" name="Destoyers" hidden="false" targetId="7433-ff15-0db1-5680" primary="false"/>
+        <categoryLink id="8133-415a-37df-ce1c" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
+        <categoryLink id="5c96-de83-0df9-987d" name="Lokhust Destroyers" hidden="false" targetId="82c2-f274-c269-7cf5" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="90ad-6f0c-48e0-1d86" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="1cae-50e9-7538-7480">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7f6-09e4-5111-e8fc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5ed-17aa-dd28-94b4" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1cae-50e9-7538-7480" name="Lokhust Destroyers (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="198b-c85a-ff82-616b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="29db-40c2-5ff4-9a52" name="Lokhust Destroyers (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8ca3-7704-f5e0-43ea" name="Lokhust Destroyers (6 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe5a-8558-2d8c-3af8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d73e-10f6-17b7-1f2b" name="Lokhust Destroyers (6 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ca67-54e8-c934-0183" name="Heavy Weapon" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="24a0-8d09-a4c0-a0ef" value="2.0">
+              <conditions>
+                <condition field="selections" scope="253b-a102-5567-5257" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ca3-7704-f5e0-43ea" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24a0-8d09-a4c0-a0ef" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3fa4-a537-3a31-f6e0" name="Heavy Gauss Cannon" hidden="false" collective="false" import="true" targetId="0ba2-d207-e70f-3037" type="selectionEntry">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="638f-12a0-edd5-076b" name="Enmitic Exterminator" hidden="false" collective="false" import="true" targetId="52f3-f54e-6c34-a43b" type="selectionEntry">
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="fb84-f3bd-d9fb-9c7f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="8f48-9540-c6dd-8247" name="Close Combat Weapons (Personnel)" hidden="false" collective="false" import="true" targetId="c664-08fe-61e9-52d1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="038d-96a2-efd7-872a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd24-5415-e5d2-db34" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6842-2eb3-c5ba-ff77" name="Gauss Cannons" hidden="false" collective="false" import="true" targetId="53b9-2ddc-b150-f380" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e625-873a-8b5b-dd3f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b8c-d6fd-64bb-104d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="52f3-f54e-6c34-a43b" name="Enmitic Exterminator" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="27a7-a6d1-9489-4629" name="Enmitic Exterminator" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">10+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4b7f-a983-4fa7-f4ba" name="Lokhust Heavy Destroyers" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="6f42-e421-6250-52e9" name="Hardwired Hatred" hidden="false" targetId="1678-e6b6-2b2c-fc79" type="profile"/>
+        <infoLink id="92d3-21fe-73d9-8034" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="45e9-5c27-78a4-eb82" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="a603-d2fd-549b-832e" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="1dbd-6d5d-9ee0-98e9" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="06cd-c752-612e-441c" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="9886-9180-95c8-5184" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="0663-3a98-872f-3f6e" name="Heavy Destroyers" hidden="false" targetId="62ae-4abf-0d66-08ab" primary="false"/>
+        <categoryLink id="00cd-7603-7f55-f0c6" name="Lokhust Heavy Destroyers" hidden="false" targetId="26c7-3fe1-06e2-ffe7" primary="false"/>
+        <categoryLink id="a74f-4401-8b7b-366c" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c797-2435-90ba-da92" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="3ae8-e285-9ead-080e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7e8-2908-2897-876f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63d-d801-1a79-a88e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a7ad-5e9a-a7e5-b2ae" name="Lokhust Heavy Destroyers (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8ec-20af-4c15-f523" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="21f6-f7af-15ee-b072" name="Lokhust Heavy Destroyers (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">3</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3ae8-e285-9ead-080e" name="Lokhust Heavy Destroyers (1 Model)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b6e-0500-5064-a020" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ba69-7579-efc2-35b6" name="Lokhust Heavy Destroyers (1 Model)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8757-db9f-b1d1-50e8" name="Lokhust Heavy Destroyers (2 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd48-f8ee-d40e-e587" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="65af-1b35-fc32-927a" name="Lokhust Heavy Destroyers (2 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="11.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1900-6fed-05c6-cdbd" name="Heavy Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="fccb-5e85-59ac-7d3b" value="2.0">
+              <conditions>
+                <condition field="selections" scope="4b7f-a983-4fa7-f4ba" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8757-db9f-b1d1-50e8" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="62eb-27f9-e84c-b6b0" value="2.0">
+              <conditions>
+                <condition field="selections" scope="4b7f-a983-4fa7-f4ba" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8757-db9f-b1d1-50e8" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="62eb-27f9-e84c-b6b0" value="3.0">
+              <conditions>
+                <condition field="selections" scope="4b7f-a983-4fa7-f4ba" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ad-5e9a-a7e5-b2ae" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="fccb-5e85-59ac-7d3b" value="3.0">
+              <conditions>
+                <condition field="selections" scope="4b7f-a983-4fa7-f4ba" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ad-5e9a-a7e5-b2ae" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fccb-5e85-59ac-7d3b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62eb-27f9-e84c-b6b0" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7c7c-2a25-6368-f146" name="Heavy Gauss Cannon" hidden="false" collective="false" import="true" targetId="0ba2-d207-e70f-3037" type="selectionEntry"/>
+            <entryLink id="ab6f-a596-925f-7441" name="Enmitic Exterminator" hidden="false" collective="false" import="true" targetId="52f3-f54e-6c34-a43b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2a98-49a8-210b-6953" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="59d0-ddcd-776d-2a9d" name="Close Combat Weapons (Personnel)" hidden="false" collective="false" import="true" targetId="c664-08fe-61e9-52d1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfe1-a8f3-a9a4-8e4c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="084f-d5c6-5542-16dd" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
