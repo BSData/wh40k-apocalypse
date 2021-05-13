@@ -78,6 +78,7 @@
     <categoryEntry id="bbd9-d0f0-e6e4-86d9" name="Canoptek Reanimator" hidden="false"/>
     <categoryEntry id="92a6-b61f-d0bf-f31b" name="Hyperspace Hunter" hidden="false"/>
     <categoryEntry id="6cf7-e1aa-cb2b-bec6" name="Hexmark Destroyer" hidden="false"/>
+    <categoryEntry id="947b-3cb9-7167-d641" name="Cryptothralls" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -364,6 +365,11 @@
     <entryLink id="2b4b-e79a-1cd2-a9b0" name="Hexmark Destroyer" hidden="false" collective="false" import="true" targetId="8dfc-7e9c-d169-e8ed" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="52d4-a78c-7e25-8826" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d676-26d9-d87c-781b" name="Cryptothralls" hidden="false" collective="false" import="true" targetId="57b4-0cde-2293-fea5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6299-540a-05d8-9c9b" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5655,6 +5661,9 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5742,6 +5751,54 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="57b4-0cde-2293-fea5" name="Cryptothralls" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1937-a8ff-e51e-6f6c" name="Crypothralls" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">5+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bd30-522c-1fcc-4ff4" name="Systematic Vigour" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Whilst this unit is within 6&quot; of any Friendly CRYPTEK units, change this unit&apos;s Weapon Skill and Ballistic Skill characteristics to 3+ and double it&apos;s Attack characteristic.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5489-24c9-84d6-d0f1" name="Protectors" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly CRYPTEK units cannot be targeted with ranged weapons whilst they are within 3&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cfdf-47fe-15f4-d0f7" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="021b-c458-0090-e136" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="a6d3-20dc-1755-7314" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="05b1-49e0-2d04-9648" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="f596-c5fa-9e6c-a7ee" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="c094-3e41-49ea-6a68" name="Cryptothralls" hidden="false" targetId="947b-3cb9-7167-d641" primary="false"/>
+        <categoryLink id="feef-a182-836a-f6d8" name="Canoptek" hidden="false" targetId="3699-13f9-799e-7279" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a52a-00f7-cf32-6bda" name="Close Combat Weapons (Personnel)" hidden="false" collective="false" import="true" targetId="c664-08fe-61e9-52d1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc04-4c10-53ee-de0f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57d8-a201-6e20-d2ea" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="594c-4abd-262b-7d12" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="2.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
