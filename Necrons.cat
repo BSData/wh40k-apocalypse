@@ -82,6 +82,7 @@
     <categoryEntry id="db25-1c62-5e15-5f0e" name="Skorpekh Destroyers" hidden="false"/>
     <categoryEntry id="82c2-f274-c269-7cf5" name="Lokhust Destroyers" hidden="false"/>
     <categoryEntry id="26c7-3fe1-06e2-ffe7" name="Lokhust Heavy Destroyers" hidden="false"/>
+    <categoryEntry id="733f-572d-d50f-5f71" name="Canoptek Plasmacyte" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -388,6 +389,11 @@
     <entryLink id="54f4-557c-af18-5c3c" name="Lokhust Heavy Destroyers" hidden="false" collective="false" import="true" targetId="4b7f-a983-4fa7-f4ba" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="11dd-acc4-86f3-0a7a" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c6bc-4f04-12f0-d2d8" name="Canoptek Plasmacyte" hidden="false" collective="false" import="true" targetId="ceae-4042-5825-9535" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1ef2-7230-039b-fdda" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6170,6 +6176,61 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ceae-4042-5825-9535" name="Canoptek Plasmacyte" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="fda6-b654-5bc4-c490" name="Canoptek Plasmacyte" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f290-5b5e-ffe3-8a7e" name="Evasion Protocol" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit cannot be targeted with ranged weapons whilst they are within 3&quot; of any Friendly &lt;DYNASTY&gt; DESTROYER CULT units unless it is the closest eligible target.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24e2-20f3-434e-b53c" name="Recall Protocols" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the beginning of the Damage phase, this unit is destroyed if it is not within 6&quot; of any Friendly &lt;DYNASTY&gt; DESTROYER CULT units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d910-91e5-5010-e0cd" name="Infused Madness" publicationId="8df9-0b3e-abea-3c15" page="" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per turn, at the start of the Action phase, you can select one friendly &lt;DYNASTY&gt; DESTROYER CULT unit within 3&quot; of this model. If you do, roll one D6: on a 1, place two blast markers next to that unit. Regardless of the result, until the end of the turn, add 1 to that units Attacks characteristic, and add 1 to the SAT and SAP of that unit&apos;s melee weapons. Each unit can only be selected for this ability once per turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3f6c-c398-37c9-3818" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3919-4e1d-7960-7b17" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="df47-b3eb-c496-49a5" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="eeba-620b-2488-dd88" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="0a64-7f11-817c-cfc9" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="9d68-31f0-fb1f-54cb" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="960e-85e8-ba01-c8de" name="Beast" hidden="false" targetId="ef15-faf4-a4a1-33f5" primary="false"/>
+        <categoryLink id="0006-5449-5eb5-0cad" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="34fe-59a8-3e9f-64f4" name="Canoptek Plasmacyte" hidden="false" targetId="733f-572d-d50f-5f71" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7c5d-227e-4c6a-150f" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="c68b-bcc9-7ba8-476b" name="Close Combat Weapons (Weak)" hidden="false" collective="false" import="true" targetId="1f4d-4fa2-5c44-1af1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b52-6eb4-a551-d8a5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f0c-82d0-8dfb-bb98" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
