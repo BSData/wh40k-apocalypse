@@ -85,6 +85,7 @@
     <categoryEntry id="733f-572d-d50f-5f71" name="Canoptek Plasmacyte" hidden="false"/>
     <categoryEntry id="3563-d1c3-05d5-dc3a" name="Starstele" hidden="false"/>
     <categoryEntry id="d591-e3d6-3bb8-3b6d" name="Convergence of Dominion" hidden="false"/>
+    <categoryEntry id="43ef-fe40-f4d7-2f00" name="Ophydian Destroyers" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -401,6 +402,11 @@
     <entryLink id="c86a-b34b-6a3f-7aeb" name="Convergence of Dominion" hidden="false" collective="false" import="true" targetId="5c3d-054a-d011-cc21" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3ba8-6b06-8f76-1004" name="New CategoryLink" hidden="false" targetId="e2ad-0813-395c-442a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7a05-5cfb-c4a0-36b5" name="Ophydian Destroyers" hidden="false" collective="false" import="true" targetId="c758-863e-1581-a942" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="83e6-e352-ac11-dc1f" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5864,6 +5870,9 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6305,6 +6314,9 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6312,6 +6324,114 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c758-863e-1581-a942" name="Ophydian Destroyers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="fd78-fe99-bcec-f890" name="Hyperphase Reap-blades" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time a model in this unit makes an attack with its Hyperphase Blades and Ophydian Claws, an unmodified hit roll of 6 scores 1 additional hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="30c0-42e9-21bf-1d25" name="Whipcoil Bodies" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time a melee attack is made against this unit, subtract 1 from that attack&apos;s hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c10b-0459-d02f-f76c" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+        <infoLink id="040f-9178-c28f-00ba" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+        <infoLink id="54bd-abb2-aa88-5c84" name="Hardwired Hatred" hidden="false" targetId="1678-e6b6-2b2c-fc79" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2efb-a48f-86cc-356d" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="269e-b75b-bce0-1c26" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="9f21-f6b6-d1ba-898a" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="0066-5c2c-ee2a-48a0" name="Destroyer Cult" hidden="false" targetId="ab74-9945-4041-73d8" primary="false"/>
+        <categoryLink id="e765-a100-227e-a358" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="c051-7c04-c31d-a440" name="Ophydian Destroyers" hidden="false" targetId="43ef-fe40-f4d7-2f00" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cabc-fe0b-4acb-a667" name="Hyperphase Blades and Ophydian Claws" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d29d-2e52-ae3d-33f0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23e0-3e6f-2e43-55f4" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="e7df-9b8e-16ea-7df9" name="Hyperphase Blades" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5948-d2fb-0a7b-db3c" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="9946-7e6f-13b3-7516">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9972-9c02-e861-f595" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="382c-1587-567f-4a27" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9946-7e6f-13b3-7516" name="Ophydian Destroyers (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d23-db10-1f18-8cbc" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3e50-9b0c-423b-66a8" name="Ophydian Destroyers (3 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9a28-adff-192f-d855" name="Ophydian Destroyers (6 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de64-0df2-ac73-88ab" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8aa2-9116-2415-6923" name="Ophydian Destroyers (6 Models)" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">4</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">8+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="12aa-b7ed-18e8-10f1" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -6328,7 +6448,7 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
     </profile>
     <profile id="1678-e6b6-2b2c-fc79" name="Hardwired Hatred" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by ths unit.</characteristic>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls of 1 for attacks made by this unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="b02b-f2a2-8424-126d" name="Enslaved Star God" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
