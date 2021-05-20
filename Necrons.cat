@@ -86,6 +86,7 @@
     <categoryEntry id="3563-d1c3-05d5-dc3a" name="Starstele" hidden="false"/>
     <categoryEntry id="d591-e3d6-3bb8-3b6d" name="Convergence of Dominion" hidden="false"/>
     <categoryEntry id="43ef-fe40-f4d7-2f00" name="Ophydian Destroyers" hidden="false"/>
+    <categoryEntry id="8007-59c2-2946-c602" name="Canoptek Doomstalker" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -407,6 +408,11 @@
     <entryLink id="7a05-5cfb-c4a0-36b5" name="Ophydian Destroyers" hidden="false" collective="false" import="true" targetId="c758-863e-1581-a942" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="83e6-e352-ac11-dc1f" name="New CategoryLink" hidden="false" targetId="3945-9603-5902-58c0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9bd3-10d1-0bd8-fd87" name="Canoptek Doomstalker" hidden="false" collective="false" import="true" targetId="998f-4747-3f0f-660f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6e15-2b6f-c863-4cac" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3692,7 +3698,7 @@
         <categoryLink id="4ad3-4d73-89df-34b0" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0839-d28a-6267-657d" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="0839-d28a-6267-657d" name="Unit Size" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" defaultSelectionEntryId="cc57-d881-c8c5-1dad">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f4d-9964-c679-1762" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6797-3e9d-31bc-90c4" type="min"/>
@@ -6432,6 +6438,98 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="998f-4747-3f0f-660f" name="Canoptek Doomstalker" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="c5e3-0b34-eea6-0c97" name="Canoptek Doomstalker" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">4+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">4+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d9a1-8d0a-1323-c8e8" name="Sentinel Construct" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If this unit&apos;s Detachment is carrying out an Aimed Fire order, then until the end of the turn, this unit can still make a Shoot action if enemy units are in base contact with them, and they can target enemy units in base contact with friendly NECRON units from this detachment. However, if it does either, subtract 1 from hit rolls for attacks made by those units when resolving those attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="17e6-8d37-e931-6ea4" name="Ignore Damage (6+)" hidden="false" targetId="a219-d9fd-9c8c-10c2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a9fa-1f97-dc8f-0ceb" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="cde1-6594-6ef0-fa9d" name="Faction: &lt;Dynasty&gt;" hidden="false" targetId="5a7e-6d51-4d99-acb1" primary="false"/>
+        <categoryLink id="7385-9bad-5839-67ac" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="8b59-42ae-e51e-d0f5" name="Canoptek" hidden="false" targetId="3699-13f9-799e-7279" primary="false"/>
+        <categoryLink id="629b-3690-309d-62b5" name="Canoptek Doomstalker" hidden="false" targetId="8007-59c2-2946-c602" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="08ea-4606-715e-b59a" name="Doomsday Blaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dd5-8931-be2f-df7c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdfa-8613-23d0-acf7" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="8375-6746-313f-4c04" name="Doomsday Blaster" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">48&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">4+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="be35-e986-bc12-af00" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7349-7903-6ba4-be85" name="Guass Flayer Array" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8b8-d35b-e467-3187" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9428-fd7b-5877-4784" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="4d7e-0d39-a89b-1465" name="Twin Gauss Flayer" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="db86-1ff7-7375-aa97" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7ee2-f9c7-5e13-0dc3" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="6c1e-eb9c-cbff-c1d5" name="Close Combat Weapons (Weak)" hidden="false" collective="false" import="true" targetId="1f4d-4fa2-5c44-1af1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d22-e422-1d6d-6c63" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="372c-c6b2-5527-4151" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
