@@ -87,6 +87,7 @@
     <categoryEntry id="d591-e3d6-3bb8-3b6d" name="Convergence of Dominion" hidden="false"/>
     <categoryEntry id="43ef-fe40-f4d7-2f00" name="Ophydian Destroyers" hidden="false"/>
     <categoryEntry id="8007-59c2-2946-c602" name="Canoptek Doomstalker" hidden="false"/>
+    <categoryEntry id="343a-0ae2-5695-3d7b" name="C&apos;tan Shard of the Void Dragon" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -413,6 +414,11 @@
     <entryLink id="9bd3-10d1-0bd8-fd87" name="Canoptek Doomstalker" hidden="false" collective="false" import="true" targetId="998f-4747-3f0f-660f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6e15-2b6f-c863-4cac" name="New CategoryLink" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d741-3a83-58da-7121" name="C&apos;tan Shard of the Void Dragon" hidden="false" collective="false" import="true" targetId="4683-5960-b6d7-ef6d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3ad2-5795-8b64-4658" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6494,7 +6500,7 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
             <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7349-7903-6ba4-be85" name="Guass Flayer Array" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7349-7903-6ba4-be85" name="Gauss Flayer Array" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8b8-d35b-e467-3187" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9428-fd7b-5877-4784" type="min"/>
@@ -6530,6 +6536,94 @@ Subtract 1&quot; from the movement characteristic of enemy units that start a mo
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4683-5960-b6d7-ef6d" name="C&apos;tan Shard of the Void Dragon" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5da2-e429-d83e-6270" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e661-b4e8-aaab-fccf" name="C&apos;tan Shard of the Void Dragon" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b020-7394-1e44-0649" name="Matter Absorption" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When an attack made by this model adds a blast marker to an enemy VEHICLE unit, roll a d12. On a 9+ remove one blast marker from this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="07ec-d870-c41a-2e4a" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+        <infoLink id="aae3-01f6-ab3c-ee8e" name="Immune to Natural Law" hidden="false" targetId="0369-7101-a7df-178b" type="profile"/>
+        <infoLink id="8fc9-62f1-adec-0ae4" name="Enslaved Star God" hidden="false" targetId="b02b-f2a2-8424-126d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d7a0-a107-3314-9ca4" name="Faction: C&apos;tan Shards" hidden="false" targetId="7150-8156-ad0f-77c7" primary="false"/>
+        <categoryLink id="f4ac-adb1-5b9a-c380" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="9652-e99a-5829-827e" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="469e-2737-1a94-e32a" name="Monster" hidden="false" targetId="3bbd-6bb7-b214-6dca" primary="false"/>
+        <categoryLink id="2375-9d4d-ab31-4ab4" name="C&apos;tan Shard of the Void Dragon " hidden="false" targetId="343a-0ae2-5695-3d7b" primary="false"/>
+        <categoryLink id="50c9-be88-7140-cdeb" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="35be-e1b2-16b7-2dfe" name="Spear of the Void Dragon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9d7-c2aa-111d-9671" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74e9-b597-42b9-2340" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3582-44b9-908e-13e9" name="Spear of the Void Dragon (Shooting)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Re-roll wound rolls for attacks made with this weapon that target enemy VEHICLE units.
+
+Each time an attack is made with this weapon, if a hit is scored, draw a straight line between the closest point of this model&apos;s base and that of the closest model in the target unit. Make one wound roll against the target unit, and each other unit this line passes over.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="c4c4-1903-8a9b-c2fb" name="Spear of the Void Dragon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6770-5b4e-79af-fd64" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f903-5aa1-d4dc-6dac" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="78ef-9fea-a73e-36b7" name="Spear of the Void Dragon (Melee) and Canoptek Tail Blades" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Re-roll wound rolls for attacks made with this weapon that target enemy VEHICLE units.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="283d-9f49-a178-a134" name="Commander (C&apos;tan)" hidden="false" collective="false" import="true" targetId="8d65-75ba-3f36-d2e1" type="selectionEntry"/>
+        <entryLink id="be33-a11e-b4bd-935b" name="Powers of the C&apos;tan" hidden="false" collective="false" import="true" targetId="430d-3f5c-5825-1bac" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="976b-7f7f-9bdf-d5e8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a66-4e5f-470a-dfe1" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
