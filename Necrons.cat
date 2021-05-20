@@ -88,6 +88,14 @@
     <categoryEntry id="43ef-fe40-f4d7-2f00" name="Ophydian Destroyers" hidden="false"/>
     <categoryEntry id="8007-59c2-2946-c602" name="Canoptek Doomstalker" hidden="false"/>
     <categoryEntry id="343a-0ae2-5695-3d7b" name="C&apos;tan Shard of the Void Dragon" hidden="false"/>
+    <categoryEntry id="49f4-2356-36e9-f0e8" name="Faction: Szarekhan" hidden="false"/>
+    <categoryEntry id="b1e8-4b26-4b74-814f" name="Phaeron" hidden="false"/>
+    <categoryEntry id="cf4f-835e-3d41-7cf9" name="The Silent King" hidden="false"/>
+    <categoryEntry id="3e91-fb58-85f1-2c8e" name="Triarchal Menhirs" hidden="false"/>
+    <categoryEntry id="bc73-e052-18ce-7ba5" name="Dynastic Agent" hidden="false"/>
+    <categoryEntry id="1360-a79b-ad15-74e4" name="Szarekh" hidden="false"/>
+    <categoryEntry id="0666-38c5-d2ae-59cb" name="Supreme Commander" hidden="false"/>
+    <categoryEntry id="6480-6205-e310-96c1" name="Noble" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="d378-7c0f-b080-1672" name="Catacomb Command Barge" hidden="false" collective="false" import="true" targetId="c631-8c79-084d-74bf" type="selectionEntry">
@@ -420,6 +428,14 @@
       <categoryLinks>
         <categoryLink id="3ad2-5795-8b64-4658" name="New CategoryLink" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="bfe8-31f1-c084-b865" name="The Silent King" hidden="false" collective="false" import="true" targetId="d5b3-d78d-24d8-40ce" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6377-748f-8ff7-abbe" name="New CategoryLink" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="21.0"/>
+      </costs>
     </entryLink>
   </entryLinks>
   <rules>
@@ -6624,6 +6640,187 @@ Each time an attack is made with this weapon, if a hit is scored, draw a straigh
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d5b3-d78d-24d8-40ce" name="The Silent King" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="e86a-b43c-95fe-46b8" name="Szarekh and Two Triarchal Menhirs" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">8</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2b57-0d5e-1ff4-e60e" name="Phaeron of the Stars" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll hit rolls for ranged attacks made by friendly NECRONS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="87ba-cf32-0e6f-6c23" name="Obeisance Generators" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with melee weapons by enemy units that target this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3e7a-4585-f64b-2144" name="Phaeron of the Blades" publicationId="8df9-0b3e-abea-3c15" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Re-roll wound rolls for melee attacks made by friendly NECRONS units whilst they are within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac9d-8e6a-8d67-3793" name="Relentless March" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">If a NECRONS unit starts a Move action within 6&quot; of any friendly units with this ability, add 1&quot; to that unit’s Move characteristic for that action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="66df-d03d-117b-b4f6" name="My Will Be Done (Szarekh)" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1 to hit rolls for attacks made by friendly NECRONS units whilst they are within 9&quot; of this unit. 
+Add 1 to the Attacks characteristic of friendly NECRONS units whilst they are within 9&quot; of this unit. </characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d21c-6692-63c2-7b7d" name="Voice of the Triarch" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, when you select a Detachment to carry out an order, before any units in that Detachment make any actions for that order, you can replace that Detachment’s order with Advance, Aimed Fire or Assault.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9006-5bfe-d684-713d" name="Triarchal Menhir" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit does not count as a CHARACTER for the purposes of the Sniper keyword whilst it is not critically damaged.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c0c-051d-76d4-7ac6" name="The Silent King" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Szarekh must be your Warmaster. If this unit is your Warmaster, you receive 3 addional Command Points at the beginning of the game.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c43-719a-7981-b677" name="Preservative Auto-torpor" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Whilst this unit is Critically Damaged, it cannot make attacks with its Staff of Stars or Annihilator Beams and loses the Phaeron of the Stars ability.
+
+Whilst this unit has 1 wound remaining, it cannot make attacks with its Scythe of Dust and loses the Phaeron of the Blades ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b13e-5621-121c-cf89" name="Faction: Necrons" hidden="false" targetId="ca19-eb87-43e7-580a" primary="false"/>
+        <categoryLink id="1ba1-431a-2a3d-bc6c" name="Fly" hidden="false" targetId="b408-d848-fa84-cfb9" primary="false"/>
+        <categoryLink id="393a-98a5-e939-e103" name="Faction: Szarekhan" hidden="false" targetId="49f4-2356-36e9-f0e8" primary="false"/>
+        <categoryLink id="d52c-7ad4-698c-9012" name="Vehicle" hidden="false" targetId="5aeb-0fa6-9427-2144" primary="false"/>
+        <categoryLink id="5438-c7ce-da81-57d0" name="Heavy" hidden="false" targetId="25c7-3353-2028-72b2" primary="false"/>
+        <categoryLink id="850f-e737-8784-3304" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="d6e1-85bb-babb-74d4" name="Supreme Commander" hidden="false" targetId="0666-38c5-d2ae-59cb" primary="false"/>
+        <categoryLink id="1082-9703-8a72-eb40" name="Phaeron" hidden="false" targetId="b1e8-4b26-4b74-814f" primary="false"/>
+        <categoryLink id="b4a3-87f4-d8b4-21ed" name="Noble" hidden="false" targetId="6480-6205-e310-96c1" primary="false"/>
+        <categoryLink id="2dfe-c9c7-d040-db94" name="Dynastic Agent" hidden="false" targetId="bc73-e052-18ce-7ba5" primary="false"/>
+        <categoryLink id="63b8-e30b-305c-a5e3" name="The Silent King" hidden="false" targetId="cf4f-835e-3d41-7cf9" primary="false"/>
+        <categoryLink id="000b-c708-eebf-c2fb" name="Szarekh" hidden="false" targetId="1360-a79b-ad15-74e4" primary="false"/>
+        <categoryLink id="f3eb-12ec-2ee1-e904" name="Triarchal Menhirs" hidden="false" targetId="3e91-fb58-85f1-2c8e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6b3d-44be-dace-2fd9" name="Sceptre of Eternal Glory" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da1a-c65f-a168-e83b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f005-7db7-9243-3a8f" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="2df7-7c00-9573-e79a" name="Sceptre of Eternal Glory (Melee)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9506-e2b4-02ed-2ef1" name="Sceptre of Eternal Glory (Shooting)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="f56f-1fd3-e184-c0f9" name="Annihilator Beams" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6246-ad47-ac67-9de7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5160-e63f-1119-0ab8" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3c4e-58a3-fff0-5368" name="Annihilator Beams" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">5+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="aadb-cc16-c6ee-92c7" name="Destroyer" hidden="false" targetId="aac2-cf46-7dc3-ac07" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="ed5b-a798-7778-681c" name="Staff of Stars" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f69-5d18-9d89-36df" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc1-82ba-d4ef-f32b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="fe0c-8e90-28e3-7c77" name="Staff of Stars (Melee)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="eafe-0b00-6568-6c15" name="Staff of Stars (Shooting)" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="c4d3-8965-641d-6f28" name="Scythe of Dust" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b1-3fbd-82d3-5397" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db2e-d396-e068-d5da" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="7126-2b9b-73dc-71fe" name="Scythe of Dust" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c733-2e57-ac5b-77a3" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="17.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
