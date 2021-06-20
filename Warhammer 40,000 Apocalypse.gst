@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="6" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Developer" authorUrl="https://discord.gg/3QtaU2g" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="18f7-26e1-8fbb-f7fa" name="Warhammer 40,000: Apocalypse" revision="7" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Developer" authorUrl="https://discord.gg/3QtaU2g" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="8df9-0b3e-abea-3c15" name="Warhammer 40,000: Apocalypse"/>
   </publications>
   <costTypes>
-    <costType id="1466-da3f-0d27-dace" name=" PL" defaultCostLimit="-1.0"/>
+    <costType id="1466-da3f-0d27-dace" name=" PL" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="758b-2459-9a46-721a" name="Unit">
@@ -100,6 +100,23 @@
       <constraints>
         <constraint field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c2f4-fe21-3e28-ed13" type="max"/>
       </constraints>
+      <forceEntries>
+        <forceEntry id="7a02-79cc-fa48-0063" name="Ad Hoc Detachment" publicationId="8df9-0b3e-abea-3c15" hidden="false">
+          <categoryLinks>
+            <categoryLink id="9c59-3b94-1454-2be2" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
+            <categoryLink id="bb3d-ee0a-3da4-eff4" name="No Force Org Slot" hidden="false" targetId="9f9b-a0ff-1523-746d" primary="false"/>
+            <categoryLink id="c50b-eba8-ed7b-89c3" name="HQ" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="false"/>
+            <categoryLink id="6c78-6096-cd73-272e" name="Troops" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="false"/>
+            <categoryLink id="2271-bde9-351b-0172" name="Elites" hidden="false" targetId="8f90-47d8-c075-cbb2" primary="false"/>
+            <categoryLink id="cd33-8db3-6c20-6932" name="Fast Attack" hidden="false" targetId="3945-9603-5902-58c0" primary="false"/>
+            <categoryLink id="6d17-18a6-9ba5-8e3b" name="Heavy Support" hidden="false" targetId="9b66-7ce1-9e7e-58ed" primary="false"/>
+            <categoryLink id="95e5-bff7-8db1-5aa6" name="Flyer" hidden="false" targetId="551a-ed52-fd35-9078" primary="false"/>
+            <categoryLink id="3d15-02ea-b5a0-6b47" name="Dedicated Transport" hidden="false" targetId="2a11-9193-1a80-f0c6" primary="false"/>
+            <categoryLink id="948b-e76f-5c55-c823" name="Lord of War" hidden="false" targetId="4ba9-66c8-d53f-061d" primary="false"/>
+            <categoryLink id="07cd-d8ac-fa1d-89d0" name="Fortification" hidden="false" targetId="e2ad-0813-395c-442a" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
       <categoryLinks>
         <categoryLink id="8642-e76d-0d79-79a2" name="List Configuration" hidden="false" targetId="b1fd-719c-4789-4656" primary="false"/>
         <categoryLink id="0164-e3dc-6c4b-37c5" name="No Force Org Slot" hidden="false" targetId="9f9b-a0ff-1523-746d" primary="false"/>
