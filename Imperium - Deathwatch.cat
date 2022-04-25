@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e02e-4d8f-946c-6550" name="Imperium - Deathwatch" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="755c-47e1-1715-5ef2" name="Imperium - Deathwatch" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1ca7-5aae-d958-5973" name="Faction: Deathwatch" hidden="false"/>
     <categoryEntry id="30fe-6106-40b8-2104" name="Watch Master" hidden="false"/>
@@ -15,6 +15,11 @@
     <categoryEntry id="f863-5a53-bf6b-06dd" name="Inceptors" hidden="false"/>
     <categoryEntry id="8d63-7372-ad8b-034c" name="Hellblasters" hidden="false"/>
     <categoryEntry id="87c9-248c-8ff5-acb3" name="Corvus Blackstar" hidden="false"/>
+    <categoryEntry id="16ea-1369-44dd-0e0d" name="Kill Team" hidden="false"/>
+    <categoryEntry id="7325-f863-b537-9620" name="Fortis" hidden="false"/>
+    <categoryEntry id="cb0c-1daf-3cdb-eb70" name="Proteus" hidden="false"/>
+    <categoryEntry id="a469-3d5d-f6f6-8981" name="Indomitor" hidden="false"/>
+    <categoryEntry id="8612-86a9-de6a-3f4d" name="Spectrus" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="4447-535c-14e0-0f30" name="Watch Master" hidden="false" collective="false" import="true" type="unit">
@@ -266,6 +271,8 @@
         <categoryLink id="8c4e-b53a-926d-d962" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
         <categoryLink id="d83a-5c52-c5b0-dad5" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
         <categoryLink id="8eff-2f11-554b-d6c5" name="Veterans" hidden="false" targetId="27be-7f92-8c92-4a7e" primary="false"/>
+        <categoryLink id="dd02-7de6-dbd0-3c5a" name="Proteus" hidden="false" targetId="cb0c-1daf-3cdb-eb70" primary="false"/>
+        <categoryLink id="869e-f1a6-f36e-6ccc" name="Kill Team" hidden="false" targetId="16ea-1369-44dd-0e0d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="81e2-992f-1437-1a2c" name="Deathwatch Boltguns" hidden="false" collective="false" import="true" type="upgrade">
@@ -1515,6 +1522,556 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="15.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e87e-dc56-e840-bb37" name="Fortis Kill Team" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="074a-d7f9-0937-4c83" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="d68c-f7fa-0453-6ef7" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="cc8f-70c8-56ad-2b9d" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="e7ee-97c0-34ae-ff99" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+        <categoryLink id="385d-4f33-c0ed-1a72" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="f265-eb72-dca5-fcec" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="28f6-e23c-1acc-250c" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="4007-2869-e719-6be7" name="Kill Team" hidden="false" targetId="16ea-1369-44dd-0e0d" primary="false"/>
+        <categoryLink id="d886-21e1-0c9c-01fa" name="Fortis" hidden="false" targetId="7325-f863-b537-9620" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6dbb-5d94-df2d-4fab" name="Deathwatch Bolt Rifles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bb2-e441-0229-2244" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="111a-6502-2c53-f908" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d596-3a7b-3aa2-0c78" name="Deathwatch Bolt Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b7ec-b679-afe0-81e5" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ca90-1eb6-2f72-4a8a" name="5 - 10 Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f12-9ee4-ce8d-abdb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb3-177c-f7e2-4a94" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8c93-d77e-2276-5870" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="5c58-d2fd-2ed5-e75f" name="Fortis Kill Team (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="7.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd15-750f-d2b5-0529" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="6e2b-5b5b-de28-812b" name="Fortis Kill Team (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="14.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c3c6-abed-b552-ad49" name="Melee Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e53e-ee9d-3c92-6433" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c286-0280-65e7-5c6c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0e5e-82c1-29f5-2d77" name="Chainswords" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="077a-a2b3-18a3-01c9" name="Chainswords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">x3</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="2e11-2a0a-0f09-38b9" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3602-785c-6cf2-8ab2" name="Heavy Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="5496-9e77-0d81-210a" value="5.0">
+              <conditions>
+                <condition field="selections" scope="e87e-dc56-e840-bb37" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd15-750f-d2b5-0529" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5496-9e77-0d81-210a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="029f-3769-a841-e5ba" name="Heavy Plasma Incinerator" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e2-0256-cd42-2a20" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3005-d227-3604-98aa" name="Heavy Plasma Incinerator" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">6+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Supercharge</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="d7a7-369f-baa7-ae91" name="Supercharge" hidden="false" targetId="9988-c2ea-2f30-09c1" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="18a4-2965-90fb-73c4" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="157c-be68-caef-6f9f" name="Indomitor Kill Team" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e213-d93c-97fe-e887" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="6b26-683a-39e9-e2dc" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="6b07-aa33-2843-61ac" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="62ea-1336-e384-b049" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+        <categoryLink id="6e0b-7af7-1ae7-d6ea" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="64e3-f5f4-98d2-3ee3" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="4c86-27a5-3ad6-38d9" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="fc37-1f0d-61ff-0bc7" name="Kill Team" hidden="false" targetId="16ea-1369-44dd-0e0d" primary="false"/>
+        <categoryLink id="9cfd-4dbf-0994-c1df" name="MK X Gravis" hidden="false" targetId="8438-9607-67d0-a3e3" primary="false"/>
+        <categoryLink id="db3b-b5d9-fd00-b793" name="Indomitor" hidden="false" targetId="a469-3d5d-f6f6-8981" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d10f-e925-24a1-603c" name="Deathwatch Heavy Bolt Rifles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6ca-ac5f-d61f-6f87" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0426-94af-44a7-c5b3" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="9f4d-9375-b3f2-682d" name="Deathwatch Heavy Bolt Rifles" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">42&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="48ab-9ea3-8c2c-2f31" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d561-8bab-b3e7-a382" name="5 - 10 Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3674-5f86-25b1-7df5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac39-362f-3e4c-2ce1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d3af-ba8f-9b95-3d4f" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="dd97-72cb-f3ac-f226" name="Indomitor Kill Team (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">3</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4297-28c6-9ec6-2ff4" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="fdc6-bb8a-e79d-533d" name="Indomitor Kill Team (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">6</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="18.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a50c-e837-0aff-3816" name="Heavy Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="f7d0-1df4-12c7-349e" value="5.0">
+              <conditions>
+                <condition field="selections" scope="157c-be68-caef-6f9f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4297-28c6-9ec6-2ff4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7d0-1df4-12c7-349e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2451-9c79-08c0-a4fc" name="Auto Boltstorm Gauntlets and Fragtstorm Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ec-0023-ac5f-7e12" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f95e-6a3f-3436-5470" name="Auto Boltstorm Gauntlets" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="fed3-27f6-8dd9-9bbf" name="Fragstorm Grenade Launchers" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5b5c-c790-a17d-2f94" name="Flamestorm Gauntlets" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b023-b199-e938-081a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ee45-7c48-5135-0a55" name="Flamestorm Gauntlets" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Inferno</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4311-2047-438b-7aac" name="Melta Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5926-5f04-5e6e-e4cc" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9895-e838-0321-77ba" name="Total Obliteration" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit&apos;s detachment carries out the Aimed Fire order and this unit makes a Shoot action, double the Attacks characteristic of any Melta Rifles it is equipped with for that action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="e2ab-3a4c-13ef-41c4" name="Meltagun" hidden="false" targetId="f167-5ca5-16c9-7f21" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Melta Rifle"/>
+                    <modifier type="set" field="bea7-7040-8485-6f0f" value="24&quot;"/>
+                    <modifier type="set" field="359f-19b3-6670-21f5" value="Small Arms"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6060-239e-fb14-7f12" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="e2db-8e1b-1b2a-95f9" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ed5-2982-4cee-90ef" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4389-0966-9e8a-1cf7" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f99f-3527-fd47-5fad" name="Spectrus Kill Team" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+          <conditions>
+            <condition field="selections" scope="f99f-3527-fd47-5fad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e8f-c0b7-642b-2d55" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="1466-da3f-0d27-dace" value="1.0">
+          <conditions>
+            <condition field="selections" scope="f99f-3527-fd47-5fad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8da-3f49-9247-fb54" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="b1d8-9c80-abfd-77ad" name="Omni-scramblers" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Enemy units cannot be set up within 12&quot; of this unit during the Set Up Reinforcements step.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f18f-e22e-5843-bf83" name="Infiltrators" hidden="false" targetId="f07d-6c22-ac83-604c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4c8f-bead-fcd3-3272" name="New CategoryLink" hidden="false" targetId="4182-4f4b-94dc-40d9" primary="true"/>
+        <categoryLink id="d1b4-a933-bb20-19b1" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="d5c4-952f-28eb-0a46" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
+        <categoryLink id="bacf-00d3-6382-e6cf" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+        <categoryLink id="46ec-4c97-26f0-b226" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="bc25-422a-5488-0440" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
+        <categoryLink id="d117-8738-ec63-9cf8" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
+        <categoryLink id="02e9-d404-1eda-156b" name="Kill Team" hidden="false" targetId="16ea-1369-44dd-0e0d" primary="false"/>
+        <categoryLink id="b5ba-09c1-e674-9e76" name="Spectrus" hidden="false" targetId="8612-86a9-de6a-3f4d" primary="false"/>
+        <categoryLink id="c93c-91d9-7351-e313" name="Phobos" hidden="false" targetId="9338-3c48-ea3c-cb83" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0730-96a8-ceb0-1508" name="Deathwatch Marksman Bolt Rifles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f96e-9e0c-a9b5-0048" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f4-c2fa-b9cb-fc32" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d35b-6eeb-1cad-68d5" name="Deathwatch Marksman Bolt Carbines" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <characteristics>
+                <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+                <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+                <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+                <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
+                <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4473-1ea8-804d-9a5f" name="Rapid Fire" hidden="false" targetId="5b2f-f499-bdcd-e45d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0acf-a050-5b89-04a3" name="5 - 10 Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="166f-7854-1d57-b791" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a77-d85b-fab8-95e0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e5f2-0ae5-bbdb-c038" name="5 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="762d-ca1b-efb4-3143" name="Spectrus Kill Team (5 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">2</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="9.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="24b2-5b75-8312-e882" name="10 models" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2367-351e-cf5a-54e3" name="Spectrus Kill Team (10 models)" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e2a3-fade-c12d-860b">3+</characteristic>
+                    <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">3+</characteristic>
+                    <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">2</characteristic>
+                    <characteristic name="W" typeId="7c7f-f763-1f39-410c">4</characteristic>
+                    <characteristic name="Ld" typeId="91b0-3d37-1843-1290">6</characteristic>
+                    <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ac9a-c8a6-50a1-b828" name="Specialist Operators" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="9ca9-aba7-667e-dc1a" value="5.0">
+              <conditions>
+                <condition field="selections" scope="f99f-3527-fd47-5fad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24b2-5b75-8312-e882" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ca9-aba7-667e-dc1a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7e8f-c0b7-642b-2d55" name="Incursor" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64fc-858e-5523-1f93" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="48be-f94a-d0fa-7a98" name="Haywire Mine" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Once per battle, at the end of the Fight phase, you can select one enemy unit within
+3&quot; of this unit. If the selected unit is a VEHICLE or BUILDING, place two blast markers next to it;
+otherwise, place one blast marker next to it.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0c0f-6aa4-834f-b8e4" name="Multi-spectrum Gunsights" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Do not apply negative modifiers to hit rolls for attacks made with ranged weapons by this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f8da-3f49-9247-fb54" name="Reiver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6692-c417-5b56-47b8" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d0f3-3e61-daf4-5e97" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9e43-0351-d6d2-b5bb" name="Eliminator with Bolt Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a3e-caae-68b8-743d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5cab-bbd7-49f5-7400" name="Bolt Sniper Rifle" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">7+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">9+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">Sniper</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d704-7518-46ef-e5c6" name="Eliminator with Las-fusil" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8623-ed01-eaae-305a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7947-62c4-f4e7-767e" name="Las-fusil" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Type" typeId="359f-19b3-6670-21f5">Small Arms</characteristic>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">36&quot;</characteristic>
+                    <characteristic name="A" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">11+</characteristic>
+                    <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+                    <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4db1-2bc9-e12d-096d" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="e0a6-c82a-4470-f0e9" name="Close Combat Weapons" hidden="false" collective="false" import="true" targetId="6144-aa85-b770-2f33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8ba-10c6-9925-b1fa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50cf-4a9d-214c-d5b7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="16c5-ed53-1c3d-cf6c" name="Grav-Chutes" hidden="false" collective="false" import="true" targetId="b647-14a7-5911-697d" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="190e-18f3-e788-0201" name="Librarian" hidden="false" collective="false" import="true" targetId="791d-6d90-4c77-c0ed" type="selectionEntry">
@@ -2014,6 +2571,263 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <categoryLink id="d1e0-1703-6952-a439" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="149d-ae6f-977a-c76c" name="Primaris Captain" hidden="false" collective="false" import="true" targetId="b734-ce0c-dd48-e51f" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="3b16-e66d-40ca-6082" name="Rites of Battle" hidden="false" targetId="5974-c49a-6e51-bedf" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8421-90c3-15db-9678" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a7be-2852-d788-57c3" name="Captain" hidden="false" collective="false" import="true" targetId="3ce2-d370-361d-3409" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="7f93-1548-86c0-17b2" name="Rites of Battle" hidden="false" targetId="5974-c49a-6e51-bedf" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bef5-f657-6d33-a316" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8676-0a27-67d1-19e2" name="Primaris Lieutenants" hidden="false" collective="false" import="true" targetId="bbe6-4a4c-8477-4b34" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="699e-ff90-cbb9-6037" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ec74-5507-84fb-67e4" name="Lieutenants" hidden="false" collective="false" import="true" targetId="63dd-5f7e-f7ca-1ed2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3a34-78ca-f132-defd" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="31d3-5475-4db3-3efb" name="Primaris Techmarine" hidden="false" collective="false" import="true" targetId="c4c4-5b9e-8ea6-1ca1" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="494c-d382-51b1-5c61" name="Blessing of the Omnissiah" hidden="false" targetId="8ef7-ae5a-a184-b433" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ace1-b65c-142c-7e7f" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bfc7-28af-f09e-f947" name="Techmarine" hidden="false" collective="false" import="true" targetId="6690-dae8-1ba2-9454" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="fb29-042f-60d5-e448" name="Blessing of the Omnissiah" hidden="false" targetId="8ef7-ae5a-a184-b433" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6a9f-25a5-01cb-2797" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7f51-f6f2-4824-f58a" name="Assault Intercessor Squad" hidden="false" collective="false" import="true" targetId="811d-be8d-23fb-7100" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="576c-53e6-a6be-9aa2" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c59e-dd26-37f5-4238" name="Heavy Intercessor Squad" hidden="false" collective="false" import="true" targetId="daf6-0fd3-3356-b4cd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0ca4-87ab-a991-f54b" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fd6e-6a0c-d760-d467" name="Infiltrator Squad" hidden="false" collective="false" import="true" targetId="de33-a08d-1882-154e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ff05-5daf-6739-e3a6" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ac07-b0cc-f9ec-4bcd" name="Incursor Squad" hidden="false" collective="false" import="true" targetId="f2e6-ac69-ac7f-bc56" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cd36-d0c5-6f6a-7206" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da16-1663-6400-abe8" name="Company Champion" hidden="false" collective="false" import="true" targetId="cdaa-fa38-e1f3-0555" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f3c0-b4fb-ad83-697b" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="12fc-0059-5c33-78c1" name="Apothecary" hidden="false" collective="false" import="true" targetId="47e5-110b-315c-0cb3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5efa-524f-533b-ac49" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bb53-6bbb-f84c-45d3" name="Company Ancient" hidden="false" collective="false" import="true" targetId="4991-016c-9c24-34d3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0b22-5ed5-fb27-c9e7" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="39c6-c4c3-7d10-6f5f" name="Primaris Ancient" hidden="false" collective="false" import="true" targetId="ca50-b2c7-56ad-f6a3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="30f6-2012-4fc0-f8d9" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b4e0-0462-f31d-138e" name="Bladeguard Ancient" hidden="false" collective="false" import="true" targetId="0cbf-a1e2-653b-48e7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f321-99e1-f3d9-2204" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="05dc-cd0d-5266-cf4e" name="Ancient In Terminator Armour" hidden="false" collective="false" import="true" targetId="1535-dab4-2aea-8137" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f21d-6981-5cb3-bb5e" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c5b2-3c92-8d18-b8c5" name="Veteran Intercessor Squad" hidden="false" collective="false" import="true" targetId="c0f5-7729-99f8-a2d0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="855f-6b8d-6910-4a1f" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="06c6-6cdd-51e7-8fb4" name="Bladeguard Veteran Squad" hidden="false" collective="false" import="true" targetId="531c-7893-3dab-280c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="99e6-93f7-c3f6-86d6" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="630f-29e0-9522-2246" name="Company Veterans" hidden="false" collective="false" import="true" targetId="b573-05bb-9d80-f130" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5f8d-6f5a-8d0b-47fd" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="839c-3713-ceff-7302" name="Judiciar" hidden="false" collective="false" import="true" targetId="a848-d1fb-7516-1180" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ffb3-9d34-53af-89f5" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2bb4-9b39-6500-42fa" name="Centurion Assault Squad" hidden="false" collective="false" import="true" targetId="0fb2-fc72-9e69-d8ad" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9119-32d6-2d48-258b" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1f16-cd64-e36d-415d" name="Invictor Tactical Warsuit" hidden="false" collective="false" import="true" targetId="4730-6697-b894-e0de" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5e0d-5f22-925c-0862" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f009-4a60-832e-4807" name="Contemptor Dreadnought" hidden="false" collective="false" import="true" targetId="b2b9-dbc7-a71c-6665" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5b3a-d766-b971-0ced" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="df30-0dfd-f797-bab8" name="Ironclad Dreadnought" hidden="false" collective="false" import="true" targetId="2ac2-7fbf-e62c-02ca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5eba-8de1-59d4-e1d6" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7c74-a7ed-a6e8-5512" name="Outrider Squad" hidden="false" collective="false" import="true" targetId="778d-e22c-27cb-5b1b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4046-f2d2-1bb7-caf3" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a560-281f-3f8d-7182" name="Invader ATV Squad" hidden="false" collective="false" import="true" targetId="9a45-0fb7-b6fa-db42" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8c9a-8910-7e46-682b" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d2bc-ead4-136a-19a9" name="Suppressor Squad" hidden="false" collective="false" import="true" targetId="0da8-2ac6-c01c-24e9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="df64-e791-a7ac-18f5" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6462-60d0-c1bf-ff05" name="Storm Speeder Hailstrike" hidden="false" collective="false" import="true" targetId="4d23-dd4d-799a-3c25" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4866-595f-6621-0542" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bf79-4c70-7f62-d0cf" name="Storm Speeder Thunderstrike" hidden="false" collective="false" import="true" targetId="d2f4-fc63-2dfc-5efa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="598f-2dde-a481-4f0c" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a09b-907f-bc6d-4264" name="Storm Speeder Hammerstrike" hidden="false" collective="false" import="true" targetId="5592-33ce-cd2a-dbea" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9d3c-7364-b7f8-71d1" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f8a2-9a0e-fd96-7baa" name="Land Speeders" hidden="false" collective="false" import="true" targetId="f1dc-9426-c419-5aa6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3cea-468a-37cb-5fb6" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0809-a2b7-7ec6-9b3b" name="Eliminator Squad" hidden="false" collective="false" import="true" targetId="0e7e-b907-6bf2-d536" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="91fb-18b1-8356-7e1b" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="322a-8501-9bbd-6859" name="Centurion Devastator Squad" hidden="false" collective="false" import="true" targetId="2471-f69b-08e2-34a7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="336b-509e-b5ac-3dda" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2ecb-a0d3-0aba-50e6" name="Eradicator Squad" hidden="false" collective="false" import="true" targetId="7a4f-1b01-9979-5aef" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d47f-7035-8989-ad81" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d5b2-5a33-ac8f-55eb" name="Thunderfire Cannon" hidden="false" collective="false" import="true" targetId="ba63-ab3f-8747-a3d1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f1e0-7ab1-9b79-0e30" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bd40-10b3-1486-976a" name="Firestrike Servo-turrets" hidden="false" collective="false" import="true" targetId="52f3-77e4-8b3f-8a97" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dba4-aed8-8b5f-2602" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4a4e-0a46-f208-c67d" name="Hunter" hidden="false" collective="false" import="true" targetId="1bec-a9ec-587e-7dd2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2438-c912-b9d0-c512" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9cb6-b07a-34ed-e307" name="Stalker" hidden="false" collective="false" import="true" targetId="2509-4c06-781e-7771" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dd26-e964-c0d6-b498" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f95f-ab2c-1cdc-5077" name="Whirlwind" hidden="false" collective="false" import="true" targetId="d149-41f2-be2f-2236" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5432-e9ab-5324-11a7" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="efa9-d84c-632b-7b63" name="Predator" hidden="false" collective="false" import="true" targetId="380b-365b-f724-e677" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="344f-68a8-dfc2-e77c" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7d82-dc47-5623-fff3" name="Gladiator Lancer" hidden="false" collective="false" import="true" targetId="7171-4360-380d-58d9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0754-0eaa-33bc-b77d" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e2a1-0b14-0b98-7f68" name="Gladiator Reaper" hidden="false" collective="false" import="true" targetId="fc2d-0c7f-e3e5-f51f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1680-98eb-5666-7f4a" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a891-b616-c837-1942" name="Gladiator Valiant" hidden="false" collective="false" import="true" targetId="a80b-3524-b19e-e4f2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a29c-7f48-5800-cab9" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b286-ed96-9f02-b811" name="Vindicator" hidden="false" collective="false" import="true" targetId="5b4f-6d59-d2cb-6004" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4db8-2e58-5bc5-cd9c" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5738-1b52-7725-e958" name="Impulsor" hidden="false" collective="false" import="true" targetId="ed0d-c99c-3497-a919" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="060b-a8b6-7eaf-6dd0" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="17c9-522f-d155-2b3f" name="Stormhawk Interceptor" hidden="false" collective="false" import="true" targetId="3d68-4564-f328-1694" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fca0-19ba-1e16-b2ec" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8256-3f6e-c3fb-e629" name="Stormtalon Gunship" hidden="false" collective="false" import="true" targetId="80e9-fdb3-c8be-0c11" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b569-0c56-2d35-a9c2" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="824b-018d-d710-4b73" name="Stormraven Gunship" hidden="false" collective="false" import="true" targetId="70d0-691d-94eb-12d5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1aab-340e-0586-0fc7" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5c94-d589-fe4b-65b8" name="Hammerfall Bunker" hidden="false" collective="false" import="true" targetId="cbce-7f99-5113-19d1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e062-e71b-63d3-a0a7" name="Faction: Deathwatch" hidden="false" targetId="1ca7-5aae-d958-5973" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedProfiles>
     <profile id="5974-c49a-6e51-bedf" name="Rites of Battle" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -2036,9 +2850,14 @@ LAND RAIDER, RELIC SPARTAN ASSAULT TANK, RHINO and RAZORBACK models can transpor
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">This unit can only be included in a Fortification Network Detachment that only includes 1 DEATHWATCH Tacticus Bunker unit and 3 DEATHWATCH Bunker Annex units. All 3 Bunker Annex units occupy a single Fortification slot, and the Tacticus Bunker begins the battle as the Commander of its Detachment.</characteristic>
       </characteristics>
     </profile>
+    <profile id="8ef7-ae5a-a184-b433" name="Blessing of the Omnissiah" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair one friendly DEATHWATCH VEHICLE unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that VEHICLE unit. Only one attempt to repair each unit can be made each turn.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="8f54-c775-b0c6-b1e5" name="Library - Space Marines" targetId="df5a-b452-7741-6a5b" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="c7df-33a9-4b40-af6c" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="8f54-c775-b0c6-b1e5" name="Library - Space Marines" targetId="c56b-a784-45be-6982" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="c7df-33a9-4b40-af6c" name="Library - Weapons" targetId="02de-a64c-225d-8e88" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

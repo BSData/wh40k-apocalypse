@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c773-d2ab-f4e5-7bab" name="Aeldari - Harlequins" revision="7" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ce2f-fa36-3f5c-564a" name="Aeldari - Harlequins" revision="8" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="85e9-a70a-b094-f132" name="Harlequin Apoc Datasheets"/>
   </publications>
@@ -39,11 +39,6 @@
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="9304-3d44-6512-e896" name="Choreographer of War" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly &lt;MASQUE&gt; units whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="e57a-11bf-4a02-ec03" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
@@ -63,6 +58,13 @@
           </constraints>
           <profiles>
             <profile id="1916-259e-3196-d92a" name="Troupe Master Weapons" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <modifiers>
+                <modifier type="set" field="74b1-f85d-ede5-c758" value="3+">
+                  <conditions>
+                    <condition field="selections" scope="3c5a-c6d6-3439-148b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5ef-4c7d-1dfc-1802" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
@@ -78,6 +80,64 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2c21-5fc4-3370-9da3" name="Pivotal Role" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd60-b948-bb8f-db36" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5033-260e-7fdb-1d97" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1fe7-f425-91af-d809" name="Darkness&apos; Bite" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="46ce-7513-a728-7ad5" name="Darkness&apos; Bite" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Fight phase, you can select one enemy unit this model made an attack against and place one blast marker next to it.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8669-242c-6d0e-ba4f" name="Choreographer of War" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="837e-ab4a-4eac-99ff" name="Choreographer of War" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with melee weapons by friendly &lt;MASQUE&gt; units whilst they are within 6&quot; of this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f5ef-4c7d-1dfc-1802" name="Twilight&apos;s Grasp" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c3d6-2db8-55bf-3b91" name="Twilight&apos;s Grasp" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time a melee attack is made by this model against a LIGHT unit, a wound roll of of 3+ is always successful (already reflected in the profile).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="46d1-07d2-3da1-970e" name="Prince of Light" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c4c9-8715-0198-d043" name="Prince of Light" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1&quot; to &lt;MASQUE&gt; units&apos; movement characteristic whilst they are within 6&quot; of any friendly units with this ability</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="aaa5-d8cf-3e8b-f9de" name="Flip Belt" hidden="false" collective="false" import="true" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="df07-8903-a3c9-1ada" name="Holo-fields" hidden="false" collective="false" import="true" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -98,11 +158,6 @@
             <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
             <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
             <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">6+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="300c-c302-ab6c-fd9f" name="Shield from Harm" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from wound rolls for attacks that target LIGHT &lt;MASQUE&gt; units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -150,6 +205,64 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f231-f5c8-a310-3909" name="Pivotal Role" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9004-8aef-5a91-1eab" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31db-0f60-7aca-352c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5212-ae09-a24a-af5b" name="Veil of Illusion" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="b467-ab4a-2431-003d" name="Veil of Illusion" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Whilst a friendly &lt;MASQUE&gt; unit is within 6&quot; of this model, when determining if that unit is within range of attacks made by enemy models with ranged weapons, add 6&quot; to the distance measured.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d0e8-b6e8-e9f3-b08e" name="Agent of Bedlam" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="246e-d052-9ee9-2459" name="Agent of Bedlam" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Units must re-roll successful hit rolls whilst they are within 6&quot; of any enemy units with this ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4a33-667b-ce81-01e6" name="Gloomwake" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="bee3-1610-6cb7-ab80" name="Gloomwake" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly &lt;MASQUE&gt; units are always obscured targets whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7047-fce6-47cd-25a3" name="Shield from Harm" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f37d-a8a0-0ec1-d9a3" name="Shield from Harm" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from wound rolls for attacks that target LIGHT &lt;MASQUE&gt; units whilst they are within 6&quot; of any friendly units with this ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="650e-4d0c-0a7d-fdb3" name="Flip Belt" hidden="false" collective="false" import="true" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="0238-b91a-72c8-a796" name="Holo-fields" hidden="false" collective="false" import="true" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -298,9 +411,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="63b7-48dc-b27f-7f20" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="5df3-9c16-d68d-2cc4" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
         <categoryLink id="a4fe-07bc-412a-5a0a" name="Death Jester" hidden="false" targetId="5f59-f585-b0d0-6f9d" primary="false"/>
@@ -329,6 +439,13 @@
               </characteristics>
             </profile>
             <profile id="5722-a20a-1ffa-5f62" name="Shrieker Cannon" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+              <modifiers>
+                <modifier type="set" field="bea7-7040-8485-6f0f" value="36&quot;">
+                  <conditions>
+                    <condition field="selections" scope="f8fc-6796-ad9c-c696" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5f7-20cf-713b-2e34" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Type" typeId="359f-19b3-6670-21f5">Heavy</characteristic>
                 <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
@@ -344,6 +461,60 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7050-c557-162c-b0a2" name="Pivotal Role" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3a-72de-4e70-017f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c1b-e7c4-ee95-8afd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e314-8d6a-204f-5784" name="Terror Troops" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="fbba-e5c6-7896-36d6" name="Terror Troops" hidden="false" targetId="e5e7-bd6d-fdb7-b022" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1c04-60a3-da2a-2c17" name="Harvester of Torment" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1500-054b-40d4-be42" name="Harvester of Torment" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">You can re-roll wound rolls for attacks made with this unit&apos;s Shrieker Cannon that target units with 6 or more models.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f5f7-20cf-713b-2e34" name="The Jest Inescapable" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="9001-fcef-353f-22c8" name="The Jest Inescapable" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 12&quot; to the Range characteristic of this unit&apos;s Shrieker Cannon (already reflected in the profile). This unit does not suffer the penalty for attacks made with ranged weapons that target obscured targets.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c9c2-636b-0bcc-74cb" name="Humbling Cruelty" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1941-276f-089f-fb75" name="Humbling Cruelty" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Each time an attack made by this model scores a hit, that unit is pinned until after it carries out its next order. While a unit is pinned, subtract 2&quot; from its Move Characteristic.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fe14-807c-a3a2-fc3a" name="Flip Belt" hidden="false" collective="false" import="true" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="e9d1-72cf-04ad-dae8" name="Holo-fields" hidden="false" collective="false" import="true" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -356,6 +527,13 @@
     <selectionEntry id="71d5-d82a-cd7b-453d" name="Solitaire" publicationId="85e9-a70a-b094-f132" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="6230-823d-e0e0-5316" name="Solitaire" publicationId="85e9-a70a-b094-f132" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="606d-344a-bc3d-9dce" value="15&quot;">
+              <conditions>
+                <condition field="selections" scope="71d5-d82a-cd7b-453d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b26-67c1-4178-749a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="606d-344a-bc3d-9dce">14&quot;</characteristic>
             <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
@@ -405,6 +583,55 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a16d-91b9-75b7-c4c1" name="Pivotal Role" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae2f-2ef5-87ea-9053" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3629-8a37-bd6f-5765" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="181a-7790-0cff-ae2c" name="Shocking Emergence" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="177d-315e-dc60-77bc" name="Shocking Emergence" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">When this unit arrives as reinforcements, add 1&quot; to its Move characteristic until the end of the turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="9f89-3982-a6af-9255" name="Deep Strike" hidden="false" targetId="8fc3-5045-3aa5-00ce" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5b26-67c1-4178-749a" name="Chromatic Rush" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="f79e-4238-5f86-cd0d" name="Chromatic Rush" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Add 1&quot; to this models movement characteristic (already reflected in the profile). In addition when this unit piles in, it can move an additional 3&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="85bb-a7e8-c628-f5d4" name="Unnatural Acrobatics" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1cf2-b889-00f9-70cc" name="Unnatural Acrobatics" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made by enemy units that target this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="1466-da3f-0d27-dace" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="27e5-6f5c-8e36-cc7c" name="Flip Belt" hidden="false" collective="false" import="true" targetId="1472-a692-deff-6edc" type="selectionEntry"/>
         <entryLink id="5ab1-3a02-452f-24cb" name="Holo-fields" hidden="false" collective="false" import="true" targetId="bb56-15a7-73e0-85e9" type="selectionEntry"/>
@@ -889,6 +1116,6 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
-    <catalogueLink id="bef0-1f05-7573-5679" name="AeldariWeapons" targetId="4b51-905f-01f3-083f" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="bef0-1f05-7573-5679" name="AeldariWeapons" targetId="d311-d4fb-a860-0cf3" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
