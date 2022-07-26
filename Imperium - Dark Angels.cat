@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7774-c573-6697-5bd1" name="Imperium - Dark Angels" revision="11" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9dd0-af58-ba1b-c51a" name="Imperium - Dark Angels" revision="10" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="6268-f517-c933-bf19" name="Faction: Adeptus Astartes" hidden="false"/>
     <categoryEntry id="51a9-73ff-29ec-793c" name="Tactical Squad" hidden="false"/>
@@ -23,8 +23,6 @@
     <categoryEntry id="e3bd-cef6-9d66-30f1" name="Ravenwing Black Knights" hidden="false"/>
     <categoryEntry id="aa71-2348-e01f-c59d" name="Dark Talon" hidden="false"/>
     <categoryEntry id="3bfb-ebb6-76f1-9343" name="Nephilim Jetfighter" hidden="false"/>
-    <categoryEntry id="3600-450b-a555-569e" name="Lazarus" hidden="false"/>
-    <categoryEntry id="d537-b50c-719d-d101" name="Inner Circle" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="fc3d-dd60-37ea-c9ef" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="1fa2-88c4-2c7e-5d33" type="selectionEntry">
@@ -48,13 +46,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="5f51-e234-3cd0-0877" name="Chaplain" hidden="false" collective="false" import="true" targetId="b371-3bcc-b91b-03e6" type="selectionEntry">
-      <modifiers>
-        <modifier type="add" field="category" value="d673-6f6d-5df6-035c">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3726-f1d3-1b96-0eb0" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="b317-e91d-ad1a-22ad" name="Litanies of Hate" hidden="false" targetId="1020-199d-b194-0218" type="profile"/>
         <infoLink id="2484-00d9-b32c-7c6a" name="Spritiual Leader" hidden="false" targetId="f2e9-2ae6-3afd-0024" type="profile"/>
@@ -411,13 +402,6 @@
     <entryLink id="959c-a0fa-4c8f-abac" name="Sammael in Sableclaw" hidden="false" collective="false" import="true" targetId="7155-e869-e193-7d39" type="selectionEntry"/>
     <entryLink id="8d33-11b7-0f75-d983" name="Sammael on Corvex" hidden="false" collective="false" import="true" targetId="905d-d514-3d6a-8ff1" type="selectionEntry"/>
     <entryLink id="84e2-64a1-7fca-9a87" name="Primaris Chaplain" hidden="false" collective="false" import="true" targetId="7813-d97a-0510-14e6" type="selectionEntry">
-      <modifiers>
-        <modifier type="add" field="category" value="e2b5-b600-9791-7010">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b5-9ad5-d8df-45f2" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="fe5c-332b-9f7f-3bfe" name="Litanies of Hate" hidden="false" targetId="1020-199d-b194-0218" type="profile"/>
         <infoLink id="d655-f16a-b2a1-7a9c" name="Spiritual Leader" hidden="false" targetId="74f7-3d04-b46b-7759" type="profile"/>
@@ -780,203 +764,6 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
       <categoryLinks>
         <categoryLink id="093d-010e-435f-d93c" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
       </categoryLinks>
-    </entryLink>
-    <entryLink id="fae4-7111-bd59-bff5" name="Primaris Captain" hidden="false" collective="false" import="true" targetId="b734-ce0c-dd48-e51f" type="selectionEntry">
-      <infoLinks>
-        <infoLink id="a28b-c538-02ef-de67" name="Rites of Battle" hidden="false" targetId="a9a4-c13f-702f-4bae" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="0a3e-4bf2-c3d1-34b4" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="da1e-6d17-5f49-b4ed" name="Captain" hidden="false" collective="false" import="true" targetId="3ce2-d370-361d-3409" type="selectionEntry">
-      <modifiers>
-        <modifier type="add" field="category" value="d673-6f6d-5df6-035c">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3726-f1d3-1b96-0eb0" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="e2b5-b600-9791-7010">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8b5-9ad5-d8df-45f2" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink id="2cef-9560-c926-6c50" name="Rites of Battle" hidden="false" targetId="a9a4-c13f-702f-4bae" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="ac7e-478a-4880-61d6" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="2a05-07d7-980e-aa9b" name="Primaris Techmarine" hidden="false" collective="false" import="true" targetId="c4c4-5b9e-8ea6-1ca1" type="selectionEntry">
-      <profiles>
-        <profile id="885e-3196-6940-79cc" name="Blessing of the Omnissiah" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">At the end of the Action phase, this unit can attempt to repair one friendly DARK ANGELS Vehicle unit in base contact with it. If it does, roll one D6; on a 4+ remove one damage marker from that Vehicle unit. Only one attempt to repair each unit can be made each turn.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="4d03-4140-054b-3ca4" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="2593-a988-c38d-c8ac" name="Assault Intercessor Squad" hidden="false" collective="false" import="true" targetId="811d-be8d-23fb-7100" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="aaa7-e6b5-abb7-33d1" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="2f40-82db-ba28-21d1" name="Heavy Intercessor Squad" hidden="false" collective="false" import="true" targetId="daf6-0fd3-3356-b4cd" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="1c26-e802-c00a-686b" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="8b06-1a88-7d4b-9d5c" name="Bladeguard Ancient" hidden="false" collective="false" import="true" targetId="0cbf-a1e2-653b-48e7" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="ec32-e78e-2b0b-ed14" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="b8a9-f445-fca0-ac75" name="Faction: Deathwing" hidden="false" targetId="d673-6f6d-5df6-035c" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="5bf1-5fb5-152b-70de" name="Ancient In Terminator Armour" hidden="false" collective="false" import="true" targetId="1535-dab4-2aea-8137" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="74ec-9d21-72d8-7e3f" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="ef65-faef-609b-552a" name="Faction: Deathwing" hidden="false" targetId="d673-6f6d-5df6-035c" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="14c9-467c-f0b7-497f" name="Veteran Intercessor Squad" hidden="false" collective="false" import="true" targetId="c0f5-7729-99f8-a2d0" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="a113-a7a6-d6d1-b010" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="5f0e-1009-4695-7e39" name="Bladeguard Veteran Squad" hidden="false" collective="false" import="true" targetId="531c-7893-3dab-280c" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="bbc3-6734-bff7-0b97" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="e80d-dff7-7328-29d1" name="Faction: Deathwing" hidden="false" targetId="d673-6f6d-5df6-035c" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="8424-eb8c-030d-4db8" name="Judiciar" hidden="false" collective="false" import="true" targetId="a848-d1fb-7516-1180" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="6c2d-6fc7-84f8-15d0" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="5952-4bd8-4657-d035" name="Terminator Assault Squad" hidden="false" collective="false" import="true" targetId="768d-883e-96a7-c2ce" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="7d13-782a-968e-e895" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="eca3-9c13-cbef-1cbd" name="Faction: Deathwing" hidden="false" targetId="d673-6f6d-5df6-035c" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="c9c9-d7bc-94f2-aeac" name="Terminator Squad" hidden="false" collective="false" import="true" targetId="c0b0-6b0b-7f09-d62c" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="e2c9-ba33-6663-e2dd" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="ae16-db0e-4d73-3bd9" name="Faction: Deathwing" hidden="false" targetId="d673-6f6d-5df6-035c" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="a300-cb67-a6e8-bb0a" name="Centurion Assault Squad" hidden="false" collective="false" import="true" targetId="0fb2-fc72-9e69-d8ad" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="4fb4-6dd2-9a19-6432" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="b8fe-596a-b625-973f" name="Ironclad Dreadnought" hidden="false" collective="false" import="true" targetId="2ac2-7fbf-e62c-02ca" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="ec77-04a2-033b-7d44" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="d171-1a35-475d-b343" name="Outrider Squad" page="" hidden="false" collective="false" import="true" targetId="778d-e22c-27cb-5b1b" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="765a-0fe8-6418-fde4" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="a9c3-981e-9d75-8a15" name="Faction: Ravenwing" hidden="false" targetId="e2b5-b600-9791-7010" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="05b0-e107-ac1c-0c8c" name="Invader ATV Squad" hidden="false" collective="false" import="true" targetId="9a45-0fb7-b6fa-db42" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="1b99-4739-40df-4ef2" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="68b9-89a5-a7aa-ec2c" name="Faction: Ravenwing" hidden="false" targetId="e2b5-b600-9791-7010" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="74f0-5dc0-e7e9-437e" name="Bike Squad" hidden="false" collective="false" import="true" targetId="10c9-b4bb-9816-ee1b" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="ea8f-fa33-db7a-14ea" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="fbbf-b866-fdbc-9e15" name="Faction: Ravenwing" hidden="false" targetId="e2b5-b600-9791-7010" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="315f-cb16-35ae-cdc1" name="Attack Bike Squad" hidden="false" collective="false" import="true" targetId="ea42-68aa-024e-2eaf" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="8e0d-5401-0001-ae2e" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="2509-1a92-88dc-efaa" name="Faction: Ravenwing" hidden="false" targetId="e2b5-b600-9791-7010" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="4beb-8902-25d2-46a1" name="Storm Speeder Hailstrike" hidden="false" collective="false" import="true" targetId="4d23-dd4d-799a-3c25" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="5e40-3b9a-76ba-3e36" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="8937-904a-114d-2aa2" name="Faction: Ravenwing" hidden="false" targetId="e2b5-b600-9791-7010" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="c3da-eb77-309b-20da" name="Storm Speeder Thunderstrike" hidden="false" collective="false" import="true" targetId="d2f4-fc63-2dfc-5efa" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="82e8-47e7-c804-1d38" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="5a13-610c-b842-b03f" name="Faction: Ravenwing" hidden="false" targetId="e2b5-b600-9791-7010" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="e881-b5bb-a3df-4768" name="Storm Speeder Hammerstrike" hidden="false" collective="false" import="true" targetId="5592-33ce-cd2a-dbea" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="00e5-334c-7dad-3203" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="996e-3a00-5657-08b3" name="Faction: Ravenwing" hidden="false" targetId="e2b5-b600-9791-7010" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="6cce-b2e9-0614-8d4a" name="Centurion Devastator Squad" hidden="false" collective="false" import="true" targetId="2471-f69b-08e2-34a7" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="123f-763d-347f-f210" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="0556-9c7a-6437-2657" name="Eradicator Squad" hidden="false" collective="false" import="true" targetId="7a4f-1b01-9979-5aef" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="1536-34da-a009-820b" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="eb2d-07db-8336-c57c" name="Thunderfire Cannon" hidden="false" collective="false" import="true" targetId="ba63-ab3f-8747-a3d1" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="a479-bc67-759b-895d" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="b40b-77bc-19fe-b75a" name="Firestrike Servo-turrets" hidden="false" collective="false" import="true" targetId="52f3-77e4-8b3f-8a97" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="06c1-646d-98b6-6718" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="d765-2b79-0277-4043" name="Gladiator Lancer" hidden="false" collective="false" import="true" targetId="7171-4360-380d-58d9" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="8322-4614-96f7-d76e" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="6558-43f1-6eae-c636" name="Gladiator Reaper" hidden="false" collective="false" import="true" targetId="fc2d-0c7f-e3e5-f51f" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="dc60-3bcd-bd35-46e0" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="ad6f-4404-0b05-4325" name="Gladiator Valiant" hidden="false" collective="false" import="true" targetId="a80b-3524-b19e-e4f2" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="febb-aaeb-9b2b-f83c" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="e47d-c9d1-6f4c-1372" name="Stormhawk Interceptor" hidden="false" collective="false" import="true" targetId="3d68-4564-f328-1694" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="b3af-6568-cb1e-5e92" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="a113-99a1-05c8-0110" name="Stormtalon Gunship" hidden="false" collective="false" import="true" targetId="80e9-fdb3-c8be-0c11" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="89c7-efe2-ac9b-b340" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="3b95-9202-0d6d-632e" name="Hammerfall Bunker" hidden="false" collective="false" import="true" targetId="cbce-7f99-5113-19d1" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="d2c9-768f-36b3-0d5e" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="83ef-43e2-c3d8-8d50" name="Lazarus" hidden="false" collective="false" import="true" targetId="b139-64d6-2db2-d741" type="selectionEntry">
-      <infoLinks>
-        <infoLink id="e6e6-6c61-bef7-9c85" name="Rites of Battle" hidden="false" targetId="a9a4-c13f-702f-4bae" type="profile"/>
-      </infoLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -1676,7 +1463,7 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
               </categoryLinks>
             </entryLink>
             <entryLink id="3e72-c7cb-53d7-ef52" name="Bike" hidden="false" collective="false" import="true" targetId="30e3-b6c8-bb27-a512" type="selectionEntry"/>
-            <entryLink id="4ff8-c467-a774-610b" name="Terminator Armour" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
+            <entryLink id="4ff8-c467-a774-610b" name="Terminator Armor" hidden="false" collective="false" import="true" targetId="8b15-a0be-8cba-a7fb" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2887,65 +2674,6 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="16.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b139-64d6-2db2-d741" name="Lazarus" publicationId="8df9-0b3e-abea-3c15" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="1773-aacc-7917-20c2" name="Lazarus" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
-            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
-            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
-            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
-            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
-            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c758-7361-42a3-0952" name="The Spiritshield Helm" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Friendly DARK ANGELS units gain the Ignore Damage (6+) ability whilst they are within 6&quot; of this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a21c-648f-9d26-c4d6" name="Intractable Will" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Morale tests taken for this unit are automatically passed.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9a4a-0450-d71e-ed58" name="Enmity&apos;s Edge" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
-          <characteristics>
-            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
-            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
-            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
-            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">8+</characteristic>
-            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">8+</characteristic>
-            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">If a wound roll for an attack made with this weapon is successful, and the target is a PSYKER, place two blast markers next to the target unit instead of one.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="85c1-2b18-5c2f-ce21" name="Inner Circle" hidden="false" targetId="9331-d919-e587-f51f" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="c1c3-098e-5953-9fe1" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
-        <categoryLink id="1dbe-b063-fd0f-5e42" name="Commander" hidden="false" targetId="dd2e-b7ed-76c8-a4d9" primary="false"/>
-        <categoryLink id="8e95-0784-0283-f0cd" name="Faction: Adeptus Astartes" hidden="false" targetId="6268-f517-c933-bf19" primary="false"/>
-        <categoryLink id="23ec-5c42-27df-4fa0" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
-        <categoryLink id="b752-89cf-db52-f2a6" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
-        <categoryLink id="c473-e496-9f90-6e42" name="Infantry" hidden="false" targetId="2d6e-c03a-7a58-74ce" primary="false"/>
-        <categoryLink id="075d-ef3c-b9d7-a097" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
-        <categoryLink id="a556-454e-8cb5-c2fb" name="Master" hidden="false" targetId="06fe-0fb5-1263-898f" primary="false"/>
-        <categoryLink id="6476-6cf4-0597-19d8" name="Faction: Dark Angels" hidden="false" targetId="6ac9-811a-fe59-5de1" primary="false"/>
-        <categoryLink id="1240-8ee4-56d9-0b70" name="Lazarus" hidden="false" targetId="3600-450b-a555-569e" primary="false"/>
-        <categoryLink id="beb0-b036-ac7c-7938" name="Primaris" hidden="false" targetId="34ee-2cee-93bf-b3c3" primary="false"/>
-        <categoryLink id="b48a-47c6-3027-c92a" name="Captain" hidden="false" targetId="7151-56f9-0163-eadc" primary="false"/>
-        <categoryLink id="386b-ba6e-5b91-0537" name="Inner Circle" hidden="false" targetId="d537-b50c-719d-d101" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="31d3-00ca-beb0-2899" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9a1f-1591-583c-1754" name="5 - 10 models" hidden="false" collective="false" import="true" defaultSelectionEntryId="f9cd-37a2-addc-36c4">
@@ -3107,6 +2835,6 @@ Each TERMINATOR and JUMP PACK model takes the space of 2 other INFANTRY models a
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="4404-0180-5b33-35b4" name="Library - Space Marines" targetId="c56b-a784-45be-6982" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="4404-0180-5b33-35b4" name="Library - Space Marines" targetId="df5a-b452-7741-6a5b" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
