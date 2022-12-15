@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5f96-4fc2-5d33-b11b" name="Imperium - Adeptus Custodes" revision="4" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="18f7-26e1-8fbb-f7fa" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3d8d-c2f6-d13b-8174" name="Imperium - Adeptus Custodes" revision="5" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/3QtaU2g" library="false" gameSystemId="faa2-6155-22f4-8288" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a70b-b27c-4926-d99c" name="Faction: Adeptus Custodes" hidden="false"/>
     <categoryEntry id="e6c3-ba23-fdf0-2498" name="Captain-General Trajann Valoris" hidden="false"/>
@@ -25,6 +25,7 @@
     <categoryEntry id="0642-34c8-35d0-ea34" name="Sagittarum Custodians" hidden="false"/>
     <categoryEntry id="6a14-8a51-f3db-2233" name="Coronus Grav-carrier" hidden="false"/>
     <categoryEntry id="1609-aa77-03ad-c077" name="Orion Assault Dropship" hidden="false"/>
+    <categoryEntry id="8891-662c-b052-6e2e" name="Blade Champion" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="4723-62f6-a2f8-2990" name="Captain-General Trajann Valoris" hidden="false" collective="false" import="true" type="unit">
@@ -2298,6 +2299,39 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="30.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0c67-2dfb-3b57-68f8" name="Blade Champion" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b92c-e9e9-1dd0-f411" name="Blade Champion" hidden="false" typeId="758b-2459-9a46-721a" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="606d-344a-bc3d-9dce">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e2a3-fade-c12d-860b">2+</characteristic>
+            <characteristic name="BS" typeId="bcfe-d5af-2691-5c77">2+</characteristic>
+            <characteristic name="A" typeId="ddfe-6a9e-32c1-a51c">1</characteristic>
+            <characteristic name="W" typeId="7c7f-f763-1f39-410c">1</characteristic>
+            <characteristic name="Ld" typeId="91b0-3d37-1843-1290">7</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b21d-6fb2-80ef-4b4d" name="Consummate Swordsman" hidden="false" targetId="9309-9d65-304e-5c9c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="930a-7abd-7206-7e30" name="New CategoryLink" hidden="false" targetId="08d9-07e5-2b35-57b0" primary="true"/>
+        <categoryLink id="9b54-ec91-ae4d-3752" name="Faction: Imperium" hidden="false" targetId="e30a-8f35-5fe6-534d" primary="false"/>
+        <categoryLink id="e5e4-9823-3f84-8986" name="Faction: Adeptus Custodes" hidden="false" targetId="a70b-b27c-4926-d99c" primary="false"/>
+        <categoryLink id="5ab3-0a05-3e93-ee2b" name="Light" hidden="false" targetId="7eb1-73ba-2de4-ca9b" primary="false"/>
+        <categoryLink id="4e75-2b44-0688-b9d5" name="Character" hidden="false" targetId="4b9a-33b1-3b42-e3f8" primary="false"/>
+        <categoryLink id="879b-daa0-65d9-75fa" name="Blade Champion" hidden="false" targetId="8891-662c-b052-6e2e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fc1b-4812-248e-7959" name="Commander" hidden="false" collective="false" import="true" targetId="7347-5716-355f-9165" type="selectionEntry"/>
+        <entryLink id="44b3-fb8e-882f-659b" name="Vaultswords" hidden="false" collective="false" import="true" targetId="357a-109c-069d-7869" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="6.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <rules>
     <rule id="00bb-3bda-6bc2-144e" name="The Emperor&apos;s Chosen" hidden="false">
@@ -2585,6 +2619,27 @@
         <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="357a-109c-069d-7869" name="Vaultswords" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f458-ef39-cd5c-373d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e1c-2f3e-f6c5-6b68" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b188-7917-76c1-4afb" name="Vaultswords" hidden="false" typeId="c9f1-094d-9681-28f3" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Type" typeId="359f-19b3-6670-21f5">Melee</characteristic>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">Melee</characteristic>
+            <characteristic name="A" typeId="2883-af07-d4e8-d8d0">User</characteristic>
+            <characteristic name="SAP" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="SAT" typeId="4b6c-996a-d317-affb">7+</characteristic>
+            <characteristic name="Abilities" typeId="61ff-d2ec-f13b-06fa">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="0b3c-9c63-6141-f2e8" name="Inspirational Fighter" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
@@ -2597,8 +2652,13 @@
         <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Distances are measured to and from this unit’s hull, even though it has a base.</characteristic>
       </characteristics>
     </profile>
+    <profile id="9309-9d65-304e-5c9c" name="Consummate Swordsman" hidden="false" typeId="f075-616f-79da-32a6" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="4493-9fa3-8c30-866f">Subtract 1 from hit rolls for attacks made with melee weapons by enemy units that target this unit.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="2fd7-efb3-a039-29dc" name="Library - Weapons" targetId="eec6-f52a-81c4-5701" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="2fd7-efb3-a039-29dc" name="Library - Weapons" targetId="02de-a64c-225d-8e88" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
